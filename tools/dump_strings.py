@@ -1,0 +1,67 @@
+"""下載網站資料，列出程式需要翻譯的所有韓文字串（附網站的繁中／英文作為參考）。
+
+用法：python tools/dump_strings.py translations/source_ko.json
+"""
+import json
+import sys
+import tempfile
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
+from journey_helper import data as data_module  # noqa: E402
+from journey_helper.config import DEFAULTS  # noqa: E402
+from journey_helper.render import Renderer  # noqa: E402
+from journey_helper.text import loc  # noqa: E402
+
+
+class Recorder:
+    failed = False
+    last_error = None
+
+    def __init__(self):
+        self.seen = []
+
+    def translate_many(self, texts):
+        self.seen.extend(texts)
+        return {t: t for t in texts}
+
+
+def contexts(value, found):
+    if isinstance(value, dict):
+        ko = value.get('ko-KR')
+        if isinstance(ko, str):
+            key = loc(value, 'ko-KR')
+            found.setdefault(key, {'zh': loc(value, 'zh-TW'), 'en': loc(value, 'en-US')})
+        for item in value.values():
+            contexts(item, found)
+    elif isinstance(value, list):
+        for item in value:
+            contexts(item, found)
+
+
+def main(output):
+    with tempfile.TemporaryDirectory() as folder:
+        game, _ = data_module.load(DEFAULTS['site_url'], folder, force=True)
+        raw = json.loads((Path(folder) / 'site_data.json').read_text(encoding='utf-8'))
+    recorder = Recorder()
+    renderer = Renderer(game, recorder, dict(DEFAULTS))
+    for group in game.journey_groups:
+        renderer.render([{'variants': group}])
+    for card in game.cards:
+        renderer.render([{'variants': card.get('events') or []}])
+        for key in ('name', 'char_name'):
+            text = loc(card.get(key), 'ko-KR')
+            if text:
+                recorder.seen.append(text)
+    found = {}
+    contexts(raw, found)
+    strings = list(dict.fromkeys(t for t in recorder.seen if t))
+    rows = [{'ko': t, **found.get(t, {})} for t in strings]
+    Path(output).parent.mkdir(parents=True, exist_ok=True)
+    Path(output).write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding='utf-8')
+    print(f'{len(rows)} strings, {sum(len(r["ko"]) for r in rows)} characters')
+
+
+if __name__ == '__main__':
+    main(sys.argv[1])

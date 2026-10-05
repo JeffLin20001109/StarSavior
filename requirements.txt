@@ -1,0 +1,7 @@
+rapidocr==3.9.2
+onnxruntime==1.30.0
+opencv-python-headless==5.0.0.93
+numpy==2.4.6
+Pillow==12.3.0
+psutil==7.1.0
+opencc-python-reimplemented==0.1.7

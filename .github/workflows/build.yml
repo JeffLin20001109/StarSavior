@@ -1,0 +1,32 @@
+name: Build Windows exe
+
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install dependencies
+        run: python -m pip install -r requirements.txt pyinstaller==6.16.0
+      - name: Unit tests
+        run: python -m unittest discover -s tests -t . -v
+      - name: Build exe
+        run: powershell -ExecutionPolicy Bypass -File build.ps1
+      - name: Self-test packaged exe
+        shell: pwsh
+        run: |
+          $p = Start-Process -FilePath dist\StarSaviorJourneyHelper.exe -Wait -PassThru -ArgumentList @(
+            '--self-test', "$PWD\selftest.json", "$PWD\tests\fixtures\journey_event.jpg", "$PWD\tests\fixtures\arcana_event.jpg")
+          Get-Content selftest.json -Encoding utf8
+          $report = Get-Content selftest.json -Raw -Encoding utf8 | ConvertFrom-Json
+          if ($report[0].title -ne '訓練的方向性' -or $report[1].title -ne '請講關於初戀的故事') { throw 'self-test failed' }
+      - uses: actions/upload-artifact@v4
+        with:
+          name: StarSaviorJourneyHelper
+          path: dist/StarSaviorJourneyHelper.exe

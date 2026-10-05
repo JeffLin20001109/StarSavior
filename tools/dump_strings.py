@@ -60,6 +60,11 @@ def main(output):
     rows = [{'ko': t, **found.get(t, {})} for t in strings]
     Path(output).parent.mkdir(parents=True, exist_ok=True)
     Path(output).write_text(json.dumps(rows, ensure_ascii=False, indent=1), encoding='utf-8')
+    # 同名事件有多個版本的原始資料，用來研究版本之間的差異
+    multi = {key: group for key, group in raw['journeys'].items() if isinstance(group, list) and len(group) > 1}
+    Path(output).with_name('multi_variants.json').write_text(
+        json.dumps(multi, ensure_ascii=False, indent=1), encoding='utf-8')
+    print(f'{len(multi)} events with several variants')
     print(f'{len(rows)} strings, {sum(len(r["ko"]) for r in rows)} characters')
 
 

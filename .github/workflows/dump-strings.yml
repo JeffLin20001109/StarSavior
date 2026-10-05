@@ -23,6 +23,6 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add translations/source_ko.json
+          git add translations/source_ko.json translations/multi_variants.json
           git diff --cached --quiet || git commit -m "Update Korean source strings from website"
           git push

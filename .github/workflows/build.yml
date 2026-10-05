@@ -4,6 +4,9 @@ on:
   push:
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: windows-latest
@@ -30,3 +33,12 @@ jobs:
         with:
           name: StarSaviorJourneyHelper
           path: dist/StarSaviorJourneyHelper.exe
+      - name: Publish release (direct download link)
+        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest --yes --cleanup-tag 2>$null
+          $global:LASTEXITCODE = 0
+          gh release create latest dist/StarSaviorJourneyHelper.exe --target $env:GITHUB_SHA --title "StarSavior 旅程助手（最新版）" --notes "下載 StarSaviorJourneyHelper.exe 後直接雙擊執行。commit: $env:GITHUB_SHA"

@@ -5,7 +5,7 @@
 ## 使用方式
 
 1. 下載 `StarSaviorJourneyHelper.exe`，雙擊執行，不需要安裝 Python。
-   - 下載位置：GitHub → Actions → 最新一次「Build Windows exe」→ Artifacts。
+   - 下載連結（不需登入）：https://github.com/JeffLin20001109/Deity1109/releases/download/latest/StarSaviorJourneyHelper.exe
 2. 程式會自動尋找 StarSavior 的程序。找到後，「旅」按鈕會懸浮在遊戲畫面右側。
    - 遊戲還沒開時，灰色按鈕會停在螢幕右側等待。
 3. 遇到事件時，**左鍵**點按鈕。

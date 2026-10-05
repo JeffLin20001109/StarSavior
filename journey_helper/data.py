@@ -9,9 +9,7 @@ import os
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from urllib.request import Request
-
-from .net import open_url
+from . import net
 from .text import loc
 
 log = logging.getLogger(__name__)
@@ -23,17 +21,11 @@ REFERENCE_TYPES = {
     'RT_STAT_POTEN': 'stat_potentials',
     'RT_JOURNEY_BUFF': 'journey_buffs',
 }
-USER_AGENT = 'Mozilla/5.0 (StarSaviorJourneyHelper)'
 MAX_BYTES = 32_000_000
 
 
 def fetch(url, timeout=25, limit=MAX_BYTES):
-    request = Request(url, headers={'User-Agent': USER_AGENT})
-    with open_url(request, timeout=timeout) as response:
-        body = response.read(limit + 1)
-    if len(body) > limit:
-        raise ValueError(f'{url} 檔案過大')
-    return body
+    return net.get(url, timeout=timeout, limit=limit)
 
 
 class GameData:

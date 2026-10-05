@@ -6,6 +6,7 @@ python -m PyInstaller --noconfirm --clean --onefile --windowed `
     --collect-all rapidocr `
     --collect-data opencc `
     --collect-data certifi `
+    --add-data "journey_helper/translations_zh.json;journey_helper" `
     --hidden-import psutil `
     --exclude-module pkg_resources `
     --exclude-module setuptools `

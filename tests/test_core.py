@@ -70,7 +70,7 @@ class MatchRenderTests(unittest.TestCase):
     def test_render_rewards(self):
         card = self.data.cards[0]
         text = flat(self.renderer.render([{'variants': [card['events'][0]]}]))
-        self.assertIn('忍耐 +15', text)
+        self.assertIn('韌性 +15', text)
         self.assertIn('旅程效果「譯:번」（5 回合）', text)
         self.assertIn('耐力 +25', text)
         self.assertIn('譯:방어력이 오른다', text)
@@ -108,3 +108,25 @@ class MatchRenderTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class BundledTranslationTests(unittest.TestCase):
+    def test_bundled_table_loads_and_has_no_korean(self):
+        import re
+
+        from journey_helper.translate import load_table
+        table = load_table()
+        self.assertGreater(len(table), 900)
+        self.assertEqual(table['훈련의 방향성'], '訓練的方向性')
+        self.assertFalse([v for v in table.values() if re.search('[가-힣]', v)])
+
+    def test_table_is_used_before_machine_translation(self):
+        calls = []
+
+        def backend(text):
+            calls.append(text)
+            return '機翻'
+        translator = Translator(dict(DEFAULTS), backend=backend, table={'도를 아십니까': '你信「道」嗎'})
+        result = translator.translate_many(['도를 아십니까', '새 문장'])
+        self.assertEqual(result, {'도를 아십니까': '你信「道」嗎', '새 문장': '機翻'})
+        self.assertEqual(calls, ['새 문장'])

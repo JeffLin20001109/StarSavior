@@ -5,10 +5,8 @@ import os
 import threading
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from urllib.parse import urlencode
-from urllib.request import Request
 
-from .net import open_url
+from . import net
 
 log = logging.getLogger(__name__)
 
@@ -35,17 +33,22 @@ def _parse_google(payload):
     return _first_string(payload)
 
 
+_working_endpoint = 0  # 上次成功的端點，下次優先使用
+
+
 def _google(text):
-    """依序嘗試多個 Google 翻譯端點，每個重試一次。"""
+    """依序嘗試多個 Google 翻譯端點，每個重試一次；連線會重複使用。"""
+    global _working_endpoint
+    order = [_working_endpoint] + [i for i in range(len(GOOGLE_ENDPOINTS)) if i != _working_endpoint]
     last = None
-    for url, params in GOOGLE_ENDPOINTS:
-        query = urlencode(dict(params, sl='ko', tl='zh-TW', q=text))
+    for index in order:
+        url, params = GOOGLE_ENDPOINTS[index]
         for _ in range(ATTEMPTS):
             try:
-                request = Request(url + '?' + query, headers={'User-Agent': 'Mozilla/5.0'})
-                with open_url(request, timeout=10) as response:
-                    translated = _parse_google(json.loads(response.read().decode('utf-8')))
+                body = net.get(url, timeout=8, params=dict(params, sl='ko', tl='zh-TW', q=text))
+                translated = _parse_google(json.loads(body.decode('utf-8')))
                 if translated:
+                    _working_endpoint = index
                     return translated
                 last = ValueError(f'{url} 回傳空白')
             except Exception as exc:
@@ -56,17 +59,32 @@ def _google(text):
 
 def _deepl(text, key):
     host = 'api-free.deepl.com' if key.endswith(':fx') else 'api.deepl.com'
-    body = urlencode({'text': text, 'source_lang': 'KO', 'target_lang': 'ZH-HANT'}).encode('utf-8')
-    request = Request(f'https://{host}/v2/translate', data=body,
-                      headers={'Authorization': 'DeepL-Auth-Key ' + key})
-    with open_url(request, timeout=10) as response:
-        payload = json.loads(response.read().decode('utf-8'))
-    return payload['translations'][0]['text']
+    body = net.post(f'https://{host}/v2/translate', timeout=10,
+                    data={'text': text, 'source_lang': 'KO', 'target_lang': 'ZH-HANT'},
+                    headers={'Authorization': 'DeepL-Auth-Key ' + key})
+    return json.loads(body.decode('utf-8'))['translations'][0]['text']
+
+
+BUNDLED_TABLE = Path(__file__).with_name('translations_zh.json')
+
+
+def load_table(path=BUNDLED_TABLE):
+    """程式內建的人工校對譯文（韓文 → 繁中）。"""
+    try:
+        table = json.loads(Path(path).read_text(encoding='utf-8'))
+        return table if isinstance(table, dict) else {}
+    except (OSError, ValueError) as exc:
+        log.warning('無法載入內建譯文：%s', exc)
+        return {}
 
 
 class Translator:
-    def __init__(self, config, cache_path=None, backend=None):
+    """翻譯優先順序：設定檔 ko_glossary → 內建譯文表 → 本機快取 → 線上機器翻譯。"""
+
+    def __init__(self, config, cache_path=None, backend=None, table=None):
         self.config = config
+        # 測試注入假翻譯時預設不使用內建譯文表，以免結果被譯文表取代
+        self.table = table if table is not None else ({} if backend else load_table())
         self.cache_path = Path(cache_path) if cache_path else None
         self.backend = backend  # 測試時可注入假的翻譯函式
         self.failed = False
@@ -102,6 +120,8 @@ class Translator:
         for text in dict.fromkeys(t for t in texts if t):
             if text in glossary:
                 result[text] = glossary[text]
+            elif text in self.table:
+                result[text] = self._post(self.table[text])
             elif text in self._cache:
                 result[text] = self._post(self._cache[text])
             else:

@@ -6,6 +6,7 @@ import logging
 import os
 import queue
 import threading
+import time
 import tkinter as tk
 
 from . import winapi
@@ -213,8 +214,8 @@ class App:
         self.data = None
         self.data_status = '正在下載網站資料…'
         self.translator = Translator(self.config, self.dir / 'translations.json')
-        cards = CardMatcher(self.config['site_url'], self.dir / 'cards')
-        self.pipeline = Pipeline(self.ocr, lambda: self.data, cards,
+        self.cards = CardMatcher(self.config['site_url'], self.dir / 'cards')
+        self.pipeline = Pipeline(self.ocr, lambda: self.data, self.cards,
                                  lambda data: Renderer(data, self.translator, self.config), self.config)
         self.results = queue.Queue()
         self.hwnd = None
@@ -249,6 +250,7 @@ class App:
                 log.info('%s：%d 個旅程事件、%d 張阿爾克那', status, data.journey_count(), len(data.cards))
                 if first:
                     self._rerun_pending()
+                    threading.Thread(target=self._prefetch_cards, args=(data,), daemon=True).start()
                 stale = status.startswith('無法連線')
             except Exception as exc:
                 log.warning('網站資料載入失敗（第 %d 次）：%s', attempt, exc)
@@ -261,6 +263,22 @@ class App:
                 wait, delay, attempt = max_age * 3600, 5, 0
             self._retry_now.wait(wait)
             self._retry_now.clear()
+
+    def _prefetch_cards(self, data):
+        """先在背景下載所有卡圖並算好特徵，第一次遇到阿爾克那事件時就不用等下載。"""
+        from concurrent.futures import ThreadPoolExecutor
+
+        def one(card):
+            try:
+                self.cards.reference(card)
+                return True
+            except Exception as exc:
+                log.warning('預先下載卡圖 %s 失敗：%s', card.get('id'), exc)
+                return False
+
+        with ThreadPoolExecutor(max_workers=4) as pool:
+            done = sum(pool.map(one, data.cards))
+        log.info('卡圖預先下載完成：%d / %d', done, len(data.cards))
 
     def _rerun_pending(self):
         frame, self._pending_frame = self._pending_frame, None
@@ -377,11 +395,15 @@ class App:
         threading.Thread(target=self._work, args=(frame,), daemon=True).start()
 
     def _work(self, frame):
+        started = time.perf_counter()
         try:
             result = self.pipeline.run(frame)
         except Exception as exc:
             log.exception('辨識失敗')
             result = Result('發生錯誤', [[(f'{type(exc).__name__}: {exc}', 'warn')]])
+        elapsed = time.perf_counter() - started
+        log.info('辨識完成：%s，耗時 %.2f 秒', result.title, elapsed)
+        result.lines.append([(f'耗時 {elapsed:.1f} 秒', 'dim')])
         if result.title == '資料尚未就緒':
             # 資料還沒好：記住這張截圖，下載成功後自動重新辨識，並立刻再試一次下載
             self._pending_frame = frame

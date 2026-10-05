@@ -97,8 +97,12 @@ class Pipeline:
             sections.append({'variants': events})
         renderer = self.renderer_factory(data)
         card_ko = loc(card.get('name'), 'ko-KR')
-        card_zh = renderer.translator.translate_many([card_ko]).get(card_ko, card_ko) if card_ko else '?'
-        header = [[(f'阿爾克那：{card_zh}', 'h2')] + ([('  ' + card_ko, 'orig')] if card_ko and card_zh != card_ko else []),
+        char_ko = loc(card.get('char_name'), 'ko-KR')
+        names = renderer.translator.translate_many([t for t in (card_ko, char_ko) if t])
+        card_zh = names.get(card_ko, card_ko) if card_ko else '?'
+        title = f'阿爾克那：{card_zh}' + (f'（{names.get(char_ko, char_ko)}）' if char_ko else '')
+        original = ' '.join(t for t in (card_ko, char_ko) if t)
+        header = [[(title, 'h2')] + ([('  ' + original, 'orig')] if original and card_zh != card_ko else []),
                   [(f'事件：{event.title}', 'note')]]
         header += [[(n, 'warn')] for n in notes]
         if failures:

@@ -44,7 +44,7 @@ def raw_data():
     return {
         'journeys': {'훈련의 방향성': [training, training_late], '고대 구원자의 유물': [relic]},
         'arcanas': [
-            {'id': 1, 'name': name('하늘의 시험', '上天的考驗'), 'events': [first_love, dao]},
+            {'id': 1, 'name': name('하늘의 시험', '上天的考驗'), 'char_name': name('엘리사', '艾莉莎'), 'events': [first_love, dao]},
             {'id': 2, 'name': name('흰 달의 포옹', '白月溫煦如陽光'), 'events': [other_love]},
             {'id': 3, 'name': name('다른 카드', '其他卡片'), 'events': [dao]},
         ],

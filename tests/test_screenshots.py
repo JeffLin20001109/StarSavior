@@ -56,7 +56,7 @@ class ScreenshotTests(unittest.TestCase):
         result = self.pipeline(cards).run(self.frame('arcana_event.jpg'))
         text = flat(result.lines)
         self.assertTrue(result.found, text)
-        self.assertIn('阿爾克那：譯:하늘의 시험', text)
+        self.assertIn('阿爾克那：譯:하늘의 시험（譯:엘리사）', text)
         self.assertLess(text.index('譯:첫사랑 얘기 해주세요'), text.index('譯:도를 아십니까'))
         self.assertIn('這張卡的其他事件', text)
         self.assertEqual(sorted(cards.calls[0]), [1, 2])  # 只比對事件名稱相符的卡

@@ -12,15 +12,46 @@ from .net import open_url
 
 log = logging.getLogger(__name__)
 
-GOOGLE_URL = 'https://translate.googleapis.com/translate_a/single'
+GOOGLE_ENDPOINTS = (
+    ('https://translate.googleapis.com/translate_a/single', {'client': 'gtx', 'dt': 't'}),
+    ('https://translate.google.com/translate_a/single', {'client': 'gtx', 'dt': 't'}),
+    ('https://clients5.google.com/translate_a/t', {'client': 'dict-chrome-ex'}),
+)
+ATTEMPTS = 2
+
+
+def _first_string(value):
+    while isinstance(value, list) and value:
+        value = value[0]
+    return value if isinstance(value, str) else ''
+
+
+def _parse_google(payload):
+    # translate_a/single：[[["譯文","原文",...], ...], ...]
+    if isinstance(payload, list) and payload and isinstance(payload[0], list) \
+            and payload[0] and isinstance(payload[0][0], list):
+        return ''.join(part[0] for part in payload[0] if part and isinstance(part[0], str))
+    # translate_a/t：["譯文"] 或 [["譯文","ko"]]
+    return _first_string(payload)
 
 
 def _google(text):
-    query = urlencode({'client': 'gtx', 'sl': 'ko', 'tl': 'zh-TW', 'dt': 't', 'q': text})
-    request = Request(GOOGLE_URL + '?' + query, headers={'User-Agent': 'Mozilla/5.0'})
-    with open_url(request, timeout=10) as response:
-        payload = json.loads(response.read().decode('utf-8'))
-    return ''.join(part[0] for part in payload[0] if part and part[0])
+    """依序嘗試多個 Google 翻譯端點，每個重試一次。"""
+    last = None
+    for url, params in GOOGLE_ENDPOINTS:
+        query = urlencode(dict(params, sl='ko', tl='zh-TW', q=text))
+        for _ in range(ATTEMPTS):
+            try:
+                request = Request(url + '?' + query, headers={'User-Agent': 'Mozilla/5.0'})
+                with open_url(request, timeout=10) as response:
+                    translated = _parse_google(json.loads(response.read().decode('utf-8')))
+                if translated:
+                    return translated
+                last = ValueError(f'{url} 回傳空白')
+            except Exception as exc:
+                last = exc
+                log.warning('翻譯端點 %s 失敗：%s', url, exc)
+    raise last
 
 
 def _deepl(text, key):
@@ -39,6 +70,7 @@ class Translator:
         self.cache_path = Path(cache_path) if cache_path else None
         self.backend = backend  # 測試時可注入假的翻譯函式
         self.failed = False
+        self.last_error = None
         self._lock = threading.Lock()
         self._cache = {}
         if self.cache_path and self.cache_path.exists():
@@ -87,6 +119,7 @@ class Translator:
                     if error is not None or not translated:
                         log.warning('翻譯失敗：%s (%s)', text, error)
                         self.failed = True
+                        self.last_error = f'{type(error).__name__}: {error}' if error else '空白結果'
                         result[text] = text
                     else:
                         with self._lock:

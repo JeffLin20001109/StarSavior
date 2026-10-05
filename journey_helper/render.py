@@ -42,7 +42,9 @@ class Renderer:
         self._T = lambda ko: mapping.get(ko, ko)
         lines = self._lines(sections)
         if getattr(self.translator, 'failed', False):
-            lines.insert(0, [('部分文字無法連線翻譯，暫時顯示韓文原文。', 'warn')])
+            reason = getattr(self.translator, 'last_error', None)
+            lines.insert(0, [('部分文字無法連線翻譯，暫時顯示韓文原文；下次點擊會自動重新翻譯。'
+                              + (f'（{reason}）' if reason else ''), 'warn')])
         return lines
 
     # ---- 內部 ----
@@ -59,8 +61,13 @@ class Renderer:
             if section.get('heading'):
                 lines.append([(section['heading'], 'h2')])
             variants = self._distinct(section.get('variants') or [])
-            for index, variant in enumerate(variants, 1):
-                lines.extend(self._variant(variant, index if len(variants) > 1 else 0))
+            # 只有同名事件之間才標示「版本 n」
+            names = [json.dumps(v.get('name'), ensure_ascii=False, sort_keys=True) for v in variants]
+            seen = {}
+            for variant, key in zip(variants, names):
+                seen[key] = seen.get(key, 0) + 1
+                number = seen[key] if names.count(key) > 1 else 0
+                lines.extend(self._variant(variant, number))
             lines.append([('', 'dim')])
         while lines and lines[-1] == [('', 'dim')]:
             lines.pop()

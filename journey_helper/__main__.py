@@ -74,7 +74,8 @@ def network_check():
         result.update(card_image_error=f'{type(exc).__name__}: {exc}')
     try:
         translator = Translator(dict(DEFAULTS))
-        result.update(translation=translator.translate_many(['첫사랑 얘기 해주세요']), translation_failed=translator.failed)
+        result.update(translation=translator.translate_many(['첫사랑 얘기 해주세요']), translation_failed=translator.failed,
+                      translation_error=translator.last_error)
     except Exception as exc:
         result.update(translation_error=f'{type(exc).__name__}: {exc}')
     return result

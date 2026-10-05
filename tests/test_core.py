@@ -76,6 +76,21 @@ class MatchRenderTests(unittest.TestCase):
         self.assertIn('譯:방어력이 오른다', text)
         self.assertIn('방어의 감각', text)  # 韓文原文
 
+    def test_version_label_only_for_same_name(self):
+        card = self.data.cards[0]
+        text = flat(self.renderer.render([{'variants': card['events']}]))
+        self.assertNotIn('版本', text)
+        variants = match_journey(self.data, '訓練的方向性', None).variants
+        text = flat(self.renderer.render([{'variants': variants}]))
+        self.assertIn('版本 1', text)
+        self.assertIn('版本 2', text)
+
+    def test_google_response_formats(self):
+        from journey_helper.translate import _parse_google
+        self.assertEqual(_parse_google([[['請講', '첫', None], ['故事', '얘기', None]], None, 'ko']), '請講故事')
+        self.assertEqual(_parse_google(['請講故事']), '請講故事')
+        self.assertEqual(_parse_google([['請講故事', 'ko']]), '請講故事')
+
     def test_translation_failure_keeps_korean(self):
         def broken(text):
             raise OSError('offline')

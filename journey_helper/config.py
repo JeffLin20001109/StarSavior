@@ -16,8 +16,6 @@ DEFAULTS = {
     # 翻譯：google（免金鑰）、deepl（需填 deepl_api_key）、none（直接顯示韓文）
     'translator': 'google',
     'deepl_api_key': '',
-    # 在翻譯下方以灰色小字顯示韓文原文
-    'show_korean': True,
     # 只顯示某難度的事件版本：''（全部）、'Easy'、'Normal'、'Hard'
     'difficulty': '',
     # 懸浮按鈕位置：相對於遊戲畫面寬高的比例（拖曳按鈕後會自動儲存）

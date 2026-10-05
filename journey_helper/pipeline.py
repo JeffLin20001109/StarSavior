@@ -85,25 +85,21 @@ class Pipeline:
             return self._not_found('阿爾克那事件', event.title, [(s, loc(e.get('name'), 'zh-TW'))
                                                               for s, _, e in ranked[:3] if s > 0.3])
         matched_event, score = matching.best_event_in_card(card, event.title)
-        events = [e for e in card.get('events') or [] if isinstance(e, dict)]
-        sections = []
-        if matched_event is not None and score >= matching.MIN_SCORE - 0.1:
-            sections.append({'variants': [matched_event]})
-            others = [e for e in events if e is not matched_event]
-            if others:
-                sections.append({'heading': '── 這張卡的其他事件 ──', 'variants': others})
-        else:
-            notes.append('（這張卡找不到同名事件，顯示整張卡的事件）')
-            sections.append({'variants': events})
+        if matched_event is None:
+            return _msg('找不到事件', f'卡片「{data.card_name(card)}」沒有任何事件資料。', style='warn')
+        if score < matching.MIN_SCORE - 0.1:
+            notes.append(f'（這張卡找不到同名事件，顯示最接近的事件，相似度 {score:.0%}）')
+        # 只顯示目前遇到的事件（同名的多個版本一起列出）
+        same_name = [e for e in card.get('events') or []
+                     if isinstance(e, dict) and e.get('name') == matched_event.get('name')]
+        sections = [{'variants': same_name or [matched_event]}]
         renderer = self.renderer_factory(data)
         card_ko = loc(card.get('name'), 'ko-KR')
         char_ko = loc(card.get('char_name'), 'ko-KR')
         names = renderer.translator.translate_many([t for t in (card_ko, char_ko) if t])
         card_zh = names.get(card_ko, card_ko) if card_ko else '?'
         title = f'阿爾克那：{card_zh}' + (f'（{names.get(char_ko, char_ko)}）' if char_ko else '')
-        original = ' '.join(t for t in (card_ko, char_ko) if t)
-        header = [[(title, 'h2')] + ([('  ' + original, 'orig')] if original and card_zh != card_ko else []),
-                  [(f'事件：{event.title}', 'note')]]
+        header = [[(title, 'h2')], [(f'事件：{event.title}', 'note')]]
         header += [[(n, 'warn')] for n in notes]
         if failures:
             header.append([(f'（有 {failures} 張卡圖無法下載）', 'dim')])

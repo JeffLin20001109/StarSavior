@@ -63,6 +63,7 @@ class MatchRenderTests(unittest.TestCase):
         text = flat(self.renderer.render([{'variants': match_journey(self.data, '訓練的方向性', (3, 'early')).variants}]))
         self.assertIn('譯:훈련의 방향성', text)
         self.assertIn('① 譯:1. 공격에 도움이 되는 훈련 교본', text)
+        self.assertNotIn('교본  1.', text)  # 不附韓文原文
         self.assertIn('譯:기초 훈련 교본 - 공격편 +1', text)
         self.assertIn('3月上旬', text)
         self.assertNotIn('基礎訓練教本', text)  # 不使用網站的中文
@@ -74,7 +75,7 @@ class MatchRenderTests(unittest.TestCase):
         self.assertIn('旅程效果「譯:번」（5 回合）', text)
         self.assertIn('耐力 +25', text)
         self.assertIn('譯:방어력이 오른다', text)
-        self.assertIn('방어의 감각', text)  # 韓文原文
+        self.assertNotIn('  방어의 감각', text)  # 不再附韓文原文
 
     def _render(self, variants):
         return flat(self.renderer.render([{'variants': variants}]))
@@ -168,3 +169,28 @@ class BundledTranslationTests(unittest.TestCase):
         result = translator.translate_many(['도를 아십니까', '새 문장'])
         self.assertEqual(result, {'도를 아십니까': '你信「道」嗎', '새 문장': '機翻'})
         self.assertEqual(calls, ['새 문장'])
+
+
+class RewardColorTests(unittest.TestCase):
+    def test_basic_stats_plain_and_named_rewards_dark_yellow(self):
+        data = GameData(raw_data())
+        config = dict(DEFAULTS)
+        renderer = Renderer(data, Translator(config, backend=fake_translate), config)
+        lines = renderer.render([{'variants': [data.cards[0]['events'][0]]}])
+        styles = {text.strip('・　 '): style for line in lines for text, style in line}
+        self.assertEqual(styles['韌性 +15'], 'effect')
+        self.assertEqual(styles['耐力 +25'], 'effect')
+        self.assertEqual(styles['譯:방어의 감각'], 'special')
+        self.assertEqual(styles['旅程效果「譯:번」（5 回合）'], 'special')
+        self.assertEqual(styles['譯:방어력이 오른다'], 'dim')  # 說明文字顏色不變
+
+    def test_deductions_are_red(self):
+        from tests.helpers import stat
+        data = GameData(raw_data())
+        config = dict(DEFAULTS)
+        renderer = Renderer(data, Translator(config, backend=fake_translate), config)
+        event = {'name': {'ko-KR': '과식'}, 'choices': [{'name': {}, 'success_rewards': [
+            [{'type': 'RT_STAMINA', 'min': -10, 'max': -10}], [stat('POWER', 5)]]}]}
+        styles = {text.strip('・　 '): style for line in renderer.render([{'variants': [event]}]) for text, style in line}
+        self.assertEqual(styles['耐力 -10'], 'minus')
+        self.assertEqual(styles['力量 +5'], 'effect')

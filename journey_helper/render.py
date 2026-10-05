@@ -1,7 +1,7 @@
 """把網站的韓文事件資料整理成彈出小窗要顯示的繁中文字。
 
 每一行是 [(文字, 樣式)] 的串列；樣式：h1 事件名、h2 區段、choice 選項、effect 效果、
-note 附註、warn 警告、dim 說明、orig 韓文原文。
+note 附註、warn 警告、dim 說明、special 基本能力以外的獎勵（道具、潛力、旅程效果等）、minus 扣減的項目。
 """
 import json
 
@@ -10,6 +10,8 @@ from .text import loc, phase_zh
 
 DIFFICULTY_ZH = {'Easy': '簡單', 'Normal': '普通', 'Hard': '困難'}
 CIRCLED = '①②③④⑤⑥⑦⑧⑨⑩'
+# 基本能力與資源：用一般顏色；其他獎勵（道具、潛力、旅程效果、遺物…）用暗黃色
+BASIC_TYPES = {'RT_STAT', 'RT_STAMINA', 'RT_CONDITION', 'RT_COIN', 'RT_POTEN_POINT', 'RT_ARCANA_POINT'}
 
 
 def _amount(entry):
@@ -49,11 +51,7 @@ class Renderer:
 
     # ---- 內部 ----
     def _with_orig(self, ko, style, prefix=''):
-        zh = self._T(ko)
-        segments = [(prefix + zh, style)]
-        if self.config.get('show_korean', True) and zh != ko:
-            segments.append(('  ' + ko, 'orig'))
-        return segments
+        return [(prefix + self._T(ko), style)]
 
     def _lines(self, sections):
         lines = []
@@ -197,17 +195,27 @@ class Renderer:
         lines = []
         for group in groups:
             entries = group if isinstance(group, list) else [group]
-            labels, descriptions = [], []
+            segments, descriptions = [], []
             for entry in entries:
                 if isinstance(entry, dict):
                     label, detail = self._reward(entry)
-                    labels.append(label)
+                    if segments:
+                        segments.append((' 或 ', 'effect'))
+                    segments.append((label, self._reward_style(entry)))
                     descriptions.extend(detail)
-            if labels:
-                lines.append([('　・' + ' 或 '.join(labels), 'effect')])
+            if segments:
+                lines.append([('　・', 'effect')] + segments)
                 if show_details:
                     lines.extend([[('　　' + d, 'dim')] for d in descriptions])
         return lines or [[('　・無效果', 'effect')]]
+
+    @staticmethod
+    def _reward_style(entry):
+        """扣減（負數）用紅色；基本能力用一般顏色；其他獎勵用暗黃色。"""
+        low, high = entry.get('min'), entry.get('max', entry.get('min'))
+        if any(isinstance(v, (int, float)) and v < 0 for v in (low, high)):
+            return 'minus'
+        return 'effect' if entry.get('type') in BASIC_TYPES else 'special'
 
     def _reward(self, entry):
         kind = entry.get('type', '')

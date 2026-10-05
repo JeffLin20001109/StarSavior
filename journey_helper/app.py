@@ -31,7 +31,8 @@ STYLES = {
     'note': dict(font=(FONT, 10), foreground='#4a4f57'),
     'warn': dict(font=(FONT, 10), foreground='#b3261e'),
     'dim': dict(font=(FONT, 9), foreground='#5f6670'),
-    'orig': dict(font=('Malgun Gothic', 9), foreground='#9aa0a8'),
+    'special': dict(font=(FONT, 11), foreground='#9a7400'),
+    'minus': dict(font=(FONT, 11), foreground='#c62828'),
 }
 
 

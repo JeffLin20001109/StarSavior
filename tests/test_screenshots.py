@@ -57,8 +57,9 @@ class ScreenshotTests(unittest.TestCase):
         text = flat(result.lines)
         self.assertTrue(result.found, text)
         self.assertIn('阿爾克那：譯:하늘의 시험（譯:엘리사）', text)
-        self.assertLess(text.index('譯:첫사랑 얘기 해주세요'), text.index('譯:도를 아십니까'))
-        self.assertIn('這張卡的其他事件', text)
+        self.assertIn('譯:첫사랑 얘기 해주세요', text)
+        self.assertNotIn('도를 아십니까', text)  # 只顯示目前遇到的事件
+        self.assertNotIn('하늘의 시험（譯:엘리사）  ', text)  # 不顯示韓文原文
         self.assertEqual(sorted(cards.calls[0]), [1, 2])  # 只比對事件名稱相符的卡
 
     def test_pipeline_no_event(self):

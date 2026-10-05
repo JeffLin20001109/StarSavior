@@ -76,14 +76,52 @@ class MatchRenderTests(unittest.TestCase):
         self.assertIn('譯:방어력이 오른다', text)
         self.assertIn('방어의 감각', text)  # 韓文原文
 
-    def test_version_label_only_for_same_name(self):
-        card = self.data.cards[0]
-        text = flat(self.renderer.render([{'variants': card['events']}]))
-        self.assertNotIn('版本', text)
-        variants = match_journey(self.data, '訓練的方向性', None).variants
-        text = flat(self.renderer.render([{'variants': variants}]))
-        self.assertIn('版本 1', text)
-        self.assertIn('版本 2', text)
+    def _render(self, variants):
+        return flat(self.renderer.render([{'variants': variants}]))
+
+    def test_different_events_are_not_labelled(self):
+        text = self._render(self.data.cards[0]['events'])
+        self.assertNotIn('可能結果', text)
+        self.assertNotIn('〔', text)
+
+    def test_reward_only_variants_merge_into_possible_results(self):
+        from tests.helpers import name, stat
+        wait = {'name': name('잠시 기다리자.', '再等一下'), 'success_rewards': []}
+        help1 = {'name': name('도와 주자.', '去幫忙'), 'condition': {'type': 'RR_STAMINA_USE', 'value': 20},
+                 'success_rewards': [[{'type': 'RT_COIN', 'min': 30, 'max': 30}]],
+                 'failure_rewards': [[{'type': 'RT_COIN', 'min': 50, 'max': 50}]]}
+        help2 = dict(help1, failure_rewards=None, success_rewards=[[stat('POWER', 5)]])
+        base = {'name': name('리세트의 일과', '莉賽特的日常'), 'times': ['4월 하순']}
+        text = self._render([dict(base, id=1, choices=[help1, wait]), dict(base, id=2, choices=[help2, wait])])
+        self.assertEqual(text.count('譯:리세트의 일과'), 1)
+        self.assertIn('網站列出 2 種可能結果', text)
+        self.assertIn('〔可能結果 1〕', text)
+        self.assertIn('〔可能結果 2〕', text)
+        self.assertEqual(text.count('條件／消耗：耐力 -20'), 1)  # 共同條件只顯示一次
+        self.assertIn('古幣 +30', text)
+        wait_part = text[text.index('譯:잠시 기다리자.'):]
+        self.assertNotIn('〔', wait_part)  # 兩個版本結果相同的選項不分開列
+
+    def test_difficulty_variants_are_labelled_by_difficulty(self):
+        from tests.helpers import name, stat
+        base = {'name': name('미궁 탐사', '迷宮探勘'), 'times': ['7월 초순']}
+        variants = [dict(base, id=i, difficulties=[name(d, d, d)],
+                         choices=[{'name': name('간다', '去'), 'success_rewards': [[stat('POWER', 5 * i)]]}])
+                    for i, d in enumerate(['Easy', 'Normal', 'Hard'], 1)]
+        text = self._render(variants)
+        self.assertIn('〔簡單〕', text)
+        self.assertIn('〔困難〕', text)
+        self.assertNotIn('可能結果', text)
+
+    def test_many_results_hide_descriptions(self):
+        from tests.helpers import name
+        base = {'name': name('대마녀의 부름', '大魔女的呼喚')}
+        variants = [dict(base, id=i, choices=[{'name': {}, 'success_rewards': [
+            [{'type': 'RT_SE_POTEN', 'reward_id': 7}], [{'type': 'RT_POTEN_POINT', 'min': i, 'max': i}]]}])
+            for i in range(1, 11)]
+        text = self._render(variants)
+        self.assertIn('〔可能結果 10〕', text)
+        self.assertNotIn('방어력이 오른다', text)
 
     def test_google_response_formats(self):
         from journey_helper.translate import _parse_google

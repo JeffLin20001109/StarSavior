@@ -25,7 +25,7 @@ DEFAULTS = {
     # 固定遊戲用語（由程式翻譯，不使用網站的中文）
     'terms': {
         'POWER': '力量', 'HEALTH': '體力', 'ENDURANCE': '韌性', 'FOCUS': '專注', 'PROTECT': '保護',
-        'RT_STAMINA': '耐力', 'RT_COIN': '舊硬幣', 'RT_CONDITION': '狀態',
+        'RT_STAMINA': '耐力', 'RT_COIN': '古幣', 'RT_CONDITION': '狀態',
         'RT_POTEN_POINT': '潛力點數', 'RT_ARCANA_POINT': '羈絆點數',
         'SELECTABLE_CHARM': '可選擇的遺物',
         'RT_JOURNEY_BUFF_REMOVE_NEG': '解除負面旅程效果',
@@ -41,7 +41,7 @@ DEFAULTS = {
 
 
 # 舊版的預設用語；使用者沒改過的話自動換成新的預設值
-OLD_DEFAULT_TERMS = {'ENDURANCE': '忍耐', 'FOCUS': '集中', 'RT_POTEN_POINT': '潛能點數'}
+OLD_DEFAULT_TERMS = {'ENDURANCE': '忍耐', 'FOCUS': '集中', 'RT_POTEN_POINT': '潛能點數', 'RT_COIN': '舊硬幣'}
 
 
 def app_dir():

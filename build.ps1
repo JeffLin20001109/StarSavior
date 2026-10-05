@@ -5,6 +5,7 @@ python -m PyInstaller --noconfirm --clean --onefile --windowed `
     --name StarSaviorJourneyHelper `
     --collect-all rapidocr `
     --collect-data opencc `
+    --collect-data certifi `
     --hidden-import psutil `
     --exclude-module pkg_resources `
     --exclude-module setuptools `

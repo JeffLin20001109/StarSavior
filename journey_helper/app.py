@@ -222,6 +222,9 @@ class App:
         self.rect = None
         self.busy = False
         self._search_countdown = 0
+        self._closing = False
+        self._pending_frame = None
+        self._retry_now = threading.Event()
         self.button = FloatingButton(self, int(48 * self.scale))
         self.popup = Popup(self, self.scale)
         threading.Thread(target=self._load_data, daemon=True).start()
@@ -232,14 +235,38 @@ class App:
 
     # ---- 背景工作 ----
     def _load_data(self):
-        try:
-            self.data, self.data_status = load_data(self.config['site_url'], self.dir,
-                                                    self.config.get('data_max_age_hours', 12))
-            log.info('%s：%d 個旅程事件、%d 張阿爾克那', self.data_status,
-                     self.data.journey_count(), len(self.data.cards))
-        except Exception as exc:
-            log.exception('網站資料載入失敗')
-            self.data_status = str(exc)
+        """下載網站資料；失敗會自動重試（5 秒起，最長每 60 秒一次），成功後定期更新。"""
+        delay, attempt = 5, 0
+        max_age = float(self.config.get('data_max_age_hours', 12))
+        while not self._closing:
+            attempt += 1
+            if self.data is None and attempt > 1:
+                self.data_status = f'正在重新下載網站資料（第 {attempt} 次）…'
+            try:
+                data, status = load_data(self.config['site_url'], self.dir, max_age)
+                first = self.data is None
+                self.data, self.data_status = data, status
+                log.info('%s：%d 個旅程事件、%d 張阿爾克那', status, data.journey_count(), len(data.cards))
+                if first:
+                    self._rerun_pending()
+                stale = status.startswith('無法連線')
+            except Exception as exc:
+                log.warning('網站資料載入失敗（第 %d 次）：%s', attempt, exc)
+                self.data_status = f'下載失敗，{delay} 秒後自動重試（已試 {attempt} 次）：{exc}'
+                stale = True
+            if stale:
+                wait = delay
+                delay = min(delay * 2, 60)
+            else:
+                wait, delay, attempt = max_age * 3600, 5, 0
+            self._retry_now.wait(wait)
+            self._retry_now.clear()
+
+    def _rerun_pending(self):
+        frame, self._pending_frame = self._pending_frame, None
+        if frame is not None:
+            log.info('網站資料就緒，自動重新辨識上一次的畫面')
+            threading.Thread(target=self._work, args=(frame,), daemon=True).start()
 
     def _warm_up(self):
         try:
@@ -355,8 +382,16 @@ class App:
         except Exception as exc:
             log.exception('辨識失敗')
             result = Result('發生錯誤', [[(f'{type(exc).__name__}: {exc}', 'warn')]])
-        if self.data is None:
-            result.lines.append([('網站資料：' + self.data_status, 'dim')])
+        if result.title == '資料尚未就緒':
+            # 資料還沒好：記住這張截圖，下載成功後自動重新辨識，並立刻再試一次下載
+            self._pending_frame = frame
+            self._retry_now.set()
+            result.lines.append([('狀態：' + self.data_status, 'dim')])
+            result.lines.append([('資料下載完成後會自動重新辨識這個畫面，不需要再點。', 'note')])
+            self.results.put(result)
+            if self.data is not None:  # 剛好在這段期間下載完成
+                self._rerun_pending()
+            return
         self.results.put(result)
 
     def _pump(self):
@@ -377,6 +412,8 @@ class App:
 
     def quit(self):
         log.info('結束程式')
+        self._closing = True
+        self._retry_now.set()
         self.root.destroy()
 
     def run(self):

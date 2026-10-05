@@ -6,7 +6,9 @@ import threading
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from urllib.parse import urlencode
-from urllib.request import Request, urlopen
+from urllib.request import Request
+
+from .net import open_url
 
 log = logging.getLogger(__name__)
 
@@ -16,7 +18,7 @@ GOOGLE_URL = 'https://translate.googleapis.com/translate_a/single'
 def _google(text):
     query = urlencode({'client': 'gtx', 'sl': 'ko', 'tl': 'zh-TW', 'dt': 't', 'q': text})
     request = Request(GOOGLE_URL + '?' + query, headers={'User-Agent': 'Mozilla/5.0'})
-    with urlopen(request, timeout=10) as response:
+    with open_url(request, timeout=10) as response:
         payload = json.loads(response.read().decode('utf-8'))
     return ''.join(part[0] for part in payload[0] if part and part[0])
 
@@ -26,7 +28,7 @@ def _deepl(text, key):
     body = urlencode({'text': text, 'source_lang': 'KO', 'target_lang': 'ZH-HANT'}).encode('utf-8')
     request = Request(f'https://{host}/v2/translate', data=body,
                       headers={'Authorization': 'DeepL-Auth-Key ' + key})
-    with urlopen(request, timeout=10) as response:
+    with open_url(request, timeout=10) as response:
         payload = json.loads(response.read().decode('utf-8'))
     return payload['translations'][0]['text']
 

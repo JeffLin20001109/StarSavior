@@ -9,8 +9,9 @@ import os
 import time
 from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from urllib.request import Request, urlopen
+from urllib.request import Request
 
+from .net import open_url
 from .text import loc
 
 log = logging.getLogger(__name__)
@@ -28,7 +29,7 @@ MAX_BYTES = 32_000_000
 
 def fetch(url, timeout=25, limit=MAX_BYTES):
     request = Request(url, headers={'User-Agent': USER_AGENT})
-    with urlopen(request, timeout=timeout) as response:
+    with open_url(request, timeout=timeout) as response:
         body = response.read(limit + 1)
     if len(body) > limit:
         raise ValueError(f'{url} 檔案過大')

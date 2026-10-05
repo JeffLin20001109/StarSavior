@@ -3,7 +3,7 @@ import logging
 from dataclasses import dataclass, field
 
 from . import matching
-from .ocr import ARCANA, JOURNEY, card_crop, find_event, scan_crop
+from .ocr import JOURNEY, card_crop, find_event, scan_crop
 from .text import loc
 
 log = logging.getLogger(__name__)
@@ -38,7 +38,7 @@ class Pipeline:
                         '辨識到的文字：' + seen)
         data = self.data_provider()
         if data is None:
-            return _msg('資料尚未就緒', '網站資料還在下載中，請稍後再點一次。', style='warn')
+            return _msg('資料尚未就緒', f'已辨識到事件「{event.title}」，但網站資料還沒取得，程式正在自動重試。', style='warn')
         if event.kind == JOURNEY:
             return self._journey(event, data)
         return self._arcana(event, data, frame)

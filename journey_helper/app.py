@@ -158,33 +158,81 @@ class Popup:
         self.title.configure(text=result.title)
         self.text.configure(state='normal')
         self.text.delete('1.0', 'end')
+        for tag in self.text.tag_names():
+            if tag.startswith('fold'):
+                self.text.tag_delete(tag)
+        self._folds = {}
         for i, line in enumerate(result.lines):
+            fold = getattr(line, 'fold', None)
+            extra = ()
+            if fold and fold[0] == 'head':
+                head = f'foldhead{fold[1]}'
+                extra = (head,)
+                self._folds[fold[1]] = fold[2]
+                self.text.tag_configure(f'foldbody{fold[1]}', elide=fold[2])
+                self.text.tag_configure(head, underline=False)
+                self.text.tag_bind(head, '<Button-1>', lambda e, n=fold[1]: self._toggle(n))
+                self.text.tag_bind(head, '<Enter>', lambda e: self.text.configure(cursor='hand2'))
+                self.text.tag_bind(head, '<Leave>', lambda e: self.text.configure(cursor='arrow'))
+            elif fold and fold[0] == 'body':
+                extra = (f'foldbody{fold[1]}',)
             for text, style in line:
-                self.text.insert('end', text, style)
+                self.text.insert('end', text, (style,) + extra)
             if i < len(result.lines) - 1:
-                self.text.insert('end', '\n')
+                # 換行也要帶摺疊標籤，摺起來時才不會留下空行
+                self.text.insert('end', '\n', extra if fold and fold[0] == 'body' else ())
         self.text.configure(state='disabled')
-        left, top, right, bottom = area
+        self.area = area
+        self.anchor = anchor
+        self._fit(reposition=True)
+        self.text.yview_moveto(0)
+        self.visible = True
+        self._hidden_by_game = False
+
+    def _toggle(self, number):
+        body = f'foldbody{number}'
+        collapsed = not self._folds.get(number, False)
+        self._folds[number] = collapsed
+        self.text.tag_configure(body, elide=collapsed)
+        start = self.text.tag_ranges(f'foldhead{number}')
+        if start:
+            index = self.text.search('▶' if not collapsed else '▼', start[0], start[1])
+            if index:
+                tags = self.text.tag_names(index)
+                self.text.configure(state='normal')
+                self.text.delete(index)
+                self.text.insert(index, '▶' if collapsed else '▼', tags)
+                self.text.configure(state='disabled')
+        self._fit(reposition=False)
+
+    def _fit(self, reposition):
+        """依內容調整高度（最高為遊戲畫面的 85%）。"""
+        left, top, right, bottom = self.area
         max_height = max(int(200 * self.scale), int((bottom - top) * 0.85))
-        self.win.geometry(f'{self.width}x{max_height}+-10000+-10000')
-        self.win.deiconify()
+        if reposition:
+            self.win.geometry(f'{self.width}x{max_height}+-10000+-10000')
+            self.win.deiconify()
+        else:
+            self.win.geometry(f'{self.width}x{max_height}')
         self.win.update_idletasks()
         try:
             content = self.text.count('1.0', 'end', 'ypixels')[0]
         except Exception:
             content = max_height
         height = min(max_height, content + int(50 * self.scale))
-        bx, by, size = anchor
-        if bx + size / 2 > (left + right) / 2:
-            x = bx - self.width - int(8 * self.scale)
+        if reposition:
+            bx, by, size = self.anchor
+            if bx + size / 2 > (left + right) / 2:
+                x = bx - self.width - int(8 * self.scale)
+            else:
+                x = bx + size + int(8 * self.scale)
+            y = min(max(top, by - int(40 * self.scale)), max(top, bottom - height))
+            self.win.geometry(f'{self.width}x{height}+{int(x)}+{int(y)}')
         else:
-            x = bx + size + int(8 * self.scale)
-        y = min(max(top, by - int(40 * self.scale)), max(top, bottom - height))
-        self.win.geometry(f'{self.width}x{height}+{int(x)}+{int(y)}')
+            x, y = self.win.winfo_x(), self.win.winfo_y()
+            y = min(y, max(top, bottom - height))
+            self.win.geometry(f'{self.width}x{height}+{x}+{y}')
         self.win.attributes('-topmost', True)
-        self.text.yview_moveto(0)
-        self.visible = True
-        self._hidden_by_game = False
 
     def hide(self):
         self.win.withdraw()

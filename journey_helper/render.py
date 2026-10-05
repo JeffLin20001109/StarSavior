@@ -14,6 +14,14 @@ CIRCLED = '①②③④⑤⑥⑦⑧⑨⑩'
 BASIC_TYPES = {'RT_STAT', 'RT_STAMINA', 'RT_CONDITION', 'RT_COIN', 'RT_POTEN_POINT', 'RT_ARCANA_POINT'}
 
 
+class Line(list):
+    """一行文字（[(文字, 樣式)]）。fold：('head', 編號, 是否摺疊) 或 ('body', 編號)，供小窗摺疊。"""
+
+    def __init__(self, segments=(), fold=None):
+        super().__init__(segments)
+        self.fold = fold
+
+
 def _amount(entry):
     if 'min' not in entry or entry.get('type') == 'RT_STAT_POTEN':
         return ''
@@ -37,6 +45,7 @@ class Renderer:
     # ---- 對外介面 ----
     def render(self, sections):
         """sections: [{'heading': str|None, 'variants': [...], 'highlight': bool}]"""
+        self._fold_count = 0
         recorded = []
         self._T = lambda ko: (recorded.append(ko), ko)[1]
         self._lines(sections)
@@ -140,6 +149,9 @@ class Renderer:
         if context:
             lines.append([('［' + ' | '.join(context) + '］', 'note')])
         labels, uncertain = self._labels(group)
+        difficulties = [self._difficulties(v) for v in group]
+        by_difficulty = len(set(difficulties)) > 1
+        is_hard = [DIFFICULTY_ZH['Hard'] in d for d in difficulties]
         if uncertain:
             lines.append([(f'網站列出 {len(group)} 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。', 'dim')])
         choices = [c for c in first.get('choices') or [] if isinstance(c, dict)]
@@ -159,17 +171,33 @@ class Renderer:
             if shared_condition and choice.get('condition'):
                 lines.append([('　條件／消耗：' + self._condition(choice['condition']), 'warn')])
             outcomes = {}
-            for label, c in zip(labels, per_variant):
+            for label, c, hard in zip(labels, per_variant, is_hard):
                 body = self._outcome(c, not shared_condition, details)
                 key = json.dumps(body, ensure_ascii=False)
-                outcomes.setdefault(key, ([], body))[0].append(label)
+                entry = outcomes.setdefault(key, ([], body, []))
+                entry[0].append(label)
+                entry[2].append(hard)
             if len(outcomes) == 1:
                 lines.extend(next(iter(outcomes.values()))[1])
                 continue
-            for names, body in outcomes.values():
-                lines.append([('　〔' + '／'.join(names) + '〕', 'note')])
-                lines.extend([[('　' + seg[0][0], seg[0][1])] + seg[1:] for seg in body])
+            for names, body, hards in outcomes.values():
+                header = '〔' + '／'.join(names) + '〕'
+                indented = [[('　' + seg[0][0], seg[0][1])] + seg[1:] for seg in body]
+                if not by_difficulty:
+                    lines.append([('　' + header, 'note')])
+                    lines.extend(indented)
+                    continue
+                # 依難度不同的結果：困難以外預設摺疊，點標題可展開
+                collapsed = not any(hards)
+                fold = self._next_fold()
+                lines.append(Line([('　' + ('▶ ' if collapsed else '▼ ') + header, 'note')],
+                                  fold=('head', fold, collapsed)))
+                lines.extend(Line(seg, fold=('body', fold)) for seg in indented)
         return lines
+
+    def _next_fold(self):
+        self._fold_count += 1
+        return self._fold_count
 
     @staticmethod
     def _choice_of(variant, index):

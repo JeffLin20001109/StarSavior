@@ -109,10 +109,17 @@ class MatchRenderTests(unittest.TestCase):
         variants = [dict(base, id=i, difficulties=[name(d, d, d)],
                          choices=[{'name': name('간다', '去'), 'success_rewards': [[stat('POWER', 5 * i)]]}])
                     for i, d in enumerate(['Easy', 'Normal', 'Hard'], 1)]
-        text = self._render(variants)
-        self.assertIn('〔簡單〕', text)
-        self.assertIn('〔困難〕', text)
+        lines = self.renderer.render([{'variants': variants}])
+        text = flat(lines)
+        self.assertIn('▶ 〔簡單〕', text)
+        self.assertIn('▶ 〔普通〕', text)
+        self.assertIn('▼ 〔困難〕', text)
         self.assertNotIn('可能結果', text)
+        heads = {l[0][0].strip('　▶▼ '): l.fold for l in lines if getattr(l, 'fold', None) and l.fold[0] == 'head'}
+        self.assertTrue(heads['〔簡單〕'][2])   # 困難以外預設摺疊
+        self.assertFalse(heads['〔困難〕'][2])
+        bodies = [l for l in lines if getattr(l, 'fold', None) and l.fold[0] == 'body']
+        self.assertEqual({l.fold[1] for l in bodies}, {f[1] for f in heads.values()})
 
     def test_many_results_hide_descriptions(self):
         from tests.helpers import name

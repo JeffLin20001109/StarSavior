@@ -5,6 +5,7 @@ on:
   push:
     paths:
       - tools/dump_strings.py
+      - .github/workflows/dump-strings.yml
 
 permissions:
   contents: write
@@ -17,7 +18,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python -m pip install certifi opencc-python-reimplemented
+      - run: python -m pip install certifi requests opencc-python-reimplemented
       - run: python tools/dump_strings.py translations/source_ko.json
       - name: Commit string list
         run: |

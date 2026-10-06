@@ -1,6 +1,6 @@
 name: Data (own database)
 
-# 每天從資料來源網站下載原始資料，快照存到 data 分支（有變動才提交）。
+# 每天從資料來源網站下載原始資料，快照存到 data-snapshots 分支（有變動才提交）。
 on:
   schedule:
     - cron: '17 3 * * *'
@@ -29,16 +29,16 @@ jobs:
       - run: python -m pip install requests
       - name: Fetch sources
         run: python tools/data/fetch_sources.py "$RUNNER_TEMP/sources"
-      - name: Commit snapshot to data branch
+      - name: Commit snapshot to data-snapshots branch
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          if git ls-remote --exit-code --heads origin data >/dev/null; then
-            git fetch --depth 1 origin data
+          if git ls-remote --exit-code --heads origin data-snapshots >/dev/null; then
+            git fetch --depth 1 origin data-snapshots
             git worktree add "$RUNNER_TEMP/data" FETCH_HEAD
-            git -C "$RUNNER_TEMP/data" checkout -B data
+            git -C "$RUNNER_TEMP/data" checkout -B data-snapshots
           else
-            git worktree add --orphan -b data "$RUNNER_TEMP/data"
+            git worktree add --orphan -b data-snapshots "$RUNNER_TEMP/data"
           fi
           rm -rf "$RUNNER_TEMP/data/sources"
           cp -r "$RUNNER_TEMP/sources" "$RUNNER_TEMP/data/sources"
@@ -49,5 +49,5 @@ jobs:
             echo "資料沒有變動"
           else
             git commit -m "Snapshot data sources $(date -u +%Y-%m-%d)"
-            git push origin data
+            git push origin data-snapshots
           fi

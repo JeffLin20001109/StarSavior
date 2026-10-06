@@ -14,7 +14,7 @@ DEFAULTS = {
     'site_url': 'https://star-savior-arcana-db.pages.dev',
     'data_max_age_hours': 12,
     # 人工校對譯文表（純 JSON）；更新這個檔就能補上新事件的翻譯，不用重新打包 exe
-    'translations_url': 'https://github.com/JeffLin20001109/Deity1109/releases/download/translations/translations_zh.json',
+    'translations_url': 'https://github.com/JeffLin20001109/StarSavior/releases/download/translations/translations_zh.json',
     'translations_max_age_hours': 6,
     # 翻譯：google（免金鑰）、deepl（需填 deepl_api_key）、none（直接顯示韓文）
     'translator': 'google',
@@ -42,6 +42,10 @@ DEFAULTS = {
 
 
 # 舊版的預設用語；使用者沒改過的話自動換成新的預設值
+# 舊的譯文表網址（專案搬到 StarSavior repo 之前）；設定檔裡是這個值就自動換成新網址
+OLD_TRANSLATION_URLS = {
+    'https://github.com/JeffLin20001109/Deity1109/releases/download/translations/translations_zh.json',
+}
 OLD_DEFAULT_TERMS = {'ENDURANCE': '忍耐', 'FOCUS': '集中', 'RT_POTEN_POINT': '潛能點數', 'RT_COIN': '舊硬幣'}
 
 
@@ -82,6 +86,9 @@ class Config(dict):
             if terms.get(key) == old:
                 terms[key] = DEFAULTS['terms'][key]
                 migrated = True
+        if self.get('translations_url') in OLD_TRANSLATION_URLS:
+            self['translations_url'] = DEFAULTS['translations_url']
+            migrated = True
         if migrated or not self.path.exists():
             self.save()
 

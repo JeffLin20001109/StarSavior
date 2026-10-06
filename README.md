@@ -5,7 +5,7 @@
 ## 使用方式
 
 1. 下載 `StarSaviorJourneyHelper.exe`，雙擊執行，不需要安裝 Python。
-   - 下載連結（不需登入）：https://github.com/JeffLin20001109/Deity1109/releases/download/latest/StarSaviorJourneyHelper.exe
+   - 下載連結（不需登入）：https://github.com/JeffLin20001109/StarSavior/releases/download/latest/StarSaviorJourneyHelper.exe
 2. 程式會自動尋找 StarSavior 的程序。找到後，「旅」按鈕會懸浮在遊戲畫面右側。
    - 遊戲還沒開時，灰色按鈕會停在螢幕右側等待。
 3. 遇到事件時，**左鍵**點按鈕。
@@ -32,7 +32,7 @@
 ## 翻譯
 
 - **人工校對譯文表**：網站上全部 1018 句韓文（事件名稱、選項、道具、潛力、旅程效果的說明）都已人工校對翻譯成繁中，存成一個純 JSON 檔 `journey_helper/translations_zh.json`。
-  - 這個檔會自動發佈到固定網址：`https://github.com/JeffLin20001109/Deity1109/releases/download/translations/translations_zh.json`。
+  - 這個檔會自動發佈到固定網址：`https://github.com/JeffLin20001109/StarSavior/releases/download/translations/translations_zh.json`。
   - 程式啟動時會下載最新版（每 6 小時檢查一次），並存一份在本機；離線時用本機那份，再不行就用 exe 內建的版本。
   - **網站新增事件時不用重新打包 exe**：只要更新這個 JSON 並 push，「Publish translations」workflow 會自動上傳，大家下次啟動程式就會拿到。
   - 角色名、卡名、技能名等專有名詞沿用遊戲的官方譯名；句子與說明依韓文重新翻譯，並統一用語（韌性、專注、潛力點數、羈絆點數、必殺技等）。

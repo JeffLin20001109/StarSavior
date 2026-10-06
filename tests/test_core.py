@@ -201,3 +201,21 @@ class RewardColorTests(unittest.TestCase):
         styles = {text.strip('・　 '): style for line in renderer.render([{'variants': [event]}]) for text, style in line}
         self.assertEqual(styles['耐力 -10'], 'minus')
         self.assertEqual(styles['力量 +5'], 'effect')
+
+
+class ConfigMigrationTests(unittest.TestCase):
+    def test_old_repository_url_and_terms_are_migrated(self):
+        import json
+        import tempfile
+        from pathlib import Path
+
+        from journey_helper.config import Config
+        path = Path(tempfile.mkdtemp()) / 'config.json'
+        path.write_text(json.dumps({
+            'translations_url': 'https://github.com/JeffLin20001109/Deity1109/releases/download/translations/translations_zh.json',
+            'terms': {'RT_COIN': '舊硬幣'}, 'difficulty': 'Hard'}), encoding='utf-8')
+        config = Config(path)
+        self.assertIn('/StarSavior/', config['translations_url'])
+        self.assertEqual(config['terms']['RT_COIN'], '古幣')
+        self.assertEqual(config['difficulty'], 'Hard')  # 使用者自己的設定保留
+        self.assertIn('/StarSavior/', json.loads(path.read_text(encoding='utf-8'))['translations_url'])

@@ -1,5 +1,840 @@
 [
  {
+  "ko": "First Encounter"
+ },
+ {
+  "ko": "별지킴이 여정",
+  "zh": "星辰守護者旅程",
+  "en": "Star Guardian Journey"
+ },
+ {
+  "ko": "별의 구원자의 이야기를 읽기 쉽게 정리한 동화책.",
+  "zh": "將星之救援者的故事整理成易於閱讀的童話書。",
+  "en": "A fairy tale book that neatly organizes the story of the Star Savior for easy reading."
+ },
+ {
+  "ko": "공격의 감각",
+  "zh": "攻擊感知",
+  "en": "Sense of Attack"
+ },
+ {
+  "ko": "공격력이 일정 비율만큼 소폭 증가합니다.",
+  "zh": "攻擊力小幅增加一定比例。",
+  "en": "Slightly increases self ATK by a certain percentage."
+ },
+ {
+  "ko": "Training Starts at the Table"
+ },
+ {
+  "ko": "고마움",
+  "zh": "謝意",
+  "en": "Gratitude"
+ },
+ {
+  "ko": "따뜻한 마음에 힘이 솟아납니다. 훈련 실패율이 감소합니다.",
+  "zh": "溫暖的心意讓力量湧現。訓練失敗率減少。",
+  "en": "Warm feelings of gratitude fill you with strength. Training failure rate decreases."
+ },
+ {
+  "ko": "At the Library"
+ },
+ {
+  "ko": "Training and Real Combat"
+ },
+ {
+  "ko": "The Price of Haste"
+ },
+ {
+  "ko": "If You Want to Go Far"
+ },
+ {
+  "ko": "New Year's Festival"
+ },
+ {
+  "ko": "Reply"
+ },
+ {
+  "ko": "Before the Final Trial"
+ },
+ {
+  "ko": "At the End of the Journey"
+ },
+ {
+  "ko": "힘 상승 Ⅲ",
+  "zh": "力量提升Ⅲ",
+  "en": "Strength Up Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 힘을 20 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的力量20點。",
+  "en": "A blessing that increases the Journey stat Strength by 20."
+ },
+ {
+  "ko": "체력 상승 Ⅲ",
+  "zh": "體力提升Ⅲ",
+  "en": "Vitality Up Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 체력을 20 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的體力20點。",
+  "en": "A blessing that increases the Journey stat Vitality by 20."
+ },
+ {
+  "ko": "인내 상승 Ⅲ",
+  "zh": "韌性提升Ⅲ",
+  "en": "Endurance Up Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 인내를 20 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的韌性20點。",
+  "en": "A blessing that increases the Journey stat Endurance by 20."
+ },
+ {
+  "ko": "집중 상승 Ⅲ",
+  "zh": "專注提升Ⅲ",
+  "en": "Focus Up Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 집중을 30 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的專注30點。",
+  "en": "A blessing that increases the Journey stat Focus by 30."
+ },
+ {
+  "ko": "보호 상승 Ⅲ",
+  "zh": "保護提升Ⅲ",
+  "en": "Protection Up Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 보호를 30 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的保護30點。",
+  "en": "A blessing that increases the Journey stat Protection by 30."
+ },
+ {
+  "ko": "힘 증폭 Ⅲ",
+  "zh": "力量增幅Ⅲ",
+  "en": "Strength Boost Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 힘을 35 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的力量35點。",
+  "en": "A blessing that increases the Journey stat Strength by 35."
+ },
+ {
+  "ko": "체력 증폭 Ⅲ",
+  "zh": "體力增幅Ⅲ",
+  "en": "Vitality Boost Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 체력을 35 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的體力35點。",
+  "en": "A blessing that increases the Journey stat Vitality by 35."
+ },
+ {
+  "ko": "인내 증폭 Ⅲ",
+  "zh": "韌性增幅Ⅲ",
+  "en": "Endurance Boost Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 인내를 35 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的韌性35點。",
+  "en": "A blessing that increases the Journey stat Endurance by 35."
+ },
+ {
+  "ko": "집중 증폭 Ⅲ",
+  "zh": "專注增幅Ⅲ",
+  "en": "Focus Boost Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 집중을 50 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的專注50點。",
+  "en": "A blessing that increases the Journey stat Focus by 50."
+ },
+ {
+  "ko": "보호 증폭 Ⅲ",
+  "zh": "保護增幅Ⅲ",
+  "en": "Protection Boost Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 보호를 50 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的保護50點。",
+  "en": "A blessing that increases the Journey stat Protection by 50."
+ },
+ {
+  "ko": "별빛의 인도",
+  "zh": "星光引導",
+  "en": "Starlight Guidance"
+ },
+ {
+  "ko": "효과 적중과 효과 저항이 4% 증가합니다.",
+  "zh": "效果命中與效果抗性增加4%。",
+  "en": "Increases self Effect Hit and self Effect RES by a certain percentage."
+ },
+ {
+  "ko": "힘 초월Ⅰ",
+  "zh": "力量超越Ⅰ",
+  "en": "Strength Transcendence I"
+ },
+ {
+  "ko": "여정 스탯 중 힘을 40 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的力量40點。",
+  "en": "A blessing that increases the Journey stat Strength by 40."
+ },
+ {
+  "ko": "힘 초월 Ⅱ",
+  "zh": "力量超越Ⅱ",
+  "en": "Strength Transcendence Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 힘을 45 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的力量45點。",
+  "en": "A blessing that increases the Journey stat Strength by 45."
+ },
+ {
+  "ko": "힘 초월 Ⅲ",
+  "zh": "力量超越Ⅲ",
+  "en": "Strength Transcendence Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 힘을 50 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的力量50點。",
+  "en": "A blessing that increases the Journey stat Strength by 50."
+ },
+ {
+  "ko": "체력 초월Ⅰ",
+  "zh": "體力超越Ⅰ",
+  "en": "Vitality Transcendence I"
+ },
+ {
+  "ko": "여정 스탯 중 체력을 40 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的體力40點。",
+  "en": "A blessing that increases the Journey stat Vitality by 40."
+ },
+ {
+  "ko": "체력 초월 Ⅱ",
+  "zh": "體力超越Ⅱ",
+  "en": "Vitality Transcendence Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 체력을 45 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的體力45點。",
+  "en": "A blessing that increases the Journey stat Vitality by 45."
+ },
+ {
+  "ko": "체력 초월 Ⅲ",
+  "zh": "體力超越Ⅲ",
+  "en": "Vitality Transcendence Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 체력을 50 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的體力50點。",
+  "en": "A blessing that increases the Journey stat Vitality by 50."
+ },
+ {
+  "ko": "인내 초월Ⅰ",
+  "zh": "韌性超越Ⅰ",
+  "en": "Endurance Transcendence I"
+ },
+ {
+  "ko": "여정 스탯 중 인내를 40 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的韌性40點。",
+  "en": "A blessing that increases the Journey stat Endurance by 40."
+ },
+ {
+  "ko": "인내 초월 Ⅱ",
+  "zh": "韌性超越Ⅱ",
+  "en": "Endurance Transcendence Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 인내를 45 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的韌性45點。",
+  "en": "A blessing that increases the Journey stat Endurance by 45."
+ },
+ {
+  "ko": "인내 초월 Ⅲ",
+  "zh": "韌性超越Ⅲ",
+  "en": "Endurance Transcendence Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 인내를 50 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的韌性50點。",
+  "en": "A blessing that increases the Journey stat Endurance by 50."
+ },
+ {
+  "ko": "집중 초월Ⅰ",
+  "zh": "專注超越Ⅰ",
+  "en": "Focus Transcendence I"
+ },
+ {
+  "ko": "여정 스탯 중 집중을 60 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的專注60點。",
+  "en": "A blessing that increases the Journey stat Focus by 60."
+ },
+ {
+  "ko": "집중 초월 Ⅱ",
+  "zh": "專注超越Ⅱ",
+  "en": "Focus Transcendence Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 집중을 65 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的專注65點。",
+  "en": "A blessing that increases the Journey stat Focus by 65."
+ },
+ {
+  "ko": "집중 초월 Ⅲ",
+  "zh": "專注超越Ⅲ",
+  "en": "Focus Transcendence Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 집중을 70 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的專注70點。",
+  "en": "A blessing that increases the Journey stat Focus by 70."
+ },
+ {
+  "ko": "보호 초월Ⅰ",
+  "zh": "保護超越Ⅰ",
+  "en": "Protection Transcendence I"
+ },
+ {
+  "ko": "여정 스탯 중 보호를 60 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的保護60點。",
+  "en": "A blessing that increases the Journey stat Protection by 60."
+ },
+ {
+  "ko": "보호 초월 Ⅱ",
+  "zh": "保護超越Ⅱ",
+  "en": "Protection Transcendence Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 보호를 65 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的保護65點。",
+  "en": "A blessing that increases the Journey stat Protection by 65."
+ },
+ {
+  "ko": "보호 초월 Ⅲ",
+  "zh": "保護超越Ⅲ",
+  "en": "Protection Transcendence Ⅲ"
+ },
+ {
+  "ko": "여정 스탯 중 보호를 70 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的保護70點。",
+  "en": "A blessing that increases the Journey stat Protection by 70."
+ },
+ {
+  "ko": "의뢰 대성공",
+  "zh": "委託大成功",
+  "en": "Quest Successful"
+ },
+ {
+  "ko": "의뢰 성공",
+  "zh": "委託成功",
+  "en": "Quest Successful"
+ },
+ {
+  "ko": "약탈자 토벌 의뢰",
+  "zh": "掠奪者討伐委託",
+  "en": "Raider Hunt Quest"
+ },
+ {
+  "ko": "리세트의 우울",
+  "zh": "莉賽特的憂鬱",
+  "en": "Lisette's Melancholy"
+ },
+ {
+  "ko": "혹시 이거 아니야?",
+  "zh": "難道是這個嗎？",
+  "en": "Is it this one?"
+ },
+ {
+  "ko": "고풍스러운 열쇠",
+  "zh": "古典鑰匙",
+  "en": "Antique Key"
+ },
+ {
+  "ko": "리세트의 저금통",
+  "zh": "莉賽特的存錢筒",
+  "en": "Lisette's Piggy Bank"
+ },
+ {
+  "ko": "리세트의 희망으로 가득찼던 돼지 저금통. 꿈을 향해 함께 나아가는 날랜 파트너다.",
+  "zh": "充滿了莉賽特希望的存錢筒。是一起奔向夢想的敏捷夥伴。",
+  "en": "A piggy bank once filled with hopes of Lisette. A nimble partner that moves forward together with its owner toward their dreams."
+ },
+ {
+  "ko": "기술자를 부르자.",
+  "zh": "叫鎖匠來吧。",
+  "en": "Let's call a locksmith."
+ },
+ {
+  "ko": "리세트의 친구",
+  "zh": "莉賽特的朋友",
+  "en": "Lisette's Friend"
+ },
+ {
+  "ko": "Slimepocalypse"
+ },
+ {
+  "ko": "슬라포칼립스 승리",
+  "zh": "史萊姆災變獲勝",
+  "en": "Slimepocalypse Victory"
+ },
+ {
+  "ko": "슬라임 토벌 의뢰 Ⅰ",
+  "zh": "史萊姆討伐委託Ⅰ",
+  "en": "Slime Hunt Quest Ⅰ"
+ },
+ {
+  "ko": "슬라임 토벌 의뢰 Ⅱ",
+  "zh": "史萊姆討伐委託Ⅱ",
+  "en": "Slime Hunt Quest Ⅱ"
+ },
+ {
+  "ko": "슬라임 토벌 의뢰 Ⅲ",
+  "zh": "史萊姆討伐委託Ⅲ",
+  "en": "Slime Hunt Quest Ⅲ"
+ },
+ {
+  "ko": "보호의 감각",
+  "zh": "保護感知",
+  "en": "Sense of Protection"
+ },
+ {
+  "ko": "효과 저항이 일정 비율만큼 소폭 증가합니다.",
+  "zh": "效果抗性小幅增加一定比例。",
+  "en": "Slightly increases self Effect RES by a certain percentage."
+ },
+ {
+  "ko": "스트릿 베이커스 굿즈 Ⅰ",
+  "zh": "街角烘焙坊周邊Ⅰ",
+  "en": "Street Bakers Merch Ⅰ"
+ },
+ {
+  "ko": "스트릿 베이커스와 물개사장 시리즈의 콜라보 굿즈. 일정 금액 이상을 구매하면 받을 수 있다.",
+  "zh": "街角烘焙坊與海獅老闆系列聯名周邊。消費滿指定金額即可獲得。",
+  "en": "A collaboration between Street Bakers and the Boss Seal series. You can receive it by making a purchase over a certain amount."
+ },
+ {
+  "ko": "스트릿 베이커스 굿즈 Ⅱ",
+  "zh": "街角烘焙坊周邊Ⅱ",
+  "en": "Street Bakers Merch Ⅱ"
+ },
+ {
+  "ko": "스트릿 베이커스와 물개사장 시리즈의 콜라보 굿즈. 일정 확률로 뽑을 수 있는 희귀 아이템.",
+  "zh": "街角烘焙坊與海獅老闆系列聯名周邊。有一定機率抽中的稀有道具。",
+  "en": "A collaboration between Street Bakers and the Boss Seal series. A rare item that can be obtained with a certain probability."
+ },
+ {
+  "ko": "스트릿 베이커스 굿즈 Ⅲ",
+  "zh": "街角烘焙坊周邊Ⅲ",
+  "en": "Street Bakers Merch Ⅲ"
+ },
+ {
+  "ko": "스트릿 베이커스와 물개사장 시리즈의 콜라보 굿즈. 단 하나밖에 생산되지 않은 초 희귀 아이템.",
+  "zh": "街角烘焙坊與海獅老闆系列聯名周邊。僅生產一件的超稀有道具。",
+  "en": "A collaboration between the Street Bakers and the Boss Seal series. An ultra-rare item of which only one was ever produced."
+ },
+ {
+  "ko": "슬라임 토벌의 증표",
+  "zh": "史萊姆討伐信物",
+  "en": "Slime Hunt Token"
+ },
+ {
+  "ko": "토벌 의뢰에서 얻은 승리의 증표. 보고 있으면 왠지 남에게 자랑하고 싶은 마음이 솟아난다.",
+  "zh": "從討伐委託中獲得的勝利信物。看著它，心裡會油然升起一股想向他人炫耀的衝動。",
+  "en": "A token of victory obtained from a Hunt Quest. Looking at it makes you feel the urge to show it off to others."
+ },
+ {
+  "ko": "슬라포칼립스 패배",
+  "zh": "史萊姆災變戰敗",
+  "en": "Slimepocalypse Defeat"
+ },
+ {
+  "ko": "Runaway Soldiers"
+ },
+ {
+  "ko": "런 어 웨이 솔저스 승리",
+  "zh": "逃兵們獲勝",
+  "en": "Runaway Soldiers Victory"
+ },
+ {
+  "ko": "탈영병 토벌 의뢰 Ⅰ",
+  "zh": "逃兵討伐委託Ⅰ",
+  "en": "Deserter Hunt Quest Ⅰ"
+ },
+ {
+  "ko": "탈영병 토벌 의뢰 Ⅱ",
+  "zh": "逃兵討伐委託Ⅱ",
+  "en": "Deserter Hunt Quest Ⅱ"
+ },
+ {
+  "ko": "탈영병 토벌 의뢰 Ⅲ",
+  "zh": "逃兵討伐委託Ⅲ",
+  "en": "Deserter Hunt Quest Ⅲ"
+ },
+ {
+  "ko": "통찰의 감각",
+  "zh": "洞察感知",
+  "en": "Sense of Insight"
+ },
+ {
+  "ko": "치명타 확률이 일정 비율만큼 소폭 증가합니다.",
+  "zh": "暴擊率小幅增加一定比例。",
+  "en": "Slightly increases self CRIT Rate by a certain percentage."
+ },
+ {
+  "ko": "은빛 공훈 휘장",
+  "zh": "銀色功勳徽章",
+  "en": "Silver Merit Medal"
+ },
+ {
+  "ko": "모나스티르의 은빛 공훈 휘장. 전투에서 공적을 남긴 기사에게 수여된다.",
+  "zh": "莫納斯提爾的銀光功勳徽章。授予在戰鬥中有所貢獻的騎士。",
+  "en": "A silver meritorious service badge of Monastir. Awarded to knights who have rendered distinguished service in battle."
+ },
+ {
+  "ko": "금빛 공훈 휘장",
+  "zh": "金色功勳徽章",
+  "en": "Gold Merit Medal"
+ },
+ {
+  "ko": "모나스티르의 금빛 공훈 휘장. 전투에서 뛰어난 공적을 남긴 기사에게 수여된다.",
+  "zh": "莫納斯提爾的金光功勳徽章。授予在戰鬥中立下卓越功績的騎士。",
+  "en": "A gold meritorious service badge of Monastir. Awarded to knights who have achieved outstanding feats in battle."
+ },
+ {
+  "ko": "별빛 공훈 휘장",
+  "zh": "星光功勳徽章",
+  "en": "Starlight Merit Medal"
+ },
+ {
+  "ko": "모나스티르의 별빛 공훈 휘장. 전투에서 최고의 공적을 남긴 기사에게 수여된다.",
+  "zh": "莫納斯提爾的星光功勳徽章。授予在戰鬥中立下最佳功績的騎士。",
+  "en": "A starlight meritorious service badge of Monastir. Awarded to knights who have achieved the greatest feats in battle."
+ },
+ {
+  "ko": "런 어 웨이 솔저스 패배",
+  "zh": "逃兵們戰敗",
+  "en": "Runaway Soldiers Defeat"
+ },
+ {
+  "ko": "Still Comin' In"
+ },
+ {
+  "ko": "스틸 컴 인 승리",
+  "zh": "貨源不絕獲勝",
+  "en": "Still Comin' In - Victory"
+ },
+ {
+  "ko": "남작 토벌 의뢰 Ⅰ",
+  "zh": "男爵討伐委託Ⅰ",
+  "en": "Baron Hunt Quest Ⅰ"
+ },
+ {
+  "ko": "남작 토벌 의뢰 Ⅱ",
+  "zh": "男爵討伐委託Ⅱ",
+  "en": "Baron Hunt Quest Ⅱ"
+ },
+ {
+  "ko": "남작 토벌 의뢰 Ⅲ",
+  "zh": "男爵討伐委託Ⅲ",
+  "en": "Baron Hunt Quest Ⅲ"
+ },
+ {
+  "ko": "우수 고객",
+  "zh": "優質顧客",
+  "en": "VIP Customer"
+ },
+ {
+  "ko": "가게에 방문하는 것 만으로 점원이 마중 나올 정도입니다. 거래 시 상품 구매 가격이 감소합니다.",
+  "zh": "光是造訪店鋪，店員就會出來迎接。交易時商品購買價格會降低。",
+  "en": "The staff come out to greet you just for visiting the shop. Shop prices are reduced."
+ },
+ {
+  "ko": "강도남작 토벌의 증표",
+  "zh": "強盜男爵討伐信物",
+  "en": "Bandit Baron Hunt Token"
+ },
+ {
+  "ko": "스틸 컴 인 패배",
+  "zh": "貨源不絕戰敗",
+  "en": "Still Comin' In - Defeat"
+ },
+ {
+  "ko": "No Potion, No Passion!"
+ },
+ {
+  "ko": "노 포션, 노 패션! 승리",
+  "zh": "藥不可失，時尚必備！獲勝",
+  "en": "No Potion, No Passion! - Victory"
+ },
+ {
+  "ko": "인형 토벌 의뢰 Ⅰ",
+  "zh": "玩偶討伐委託Ⅰ",
+  "en": "Doll Hunt Quest Ⅰ"
+ },
+ {
+  "ko": "인형 토벌 의뢰 Ⅱ",
+  "zh": "玩偶討伐委託Ⅱ",
+  "en": "Doll Hunt Quest Ⅱ"
+ },
+ {
+  "ko": "인형 토벌 의뢰 Ⅲ",
+  "zh": "玩偶討伐委託Ⅲ",
+  "en": "Doll Hunt Quest Ⅲ"
+ },
+ {
+  "ko": "파괴의 감각",
+  "zh": "破壞感知",
+  "en": "Sense of Destruction"
+ },
+ {
+  "ko": "치명타 피해가 일정 비율만큼 소폭 증가합니다.",
+  "zh": "暴擊傷害小幅增加一定比例。",
+  "en": "Slightly increases self CRIT DMG by a certain percentage."
+ },
+ {
+  "ko": "인형 토벌의 증표",
+  "zh": "玩偶討伐信物",
+  "en": "Doll Hunt Token"
+ },
+ {
+  "ko": "노 포션, 노 패션! 패배",
+  "zh": "藥不可失，時尚必備！戰敗",
+  "en": "No Potion, No Passion! - Defeat"
+ },
+ {
+  "ko": "Basic Trial"
+ },
+ {
+  "ko": "Basic Trial Victory"
+ },
+ {
+  "ko": "Basic Trial Defeat"
+ },
+ {
+  "ko": "Hunt Trial Preparations"
+ },
+ {
+  "ko": "Hunt Trial"
+ },
+ {
+  "ko": "Hunt Trial Defeat"
+ },
+ {
+  "ko": "Region Transition: Aganon"
+ },
+ {
+  "ko": "Seaside City, Flora"
+ },
+ {
+  "ko": "Beach Volleyball Finals"
+ },
+ {
+  "ko": "비치발리볼 대회 결승전 승리",
+  "zh": "沙灘排球比賽決賽獲勝",
+  "en": "Beach Volleyball Finals Victory"
+ },
+ {
+  "ko": "플로라 긴급 토벌 의뢰",
+  "zh": "弗洛拉緊急討伐委託",
+  "en": "Flora Emergency Hunt Quest"
+ },
+ {
+  "ko": "비치발리볼 우승 트로피",
+  "zh": "沙灘排球冠軍獎盃",
+  "en": "Beach Volleyball Champion Trophy"
+ },
+ {
+  "ko": "플로라의 비치발리볼 대회 우승 트로피. 영광의 우승자에게 지급되는 트로피.",
+  "zh": "弗洛拉沙灘排球大賽冠軍獎盃。頒發給光榮冠軍的獎盃。",
+  "en": "The championship trophy of Flora's beach volleyball tournament. A trophy awarded to the glorious champion."
+ },
+ {
+  "ko": "비치발리볼 대회 결승전 패배",
+  "zh": "沙灘排球比賽決賽戰敗",
+  "en": "Beach Volleyball Finals Defeat"
+ },
+ {
+  "ko": "흑역사 : 플로라",
+  "zh": "黑歷史：弗洛拉",
+  "en": "Shameful Memories: Flora"
+ },
+ {
+  "ko": "누구나 기억하고 싶지않은 과거는 있는 법입니다. 훈련 중 획득하는 힘이 감소합니다.",
+  "zh": "每個人都有不想被記住的過去。訓練中獲得的力量減少。",
+  "en": "Everyone has a past they would rather forget. Strength gained during training decreases."
+ },
+ {
+  "ko": "비치발리볼 2등상",
+  "zh": "沙灘排球亞軍獎",
+  "en": "Beach Volleyball Runner-Up Prize"
+ },
+ {
+  "ko": "플로라의 비치발리볼 대회 2등 상장. 상품은 따로 없지만 낙담할 것 없다. 2등도 잘한 것이다.",
+  "zh": "弗洛拉沙灘排球大賽亞軍獎狀。雖然沒有獎品，但別氣餒，第二名也是很了不起的成績。",
+  "en": "The second place certificate of Flora's beach volleyball tournament. There's no extra prize for being a runner-up, but that's no reason to be discouraged. Second place is still an achievement."
+ },
+ {
+  "ko": "End of Flora Training Camp"
+ },
+ {
+  "ko": "Competition Trial Preparations"
+ },
+ {
+  "ko": "Competition Trial"
+ },
+ {
+  "ko": "Competition Trial Defeat"
+ },
+ {
+  "ko": "Region Transition: Training Camp"
+ },
+ {
+  "ko": "Snowfall City, Kalaid"
+ },
+ {
+  "ko": "Escorting the Waterway Expedition"
+ },
+ {
+  "ko": "물길 개척단 호위 승리",
+  "zh": "水路開拓團護衛獲勝",
+  "en": "Escorting the Waterway Expedition Victory"
+ },
+ {
+  "ko": "칼라이드 긴급 의뢰",
+  "zh": "卡萊德緊急委託",
+  "en": "Kalaid Emergency Quest"
+ },
+ {
+  "ko": "온천장 특별 회원권",
+  "zh": "溫泉區特別會員券",
+  "en": "Special Hot Springs Membership"
+ },
+ {
+  "ko": "칼라이드의 온천장 특별 회원권. 명예 회원의 추천 없이는 가질 수 없다.",
+  "zh": "卡萊德溫泉區的特別會員券。沒有榮譽會員的推薦是無法取得的。",
+  "en": "A special hot springs membership pass from Kalaid. It can only be obtained with a recommendation by an honorary member."
+ },
+ {
+  "ko": "물길 개척단 호위 패배",
+  "zh": "水路開拓團護衛戰敗",
+  "en": "Escorting the Waterway Expedition Defeat"
+ },
+ {
+  "ko": "흑역사 : 칼라이드",
+  "zh": "黑歷史：卡萊德",
+  "en": "Shameful Memories: Kalaid"
+ },
+ {
+  "ko": "누구나 기억하고 싶지않은 과거는 있는 법입니다. 훈련 중 획득하는 체력이 감소합니다.",
+  "zh": "每個人都有不想被記住的過去。訓練中獲得的體力減少。",
+  "en": "Everyone has a past they would rather forget. Vitality gained during training decreases."
+ },
+ {
+  "ko": "온천장 기념 타월",
+  "zh": "溫泉區紀念毛巾",
+  "en": "Hot Springs Souvenir Towel"
+ },
+ {
+  "ko": "칼라이드의 온천장 기념 타월. 80수의 고급 타월. 마치 비단같은 촉감을 자랑한다.",
+  "zh": "卡萊德溫泉區的紀念毛巾。80支的高級毛巾，以宛如絲綢般的觸感自豪。",
+  "en": "A commemorative towel from Kalaid's hot springs. A luxurious 80-count towel that feels like silk."
+ },
+ {
+  "ko": "End of Kalaid Training Camp"
+ },
+ {
+  "ko": "Void Trial Preparations"
+ },
+ {
+  "ko": "Void Trial"
+ },
+ {
+  "ko": "Void Trial Victory"
+ },
+ {
+  "ko": "Void Trial Defeat"
+ },
+ {
+  "ko": "Final Trial Preparations"
+ },
+ {
+  "ko": "Final Trial Defeat"
+ },
+ {
+  "ko": "Expedition Trial Preparations"
+ },
+ {
+  "ko": "Expedition Trial"
+ },
+ {
+  "ko": "Expedition Trial Victory"
+ },
+ {
+  "ko": "Expedition Trial Defeat"
+ },
+ {
+  "ko": "Region Transition: NOA"
+ },
+ {
+  "ko": "Starting Point"
+ },
+ {
+  "ko": "기초 평가전 준비",
+  "zh": "基礎評鑑戰準備",
+  "en": "Basic Trial Preparations"
+ },
+ {
+  "ko": "They're Coming"
+ },
+ {
+  "ko": "Raiders Encounter"
+ },
+ {
+  "ko": "레이더스 인카운터 승리",
+  "zh": "遭遇掠奪者事件獲勝",
+  "en": "Raiders Encounter Victory"
+ },
+ {
+  "ko": "약탈자 토벌 의뢰 Ⅰ",
+  "zh": "掠奪者討伐委託Ⅰ",
+  "en": "Raider Hunt Quest Ⅰ"
+ },
+ {
+  "ko": "약탈자 토벌 의뢰 Ⅱ",
+  "zh": "掠奪者討伐委託Ⅱ",
+  "en": "Raider Hunt Quest Ⅱ"
+ },
+ {
+  "ko": "약탈자 토벌 의뢰 Ⅲ",
+  "zh": "掠奪者討伐委託Ⅲ",
+  "en": "Raider Hunt Quest Ⅲ"
+ },
+ {
+  "ko": "방어의 감각",
+  "zh": "防禦感知",
+  "en": "Sense of Defense"
+ },
+ {
+  "ko": "방어력이 일정 비율만큼 소폭 증가합니다.",
+  "zh": "防禦力小幅增加一定比例。",
+  "en": "Slightly increases self DEF by a certain percentage."
+ },
+ {
+  "ko": "카페 스트레가 쿠폰",
+  "zh": "斯特雷加咖啡廳優惠券",
+  "en": "Cafe Strega Coupon"
+ },
+ {
+  "ko": "카페 스트레가에서 사용할 수 있는 쿠폰. 달콤한 휴식이 필요한 순간을 위한 완벽한 선택!",
+  "zh": "可用於斯特雷加咖啡廳的優惠券。是需要甜蜜小憩時的完美選擇！",
+  "en": "A coupon usable at Cafe Strega. A perfect choice for moments when you need a sweet break."
+ },
+ {
+  "ko": "레이더스 인카운터 패배",
+  "zh": "遭遇掠奪者事件戰敗",
+  "en": "Raiders Encounter Defeat"
+ },
+ {
   "ko": "리세트의 일과",
   "zh": "莉賽特的日常",
   "en": "Lisette's Daily Routine"
@@ -100,11 +935,6 @@
   "en": "Sweet, cotton candy-like memories come to mind. Training failure rate decreases."
  },
  {
-  "ko": "고풍스러운 열쇠",
-  "zh": "古典鑰匙",
-  "en": "Antique Key"
- },
- {
   "ko": "NOA 시내에서 습득한 고풍스러운 열쇠. 작지만 생각보다 무겁다.",
   "zh": "在NOA市區撿到的古典鑰匙。體積不大，卻比想像中還重。",
   "en": "An antique key found in downtown NOA. Small, but heavier than expected."
@@ -113,36 +943,6 @@
   "ko": "파는 곳의 위치를 알려준다.",
   "zh": "告訴她賣的地方的位置。",
   "en": "Tell her where to find one."
- },
- {
-  "ko": "리세트의 우울",
-  "zh": "莉賽特的憂鬱",
-  "en": "Lisette's Melancholy"
- },
- {
-  "ko": "혹시 이거 아니야?",
-  "zh": "難道是這個嗎？",
-  "en": "Is it this one?"
- },
- {
-  "ko": "리세트의 저금통",
-  "zh": "莉賽特的存錢筒",
-  "en": "Lisette's Piggy Bank"
- },
- {
-  "ko": "리세트의 희망으로 가득찼던 돼지 저금통. 꿈을 향해 함께 나아가는 날랜 파트너다.",
-  "zh": "充滿了莉賽特希望的存錢筒。是一起奔向夢想的敏捷夥伴。",
-  "en": "A piggy bank once filled with hopes of Lisette. A nimble partner that moves forward together with its owner toward their dreams."
- },
- {
-  "ko": "기술자를 부르자.",
-  "zh": "叫鎖匠來吧。",
-  "en": "Let's call a locksmith."
- },
- {
-  "ko": "리세트의 친구",
-  "zh": "莉賽特的朋友",
-  "en": "Lisette's Friend"
  },
  {
   "ko": "리세트의 행운",
@@ -168,6 +968,556 @@
   "ko": "다음 기회를 노린다.",
   "zh": "等待下次機會。",
   "en": "Save it for another chance."
+ },
+ {
+  "ko": "토벌 평가전 승리",
+  "zh": "討伐評鑑戰獲勝",
+  "en": "Hunt Trial Victory"
+ },
+ {
+  "ko": "토벌 평가전",
+  "zh": "討伐評鑑戰",
+  "en": "Hunt Trial"
+ },
+ {
+  "ko": "힘 상승 Ⅱ",
+  "zh": "力量提升Ⅱ",
+  "en": "Strength Up Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 힘을 15 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的力量15點。",
+  "en": "A blessing that increases the Journey stat Strength by 15."
+ },
+ {
+  "ko": "체력 상승 Ⅱ",
+  "zh": "體力提升Ⅱ",
+  "en": "Vitality Up Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 체력을 15 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的體力15點。",
+  "en": "A blessing that increases the Journey stat Vitality by 15."
+ },
+ {
+  "ko": "인내 상승 Ⅱ",
+  "zh": "韌性提升Ⅱ",
+  "en": "Endurance Up Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 인내를 15 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的韌性15點。",
+  "en": "A blessing that increases the Journey stat Endurance by 15."
+ },
+ {
+  "ko": "집중 상승 Ⅱ",
+  "zh": "專注提升Ⅱ",
+  "en": "Focus Up Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 집중을 25 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的專注25點。",
+  "en": "A blessing that increases the Journey stat Focus by 25."
+ },
+ {
+  "ko": "보호 상승 Ⅱ",
+  "zh": "保護提升Ⅱ",
+  "en": "Protection Up Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 보호를 25 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的保護25點。",
+  "en": "A blessing that increases the Journey stat Protection by 25."
+ },
+ {
+  "ko": "경쟁 평가전 승리",
+  "zh": "競爭評鑑戰獲勝",
+  "en": "Competition Trial Victory"
+ },
+ {
+  "ko": "경쟁 평가전",
+  "zh": "競爭評鑑戰",
+  "en": "Competition Trial"
+ },
+ {
+  "ko": "힘 증폭Ⅰ",
+  "zh": "力量增幅Ⅰ",
+  "en": "Strength Boost I"
+ },
+ {
+  "ko": "여정 스탯 중 힘을 25 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的力量25點。",
+  "en": "A blessing that increases the Journey stat Strength by 25."
+ },
+ {
+  "ko": "힘 증폭 Ⅱ",
+  "zh": "力量增幅Ⅱ",
+  "en": "Strength Boost Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 힘을 30 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的力量30點。",
+  "en": "A blessing that increases the Journey stat Strength by 30."
+ },
+ {
+  "ko": "체력 증폭Ⅰ",
+  "zh": "體力增幅Ⅰ",
+  "en": "Vitality Boost I"
+ },
+ {
+  "ko": "여정 스탯 중 체력을 25 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的體力25點。",
+  "en": "A blessing that increases the Journey stat Vitality by 25."
+ },
+ {
+  "ko": "체력 증폭 Ⅱ",
+  "zh": "體力增幅Ⅱ",
+  "en": "Vitality Boost Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 체력을 30 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的體力30點。",
+  "en": "A blessing that increases the Journey stat Vitality by 30."
+ },
+ {
+  "ko": "인내 증폭Ⅰ",
+  "zh": "韌性增幅Ⅰ",
+  "en": "Endurance Boost I"
+ },
+ {
+  "ko": "여정 스탯 중 인내를 25 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的韌性25點。",
+  "en": "A blessing that increases the Journey stat Endurance by 25."
+ },
+ {
+  "ko": "인내 증폭 Ⅱ",
+  "zh": "韌性增幅Ⅱ",
+  "en": "Endurance Boost Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 인내를 30 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的韌性30點。",
+  "en": "A blessing that increases the Journey stat Endurance by 30."
+ },
+ {
+  "ko": "집중 증폭Ⅰ",
+  "zh": "專注增幅Ⅰ",
+  "en": "Focus Boost I"
+ },
+ {
+  "ko": "여정 스탯 중 집중을 40 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的專注40點。",
+  "en": "A blessing that increases the Journey stat Focus by 40."
+ },
+ {
+  "ko": "집중 증폭 Ⅱ",
+  "zh": "專注增幅Ⅱ",
+  "en": "Focus Boost Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 집중을 45 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的專注45點。",
+  "en": "A blessing that increases the Journey stat Focus by 45."
+ },
+ {
+  "ko": "보호 증폭Ⅰ",
+  "zh": "保護增幅Ⅰ",
+  "en": "Protection Boost I"
+ },
+ {
+  "ko": "여정 스탯 중 보호를 40 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的保護40點。",
+  "en": "A blessing that increases the Journey stat Protection by 40."
+ },
+ {
+  "ko": "보호 증폭 Ⅱ",
+  "zh": "保護增幅Ⅱ",
+  "en": "Protection Boost Ⅱ"
+ },
+ {
+  "ko": "여정 스탯 중 보호를 45 올려주는 축복입니다.",
+  "zh": "此祝福可提升旅程屬性中的保護45點。",
+  "en": "A blessing that increases the Journey stat Protection by 45."
+ },
+ {
+  "ko": "여가 시간",
+  "zh": "閒暇時間",
+  "en": "Leisure Time"
+ },
+ {
+  "ko": "한정 디저트를 먹으러 가자!",
+  "zh": "一起去吃限定甜點吧！",
+  "en": "Let's go try that limited-time dessert!"
+ },
+ {
+  "ko": "새로 나온 영화를 보러 가자!",
+  "zh": "一起去看新上映的電影吧！",
+  "en": "Let's go see the new movie!"
+ },
+ {
+  "ko": "특전 포스터",
+  "zh": "特典海報",
+  "en": "Screening Bonus Poster"
+ },
+ {
+  "ko": "열세 번째 공허체 13의 상영 첫 주에 배포한 포스터. 시리즈에 개근한 조연의 충격적인 결말을 폭로하고 있다.",
+  "zh": "《第十三個虛空體13》上映首週發放的宣傳海報。透露全系列皆有登場的配角的震撼結局。",
+  "en": "A poster distributed during the first week of screenings for The 13th Voidborn 13. It spoils the shocking ending of a supporting character who appeared throughout the series."
+ },
+ {
+  "ko": "샌드위치를 들고 소풍하러 갈까?",
+  "zh": "我們去露營吧！",
+  "en": "Let's go camping!"
+ },
+ {
+  "ko": "오늘은 이대로 푹 쉬자.",
+  "zh": "今天就這樣好好休息吧。",
+  "en": "Let's just take it easy and rest today."
+ },
+ {
+  "ko": "오늘의 날씨 - 돌풍",
+  "zh": "今日天氣－狂風",
+  "en": "Today's Weather - Gusts"
+ },
+ {
+  "ko": "오늘의 날씨 - 호우",
+  "zh": "今日天氣－暴雨",
+  "en": "Today's Weather - Heavy Rain"
+ },
+ {
+  "ko": "오늘의 날씨 - 쾌청",
+  "zh": "今日天氣－晴朗",
+  "en": "Today's Weather - Clear Skies"
+ },
+ {
+  "ko": "여유로운 시간을 보낸다.",
+  "zh": "度過一段悠閒的時光。",
+  "en": "Let's take some time to relax."
+ },
+ {
+  "ko": "원래 계획대로 시간을 보낸다.",
+  "zh": "按照原定計畫度過時間。",
+  "en": "Let's stick to the original plan."
+ },
+ {
+  "ko": "단원과의 관람",
+  "zh": "與團員共觀",
+  "en": "Watching a Play with My Journey Member"
+ },
+ {
+  "ko": "단원과의 대화",
+  "zh": "與團員的對話",
+  "en": "A Conversation with My Journey Member"
+ },
+ {
+  "ko": "단원과의 산책",
+  "zh": "與團員散步",
+  "en": "A Stroll with My Journey Member"
+ },
+ {
+  "ko": "오늘의 날씨 - 안개",
+  "zh": "今日天氣－濃霧",
+  "en": "Today's Weather - Fog"
+ },
+ {
+  "ko": "훈련을 이어나간다.",
+  "zh": "繼續訓練。",
+  "en": "Continue the training."
+ },
+ {
+  "ko": "숙소로 돌아간다.",
+  "zh": "返回住處。",
+  "en": "Head back to the quarters."
+ },
+ {
+  "ko": "오늘의 날씨 - 낙뢰",
+  "zh": "今日天氣－打雷",
+  "en": "Today's Weather - Lightning"
+ },
+ {
+  "ko": "오늘의 날씨 - 순풍",
+  "zh": "今日天氣－順風",
+  "en": "Today's Weather - Breeze"
+ },
+ {
+  "ko": "상쾌함",
+  "zh": "爽快",
+  "en": "Freshness"
+ },
+ {
+  "ko": "부담감을 떨쳐내고 새롭게 시작합니다. 훈련 실패율이 감소합니다.",
+  "zh": "放下壓力，重新開始。訓練失敗率減少。",
+  "en": "You shake off your burdens to make a fresh start. Training failure rate decreases."
+ },
+ {
+  "ko": "오늘의 날씨 - 열대야",
+  "zh": "今日天氣－熱帶夜",
+  "en": "Today's Weather - Tropical Night"
+ },
+ {
+  "ko": "손선풍기를 사용한다.",
+  "zh": "使用手持電風扇。",
+  "en": "Use a handy fan."
+ },
+ {
+  "ko": "휴대용 선풍기",
+  "zh": "手持隨身風扇",
+  "en": "Portable Fan"
+ },
+ {
+  "ko": "어떻게든 버텨본다.",
+  "zh": "想辦法忍耐一下。",
+  "en": "Tough it out."
+ },
+ {
+  "ko": "오늘의 날씨 - 폭설",
+  "zh": "今日天氣－暴雪",
+  "en": "Today's Weather - Heavy Snow"
+ },
+ {
+  "ko": "핫팩을 사용한다.",
+  "zh": "使用暖暖包。",
+  "en": "Use a hot pack."
+ },
+ {
+  "ko": "손난로",
+  "zh": "手暖爐",
+  "en": "Hand Warmer"
+ },
+ {
+  "ko": "구원단 보급",
+  "zh": "救援團補給",
+  "en": "Savior Party Supplies"
+ },
+ {
+  "ko": "영양제를 고르자.",
+  "zh": "選營養劑吧。",
+  "en": "Choose the supplements."
+ },
+ {
+  "ko": "만족도 설문지",
+  "zh": "滿意度調查",
+  "en": "Satisfaction Survey"
+ },
+ {
+  "ko": "NOA의 신설 부서가 작성한 앙케트지. 비공식적인 경로를 통해 입수하고 말았다.",
+  "zh": "由NOA新設部門製作的問卷調查表，不小心透過非正式管道入手了。",
+  "en": "A questionnaire prepared by one of NOA's newly established departments. It was obtained through unofficial channels."
+ },
+ {
+  "ko": "푹신한 베개를 고르자.",
+  "zh": "選蓬鬆的枕頭吧。",
+  "en": "Choose the soft pillow."
+ },
+ {
+  "ko": "매운 음식을 고르자.",
+  "zh": "選香辣的食物吧。",
+  "en": "Choose the spicy food."
+ },
+ {
+  "ko": "신비한 석상",
+  "zh": "神祕石像",
+  "en": "The Mysterious Statue"
+ },
+ {
+  "ko": "칼을 든 석상에게 기도한다.",
+  "zh": "向持劍石像祈禱。",
+  "en": "Pray to the statue holding the sword."
+ },
+ {
+  "ko": "석상의 칼",
+  "zh": "石像之劍",
+  "en": "Statue's Sword"
+ },
+ {
+  "ko": "외딴 곳의 석상에게서 얻은 칼. 투박한 만듦새와 다르게 쥐고 있으면 무엇이든 벨 수 있을 것 같다.",
+  "zh": "從偏僻之地的石像上獲得的刀。外觀粗糙，但握在手中彷彿什麼都能斬斷。",
+  "en": "A sword obtained from a statue in a remote location. Despite its crude construction, it seems capable of cutting through anything when held."
+ },
+ {
+  "ko": "꽃을 든 석상에게 기도한다.",
+  "zh": "向持花石像祈禱。",
+  "en": "Pray to the statue holding the flowers."
+ },
+ {
+  "ko": "석상의 꽃",
+  "zh": "石像之花",
+  "en": "Statue's Flower"
+ },
+ {
+  "ko": "외딴 곳의 석상에게서 얻은 꽃. 소박한 만듦새와 다르게 쥐고 있으면 신기한 향기가 주위를 맴돈다.",
+  "zh": "從偏僻之地的石像上獲得的花。外觀樸素，但握在手中周圍會散發神奇的香氣。",
+  "en": "A flower obtained from a statue in a remote location. Despite its simple craftsmanship, a mysterious fragrance lingers around it when held."
+ },
+ {
+  "ko": "기도하지 않는다.",
+  "zh": "不祈禱。",
+  "en": "Don't pray."
+ },
+ {
+  "ko": "시작형 강화제",
+  "zh": "初版強化劑",
+  "en": "The Prototype Enhancer"
+ },
+ {
+  "ko": "섬뜩하게 붉은 빛의 물약",
+  "zh": "詭異的紅色藥水。",
+  "en": "The ominously glowing red potion."
+ },
+ {
+  "ko": "빈 약병",
+  "zh": "空藥罐",
+  "en": "Empty Vial"
+ },
+ {
+  "ko": "연금술사들이 특수한 용액을 보관하기 위해 만든 병. 보관을 소홀히 하면 사고로 이어질 수도 있다.",
+  "zh": "鍊金術師為保存特殊溶液而製作的瓶子。若保管不慎，可能會引發事故。",
+  "en": "A bottle made by alchemists to store special solutions. Negligent storage could lead to accidents."
+ },
+ {
+  "ko": "마력 탈진",
+  "zh": "魔力耗盡",
+  "en": "Mana Exhaustion"
+ },
+ {
+  "ko": "기운이 없어서 서 있기도 어렵습니다. 훈련 실패율이 크게 증가합니다.",
+  "zh": "因體力不濟，連站著都很吃力。訓練失敗率大幅增加。",
+  "en": "You feel too weak to even stand. Training failure rate greatly increases."
+ },
+ {
+  "ko": "차갑도록 푸른 빛의 물약",
+  "zh": "冰冷的藍色藥水。",
+  "en": "The chilling blue potion."
+ },
+ {
+  "ko": "고르디우스의 검",
+  "zh": "戈耳狄俄斯之劍",
+  "en": "Sword of Gordius"
+ },
+ {
+  "ko": "어떤 난관도 두렵지 않습니다. 훈련 실패율이 감소합니다.",
+  "zh": "任何難關都不足為懼。訓練失敗率減少。",
+  "en": "You fear no challenge. Training failure rate decreases."
+ },
+ {
+  "ko": "눈부시게 노란 빛의 물약",
+  "zh": "耀眼的黃色藥水。",
+  "en": "The dazzling golden-yellow potion."
+ },
+ {
+  "ko": "급성 슬럼프",
+  "zh": "突發性低潮",
+  "en": "Acute Slump"
+ },
+ {
+  "ko": "돌이켜 보면 허망한 삶이었습니다. 훈련 실패율이 증가합니다.",
+  "zh": "回頭一看，真是虛度的一生。訓練失敗率增加。",
+  "en": "Looking back, life feels futile. Training failure rate increases."
+ },
+ {
+  "ko": "옆에 놓여 있는 평범한 음료수",
+  "zh": "放在旁邊的普通飲料。",
+  "en": "The plain-looking drink sitting to the side."
+ },
+ {
+  "ko": "미래를 위한 선택",
+  "zh": "為了未來的選擇",
+  "en": "A Choice for the Future"
+ },
+ {
+  "ko": "갖고 있어 보기로 한다.",
+  "zh": "決定收下。",
+  "en": "I'll hold onto it."
+ },
+ {
+  "ko": "오래된 모래시계",
+  "zh": "老舊的沙漏",
+  "en": "Old Hourglass"
+ },
+ {
+  "ko": "여기저기 금이 간 모래시계. 바닥에 의미심장한 문구가 적혀있다.",
+  "zh": "四處佈滿裂痕的沙漏。底部刻著一句意味深長的話語。",
+  "en": "An hourglass cracked all over. A cryptic message is inscribed on the base."
+ },
+ {
+  "ko": "거절한다.",
+  "zh": "拒絕。",
+  "en": "I'll pass."
+ },
+ {
+  "ko": "정체불명의 상인",
+  "zh": "未知的商人",
+  "en": "The Mysterious Merchant"
+ },
+ {
+  "ko": "공격에 도움이 되는 비술서.",
+  "zh": "對攻擊有幫助的祕術書。",
+  "en": "A tome suited for offense."
+ },
+ {
+  "ko": "공격의 솜씨",
+  "zh": "攻擊技巧",
+  "en": "Skill of Attack"
+ },
+ {
+  "ko": "공격력이 2% 증가합니다.",
+  "zh": "攻擊力增加2%。",
+  "en": "ATK increases by 2%."
+ },
+ {
+  "ko": "생존에 도움이 되는 비술서.",
+  "zh": "對生存有幫助的祕術書。",
+  "en": "A tome focused on survival."
+ },
+ {
+  "ko": "생명의 솜씨",
+  "zh": "生命技巧",
+  "en": "Skill of Life"
+ },
+ {
+  "ko": "최대 생명력이 2% 증가합니다.",
+  "zh": "最大生命力增加2%。",
+  "en": "Max HP increases by 2%."
+ },
+ {
+  "ko": "모든 상황에 도움이 되는 비술서도 있어?",
+  "zh": "有對所有情況都有幫助的祕術書嗎？",
+  "en": "Is there one useful in any situation?"
+ },
+ {
+  "ko": "속도의 솜씨",
+  "zh": "速度技巧",
+  "en": "Skill of Speed"
+ },
+ {
+  "ko": "속도가 2 증가합니다.",
+  "zh": "速度增加2。",
+  "en": "SPD increases by 2."
+ },
+ {
+  "ko": "전부 필요 없어.",
+  "zh": "全部都不需要。",
+  "en": "I don't need anything."
+ },
+ {
+  "ko": "집중의 솜씨",
+  "zh": "專注技巧",
+  "en": "Skill of Focus"
+ },
+ {
+  "ko": "효과 적중이 4% 증가합니다.",
+  "zh": "效果命中增加4%。",
+  "en": "Effect Hit increases by 4%."
+ },
+ {
+  "ko": "보호의 솜씨",
+  "zh": "保護技巧",
+  "en": "Skill of Protection"
+ },
+ {
+  "ko": "효과 저항이 4% 증가합니다.",
+  "zh": "效果抗性增加4%。",
+  "en": "Effect RES increases by 4%."
  },
  {
   "ko": "여정의 선물",
@@ -198,6 +1548,384 @@
   "ko": "인연의 선물",
   "zh": "緣分之禮",
   "en": "Gift of Connection"
+ },
+ {
+  "ko": "사고는 일어난다",
+  "zh": "意外總是難免",
+  "en": "Accidents Happen"
+ },
+ {
+  "ko": "우연한 발견",
+  "zh": "偶然的發現",
+  "en": "An Unexpected Discovery"
+ },
+ {
+  "ko": "힘은 좀 들겠지만... 파 보자!",
+  "zh": "雖然會費點力氣…挖挖看吧！",
+  "en": "It'll take some effort... but let's dig it up!"
+ },
+ {
+  "ko": "수상한 상자",
+  "zh": "可疑的箱子",
+  "en": "Suspicious Box"
+ },
+ {
+  "ko": "흙 속에서 발견한 오래된 상자. 매우 정교한 잠금 장치로 봉인되어 있어서, 무엇이 들어 있을지 궁금하게 만든다.",
+  "zh": "在土裡發現的古老箱子。以極其精巧的鎖具封印著，令人不禁好奇裡面究竟藏了什麼。",
+  "en": "An old chest found buried in the ground. Sealed with an extremely intricate locking mechanism, it sparks curiosity about what might be inside."
+ },
+ {
+  "ko": "이런 곳에 낭비할 체력은 없다!",
+  "zh": "沒有多餘體力浪費在這種地方！",
+  "en": "No point wasting energy on something like this!"
+ },
+ {
+  "ko": "교단의 분실물",
+  "zh": "教團的失物",
+  "en": "The Order's Lost Item"
+ },
+ {
+  "ko": "어서 열어보자.",
+  "zh": "趕快打開吧。",
+  "en": "Let's open it."
+ },
+ {
+  "ko": "다음에 열어보자.",
+  "zh": "下次再打開吧。",
+  "en": "Let's save it for later."
+ },
+ {
+  "ko": "예상 못 한 격려",
+  "zh": "意料之外的鼓勵",
+  "en": "Unexpected Encouragement"
+ },
+ {
+  "ko": "하는 만큼 성과가 나올 것이라고 믿자!",
+  "zh": "相信努力就會有回報！",
+  "en": "Throw all I've got into training and believe it pays off!"
+ },
+ {
+  "ko": "데드라인 효과",
+  "zh": "期限效應",
+  "en": "Deadline Effect"
+ },
+ {
+  "ko": "압박감이 긍정적인 영향을 줍니다. 훈련 중 획득하는 잠재력 포인트가 증가합니다.",
+  "zh": "壓力也能帶來正向影響。訓練中獲得的潛力點數增加。",
+  "en": "Pressure has a positive effect. Potential Points gained during training increase."
+ },
+ {
+  "ko": "과욕",
+  "zh": "貪欲",
+  "en": "Overexertion"
+ },
+ {
+  "ko": "무리한 훈련이 독이 되었습니다.  훈련 실패율이 증가합니다.",
+  "zh": "過度訓練反而成了毒藥。訓練失敗率增加。",
+  "en": "Overtraining has taken its toll. Training failure rate increases."
+ },
+ {
+  "ko": "조금만 더 해 보자.",
+  "zh": "再堅持一下吧。",
+  "en": "Train a bit more than usual."
+ },
+ {
+  "ko": "지금으로도 충분해.",
+  "zh": "現在這樣已經足夠了。",
+  "en": "Be satisfied with the usual pace."
+ },
+ {
+  "ko": "비밀의 지옥 특훈",
+  "zh": "祕密地獄特訓",
+  "en": "The Secret Training from Hell"
+ },
+ {
+  "ko": "펀치 기계 잘 치는 법",
+  "zh": "打拳擊機的技巧。",
+  "en": "How to master the punching machine."
+ },
+ {
+  "ko": "제약을 이겨내고",
+  "zh": "克服限制",
+  "en": "Surpassing Limits"
+ },
+ {
+  "ko": "몸에 걸리는 부하도 일상 같습니다. 훈련 중 획득하는 힘이 증가합니다.",
+  "zh": "身體承受的負荷彷彿已成日常。訓練中獲得的力量增加。",
+  "en": "You feel accustomed to the strain on your body. Strength gained during training increases."
+ },
+ {
+  "ko": "힘 특훈 인증서",
+  "zh": "力量特訓認證書",
+  "en": "Strength Training Certificate"
+ },
+ {
+  "ko": "지옥 특훈 참여자에게 지급되는 인증서. 이 인증서를 받았다면 힘 훈련에 절망하지 않아도 좋다.",
+  "zh": "頒給地獄特訓參與者的證書。只要獲得此證書，就不必再對力量訓練感到絕望。",
+  "en": "A certificate issued to participants of the secret training from hell. As long as you have this certificate, there is no need to despair over Strength training."
+ },
+ {
+  "ko": "지치지 않고 달리는 법",
+  "zh": "跑得持久的方法。",
+  "en": "How to run without tiring."
+ },
+ {
+  "ko": "무모한 도전",
+  "zh": "魯莽的挑戰",
+  "en": "Reckless Challenge"
+ },
+ {
+  "ko": "강적을 꺾을 때까지 도전은 계속됩니다. 훈련 중 획득하는 체력이 증가합니다.",
+  "zh": "在打倒強敵之前，挑戰會持續下去。訓練中獲得的體力增加。",
+  "en": "You keep challenging yourself until powerful foes are defeated. Vitality gained during training increases."
+ },
+ {
+  "ko": "체력 특훈 인증서",
+  "zh": "體力特訓認證書",
+  "en": "Vitality Training Certificate"
+ },
+ {
+  "ko": "지옥 특훈 참여자에게 지급되는 인증서. 이 인증서를 받았다면 체력 훈련에 절망하지 않아도 좋다.",
+  "zh": "頒給地獄特訓參與者的證書。只要獲得此證書，就不必再對體力訓練感到絕望。",
+  "en": "A certificate issued to participants of the secret training from hell. As long as you have this certificate, there is no need to despair over Vitality training."
+ },
+ {
+  "ko": "지금은 괜찮다.",
+  "zh": "現在這樣就好。",
+  "en": "I think we're fine."
+ },
+ {
+  "ko": "힘 특훈의 성과",
+  "zh": "力量特訓的成果",
+  "en": "Strength Training Results"
+ },
+ {
+  "ko": "그동안 배운 건 잊지 않을 거야.",
+  "zh": "我不會忘記這段時間所學的。",
+  "en": "I won't forget what I've learned."
+ },
+ {
+  "ko": "힘 훈련 수료패",
+  "zh": "力量訓練結業獎牌",
+  "en": "Strength Training Completion Badge"
+ },
+ {
+  "ko": "힘 특훈을 통과한 사람에게 지급되는 수료패. 누군가의 작은 격려가 큰 힘으로 돌아올 때도 있다.",
+  "zh": "通過力量特訓後頒發的結業獎牌。某人小小的鼓勵，有時也能化為巨大的力量。",
+  "en": "A completion badge awarded to those who passed Strength Training. Sometimes a small word of encouragement can return as great strength."
+ },
+ {
+  "ko": "아직 배움이 부족하다.",
+  "zh": "還需要學習更多。",
+  "en": "We still have more to learn."
+ },
+ {
+  "ko": "체력 특훈의 성과",
+  "zh": "體力特訓的成果",
+  "en": "Stamina Training Results"
+ },
+ {
+  "ko": "체력 훈련 수료패",
+  "zh": "體力訓練結業獎牌",
+  "en": "Vitality Training Completion Badge"
+ },
+ {
+  "ko": "체력 특훈을 통과한 사람에게 지급되는 수료패. 누군가의 작은 격려가 큰 힘으로 돌아올 때도 있다.",
+  "zh": "通過體力特訓後頒發的結業獎牌。某人小小的鼓勵，有時也能化為巨大的力量。",
+  "en": "A completion badge awarded to those who passed Vitality Training. Sometimes a small word of encouragement can return as great strength."
+ },
+ {
+  "ko": "신설 부서는 노력 중!",
+  "zh": "新設部門努力中！",
+  "en": "The New Department Is Working Hard!"
+ },
+ {
+  "ko": "설문 평가 : 좋음",
+  "zh": "問卷評價：良好",
+  "en": "Survey Response: Good"
+ },
+ {
+  "ko": "설문 평가 : 보통",
+  "zh": "問卷評價：普通",
+  "en": "Survey Response: Average"
+ },
+ {
+  "ko": "설문 평가 : 나쁨",
+  "zh": "問卷評價：不佳",
+  "en": "Survey Response: Poor"
+ },
+ {
+  "ko": "오늘은 좀…",
+  "zh": "今天有點…",
+  "en": "Maybe later..."
+ },
+ {
+  "ko": "칼에 숨겨진 힘",
+  "zh": "劍中隱藏的力量",
+  "en": "The Power Hidden in the Sword"
+ },
+ {
+  "ko": "석상의 칼을 집어든다.",
+  "zh": "拾起石像之花。",
+  "en": "Pick up the sword."
+ },
+ {
+  "ko": "힘의 자양분",
+  "zh": "力量的養分",
+  "en": "Strength Nourishment"
+ },
+ {
+  "ko": "후대에 계승될 힘을 제공하고 있습니다. 훈련 중 획득하는 체력이 감소합니다.",
+  "zh": "正在為後代提供可繼承的力量。訓練中獲得的體力減少。",
+  "en": "You provide strength to be passed down to future generations. Vitality gained during training decreases."
+ },
+ {
+  "ko": "그대로 놔둔다.",
+  "zh": "維持原狀不動。",
+  "en": "Leave it as it is."
+ },
+ {
+  "ko": "꽃에 숨겨진 힘",
+  "zh": "花中隱藏的力量",
+  "en": "The Power Hidden in the Flower"
+ },
+ {
+  "ko": "석상의 꽃을 집어든다.",
+  "zh": "拾起石像之花。",
+  "en": "Pick up the flower."
+ },
+ {
+  "ko": "체력의 자양분",
+  "zh": "體力的養分",
+  "en": "Vitality Nourishment"
+ },
+ {
+  "ko": "후대에 계승될 체력을 제공하고 있습니다. 훈련 중 획득하는 힘이 감소합니다.",
+  "zh": "正在為後代提供可繼承的體力。訓練中獲得的力量減少。",
+  "en": "You provide vitality to be passed down to future generations. Strength gained during training decreases."
+ },
+ {
+  "ko": "완성형 강화제?",
+  "zh": "完成版強化劑？",
+  "en": "The Completed Enhancer?"
+ },
+ {
+  "ko": "이렇게 된 거 마셔 보자!",
+  "zh": "既然如此就喝喝看吧！",
+  "en": "Guess we're drinking it, then!"
+ },
+ {
+  "ko": "음료수가 좋겠어.",
+  "zh": "還是喝飲料好了。",
+  "en": "I'll take the normal drink."
+ },
+ {
+  "ko": "수집가가 온다",
+  "zh": "收藏家來訪",
+  "en": "The Collector's Visit"
+ },
+ {
+  "ko": "교환을 승낙한다.",
+  "zh": "同意交換。",
+  "en": "Accept the trade."
+ },
+ {
+  "ko": "현자의 손",
+  "zh": "賢者之手",
+  "en": "Hand of the Sage"
+ },
+ {
+  "ko": "토론에서 한 번도 진 적 없다는 어느 현자의 유품. 피도 눈물도 없는 상대방에게서도 공감 능력을 이끌어낸다.",
+  "zh": "某位從未在辯論中輸過的賢者遺物。就連冷酷無情的對手，也能被引發出共感能力。",
+  "en": "The relic of a sage said to have never lost a debate. It draws out empathy even from opponents with hearts of ice."
+ },
+ {
+  "ko": "아담한 오아시스",
+  "zh": "小巧宜人的綠洲",
+  "en": "Cozy Oasis"
+ },
+ {
+  "ko": "닫은 채로 놔두면 정수된 물이 차오르는 물병. 미개척지를 헤매다 사라졌던 탐험가의 시신 곁에서 발견되었다.",
+  "zh": "只要保持密封，瓶中就會逐漸充滿精華水的水壺。是在未開拓地區迷失並失蹤的探險家遺體旁發現的。",
+  "en": "A water bottle that fills itself with purified water when kept closed. Found beside the body of an explorer who vanished while wandering uncharted lands."
+ },
+ {
+  "ko": "저격수의 외투",
+  "zh": "狙擊手的外套",
+  "en": "Sniper's Coat"
+ },
+ {
+  "ko": "전쟁에서 전설적인 활약을 펼친 저격수의 외투. 한 번의 총성이 울려 퍼지면 세 명의 적이 쓰러진 순간의 기억이 남아 있다.",
+  "zh": "在戰爭中立下赫赫戰功的狙擊手外套。槍聲一響起，三名敵人倒下的瞬間仍留在記憶中。",
+  "en": "The coat of a sniper who performed legendary feats in war. It retains the memory of the moment when three enemies were felled by a single gunshot."
+ },
+ {
+  "ko": "거래하고 싶은 마음은 없다.",
+  "zh": "沒有要交易的意思。",
+  "en": "Say I'm not interested."
+ },
+ {
+  "ko": "교단의 제안",
+  "zh": "教團的提議",
+  "en": "The Order's Proposal"
+ },
+ {
+  "ko": "교단에 유물을 매매한다.",
+  "zh": "將文物賣給教團。",
+  "en": "Sell the relic to the Order."
+ },
+ {
+  "ko": "정체불명의 유물",
+  "zh": "未知的文物",
+  "en": "Mysterious Relic"
+ },
+ {
+  "ko": "가지고 있어 보자.",
+  "zh": "想自己留著。",
+  "en": "Hold on to it for now."
+ },
+ {
+  "ko": "간단한 테스트",
+  "zh": "簡單的測試",
+  "en": "A Simple Test"
+ },
+ {
+  "ko": "적당한 힘으로 충격을 가한다.",
+  "zh": "用適當的力量施加衝擊。",
+  "en": "Strike it with moderate force."
+ },
+ {
+  "ko": "강력한 공격을 퍼붓는다.",
+  "zh": "發動強力攻擊。",
+  "en": "Hit it with full power."
+ },
+ {
+  "ko": "유물은 소중히 간직해야 한다.",
+  "zh": "文物就應該要好好珍藏。",
+  "en": "Say that relics need to be handled with care."
+ },
+ {
+  "ko": "토벌의 전리품",
+  "zh": "討伐的戰利品",
+  "en": "Spoils of the Hunt"
+ },
+ {
+  "ko": "Hunt Trophy: Case 1"
+ },
+ {
+  "ko": "An Invisible Talisman obtained when the Hunt Trophy: Case 1 option appears."
+ },
+ {
+  "ko": "Hunt Trophy: Case 2"
+ },
+ {
+  "ko": "An Invisible Talisman obtained when the Hunt Trophy: Case 2 option appears."
+ },
+ {
+  "ko": "Hunt Trophy: Case 3"
+ },
+ {
+  "ko": "An Invisible Talisman obtained when the Hunt Trophy: Case 3 option appears."
  },
  {
   "ko": "대마녀의 부름",
@@ -885,14 +2613,10 @@
   "en": "A training manual that helps with offense"
  },
  {
-  "ko": "기초 훈련 교본 - 공격편",
-  "zh": "基礎訓練教程 - 攻擊篇",
-  "en": "Basic Training Manual - Offense"
+  "ko": "Direction of Training_01"
  },
  {
-  "ko": "공격의 흐름을 익히기 위한 교본. 단숨에 적의 빈틈을 파고드는 전투법이 정리되어 있다.",
-  "zh": "為掌握攻擊節奏而編寫的教材。整理了能在瞬間抓住敵人破綻的戰鬥方法。",
-  "en": "A manual for learning the flow of offense. It outlines combat methods for instantly exploiting an enemy's opening."
+  "ko": "An invisible item obtainable from the Direction of Training event. Connects to the Ancient Savior's Relic event."
  },
  {
   "ko": "생존에 도움이 되는 훈련 교본",
@@ -900,14 +2624,7 @@
   "en": "A training manual that helps with survival"
  },
  {
-  "ko": "기초 훈련 교본 - 생존편",
-  "zh": "基礎訓練教程 - 生存篇",
-  "en": "Basic Training Manual - Survival"
- },
- {
-  "ko": "위기 상황에서 몸을 지키는 방법을 정리한 교본. 체력 관리와 회피, 장기전에 필요한 기본기가 담겨 있다.",
-  "zh": "整理了在危急情況下保護自身方法的教材。收錄了體力管理、迴避，以及長期戰鬥所需的基本技巧。",
-  "en": "A manual summarizing how to protect oneself in crisis situations. It contains the fundamentals needed for stamina management, evasion, and prolonged battles."
+  "ko": "Direction of Training_02"
  },
  {
   "ko": "다양한 상황에 도움이 되는 훈련 교본",
@@ -915,14 +2632,13 @@
   "en": "A training manual that helps in various situations"
  },
  {
-  "ko": "기초 훈련 교본 - 응용전술편",
-  "zh": "基礎訓練教程 - 應用戰術篇",
-  "en": "Basic Training Manual - Applied Tactics"
+  "ko": "Direction of Training_03"
  },
  {
-  "ko": "전투 시 다양한 상황에서의 대응 방법을 기술한 교본. 각종 사례와 판단 기준이 정리되어 있다.",
-  "zh": "記載了戰鬥中在各種情況下的應對方法的教材。整理了各種案例與判斷基準。",
-  "en": "A manual describing how to respond to various situations during combat. A vast range of cases and decision criteria are organized within it."
+  "ko": "(Choice text missing in source data)"
+ },
+ {
+  "ko": "Direction of Training_04"
  },
  {
   "ko": "고대 구원자의 유물",
@@ -930,394 +2646,195 @@
   "en": "Relic of an Ancient Savior"
  },
  {
-  "ko": "레이더스 인카운터 승리",
-  "zh": "遭遇掠奪者事件獲勝",
-  "en": "Raiders Encounter Victory"
+  "ko": "의뢰 실패",
+  "zh": "委託失敗",
+  "en": "Quest Failed"
  },
  {
-  "ko": "약탈자 토벌 의뢰 Ⅰ",
-  "zh": "掠奪者討伐委託Ⅰ",
-  "en": "Raider Hunt Quest Ⅰ"
+  "ko": "돌아가자…",
+  "zh": "我們回去吧…",
+  "en": "Let's head back..."
  },
  {
-  "ko": "약탈자 토벌 의뢰 Ⅱ",
-  "zh": "掠奪者討伐委託Ⅱ",
-  "en": "Raider Hunt Quest Ⅱ"
+  "ko": "활력 포션을 건넨다",
+  "zh": "遞給她活力藥水。",
+  "en": "Hand out a Vitality Potion."
  },
  {
-  "ko": "약탈자 토벌 의뢰 Ⅲ",
-  "zh": "掠奪者討伐委託Ⅲ",
-  "en": "Raider Hunt Quest Ⅲ"
+  "ko": "활력 포션",
+  "zh": "活力藥水",
+  "en": "Vitality Potion"
  },
  {
-  "ko": "방어의 감각",
-  "zh": "防禦感知",
-  "en": "Sense of Defense"
+  "ko": "훈련 실패",
+  "zh": "訓練失敗",
+  "en": "Training Failed"
  },
  {
-  "ko": "방어력이 일정 비율만큼 소폭 증가합니다.",
-  "zh": "防禦力小幅增加一定比例。",
-  "en": "Slightly increases self DEF by a certain percentage."
+  "ko": "오늘은 이만 쉬자.",
+  "zh": "今天就先休息吧。",
+  "en": "Let's call it a day."
  },
  {
-  "ko": "카페 스트레가 쿠폰",
-  "zh": "斯特雷加咖啡廳優惠券",
-  "en": "Cafe Strega Coupon"
+  "ko": "안전하게 훈련하자.",
+  "zh": "安全地訓練吧。",
+  "en": "Let's train safely."
  },
  {
-  "ko": "카페 스트레가에서 사용할 수 있는 쿠폰. 달콤한 휴식이 필요한 순간을 위한 완벽한 선택!",
-  "zh": "可用於斯特雷加咖啡廳的優惠券。是需要甜蜜小憩時的完美選擇！",
-  "en": "A coupon usable at Cafe Strega. A perfect choice for moments when you need a sweet break."
+  "ko": "총명한 여정 단원",
+  "zh": "聰明的旅程團員",
+  "en": "Brilliant Journey Member"
  },
  {
-  "ko": "레이더스 인카운터 패배",
-  "zh": "遭遇掠奪者事件戰敗",
-  "en": "Raiders Encounter Defeat"
+  "ko": "훈련 실패율이 조금 줄어듭니다.",
+  "zh": "減少一點訓練失敗率。",
+  "en": "Training failure rate slightly decreases."
  },
  {
-  "ko": "슬라포칼립스 승리",
-  "zh": "史萊姆災變獲勝",
-  "en": "Slimepocalypse Victory"
+  "ko": "활력 포션을 건넨다.",
+  "zh": "遞給她活力藥水。",
+  "en": "Hand out a Vitality Potion."
  },
  {
-  "ko": "슬라임 토벌 의뢰 Ⅰ",
-  "zh": "史萊姆討伐委託Ⅰ",
-  "en": "Slime Hunt Quest Ⅰ"
+  "ko": "두통이 생기다.",
+  "zh": "頭有點痛了。",
+  "en": "Headache"
  },
  {
-  "ko": "슬라임 토벌 의뢰 Ⅱ",
-  "zh": "史萊姆討伐委託Ⅱ",
-  "en": "Slime Hunt Quest Ⅱ"
+  "ko": "탈력",
+  "zh": "脫力",
+  "en": "Exhaustion"
  },
  {
-  "ko": "슬라임 토벌 의뢰 Ⅲ",
-  "zh": "史萊姆討伐委託Ⅲ",
-  "en": "Slime Hunt Quest Ⅲ"
+  "ko": "충분한 휴식을 취하지 못해 힘이 나질 않습니다.\n훈련으로 획득하는 힘이 조금 감소합니다.",
+  "zh": "休息不足導致睡眠品質不佳。\n訓練中獲得的力量略為減少。",
+  "en": "You feel drained from insufficient rest.\nStrength gained from training slightly decreases."
  },
  {
-  "ko": "보호의 감각",
-  "zh": "保護感知",
-  "en": "Sense of Protection"
+  "ko": "피로감",
+  "zh": "疲勞感",
+  "en": "Fatigue"
  },
  {
-  "ko": "효과 저항이 일정 비율만큼 소폭 증가합니다.",
-  "zh": "效果抗性小幅增加一定比例。",
-  "en": "Slightly increases self Effect RES by a certain percentage."
+  "ko": "충분한 휴식을 취하지 못해 피로감이 느껴집니다.\n훈련으로 획득하는 체력이 조금 감소합니다.",
+  "zh": "休息不足導致睡眠品質不佳。\n訓練中獲得的體力略為減少。",
+  "en": "You feel fatigued from insufficient rest.\nVitality gained from training slightly decreases."
  },
  {
-  "ko": "스트릿 베이커스 굿즈 Ⅰ",
-  "zh": "街角烘焙坊周邊Ⅰ",
-  "en": "Street Bakers Merch Ⅰ"
+  "ko": "비몽사몽",
+  "zh": "半夢半醒",
+  "en": "Drowsiness"
  },
  {
-  "ko": "스트릿 베이커스와 물개사장 시리즈의 콜라보 굿즈. 일정 금액 이상을 구매하면 받을 수 있다.",
-  "zh": "街角烘焙坊與海獅老闆系列聯名周邊。消費滿指定金額即可獲得。",
-  "en": "A collaboration between Street Bakers and the Boss Seal series. You can receive it by making a purchase over a certain amount."
+  "ko": "충분한 휴식을 취하지 못해 잠이 깨질 않습니다.\n훈련으로 획득하는 인내가 조금 감소합니다.",
+  "zh": "休息不足導致睡眠品質不佳。\n訓練中獲得的韌性略為減少。",
+  "en": "You feel drowsy from insufficient rest.\nEndurance gained from training slightly decreases."
  },
  {
-  "ko": "스트릿 베이커스 굿즈 Ⅱ",
-  "zh": "街角烘焙坊周邊Ⅱ",
-  "en": "Street Bakers Merch Ⅱ"
+  "ko": "기분이 좋다.",
+  "zh": "心情很好呢。",
+  "en": "Feeling Good"
  },
  {
-  "ko": "스트릿 베이커스와 물개사장 시리즈의 콜라보 굿즈. 일정 확률로 뽑을 수 있는 희귀 아이템.",
-  "zh": "街角烘焙坊與海獅老闆系列聯名周邊。有一定機率抽中的稀有道具。",
-  "en": "A collaboration between Street Bakers and the Boss Seal series. A rare item that can be obtained with a certain probability."
+  "ko": "훈련 능숙 : 각성",
+  "zh": "訓練嫻熟：覺醒",
+  "en": "Training Proficiency: Awakening"
  },
  {
-  "ko": "스트릿 베이커스 굿즈 Ⅲ",
-  "zh": "街角烘焙坊周邊Ⅲ",
-  "en": "Street Bakers Merch Ⅲ"
+  "ko": "완벽한 휴식으로 모든 훈련이 능숙해집니다. 모든 훈련의 실패율이 감소합니다.",
+  "zh": "完美的休息讓所有訓練更加熟練。訓練失敗率減少。",
+  "en": "A perfect night of rest makes you ready to ace any training. Failure rate of all training decreases."
  },
  {
-  "ko": "스트릿 베이커스와 물개사장 시리즈의 콜라보 굿즈. 단 하나밖에 생산되지 않은 초 희귀 아이템.",
-  "zh": "街角烘焙坊與海獅老闆系列聯名周邊。僅生產一件的超稀有道具。",
-  "en": "A collaboration between the Street Bakers and the Boss Seal series. An ultra-rare item of which only one was ever produced."
+  "ko": "훈련 능숙 : 힘",
+  "zh": "訓練嫻熟：力量",
+  "en": "Training Proficiency: Strength"
  },
  {
-  "ko": "슬라임 토벌의 증표",
-  "zh": "史萊姆討伐信物",
-  "en": "Slime Hunt Token"
+  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 힘이 증가합니다.",
+  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的力量增加。",
+  "en": "Sufficient rest improves training effectiveness. Strength gained during training increases."
  },
  {
-  "ko": "토벌 의뢰에서 얻은 승리의 증표. 보고 있으면 왠지 남에게 자랑하고 싶은 마음이 솟아난다.",
-  "zh": "從討伐委託中獲得的勝利信物。看著它，心裡會油然升起一股想向他人炫耀的衝動。",
-  "en": "A token of victory obtained from a Hunt Quest. Looking at it makes you feel the urge to show it off to others."
+  "ko": "훈련 능숙 : 체력",
+  "zh": "訓練嫻熟：體力",
+  "en": "Training Proficiency: Vitality"
  },
  {
-  "ko": "슬라포칼립스 패배",
-  "zh": "史萊姆災變戰敗",
-  "en": "Slimepocalypse Defeat"
+  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 체력이 증가합니다.",
+  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的體力增加。",
+  "en": "Sufficient rest improves training effectiveness. Vitality gained during training increases."
  },
  {
-  "ko": "런 어 웨이 솔저스 승리",
-  "zh": "逃兵們獲勝",
-  "en": "Runaway Soldiers Victory"
+  "ko": "훈련 능숙 : 인내",
+  "zh": "訓練嫻熟：韌性",
+  "en": "Training Proficiency: Endurance"
  },
  {
-  "ko": "탈영병 토벌 의뢰 Ⅰ",
-  "zh": "逃兵討伐委託Ⅰ",
-  "en": "Deserter Hunt Quest Ⅰ"
+  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 인내가 증가합니다.",
+  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的韌性增加。",
+  "en": "Sufficient rest improves training effectiveness. Endurance gained during training increases."
  },
  {
-  "ko": "탈영병 토벌 의뢰 Ⅱ",
-  "zh": "逃兵討伐委託Ⅱ",
-  "en": "Deserter Hunt Quest Ⅱ"
+  "ko": "훈련 능숙 : 집중",
+  "zh": "訓練嫻熟：專注",
+  "en": "Training Proficiency: Focus"
  },
  {
-  "ko": "탈영병 토벌 의뢰 Ⅲ",
-  "zh": "逃兵討伐委託Ⅲ",
-  "en": "Deserter Hunt Quest Ⅲ"
+  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 집중이 증가합니다.",
+  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的集中增加。",
+  "en": "Sufficient rest improves training effectiveness. Focus gained during training increases."
  },
  {
-  "ko": "통찰의 감각",
-  "zh": "洞察感知",
-  "en": "Sense of Insight"
+  "ko": "훈련 능숙 : 보호",
+  "zh": "訓練嫻熟：保護",
+  "en": "Training Proficiency: Protection"
  },
  {
-  "ko": "치명타 확률이 일정 비율만큼 소폭 증가합니다.",
-  "zh": "暴擊率小幅增加一定比例。",
-  "en": "Slightly increases self CRIT Rate by a certain percentage."
+  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 보호가 증가합니다.",
+  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的保護增加。",
+  "en": "Sufficient rest improves training effectiveness. Protection gained during training increases."
  },
  {
-  "ko": "은빛 공훈 휘장",
-  "zh": "銀色功勳徽章",
-  "en": "Silver Merit Medal"
+  "ko": "좋은일이 일어날 것 같다.",
+  "zh": "好像會有好事發生。",
+  "en": "A Good Feeling About Today"
  },
  {
-  "ko": "모나스티르의 은빛 공훈 휘장. 전투에서 공적을 남긴 기사에게 수여된다.",
-  "zh": "莫納斯提爾的銀光功勳徽章。授予在戰鬥中有所貢獻的騎士。",
-  "en": "A silver meritorious service badge of Monastir. Awarded to knights who have rendered distinguished service in battle."
+  "ko": "The Fool"
  },
  {
-  "ko": "금빛 공훈 휘장",
-  "zh": "金色功勳徽章",
-  "en": "Gold Merit Medal"
+  "ko": "The World"
  },
  {
-  "ko": "모나스티르의 금빛 공훈 휘장. 전투에서 뛰어난 공적을 남긴 기사에게 수여된다.",
-  "zh": "莫納斯提爾的金光功勳徽章。授予在戰鬥中立下卓越功績的騎士。",
-  "en": "A gold meritorious service badge of Monastir. Awarded to knights who have achieved outstanding feats in battle."
+  "ko": "Candle Square"
  },
  {
-  "ko": "별빛 공훈 휘장",
-  "zh": "星光功勳徽章",
-  "en": "Starlight Merit Medal"
+  "ko": "Apocalypse"
  },
  {
-  "ko": "모나스티르의 별빛 공훈 휘장. 전투에서 최고의 공적을 남긴 기사에게 수여된다.",
-  "zh": "莫納斯提爾的星光功勳徽章。授予在戰鬥中立下最佳功績的騎士。",
-  "en": "A starlight meritorious service badge of Monastir. Awarded to knights who have achieved the greatest feats in battle."
+  "ko": "About Companions"
  },
  {
-  "ko": "런 어 웨이 솔저스 패배",
-  "zh": "逃兵們戰敗",
-  "en": "Runaway Soldiers Defeat"
+  "ko": "New Party!"
  },
  {
-  "ko": "스틸 컴 인 승리",
-  "zh": "貨源不絕獲勝",
-  "en": "Still Comin' In - Victory"
+  "ko": "Battle Evaluation"
  },
  {
-  "ko": "남작 토벌 의뢰 Ⅰ",
-  "zh": "男爵討伐委託Ⅰ",
-  "en": "Baron Hunt Quest Ⅰ"
+  "ko": "Battle Evaluation Victory"
  },
  {
-  "ko": "남작 토벌 의뢰 Ⅱ",
-  "zh": "男爵討伐委託Ⅱ",
-  "en": "Baron Hunt Quest Ⅱ"
+  "ko": "Battle Evaluation Defeat"
  },
  {
-  "ko": "남작 토벌 의뢰 Ⅲ",
-  "zh": "男爵討伐委託Ⅲ",
-  "en": "Baron Hunt Quest Ⅲ"
+  "ko": "Dirac's Well"
  },
  {
-  "ko": "우수 고객",
-  "zh": "優質顧客",
-  "en": "VIP Customer"
+  "ko": "The End of the Journey"
  },
  {
-  "ko": "가게에 방문하는 것 만으로 점원이 마중 나올 정도입니다. 거래 시 상품 구매 가격이 감소합니다.",
-  "zh": "光是造訪店鋪，店員就會出來迎接。交易時商品購買價格會降低。",
-  "en": "The staff come out to greet you just for visiting the shop. Shop prices are reduced."
- },
- {
-  "ko": "강도남작 토벌의 증표",
-  "zh": "強盜男爵討伐信物",
-  "en": "Bandit Baron Hunt Token"
- },
- {
-  "ko": "스틸 컴 인 패배",
-  "zh": "貨源不絕戰敗",
-  "en": "Still Comin' In - Defeat"
- },
- {
-  "ko": "노 포션, 노 패션! 승리",
-  "zh": "藥不可失，時尚必備！獲勝",
-  "en": "No Potion, No Passion! - Victory"
- },
- {
-  "ko": "인형 토벌 의뢰 Ⅰ",
-  "zh": "玩偶討伐委託Ⅰ",
-  "en": "Doll Hunt Quest Ⅰ"
- },
- {
-  "ko": "인형 토벌 의뢰 Ⅱ",
-  "zh": "玩偶討伐委託Ⅱ",
-  "en": "Doll Hunt Quest Ⅱ"
- },
- {
-  "ko": "인형 토벌 의뢰 Ⅲ",
-  "zh": "玩偶討伐委託Ⅲ",
-  "en": "Doll Hunt Quest Ⅲ"
- },
- {
-  "ko": "파괴의 감각",
-  "zh": "破壞感知",
-  "en": "Sense of Destruction"
- },
- {
-  "ko": "치명타 피해가 일정 비율만큼 소폭 증가합니다.",
-  "zh": "暴擊傷害小幅增加一定比例。",
-  "en": "Slightly increases self CRIT DMG by a certain percentage."
- },
- {
-  "ko": "인형 토벌의 증표",
-  "zh": "玩偶討伐信物",
-  "en": "Doll Hunt Token"
- },
- {
-  "ko": "노 포션, 노 패션! 패배",
-  "zh": "藥不可失，時尚必備！戰敗",
-  "en": "No Potion, No Passion! - Defeat"
- },
- {
-  "ko": "비치발리볼 대회 결승전 승리",
-  "zh": "沙灘排球比賽決賽獲勝",
-  "en": "Beach Volleyball Finals Victory"
- },
- {
-  "ko": "플로라 긴급 토벌 의뢰",
-  "zh": "弗洛拉緊急討伐委託",
-  "en": "Flora Emergency Hunt Quest"
- },
- {
-  "ko": "비치발리볼 우승 트로피",
-  "zh": "沙灘排球冠軍獎盃",
-  "en": "Beach Volleyball Champion Trophy"
- },
- {
-  "ko": "플로라의 비치발리볼 대회 우승 트로피. 영광의 우승자에게 지급되는 트로피.",
-  "zh": "弗洛拉沙灘排球大賽冠軍獎盃。頒發給光榮冠軍的獎盃。",
-  "en": "The championship trophy of Flora's beach volleyball tournament. A trophy awarded to the glorious champion."
- },
- {
-  "ko": "비치발리볼 대회 결승전 패배",
-  "zh": "沙灘排球比賽決賽戰敗",
-  "en": "Beach Volleyball Finals Defeat"
- },
- {
-  "ko": "흑역사 : 플로라",
-  "zh": "黑歷史：弗洛拉",
-  "en": "Shameful Memories: Flora"
- },
- {
-  "ko": "누구나 기억하고 싶지않은 과거는 있는 법입니다. 훈련 중 획득하는 힘이 감소합니다.",
-  "zh": "每個人都有不想被記住的過去。訓練中獲得的力量減少。",
-  "en": "Everyone has a past they would rather forget. Strength gained during training decreases."
- },
- {
-  "ko": "비치발리볼 2등상",
-  "zh": "沙灘排球亞軍獎",
-  "en": "Beach Volleyball Runner-Up Prize"
- },
- {
-  "ko": "플로라의 비치발리볼 대회 2등 상장. 상품은 따로 없지만 낙담할 것 없다. 2등도 잘한 것이다.",
-  "zh": "弗洛拉沙灘排球大賽亞軍獎狀。雖然沒有獎品，但別氣餒，第二名也是很了不起的成績。",
-  "en": "The second place certificate of Flora's beach volleyball tournament. There's no extra prize for being a runner-up, but that's no reason to be discouraged. Second place is still an achievement."
- },
- {
-  "ko": "물길 개척단 호위 승리",
-  "zh": "水路開拓團護衛獲勝",
-  "en": "Escorting the Waterway Expedition Victory"
- },
- {
-  "ko": "칼라이드 긴급 의뢰",
-  "zh": "卡萊德緊急委託",
-  "en": "Kalaid Emergency Quest"
- },
- {
-  "ko": "온천장 특별 회원권",
-  "zh": "溫泉區特別會員券",
-  "en": "Special Hot Springs Membership"
- },
- {
-  "ko": "칼라이드의 온천장 특별 회원권. 명예 회원의 추천 없이는 가질 수 없다.",
-  "zh": "卡萊德溫泉區的特別會員券。沒有榮譽會員的推薦是無法取得的。",
-  "en": "A special hot springs membership pass from Kalaid. It can only be obtained with a recommendation by an honorary member."
- },
- {
-  "ko": "물길 개척단 호위 패배",
-  "zh": "水路開拓團護衛戰敗",
-  "en": "Escorting the Waterway Expedition Defeat"
- },
- {
-  "ko": "흑역사 : 칼라이드",
-  "zh": "黑歷史：卡萊德",
-  "en": "Shameful Memories: Kalaid"
- },
- {
-  "ko": "누구나 기억하고 싶지않은 과거는 있는 법입니다. 훈련 중 획득하는 체력이 감소합니다.",
-  "zh": "每個人都有不想被記住的過去。訓練中獲得的體力減少。",
-  "en": "Everyone has a past they would rather forget. Vitality gained during training decreases."
- },
- {
-  "ko": "온천장 기념 타월",
-  "zh": "溫泉區紀念毛巾",
-  "en": "Hot Springs Souvenir Towel"
- },
- {
-  "ko": "칼라이드의 온천장 기념 타월. 80수의 고급 타월. 마치 비단같은 촉감을 자랑한다.",
-  "zh": "卡萊德溫泉區的紀念毛巾。80支的高級毛巾，以宛如絲綢般的觸感自豪。",
-  "en": "A commemorative towel from Kalaid's hot springs. A luxurious 80-count towel that feels like silk."
- },
- {
-  "ko": "여가 시간",
-  "zh": "閒暇時間",
-  "en": "Leisure Time"
- },
- {
-  "ko": "한정 디저트를 먹으러 가자!",
-  "zh": "一起去吃限定甜點吧！",
-  "en": "Let's go try that limited-time dessert!"
- },
- {
-  "ko": "새로 나온 영화를 보러 가자!",
-  "zh": "一起去看新上映的電影吧！",
-  "en": "Let's go see the new movie!"
- },
- {
-  "ko": "특전 포스터",
-  "zh": "特典海報",
-  "en": "Screening Bonus Poster"
- },
- {
-  "ko": "열세 번째 공허체 13의 상영 첫 주에 배포한 포스터. 시리즈에 개근한 조연의 충격적인 결말을 폭로하고 있다.",
-  "zh": "《第十三個虛空體13》上映首週發放的宣傳海報。透露全系列皆有登場的配角的震撼結局。",
-  "en": "A poster distributed during the first week of screenings for The 13th Voidborn 13. It spoils the shocking ending of a supporting character who appeared throughout the series."
- },
- {
-  "ko": "샌드위치를 들고 소풍하러 갈까?",
-  "zh": "我們去露營吧！",
-  "en": "Let's go camping!"
- },
- {
-  "ko": "오늘은 이대로 푹 쉬자.",
-  "zh": "今天就這樣好好休息吧。",
-  "en": "Let's just take it easy and rest today."
+  "ko": "Dummy"
  },
  {
   "ko": "공업소의 홍보 전략",
@@ -1373,11 +2890,6 @@
   "ko": "돈으로 해결하자.",
   "zh": "用錢解決吧。",
   "en": "Pay to solve it."
- },
- {
-  "ko": "정체불명의 유물",
-  "zh": "未知的文物",
-  "en": "Mysterious Relic"
  },
  {
   "ko": "무너진 유적 잔해에서 나온 다이얼 형태의 유물. 무엇에 쓰이는 물건인지는 알 수 없다.",
@@ -1580,1149 +3092,207 @@
   "en": "A Meal with My Journey Member"
  },
  {
-  "ko": "오늘의 날씨 - 돌풍",
-  "zh": "今日天氣－狂風",
-  "en": "Today's Weather - Gusts"
+  "ko": "눈 감으면 코 베이는",
+  "zh": "稍不留神就會吃虧",
+  "en": "Blink and You Are Done For"
  },
  {
-  "ko": "오늘의 날씨 - 호우",
-  "zh": "今日天氣－暴雨",
-  "en": "Today's Weather - Heavy Rain"
+  "ko": "뛰어가는 샤를을 부른다.",
+  "zh": "叫住跑走的夏爾。",
+  "en": "Call after Charlotte."
  },
  {
-  "ko": "오늘의 날씨 - 쾌청",
-  "zh": "今日天氣－晴朗",
-  "en": "Today's Weather - Clear Skies"
+  "ko": "샤를이 돌아오길 기다린다.",
+  "zh": "等待夏爾回來。",
+  "en": "Wait quietly for Charlotte to return."
  },
  {
-  "ko": "여유로운 시간을 보낸다.",
-  "zh": "度過一段悠閒的時光。",
-  "en": "Let's take some time to relax."
+  "ko": "모나스티르의 검",
+  "zh": "莫納斯提爾之劍",
+  "en": "The Sword of Monastir"
  },
  {
-  "ko": "원래 계획대로 시간을 보낸다.",
-  "zh": "按照原定計畫度過時間。",
-  "en": "Let's stick to the original plan."
+  "ko": "기사처럼 날아서, 토끼처럼",
+  "zh": "如騎士般飛翔，如兔子般跳躍",
+  "en": "Run Like A Knight, Hop Like a Bunny"
  },
  {
-  "ko": "단원과의 관람",
-  "zh": "與團員共觀",
-  "en": "Watching a Play with My Journey Member"
+  "ko": "더블 탭",
+  "zh": "雙連擊",
+  "en": "Double Tap"
  },
  {
-  "ko": "단원과의 대화",
-  "zh": "與團員的對話",
-  "en": "A Conversation with My Journey Member"
+  "ko": "기본기 타격 시 대상의 강인도가 격파된 상태이면 대상에게 100% 확률로 자신의 공격력에 비례한 연쇄 피해를 발생시킵니다.",
+  "zh": "普攻攻擊時，若目標的強韌度處於被擊破狀態，則有50%的機率對目標觸發與自身攻擊力成比例的連鎖傷害。",
+  "en": "Deals Chain DMG to the target proportional to self ATK with a 100% chance on attack with a Basic Skill if the target's Toughness is broken."
  },
  {
-  "ko": "단원과의 산책",
-  "zh": "與團員散步",
-  "en": "A Stroll with My Journey Member"
+  "ko": "서투른 욕망 해소법",
+  "zh": "笨拙的慾望宣洩法",
+  "en": "A Clumsy Way to Relieve Desire"
  },
  {
-  "ko": "오늘의 날씨 - 안개",
-  "zh": "今日天氣－濃霧",
-  "en": "Today's Weather - Fog"
+  "ko": "샤를",
+  "zh": "夏爾",
+  "en": "Charlotte"
  },
  {
-  "ko": "훈련을 이어나간다.",
-  "zh": "繼續訓練。",
-  "en": "Continue the training."
+  "ko": "누구를 위해 수프는 끓는가",
+  "zh": "湯為誰而煮",
+  "en": "For Whom the Soup Boils"
  },
  {
-  "ko": "숙소로 돌아간다.",
-  "zh": "返回住處。",
-  "en": "Head back to the quarters."
+  "ko": "그럼 한 그릇 줄래?",
+  "zh": "那給我一碗吧？",
+  "en": "Sure, I'll take a bowl."
  },
  {
-  "ko": "오늘의 날씨 - 낙뢰",
-  "zh": "今日天氣－打雷",
-  "en": "Today's Weather - Lightning"
+  "ko": "민간인용으로 충분한 것 같아…",
+  "zh": "平民用的就夠了…",
+  "en": "I'll settle for the normal version..."
  },
  {
-  "ko": "오늘의 날씨 - 순풍",
-  "zh": "今日天氣－順風",
-  "en": "Today's Weather - Breeze"
+  "ko": "공감 능력",
+  "zh": "共鳴能力",
+  "en": "Empathy"
  },
  {
-  "ko": "상쾌함",
-  "zh": "爽快",
-  "en": "Freshness"
+  "ko": "다른 사람의 마음을 깊이 이해할 줄 아는 여정 단원. 훈련 중 획득하는 인연 포인트가 증가합니다.",
+  "zh": "能夠深刻理解他人心意的旅程團員。訓練中獲得的羈絆點數增加。",
+  "en": "You deeply understand the hearts of others. Bond Points gained during training increase."
  },
  {
-  "ko": "부담감을 떨쳐내고 새롭게 시작합니다. 훈련 실패율이 감소합니다.",
-  "zh": "放下壓力，重新開始。訓練失敗率減少。",
-  "en": "You shake off your burdens to make a fresh start. Training failure rate decreases."
+  "ko": "새우의 처세술",
+  "zh": "蝦子的處世之道",
+  "en": "The Art of Shrimp Survival"
  },
  {
-  "ko": "오늘의 날씨 - 열대야",
-  "zh": "今日天氣－熱帶夜",
-  "en": "Today's Weather - Tropical Night"
+  "ko": "알았어. 최대한 이상하게 써볼게.",
+  "zh": "好吧，我會盡量寫得奇怪一點。",
+  "en": "Got it. I'll make it as hopeless as possible."
  },
  {
-  "ko": "손선풍기를 사용한다.",
-  "zh": "使用手持電風扇。",
-  "en": "Use a handy fan."
+  "ko": "더 좋은 생각이 있는데…",
+  "zh": "我有個更好的主意…",
+  "en": "I actually have an even better idea..."
  },
  {
-  "ko": "휴대용 선풍기",
-  "zh": "手持隨身風扇",
-  "en": "Portable Fan"
+  "ko": "생명의 감각",
+  "zh": "生命感知",
+  "en": "Sense of Life"
  },
  {
-  "ko": "어떻게든 버텨본다.",
-  "zh": "想辦法忍耐一下。",
-  "en": "Tough it out."
+  "ko": "최대 생명력이 일정 비율만큼 소폭 증가합니다.",
+  "zh": "最大生命力小幅增加一定比例。",
+  "en": "Slightly increases self Max HP by a certain percentage."
  },
  {
-  "ko": "오늘의 날씨 - 폭설",
-  "zh": "今日天氣－暴雪",
-  "en": "Today's Weather - Heavy Snow"
+  "ko": "미션 파서블?",
+  "zh": "Mission Possible？",
+  "en": "Mission Possible?"
  },
  {
-  "ko": "핫팩을 사용한다.",
-  "zh": "使用暖暖包。",
-  "en": "Use a hot pack."
+  "ko": "사랑의 행진",
+  "zh": "愛戀行進",
+  "en": "Wedding March"
  },
  {
-  "ko": "손난로",
-  "zh": "手暖爐",
-  "en": "Hand Warmer"
+  "ko": "강인도 최대치가 1 증가합니다. 특수기 혹은 궁극기 사용 후 노바 포스를 2 획득합니다.",
+  "zh": "強韌度上限增加1。使用特殊技或必殺技後，獲得新星原力2。",
+  "en": "Increases Max Toughness by 1. Gains 2 Nova Force after using a Special Skill or Ultimate Skill."
  },
  {
-  "ko": "구원단 보급",
-  "zh": "救援團補給",
-  "en": "Savior Party Supplies"
+  "ko": "나른한 오후의 틈새",
+  "zh": "慵懶午後的空閒",
+  "en": "A Drowsy Afternoon Interlude"
  },
  {
-  "ko": "영양제를 고르자.",
-  "zh": "選營養劑吧。",
-  "en": "Choose the supplements."
+  "ko": "카르멘",
+  "zh": "卡蜜",
+  "en": "Carmen"
  },
  {
-  "ko": "만족도 설문지",
-  "zh": "滿意度調查",
-  "en": "Satisfaction Survey"
+  "ko": "The Secret to a Popular Course"
  },
  {
-  "ko": "NOA의 신설 부서가 작성한 앙케트지. 비공식적인 경로를 통해 입수하고 말았다.",
-  "zh": "由NOA新設部門製作的問卷調查表，不小心透過非正式管道入手了。",
-  "en": "A questionnaire prepared by one of NOA's newly established departments. It was obtained through unofficial channels."
+  "ko": "Could the lecture topic be the problem?"
  },
  {
-  "ko": "푹신한 베개를 고르자.",
-  "zh": "選蓬鬆的枕頭吧。",
-  "en": "Choose the soft pillow."
+  "ko": "Could the teaching style be the problem?"
  },
  {
-  "ko": "매운 음식을 고르자.",
-  "zh": "選香辣的食物吧。",
-  "en": "Choose the spicy food."
+  "ko": "집중의 감각",
+  "zh": "專注感知",
+  "en": "Sense of Focus"
  },
  {
-  "ko": "신비한 석상",
-  "zh": "神祕石像",
-  "en": "The Mysterious Statue"
+  "ko": "효과 적중이 일정 비율만큼 소폭 증가합니다.",
+  "zh": "效果命中小幅增加一定比例。",
+  "en": "Slightly increases self Effect Hit by a certain percentage."
  },
  {
-  "ko": "칼을 든 석상에게 기도한다.",
-  "zh": "向持劍石像祈禱。",
-  "en": "Pray to the statue holding the sword."
+  "ko": "Crossword Puzzle"
  },
  {
-  "ko": "석상의 칼",
-  "zh": "石像之劍",
-  "en": "Statue's Sword"
+  "ko": "Give it to Gwen."
  },
  {
-  "ko": "외딴 곳의 석상에게서 얻은 칼. 투박한 만듦새와 다르게 쥐고 있으면 무엇이든 벨 수 있을 것 같다.",
-  "zh": "從偏僻之地的石像上獲得的刀。外觀粗糙，但握在手中彷彿什麼都能斬斷。",
-  "en": "A sword obtained from a statue in a remote location. Despite its crude construction, it seems capable of cutting through anything when held."
+  "ko": "Give it to the Professor."
  },
  {
-  "ko": "꽃을 든 석상에게 기도한다.",
-  "zh": "向持花石像祈禱。",
-  "en": "Pray to the statue holding the flowers."
+  "ko": "통찰의 솜씨",
+  "zh": "洞察技巧",
+  "en": "Skill of Insight"
  },
  {
-  "ko": "석상의 꽃",
-  "zh": "石像之花",
-  "en": "Statue's Flower"
+  "ko": "치명타 확률이 3% 증가합니다.",
+  "zh": "暴擊率增加3%。",
+  "en": "CRIT Rate increases by 3%."
  },
  {
-  "ko": "외딴 곳의 석상에게서 얻은 꽃. 소박한 만듦새와 다르게 쥐고 있으면 신기한 향기가 주위를 맴돈다.",
-  "zh": "從偏僻之地的石像上獲得的花。外觀樸素，但握在手中周圍會散發神奇的香氣。",
-  "en": "A flower obtained from a statue in a remote location. Despite its simple craftsmanship, a mysterious fragrance lingers around it when held."
+  "ko": "A Study in Pink"
  },
  {
-  "ko": "기도하지 않는다.",
-  "zh": "不祈禱。",
-  "en": "Don't pray."
+  "ko": "Pink Research: The Oracle Who Knows the Future"
  },
  {
-  "ko": "시작형 강화제",
-  "zh": "初版強化劑",
-  "en": "The Prototype Enhancer"
+  "ko": "Agile Stance"
  },
  {
-  "ko": "섬뜩하게 붉은 빛의 물약",
-  "zh": "詭異的紅色藥水。",
-  "en": "The ominously glowing red potion."
+  "ko": "Fills self Action Gauge by 20% after attacking with a Special Skill. This effect only triggers from single-target attacks and can only trigger once per turn."
  },
  {
-  "ko": "빈 약병",
-  "zh": "空藥罐",
-  "en": "Empty Vial"
+  "ko": "Pink Research: The Saintess of the Monolith Order"
  },
  {
-  "ko": "연금술사들이 특수한 용액을 보관하기 위해 만든 병. 보관을 소홀히 하면 사고로 이어질 수도 있다.",
-  "zh": "鍊金術師為保存特殊溶液而製作的瓶子。若保管不慎，可能會引發事故。",
-  "en": "A bottle made by alchemists to store special solutions. Negligent storage could lead to accidents."
+  "ko": "집중의 재능",
+  "zh": "專注天賦",
+  "en": "Talent of Focus"
  },
  {
-  "ko": "마력 탈진",
-  "zh": "魔力耗盡",
-  "en": "Mana Exhaustion"
+  "ko": "효과 적중이 6% 증가합니다.",
+  "zh": "效果命中增加6%。",
+  "en": "Effect Hit increases by 6%."
  },
  {
-  "ko": "기운이 없어서 서 있기도 어렵습니다. 훈련 실패율이 크게 증가합니다.",
-  "zh": "因體力不濟，連站著都很吃力。訓練失敗率大幅增加。",
-  "en": "You feel too weak to even stand. Training failure rate greatly increases."
+  "ko": "용감히 도전하라",
+  "zh": "勇於挑戰吧",
+  "en": "Challenge Bravely"
  },
  {
-  "ko": "차갑도록 푸른 빛의 물약",
-  "zh": "冰冷的藍色藥水。",
-  "en": "The chilling blue potion."
+  "ko": "속도의 성흔",
+  "zh": "速度星痕",
+  "en": "Stigmata of Speed"
  },
  {
-  "ko": "고르디우스의 검",
-  "zh": "戈耳狄俄斯之劍",
-  "en": "Sword of Gordius"
+  "ko": "속도가 8 증가합니다.",
+  "zh": "速度增加8。",
+  "en": "Increases SPD by 8."
  },
  {
-  "ko": "어떤 난관도 두렵지 않습니다. 훈련 실패율이 감소합니다.",
-  "zh": "任何難關都不足為懼。訓練失敗率減少。",
-  "en": "You fear no challenge. Training failure rate decreases."
- },
- {
-  "ko": "눈부시게 노란 빛의 물약",
-  "zh": "耀眼的黃色藥水。",
-  "en": "The dazzling golden-yellow potion."
- },
- {
-  "ko": "급성 슬럼프",
-  "zh": "突發性低潮",
-  "en": "Acute Slump"
- },
- {
-  "ko": "돌이켜 보면 허망한 삶이었습니다. 훈련 실패율이 증가합니다.",
-  "zh": "回頭一看，真是虛度的一生。訓練失敗率增加。",
-  "en": "Looking back, life feels futile. Training failure rate increases."
- },
- {
-  "ko": "옆에 놓여 있는 평범한 음료수",
-  "zh": "放在旁邊的普通飲料。",
-  "en": "The plain-looking drink sitting to the side."
- },
- {
-  "ko": "미래를 위한 선택",
-  "zh": "為了未來的選擇",
-  "en": "A Choice for the Future"
- },
- {
-  "ko": "갖고 있어 보기로 한다.",
-  "zh": "決定收下。",
-  "en": "I'll hold onto it."
- },
- {
-  "ko": "오래된 모래시계",
-  "zh": "老舊的沙漏",
-  "en": "Old Hourglass"
- },
- {
-  "ko": "여기저기 금이 간 모래시계. 바닥에 의미심장한 문구가 적혀있다.",
-  "zh": "四處佈滿裂痕的沙漏。底部刻著一句意味深長的話語。",
-  "en": "An hourglass cracked all over. A cryptic message is inscribed on the base."
- },
- {
-  "ko": "거절한다.",
-  "zh": "拒絕。",
-  "en": "I'll pass."
- },
- {
-  "ko": "정체불명의 상인",
-  "zh": "未知的商人",
-  "en": "The Mysterious Merchant"
- },
- {
-  "ko": "공격에 도움이 되는 비술서.",
-  "zh": "對攻擊有幫助的祕術書。",
-  "en": "A tome suited for offense."
- },
- {
-  "ko": "공격의 솜씨",
-  "zh": "攻擊技巧",
-  "en": "Skill of Attack"
- },
- {
-  "ko": "공격력이 2% 증가합니다.",
-  "zh": "攻擊力增加2%。",
-  "en": "ATK increases by 2%."
- },
- {
-  "ko": "생존에 도움이 되는 비술서.",
-  "zh": "對生存有幫助的祕術書。",
-  "en": "A tome focused on survival."
- },
- {
-  "ko": "생명의 솜씨",
-  "zh": "生命技巧",
-  "en": "Skill of Life"
- },
- {
-  "ko": "최대 생명력이 2% 증가합니다.",
-  "zh": "最大生命力增加2%。",
-  "en": "Max HP increases by 2%."
- },
- {
-  "ko": "모든 상황에 도움이 되는 비술서도 있어?",
-  "zh": "有對所有情況都有幫助的祕術書嗎？",
-  "en": "Is there one useful in any situation?"
- },
- {
-  "ko": "속도의 솜씨",
-  "zh": "速度技巧",
-  "en": "Skill of Speed"
- },
- {
-  "ko": "속도가 2 증가합니다.",
-  "zh": "速度增加2。",
-  "en": "SPD increases by 2."
- },
- {
-  "ko": "전부 필요 없어.",
-  "zh": "全部都不需要。",
-  "en": "I don't need anything."
- },
- {
-  "ko": "집중의 솜씨",
-  "zh": "專注技巧",
-  "en": "Skill of Focus"
- },
- {
-  "ko": "효과 적중이 4% 증가합니다.",
-  "zh": "效果命中增加4%。",
-  "en": "Effect Hit increases by 4%."
- },
- {
-  "ko": "보호의 솜씨",
-  "zh": "保護技巧",
-  "en": "Skill of Protection"
- },
- {
-  "ko": "효과 저항이 4% 증가합니다.",
-  "zh": "效果抗性增加4%。",
-  "en": "Effect RES increases by 4%."
- },
- {
-  "ko": "사고는 일어난다",
-  "zh": "意外總是難免",
-  "en": "Accidents Happen"
- },
- {
-  "ko": "우연한 발견",
-  "zh": "偶然的發現",
-  "en": "An Unexpected Discovery"
- },
- {
-  "ko": "힘은 좀 들겠지만... 파 보자!",
-  "zh": "雖然會費點力氣…挖挖看吧！",
-  "en": "It'll take some effort... but let's dig it up!"
- },
- {
-  "ko": "수상한 상자",
-  "zh": "可疑的箱子",
-  "en": "Suspicious Box"
- },
- {
-  "ko": "흙 속에서 발견한 오래된 상자. 매우 정교한 잠금 장치로 봉인되어 있어서, 무엇이 들어 있을지 궁금하게 만든다.",
-  "zh": "在土裡發現的古老箱子。以極其精巧的鎖具封印著，令人不禁好奇裡面究竟藏了什麼。",
-  "en": "An old chest found buried in the ground. Sealed with an extremely intricate locking mechanism, it sparks curiosity about what might be inside."
- },
- {
-  "ko": "이런 곳에 낭비할 체력은 없다!",
-  "zh": "沒有多餘體力浪費在這種地方！",
-  "en": "No point wasting energy on something like this!"
- },
- {
-  "ko": "교단의 분실물",
-  "zh": "教團的失物",
-  "en": "The Order's Lost Item"
- },
- {
-  "ko": "어서 열어보자.",
-  "zh": "趕快打開吧。",
-  "en": "Let's open it."
- },
- {
-  "ko": "다음에 열어보자.",
-  "zh": "下次再打開吧。",
-  "en": "Let's save it for later."
- },
- {
-  "ko": "예상 못 한 격려",
-  "zh": "意料之外的鼓勵",
-  "en": "Unexpected Encouragement"
- },
- {
-  "ko": "하는 만큼 성과가 나올 것이라고 믿자!",
-  "zh": "相信努力就會有回報！",
-  "en": "Throw all I've got into training and believe it pays off!"
- },
- {
-  "ko": "데드라인 효과",
-  "zh": "期限效應",
-  "en": "Deadline Effect"
- },
- {
-  "ko": "압박감이 긍정적인 영향을 줍니다. 훈련 중 획득하는 잠재력 포인트가 증가합니다.",
-  "zh": "壓力也能帶來正向影響。訓練中獲得的潛力點數增加。",
-  "en": "Pressure has a positive effect. Potential Points gained during training increase."
- },
- {
-  "ko": "과욕",
-  "zh": "貪欲",
-  "en": "Overexertion"
- },
- {
-  "ko": "무리한 훈련이 독이 되었습니다.  훈련 실패율이 증가합니다.",
-  "zh": "過度訓練反而成了毒藥。訓練失敗率增加。",
-  "en": "Overtraining has taken its toll. Training failure rate increases."
- },
- {
-  "ko": "조금만 더 해 보자.",
-  "zh": "再堅持一下吧。",
-  "en": "Train a bit more than usual."
- },
- {
-  "ko": "지금으로도 충분해.",
-  "zh": "現在這樣已經足夠了。",
-  "en": "Be satisfied with the usual pace."
- },
- {
-  "ko": "비밀의 지옥 특훈",
-  "zh": "祕密地獄特訓",
-  "en": "The Secret Training from Hell"
- },
- {
-  "ko": "펀치 기계 잘 치는 법",
-  "zh": "打拳擊機的技巧。",
-  "en": "How to master the punching machine."
- },
- {
-  "ko": "제약을 이겨내고",
-  "zh": "克服限制",
-  "en": "Surpassing Limits"
- },
- {
-  "ko": "몸에 걸리는 부하도 일상 같습니다. 훈련 중 획득하는 힘이 증가합니다.",
-  "zh": "身體承受的負荷彷彿已成日常。訓練中獲得的力量增加。",
-  "en": "You feel accustomed to the strain on your body. Strength gained during training increases."
- },
- {
-  "ko": "힘 특훈 인증서",
-  "zh": "力量特訓認證書",
-  "en": "Strength Training Certificate"
- },
- {
-  "ko": "지옥 특훈 참여자에게 지급되는 인증서. 이 인증서를 받았다면 힘 훈련에 절망하지 않아도 좋다.",
-  "zh": "頒給地獄特訓參與者的證書。只要獲得此證書，就不必再對力量訓練感到絕望。",
-  "en": "A certificate issued to participants of the secret training from hell. As long as you have this certificate, there is no need to despair over Strength training."
- },
- {
-  "ko": "지치지 않고 달리는 법",
-  "zh": "跑得持久的方法。",
-  "en": "How to run without tiring."
- },
- {
-  "ko": "무모한 도전",
-  "zh": "魯莽的挑戰",
-  "en": "Reckless Challenge"
- },
- {
-  "ko": "강적을 꺾을 때까지 도전은 계속됩니다. 훈련 중 획득하는 체력이 증가합니다.",
-  "zh": "在打倒強敵之前，挑戰會持續下去。訓練中獲得的體力增加。",
-  "en": "You keep challenging yourself until powerful foes are defeated. Vitality gained during training increases."
- },
- {
-  "ko": "체력 특훈 인증서",
-  "zh": "體力特訓認證書",
-  "en": "Vitality Training Certificate"
- },
- {
-  "ko": "지옥 특훈 참여자에게 지급되는 인증서. 이 인증서를 받았다면 체력 훈련에 절망하지 않아도 좋다.",
-  "zh": "頒給地獄特訓參與者的證書。只要獲得此證書，就不必再對體力訓練感到絕望。",
-  "en": "A certificate issued to participants of the secret training from hell. As long as you have this certificate, there is no need to despair over Vitality training."
- },
- {
-  "ko": "지금은 괜찮다.",
-  "zh": "現在這樣就好。",
-  "en": "I think we're fine."
- },
- {
-  "ko": "힘 특훈의 성과",
-  "zh": "力量特訓的成果",
-  "en": "Strength Training Results"
- },
- {
-  "ko": "그동안 배운 건 잊지 않을 거야.",
-  "zh": "我不會忘記這段時間所學的。",
-  "en": "I won't forget what I've learned."
- },
- {
-  "ko": "힘 훈련 수료패",
-  "zh": "力量訓練結業獎牌",
-  "en": "Strength Training Completion Badge"
- },
- {
-  "ko": "힘 특훈을 통과한 사람에게 지급되는 수료패. 누군가의 작은 격려가 큰 힘으로 돌아올 때도 있다.",
-  "zh": "通過力量特訓後頒發的結業獎牌。某人小小的鼓勵，有時也能化為巨大的力量。",
-  "en": "A completion badge awarded to those who passed Strength Training. Sometimes a small word of encouragement can return as great strength."
- },
- {
-  "ko": "아직 배움이 부족하다.",
-  "zh": "還需要學習更多。",
-  "en": "We still have more to learn."
- },
- {
-  "ko": "체력 특훈의 성과",
-  "zh": "體力特訓的成果",
-  "en": "Stamina Training Results"
- },
- {
-  "ko": "체력 훈련 수료패",
-  "zh": "體力訓練結業獎牌",
-  "en": "Vitality Training Completion Badge"
- },
- {
-  "ko": "체력 특훈을 통과한 사람에게 지급되는 수료패. 누군가의 작은 격려가 큰 힘으로 돌아올 때도 있다.",
-  "zh": "通過體力特訓後頒發的結業獎牌。某人小小的鼓勵，有時也能化為巨大的力量。",
-  "en": "A completion badge awarded to those who passed Vitality Training. Sometimes a small word of encouragement can return as great strength."
- },
- {
-  "ko": "신설 부서는 노력 중!",
-  "zh": "新設部門努力中！",
-  "en": "The New Department Is Working Hard!"
- },
- {
-  "ko": "설문 평가 : 좋음",
-  "zh": "問卷評價：良好",
-  "en": "Survey Response: Good"
- },
- {
-  "ko": "설문 평가 : 보통",
-  "zh": "問卷評價：普通",
-  "en": "Survey Response: Average"
- },
- {
-  "ko": "설문 평가 : 나쁨",
-  "zh": "問卷評價：不佳",
-  "en": "Survey Response: Poor"
- },
- {
-  "ko": "오늘은 좀…",
-  "zh": "今天有點…",
-  "en": "Maybe later..."
- },
- {
-  "ko": "칼에 숨겨진 힘",
-  "zh": "劍中隱藏的力量",
-  "en": "The Power Hidden in the Sword"
- },
- {
-  "ko": "석상의 칼을 집어든다.",
-  "zh": "拾起石像之花。",
-  "en": "Pick up the sword."
- },
- {
-  "ko": "힘의 자양분",
-  "zh": "力量的養分",
-  "en": "Strength Nourishment"
- },
- {
-  "ko": "후대에 계승될 힘을 제공하고 있습니다. 훈련 중 획득하는 체력이 감소합니다.",
-  "zh": "正在為後代提供可繼承的力量。訓練中獲得的體力減少。",
-  "en": "You provide strength to be passed down to future generations. Vitality gained during training decreases."
- },
- {
-  "ko": "그대로 놔둔다.",
-  "zh": "維持原狀不動。",
-  "en": "Leave it as it is."
- },
- {
-  "ko": "꽃에 숨겨진 힘",
-  "zh": "花中隱藏的力量",
-  "en": "The Power Hidden in the Flower"
- },
- {
-  "ko": "석상의 꽃을 집어든다.",
-  "zh": "拾起石像之花。",
-  "en": "Pick up the flower."
- },
- {
-  "ko": "체력의 자양분",
-  "zh": "體力的養分",
-  "en": "Vitality Nourishment"
- },
- {
-  "ko": "후대에 계승될 체력을 제공하고 있습니다. 훈련 중 획득하는 힘이 감소합니다.",
-  "zh": "正在為後代提供可繼承的體力。訓練中獲得的力量減少。",
-  "en": "You provide vitality to be passed down to future generations. Strength gained during training decreases."
- },
- {
-  "ko": "완성형 강화제?",
-  "zh": "完成版強化劑？",
-  "en": "The Completed Enhancer?"
- },
- {
-  "ko": "이렇게 된 거 마셔 보자!",
-  "zh": "既然如此就喝喝看吧！",
-  "en": "Guess we're drinking it, then!"
- },
- {
-  "ko": "음료수가 좋겠어.",
-  "zh": "還是喝飲料好了。",
-  "en": "I'll take the normal drink."
- },
- {
-  "ko": "수집가가 온다",
-  "zh": "收藏家來訪",
-  "en": "The Collector's Visit"
- },
- {
-  "ko": "교환을 승낙한다.",
-  "zh": "同意交換。",
-  "en": "Accept the trade."
- },
- {
-  "ko": "현자의 손",
-  "zh": "賢者之手",
-  "en": "Hand of the Sage"
- },
- {
-  "ko": "토론에서 한 번도 진 적 없다는 어느 현자의 유품. 피도 눈물도 없는 상대방에게서도 공감 능력을 이끌어낸다.",
-  "zh": "某位從未在辯論中輸過的賢者遺物。就連冷酷無情的對手，也能被引發出共感能力。",
-  "en": "The relic of a sage said to have never lost a debate. It draws out empathy even from opponents with hearts of ice."
- },
- {
-  "ko": "아담한 오아시스",
-  "zh": "小巧宜人的綠洲",
-  "en": "Cozy Oasis"
- },
- {
-  "ko": "닫은 채로 놔두면 정수된 물이 차오르는 물병. 미개척지를 헤매다 사라졌던 탐험가의 시신 곁에서 발견되었다.",
-  "zh": "只要保持密封，瓶中就會逐漸充滿精華水的水壺。是在未開拓地區迷失並失蹤的探險家遺體旁發現的。",
-  "en": "A water bottle that fills itself with purified water when kept closed. Found beside the body of an explorer who vanished while wandering uncharted lands."
- },
- {
-  "ko": "저격수의 외투",
-  "zh": "狙擊手的外套",
-  "en": "Sniper's Coat"
- },
- {
-  "ko": "전쟁에서 전설적인 활약을 펼친 저격수의 외투. 한 번의 총성이 울려 퍼지면 세 명의 적이 쓰러진 순간의 기억이 남아 있다.",
-  "zh": "在戰爭中立下赫赫戰功的狙擊手外套。槍聲一響起，三名敵人倒下的瞬間仍留在記憶中。",
-  "en": "The coat of a sniper who performed legendary feats in war. It retains the memory of the moment when three enemies were felled by a single gunshot."
- },
- {
-  "ko": "거래하고 싶은 마음은 없다.",
-  "zh": "沒有要交易的意思。",
-  "en": "Say I'm not interested."
- },
- {
-  "ko": "교단의 제안",
-  "zh": "教團的提議",
-  "en": "The Order's Proposal"
- },
- {
-  "ko": "교단에 유물을 매매한다.",
-  "zh": "將文物賣給教團。",
-  "en": "Sell the relic to the Order."
- },
- {
-  "ko": "가지고 있어 보자.",
-  "zh": "想自己留著。",
-  "en": "Hold on to it for now."
- },
- {
-  "ko": "간단한 테스트",
-  "zh": "簡單的測試",
-  "en": "A Simple Test"
- },
- {
-  "ko": "적당한 힘으로 충격을 가한다.",
-  "zh": "用適當的力量施加衝擊。",
-  "en": "Strike it with moderate force."
- },
- {
-  "ko": "강력한 공격을 퍼붓는다.",
-  "zh": "發動強力攻擊。",
-  "en": "Hit it with full power."
- },
- {
-  "ko": "유물은 소중히 간직해야 한다.",
-  "zh": "文物就應該要好好珍藏。",
-  "en": "Say that relics need to be handled with care."
- },
- {
-  "ko": "토벌의 전리품",
-  "zh": "討伐的戰利品",
-  "en": "Spoils of the Hunt"
- },
- {
-  "ko": "기초 평가전 준비",
-  "zh": "基礎評鑑戰準備",
-  "en": "Basic Trial Preparations"
- },
- {
-  "ko": "토벌 평가전 승리",
-  "zh": "討伐評鑑戰獲勝",
-  "en": "Hunt Trial Victory"
- },
- {
-  "ko": "토벌 평가전",
-  "zh": "討伐評鑑戰",
-  "en": "Hunt Trial"
- },
- {
-  "ko": "힘 상승 Ⅱ",
-  "zh": "力量提升Ⅱ",
-  "en": "Strength Up Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 힘을 15 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的力量15點。",
-  "en": "A blessing that increases the Journey stat Strength by 15."
- },
- {
-  "ko": "힘 상승 Ⅲ",
-  "zh": "力量提升Ⅲ",
-  "en": "Strength Up Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 힘을 20 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的力量20點。",
-  "en": "A blessing that increases the Journey stat Strength by 20."
- },
- {
-  "ko": "체력 상승 Ⅱ",
-  "zh": "體力提升Ⅱ",
-  "en": "Vitality Up Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 체력을 15 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的體力15點。",
-  "en": "A blessing that increases the Journey stat Vitality by 15."
- },
- {
-  "ko": "체력 상승 Ⅲ",
-  "zh": "體力提升Ⅲ",
-  "en": "Vitality Up Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 체력을 20 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的體力20點。",
-  "en": "A blessing that increases the Journey stat Vitality by 20."
- },
- {
-  "ko": "인내 상승 Ⅱ",
-  "zh": "韌性提升Ⅱ",
-  "en": "Endurance Up Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 인내를 15 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的韌性15點。",
-  "en": "A blessing that increases the Journey stat Endurance by 15."
- },
- {
-  "ko": "인내 상승 Ⅲ",
-  "zh": "韌性提升Ⅲ",
-  "en": "Endurance Up Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 인내를 20 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的韌性20點。",
-  "en": "A blessing that increases the Journey stat Endurance by 20."
- },
- {
-  "ko": "집중 상승 Ⅱ",
-  "zh": "專注提升Ⅱ",
-  "en": "Focus Up Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 집중을 25 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的專注25點。",
-  "en": "A blessing that increases the Journey stat Focus by 25."
- },
- {
-  "ko": "집중 상승 Ⅲ",
-  "zh": "專注提升Ⅲ",
-  "en": "Focus Up Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 집중을 30 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的專注30點。",
-  "en": "A blessing that increases the Journey stat Focus by 30."
- },
- {
-  "ko": "보호 상승 Ⅱ",
-  "zh": "保護提升Ⅱ",
-  "en": "Protection Up Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 보호를 25 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的保護25點。",
-  "en": "A blessing that increases the Journey stat Protection by 25."
- },
- {
-  "ko": "보호 상승 Ⅲ",
-  "zh": "保護提升Ⅲ",
-  "en": "Protection Up Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 보호를 30 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的保護30點。",
-  "en": "A blessing that increases the Journey stat Protection by 30."
- },
- {
-  "ko": "경쟁 평가전 승리",
-  "zh": "競爭評鑑戰獲勝",
-  "en": "Competition Trial Victory"
- },
- {
-  "ko": "경쟁 평가전",
-  "zh": "競爭評鑑戰",
-  "en": "Competition Trial"
- },
- {
-  "ko": "힘 증폭Ⅰ",
-  "zh": "力量增幅Ⅰ",
-  "en": "Strength Boost I"
- },
- {
-  "ko": "여정 스탯 중 힘을 25 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的力量25點。",
-  "en": "A blessing that increases the Journey stat Strength by 25."
- },
- {
-  "ko": "힘 증폭 Ⅱ",
-  "zh": "力量增幅Ⅱ",
-  "en": "Strength Boost Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 힘을 30 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的力量30點。",
-  "en": "A blessing that increases the Journey stat Strength by 30."
- },
- {
-  "ko": "체력 증폭Ⅰ",
-  "zh": "體力增幅Ⅰ",
-  "en": "Vitality Boost I"
- },
- {
-  "ko": "여정 스탯 중 체력을 25 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的體力25點。",
-  "en": "A blessing that increases the Journey stat Vitality by 25."
- },
- {
-  "ko": "체력 증폭 Ⅱ",
-  "zh": "體力增幅Ⅱ",
-  "en": "Vitality Boost Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 체력을 30 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的體力30點。",
-  "en": "A blessing that increases the Journey stat Vitality by 30."
- },
- {
-  "ko": "인내 증폭Ⅰ",
-  "zh": "韌性增幅Ⅰ",
-  "en": "Endurance Boost I"
- },
- {
-  "ko": "여정 스탯 중 인내를 25 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的韌性25點。",
-  "en": "A blessing that increases the Journey stat Endurance by 25."
- },
- {
-  "ko": "인내 증폭 Ⅱ",
-  "zh": "韌性增幅Ⅱ",
-  "en": "Endurance Boost Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 인내를 30 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的韌性30點。",
-  "en": "A blessing that increases the Journey stat Endurance by 30."
- },
- {
-  "ko": "집중 증폭Ⅰ",
-  "zh": "專注增幅Ⅰ",
-  "en": "Focus Boost I"
- },
- {
-  "ko": "여정 스탯 중 집중을 40 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的專注40點。",
-  "en": "A blessing that increases the Journey stat Focus by 40."
- },
- {
-  "ko": "집중 증폭 Ⅱ",
-  "zh": "專注增幅Ⅱ",
-  "en": "Focus Boost Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 집중을 45 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的專注45點。",
-  "en": "A blessing that increases the Journey stat Focus by 45."
- },
- {
-  "ko": "보호 증폭Ⅰ",
-  "zh": "保護增幅Ⅰ",
-  "en": "Protection Boost I"
- },
- {
-  "ko": "여정 스탯 중 보호를 40 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的保護40點。",
-  "en": "A blessing that increases the Journey stat Protection by 40."
- },
- {
-  "ko": "보호 증폭 Ⅱ",
-  "zh": "保護增幅Ⅱ",
-  "en": "Protection Boost Ⅱ"
- },
- {
-  "ko": "여정 스탯 중 보호를 45 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的保護45點。",
-  "en": "A blessing that increases the Journey stat Protection by 45."
- },
- {
-  "ko": "힘 증폭 Ⅲ",
-  "zh": "力量增幅Ⅲ",
-  "en": "Strength Boost Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 힘을 35 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的力量35點。",
-  "en": "A blessing that increases the Journey stat Strength by 35."
- },
- {
-  "ko": "체력 증폭 Ⅲ",
-  "zh": "體力增幅Ⅲ",
-  "en": "Vitality Boost Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 체력을 35 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的體力35點。",
-  "en": "A blessing that increases the Journey stat Vitality by 35."
- },
- {
-  "ko": "인내 증폭 Ⅲ",
-  "zh": "韌性增幅Ⅲ",
-  "en": "Endurance Boost Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 인내를 35 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的韌性35點。",
-  "en": "A blessing that increases the Journey stat Endurance by 35."
- },
- {
-  "ko": "집중 증폭 Ⅲ",
-  "zh": "專注增幅Ⅲ",
-  "en": "Focus Boost Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 집중을 50 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的專注50點。",
-  "en": "A blessing that increases the Journey stat Focus by 50."
- },
- {
-  "ko": "보호 증폭 Ⅲ",
-  "zh": "保護增幅Ⅲ",
-  "en": "Protection Boost Ⅲ"
- },
- {
-  "ko": "여정 스탯 중 보호를 50 올려주는 축복입니다.",
-  "zh": "此祝福可提升旅程屬性中的保護50點。",
-  "en": "A blessing that increases the Journey stat Protection by 50."
- },
- {
-  "ko": "의뢰 대성공",
-  "zh": "委託大成功",
-  "en": "Quest Successful"
- },
- {
-  "ko": "의뢰 실패",
-  "zh": "委託失敗",
-  "en": "Quest Failed"
- },
- {
-  "ko": "돌아가자…",
-  "zh": "我們回去吧…",
-  "en": "Let's head back..."
- },
- {
-  "ko": "활력 포션을 건넨다",
-  "zh": "遞給她活力藥水。",
-  "en": "Hand out a Vitality Potion."
- },
- {
-  "ko": "활력 포션",
-  "zh": "活力藥水",
-  "en": "Vitality Potion"
- },
- {
-  "ko": "의뢰 성공",
-  "zh": "委託成功",
-  "en": "Quest Successful"
- },
- {
-  "ko": "약탈자 토벌 의뢰",
-  "zh": "掠奪者討伐委託",
-  "en": "Raider Hunt Quest"
- },
- {
-  "ko": "훈련 실패",
-  "zh": "訓練失敗",
-  "en": "Training Failed"
- },
- {
-  "ko": "오늘은 이만 쉬자.",
-  "zh": "今天就先休息吧。",
-  "en": "Let's call it a day."
- },
- {
-  "ko": "안전하게 훈련하자.",
-  "zh": "安全地訓練吧。",
-  "en": "Let's train safely."
- },
- {
-  "ko": "총명한 여정 단원",
-  "zh": "聰明的旅程團員",
-  "en": "Brilliant Journey Member"
- },
- {
-  "ko": "훈련 실패율이 조금 줄어듭니다.",
-  "zh": "減少一點訓練失敗率。",
-  "en": "Training failure rate slightly decreases."
- },
- {
-  "ko": "활력 포션을 건넨다.",
-  "zh": "遞給她活力藥水。",
-  "en": "Hand out a Vitality Potion."
- },
- {
-  "ko": "두통이 생기다.",
-  "zh": "頭有點痛了。",
-  "en": "Headache"
- },
- {
-  "ko": "탈력",
-  "zh": "脫力",
-  "en": "Exhaustion"
- },
- {
-  "ko": "충분한 휴식을 취하지 못해 힘이 나질 않습니다.\n훈련으로 획득하는 힘이 조금 감소합니다.",
-  "zh": "休息不足導致睡眠品質不佳。\n訓練中獲得的力量略為減少。",
-  "en": "You feel drained from insufficient rest.\nStrength gained from training slightly decreases."
- },
- {
-  "ko": "피로감",
-  "zh": "疲勞感",
-  "en": "Fatigue"
- },
- {
-  "ko": "충분한 휴식을 취하지 못해 피로감이 느껴집니다.\n훈련으로 획득하는 체력이 조금 감소합니다.",
-  "zh": "休息不足導致睡眠品質不佳。\n訓練中獲得的體力略為減少。",
-  "en": "You feel fatigued from insufficient rest.\nVitality gained from training slightly decreases."
- },
- {
-  "ko": "비몽사몽",
-  "zh": "半夢半醒",
-  "en": "Drowsiness"
- },
- {
-  "ko": "충분한 휴식을 취하지 못해 잠이 깨질 않습니다.\n훈련으로 획득하는 인내가 조금 감소합니다.",
-  "zh": "休息不足導致睡眠品質不佳。\n訓練中獲得的韌性略為減少。",
-  "en": "You feel drowsy from insufficient rest.\nEndurance gained from training slightly decreases."
- },
- {
-  "ko": "기분이 좋다.",
-  "zh": "心情很好呢。",
-  "en": "Feeling Good"
- },
- {
-  "ko": "훈련 능숙 : 각성",
-  "zh": "訓練嫻熟：覺醒",
-  "en": "Training Proficiency: Awakening"
- },
- {
-  "ko": "완벽한 휴식으로 모든 훈련이 능숙해집니다. 모든 훈련의 실패율이 감소합니다.",
-  "zh": "完美的休息讓所有訓練更加熟練。訓練失敗率減少。",
-  "en": "A perfect night of rest makes you ready to ace any training. Failure rate of all training decreases."
- },
- {
-  "ko": "훈련 능숙 : 힘",
-  "zh": "訓練嫻熟：力量",
-  "en": "Training Proficiency: Strength"
- },
- {
-  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 힘이 증가합니다.",
-  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的力量增加。",
-  "en": "Sufficient rest improves training effectiveness. Strength gained during training increases."
- },
- {
-  "ko": "훈련 능숙 : 체력",
-  "zh": "訓練嫻熟：體力",
-  "en": "Training Proficiency: Vitality"
- },
- {
-  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 체력이 증가합니다.",
-  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的體力增加。",
-  "en": "Sufficient rest improves training effectiveness. Vitality gained during training increases."
- },
- {
-  "ko": "훈련 능숙 : 인내",
-  "zh": "訓練嫻熟：韌性",
-  "en": "Training Proficiency: Endurance"
- },
- {
-  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 인내가 증가합니다.",
-  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的韌性增加。",
-  "en": "Sufficient rest improves training effectiveness. Endurance gained during training increases."
- },
- {
-  "ko": "훈련 능숙 : 집중",
-  "zh": "訓練嫻熟：專注",
-  "en": "Training Proficiency: Focus"
- },
- {
-  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 집중이 증가합니다.",
-  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的集中增加。",
-  "en": "Sufficient rest improves training effectiveness. Focus gained during training increases."
- },
- {
-  "ko": "훈련 능숙 : 보호",
-  "zh": "訓練嫻熟：保護",
-  "en": "Training Proficiency: Protection"
- },
- {
-  "ko": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 보호가 증가합니다.",
-  "zh": "充分的休息能讓訓練更加得心應手。訓練中獲得的保護增加。",
-  "en": "Sufficient rest improves training effectiveness. Protection gained during training increases."
- },
- {
-  "ko": "좋은일이 일어날 것 같다.",
-  "zh": "好像會有好事發生。",
-  "en": "A Good Feeling About Today"
+  "ko": "어느 한 기사의 맹세",
+  "zh": "某個騎士的誓言",
+  "en": "A Knight's Oath"
  },
  {
   "ko": "무엇이든 물어보세요",
@@ -2730,14 +3300,14 @@
   "en": "Ask Me Anything"
  },
  {
-  "ko": "생존왕",
-  "zh": "生存大師",
-  "en": "King of Survival"
+  "ko": "방어의 솜씨",
+  "zh": "防禦技巧",
+  "en": "Skill of Defense"
  },
  {
-  "ko": "어떤 터프한 상황도 이겨내는 근성이 차오릅니다. 힘 훈련 경험치 획득량이 증가합니다.",
-  "zh": "克服任何嚴峻狀況的毅力湧現。力量訓練經驗值獲得量增加。",
-  "en": "Your grit to endure any hardship grows stronger. Strength training EXP gained increases."
+  "ko": "방어력이 2% 증가합니다.",
+  "zh": "防禦力增加2%。",
+  "en": "DEF increases by 2%."
  },
  {
   "ko": "미래는 우리 손 안에",
@@ -2745,29 +3315,434 @@
   "en": "The Future is Ours"
  },
  {
-  "ko": "봉",
-  "zh": "冤大頭",
-  "en": "An Easy Target"
+  "ko": "이것은 수행이다!",
+  "zh": "這就是修行！",
+  "en": "This Is Training!"
  },
  {
-  "ko": "운명의 길",
-  "zh": "命運之路",
-  "en": "Path of Destiny"
+  "ko": "확고한 믿음",
+  "zh": "堅定信念",
+  "en": "Unwavering Faith"
  },
  {
-  "ko": "아군 누군가 턴 시작 시 자신에게 지금이니!(해제불가)를 1회 발생시킵니다. 스킬 사용 후 자신의 지금이니!(해제불가)의 중첩 횟수 당 무작위 적에게 100% 확률로 자신의 공격력에 비례한 연쇄 피해를 발생시키고 지금이니!(해제불가)를 모두 해제합니다.",
-  "zh": "我軍任意人員回合開始時，自身獲得1次就是現在！（無法解除）。使用技能後，自身每層就是現在！（無法解除）疊加有100%機率對隨機敵人造成與自身攻擊力成比例的連鎖傷害，並解除所有就是現在！（無法解除）。",
-  "en": "Grants self 1 stack of Now's My Chance! (Undispellable) at the start of any ally's turn. 100% chance to deal Chain DMG proportional to self ATK to a random enemy for every stack of Now's My Chance! (Undispellable) on self after using the skill. Removes all stacks of Now's My Chance! (Undispellable)."
+  "ko": "최초 전투 시작 시 자신에게 2턴 간 보호막을 발생시킵니다. 보호막은 자신의 최대 생명력에 비례해 증가합니다.",
+  "zh": "首次戰鬥開始時，自身獲得2回合護盾。護盾依自身最大生命力比例增加。",
+  "en": "Grants self Barrier for 2 turns at the start of the first battle. Barrier is proportional to self Max HP."
  },
  {
-  "ko": "빛을 쫓아라!",
-  "zh": "追尋光芒！",
-  "en": "Follow the Light!"
+  "ko": "한여름밤의 하늘",
+  "zh": "仲夏夜之空",
+  "en": "A Midsummer Night's Sky"
  },
  {
   "ko": "루나",
   "zh": "露娜",
   "en": "Luna"
+ },
+ {
+  "ko": "비상 사태?!",
+  "zh": "緊急狀況？！",
+  "en": "Emergency?!"
+ },
+ {
+  "ko": "아무도 모르게…?",
+  "zh": "不讓任何人知道…？",
+  "en": "In Secret...?"
+ },
+ {
+  "ko": "암호문",
+  "zh": "密碼",
+  "en": "Coded Message"
+ },
+ {
+  "ko": "신중한 전술",
+  "zh": "慎重戰術",
+  "en": "Prudent Tactics"
+ },
+ {
+  "ko": "턴 시작 시 노바 포스가 2 증가합니다. 2턴에 1번만 발생합니다.",
+  "zh": "回合開始時，增加2點新星原力。每2回合僅觸發1次。",
+  "en": "Increases Nova Force by 2 at the start of the turn. Occurs once every 2 turns."
+ },
+ {
+  "ko": "조용한 휴식 시간",
+  "zh": "安靜的休息時刻",
+  "en": "A Quiet Moment of Rest"
+ },
+ {
+  "ko": "에밀리",
+  "zh": "艾蜜莉",
+  "en": "Emily"
+ },
+ {
+  "ko": "눈높이가 다르다",
+  "zh": "眼光不同",
+  "en": "A Different Perspective"
+ },
+ {
+  "ko": "이 업계에서는 보물입니다",
+  "zh": "在這行可是寶物",
+  "en": "A Treasure in This Industry"
+ },
+ {
+  "ko": "책을 열어본다.",
+  "zh": "打開書看看。",
+  "en": "Open the book."
+ },
+ {
+  "ko": "베스타에게 양보한다.",
+  "zh": "讓給薇絲塔。",
+  "en": "Let Besta have it."
+ },
+ {
+  "ko": "베스타의 전술 시간",
+  "zh": "薇絲塔的戰術時光",
+  "en": "Besta's Tactics Time"
+ },
+ {
+  "ko": "베스타를 막는다.",
+  "zh": "阻止薇絲塔。",
+  "en": "Stop Besta."
+ },
+ {
+  "ko": "강인한 의지",
+  "zh": "強韌意志",
+  "en": "Unyielding Will"
+ },
+ {
+  "ko": "강인도 최대치가 2 증가합니다. 피격 시 자신이 강인도 격파 상태가 아니라면 치명타 피해 저항이 20% 증가합니다.",
+  "zh": "強韌度上限增加2。受到攻擊時若自身未處於強韌度擊破狀態，則暴擊傷害抗性提升20%。",
+  "en": "Increases Max Toughness by 2. Increases CRIT DMG RES by 20% when attacked if self Toughness is not broken."
+ },
+ {
+  "ko": "그냥 지켜본다.",
+  "zh": "只是旁觀。",
+  "en": "Stay back and watch."
+ },
+ {
+  "ko": "만족스러운 식사",
+  "zh": "心滿意足的一餐",
+  "en": "A Satisfying Meal"
+ },
+ {
+  "ko": "베스타",
+  "zh": "薇絲塔",
+  "en": "Besta"
+ },
+ {
+  "ko": "드루이드의 재테크",
+  "zh": "德魯伊的理財術",
+  "en": "The Druid's Financial Strategy"
+ },
+ {
+  "ko": "다나의 개인 농장",
+  "zh": "達娜的私人農場",
+  "en": "Dana's Private Farm"
+ },
+ {
+  "ko": "타파파",
+  "zh": "塔帕帕",
+  "en": "Tapapa"
+ },
+ {
+  "ko": "긴급 주문 영창법",
+  "zh": "緊急咒語詠唱法",
+  "en": "Flash Incantation"
+ },
+ {
+  "ko": "최초 전투 시작 시 자신에게 2턴 간 치명타 확률 증가를 발생시킵니다.",
+  "zh": "首次戰鬥開始時，自身獲得2回合暴擊率增加。",
+  "en": "Grants self CRIT Rate Up for 2 turns at the start of the first battle."
+ },
+ {
+  "ko": "친구들과의 산책",
+  "zh": "與朋友們散步",
+  "en": "A Stroll with Friends"
+ },
+ {
+  "ko": "다나",
+  "zh": "達娜",
+  "en": "Dana"
+ },
+ {
+  "ko": "부끄럽지 않아요!",
+  "zh": "才不會害羞呢！",
+  "en": "I'm Not Embarrassed!"
+ },
+ {
+  "ko": "만물이 지닌 가치",
+  "zh": "萬物的價值",
+  "en": "The Value of All Things"
+ },
+ {
+  "ko": "잠깐, 내가 먼저 확인해 볼게.",
+  "zh": "等等，我先確認看看。",
+  "en": "Wait, I'll check it first."
+ },
+ {
+  "ko": "...이상한 게 들어있지 않을까?",
+  "zh": "…裡面該不會有奇怪的東西吧？",
+  "en": "...What if there's something weird inside?"
+ },
+ {
+  "ko": "풍월당의 대련 수련",
+  "zh": "風月堂的切磋修行",
+  "en": "Sparring Training at Wind Moon Sect"
+ },
+ {
+  "ko": "맛을 본다.",
+  "zh": "嘗一口。",
+  "en": "Taste it."
+ },
+ {
+  "ko": "공격의 재능",
+  "zh": "攻擊天賦",
+  "en": "Talent of Attack"
+ },
+ {
+  "ko": "공격력이 3% 증가합니다.",
+  "zh": "攻擊力增加3%。",
+  "en": "ATK increases by 3%."
+ },
+ {
+  "ko": "정중히 사양한다.",
+  "zh": "委婉地拒絕。",
+  "en": "Politely decline."
+ },
+ {
+  "ko": "생명의 재능",
+  "zh": "生命天賦",
+  "en": "Talent of Life"
+ },
+ {
+  "ko": "최대 생명력이 3% 증가합니다.",
+  "zh": "最大生命力增加3%。",
+  "en": "Max HP increases by 3%."
+ },
+ {
+  "ko": "하얀 달의 온기는 햇빛처럼",
+  "zh": "白月溫煦如陽光",
+  "en": "A White Moon Shines With the Sun's Warmth"
+ },
+ {
+  "ko": "린",
+  "zh": "凌",
+  "en": "Lyn"
+ },
+ {
+  "ko": "힘을 원하는가",
+  "zh": "渴望力量嗎",
+  "en": "Do You Seek Power?"
+ },
+ {
+  "ko": "기준의 차이",
+  "zh": "基準的差異",
+  "en": "Different Standards"
+ },
+ {
+  "ko": "심각한 훈련 중독입니다",
+  "zh": "嚴重的訓練成癮",
+  "en": "Seriously Addicted to Training"
+ },
+ {
+  "ko": "응급 처치",
+  "zh": "急救措施",
+  "en": "Emergency First Aid"
+ },
+ {
+  "ko": "피격 시 자신의 생명력이 25% 이하이면 자신의 생명력을 회복합니다. 회복량은 자신의 최대 생명력에 비례해 증가합니다. 2턴에 1번만 발생합니다.",
+  "zh": "回合開始時，若自身的生命力低於25%，則恢復自身的生命力。恢復量依自身最大生命力比例增加。每2回合僅觸發1次。",
+  "en": "Restores self HP if self HP is 25% or below when attacked. Recovery is proportional to self Max HP. Occurs once every 2 turns."
+ },
+ {
+  "ko": "보이지 않는 곳",
+  "zh": "看不見的地方",
+  "en": "An Unseen Place"
+ },
+ {
+  "ko": "세레스",
+  "zh": "瑟萊絲",
+  "en": "Ceres"
+ },
+ {
+  "ko": "반짝 네컷",
+  "zh": "閃亮四格照",
+  "en": "Sparkle Four-Panel Photos"
+ },
+ {
+  "ko": "용족은 튼튼하니까!",
+  "zh": "龍族很結實！",
+  "en": "Dragons are tough!"
+ },
+ {
+  "ko": "들어올 땐 마음대로였겠지만…",
+  "zh": "進來的時候可以隨你的心意…",
+  "en": "It May Have Been Easy to Get In, But..."
+ },
+ {
+  "ko": "도망친다.",
+  "zh": "逃走。",
+  "en": "Run away."
+ },
+ {
+  "ko": "탄력 가속",
+  "zh": "彈力加速",
+  "en": "Elastic Acceleration"
+ },
+ {
+  "ko": "턴 시작 시 자신의 속도가 10씩 증가합니다. 최대 3회 중첩됩니다.",
+  "zh": "回合開始時，自身的速度增加10。最多可疊加3次。",
+  "en": "Increases SPD by 10 at the start of the turn. Stacks up to 3 times."
+ },
+ {
+  "ko": "운명을 받아들인다.",
+  "zh": "接受命運。",
+  "en": "Accept my fate."
+ },
+ {
+  "ko": "키라만큼 귀여워!",
+  "zh": "跟綺拉一樣可愛！",
+  "en": "As Cute as Kyra!"
+ },
+ {
+  "ko": "키라",
+  "zh": "綺拉",
+  "en": "Kyra"
+ },
+ {
+  "ko": "사나이의 승부!",
+  "zh": "男子漢的勝負！",
+  "en": "A Real Man's Showdown!"
+ },
+ {
+  "ko": "사나이의 배포?",
+  "zh": "男子漢的器量？",
+  "en": "A Real Man's Resolve?"
+ },
+ {
+  "ko": "사나이의 안목",
+  "zh": "男子漢的眼光",
+  "en": "A Real Man's Eye for Talent"
+ },
+ {
+  "ko": "두 번째 심장",
+  "zh": "第二顆心臟",
+  "en": "Second Heart"
+ },
+ {
+  "ko": "강인도 최대치가 2 증가합니다.",
+  "zh": "強韌度上限增加2。",
+  "en": "Increases Max Toughness by 2."
+ },
+ {
+  "ko": "본 투 비 와일드",
+  "zh": "天生就是狂野",
+  "en": "Born to Be Wild"
+ },
+ {
+  "ko": "할리",
+  "zh": "哈莉",
+  "en": "Harley"
+ },
+ {
+  "ko": "운명을 대하는 태도",
+  "zh": "面對命運的態度",
+  "en": "Facing the Future"
+ },
+ {
+  "ko": "에데여 아빠란다!",
+  "zh": "艾黛啊，是爸爸！",
+  "en": "Dada!"
+ },
+ {
+  "ko": "분명 연기일 것이다.",
+  "zh": "這絕對是在演戲。",
+  "en": "It's obviously an act."
+ },
+ {
+  "ko": "일단 사과해야 하지 않을까?",
+  "zh": "是不是應該先道個歉？",
+  "en": "Maybe you should apologize first."
+ },
+ {
+  "ko": "옷을 녹이는 약",
+  "zh": "能溶解衣物的藥",
+  "en": "Fabric-Dissolving Potion"
+ },
+ {
+  "ko": "공격의 성흔",
+  "zh": "攻擊星痕",
+  "en": "Stigmata of Attack"
+ },
+ {
+  "ko": "공격력이 8% 증가합니다.",
+  "zh": "攻擊力增加8%。",
+  "en": "Increases ATK by 8%."
+ },
+ {
+  "ko": "영원 속박의 굴레",
+  "zh": "永恆束縛之枷",
+  "en": "Bound for Eternity"
+ },
+ {
+  "ko": "크리스텔",
+  "zh": "克莉絲特",
+  "en": "Cristelle"
+ },
+ {
+  "ko": "전설의 새를 찾아서",
+  "zh": "尋找傳說中的鳥",
+  "en": "In Search of the Legendary Bird"
+ },
+ {
+  "ko": "손님은 왕!",
+  "zh": "顧客至上！",
+  "en": "The Customer Is Always Right!"
+ },
+ {
+  "ko": "응. 오늘은 일찍 돌아가자.",
+  "zh": "嗯，今天就早點回去吧。",
+  "en": "Yeah. Let's head back early today."
+ },
+ {
+  "ko": "그래도 마감 시간을 준수해야지.",
+  "zh": "還是要遵守打烊時間才行。",
+  "en": "Still, we should stick to closing time."
+ },
+ {
+  "ko": "책임감",
+  "zh": "責任感",
+  "en": "Responsibility"
+ },
+ {
+  "ko": "별의별 진상에도 불구하고 책임감을 잃지 않고, 끝까지 마감 시간을 준수했습니다. 훈련 실패율이 감소합니다.",
+  "zh": "即便面對種種無理取鬧的奧客，依然秉持著責任感並堅持工作到最後一刻。訓練失敗率減少。",
+  "en": "No matter how absurd things turn out, you consistently meet your deadlines until the very end. Training failure rate decreases."
+ },
+ {
+  "ko": "상대역을 부탁해",
+  "zh": "拜託當我的對手戲演員",
+  "en": "Would You Be My Scene Partner?"
+ },
+ {
+  "ko": "날카로운 공세",
+  "zh": "銳利攻勢",
+  "en": "Sharp Assault"
+ },
+ {
+  "ko": "공격력이 6% 증가하고 치명타 확률이 6% 증가합니다.",
+  "zh": "攻擊力增加6%，暴擊率增加6%",
+  "en": "Increases ATK by 6% and self CRIT Rate by 6%."
+ },
+ {
+  "ko": "단점 보완 맞춤 훈련",
+  "zh": "補強缺點客製化訓練",
+  "en": "Customized Training to Cover Weaknesses"
+ },
+ {
+  "ko": "티리아",
+  "zh": "緹莉雅",
+  "en": "Tyria"
  },
  {
   "ko": "서류 작업은 언제나 맑은 뒤 흐림",
@@ -2793,16 +3768,6 @@
   "ko": "같이 티타임을 가진다.",
   "zh": "一起享用下午茶。",
   "en": "Have tea together."
- },
- {
-  "ko": "통찰의 솜씨",
-  "zh": "洞察技巧",
-  "en": "Skill of Insight"
- },
- {
-  "ko": "치명타 확률이 3% 증가합니다.",
-  "zh": "暴擊率增加3%。",
-  "en": "CRIT Rate increases by 3%."
  },
  {
   "ko": "...잠깐 나가 있는 게 좋겠다.",
@@ -2900,381 +3865,6 @@
   "en": "Bell"
  },
  {
-  "ko": "비상 사태?!",
-  "zh": "緊急狀況？！",
-  "en": "Emergency?!"
- },
- {
-  "ko": "아무도 모르게…?",
-  "zh": "不讓任何人知道…？",
-  "en": "In Secret...?"
- },
- {
-  "ko": "생명의 감각",
-  "zh": "生命感知",
-  "en": "Sense of Life"
- },
- {
-  "ko": "최대 생명력이 일정 비율만큼 소폭 증가합니다.",
-  "zh": "最大生命力小幅增加一定比例。",
-  "en": "Slightly increases self Max HP by a certain percentage."
- },
- {
-  "ko": "암호문",
-  "zh": "密碼",
-  "en": "Coded Message"
- },
- {
-  "ko": "신중한 전술",
-  "zh": "慎重戰術",
-  "en": "Prudent Tactics"
- },
- {
-  "ko": "턴 시작 시 노바 포스가 2 증가합니다. 2턴에 1번만 발생합니다.",
-  "zh": "回合開始時，增加2點新星原力。每2回合僅觸發1次。",
-  "en": "Increases Nova Force by 2 at the start of the turn. Occurs once every 2 turns."
- },
- {
-  "ko": "조용한 휴식 시간",
-  "zh": "安靜的休息時刻",
-  "en": "A Quiet Moment of Rest"
- },
- {
-  "ko": "에밀리",
-  "zh": "艾蜜莉",
-  "en": "Emily"
- },
- {
-  "ko": "눈 감으면 코 베이는",
-  "zh": "稍不留神就會吃虧",
-  "en": "Blink and You Are Done For"
- },
- {
-  "ko": "뛰어가는 샤를을 부른다.",
-  "zh": "叫住跑走的夏爾。",
-  "en": "Call after Charlotte."
- },
- {
-  "ko": "샤를이 돌아오길 기다린다.",
-  "zh": "等待夏爾回來。",
-  "en": "Wait quietly for Charlotte to return."
- },
- {
-  "ko": "모나스티르의 검",
-  "zh": "莫納斯提爾之劍",
-  "en": "The Sword of Monastir"
- },
- {
-  "ko": "용감히 도전하라",
-  "zh": "勇於挑戰吧",
-  "en": "Challenge Bravely"
- },
- {
-  "ko": "속도의 성흔",
-  "zh": "速度星痕",
-  "en": "Stigmata of Speed"
- },
- {
-  "ko": "속도가 8 증가합니다.",
-  "zh": "速度增加8。",
-  "en": "Increases SPD by 8."
- },
- {
-  "ko": "어느 한 기사의 맹세",
-  "zh": "某個騎士的誓言",
-  "en": "A Knight's Oath"
- },
- {
-  "ko": "샤를",
-  "zh": "夏爾",
-  "en": "Charlotte"
- },
- {
-  "ko": "누구를 위해 수프는 끓는가",
-  "zh": "湯為誰而煮",
-  "en": "For Whom the Soup Boils"
- },
- {
-  "ko": "그럼 한 그릇 줄래?",
-  "zh": "那給我一碗吧？",
-  "en": "Sure, I'll take a bowl."
- },
- {
-  "ko": "자신감",
-  "zh": "自信心",
-  "en": "Confidence"
- },
- {
-  "ko": "아무도 막을 수 없습니다. 훈련 실패율이 감소합니다.",
-  "zh": "沒有人能阻止你。訓練失敗率減少。",
-  "en": "You feel unstoppable. Training failure rate decreases."
- },
- {
-  "ko": "민간인용으로 충분한 것 같아…",
-  "zh": "平民用的就夠了…",
-  "en": "I'll settle for the normal version..."
- },
- {
-  "ko": "새우의 처세술",
-  "zh": "蝦子的處世之道",
-  "en": "The Art of Shrimp Survival"
- },
- {
-  "ko": "알았어. 최대한 이상하게 써볼게.",
-  "zh": "好吧，我會盡量寫得奇怪一點。",
-  "en": "Got it. I'll make it as hopeless as possible."
- },
- {
-  "ko": "더 좋은 생각이 있는데…",
-  "zh": "我有個更好的主意…",
-  "en": "I actually have an even better idea..."
- },
- {
-  "ko": "동료의 흔적",
-  "zh": "夥伴的痕跡",
-  "en": "Traces of a Companion"
- },
- {
-  "ko": "의미가 있는 물건이라면, 내가 사 줄게.",
-  "zh": "如果是有意義的物品，我來買給你吧。",
-  "en": "If it means that much to you, I'll buy it for you."
- },
- {
-  "ko": "여유로운 응수",
-  "zh": "從容應對",
-  "en": "Composed Response"
- },
- {
-  "ko": "적에게 피격 시 자신이 모나스티르의 규율 상태이면 25% 확률로 반격하고 도발 상태인 적에게 피격 시 100% 확률로 반격합니다.",
-  "zh": "受到攻擊時，若自身為莫納斯提爾規律狀態，則有25%的機率反擊；若受到挑釁狀態的敵人攻擊時，則有100%的機率反擊。",
-  "en": "Counterattacks with a 25% chance when attacked by an enemy if self has Rule of Monastir, and counterattacks with a 100% chance when attacked by an enemy affected by Taunt."
- },
- {
-  "ko": "뒤늦게 후회하기 보다는 마음이 가는 대로 하는 게 좋아.",
-  "zh": "與其事後後悔，不如順從自己的心意。",
-  "en": "Better to act on your feelings now than regret it later."
- },
- {
-  "ko": "유리창 너머의 밤 풍경",
-  "zh": "玻璃窗外的夜景",
-  "en": "Night View Beyond the Window"
- },
- {
-  "ko": "카르멘",
-  "zh": "卡蜜",
-  "en": "Carmen"
- },
- {
-  "ko": "머리사냥",
-  "zh": "獵頭",
-  "en": "Head Hunting"
- },
- {
-  "ko": "프레스마",
-  "zh": "芙蕾微笑",
-  "en": "Fresma"
- },
- {
-  "ko": "그 물은 좋은 물이다",
-  "zh": "那是好水",
-  "en": "That Water Is Good Water"
- },
- {
-  "ko": "별빛 은총",
-  "zh": "星光恩寵",
-  "en": "Starlight Grace"
- },
- {
-  "ko": "턴 시작 시 자신의 주는 회복량이 3%씩 증가합니다. 최대 5회 중첩됩니다.",
-  "zh": "每回合開始時，自身的恢復量增加3%。最多可疊加5次。",
-  "en": "Self Healing Rate increases by 3% at the start of the turn. Stacks up to 5 times."
- },
- {
-  "ko": "공녀, 왕좌에 오르다",
-  "zh": "公女，登上王座",
-  "en": "The Princess Ascends the Throne"
- },
- {
-  "ko": "프레이",
-  "zh": "芙蕾",
-  "en": "Frey"
- },
- {
-  "ko": "부끄럽지 않아요!",
-  "zh": "才不會害羞呢！",
-  "en": "I'm Not Embarrassed!"
- },
- {
-  "ko": "공격의 감각",
-  "zh": "攻擊感知",
-  "en": "Sense of Attack"
- },
- {
-  "ko": "공격력이 일정 비율만큼 소폭 증가합니다.",
-  "zh": "攻擊力小幅增加一定比例。",
-  "en": "Slightly increases self ATK by a certain percentage."
- },
- {
-  "ko": "공감 능력",
-  "zh": "共鳴能力",
-  "en": "Empathy"
- },
- {
-  "ko": "다른 사람의 마음을 깊이 이해할 줄 아는 여정 단원. 훈련 중 획득하는 인연 포인트가 증가합니다.",
-  "zh": "能夠深刻理解他人心意的旅程團員。訓練中獲得的羈絆點數增加。",
-  "en": "You deeply understand the hearts of others. Bond Points gained during training increase."
- },
- {
-  "ko": "만물이 지닌 가치",
-  "zh": "萬物的價值",
-  "en": "The Value of All Things"
- },
- {
-  "ko": "잠깐, 내가 먼저 확인해 볼게.",
-  "zh": "等等，我先確認看看。",
-  "en": "Wait, I'll check it first."
- },
- {
-  "ko": "...이상한 게 들어있지 않을까?",
-  "zh": "…裡面該不會有奇怪的東西吧？",
-  "en": "...What if there's something weird inside?"
- },
- {
-  "ko": "건강이 제일이에요",
-  "zh": "健康最重要",
-  "en": "Health Comes First"
- },
- {
-  "ko": "공격의 성흔",
-  "zh": "攻擊星痕",
-  "en": "Stigmata of Attack"
- },
- {
-  "ko": "공격력이 8% 증가합니다.",
-  "zh": "攻擊力增加8%。",
-  "en": "Increases ATK by 8%."
- },
- {
-  "ko": "누각 위, 유리달 맞이",
-  "zh": "樓閣之上，迎接玻璃月",
-  "en": "Under the Glass Moon, Over the Pavilion"
- },
- {
-  "ko": "린",
-  "zh": "凌",
-  "en": "Lyn"
- },
- {
-  "ko": "풍월당의 대련 수련",
-  "zh": "風月堂的切磋修行",
-  "en": "Sparring Training at Wind Moon Sect"
- },
- {
-  "ko": "맛을 본다.",
-  "zh": "嘗一口。",
-  "en": "Taste it."
- },
- {
-  "ko": "공격의 재능",
-  "zh": "攻擊天賦",
-  "en": "Talent of Attack"
- },
- {
-  "ko": "공격력이 3% 증가합니다.",
-  "zh": "攻擊力增加3%。",
-  "en": "ATK increases by 3%."
- },
- {
-  "ko": "정중히 사양한다.",
-  "zh": "委婉地拒絕。",
-  "en": "Politely decline."
- },
- {
-  "ko": "생명의 재능",
-  "zh": "生命天賦",
-  "en": "Talent of Life"
- },
- {
-  "ko": "최대 생명력이 3% 증가합니다.",
-  "zh": "最大生命力增加3%。",
-  "en": "Max HP increases by 3%."
- },
- {
-  "ko": "하얀 달의 온기는 햇빛처럼",
-  "zh": "白月溫煦如陽光",
-  "en": "A White Moon Shines With the Sun's Warmth"
- },
- {
-  "ko": "운명을 대하는 태도",
-  "zh": "面對命運的態度",
-  "en": "Facing the Future"
- },
- {
-  "ko": "에데여 아빠란다!",
-  "zh": "艾黛啊，是爸爸！",
-  "en": "Dada!"
- },
- {
-  "ko": "분명 연기일 것이다.",
-  "zh": "這絕對是在演戲。",
-  "en": "It's obviously an act."
- },
- {
-  "ko": "일단 사과해야 하지 않을까?",
-  "zh": "是不是應該先道個歉？",
-  "en": "Maybe you should apologize first."
- },
- {
-  "ko": "옷을 녹이는 약",
-  "zh": "能溶解衣物的藥",
-  "en": "Fabric-Dissolving Potion"
- },
- {
-  "ko": "영원 속박의 굴레",
-  "zh": "永恆束縛之枷",
-  "en": "Bound for Eternity"
- },
- {
-  "ko": "크리스텔",
-  "zh": "克莉絲特",
-  "en": "Cristelle"
- },
- {
-  "ko": "드루이드의 재테크",
-  "zh": "德魯伊的理財術",
-  "en": "The Druid's Financial Strategy"
- },
- {
-  "ko": "다나의 개인 농장",
-  "zh": "達娜的私人農場",
-  "en": "Dana's Private Farm"
- },
- {
-  "ko": "타파파",
-  "zh": "塔帕帕",
-  "en": "Tapapa"
- },
- {
-  "ko": "긴급 주문 영창법",
-  "zh": "緊急咒語詠唱法",
-  "en": "Flash Incantation"
- },
- {
-  "ko": "최초 전투 시작 시 자신에게 2턴 간 치명타 확률 증가를 발생시킵니다.",
-  "zh": "首次戰鬥開始時，自身獲得2回合暴擊率增加。",
-  "en": "Grants self CRIT Rate Up for 2 turns at the start of the first battle."
- },
- {
-  "ko": "친구들과의 산책",
-  "zh": "與朋友們散步",
-  "en": "A Stroll with Friends"
- },
- {
-  "ko": "다나",
-  "zh": "達娜",
-  "en": "Dana"
- },
- {
   "ko": "방종의 대가",
   "zh": "放縱的代價",
   "en": "The Price of Indulgence"
@@ -3365,59 +3955,459 @@
   "en": "Elisa"
  },
  {
-  "ko": "전설의 새를 찾아서",
-  "zh": "尋找傳說中的鳥",
-  "en": "In Search of the Legendary Bird"
+  "ko": "하지만 빨랐어요!",
+  "zh": "但是很快嘛！",
+  "en": "But It Was Fast!"
  },
  {
-  "ko": "손님은 왕!",
-  "zh": "顧客至上！",
-  "en": "The Customer Is Always Right!"
+  "ko": "엘리트 페이스예요!",
+  "zh": "是菁英面孔！",
+  "en": "It's Elite Face!"
  },
  {
-  "ko": "응. 오늘은 일찍 돌아가자.",
-  "zh": "嗯，今天就早點回去吧。",
-  "en": "Yeah. Let's head back early today."
+  "ko": "한수 가르쳐 드리죠!",
+  "zh": "讓我來指點你一下！",
+  "en": "I’ll Show You a Thing or Two!"
  },
  {
-  "ko": "그래도 마감 시간을 준수해야지.",
-  "zh": "還是要遵守打烊時間才行。",
-  "en": "Still, we should stick to closing time."
+  "ko": "별을 보며 꿈을",
+  "zh": "望著星辰夢想",
+  "en": "Dreams Under the Stars"
  },
  {
-  "ko": "책임감",
-  "zh": "責任感",
-  "en": "Responsibility"
+  "ko": "나루",
+  "zh": "娜魯",
+  "en": "Naru"
  },
  {
-  "ko": "별의별 진상에도 불구하고 책임감을 잃지 않고, 끝까지 마감 시간을 준수했습니다. 훈련 실패율이 감소합니다.",
-  "zh": "即便面對種種無理取鬧的奧客，依然秉持著責任感並堅持工作到最後一刻。訓練失敗率減少。",
-  "en": "No matter how absurd things turn out, you consistently meet your deadlines until the very end. Training failure rate decreases."
+  "ko": "슈거 하이",
+  "zh": "糖分亢奮",
+  "en": "Sugar Rush"
  },
  {
-  "ko": "상대역을 부탁해",
-  "zh": "拜託當我的對手戲演員",
-  "en": "Would You Be My Scene Partner?"
+  "ko": "무의식 속 욕망을 마음껏 해소했습니다. 훈련 중 획득하는 잠재력 포인트가 증가합니다.",
+  "zh": "盡情釋放了潛意識中的欲望。訓練中獲得的潛力點數增加。",
+  "en": "Subconscious desires have been fully indulged. Potential Points gained during training increase."
  },
  {
-  "ko": "날카로운 공세",
-  "zh": "銳利攻勢",
-  "en": "Sharp Assault"
+  "ko": "잠만 자도 훈련 성공?",
+  "zh": "光睡覺也能順利訓練？",
+  "en": "Training Success, Just by Sleeping?"
  },
  {
-  "ko": "공격력이 6% 증가하고 치명타 확률이 6% 증가합니다.",
-  "zh": "攻擊力增加6%，暴擊率增加6%",
-  "en": "Increases ATK by 6% and self CRIT Rate by 6%."
+  "ko": "유연한 판단",
+  "zh": "隨機應變",
+  "en": "Sound Judgment"
  },
  {
-  "ko": "단점 보완 맞춤 훈련",
-  "zh": "補強缺點客製化訓練",
-  "en": "Customized Training to Cover Weaknesses"
+  "ko": "타격 시 자신의 생명력이 50% 이상이면 주는 피해량이 15% 증가하고 피격 시 자신의 생명력이 50% 미만이면 받는 피해량이 15% 감소합니다.",
+  "zh": "攻擊時，若自身的生命力高於50%，則造成的傷害量增加15%。受到傷害時，若自身的生命力低於50%，則所受傷害量減少15%。",
+  "en": "Increases damage dealt by 15% if self HP is 50% or above upon attacking. Reduces damage taken by 15% if self HP is below 50% when attacked."
  },
  {
-  "ko": "티리아",
-  "zh": "緹莉雅",
-  "en": "Tyria"
+  "ko": "음독의 각오",
+  "zh": "飲毒的覺悟",
+  "en": "Even If It's Poison"
+ },
+ {
+  "ko": "세상에 쉬운 일 하나 없다",
+  "zh": "世上沒有容易的事",
+  "en": "Nothing In This World Comes Easy"
+ },
+ {
+  "ko": "다른 일을 해보자!",
+  "zh": "換個工作試試吧！",
+  "en": "Let's try something else!"
+ },
+ {
+  "ko": "맛있는 걸 먹고 잊어버리자!",
+  "zh": "吃點好吃的忘掉吧！",
+  "en": "Let's eat something good and forget about it!"
+ },
+ {
+  "ko": "심각할 정도의 업무중독",
+  "zh": "嚴重的工作成癮",
+  "en": "Workaholism, Taken Too Far"
+ },
+ {
+  "ko": "그때의 생활 패턴을 재현해 보면 어때?",
+  "zh": "重現那時候的生活模式怎麼樣？",
+  "en": "What if you replicate that old routine?"
+ },
+ {
+  "ko": "좀 더 확실하게 쉬어보자.",
+  "zh": "再試試看吧！",
+  "en": "Let's take a long break."
+ },
+ {
+  "ko": "펜릴 소대",
+  "zh": "芬里爾小隊",
+  "en": "Fenrir Squad"
+ },
+ {
+  "ko": "카탈리스트",
+  "zh": "催化劑",
+  "en": "Catalyst"
+ },
+ {
+  "ko": "타격 후 치명타 발생 시 적 전체에게 100% 확률로 자신의 공격력에 비례한 연쇄 피해를 발생시킵니다. 자신의 턴에 1번만 발생합니다.",
+  "zh": "攻擊後發生暴擊時，有100%機率對全體敵人造成與自身攻擊力成比例的連鎖傷害。自身回合內僅觸發1次。",
+  "en": "100% chance to deal Chain DMG proportional to self ATK to all enemies upon Critical Hit. Occurs once on self turn."
+ },
+ {
+  "ko": "경력직 용병",
+  "zh": "資深傭兵",
+  "en": "Experienced Mercenary"
+ },
+ {
+  "ko": "유미나",
+  "zh": "劉米娜",
+  "en": "Yoo Mina"
+ },
+ {
+  "ko": "생존왕",
+  "zh": "生存大師",
+  "en": "King of Survival"
+ },
+ {
+  "ko": "어떤 터프한 상황도 이겨내는 근성이 차오릅니다. 힘 훈련 경험치 획득량이 증가합니다.",
+  "zh": "克服任何嚴峻狀況的毅力湧現。力量訓練經驗值獲得量增加。",
+  "en": "Your grit to endure any hardship grows stronger. Strength training EXP gained increases."
+ },
+ {
+  "ko": "봉",
+  "zh": "冤大頭",
+  "en": "An Easy Target"
+ },
+ {
+  "ko": "운명의 길",
+  "zh": "命運之路",
+  "en": "Path of Destiny"
+ },
+ {
+  "ko": "아군 누군가 턴 시작 시 자신에게 지금이니!(해제불가)를 1회 발생시킵니다. 스킬 사용 후 자신의 지금이니!(해제불가)의 중첩 횟수 당 무작위 적에게 100% 확률로 자신의 공격력에 비례한 연쇄 피해를 발생시키고 지금이니!(해제불가)를 모두 해제합니다.",
+  "zh": "我軍任意人員回合開始時，自身獲得1次就是現在！（無法解除）。使用技能後，自身每層就是現在！（無法解除）疊加有100%機率對隨機敵人造成與自身攻擊力成比例的連鎖傷害，並解除所有就是現在！（無法解除）。",
+  "en": "Grants self 1 stack of Now's My Chance! (Undispellable) at the start of any ally's turn. 100% chance to deal Chain DMG proportional to self ATK to a random enemy for every stack of Now's My Chance! (Undispellable) on self after using the skill. Removes all stacks of Now's My Chance! (Undispellable)."
+ },
+ {
+  "ko": "빛을 쫓아라!",
+  "zh": "追尋光芒！",
+  "en": "Follow the Light!"
+ },
+ {
+  "ko": "어둠에서 태어나 빛을 맹세한",
+  "zh": "生於黑暗，誓於光明",
+  "en": "Born in Darkness, Sworn to the Light"
+ },
+ {
+  "ko": "그건 모르겠고 힘 +5, 체력 +5, 인내 +5를 얻겠어!",
+  "zh": "不管那些，反正力量+5、體力+5、韌性+5我要定了！",
+  "en": "Forget that. I'll take Strength +5, Vitality +5, and Endurance +5!"
+ },
+ {
+  "ko": "그건 모르겠고 스태미나 +5, 잠재력 포인트 +5를 얻겠어!",
+  "zh": "不管那些，反正耐力+5、潛力點數+5我要定了！",
+  "en": "Forget that. I'll take Stamina +5 and Potential Points +5!"
+ },
+ {
+  "ko": "금단의 기록물 Vol. 1",
+  "zh": "禁忌之物Vol.1",
+  "en": "Forbidden Archive Vol. 1"
+ },
+ {
+  "ko": "성우 라디오라든가, 있으면 좋겠다는 느낌",
+  "zh": "能有聲優電台之類的就好了",
+  "en": "A Voice Actor Radio Show Would Be Nice"
+ },
+ {
+  "ko": "메타 인지",
+  "zh": "後設認知",
+  "en": "Metacognition"
+ },
+ {
+  "ko": "이 세계가 게임이라는 믿을 수 없는 이야기를 들었습니다. 혼란스러워 집중이 잘 되지 않습니다… 훈련 중 획득하는 집중이 감소합니다.",
+  "zh": "聽說了這個世界其實是遊戲這種難以置信的說法。讓人困惑，難以集中精神…訓練中獲得的專注降低。",
+  "en": "I've heard the unbelievable claim that this world is a game. It's confusing, and I can't focus… Focus gained during training decreases."
+ },
+ {
+  "ko": "마스터 셰프 라비스타",
+  "zh": "廚神當道拉維斯塔版",
+  "en": "Master Chef Lavistar"
+ },
+ {
+  "ko": "향을 음미하며 마신다.",
+  "zh": "細細品味香氣後喝下。",
+  "en": "Savor the aroma while drinking."
+ },
+ {
+  "ko": "벌컥벌컥 마신다.",
+  "zh": "大口大口地喝下。",
+  "en": "Gulp it down."
+ },
+ {
+  "ko": "어떤 오후의 평화",
+  "zh": "某個午後的平靜",
+  "en": "One Peaceful Afternoon"
+ },
+ {
+  "ko": "백작님의 고뇌",
+  "zh": "伯爵的煩惱",
+  "en": "The Countess' Troubles"
+ },
+ {
+  "ko": "맑게 빚은 향기",
+  "zh": "清釀之香",
+  "en": "Distilled Fragrance"
+ },
+ {
+  "ko": "단일 공격으로 타격 시 피해량이 10% 증가하고 자신이 약화 효과 상태가 아니라면 피해량이 추가로 15% 증가합니다.",
+  "zh": "以單一攻擊攻擊時，傷害量增加10%，若自身不為弱化效果狀態，則傷害量額外增加15%。",
+  "en": "Increases damage dealt by 10% when attacking with a single-target attack. If self has no debuffs, increases damage dealt by an additional 15%."
+ },
+ {
+  "ko": "귀로 없는 여정",
+  "zh": "無歸之旅",
+  "en": "Journey of No Return"
+ },
+ {
+  "ko": "아모라",
+  "zh": "阿莫拉",
+  "en": "Amora"
+ },
+ {
+  "ko": "비 오는 날",
+  "zh": "下雨天",
+  "en": "Rainy Day"
+ },
+ {
+  "ko": "대표의 고충",
+  "zh": "代表的苦衷",
+  "en": "A Leader's Burden"
+ },
+ {
+  "ko": "이슬을 머금은 장밋빛…?",
+  "zh": "帶著露珠的玫瑰粉色…？",
+  "en": "The dewy rose shade...?"
+ },
+ {
+  "ko": "탱글탱글한 자몽의 오렌지빛…?",
+  "zh": "彈潤葡萄柚的橘色…？",
+  "en": "The tangy grapefruit orange...?"
+ },
+ {
+  "ko": "페트라의 사이즈 이론",
+  "zh": "佩特拉的尺寸理論",
+  "en": "Petra's Size Theory"
+ },
+ {
+  "ko": "메이드 바이 페트라♡",
+  "zh": "佩特拉製造♡",
+  "en": "Made by Petra♡"
+ },
+ {
+  "ko": "페트라",
+  "zh": "佩特拉",
+  "en": "Petra"
+ },
+ {
+  "ko": "선로 공사. 응.",
+  "zh": "鐵軌工程，嗯。",
+  "en": "Track Construction. Mm."
+ },
+ {
+  "ko": "심야 튀김. 응.",
+  "zh": "深夜炸物，嗯。",
+  "en": "Midnight Fried Food. Mm."
+ },
+ {
+  "ko": "채소 싫어. 응.",
+  "zh": "討厭蔬菜，嗯。",
+  "en": "I Hate Veggies. Mm."
+ },
+ {
+  "ko": "튀김 파티",
+  "zh": "炸物派對",
+  "en": "Fried Food Party"
+ },
+ {
+  "ko": "스킬 사용 후 자신의 생명력이 50% 이상이면 자신의 행동 게이지를 20% 증가시킵니다.",
+  "zh": "使用技能後，若自身的生命力高於50%，則使自身行動條增加20%。",
+  "en": "Increases self Action Gauge by 20% if self HP is 50% or above after using a Skill."
+ },
+ {
+  "ko": "튀김 명인",
+  "zh": "炸物高手",
+  "en": "Master of Fried Food"
+ },
+ {
+  "ko": "타냐",
+  "zh": "塔妮婭",
+  "en": "Tanya"
+ },
+ {
+  "ko": "파이어와 불나방",
+  "zh": "火焰與飛蛾",
+  "en": "Fire and the Moth"
+ },
+ {
+  "ko": "베라실드 21",
+  "zh": "貝拉護盾21",
+  "en": "Verashield 21"
+ },
+ {
+  "ko": "전부 경험담입니다.",
+  "zh": "全都是親身經歷。",
+  "en": "These Are All Based on Real Experiences"
+ },
+ {
+  "ko": "별빛 은총",
+  "zh": "星光恩寵",
+  "en": "Starlight Grace"
+ },
+ {
+  "ko": "턴 시작 시 자신의 주는 회복량이 3%씩 증가합니다. 최대 5회 중첩됩니다.",
+  "zh": "每回合開始時，自身的恢復量增加3%。最多可疊加5次。",
+  "en": "Self Healing Rate increases by 3% at the start of the turn. Stacks up to 5 times."
+ },
+ {
+  "ko": "누구보다 프로페셔널",
+  "zh": "比誰都專業",
+  "en": "More Than Professional"
+ },
+ {
+  "ko": "베라",
+  "zh": "貝拉",
+  "en": "Vera"
+ },
+ {
+  "ko": "자신감",
+  "zh": "自信心",
+  "en": "Confidence"
+ },
+ {
+  "ko": "아무도 막을 수 없습니다. 훈련 실패율이 감소합니다.",
+  "zh": "沒有人能阻止你。訓練失敗率減少。",
+  "en": "You feel unstoppable. Training failure rate decreases."
+ },
+ {
+  "ko": "동료의 흔적",
+  "zh": "夥伴的痕跡",
+  "en": "Traces of a Companion"
+ },
+ {
+  "ko": "의미가 있는 물건이라면, 내가 사 줄게.",
+  "zh": "如果是有意義的物品，我來買給你吧。",
+  "en": "If it means that much to you, I'll buy it for you."
+ },
+ {
+  "ko": "여유로운 응수",
+  "zh": "從容應對",
+  "en": "Composed Response"
+ },
+ {
+  "ko": "적에게 피격 시 자신이 모나스티르의 규율 상태이면 25% 확률로 반격하고 도발 상태인 적에게 피격 시 100% 확률로 반격합니다.",
+  "zh": "受到攻擊時，若自身為莫納斯提爾規律狀態，則有25%的機率反擊；若受到挑釁狀態的敵人攻擊時，則有100%的機率反擊。",
+  "en": "Counterattacks with a 25% chance when attacked by an enemy if self has Rule of Monastir, and counterattacks with a 100% chance when attacked by an enemy affected by Taunt."
+ },
+ {
+  "ko": "뒤늦게 후회하기 보다는 마음이 가는 대로 하는 게 좋아.",
+  "zh": "與其事後後悔，不如順從自己的心意。",
+  "en": "Better to act on your feelings now than regret it later."
+ },
+ {
+  "ko": "유리창 너머의 밤 풍경",
+  "zh": "玻璃窗外的夜景",
+  "en": "Night View Beyond the Window"
+ },
+ {
+  "ko": "동상이몽",
+  "zh": "同床異夢",
+  "en": "Same Place, Different Worlds"
+ },
+ {
+  "ko": "하고 싶은 이야기",
+  "zh": "想說的故事",
+  "en": "The Story I Want to Tell"
+ },
+ {
+  "ko": "어두운 과거",
+  "zh": "黑暗的過去",
+  "en": "A Dark Past"
+ },
+ {
+  "ko": "노 페인, 노 게인",
+  "zh": "一分耕耘，一分收穫",
+  "en": "No Pain, No Gain"
+ },
+ {
+  "ko": "레이시",
+  "zh": "萊希",
+  "en": "Lacy"
+ },
+ {
+  "ko": "보고서는 어려워",
+  "zh": "報告真難寫",
+  "en": "Paperwork Is the Worst"
+ },
+ {
+  "ko": "책임질 수 없는 동심",
+  "zh": "略感負擔的童心",
+  "en": "When Kids Run Wild"
+ },
+ {
+  "ko": "린이 준비한 물건을 받는다.",
+  "zh": "收下凌準備的物品。",
+  "en": "Receive what Lyn has prepared."
+ },
+ {
+  "ko": "작전 방침",
+  "zh": "作戰方針",
+  "en": "Operation Policy"
+ },
+ {
+  "ko": "능숙한 지휘로 현장을 조율합니다. 훈련 실패율이 감소합니다.",
+  "zh": "以熟練的指揮調度現場。訓練失敗率減少。",
+  "en": "Coordinates the field with skillful command. Training failure rate decreases."
+ },
+ {
+  "ko": "바닥에 널브러진 인형을 가리킨다.",
+  "zh": "指向散落在地上的玩偶。",
+  "en": "Point to the doll lying on the floor."
+ },
+ {
+  "ko": "훈련은 실전처럼",
+  "zh": "訓練如實戰",
+  "en": "Train as You Fight"
+ },
+ {
+  "ko": "아픈 척 연기한다!",
+  "zh": "裝作受傷！",
+  "en": "Pretend to be hurt!"
+ },
+ {
+  "ko": "침묵의 방패",
+  "zh": "沉默盾牌",
+  "en": "Shield of Silence"
+ },
+ {
+  "ko": "선제 방어 발생 확률이 20% 증가합니다.",
+  "zh": "主動防禦發生機率增加20%。",
+  "en": "Increases Preemptive Guard Chance by 20%."
+ },
+ {
+  "ko": "궤변으로 넘어간다!",
+  "zh": "用歪理糊弄過去！",
+  "en": "Bluff my way through it!"
+ },
+ {
+  "ko": "노스텔지어의 역습",
+  "zh": "鄉愁的反擊",
+  "en": "Nostalgia Strikes Back"
+ },
+ {
+  "ko": "힐데",
+  "zh": "希爾德",
+  "en": "Hilde"
  },
  {
   "ko": "그 사건의 뒷이야기",
@@ -3465,289 +4455,49 @@
   "en": "Roberta"
  },
  {
-  "ko": "생명의 은인",
-  "zh": "救命恩人",
-  "en": "The One Who Saved My Life"
+  "ko": "편식하는 마왕님",
+  "zh": "挑食的魔王",
+  "en": "The Picky Demon Lord"
  },
  {
-  "ko": "땅을 가는 일이라면 맡겨.",
-  "zh": "翻地的事就交給我吧。",
-  "en": "I'll handle the plowing."
+  "ko": "통찰의 재능",
+  "zh": "洞察天賦",
+  "en": "Talent of Insight"
  },
  {
-  "ko": "흙을 치우는 일이라면 도와줄게.",
-  "zh": "搬土的事就交給我吧。",
-  "en": "I'll help clear out the dirt."
+  "ko": "치명타 확률이 4.5% 증가합니다.",
+  "zh": "暴擊率增加4.5%。",
+  "en": "CRIT Rate increases by 4.5%."
  },
  {
-  "ko": "언어를 초월하는 경험",
-  "zh": "超越語言的體驗",
-  "en": "An Experience Beyond Words"
+  "ko": "운명의 상대…?",
+  "zh": "命運的對象…？",
+  "en": "A Fated Match...?"
  },
  {
-  "ko": "두 사람의 이야기를 경청한다.",
-  "zh": "靜靜聆聽兩人的對話。",
-  "en": "Listen to their conversation."
+  "ko": "시종 배틀!",
+  "zh": "侍從對決！",
+  "en": "Servant Battle!"
  },
  {
-  "ko": "간단한 차를 끓인다.",
-  "zh": "泡一壺簡單的茶。",
-  "en": "Make some tea."
+  "ko": "피의 메아리",
+  "zh": "血之回聲",
+  "en": "Echo of Blood"
  },
  {
-  "ko": "곡예사가 아니다",
-  "zh": "並非雜技師",
-  "en": "Not an Acrobat"
+  "ko": "전체 공격으로 치명타 발생 시 치명타 발생한 대상의 수만큼 자신의 공격력이 3%씩 증가합니다. 최대 5회 중첩됩니다.",
+  "zh": "全體攻擊觸發暴擊時，自身根據產生暴擊的目標數量使攻擊力增加3%。最多可疊加5次。",
+  "en": "Increases ATK by 3% for each target hit by a Critical Hit on Critical Hit with an attack that targets all. Stacks up to 5 times."
  },
  {
-  "ko": "…플랜카드 마저 붙일까?",
-  "zh": "…要繼續貼看板嗎？",
-  "en": "...Should we just finish putting up the banner?"
+  "ko": "종말은 소녀의 얼굴을 하고 있다.",
+  "zh": "末日以少女的面孔降臨",
+  "en": "The End Wears the Face of a Girl"
  },
  {
-  "ko": "고고한 구도자",
-  "zh": "孤高的求道者",
-  "en": "Lone Seeker"
- },
- {
-  "ko": "강인도 최대치가 1 증가합니다. 피격 후 회피 발생 시 자신에게 1턴 간 천문의 묘리를 발생시킵니다.",
-  "zh": "強韌度上限增加1。受到攻擊後觸發迴避時，自身獲得1回合天問奧妙。",
-  "en": "Increases Max Toughness by 1. Grants Essence of the Celestial Art for 1 turn on evasion after being attacked."
- },
- {
-  "ko": "…쉬다 올래?",
-  "zh": "…要休息一下再來嗎？",
-  "en": "...Wanna take a break?"
- },
- {
-  "ko": "오늘의 한 걸음",
-  "zh": "今日的一步",
-  "en": "Today's Step Forward"
- },
- {
-  "ko": "페이",
-  "zh": "霏",
-  "en": "Fei"
- },
- {
-  "ko": "별빛의 이름으로",
-  "zh": "以星光之名",
-  "en": "In the Name of Starlight"
- },
- {
-  "ko": "하우스 리모델링",
-  "zh": "房屋改造",
-  "en": "House Remodeling"
- },
- {
-  "ko": "오메가 손",
-  "zh": "奧米嘉的手",
-  "en": "O-Mega Generous"
- },
- {
-  "ko": "지켜본다.",
-  "zh": "繼續觀察。",
-  "en": "Watch quietly."
- },
- {
-  "ko": "스택 트리거",
-  "zh": "觸發層疊",
-  "en": "Stack Trigger"
- },
- {
-  "ko": "특수기 타격 후 자신의 특수기 피해량이 5%씩 증가합니다. 최대 5회 중첩됩니다.",
-  "zh": "特殊技攻擊後，自身的特殊技傷害量每次增加5%。最多可疊加5次。",
-  "en": "Increases self Special Skill DMG by a certain percentage after attacking with a Special Skill. Stacks up to 5 times."
- },
- {
-  "ko": "오메가를 막는다.",
-  "zh": "阻止奧米嘉。",
-  "en": "Stop Omega."
- },
- {
-  "ko": "허수의 개척자",
-  "zh": "虛數開拓者",
-  "en": "The Imaginary Pioneer"
- },
- {
-  "ko": "오메가",
-  "zh": "奧米嘉",
-  "en": "Omega"
- },
- {
-  "ko": "기사처럼 날아서, 토끼처럼",
-  "zh": "如騎士般飛翔，如兔子般跳躍",
-  "en": "Run Like A Knight, Hop Like a Bunny"
- },
- {
-  "ko": "더블 탭",
-  "zh": "雙連擊",
-  "en": "Double Tap"
- },
- {
-  "ko": "기본기 타격 시 대상의 강인도가 격파된 상태이면 대상에게 100% 확률로 자신의 공격력에 비례한 연쇄 피해를 발생시킵니다.",
-  "zh": "普攻攻擊時，若目標的強韌度處於被擊破狀態，則有50%的機率對目標觸發與自身攻擊力成比例的連鎖傷害。",
-  "en": "Deals Chain DMG to the target proportional to self ATK with a 100% chance on attack with a Basic Skill if the target's Toughness is broken."
- },
- {
-  "ko": "서투른 욕망 해소법",
-  "zh": "笨拙的慾望宣洩法",
-  "en": "A Clumsy Way to Relieve Desire"
- },
- {
-  "ko": "힘을 원하는가",
-  "zh": "渴望力量嗎",
-  "en": "Do You Seek Power?"
- },
- {
-  "ko": "기준의 차이",
-  "zh": "基準的差異",
-  "en": "Different Standards"
- },
- {
-  "ko": "집중의 감각",
-  "zh": "專注感知",
-  "en": "Sense of Focus"
- },
- {
-  "ko": "효과 적중이 일정 비율만큼 소폭 증가합니다.",
-  "zh": "效果命中小幅增加一定比例。",
-  "en": "Slightly increases self Effect Hit by a certain percentage."
- },
- {
-  "ko": "심각한 훈련 중독입니다",
-  "zh": "嚴重的訓練成癮",
-  "en": "Seriously Addicted to Training"
- },
- {
-  "ko": "응급 처치",
-  "zh": "急救措施",
-  "en": "Emergency First Aid"
- },
- {
-  "ko": "피격 시 자신의 생명력이 25% 이하이면 자신의 생명력을 회복합니다. 회복량은 자신의 최대 생명력에 비례해 증가합니다. 2턴에 1번만 발생합니다.",
-  "zh": "回合開始時，若自身的生命力低於25%，則恢復自身的生命力。恢復量依自身最大生命力比例增加。每2回合僅觸發1次。",
-  "en": "Restores self HP if self HP is 25% or below when attacked. Recovery is proportional to self Max HP. Occurs once every 2 turns."
- },
- {
-  "ko": "보이지 않는 곳",
-  "zh": "看不見的地方",
-  "en": "An Unseen Place"
- },
- {
-  "ko": "세레스",
-  "zh": "瑟萊絲",
-  "en": "Ceres"
- },
- {
-  "ko": "슈거 하이",
-  "zh": "糖分亢奮",
-  "en": "Sugar Rush"
- },
- {
-  "ko": "무의식 속 욕망을 마음껏 해소했습니다. 훈련 중 획득하는 잠재력 포인트가 증가합니다.",
-  "zh": "盡情釋放了潛意識中的欲望。訓練中獲得的潛力點數增加。",
-  "en": "Subconscious desires have been fully indulged. Potential Points gained during training increase."
- },
- {
-  "ko": "잠만 자도 훈련 성공?",
-  "zh": "光睡覺也能順利訓練？",
-  "en": "Training Success, Just by Sleeping?"
- },
- {
-  "ko": "유연한 판단",
-  "zh": "隨機應變",
-  "en": "Sound Judgment"
- },
- {
-  "ko": "타격 시 자신의 생명력이 50% 이상이면 주는 피해량이 15% 증가하고 피격 시 자신의 생명력이 50% 미만이면 받는 피해량이 15% 감소합니다.",
-  "zh": "攻擊時，若自身的生命力高於50%，則造成的傷害量增加15%。受到傷害時，若自身的生命力低於50%，則所受傷害量減少15%。",
-  "en": "Increases damage dealt by 15% if self HP is 50% or above upon attacking. Reduces damage taken by 15% if self HP is below 50% when attacked."
- },
- {
-  "ko": "음독의 각오",
-  "zh": "飲毒的覺悟",
-  "en": "Even If It's Poison"
- },
- {
-  "ko": "사나이의 승부!",
-  "zh": "男子漢的勝負！",
-  "en": "A Real Man's Showdown!"
- },
- {
-  "ko": "사나이의 배포?",
-  "zh": "男子漢的器量？",
-  "en": "A Real Man's Resolve?"
- },
- {
-  "ko": "방어의 솜씨",
-  "zh": "防禦技巧",
-  "en": "Skill of Defense"
- },
- {
-  "ko": "방어력이 2% 증가합니다.",
-  "zh": "防禦力增加2%。",
-  "en": "DEF increases by 2%."
- },
- {
-  "ko": "사나이의 안목",
-  "zh": "男子漢的眼光",
-  "en": "A Real Man's Eye for Talent"
- },
- {
-  "ko": "두 번째 심장",
-  "zh": "第二顆心臟",
-  "en": "Second Heart"
- },
- {
-  "ko": "강인도 최대치가 2 증가합니다.",
-  "zh": "強韌度上限增加2。",
-  "en": "Increases Max Toughness by 2."
- },
- {
-  "ko": "본 투 비 와일드",
-  "zh": "天生就是狂野",
-  "en": "Born to Be Wild"
- },
- {
-  "ko": "할리",
-  "zh": "哈莉",
-  "en": "Harley"
- },
- {
-  "ko": "비 오는 날",
-  "zh": "下雨天",
-  "en": "Rainy Day"
- },
- {
-  "ko": "대표의 고충",
-  "zh": "代表的苦衷",
-  "en": "A Leader's Burden"
- },
- {
-  "ko": "이슬을 머금은 장밋빛…?",
-  "zh": "帶著露珠的玫瑰粉色…？",
-  "en": "The dewy rose shade...?"
- },
- {
-  "ko": "탱글탱글한 자몽의 오렌지빛…?",
-  "zh": "彈潤葡萄柚的橘色…？",
-  "en": "The tangy grapefruit orange...?"
- },
- {
-  "ko": "페트라의 사이즈 이론",
-  "zh": "佩特拉的尺寸理論",
-  "en": "Petra's Size Theory"
- },
- {
-  "ko": "메이드 바이 페트라♡",
-  "zh": "佩特拉製造♡",
-  "en": "Made by Petra♡"
- },
- {
-  "ko": "페트라",
-  "zh": "佩特拉",
-  "en": "Petra"
+  "ko": "로자리아",
+  "zh": "羅莎莉亞",
+  "en": "Rosaria"
  },
  {
   "ko": "날개를 활짝 펴고",
@@ -3835,6 +4585,106 @@
   "en": "Scarlet"
  },
  {
+  "ko": "별빛의 이름으로",
+  "zh": "以星光之名",
+  "en": "In the Name of Starlight"
+ },
+ {
+  "ko": "하우스 리모델링",
+  "zh": "房屋改造",
+  "en": "House Remodeling"
+ },
+ {
+  "ko": "오메가 손",
+  "zh": "奧米嘉的手",
+  "en": "O-Mega Generous"
+ },
+ {
+  "ko": "지켜본다.",
+  "zh": "繼續觀察。",
+  "en": "Watch quietly."
+ },
+ {
+  "ko": "스택 트리거",
+  "zh": "觸發層疊",
+  "en": "Stack Trigger"
+ },
+ {
+  "ko": "특수기 타격 후 자신의 특수기 피해량이 5%씩 증가합니다. 최대 5회 중첩됩니다.",
+  "zh": "特殊技攻擊後，自身的特殊技傷害量每次增加5%。最多可疊加5次。",
+  "en": "Increases self Special Skill DMG by a certain percentage after attacking with a Special Skill. Stacks up to 5 times."
+ },
+ {
+  "ko": "오메가를 막는다.",
+  "zh": "阻止奧米嘉。",
+  "en": "Stop Omega."
+ },
+ {
+  "ko": "허수의 개척자",
+  "zh": "虛數開拓者",
+  "en": "The Imaginary Pioneer"
+ },
+ {
+  "ko": "오메가",
+  "zh": "奧米嘉",
+  "en": "Omega"
+ },
+ {
+  "ko": "머리사냥",
+  "zh": "獵頭",
+  "en": "Head Hunting"
+ },
+ {
+  "ko": "프레스마",
+  "zh": "芙蕾微笑",
+  "en": "Fresma"
+ },
+ {
+  "ko": "이 카드에 모든 걸 걸고!",
+  "zh": "在這張卡牌上賭上一切！",
+  "en": "All In on This Card!"
+ },
+ {
+  "ko": "프레이의 승리를 예측한다.",
+  "zh": "預測芙蕾會獲勝。",
+  "en": "Bet on Frey to win."
+ },
+ {
+  "ko": "견고한 파괴",
+  "zh": "堅固的破壞",
+  "en": "Unyielding Destruction"
+ },
+ {
+  "ko": "치명타 피해가 12% 증가하고 최대 생명력이 4% 증가합니다.",
+  "zh": "暴擊傷害增加12%，最大生命力增加4%",
+  "en": "Increases CRIT DMG by 12% and Max HP by 4%."
+ },
+ {
+  "ko": "탕진",
+  "zh": "傾家蕩產",
+  "en": "All-In"
+ },
+ {
+  "ko": "전재산을 모두 소진했더니, 도저히 의욕이 나질 않습니다. 훈련 중 획득하는 힘이 감소합니다.",
+  "zh": "耗盡所有財產後，完全提不起勁。訓練中獲得的力量減少。",
+  "en": "After spending everything you had, you feel completely unmotivated. Strength gained from training decreases."
+ },
+ {
+  "ko": "루나의 승리를 예측한다.",
+  "zh": "預測露娜會獲勝。",
+  "en": "Bet on Luna to win."
+ },
+ {
+  "ko": "불굴의 역작",
+  "zh": "不屈的傑作",
+  "en": "The Indomitable Masterpiece"
+ },
+ {
+  "ko": "프레이",
+  "zh": "芙蕾",
+  "en": "Frey"
+ },
+ {
   "ko": "깜짝 생일 파티",
   "zh": "驚喜生日派對",
   "en": "Surprise Birthday Party"
@@ -3880,139 +4730,14 @@
   "en": "Claire"
  },
  {
-  "ko": "집중의 재능",
-  "zh": "專注天賦",
-  "en": "Talent of Focus"
+  "ko": "그 물은 좋은 물이다",
+  "zh": "那是好水",
+  "en": "That Water Is Good Water"
  },
  {
-  "ko": "효과 적중이 6% 증가합니다.",
-  "zh": "效果命中增加6%。",
-  "en": "Effect Hit increases by 6%."
- },
- {
-  "ko": "이것은 수행이다!",
-  "zh": "這就是修行！",
-  "en": "This Is Training!"
- },
- {
-  "ko": "확고한 믿음",
-  "zh": "堅定信念",
-  "en": "Unwavering Faith"
- },
- {
-  "ko": "최초 전투 시작 시 자신에게 2턴 간 보호막을 발생시킵니다. 보호막은 자신의 최대 생명력에 비례해 증가합니다.",
-  "zh": "首次戰鬥開始時，自身獲得2回合護盾。護盾依自身最大生命力比例增加。",
-  "en": "Grants self Barrier for 2 turns at the start of the first battle. Barrier is proportional to self Max HP."
- },
- {
-  "ko": "한여름밤의 하늘",
-  "zh": "仲夏夜之空",
-  "en": "A Midsummer Night's Sky"
- },
- {
-  "ko": "종의 진화",
-  "zh": "物種的進化",
-  "en": "Evolution of a Species"
- },
- {
-  "ko": "조심스럽게 머리를 쓰다듬어봐.",
-  "zh": "小心翼翼地試著摸摸頭吧。",
-  "en": "Try petting its head gently."
- },
- {
-  "ko": "지금이야! 아세라처럼 배를 만져!",
-  "zh": "就是現在！像亞瑟菈那樣摸摸肚子！",
-  "en": "Now's your chance! Go for the belly like Asherah!"
- },
- {
-  "ko": "웃음 조사",
-  "zh": "笑容調查",
-  "en": "Smile Investigation"
- },
- {
-  "ko": "둘만의 비밀",
-  "zh": "兩人的祕密",
-  "en": "Our Little Secret"
- },
- {
-  "ko": "웃음 유발 메커니즘",
-  "zh": "誘發笑聲機制",
-  "en": "Laughter Protocol"
- },
- {
-  "ko": "특수기 사용 시 자신의 피해량이 20% 증가합니다. 턴 시작 시 자신에게 도약 스택을 1개 부여합니다.",
-  "zh": "使用特殊技時，自身的傷害量增加20%。回合開始時，賦予自身1層躍進。",
-  "en": "Increases damage dealt by 20% when using a Special Skill. Grants self 1 stack of Leap at the start of the turn."
- },
- {
-  "ko": "휴가 준비는 쇼핑에서부터!",
-  "zh": "度假準備，先從購物開始！",
-  "en": "Vacation Prep: Time to Shop!"
- },
- {
-  "ko": "스마일",
-  "zh": "微笑",
-  "en": "Smile"
- },
- {
-  "ko": "동상이몽",
-  "zh": "同床異夢",
-  "en": "Same Place, Different Worlds"
- },
- {
-  "ko": "하고 싶은 이야기",
-  "zh": "想說的故事",
-  "en": "The Story I Want to Tell"
- },
- {
-  "ko": "어두운 과거",
-  "zh": "黑暗的過去",
-  "en": "A Dark Past"
- },
- {
-  "ko": "노 페인, 노 게인",
-  "zh": "一分耕耘，一分收穫",
-  "en": "No Pain, No Gain"
- },
- {
-  "ko": "레이시",
-  "zh": "萊希",
-  "en": "Lacy"
- },
- {
-  "ko": "선로 공사. 응.",
-  "zh": "鐵軌工程，嗯。",
-  "en": "Track Construction. Mm."
- },
- {
-  "ko": "심야 튀김. 응.",
-  "zh": "深夜炸物，嗯。",
-  "en": "Midnight Fried Food. Mm."
- },
- {
-  "ko": "채소 싫어. 응.",
-  "zh": "討厭蔬菜，嗯。",
-  "en": "I Hate Veggies. Mm."
- },
- {
-  "ko": "튀김 파티",
-  "zh": "炸物派對",
-  "en": "Fried Food Party"
- },
- {
-  "ko": "스킬 사용 후 자신의 생명력이 50% 이상이면 자신의 행동 게이지를 20% 증가시킵니다.",
-  "zh": "使用技能後，若自身的生命力高於50%，則使自身行動條增加20%。",
-  "en": "Increases self Action Gauge by 20% if self HP is 50% or above after using a Skill."
- },
- {
-  "ko": "튀김 명인",
-  "zh": "炸物高手",
-  "en": "Master of Fried Food"
- },
- {
-  "ko": "타냐",
-  "zh": "塔妮婭",
-  "en": "Tanya"
+  "ko": "공녀, 왕좌에 오르다",
+  "zh": "公女，登上王座",
+  "en": "The Princess Ascends the Throne"
  },
  {
   "ko": "성물 도난 사건",
@@ -4070,49 +4795,194 @@
   "en": "Lily"
  },
  {
-  "ko": "반짝 네컷",
-  "zh": "閃亮四格照",
-  "en": "Sparkle Four-Panel Photos"
+  "ko": "교양의 증명",
+  "zh": "教養的證明",
+  "en": "Proof of Refinement"
  },
  {
-  "ko": "용족은 튼튼하니까!",
-  "zh": "龍族很結實！",
-  "en": "Dragons are tough!"
+  "ko": "개와 매의 상관관계",
+  "zh": "狗與鷹的從屬關係",
+  "en": "The Correlation Between Dogs and Hawks"
  },
  {
-  "ko": "들어올 땐 마음대로였겠지만…",
-  "zh": "進來的時候可以隨你的心意…",
-  "en": "It May Have Been Easy to Get In, But..."
+  "ko": "돌아온 나의 전성기",
+  "zh": "重返全盛期",
+  "en": "Back to My Prime"
  },
  {
-  "ko": "도망친다.",
-  "zh": "逃走。",
-  "en": "Run away."
+  "ko": "진홍의 맹세",
+  "zh": "深紅誓約",
+  "en": "Crimson Oath"
  },
  {
-  "ko": "탄력 가속",
-  "zh": "彈力加速",
-  "en": "Elastic Acceleration"
+  "ko": "전체 공격으로 타격 후 자신에게 2턴 간 증표를 발생시킵니다. 타격 시 자신이 증표 상태이면 주는 피해량이 15% 증가합니다.",
+  "zh": "以全體攻擊進行攻擊後，使自身獲得2回合信物。攻擊時若自身處於信物狀態，造成的傷害量增加15%。",
+  "en": "Grants self Token for 2 turns after attacking with an attack that targets all. Deals 15% additional DMG if self has Token."
  },
  {
-  "ko": "턴 시작 시 자신의 속도가 10씩 증가합니다. 최대 3회 중첩됩니다.",
-  "zh": "回合開始時，自身的速度增加10。最多可疊加3次。",
-  "en": "Increases SPD by 10 at the start of the turn. Stacks up to 3 times."
+  "ko": "죽음이 둘을 갈라놓을 때까지",
+  "zh": "直到死亡將我們分開為止",
+  "en": "Till Death Do Us Part"
  },
  {
-  "ko": "운명을 받아들인다.",
-  "zh": "接受命運。",
-  "en": "Accept my fate."
+  "ko": "에핀델",
+  "zh": "艾芬黛爾",
+  "en": "Epindel"
  },
  {
-  "ko": "키라만큼 귀여워!",
-  "zh": "跟綺拉一樣可愛！",
-  "en": "As Cute as Kyra!"
+  "ko": "생명의 은인",
+  "zh": "救命恩人",
+  "en": "The One Who Saved My Life"
  },
  {
-  "ko": "키라",
-  "zh": "綺拉",
-  "en": "Kyra"
+  "ko": "땅을 가는 일이라면 맡겨.",
+  "zh": "翻地的事就交給我吧。",
+  "en": "I'll handle the plowing."
+ },
+ {
+  "ko": "흙을 치우는 일이라면 도와줄게.",
+  "zh": "搬土的事就交給我吧。",
+  "en": "I'll help clear out the dirt."
+ },
+ {
+  "ko": "언어를 초월하는 경험",
+  "zh": "超越語言的體驗",
+  "en": "An Experience Beyond Words"
+ },
+ {
+  "ko": "두 사람의 이야기를 경청한다.",
+  "zh": "靜靜聆聽兩人的對話。",
+  "en": "Listen to their conversation."
+ },
+ {
+  "ko": "간단한 차를 끓인다.",
+  "zh": "泡一壺簡單的茶。",
+  "en": "Make some tea."
+ },
+ {
+  "ko": "곡예사가 아니다",
+  "zh": "並非雜技師",
+  "en": "Not an Acrobat"
+ },
+ {
+  "ko": "…플랜카드 마저 붙일까?",
+  "zh": "…要繼續貼看板嗎？",
+  "en": "...Should we just finish putting up the banner?"
+ },
+ {
+  "ko": "고고한 구도자",
+  "zh": "孤高的求道者",
+  "en": "Lone Seeker"
+ },
+ {
+  "ko": "강인도 최대치가 1 증가합니다. 피격 후 회피 발생 시 자신에게 1턴 간 천문의 묘리를 발생시킵니다.",
+  "zh": "強韌度上限增加1。受到攻擊後觸發迴避時，自身獲得1回合天問奧妙。",
+  "en": "Increases Max Toughness by 1. Grants Essence of the Celestial Art for 1 turn on evasion after being attacked."
+ },
+ {
+  "ko": "…쉬다 올래?",
+  "zh": "…要休息一下再來嗎？",
+  "en": "...Wanna take a break?"
+ },
+ {
+  "ko": "오늘의 한 걸음",
+  "zh": "今日的一步",
+  "en": "Today's Step Forward"
+ },
+ {
+  "ko": "페이",
+  "zh": "霏",
+  "en": "Fei"
+ },
+ {
+  "ko": "건강이 제일이에요",
+  "zh": "健康最重要",
+  "en": "Health Comes First"
+ },
+ {
+  "ko": "누각 위, 유리달 맞이",
+  "zh": "樓閣之上，迎接玻璃月",
+  "en": "Under the Glass Moon, Over the Pavilion"
+ },
+ {
+  "ko": "블루 앤 바이커",
+  "zh": "城鎮守衛與騎士",
+  "en": "Blue and Biker"
+ },
+ {
+  "ko": "블루 앤 부띠끄",
+  "zh": "城鎮守衛與精品店",
+  "en": "Blue and Boutique"
+ },
+ {
+  "ko": "원하는 대로 해준다.",
+  "zh": "照她的意思做。",
+  "en": "Do as she wishes."
+ },
+ {
+  "ko": "존엄을 지킨다.",
+  "zh": "守住尊嚴。",
+  "en": "Maintain my dignity."
+ },
+ {
+  "ko": "블루 버서스 버니",
+  "zh": "城鎮守衛對決兔兔",
+  "en": "Blue Versus Bunny"
+ },
+ {
+  "ko": "언더커버 캅",
+  "zh": "臥底警探",
+  "en": "Undercover Cop"
+ },
+ {
+  "ko": "안나",
+  "zh": "安娜",
+  "en": "Annah"
+ },
+ {
+  "ko": "종의 진화",
+  "zh": "物種的進化",
+  "en": "Evolution of a Species"
+ },
+ {
+  "ko": "조심스럽게 머리를 쓰다듬어봐.",
+  "zh": "小心翼翼地試著摸摸頭吧。",
+  "en": "Try petting its head gently."
+ },
+ {
+  "ko": "지금이야! 아세라처럼 배를 만져!",
+  "zh": "就是現在！像亞瑟菈那樣摸摸肚子！",
+  "en": "Now's your chance! Go for the belly like Asherah!"
+ },
+ {
+  "ko": "웃음 조사",
+  "zh": "笑容調查",
+  "en": "Smile Investigation"
+ },
+ {
+  "ko": "둘만의 비밀",
+  "zh": "兩人的祕密",
+  "en": "Our Little Secret"
+ },
+ {
+  "ko": "웃음 유발 메커니즘",
+  "zh": "誘發笑聲機制",
+  "en": "Laughter Protocol"
+ },
+ {
+  "ko": "특수기 사용 시 자신의 피해량이 20% 증가합니다. 턴 시작 시 자신에게 도약 스택을 1개 부여합니다.",
+  "zh": "使用特殊技時，自身的傷害量增加20%。回合開始時，賦予自身1層躍進。",
+  "en": "Increases damage dealt by 20% when using a Special Skill. Grants self 1 stack of Leap at the start of the turn."
+ },
+ {
+  "ko": "휴가 준비는 쇼핑에서부터!",
+  "zh": "度假準備，先從購物開始！",
+  "en": "Vacation Prep: Time to Shop!"
+ },
+ {
+  "ko": "스마일",
+  "zh": "微笑",
+  "en": "Smile"
  },
  {
   "ko": "연극 관람",
@@ -4170,524 +5040,51 @@
   "en": "Asherah"
  },
  {
-  "ko": "미션 파서블?",
-  "zh": "Mission Possible？",
-  "en": "Mission Possible?"
+  "ko": "The Case of the Locked Room Dessert Disappearance"
  },
  {
-  "ko": "사랑의 행진",
-  "zh": "愛戀行進",
-  "en": "Wedding March"
+  "ko": "Stay silent."
  },
  {
-  "ko": "강인도 최대치가 1 증가합니다. 특수기 혹은 궁극기 사용 후 노바 포스를 2 획득합니다.",
-  "zh": "強韌度上限增加1。使用特殊技或必殺技後，獲得新星原力2。",
-  "en": "Increases Max Toughness by 1. Gains 2 Nova Force after using a Special Skill or Ultimate Skill."
+  "ko": "Accuse Gwen."
  },
  {
-  "ko": "나른한 오후의 틈새",
-  "zh": "慵懶午後的空閒",
-  "en": "A Drowsy Afternoon Interlude"
+  "ko": "Gwen's Archnemesis"
  },
  {
-  "ko": "교양의 증명",
-  "zh": "教養的證明",
-  "en": "Proof of Refinement"
+  "ko": "My Forte? Asking Around!"
  },
  {
-  "ko": "개와 매의 상관관계",
-  "zh": "狗與鷹的從屬關係",
-  "en": "The Correlation Between Dogs and Hawks"
+  "ko": "Find new connections by tirelessly asking around. Bond Points gained during training increase."
  },
  {
-  "ko": "돌아온 나의 전성기",
-  "zh": "重返全盛期",
-  "en": "Back to My Prime"
+  "ko": "I'm Something of an Undercover Investigator Myself"
  },
  {
-  "ko": "진홍의 맹세",
-  "zh": "深紅誓約",
-  "en": "Crimson Oath"
+  "ko": "Battle Fervor"
  },
  {
-  "ko": "전체 공격으로 타격 후 자신에게 2턴 간 증표를 발생시킵니다. 타격 시 자신이 증표 상태이면 주는 피해량이 15% 증가합니다.",
-  "zh": "以全體攻擊進行攻擊後，使自身獲得2回合信物。攻擊時若自身處於信物狀態，造成的傷害量增加15%。",
-  "en": "Grants self Token for 2 turns after attacking with an attack that targets all. Deals 15% additional DMG if self has Token."
+  "ko": "When attacking, increases self damage dealt by 10%. Stacks up to 2 times. Resets all stacks at the end of the turn."
  },
  {
-  "ko": "죽음이 둘을 갈라놓을 때까지",
-  "zh": "直到死亡將我們分開為止",
-  "en": "Till Death Do Us Part"
+  "ko": "동족의 냄새",
+  "zh": "同類的氣味",
+  "en": "The Scent of One's Own Kind"
  },
  {
-  "ko": "에핀델",
-  "zh": "艾芬黛爾",
-  "en": "Epindel"
+  "ko": "망상의 자격 조건",
+  "zh": "妄想的資格",
+  "en": "Qualifications for Delusion"
  },
  {
-  "ko": "이 카드에 모든 걸 걸고!",
-  "zh": "在這張卡牌上賭上一切！",
-  "en": "All In on This Card!"
+  "ko": "만족스러운 개화",
+  "zh": "令人滿意的開花",
+  "en": "A Satisfying Bloom"
  },
  {
-  "ko": "프레이의 승리를 예측한다.",
-  "zh": "預測芙蕾會獲勝。",
-  "en": "Bet on Frey to win."
- },
- {
-  "ko": "견고한 파괴",
-  "zh": "堅固的破壞",
-  "en": "Unyielding Destruction"
- },
- {
-  "ko": "치명타 피해가 12% 증가하고 최대 생명력이 4% 증가합니다.",
-  "zh": "暴擊傷害增加12%，最大生命力增加4%",
-  "en": "Increases CRIT DMG by 12% and Max HP by 4%."
- },
- {
-  "ko": "탕진",
-  "zh": "傾家蕩產",
-  "en": "All-In"
- },
- {
-  "ko": "전재산을 모두 소진했더니, 도저히 의욕이 나질 않습니다. 훈련 중 획득하는 힘이 감소합니다.",
-  "zh": "耗盡所有財產後，完全提不起勁。訓練中獲得的力量減少。",
-  "en": "After spending everything you had, you feel completely unmotivated. Strength gained from training decreases."
- },
- {
-  "ko": "루나의 승리를 예측한다.",
-  "zh": "預測露娜會獲勝。",
-  "en": "Bet on Luna to win."
- },
- {
-  "ko": "불굴의 역작",
-  "zh": "不屈的傑作",
-  "en": "The Indomitable Masterpiece"
- },
- {
-  "ko": "마스터 셰프 라비스타",
-  "zh": "廚神當道拉維斯塔版",
-  "en": "Master Chef Lavistar"
- },
- {
-  "ko": "향을 음미하며 마신다.",
-  "zh": "細細品味香氣後喝下。",
-  "en": "Savor the aroma while drinking."
- },
- {
-  "ko": "벌컥벌컥 마신다.",
-  "zh": "大口大口地喝下。",
-  "en": "Gulp it down."
- },
- {
-  "ko": "어떤 오후의 평화",
-  "zh": "某個午後的平靜",
-  "en": "One Peaceful Afternoon"
- },
- {
-  "ko": "백작님의 고뇌",
-  "zh": "伯爵的煩惱",
-  "en": "The Countess' Troubles"
- },
- {
-  "ko": "맑게 빚은 향기",
-  "zh": "清釀之香",
-  "en": "Distilled Fragrance"
- },
- {
-  "ko": "단일 공격으로 타격 시 피해량이 10% 증가하고 자신이 약화 효과 상태가 아니라면 피해량이 추가로 15% 증가합니다.",
-  "zh": "以單一攻擊攻擊時，傷害量增加10%，若自身不為弱化效果狀態，則傷害量額外增加15%。",
-  "en": "Increases damage dealt by 10% when attacking with a single-target attack. If self has no debuffs, increases damage dealt by an additional 15%."
- },
- {
-  "ko": "귀로 없는 여정",
-  "zh": "無歸之旅",
-  "en": "Journey of No Return"
- },
- {
-  "ko": "아모라",
-  "zh": "阿莫拉",
-  "en": "Amora"
- },
- {
-  "ko": "눈높이가 다르다",
-  "zh": "眼光不同",
-  "en": "A Different Perspective"
- },
- {
-  "ko": "이 업계에서는 보물입니다",
-  "zh": "在這行可是寶物",
-  "en": "A Treasure in This Industry"
- },
- {
-  "ko": "책을 열어본다.",
-  "zh": "打開書看看。",
-  "en": "Open the book."
- },
- {
-  "ko": "베스타에게 양보한다.",
-  "zh": "讓給薇絲塔。",
-  "en": "Let Besta have it."
- },
- {
-  "ko": "베스타의 전술 시간",
-  "zh": "薇絲塔的戰術時光",
-  "en": "Besta's Tactics Time"
- },
- {
-  "ko": "베스타를 막는다.",
-  "zh": "阻止薇絲塔。",
-  "en": "Stop Besta."
- },
- {
-  "ko": "강인한 의지",
-  "zh": "強韌意志",
-  "en": "Unyielding Will"
- },
- {
-  "ko": "강인도 최대치가 2 증가합니다. 피격 시 자신이 강인도 격파 상태가 아니라면 치명타 피해 저항이 20% 증가합니다.",
-  "zh": "強韌度上限增加2。受到攻擊時若自身未處於強韌度擊破狀態，則暴擊傷害抗性提升20%。",
-  "en": "Increases Max Toughness by 2. Increases CRIT DMG RES by 20% when attacked if self Toughness is not broken."
- },
- {
-  "ko": "그냥 지켜본다.",
-  "zh": "只是旁觀。",
-  "en": "Stay back and watch."
- },
- {
-  "ko": "만족스러운 식사",
-  "zh": "心滿意足的一餐",
-  "en": "A Satisfying Meal"
- },
- {
-  "ko": "베스타",
-  "zh": "薇絲塔",
-  "en": "Besta"
- },
- {
-  "ko": "블루 앤 바이커",
-  "zh": "城鎮守衛與騎士",
-  "en": "Blue and Biker"
- },
- {
-  "ko": "블루 앤 부띠끄",
-  "zh": "城鎮守衛與精品店",
-  "en": "Blue and Boutique"
- },
- {
-  "ko": "원하는 대로 해준다.",
-  "zh": "照她的意思做。",
-  "en": "Do as she wishes."
- },
- {
-  "ko": "존엄을 지킨다.",
-  "zh": "守住尊嚴。",
-  "en": "Maintain my dignity."
- },
- {
-  "ko": "블루 버서스 버니",
-  "zh": "城鎮守衛對決兔兔",
-  "en": "Blue Versus Bunny"
- },
- {
-  "ko": "언더커버 캅",
-  "zh": "臥底警探",
-  "en": "Undercover Cop"
- },
- {
-  "ko": "안나",
-  "zh": "安娜",
-  "en": "Annah"
- },
- {
-  "ko": "파이어와 불나방",
-  "zh": "火焰與飛蛾",
-  "en": "Fire and the Moth"
- },
- {
-  "ko": "베라실드 21",
-  "zh": "貝拉護盾21",
-  "en": "Verashield 21"
- },
- {
-  "ko": "전부 경험담입니다.",
-  "zh": "全都是親身經歷。",
-  "en": "These Are All Based on Real Experiences"
- },
- {
-  "ko": "누구보다 프로페셔널",
-  "zh": "比誰都專業",
-  "en": "More Than Professional"
- },
- {
-  "ko": "베라",
-  "zh": "貝拉",
-  "en": "Vera"
- },
- {
-  "ko": "하지만 빨랐어요!",
-  "zh": "但是很快嘛！",
-  "en": "But It Was Fast!"
- },
- {
-  "ko": "엘리트 페이스예요!",
-  "zh": "是菁英面孔！",
-  "en": "It's Elite Face!"
- },
- {
-  "ko": "한수 가르쳐 드리죠!",
-  "zh": "讓我來指點你一下！",
-  "en": "I’ll Show You a Thing or Two!"
- },
- {
-  "ko": "별을 보며 꿈을",
-  "zh": "望著星辰夢想",
-  "en": "Dreams Under the Stars"
- },
- {
-  "ko": "나루",
-  "zh": "娜魯",
-  "en": "Naru"
- },
- {
-  "ko": "보고서는 어려워",
-  "zh": "報告真難寫",
-  "en": "Paperwork Is the Worst"
- },
- {
-  "ko": "책임질 수 없는 동심",
-  "zh": "略感負擔的童心",
-  "en": "When Kids Run Wild"
- },
- {
-  "ko": "린이 준비한 물건을 받는다.",
-  "zh": "收下凌準備的物品。",
-  "en": "Receive what Lyn has prepared."
- },
- {
-  "ko": "작전 방침",
-  "zh": "作戰方針",
-  "en": "Operation Policy"
- },
- {
-  "ko": "능숙한 지휘로 현장을 조율합니다. 훈련 실패율이 감소합니다.",
-  "zh": "以熟練的指揮調度現場。訓練失敗率減少。",
-  "en": "Coordinates the field with skillful command. Training failure rate decreases."
- },
- {
-  "ko": "바닥에 널브러진 인형을 가리킨다.",
-  "zh": "指向散落在地上的玩偶。",
-  "en": "Point to the doll lying on the floor."
- },
- {
-  "ko": "훈련은 실전처럼",
-  "zh": "訓練如實戰",
-  "en": "Train as You Fight"
- },
- {
-  "ko": "아픈 척 연기한다!",
-  "zh": "裝作受傷！",
-  "en": "Pretend to be hurt!"
- },
- {
-  "ko": "침묵의 방패",
-  "zh": "沉默盾牌",
-  "en": "Shield of Silence"
- },
- {
-  "ko": "선제 방어 발생 확률이 20% 증가합니다.",
-  "zh": "主動防禦發生機率增加20%。",
-  "en": "Increases Preemptive Guard Chance by 20%."
- },
- {
-  "ko": "궤변으로 넘어간다!",
-  "zh": "用歪理糊弄過去！",
-  "en": "Bluff my way through it!"
- },
- {
-  "ko": "노스텔지어의 역습",
-  "zh": "鄉愁的反擊",
-  "en": "Nostalgia Strikes Back"
- },
- {
-  "ko": "힐데",
-  "zh": "希爾德",
-  "en": "Hilde"
- },
- {
-  "ko": "세상에 쉬운 일 하나 없다",
-  "zh": "世上沒有容易的事",
-  "en": "Nothing In This World Comes Easy"
- },
- {
-  "ko": "다른 일을 해보자!",
-  "zh": "換個工作試試吧！",
-  "en": "Let's try something else!"
- },
- {
-  "ko": "맛있는 걸 먹고 잊어버리자!",
-  "zh": "吃點好吃的忘掉吧！",
-  "en": "Let's eat something good and forget about it!"
- },
- {
-  "ko": "심각할 정도의 업무중독",
-  "zh": "嚴重的工作成癮",
-  "en": "Workaholism, Taken Too Far"
- },
- {
-  "ko": "그때의 생활 패턴을 재현해 보면 어때?",
-  "zh": "重現那時候的生活模式怎麼樣？",
-  "en": "What if you replicate that old routine?"
- },
- {
-  "ko": "좀 더 확실하게 쉬어보자.",
-  "zh": "再試試看吧！",
-  "en": "Let's take a long break."
- },
- {
-  "ko": "펜릴 소대",
-  "zh": "芬里爾小隊",
-  "en": "Fenrir Squad"
- },
- {
-  "ko": "카탈리스트",
-  "zh": "催化劑",
-  "en": "Catalyst"
- },
- {
-  "ko": "타격 후 치명타 발생 시 적 전체에게 100% 확률로 자신의 공격력에 비례한 연쇄 피해를 발생시킵니다. 자신의 턴에 1번만 발생합니다.",
-  "zh": "攻擊後發生暴擊時，有100%機率對全體敵人造成與自身攻擊力成比例的連鎖傷害。自身回合內僅觸發1次。",
-  "en": "100% chance to deal Chain DMG proportional to self ATK to all enemies upon Critical Hit. Occurs once on self turn."
- },
- {
-  "ko": "경력직 용병",
-  "zh": "資深傭兵",
-  "en": "Experienced Mercenary"
- },
- {
-  "ko": "유미나",
-  "zh": "劉米娜",
-  "en": "Yoo Mina"
- },
- {
-  "ko": "편식하는 마왕님",
-  "zh": "挑食的魔王",
-  "en": "The Picky Demon Lord"
- },
- {
-  "ko": "통찰의 재능",
-  "zh": "洞察天賦",
-  "en": "Talent of Insight"
- },
- {
-  "ko": "치명타 확률이 4.5% 증가합니다.",
-  "zh": "暴擊率增加4.5%。",
-  "en": "CRIT Rate increases by 4.5%."
- },
- {
-  "ko": "운명의 상대…?",
-  "zh": "命運的對象…？",
-  "en": "A Fated Match...?"
- },
- {
-  "ko": "시종 배틀!",
-  "zh": "侍從對決！",
-  "en": "Servant Battle!"
- },
- {
-  "ko": "피의 메아리",
-  "zh": "血之回聲",
-  "en": "Echo of Blood"
- },
- {
-  "ko": "전체 공격으로 치명타 발생 시 치명타 발생한 대상의 수만큼 자신의 공격력이 3%씩 증가합니다. 최대 5회 중첩됩니다.",
-  "zh": "全體攻擊觸發暴擊時，自身根據產生暴擊的目標數量使攻擊力增加3%。最多可疊加5次。",
-  "en": "Increases ATK by 3% for each target hit by a Critical Hit on Critical Hit with an attack that targets all. Stacks up to 5 times."
- },
- {
-  "ko": "종말은 소녀의 얼굴을 하고 있다.",
-  "zh": "末日以少女的面孔降臨",
-  "en": "The End Wears the Face of a Girl"
- },
- {
-  "ko": "로자리아",
-  "zh": "羅莎莉亞",
-  "en": "Rosaria"
- },
- {
-  "ko": "어둠에서 태어나 빛을 맹세한",
-  "zh": "生於黑暗，誓於光明",
-  "en": "Born in Darkness, Sworn to the Light"
- },
- {
-  "ko": "그건 모르겠고 힘 +5, 체력 +5, 인내 +5를 얻겠어!",
-  "zh": "不管那些，反正力量+5、體力+5、韌性+5我要定了！",
-  "en": "Forget that. I'll take Strength +5, Vitality +5, and Endurance +5!"
- },
- {
-  "ko": "그건 모르겠고 스태미나 +5, 잠재력 포인트 +5를 얻겠어!",
-  "zh": "不管那些，反正耐力+5、潛力點數+5我要定了！",
-  "en": "Forget that. I'll take Stamina +5 and Potential Points +5!"
- },
- {
-  "ko": "금단의 기록물 Vol. 1",
-  "zh": "禁忌之物Vol.1",
-  "en": "Forbidden Archive Vol. 1"
- },
- {
-  "ko": "성우 라디오라든가, 있으면 좋겠다는 느낌",
-  "zh": "能有聲優電台之類的就好了",
-  "en": "A Voice Actor Radio Show Would Be Nice"
- },
- {
-  "ko": "메타 인지",
-  "zh": "後設認知",
-  "en": "Metacognition"
- },
- {
-  "ko": "이 세계가 게임이라는 믿을 수 없는 이야기를 들었습니다. 혼란스러워 집중이 잘 되지 않습니다… 훈련 중 획득하는 집중이 감소합니다.",
-  "zh": "聽說了這個世界其實是遊戲這種難以置信的說法。讓人困惑，難以集中精神…訓練中獲得的專注降低。",
-  "en": "I've heard the unbelievable claim that this world is a game. It's confusing, and I can't focus… Focus gained during training decreases."
- },
- {
-  "ko": "전차",
-  "zh": "戰車",
-  "en": "The Chariot"
- },
- {
-  "ko": "여정 시작",
-  "zh": "旅程起點",
-  "en": "The Beginning of the Journey"
- },
- {
-  "ko": "마술사",
-  "zh": "魔術師",
-  "en": "Magician"
- },
- {
-  "ko": "고양이는 웃지 않는다",
-  "zh": "貓不會笑",
-  "en": "Cats Do Not Smile"
- },
- {
-  "ko": "정의",
-  "zh": "正義",
-  "en": "Justice"
- },
- {
-  "ko": "달 너머로",
-  "zh": "月之彼端",
-  "en": "Beyond the Moon"
- },
- {
-  "ko": "힘",
-  "zh": "力量",
-  "en": "Strength"
- },
- {
-  "ko": "청소, 뜻밖의 손님",
-  "zh": "清掃，不速之客",
-  "en": "Cleaning, and an Unexpected Guest"
+  "ko": "리디아",
+  "zh": "莉迪亞",
+  "en": "Lydia"
  },
  {
   "ko": "운명",
@@ -4700,9 +5097,9 @@
   "en": "Assault of the Rampaging Dragon"
  },
  {
-  "ko": "여제",
-  "zh": "女帝",
-  "en": "The Empress"
+  "ko": "달 너머로",
+  "zh": "月之彼端",
+  "en": "Beyond the Moon"
  },
  {
   "ko": "가위",
@@ -4725,9 +5122,9 @@
   "en": "Seira"
  },
  {
-  "ko": "심판",
-  "zh": "審判",
-  "en": "Judgment"
+  "ko": "고양이는 웃지 않는다",
+  "zh": "貓不會笑",
+  "en": "Cats Do Not Smile"
  },
  {
   "ko": "구하러 온 거 아닙니다",
@@ -4760,84 +5157,9 @@
   "en": "Trish"
  },
  {
-  "ko": "교황",
-  "zh": "教皇",
-  "en": "The Hierophant"
- },
- {
-  "ko": "필요 없어!",
-  "zh": "不需要！",
-  "en": "Forget it!"
- },
- {
-  "ko": "포상입니다",
-  "zh": "這是獎賞",
-  "en": "Here's Your Reward"
- },
- {
-  "ko": "고요한 증오",
-  "zh": "靜謐的憎恨",
-  "en": "Silent Hatred"
- },
- {
-  "ko": "에데",
-  "zh": "艾黛",
-  "en": "Haydee"
- },
- {
-  "ko": "태양",
-  "zh": "太陽",
-  "en": "Sun"
- },
- {
-  "ko": "완벽한 베개",
-  "zh": "完美的枕頭",
-  "en": "Perfect Pillow"
- },
- {
-  "ko": "태생의 비밀",
-  "zh": "出生的祕密",
-  "en": "The Secret of One's Birth"
- },
- {
-  "ko": "달콤, 푹신, 쿠울…",
-  "zh": "香甜、柔軟、Zzz…",
-  "en": "Sweet, Fluffy, Zzz..."
- },
- {
-  "ko": "세르팡",
-  "zh": "瑟樂芬",
-  "en": "Serpang"
- },
- {
-  "ko": "악마",
-  "zh": "惡魔",
-  "en": "The Devil"
- },
- {
-  "ko": "사냥꾼의 자존심",
-  "zh": "獵人的自尊",
-  "en": "Pride of the Hunter"
- },
- {
-  "ko": "허니 트랩",
-  "zh": "甜蜜陷阱",
-  "en": "Honey Trap"
- },
- {
-  "ko": "준비, 조준, 발사",
-  "zh": "預備、瞄準、發射",
-  "en": "Ready, Aim, Fire"
- },
- {
-  "ko": "클라리사",
-  "zh": "克拉麗莎",
-  "en": "Clarissa"
- },
- {
-  "ko": "연인",
-  "zh": "戀人",
-  "en": "The Lovers"
+  "ko": "청소, 뜻밖의 손님",
+  "zh": "清掃，不速之客",
+  "en": "Cleaning, and an Unexpected Guest"
  },
  {
   "ko": "대화 종료",
@@ -4865,44 +5187,9 @@
   "en": "Lugh"
  },
  {
-  "ko": "황제",
-  "zh": "皇帝",
-  "en": "The Emperor"
- },
- {
   "ko": "품위 재단",
   "zh": "正派剪裁",
   "en": "Foundation of Elegance"
- },
- {
-  "ko": "별",
-  "zh": "星辰",
-  "en": "Star"
- },
- {
-  "ko": "동족의 냄새",
-  "zh": "同類的氣味",
-  "en": "The Scent of One's Own Kind"
- },
- {
-  "ko": "망상의 자격 조건",
-  "zh": "妄想的資格",
-  "en": "Qualifications for Delusion"
- },
- {
-  "ko": "만족스러운 개화",
-  "zh": "令人滿意的開花",
-  "en": "A Satisfying Bloom"
- },
- {
-  "ko": "리디아",
-  "zh": "莉迪亞",
-  "en": "Lydia"
- },
- {
-  "ko": "절제",
-  "zh": "節制",
-  "en": "Temperance"
  },
  {
   "ko": "변종 토끼 덫",
@@ -4945,64 +5232,69 @@
   "en": "Marcille"
  },
  {
-  "ko": "불나방 예언자",
-  "zh": "飛蛾預言者",
-  "en": "Like an Oracle to Flames"
+  "ko": "사냥꾼의 자존심",
+  "zh": "獵人的自尊",
+  "en": "Pride of the Hunter"
  },
  {
-  "ko": "마스터 메이드",
-  "zh": "大女僕長",
-  "en": "Master Maid"
+  "ko": "허니 트랩",
+  "zh": "甜蜜陷阱",
+  "en": "Honey Trap"
  },
  {
-  "ko": "숲을 나온 드루이드",
-  "zh": "離開森林的德魯伊",
-  "en": "Druid Out of the Forest"
+  "ko": "준비, 조준, 발사",
+  "zh": "預備、瞄準、發射",
+  "en": "Ready, Aim, Fire"
  },
  {
-  "ko": "두 얼굴의 토끼",
-  "zh": "雙面兔子",
-  "en": "Rabbit with Two Faces"
+  "ko": "클라리사",
+  "zh": "克拉麗莎",
+  "en": "Clarissa"
  },
  {
-  "ko": "달",
-  "zh": "月亮",
-  "en": "Moon"
+  "ko": "필요 없어!",
+  "zh": "不需要！",
+  "en": "Forget it!"
  },
  {
-  "ko": "서부의 검",
-  "zh": "西部之劍",
-  "en": "Sword of the West"
+  "ko": "포상입니다",
+  "zh": "這是獎賞",
+  "en": "Here's Your Reward"
  },
  {
-  "ko": "별을 쫓는 소녀",
-  "zh": "逐星少女",
-  "en": "The Girl Chasing the Stars"
+  "ko": "고요한 증오",
+  "zh": "靜謐的憎恨",
+  "en": "Silent Hatred"
  },
  {
-  "ko": "푸른 피의 기업가",
-  "zh": "貴族血統企業家",
-  "en": "Blue-Blooded Entrepreneur"
+  "ko": "에데",
+  "zh": "艾黛",
+  "en": "Haydee"
  },
  {
-  "ko": "주문은 스마일 하나",
-  "zh": "訂單是一個微笑",
-  "en": "Just One Smile, Please"
+  "ko": "완벽한 베개",
+  "zh": "完美的枕頭",
+  "en": "Perfect Pillow"
  },
  {
-  "ko": "죽음",
-  "zh": "死亡",
-  "en": "Death"
+  "ko": "태생의 비밀",
+  "zh": "出生的祕密",
+  "en": "The Secret of One's Birth"
  },
  {
-  "ko": "들장미 기사단장",
-  "zh": "野薔薇騎士團長",
-  "en": "Grand Master of the Wild Roses"
+  "ko": "달콤, 푹신, 쿠울…",
+  "zh": "香甜、柔軟、Zzz…",
+  "en": "Sweet, Fluffy, Zzz..."
  },
  {
-  "ko": "언령의 소녀",
-  "zh": "言靈少女",
-  "en": "Girl of Kotodama"
+  "ko": "세르팡",
+  "zh": "瑟樂芬",
+  "en": "Serpang"
+ },
+ {
+  "ko": "여정 시작",
+  "zh": "旅程起點",
+  "en": "The Beginning of the Journey"
  },
  {
   "ko": "여교황",
@@ -5015,24 +5307,24 @@
   "en": "Ambitious Newcomer"
  },
  {
-  "ko": "천리안의 사냥꾼",
-  "zh": "千里眼的獵人",
-  "en": "Eagle-Eyed Hunter"
+  "ko": "은둔자",
+  "zh": "隱者",
+  "en": "Hermit"
  },
  {
-  "ko": "환상수의 동반자",
-  "zh": "幻獸的同伴",
-  "en": "Mystic's Partner"
+  "ko": "민중의 삼단봉",
+  "zh": "民眾的甩棍",
+  "en": "Baton of the People"
  },
  {
-  "ko": "서부의 뱀",
-  "zh": "西部之蛇",
-  "en": "Serpent of the West"
+  "ko": "전차",
+  "zh": "戰車",
+  "en": "The Chariot"
  },
  {
-  "ko": "기사단의 방패",
-  "zh": "騎士團之盾",
-  "en": "Knights' Shield"
+  "ko": "푸른 피의 기업가",
+  "zh": "貴族血統企業家",
+  "en": "Blue-Blooded Entrepreneur"
  },
  {
   "ko": "탑",
@@ -5045,14 +5337,129 @@
   "en": "Brave Courier"
  },
  {
-  "ko": "얼음으로 빚은 검",
-  "zh": "以冰鑄成之劍",
-  "en": "Ice-Forged Blade"
+  "ko": "심판",
+  "zh": "審判",
+  "en": "Judgment"
+ },
+ {
+  "ko": "숲을 나온 드루이드",
+  "zh": "離開森林的德魯伊",
+  "en": "Druid Out of the Forest"
+ },
+ {
+  "ko": "별",
+  "zh": "星辰",
+  "en": "Star"
+ },
+ {
+  "ko": "천리안의 사냥꾼",
+  "zh": "千里眼的獵人",
+  "en": "Eagle-Eyed Hunter"
+ },
+ {
+  "ko": "절제",
+  "zh": "節制",
+  "en": "Temperance"
  },
  {
   "ko": "초원의 질주혼",
   "zh": "草原的奔馳之魂",
   "en": "Galloping Spirit of the Plains"
+ },
+ {
+  "ko": "마술사",
+  "zh": "魔術師",
+  "en": "Magician"
+ },
+ {
+  "ko": "언령의 소녀",
+  "zh": "言靈少女",
+  "en": "Girl of Kotodama"
+ },
+ {
+  "ko": "죽음",
+  "zh": "死亡",
+  "en": "Death"
+ },
+ {
+  "ko": "들장미 기사단장",
+  "zh": "野薔薇騎士團長",
+  "en": "Grand Master of the Wild Roses"
+ },
+ {
+  "ko": "교황",
+  "zh": "教皇",
+  "en": "The Hierophant"
+ },
+ {
+  "ko": "얼음으로 빚은 검",
+  "zh": "以冰鑄成之劍",
+  "en": "Ice-Forged Blade"
+ },
+ {
+  "ko": "주문은 스마일 하나",
+  "zh": "訂單是一個微笑",
+  "en": "Just One Smile, Please"
+ },
+ {
+  "ko": "황제",
+  "zh": "皇帝",
+  "en": "The Emperor"
+ },
+ {
+  "ko": "기사단의 방패",
+  "zh": "騎士團之盾",
+  "en": "Knights' Shield"
+ },
+ {
+  "ko": "정의",
+  "zh": "正義",
+  "en": "Justice"
+ },
+ {
+  "ko": "불나방 예언자",
+  "zh": "飛蛾預言者",
+  "en": "Like an Oracle to Flames"
+ },
+ {
+  "ko": "힘",
+  "zh": "力量",
+  "en": "Strength"
+ },
+ {
+  "ko": "마스터 메이드",
+  "zh": "大女僕長",
+  "en": "Master Maid"
+ },
+ {
+  "ko": "태양",
+  "zh": "太陽",
+  "en": "Sun"
+ },
+ {
+  "ko": "환상수의 동반자",
+  "zh": "幻獸的同伴",
+  "en": "Mystic's Partner"
+ },
+ {
+  "ko": "악마",
+  "zh": "惡魔",
+  "en": "The Devil"
+ },
+ {
+  "ko": "두 얼굴의 토끼",
+  "zh": "雙面兔子",
+  "en": "Rabbit with Two Faces"
+ },
+ {
+  "ko": "연인",
+  "zh": "戀人",
+  "en": "The Lovers"
+ },
+ {
+  "ko": "서부의 뱀",
+  "zh": "西部之蛇",
+  "en": "Serpent of the West"
  },
  {
   "ko": "매달린 남자",
@@ -5065,14 +5472,24 @@
   "en": "Shield of the West"
  },
  {
-  "ko": "은둔자",
-  "zh": "隱者",
-  "en": "Hermit"
+  "ko": "달",
+  "zh": "月亮",
+  "en": "Moon"
  },
  {
-  "ko": "민중의 삼단봉",
-  "zh": "民眾的甩棍",
-  "en": "Baton of the People"
+  "ko": "서부의 검",
+  "zh": "西部之劍",
+  "en": "Sword of the West"
+ },
+ {
+  "ko": "여제",
+  "zh": "女帝",
+  "en": "The Empress"
+ },
+ {
+  "ko": "별을 쫓는 소녀",
+  "zh": "逐星少女",
+  "en": "The Girl Chasing the Stars"
  },
  {
   "ko": "별빛의 인도자",

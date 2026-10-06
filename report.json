@@ -1,0 +1,18 @@
+{
+ "stats": {
+  "new_only": 70,
+  "kept_arcana_db": 372,
+  "updated_from_starsavior_db": 9,
+  "old_only": 10,
+  "old_only_cards": 2,
+  "names_borrowed_by_english": 4,
+  "refs_added_journey_buffs": 1
+ },
+ "counts": {
+  "journey_variants": 275,
+  "journey_names": 138,
+  "arcanas": 82,
+  "arcana_events": 186
+ },
+ "missing_zh_names": []
+}

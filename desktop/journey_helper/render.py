@@ -6,7 +6,7 @@ note 附註、warn 警告、dim 說明、special 基本能力以外的獎勵（�
 import json
 
 from .data import REFERENCE_TYPES
-from .text import loc, phase_zh
+from .text import loc, phase_zh, source_text
 
 DIFFICULTY_ZH = {'Easy': '簡單', 'Normal': '普通', 'Hard': '困難'}
 CIRCLED = '①②③④⑤⑥⑦⑧⑨⑩'
@@ -32,7 +32,8 @@ def _amount(entry):
 
 
 def _ko(value):
-    return loc(value, 'ko-KR')
+    """翻譯用的原文（韓文，沒有時用英文）。"""
+    return source_text(value)
 
 
 class Renderer:
@@ -45,12 +46,13 @@ class Renderer:
     # ---- 對外介面 ----
     def render(self, sections):
         """sections: [{'heading': str|None, 'variants': [...], 'highlight': bool}]"""
-        self._fold_count = 0
         recorded = []
         self._T = lambda ko: (recorded.append(ko), ko)[1]
+        self._fold_count = 0
         self._lines(sections)
         mapping = self.translator.translate_many(recorded)
         self._T = lambda ko: mapping.get(ko, ko)
+        self._fold_count = 0
         lines = self._lines(sections)
         if getattr(self.translator, 'failed', False):
             reason = getattr(self.translator, 'last_error', None)

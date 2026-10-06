@@ -4,7 +4,7 @@ from dataclasses import dataclass, field
 
 from . import matching
 from .ocr import JOURNEY, card_crop, find_event, scan_crop
-from .text import loc
+from .text import loc, source_text
 
 log = logging.getLogger(__name__)
 
@@ -94,8 +94,8 @@ class Pipeline:
                      if isinstance(e, dict) and e.get('name') == matched_event.get('name')]
         sections = [{'variants': same_name or [matched_event]}]
         renderer = self.renderer_factory(data)
-        card_ko = loc(card.get('name'), 'ko-KR')
-        char_ko = loc(card.get('char_name'), 'ko-KR')
+        card_ko = source_text(card.get('name'))
+        char_ko = source_text(card.get('char_name'))
         names = renderer.translator.translate_many([t for t in (card_ko, char_ko) if t])
         card_zh = names.get(card_ko, card_ko) if card_ko else '?'
         title = f'阿爾克那：{card_zh}' + (f'（{names.get(char_ko, char_ko)}）' if char_ko else '')

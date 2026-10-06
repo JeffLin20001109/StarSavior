@@ -1,14 +1,26 @@
 """文字處理：取出多語系欄位、正規化比對用字串、相似度。"""
 import difflib
 import html
+import json
 import re
+from pathlib import Path
 
-try:
-    from opencc import OpenCC
-    _t2s = OpenCC('t2s').convert
-except Exception:  # opencc 不存在時只做基本正規化
-    def _t2s(text):
-        return text
+
+def _load_t2s():
+    """繁→簡逐字對照表（shared/t2s.json，Android 版用同一份），只用於比對時的正規化。"""
+    packaged = Path(__file__).with_name('t2s.json')
+    path = packaged if packaged.exists() else Path(__file__).resolve().parents[2] / 'shared' / 't2s.json'
+    try:
+        return json.loads(path.read_text(encoding='utf-8'))
+    except (OSError, ValueError):
+        return {}
+
+
+_T2S = _load_t2s()
+
+
+def _t2s(text):
+    return ''.join(_T2S.get(ch, ch) for ch in text)
 
 _TAG = re.compile(r'<[^>]+>')
 _NOT_WORD = re.compile(r'[\W_]+', re.UNICODE)
@@ -27,6 +39,11 @@ def loc(value, lang):
         if isinstance(text, str):
             return clean(text)
     return ''
+
+
+def source_text(value):
+    """翻譯用的原文：有韓文用韓文，沒有（只有英文的新資料）就用英文。"""
+    return loc(value, 'ko-KR') or loc(value, 'en-US')
 
 
 def norm(text):

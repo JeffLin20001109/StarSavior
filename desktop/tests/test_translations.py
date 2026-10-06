@@ -56,3 +56,20 @@ class TranslationStoreTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class DataLoadTests(unittest.TestCase):
+    def test_downloads_own_database_and_falls_back_to_cache(self):
+        from journey_helper import data as data_module
+        from tests.helpers import raw_data
+        folder = Path(tempfile.mkdtemp())
+        body = json.dumps(raw_data(), ensure_ascii=False).encode('utf-8')
+        with mock.patch.object(data_module, 'fetch', return_value=body) as fetch:
+            game, status = data_module.load('https://example/journey_data.json', folder, force=True)
+        fetch.assert_called_once_with('https://example/journey_data.json')
+        self.assertEqual(status, '已更新旅程資料')
+        self.assertEqual(len(game.cards), 3)
+        with mock.patch.object(data_module, 'fetch', side_effect=ConnectionError('offline')):
+            game, status = data_module.load('https://example/journey_data.json', folder, force=True)
+        self.assertTrue(status.startswith('無法連線'))
+        self.assertEqual(len(game.cards), 3)

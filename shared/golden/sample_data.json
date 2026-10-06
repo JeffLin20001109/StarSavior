@@ -1,0 +1,414 @@
+{
+ "journeys": {
+  "훈련의 방향성": [
+   {
+    "id": 101,
+    "name": {
+     "ko-KR": "훈련의 방향성",
+     "zh-TW": "訓練的方向性",
+     "en-US": "훈련의 방향성",
+     "zh-CN": "訓練的方向性"
+    },
+    "times": [
+     "3월 초순"
+    ],
+    "choices": [
+     {
+      "name": {
+       "ko-KR": "1. 공격에 도움이 되는 훈련 교본",
+       "zh-TW": "對攻擊有幫助的訓練教本",
+       "en-US": "1. 공격에 도움이 되는 훈련 교본",
+       "zh-CN": "對攻擊有幫助的訓練教本"
+      },
+      "success_rewards": [
+       [
+        {
+         "type": "RT_JOURNEY_ITEM",
+         "reward_id": 1,
+         "min": 1,
+         "max": 1
+        }
+       ]
+      ]
+     },
+     {
+      "name": {
+       "ko-KR": "2. 생존에 도움이 되는 훈련 교본",
+       "zh-TW": "對生存有幫助的訓練教本",
+       "en-US": "2. 생존에 도움이 되는 훈련 교본",
+       "zh-CN": "對生存有幫助的訓練教本"
+      },
+      "success_rewards": [
+       [
+        {
+         "type": "RT_JOURNEY_ITEM",
+         "reward_id": 2,
+         "min": 1,
+         "max": 1
+        }
+       ]
+      ]
+     }
+    ]
+   },
+   {
+    "id": 102,
+    "name": {
+     "ko-KR": "훈련의 방향성",
+     "zh-TW": "訓練的方向性",
+     "en-US": "훈련의 방향성",
+     "zh-CN": "訓練的方向性"
+    },
+    "times": [
+     "9월 하순"
+    ],
+    "choices": [
+     {
+      "name": {
+       "ko-KR": "다른 선택",
+       "zh-TW": "其他選項",
+       "en-US": "다른 선택",
+       "zh-CN": "其他選項"
+      },
+      "success_rewards": [
+       [
+        {
+         "type": "RT_STAT",
+         "reward_stat": "JST_POWER",
+         "min": 99,
+         "max": 99
+        }
+       ]
+      ]
+     }
+    ]
+   }
+  ],
+  "고대 구원자의 유물": [
+   {
+    "id": 103,
+    "name": {
+     "ko-KR": "고대 구원자의 유물",
+     "zh-TW": "古代救援者的遺物",
+     "en-US": "고대 구원자의 유물",
+     "zh-CN": "古代救援者的遺物"
+    },
+    "times": [
+     "3월 중순"
+    ],
+    "choices": [
+     {
+      "name": {},
+      "success_rewards": [
+       [
+        {
+         "type": "RT_POTEN_POINT",
+         "min": 10,
+         "max": 10
+        }
+       ]
+      ]
+     }
+    ]
+   }
+  ]
+ },
+ "arcanas": [
+  {
+   "id": 1,
+   "name": {
+    "ko-KR": "하늘의 시험",
+    "zh-TW": "上天的考驗",
+    "en-US": "하늘의 시험",
+    "zh-CN": "上天的考驗"
+   },
+   "char_name": {
+    "ko-KR": "엘리사",
+    "zh-TW": "艾莉莎",
+    "en-US": "엘리사",
+    "zh-CN": "艾莉莎"
+   },
+   "events": [
+    {
+     "id": 201,
+     "name": {
+      "ko-KR": "첫사랑 얘기 해주세요",
+      "zh-TW": "請講關於初戀的故事",
+      "en-US": "첫사랑 얘기 해주세요",
+      "zh-CN": "請講關於初戀的故事"
+     },
+     "choices": [
+      {
+       "name": {
+        "ko-KR": "아이들이 좋아하는 이야기를 해줘.",
+        "zh-TW": "講些孩子們喜歡聽的故事吧。",
+        "en-US": "아이들이 좋아하는 이야기를 해줘.",
+        "zh-CN": "講些孩子們喜歡聽的故事吧。"
+       },
+       "success_rewards": [
+        [
+         {
+          "type": "RT_STAT",
+          "reward_stat": "JST_ENDURANCE",
+          "min": 15,
+          "max": 15
+         }
+        ]
+       ]
+      },
+      {
+       "name": {
+        "ko-KR": "단호하게 수업을 해봐.",
+        "zh-TW": "果斷地上課吧。",
+        "en-US": "단호하게 수업을 해봐.",
+        "zh-CN": "果斷地上課吧。"
+       },
+       "success_rewards": [
+        [
+         {
+          "type": "RT_SE_POTEN",
+          "reward_id": 7
+         }
+        ],
+        [
+         {
+          "type": "RT_JOURNEY_BUFF",
+          "reward_id": 9,
+          "turn": 5
+         }
+        ],
+        [
+         {
+          "type": "RT_STAMINA",
+          "min": 25,
+          "max": 25
+         }
+        ],
+        [
+         {
+          "type": "RT_STAT",
+          "reward_stat": "JST_ENDURANCE",
+          "min": 5,
+          "max": 5
+         }
+        ]
+       ]
+      }
+     ]
+    },
+    {
+     "id": 202,
+     "name": {
+      "ko-KR": "도를 아십니까",
+      "zh-TW": "你知道道嗎",
+      "en-US": "도를 아십니까",
+      "zh-CN": "你知道道嗎"
+     },
+     "choices": [
+      {
+       "name": {},
+       "success_rewards": [
+        [
+         {
+          "type": "RT_STAT",
+          "reward_stat": "JST_HEALTH",
+          "min": 5,
+          "max": 5
+         }
+        ],
+        [
+         {
+          "type": "RT_STAT",
+          "reward_stat": "JST_ENDURANCE",
+          "min": 10,
+          "max": 10
+         }
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 2,
+   "name": {
+    "ko-KR": "흰 달의 포옹",
+    "zh-TW": "白月溫煦如陽光",
+    "en-US": "흰 달의 포옹",
+    "zh-CN": "白月溫煦如陽光"
+   },
+   "events": [
+    {
+     "id": 301,
+     "name": {
+      "ko-KR": "첫사랑 얘기 해주세요",
+      "zh-TW": "請講關於初戀的故事",
+      "en-US": "첫사랑 얘기 해주세요",
+      "zh-CN": "請講關於初戀的故事"
+     },
+     "choices": [
+      {
+       "name": {
+        "ko-KR": "아이들이 좋아하는 이야기를 해줘.",
+        "zh-TW": "講些孩子們喜歡聽的故事吧。",
+        "en-US": "아이들이 좋아하는 이야기를 해줘.",
+        "zh-CN": "講些孩子們喜歡聽的故事吧。"
+       },
+       "success_rewards": [
+        [
+         {
+          "type": "RT_STAT",
+          "reward_stat": "JST_ENDURANCE",
+          "min": 15,
+          "max": 15
+         }
+        ]
+       ]
+      },
+      {
+       "name": {
+        "ko-KR": "단호하게 수업을 해봐.",
+        "zh-TW": "果斷地上課吧。",
+        "en-US": "단호하게 수업을 해봐.",
+        "zh-CN": "果斷地上課吧。"
+       },
+       "success_rewards": [
+        [
+         {
+          "type": "RT_SE_POTEN",
+          "reward_id": 7
+         }
+        ],
+        [
+         {
+          "type": "RT_JOURNEY_BUFF",
+          "reward_id": 9,
+          "turn": 5
+         }
+        ],
+        [
+         {
+          "type": "RT_STAMINA",
+          "min": 25,
+          "max": 25
+         }
+        ],
+        [
+         {
+          "type": "RT_STAT",
+          "reward_stat": "JST_ENDURANCE",
+          "min": 5,
+          "max": 5
+         }
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": 3,
+   "name": {
+    "ko-KR": "다른 카드",
+    "zh-TW": "其他卡片",
+    "en-US": "다른 카드",
+    "zh-CN": "其他卡片"
+   },
+   "events": [
+    {
+     "id": 202,
+     "name": {
+      "ko-KR": "도를 아십니까",
+      "zh-TW": "你知道道嗎",
+      "en-US": "도를 아십니까",
+      "zh-CN": "你知道道嗎"
+     },
+     "choices": [
+      {
+       "name": {},
+       "success_rewards": [
+        [
+         {
+          "type": "RT_STAT",
+          "reward_stat": "JST_HEALTH",
+          "min": 5,
+          "max": 5
+         }
+        ],
+        [
+         {
+          "type": "RT_STAT",
+          "reward_stat": "JST_ENDURANCE",
+          "min": 10,
+          "max": 10
+         }
+        ]
+       ]
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "journey_items": [
+  {
+   "id": 1,
+   "name": {
+    "ko-KR": "기초 훈련 교본 - 공격편",
+    "zh-TW": "基礎訓練教本－攻擊篇",
+    "en-US": "기초 훈련 교본 - 공격편",
+    "zh-CN": "基礎訓練教本－攻擊篇"
+   }
+  },
+  {
+   "id": 2,
+   "name": {
+    "ko-KR": "기초 훈련 교본 - 생존편",
+    "zh-TW": "基礎訓練教本－生存篇",
+    "en-US": "기초 훈련 교본 - 생존편",
+    "zh-CN": "基礎訓練教本－生存篇"
+   }
+  }
+ ],
+ "potentials": [
+  {
+   "id": 7,
+   "name": {
+    "ko-KR": "방어의 감각",
+    "zh-TW": "防禦的感覺",
+    "en-US": "방어의 감각",
+    "zh-CN": "防禦的感覺"
+   },
+   "desc": {
+    "ko-KR": "방어력이 오른다",
+    "zh-TW": "防禦上升",
+    "en-US": "방어력이 오른다",
+    "zh-CN": "防禦上升"
+   }
+  }
+ ],
+ "stat_potentials": [
+  {
+   "id": 8,
+   "name": {
+    "ko-KR": "x",
+    "zh-TW": "x",
+    "en-US": "x",
+    "zh-CN": "x"
+   }
+  }
+ ],
+ "journey_buffs": [
+  {
+   "id": 9,
+   "name": {
+    "ko-KR": "번",
+    "zh-TW": "燒",
+    "en-US": "번",
+    "zh-CN": "燒"
+   }
+  }
+ ]
+}

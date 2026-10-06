@@ -1,14 +1,15 @@
-"""下載並快取網站 star-savior-arcana-db 使用的公開 JSON 資料。
+"""下載並快取旅程資料。
 
-網站的「旅程」與「阿爾克那」頁面都是由這些 JSON 產生；直接讀資料等同於在網站上
-用繁體中文找到事件、再切換成韓文看內容，但不需要開瀏覽器，也不怕網頁版面改動。
+資料是我們自己的資料庫（journey_data.json），由 GitHub Actions 每天從 starsavior-db 與
+star-savior-arcana-db 合併產生（見 tools/data/build_db.py），格式與 star-savior-arcana-db 的 JSON 相同。
+程式只讀這一個檔，來源網站改版或關站時，仍可使用最後一份正常的資料。
 """
 import json
 import logging
 import os
 import time
-from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
+
 from . import net
 from .text import loc
 
@@ -65,24 +66,17 @@ class GameData:
         return sum(len(group) for group in self.journey_groups)
 
     def card_name(self, card, lang='zh-TW'):
-        return loc(card.get('name'), lang) or loc(card.get('name'), 'ko-KR')
+        return loc(card.get('name'), lang) or loc(card.get('name'), 'ko-KR') or loc(card.get('name'), 'en-US')
 
 
-def _download(base_url):
-    base = base_url.rstrip('/') + '/data/'
+def load(data_url, directory, max_age_hours=12, force=False):
+    """下載我們自己的資料庫（journey_data.json，每天由 GitHub Actions 合併各來源產生）。
 
-    def read(name):
-        return name, json.loads(fetch(base + name + '.json').decode('utf-8'))
-
-    with ThreadPoolExecutor(max_workers=3) as pool:
-        return dict(pool.map(read, FILES))
-
-
-def load(site_url, directory, max_age_hours=12, force=False):
-    """回傳 (GameData, 狀態訊息)。下載失敗時沿用舊快取。"""
+    回傳 (GameData, 狀態訊息)。下載失敗時沿用本機快取。
+    """
     directory = Path(directory)
     directory.mkdir(parents=True, exist_ok=True)
-    cache = directory / 'site_data.json'
+    cache = directory / 'journey_data.json'
     cached = None
     if cache.exists():
         try:
@@ -93,14 +87,14 @@ def load(site_url, directory, max_age_hours=12, force=False):
     if fresh and not force:
         return cached, '使用本機資料'
     try:
-        raw = _download(site_url)
+        raw = json.loads(fetch(data_url).decode('utf-8'))
         data = GameData(raw)
         tmp = cache.with_suffix('.tmp')
         tmp.write_text(json.dumps(raw, ensure_ascii=False), encoding='utf-8')
         os.replace(tmp, cache)
-        return data, '已從網站更新資料'
+        return data, '已更新旅程資料'
     except Exception as exc:
-        log.warning('下載網站資料失敗：%s', exc)
+        log.warning('下載旅程資料失敗：%s', exc)
         if cached is not None:
-            return cached, f'無法連線網站，使用舊資料（{exc}）'
-        raise RuntimeError(f'無法取得網站資料：{exc}') from exc
+            return cached, f'無法連線，使用本機資料（{exc}）'
+        raise RuntimeError(f'無法取得旅程資料：{exc}') from exc

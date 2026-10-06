@@ -1,0 +1,83 @@
+name: Data (own database)
+
+# 每天從資料來源網站下載原始資料並合併成我們自己的資料庫：
+# 1. 原始快照存到 data-snapshots 分支（有變動才提交）
+# 2. 合併成 journey_data.json，卡圖存一份到 release「card-images」，
+#    檢查通過後發佈到 release「data」（exe 與 APK 從這裡下載）
+# 3. 譯文表還缺的句子列在 data-snapshots 分支的 missing.json
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - tools/data/**
+      - shared/event_names_zh.json
+      - .github/workflows/data.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-pipeline
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install requests certifi pillow
+      - name: Fetch sources
+        run: python tools/data/fetch_sources.py "$RUNNER_TEMP/sources"
+      - name: Build database
+        run: python tools/data/build_db.py "$RUNNER_TEMP/sources" "$RUNNER_TEMP/journey_data.json" "$RUNNER_TEMP/report.json"
+      - name: Mirror card images to our release
+        if: github.event_name != 'push' || github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: python tools/data/mirror_images.py "$RUNNER_TEMP/journey_data.json" "$GITHUB_REPOSITORY"
+      - name: Validate against the published version
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download data -p journey_data.json -O "$RUNNER_TEMP/previous.json" 2>/dev/null || true
+          python tools/data/validate_db.py "$RUNNER_TEMP/journey_data.json" "$RUNNER_TEMP/previous.json"
+      - name: List untranslated strings
+        run: python tools/data/missing_strings.py "$RUNNER_TEMP/journey_data.json" "$RUNNER_TEMP/missing.json"
+      - name: Publish release "data"
+        if: github.event_name != 'push' || github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view data >/dev/null 2>&1 || \
+            gh release create data --target "$GITHUB_SHA" --title "旅程資料庫（程式自動下載）" \
+              --notes "StarSavior 旅程助手（Windows 與 Android）會自動下載 journey_data.json。由 GitHub Actions 每天從資料來源合併產生。"
+          gh release upload data "$RUNNER_TEMP/journey_data.json" "$RUNNER_TEMP/report.json" "$RUNNER_TEMP/missing.json" --clobber
+      - name: Commit snapshot to data-snapshots branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin data-snapshots >/dev/null; then
+            git fetch --depth 1 origin data-snapshots
+            git worktree add "$RUNNER_TEMP/data" FETCH_HEAD
+            git -C "$RUNNER_TEMP/data" checkout -B data-snapshots
+          else
+            git worktree add --orphan -b data-snapshots "$RUNNER_TEMP/data"
+          fi
+          rm -rf "$RUNNER_TEMP/data/sources"
+          cp -r "$RUNNER_TEMP/sources" "$RUNNER_TEMP/data/sources"
+          cp "$RUNNER_TEMP/report.json" "$RUNNER_TEMP/missing.json" "$RUNNER_TEMP/data/"
+          cd "$RUNNER_TEMP/data"
+          git add -A
+          # 只有下載時間改變時不提交
+          if git diff --cached --quiet -- . ':(exclude)sources/sources.json'; then
+            echo "資料沒有變動"
+          else
+            git commit -m "Snapshot data sources $(date -u +%Y-%m-%d)"
+            git push origin data-snapshots
+          fi

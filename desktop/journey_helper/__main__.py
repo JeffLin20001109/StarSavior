@@ -53,7 +53,7 @@ def network_check():
     result = {'certifi': certifi.where()}
     try:
         with tempfile.TemporaryDirectory() as folder:
-            game, status = data_module.load(DEFAULTS['site_url'], folder, force=True)
+            game, status = data_module.load(DEFAULTS['data_url'], folder, force=True)
         config = dict(DEFAULTS, translator='none')
         match = match_journey(game, '訓練的方向性', (3, 'early'))
         lines = Renderer(game, Translator(config), config).render([{'variants': match.variants}])

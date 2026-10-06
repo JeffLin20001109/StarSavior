@@ -296,7 +296,7 @@ class App:
                 self.data_status = f'正在重新下載網站資料（第 {attempt} 次）…'
             log.info(self.translations.refresh(float(self.config.get('translations_max_age_hours', 6))))
             try:
-                data, status = load_data(self.config['site_url'], self.dir, max_age)
+                data, status = load_data(self.config['data_url'], self.dir, max_age)
                 first = self.data is None
                 self.data, self.data_status = data, status
                 log.info('%s：%d 個旅程事件、%d 張阿爾克那', status, data.journey_count(), len(data.cards))

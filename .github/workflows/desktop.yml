@@ -50,7 +50,8 @@ jobs:
           name: StarSaviorJourneyHelper
           path: desktop/dist/StarSaviorJourneyHelper.exe
       - name: Publish release desktop-latest
-        if: github.event_name != 'pull_request'
+        # 只有 main 才發佈正式版；其他分支（含手動執行）只測試與打包
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}

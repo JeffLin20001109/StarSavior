@@ -1,0 +1,250 @@
+[
+ {
+  "image": "journey_event.jpg",
+  "card_id": null,
+  "expected": {
+   "title": "旅程事件",
+   "found": true,
+   "lines": [
+    {
+     "segments": [
+      [
+       "旅程事件：訓練的方向性",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "譯:훈련의 방향성",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［3月上旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 譯:1. 공격에 도움이 되는 훈련 교본",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "譯:기초 훈련 교본 - 공격편 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 譯:2. 생존에 도움이 되는 훈련 교본",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "譯:기초 훈련 교본 - 생존편 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  }
+ },
+ {
+  "image": "arcana_event.jpg",
+  "card_id": 1,
+  "expected": {
+   "title": "阿爾克那事件",
+   "found": true,
+   "lines": [
+    {
+     "segments": [
+      [
+       "阿爾克那：譯:하늘의 시험（譯:엘리사）",
+       "h2"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "事件：請講關於初戀的故事",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "譯:첫사랑 얘기 해주세요",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 譯:아이들이 좋아하는 이야기를 해줘.",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 譯:단호하게 수업을 해봐.",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "譯:방어의 감각",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　譯:방어력이 오른다",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "旅程效果「譯:번」（5 回合）",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "耐力 +25",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "韌性 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  }
+ },
+ {
+  "boxes": [
+   {
+    "text": "參加評鑑戰",
+    "x0": 0,
+    "y0": 0,
+    "x1": 10,
+    "y1": 10
+   }
+  ],
+  "width": 100,
+  "height": 100,
+  "card_id": null,
+  "expected": {
+   "title": "沒有偵測到事件",
+   "found": false,
+   "lines": [
+    {
+     "segments": [
+      [
+       "畫面左上角沒有「旅程事件」或「阿爾克那事件」。",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "辨識到的文字：參加評鑑戰",
+       "note"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  }
+ }
+]

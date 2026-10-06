@@ -129,6 +129,22 @@ def main():
     render_cases = []
     for key, group in multi.items():
         render_cases.append({'journey_key': key, 'expected': lines_json(renderer.render([{'variants': group}]))})
+    # 只有英文的事件（starsavior-db 才有的新事件）：以英文為原文翻譯
+    english_only = {'id': 900001, 'name': {'en-US': 'First Encounter', 'zh-TW': '初次相遇'}, 'difficulties': [{'en-US': 'Hard'}],
+                    'choices': [{'name': {'en-US': 'Shake her hand.'}, 'condition': {'type': 'RR_STAMINA_USE', 'value': 10},
+                                 'success_rewards': [[{'type': 'RT_STAT', 'reward_stat': 'JST_POWER', 'min': 5, 'max': 5}],
+                                                     [{'type': 'RT_JOURNEY_BUFF', 'reward_id': 'sdb-journey_buffs-1'}]],
+                                 'failure_rewards': None}]}
+    english_data = GameData({'journeys': {'First Encounter': [english_only]}, 'arcanas': [], 'journey_items': [],
+                             'potentials': [], 'stat_potentials': [],
+                             'journey_buffs': [{'id': 'sdb-journey_buffs-1', 'name': {'en-US': 'Gratitude'},
+                                                'desc': {'en-US': 'Training failure rate decreases.'}}]})
+    english_table = {'First Encounter': '初次相遇', 'Shake her hand.': '握住她的手。', 'Gratitude': '感激'}
+    english_render = {'data': {'journeys': {'First Encounter': [english_only]}, 'journey_buffs': english_data.references['journey_buffs'] and
+                               list(english_data.references['journey_buffs'].values())},
+                      'table': english_table,
+                      'expected': lines_json(Renderer(english_data, Translator(table_config, table=english_table), table_config)
+                                             .render([{'variants': [english_only]}]))}
     # 比對：依名稱與日期篩選
     match_cases = []
     for title, phase, difficulty in (('莉賽特的日常', None, ''), ('迷宮探勘', (7, 'early'), 'Hard'),
@@ -136,7 +152,7 @@ def main():
         m = matching.match_journey(real, title, phase, difficulty)
         match_cases.append({'title': title, 'phase': list(phase) if phase else None, 'difficulty': difficulty,
                             'expected_ids': [v.get('id') for v in m.variants], 'expected_score': round(m.score, 6)})
-    (OUT / 'render_cases.json').write_text(json.dumps({'render': render_cases, 'match': match_cases},
+    (OUT / 'render_cases.json').write_text(json.dumps({'render': render_cases, 'match': match_cases, 'english_only': english_render},
                                                       ensure_ascii=False, indent=1), encoding='utf-8')
     print('golden files written to', OUT)
 

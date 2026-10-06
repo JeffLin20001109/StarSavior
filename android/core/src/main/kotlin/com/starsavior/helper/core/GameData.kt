@@ -35,7 +35,7 @@ class GameData(raw: Map<String, JsonElement>) {
     fun journeyCount(): Int = journeyGroups.sumOf { it.size }
 
     fun cardName(card: JsonObject): String =
-        Text.loc(card["name"], "zh-TW").ifEmpty { Text.loc(card["name"], "ko-KR") }
+        Text.loc(card["name"], "zh-TW").ifEmpty { Text.loc(card["name"], "ko-KR") }.ifEmpty { Text.loc(card["name"], "en-US") }
 
     companion object {
         val FILES = listOf("journeys", "arcanas", "journey_items", "potentials", "stat_potentials", "journey_buffs")

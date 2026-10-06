@@ -11626,5 +11626,142 @@
    "expected_ids": [],
    "expected_score": 0.235294
   }
- ]
+ ],
+ "english_only": {
+  "data": {
+   "journeys": {
+    "First Encounter": [
+     {
+      "id": 900001,
+      "name": {
+       "en-US": "First Encounter",
+       "zh-TW": "初次相遇"
+      },
+      "difficulties": [
+       {
+        "en-US": "Hard"
+       }
+      ],
+      "choices": [
+       {
+        "name": {
+         "en-US": "Shake her hand."
+        },
+        "condition": {
+         "type": "RR_STAMINA_USE",
+         "value": 10
+        },
+        "success_rewards": [
+         [
+          {
+           "type": "RT_STAT",
+           "reward_stat": "JST_POWER",
+           "min": 5,
+           "max": 5
+          }
+         ],
+         [
+          {
+           "type": "RT_JOURNEY_BUFF",
+           "reward_id": "sdb-journey_buffs-1"
+          }
+         ]
+        ],
+        "failure_rewards": null
+       }
+      ]
+     }
+    ]
+   },
+   "journey_buffs": [
+    {
+     "id": "sdb-journey_buffs-1",
+     "name": {
+      "en-US": "Gratitude"
+     },
+     "desc": {
+      "en-US": "Training failure rate decreases."
+     }
+    }
+   ]
+  },
+  "table": {
+   "First Encounter": "初次相遇",
+   "Shake her hand.": "握住她的手。",
+   "Gratitude": "感激"
+  },
+  "expected": [
+   {
+    "segments": [
+     [
+      "初次相遇",
+      "h1"
+     ]
+    ],
+    "fold": null
+   },
+   {
+    "segments": [
+     [
+      "［困難］",
+      "note"
+     ]
+    ],
+    "fold": null
+   },
+   {
+    "segments": [
+     [
+      "① 握住她的手。",
+      "choice"
+     ]
+    ],
+    "fold": null
+   },
+   {
+    "segments": [
+     [
+      "　條件／消耗：耐力 -10",
+      "warn"
+     ]
+    ],
+    "fold": null
+   },
+   {
+    "segments": [
+     [
+      "　・",
+      "effect"
+     ],
+     [
+      "力量 +5",
+      "effect"
+     ]
+    ],
+    "fold": null
+   },
+   {
+    "segments": [
+     [
+      "　・",
+      "effect"
+     ],
+     [
+      "旅程效果「感激」",
+      "special"
+     ]
+    ],
+    "fold": null
+   },
+   {
+    "segments": [
+     [
+      "　　Training failure rate decreases.",
+      "dim"
+     ]
+    ],
+    "fold": null
+   }
+  ]
+ }
 }

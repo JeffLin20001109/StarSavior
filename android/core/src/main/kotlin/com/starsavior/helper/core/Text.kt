@@ -37,6 +37,9 @@ object Text {
         else -> ""
     }
 
+    /** 翻譯用的原文：有韓文用韓文，沒有就用英文。 */
+    fun sourceText(value: JsonElement?): String = loc(value, "ko-KR").ifEmpty { loc(value, "en-US") }
+
     fun t2s(text: String): String {
         val out = StringBuilder()
         var i = 0

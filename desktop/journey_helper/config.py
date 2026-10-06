@@ -10,9 +10,11 @@ DEFAULTS = {
     # 遊戲執行檔名稱（不分大小寫）；另外只要程序名稱含有 process_keyword 也算找到
     'process_names': ['StarSavior.exe'],
     'process_keyword': 'starsavior',
-    # 資料來源：網站本身使用的公開 JSON
-    'site_url': 'https://star-savior-arcana-db.pages.dev',
+    # 旅程資料：我們自己的資料庫（每天由 GitHub Actions 合併 starsavior-db 與 star-savior-arcana-db 產生）
+    'data_url': 'https://github.com/JeffLin20001109/StarSavior/releases/download/data/journey_data.json',
     'data_max_age_hours': 12,
+    # 卡圖網址的基準（資料裡沒有圖片網址的舊卡片才會用到）
+    'site_url': 'https://star-savior-arcana-db.pages.dev',
     # 人工校對譯文表（純 JSON）；更新這個檔就能補上新事件的翻譯，不用重新打包 exe
     'translations_url': 'https://github.com/JeffLin20001109/StarSavior/releases/download/translations/translations_zh.json',
     'translations_max_age_hours': 6,

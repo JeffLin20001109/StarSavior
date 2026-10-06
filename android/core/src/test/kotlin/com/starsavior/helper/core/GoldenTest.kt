@@ -119,6 +119,19 @@ class GoldenTest {
         }
     }
 
+    @Test
+    fun englishOnlyEventsUseEnglishAsSource() {
+        val case = load("render_cases.json").jsonObject.getValue("english_only").jsonObject
+        val raw = case.getValue("data").jsonObject
+        val data = GameData(mapOf("journeys" to raw.getValue("journeys"), "arcanas" to JsonArray(emptyList()),
+            "journey_items" to JsonArray(emptyList()), "potentials" to JsonArray(emptyList()),
+            "stat_potentials" to JsonArray(emptyList()), "journey_buffs" to raw.getValue("journey_buffs")))
+        val table = case.getValue("table").jsonObject.mapValues { it.value.jsonPrimitive.content }
+        val variants = raw.getValue("journeys").jsonObject.values.first().jsonArray.map { it.jsonObject }
+        val lines = Renderer(data, TableTranslator(table)).render(listOf(Section(variants)))
+        assertEquals(expectedLines(case.getValue("expected").jsonArray), linesJson(lines))
+    }
+
     @Suppress("unused")
     private fun JsonObject.prim(key: String) = this[key] as? JsonPrimitive
 }

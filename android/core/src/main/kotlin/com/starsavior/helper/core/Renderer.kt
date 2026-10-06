@@ -49,7 +49,8 @@ class Renderer(
         return result
     }
 
-    private fun ko(value: JsonElement?) = Text.loc(value, "ko-KR")
+    /** 翻譯用的原文：有韓文用韓文，沒有（只有英文的新資料）就用英文。 */
+    private fun ko(value: JsonElement?) = Text.sourceText(value)
 
     private fun lines(sections: List<Section>): List<Line> {
         val out = ArrayList<Line>()

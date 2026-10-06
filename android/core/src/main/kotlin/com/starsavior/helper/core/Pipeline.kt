@@ -78,8 +78,8 @@ class Pipeline(
         // 只顯示目前遇到的事件（同名的多個版本一起列出）
         val sameName = card.objects("events").filter { it["name"] == matched["name"] }
         val renderer = rendererFactory(data)
-        val cardKo = Text.loc(card["name"], "ko-KR")
-        val charKo = Text.loc(card["char_name"], "ko-KR")
+        val cardKo = Text.sourceText(card["name"])
+        val charKo = Text.sourceText(card["char_name"])
         val names = renderer.translator.translateMany(listOf(cardKo, charKo).filter { it.isNotEmpty() })
         val cardZh = if (cardKo.isNotEmpty()) names[cardKo] ?: cardKo else "?"
         val title = "阿爾克那：$cardZh" + (if (charKo.isNotEmpty()) "（${names[charKo] ?: charKo}）" else "")

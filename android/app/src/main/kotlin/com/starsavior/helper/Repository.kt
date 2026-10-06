@@ -5,11 +5,9 @@ import android.util.Log
 import com.starsavior.helper.core.GameData
 import com.starsavior.helper.core.TableTranslator
 import com.starsavior.helper.core.parseJson
+import kotlinx.serialization.json.jsonObject
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.async
-import kotlinx.coroutines.awaitAll
-import kotlinx.coroutines.coroutineScope
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.isActive
 import kotlinx.coroutines.launch
@@ -27,7 +25,7 @@ import java.net.URLEncoder
 class Repository(private val context: Context) {
     @Volatile var data: GameData? = null
         private set
-    @Volatile var status: String = "正在下載網站資料…"
+    @Volatile var status: String = "正在下載旅程資料…"
         private set
     @Volatile var translationStatus: String = ""
         private set
@@ -49,13 +47,13 @@ class Repository(private val context: Context) {
                 val fresh = try {
                     val first = data == null
                     data = loadSiteData()
-                    status = "網站資料：${data!!.journeyCount()} 個旅程事件、${data!!.cards.size} 張阿爾克那"
+                    status = "旅程資料：${data!!.journeyCount()} 個旅程事件、${data!!.cards.size} 張阿爾克那"
                     if (first) onDataReady()
                     true
                 } catch (e: Exception) {
                     Log.w(TAG, "網站資料下載失敗", e)
                     status = if (data == null) "下載失敗，${wait / 1000} 秒後自動重試（已試 $attempt 次）：${e.message}"
-                    else "無法連線網站，使用舊資料（${e.message}）"
+                    else "無法連線，使用本機資料（${e.message}）"
                     false
                 }
                 if (fresh) {
@@ -70,21 +68,22 @@ class Repository(private val context: Context) {
         }
     }
 
-    private suspend fun loadSiteData(): GameData = coroutineScope {
-        val cached = FILES.associateWith { File(siteDir, "$it.json") }
-        val fresh = cached.values.all { it.exists() && System.currentTimeMillis() - it.lastModified() < DATA_MAX_AGE_MS }
+    /** 下載我們自己的資料庫（journey_data.json）；失敗時使用本機快取。 */
+    private fun loadSiteData(): GameData {
+        val cache = File(siteDir, "journey_data.json")
+        val fresh = cache.exists() && System.currentTimeMillis() - cache.lastModified() < DATA_MAX_AGE_MS
         if (!fresh) {
             try {
-                val texts = FILES.map { name -> async { name to httpGet("$SITE/data/$name.json") } }.awaitAll().toMap()
-                val parsed = GameData.fromTexts(texts)  // 全部檔案都能解析才寫入快取
-                texts.forEach { (name, text) -> cached.getValue(name).writeText(text) }
-                return@coroutineScope parsed
+                val text = httpGet(DATA_URL)
+                val parsed = GameData(parseJson(text).jsonObject)  // 能解析才寫入快取
+                cache.writeText(text)
+                return parsed
             } catch (e: Exception) {
-                if (!cached.values.all { it.exists() }) throw e
-                Log.w(TAG, "下載網站資料失敗，使用快取", e)
+                if (!cache.exists()) throw e
+                Log.w(TAG, "下載旅程資料失敗，使用快取", e)
             }
         }
-        GameData.fromTexts(cached.mapValues { it.value.readText() })
+        return GameData(parseJson(cache.readText()).jsonObject)
     }
 
     private fun loadBundledAndCachedTable(): Map<String, String> {
@@ -130,9 +129,11 @@ class Repository(private val context: Context) {
 
     companion object {
         private const val TAG = "Repository"
+        /** 卡圖網址的基準（資料裡沒有圖片網址的舊卡片才會用到）。 */
         const val SITE = "https://star-savior-arcana-db.pages.dev"
+        /** 我們自己的資料庫：每天由 GitHub Actions 合併各來源產生。 */
+        const val DATA_URL = "https://github.com/JeffLin20001109/StarSavior/releases/download/data/journey_data.json"
         const val TRANSLATIONS_URL = "https://github.com/JeffLin20001109/StarSavior/releases/download/translations/translations_zh.json"
-        val FILES = GameData.FILES
         private const val DATA_MAX_AGE_MS = 12 * 3600_000L
         private const val TRANSLATION_MAX_AGE_MS = 6 * 3600_000L
 

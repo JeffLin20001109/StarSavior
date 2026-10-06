@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://starsavior-db.pages.dev/sitemap-index.xml

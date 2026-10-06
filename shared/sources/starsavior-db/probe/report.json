@@ -1,0 +1,110 @@
+{
+ "base": "https://starsavior-db.pages.dev/",
+ "pages": {
+  "https://starsavior-db.pages.dev/": {
+   "status": 200,
+   "bytes": 25253,
+   "file": "index.html"
+  },
+  "https://starsavior-db.pages.dev/journey/": {
+   "status": 200,
+   "bytes": 185536,
+   "file": "journey.html"
+  },
+  "https://starsavior-db.pages.dev/journey/events/": {
+   "status": 200,
+   "bytes": 1008986,
+   "file": "journey_events.html"
+  },
+  "https://starsavior-db.pages.dev/journey/items/": {
+   "status": 200,
+   "bytes": 1333111,
+   "file": "journey_items.html"
+  },
+  "https://starsavior-db.pages.dev/arcana/": {
+   "status": 200,
+   "bytes": 808231,
+   "file": "arcana.html"
+  },
+  "https://starsavior-db.pages.dev/mechanics/": {
+   "status": 200,
+   "bytes": 266164,
+   "file": "mechanics.html"
+  }
+ },
+ "assets": {
+  "https://starsavior-db.pages.dev/_astro/ClientRouter.astro_astro_type_script_index_0_lang.CDGfc0hd.js": {
+   "status": 200,
+   "bytes": 15362,
+   "json_refs": []
+  }
+ },
+ "guesses": {
+  "https://starsavior-db.pages.dev/data/events.json": {
+   "status": 200,
+   "bytes": 25253,
+   "type": "text/html; charset=utf-8",
+   "file": "guess_data_events.json"
+  },
+  "https://starsavior-db.pages.dev/data/journey.json": {
+   "status": 200,
+   "bytes": 25253,
+   "type": "text/html; charset=utf-8",
+   "file": "guess_data_journey.json"
+  },
+  "https://starsavior-db.pages.dev/data/journeys.json": {
+   "status": 200,
+   "bytes": 25253,
+   "type": "text/html; charset=utf-8",
+   "file": "guess_data_journeys.json"
+  },
+  "https://starsavior-db.pages.dev/data/arcana.json": {
+   "status": 200,
+   "bytes": 25253,
+   "type": "text/html; charset=utf-8",
+   "file": "guess_data_arcana.json"
+  },
+  "https://starsavior-db.pages.dev/data/arcanas.json": {
+   "status": 200,
+   "bytes": 25253,
+   "type": "text/html; charset=utf-8",
+   "file": "guess_data_arcanas.json"
+  },
+  "https://starsavior-db.pages.dev/api/events.json": {
+   "status": 200,
+   "bytes": 25253,
+   "type": "text/html; charset=utf-8",
+   "file": "guess_api_events.json"
+  },
+  "https://starsavior-db.pages.dev/events.json": {
+   "status": 200,
+   "bytes": 25253,
+   "type": "text/html; charset=utf-8",
+   "file": "guess_events.json"
+  },
+  "https://starsavior-db.pages.dev/sitemap.xml": {
+   "status": 200,
+   "bytes": 25253,
+   "type": "text/html; charset=utf-8",
+   "file": "guess_sitemap.xml"
+  },
+  "https://starsavior-db.pages.dev/sitemap-index.xml": {
+   "status": 200,
+   "bytes": 194,
+   "type": "application/xml",
+   "file": "guess_sitemap-index.xml"
+  },
+  "https://starsavior-db.pages.dev/robots.txt": {
+   "status": 200,
+   "bytes": 83,
+   "type": "text/plain; charset=utf-8",
+   "file": "guess_robots.txt"
+  },
+  "https://starsavior-db.pages.dev/manifest.json": {
+   "status": 200,
+   "bytes": 25253,
+   "type": "text/html; charset=utf-8",
+   "file": "guess_manifest.json"
+  }
+ }
+}

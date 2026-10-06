@@ -84,21 +84,26 @@ jobs:
             grep -q "^OK (" instrument.txt
 
   publish:
+    # main → android-latest（正式版）；android/** 分支 → android-preview（測試版，手機可直接點連結下載）
     needs: [build, emulator-test]
-    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
+    if: github.event_name != 'pull_request' && (github.ref == 'refs/heads/main' || startsWith(github.ref, 'refs/heads/android/'))
     runs-on: ubuntu-latest
     steps:
       - uses: actions/download-artifact@v4
         with:
           name: StarSaviorJourneyHelper-apk
           path: .
-      - name: Publish release android-latest
+      - name: Publish release
         working-directory: .
         env:
           GH_TOKEN: ${{ github.token }}
           GH_REPO: ${{ github.repository }}
         run: |
-          gh release delete android-latest --yes --cleanup-tag 2>/dev/null || true
-          gh release create android-latest StarSaviorJourneyHelper.apk --target "$GITHUB_SHA" \
-            --title "StarSavior 旅程助手 Android 版（最新版）" \
-            --notes "下載 StarSaviorJourneyHelper.apk 安裝。需要允許「安裝未知應用程式」。commit: $GITHUB_SHA"
+          if [ "$GITHUB_REF" = "refs/heads/main" ]; then
+            TAG=android-latest; TITLE="StarSavior 旅程助手 Android 版（最新版）"; EXTRA=""
+          else
+            TAG=android-preview; TITLE="StarSavior 旅程助手 Android 版（測試版：${GITHUB_REF_NAME}）"; EXTRA="--prerelease"
+          fi
+          gh release delete "$TAG" --yes --cleanup-tag 2>/dev/null || true
+          gh release create "$TAG" StarSaviorJourneyHelper.apk --target "$GITHUB_SHA" --title "$TITLE" $EXTRA \
+            --notes "用手機直接下載 StarSaviorJourneyHelper.apk 安裝（需允許「安裝未知應用程式」）。commit: $GITHUB_SHA"

@@ -4,8 +4,9 @@
 
 ## 安裝與使用
 
-1. 下載 APK：<https://github.com/JeffLin20001109/StarSavior/releases/download/android-latest/StarSaviorJourneyHelper.apk>
-   （手機需允許「安裝未知應用程式」）
+1. 用手機直接點連結下載 APK（手機需允許「安裝未知應用程式」）：
+   - 正式版：<https://github.com/JeffLin20001109/StarSavior/releases/download/android-latest/StarSaviorJourneyHelper.apk>
+   - 測試版（開發中的分支）：<https://github.com/JeffLin20001109/StarSavior/releases/download/android-preview/StarSaviorJourneyHelper.apk>
 2. 開啟「旅程助手」，按「啟動」：
    - 第一次會要求「顯示在其他應用程式上層」權限，允許後回到 App 再按一次「啟動」。
    - 接著允許「螢幕擷取」，App 會自動退到背景，畫面上出現藍色的「旅」按鈕。

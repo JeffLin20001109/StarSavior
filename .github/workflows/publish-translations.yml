@@ -1,13 +1,14 @@
 name: Publish translations
 
-# 譯文表改了就上傳到固定網址，程式（exe／日後的 APK）啟動時會自動下載，不用重新打包。
+# 譯文表改了就上傳到固定網址，exe 與 APK 啟動時會自動下載，不用重新打包。
 # https://github.com/<owner>/<repo>/releases/download/translations/translations_zh.json
 
 on:
   workflow_dispatch:
   push:
+    branches: [main]
     paths:
-      - journey_helper/translations_zh.json
+      - shared/translations_zh.json
       - .github/workflows/publish-translations.yml
 
 permissions:
@@ -22,7 +23,7 @@ jobs:
         run: |
           python3 - <<'PY'
           import json, re
-          table = json.load(open('journey_helper/translations_zh.json', encoding='utf-8'))
+          table = json.load(open('shared/translations_zh.json', encoding='utf-8'))
           assert isinstance(table, dict) and table, 'empty or not an object'
           bad = [k for k, v in table.items() if not isinstance(v, str) or not v.strip() or re.search('[가-힣]', v)]
           assert not bad, f'untranslated entries: {bad[:5]}'
@@ -34,5 +35,5 @@ jobs:
         run: |
           gh release view translations >/dev/null 2>&1 || \
             gh release create translations --target "$GITHUB_SHA" --title "譯文表（程式自動下載）" \
-              --notes "StarSavior 旅程助手啟動時會自動下載這裡的 translations_zh.json。"
-          gh release upload translations journey_helper/translations_zh.json --clobber
+              --notes "StarSavior 旅程助手（Windows 與 Android）啟動時會自動下載這裡的 translations_zh.json。"
+          gh release upload translations shared/translations_zh.json --clobber

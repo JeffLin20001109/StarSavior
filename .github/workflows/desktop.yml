@@ -1,11 +1,25 @@
-name: Build Windows exe
+name: Desktop (Windows exe)
 
 on:
   push:
+    branches: [main]
+    paths:
+      - desktop/**
+      - shared/**
+      - .github/workflows/desktop.yml
+  pull_request:
+    paths:
+      - desktop/**
+      - shared/**
+      - .github/workflows/desktop.yml
   workflow_dispatch:
 
 permissions:
   contents: write
+
+defaults:
+  run:
+    working-directory: desktop
 
 jobs:
   build:
@@ -24,21 +38,27 @@ jobs:
       - name: Self-test packaged exe
         shell: pwsh
         run: |
+          $fixtures = Resolve-Path ..\shared\fixtures
           $p = Start-Process -FilePath dist\StarSaviorJourneyHelper.exe -Wait -PassThru -ArgumentList @(
-            '--self-test', "$PWD\selftest.json", "$PWD\tests\fixtures\journey_event.jpg", "$PWD\tests\fixtures\arcana_event.jpg")
+            '--self-test', "$PWD\selftest.json", "$fixtures\journey_event.jpg", "$fixtures\arcana_event.jpg")
           Get-Content selftest.json -Encoding utf8
           $report = Get-Content selftest.json -Raw -Encoding utf8 | ConvertFrom-Json
           if ($report[0].title -ne '訓練的方向性' -or $report[1].title -ne '請講關於初戀的故事') { throw 'self-test failed' }
+          if (-not $report[3].ok) { throw "website data check failed: $($report[3].error)" }
       - uses: actions/upload-artifact@v4
         with:
           name: StarSaviorJourneyHelper
-          path: dist/StarSaviorJourneyHelper.exe
-      - name: Publish release (direct download link)
-        if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+          path: desktop/dist/StarSaviorJourneyHelper.exe
+      - name: Publish release desktop-latest
+        if: github.event_name != 'pull_request'
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
+          # 舊的發佈名稱 latest 已改為 desktop-latest；兩個都先刪掉再重建
           gh release delete latest --yes --cleanup-tag 2>$null
+          gh release delete desktop-latest --yes --cleanup-tag 2>$null
           $global:LASTEXITCODE = 0
-          gh release create latest dist/StarSaviorJourneyHelper.exe --target $env:GITHUB_SHA --title "StarSavior 旅程助手（最新版）" --notes "下載 StarSaviorJourneyHelper.exe 後直接雙擊執行。commit: $env:GITHUB_SHA"
+          gh release create desktop-latest dist/StarSaviorJourneyHelper.exe --target $env:GITHUB_SHA `
+            --title "StarSavior 旅程助手 Windows 版（最新版）" `
+            --notes "下載 StarSaviorJourneyHelper.exe 後直接雙擊執行。commit: $env:GITHUB_SHA"

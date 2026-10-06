@@ -1,7 +1,7 @@
 """測試用的假資料（結構與網站 JSON 相同）。"""
 from pathlib import Path
 
-FIXTURES = Path(__file__).parent / 'fixtures'
+FIXTURES = Path(__file__).resolve().parents[2] / 'shared' / 'fixtures'
 
 
 def name(ko, zh, en=''):

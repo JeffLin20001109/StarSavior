@@ -1,4 +1,4 @@
-# 在 Windows 上打包成單一 exe：powershell -ExecutionPolicy Bypass -File build.ps1
+# 在 Windows 上打包成單一 exe（在 desktop 資料夾執行）：powershell -ExecutionPolicy Bypass -File build.ps1
 $ErrorActionPreference = 'Stop'
 python -m pip install -r requirements.txt pyinstaller==6.16.0
 python -m PyInstaller --noconfirm --clean --onefile --windowed `
@@ -6,7 +6,7 @@ python -m PyInstaller --noconfirm --clean --onefile --windowed `
     --collect-all rapidocr `
     --collect-data opencc `
     --collect-data certifi `
-    --add-data "journey_helper/translations_zh.json;journey_helper" `
+    --add-data "../shared/translations_zh.json;journey_helper" `
     --hidden-import psutil `
     --exclude-module pkg_resources `
     --exclude-module setuptools `

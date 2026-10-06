@@ -1,6 +1,6 @@
 """下載網站資料，列出程式需要翻譯的所有韓文字串（附網站的繁中／英文作為參考）。
 
-用法：python tools/dump_strings.py translations/source_ko.json
+用法（在 repo 根目錄）：python desktop/tools/dump_strings.py shared/strings/source_ko.json
 """
 import json
 import sys
@@ -65,8 +65,8 @@ def main(output):
     Path(output).with_name('multi_variants.json').write_text(
         json.dumps(multi, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'{len(multi)} events with several variants')
-    # 譯文表還沒有的句子：補翻後加進 journey_helper/translations_zh.json 即可（push 後自動發佈）
-    table_path = Path(__file__).resolve().parent.parent / 'journey_helper' / 'translations_zh.json'
+    # 譯文表還沒有的句子：補翻後加進 shared/translations_zh.json 即可（push 後自動發佈）
+    table_path = Path(__file__).resolve().parents[2] / 'shared' / 'translations_zh.json'
     table = json.loads(table_path.read_text(encoding='utf-8'))
     missing = [r for r in rows if r['ko'] not in table]
     Path(output).with_name('missing_ko.json').write_text(

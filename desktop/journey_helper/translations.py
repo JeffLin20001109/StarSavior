@@ -16,7 +16,9 @@ from . import net
 
 log = logging.getLogger(__name__)
 
-BUNDLED = Path(__file__).with_name('translations_zh.json')
+# 打包後的 exe 放在套件資料夾裡；從原始碼執行時讀 repo 的 shared/translations_zh.json
+_PACKAGED = Path(__file__).with_name('translations_zh.json')
+BUNDLED = _PACKAGED if _PACKAGED.exists() else Path(__file__).resolve().parents[2] / 'shared' / 'translations_zh.json'
 MAX_BYTES = 8_000_000
 _HANGUL = re.compile('[가-힣]')
 

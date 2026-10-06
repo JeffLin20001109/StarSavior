@@ -31,11 +31,14 @@
 
 ## 翻譯
 
-- **內建譯文表**：網站上全部 1018 句韓文（事件名稱、選項、道具、潛力、旅程效果的說明）都已人工校對翻譯成繁中，打包在 exe 裡（`journey_helper/translations_zh.json`）。查詢時直接使用，不需要連網，也不用等待。
+- **人工校對譯文表**：網站上全部 1018 句韓文（事件名稱、選項、道具、潛力、旅程效果的說明）都已人工校對翻譯成繁中，存成一個純 JSON 檔 `journey_helper/translations_zh.json`。
+  - 這個檔會自動發佈到固定網址：`https://github.com/JeffLin20001109/Deity1109/releases/download/translations/translations_zh.json`。
+  - 程式啟動時會下載最新版（每 6 小時檢查一次），並存一份在本機；離線時用本機那份，再不行就用 exe 內建的版本。
+  - **網站新增事件時不用重新打包 exe**：只要更新這個 JSON 並 push，「Publish translations」workflow 會自動上傳，大家下次啟動程式就會拿到。
   - 角色名、卡名、技能名等專有名詞沿用遊戲的官方譯名；句子與說明依韓文重新翻譯，並統一用語（韌性、專注、潛力點數、羈絆點數、必殺技等）。
-- **網站之後新增的文字**：譯文表裡沒有時，才用 Google 翻譯補上（不需要金鑰），結果會快取。
+- **補上新事件的翻譯**：執行 GitHub Actions 的「Dump Korean strings」，它會產生 `translations/missing_ko.json`，列出譯文表還沒有的韓文句子；補翻後加進 `translations_zh.json` 即可。
+- **還沒補翻的句子**：先用 Google 翻譯暫時顯示（不需要金鑰），結果會快取。
   - 如果有 DeepL 金鑰，可以在設定檔填入 `"translator": "deepl"` 和 `"deepl_api_key"`。
-  - 更新譯文表：執行 GitHub Actions 的「Dump Korean strings」，取得最新的韓文清單後補翻。
 - 能力值與資源名稱（力量、體力、韌性、專注、保護、耐力等）由程式內建的用語表處理，可以在設定檔的 `terms` 修改。
 - 想自己修改某句譯文：
   - `ko_glossary`：指定某句韓文的固定譯文，優先於內建譯文表，例如 `{"도를 아십니까": "你相信道嗎"}`。

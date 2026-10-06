@@ -17,6 +17,7 @@ from .ocr import Ocr
 from .pipeline import Pipeline, Result
 from .render import Renderer
 from .translate import Translator
+from .translations import TranslationStore
 
 log = logging.getLogger(__name__)
 
@@ -262,7 +263,8 @@ class App:
         self.ocr = Ocr()
         self.data = None
         self.data_status = '正在下載網站資料…'
-        self.translator = Translator(self.config, self.dir / 'translations.json')
+        self.translations = TranslationStore(self.config.get('translations_url'), self.dir)
+        self.translator = Translator(self.config, self.dir / 'translations.json', table=self.translations.table)
         self.cards = CardMatcher(self.config['site_url'], self.dir / 'cards')
         self.pipeline = Pipeline(self.ocr, lambda: self.data, self.cards,
                                  lambda data: Renderer(data, self.translator, self.config), self.config)
@@ -292,6 +294,7 @@ class App:
             attempt += 1
             if self.data is None and attempt > 1:
                 self.data_status = f'正在重新下載網站資料（第 {attempt} 次）…'
+            log.info(self.translations.refresh(float(self.config.get('translations_max_age_hours', 6))))
             try:
                 data, status = load_data(self.config['site_url'], self.dir, max_age)
                 first = self.data is None

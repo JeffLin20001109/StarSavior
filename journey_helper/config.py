@@ -13,6 +13,9 @@ DEFAULTS = {
     # 資料來源：網站本身使用的公開 JSON
     'site_url': 'https://star-savior-arcana-db.pages.dev',
     'data_max_age_hours': 12,
+    # 人工校對譯文表（純 JSON）；更新這個檔就能補上新事件的翻譯，不用重新打包 exe
+    'translations_url': 'https://github.com/JeffLin20001109/Deity1109/releases/download/translations/translations_zh.json',
+    'translations_max_age_hours': 6,
     # 翻譯：google（免金鑰）、deepl（需填 deepl_api_key）、none（直接顯示韓文）
     'translator': 'google',
     'deepl_api_key': '',

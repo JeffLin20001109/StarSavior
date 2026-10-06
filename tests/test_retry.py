@@ -30,6 +30,7 @@ class RetryTests(unittest.TestCase):
         app.config, app.dir, app.data, app.data_status = {'site_url': 'x', 'data_max_age_hours': 12}, None, None, ''
         app._closing, app._pending_frame = False, 'frame'
         app._retry_now = FakeEvent(app)
+        app.translations = mock.Mock(refresh=mock.Mock(return_value='譯文表'))
         data = mock.Mock(cards=[], journey_count=lambda: 0)
         outcomes = [RuntimeError('certificate has expired'), RuntimeError('again'), (data, '已從網站更新資料')]
 

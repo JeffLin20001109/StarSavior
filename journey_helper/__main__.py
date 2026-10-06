@@ -41,6 +41,7 @@ def self_test(output, images):
 def network_check():
     """實際連線網站：確認 HTTPS 憑證可用，並用真實資料跑一次比對與排版（翻譯關閉）。"""
     import tempfile
+    from pathlib import Path
 
     import certifi
 
@@ -72,6 +73,13 @@ def network_check():
         result.update(card_image=image_url(card, DEFAULTS['site_url']), card_image_features=len(points))
     except Exception as exc:
         result.update(card_image_error=f'{type(exc).__name__}: {exc}')
+    try:
+        from .translations import TranslationStore
+        with tempfile.TemporaryDirectory() as folder:
+            store = TranslationStore(DEFAULTS['translations_url'], folder, bundled=Path(folder) / 'none.json')
+            result.update(online_translations=store.refresh(force=True), online_translation_count=len(store.table))
+    except Exception as exc:
+        result.update(online_translations_error=f'{type(exc).__name__}: {exc}')
     try:
         translator = Translator(dict(DEFAULTS))
         result.update(translation=translator.translate_many(['첫사랑 얘기 해주세요']), translation_failed=translator.failed,

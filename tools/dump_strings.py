@@ -65,6 +65,13 @@ def main(output):
     Path(output).with_name('multi_variants.json').write_text(
         json.dumps(multi, ensure_ascii=False, indent=1), encoding='utf-8')
     print(f'{len(multi)} events with several variants')
+    # 譯文表還沒有的句子：補翻後加進 journey_helper/translations_zh.json 即可（push 後自動發佈）
+    table_path = Path(__file__).resolve().parent.parent / 'journey_helper' / 'translations_zh.json'
+    table = json.loads(table_path.read_text(encoding='utf-8'))
+    missing = [r for r in rows if r['ko'] not in table]
+    Path(output).with_name('missing_ko.json').write_text(
+        json.dumps(missing, ensure_ascii=False, indent=1), encoding='utf-8')
+    print(f'{len(missing)} strings not yet in the translation table')
     print(f'{len(rows)} strings, {sum(len(r["ko"]) for r in rows)} characters')
 
 

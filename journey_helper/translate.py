@@ -65,21 +65,14 @@ def _deepl(text, key):
     return json.loads(body.decode('utf-8'))['translations'][0]['text']
 
 
-BUNDLED_TABLE = Path(__file__).with_name('translations_zh.json')
-
-
-def load_table(path=BUNDLED_TABLE):
-    """程式內建的人工校對譯文（韓文 → 繁中）。"""
-    try:
-        table = json.loads(Path(path).read_text(encoding='utf-8'))
-        return table if isinstance(table, dict) else {}
-    except (OSError, ValueError) as exc:
-        log.warning('無法載入內建譯文：%s', exc)
-        return {}
+def load_table():
+    """exe 內建的人工校對譯文（韓文 → 繁中）；線上更新見 translations.TranslationStore。"""
+    from .translations import BUNDLED, read
+    return read(BUNDLED) or {}
 
 
 class Translator:
-    """翻譯優先順序：設定檔 ko_glossary → 內建譯文表 → 本機快取 → 線上機器翻譯。"""
+    """翻譯優先順序：設定檔 ko_glossary → 人工校對譯文表（線上更新）→ 機器翻譯快取 → 線上機器翻譯。"""
 
     def __init__(self, config, cache_path=None, backend=None, table=None):
         self.config = config

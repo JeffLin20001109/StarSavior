@@ -4,9 +4,9 @@ python -m pip install -r requirements.txt pyinstaller==6.16.0
 python -m PyInstaller --noconfirm --clean --onefile --windowed `
     --name StarSaviorJourneyHelper `
     --collect-all rapidocr `
-    --collect-data opencc `
     --collect-data certifi `
     --add-data "../shared/translations_zh.json;journey_helper" `
+    --add-data "../shared/t2s.json;journey_helper" `
     --hidden-import psutil `
     --exclude-module pkg_resources `
     --exclude-module setuptools `

@@ -1,0 +1,947 @@
+[
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Strength</b> by <b>10</b>.",
+   "ja-JP": "旅ステータスのうち<b>力</b>が<b>10</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>힘</b>을 <b>10</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>力量</b><b>10</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>力量</b><b>10</b>點。"
+  },
+  "id": 10001,
+  "name": {
+   "en-US": "Strength Up I",
+   "ja-JP": "力上昇Ⅰ",
+   "ko-KR": "힘 상승Ⅰ",
+   "zh-CN": "力量提升Ⅰ",
+   "zh-TW": "力量提升Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_POWER",
+  "stat_value": 10,
+  "str_id": "POTEN_STAT_POWER_EASY_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Strength</b> by <b>15</b>.",
+   "ja-JP": "旅ステータスのうち<b>力</b>が<b>15</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>힘</b>을 <b>15</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>力量</b><b>15</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>力量</b><b>15</b>點。"
+  },
+  "id": 10002,
+  "name": {
+   "en-US": "Strength Up Ⅱ",
+   "ja-JP": "力上昇Ⅱ",
+   "ko-KR": "힘 상승 Ⅱ",
+   "zh-CN": "力量提升Ⅱ",
+   "zh-TW": "力量提升Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_POWER",
+  "stat_value": 15,
+  "str_id": "POTEN_STAT_POWER_EASY_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Strength</b> by <b>20</b>.",
+   "ja-JP": "旅ステータスのうち<b>力</b>が<b>20</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>힘</b>을 <b>20</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>力量</b><b>20</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>力量</b><b>20</b>點。"
+  },
+  "id": 10003,
+  "name": {
+   "en-US": "Strength Up Ⅲ",
+   "ja-JP": "力上昇Ⅲ",
+   "ko-KR": "힘 상승 Ⅲ",
+   "zh-CN": "力量提升Ⅲ",
+   "zh-TW": "力量提升Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_POWER",
+  "stat_value": 20,
+  "str_id": "POTEN_STAT_POWER_EASY_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Vitality</b> by <b>10</b>.",
+   "ja-JP": "旅ステータスのうち<b>体力</b>が<b>10</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>체력</b>을 <b>10</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>体力</b><b>10</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>體力</b><b>10</b>點。"
+  },
+  "id": 10004,
+  "name": {
+   "en-US": "Vitality Up I",
+   "ja-JP": "体力上昇Ⅰ",
+   "ko-KR": "체력 상승Ⅰ",
+   "zh-CN": "体力提升Ⅰ",
+   "zh-TW": "體力提升Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_HEALTH",
+  "stat_value": 10,
+  "str_id": "POTEN_STAT_HEALTH_EASY_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Vitality</b> by <b>15</b>.",
+   "ja-JP": "旅ステータスのうち<b>体力</b>が<b>15</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>체력</b>을 <b>15</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>体力</b><b>15</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>體力</b><b>15</b>點。"
+  },
+  "id": 10005,
+  "name": {
+   "en-US": "Vitality Up Ⅱ",
+   "ja-JP": "体力上昇Ⅱ",
+   "ko-KR": "체력 상승 Ⅱ",
+   "zh-CN": "体力提升Ⅱ",
+   "zh-TW": "體力提升Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_HEALTH",
+  "stat_value": 15,
+  "str_id": "POTEN_STAT_HEALTH_EASY_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Vitality</b> by <b>20</b>.",
+   "ja-JP": "旅ステータスのうち<b>体力</b>が<b>20</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>체력</b>을 <b>20</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>体力</b><b>20</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>體力</b><b>20</b>點。"
+  },
+  "id": 10006,
+  "name": {
+   "en-US": "Vitality Up Ⅲ",
+   "ja-JP": "体力上昇Ⅲ",
+   "ko-KR": "체력 상승 Ⅲ",
+   "zh-CN": "体力提升Ⅲ",
+   "zh-TW": "體力提升Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_HEALTH",
+  "stat_value": 20,
+  "str_id": "POTEN_STAT_HEALTH_EASY_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Endurance</b> by <b>10</b>.",
+   "ja-JP": "旅ステータスのうち<b>忍耐</b>が<b>10</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>인내</b>를 <b>10</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>韧性</b><b>10</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>韌性</b><b>10</b>點。"
+  },
+  "id": 10007,
+  "name": {
+   "en-US": "Endurance Up I",
+   "ja-JP": "忍耐上昇Ⅰ",
+   "ko-KR": "인내 상승Ⅰ",
+   "zh-CN": "韧性提升Ⅰ",
+   "zh-TW": "韌性提升Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_ENDURANCE",
+  "stat_value": 10,
+  "str_id": "POTEN_STAT_ENDURANCE_EASY_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Endurance</b> by <b>15</b>.",
+   "ja-JP": "旅ステータスのうち<b>忍耐</b>が<b>15</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>인내</b>를 <b>15</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>韧性</b><b>15</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>韌性</b><b>15</b>點。"
+  },
+  "id": 10008,
+  "name": {
+   "en-US": "Endurance Up Ⅱ",
+   "ja-JP": "忍耐上昇Ⅱ",
+   "ko-KR": "인내 상승 Ⅱ",
+   "zh-CN": "韧性提升Ⅱ",
+   "zh-TW": "韌性提升Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_ENDURANCE",
+  "stat_value": 15,
+  "str_id": "POTEN_STAT_ENDURANCE_EASY_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Endurance</b> by <b>20</b>.",
+   "ja-JP": "旅ステータスのうち<b>忍耐</b>が<b>20</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>인내</b>를 <b>20</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>韧性</b><b>20</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>韌性</b><b>20</b>點。"
+  },
+  "id": 10009,
+  "name": {
+   "en-US": "Endurance Up Ⅲ",
+   "ja-JP": "忍耐上昇Ⅲ",
+   "ko-KR": "인내 상승 Ⅲ",
+   "zh-CN": "韧性提升Ⅲ",
+   "zh-TW": "韌性提升Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_ENDURANCE",
+  "stat_value": 20,
+  "str_id": "POTEN_STAT_ENDURANCE_EASY_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Focus</b> by <b>20</b>.",
+   "ja-JP": "旅ステータスのうち<b>集中</b>が<b>20</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>집중</b>을 <b>20</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>专注</b><b>20</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>專注</b><b>20</b>點。"
+  },
+  "id": 10010,
+  "name": {
+   "en-US": "Focus Up I",
+   "ja-JP": "集中上昇Ⅰ",
+   "ko-KR": "집중 상승Ⅰ",
+   "zh-CN": "专注提升Ⅰ",
+   "zh-TW": "專注提升Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_FOCUS",
+  "stat_value": 20,
+  "str_id": "POTEN_STAT_FOCUS_EASY_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Focus</b> by <b>25</b>.",
+   "ja-JP": "旅ステータスのうち<b>集中</b>が<b>25</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>집중</b>을 <b>25</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>专注</b><b>25</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>專注</b><b>25</b>點。"
+  },
+  "id": 10011,
+  "name": {
+   "en-US": "Focus Up Ⅱ",
+   "ja-JP": "集中上昇Ⅱ",
+   "ko-KR": "집중 상승 Ⅱ",
+   "zh-CN": "专注提升Ⅱ",
+   "zh-TW": "專注提升Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_FOCUS",
+  "stat_value": 25,
+  "str_id": "POTEN_STAT_FOCUS_EASY_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Focus</b> by <b>30</b>.",
+   "ja-JP": "旅ステータスのうち<b>集中</b>が<b>30</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>집중</b>을 <b>30</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>专注</b><b>30</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>專注</b><b>30</b>點。"
+  },
+  "id": 10012,
+  "name": {
+   "en-US": "Focus Up Ⅲ",
+   "ja-JP": "集中上昇Ⅲ",
+   "ko-KR": "집중 상승 Ⅲ",
+   "zh-CN": "专注提升Ⅲ",
+   "zh-TW": "專注提升Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_FOCUS",
+  "stat_value": 30,
+  "str_id": "POTEN_STAT_FOCUS_EASY_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Protection</b> by <b>20</b>.",
+   "ja-JP": "旅ステータスのうち<b>保護</b>が<b>20</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>보호</b>를 <b>20</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>保护</b><b>20</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>保護</b><b>20</b>點。"
+  },
+  "id": 10013,
+  "name": {
+   "en-US": "Protection Up I",
+   "ja-JP": "保護上昇Ⅰ",
+   "ko-KR": "보호 상승Ⅰ",
+   "zh-CN": "保护提升Ⅰ",
+   "zh-TW": "保護提升Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_PROTECT",
+  "stat_value": 20,
+  "str_id": "POTEN_STAT_PROTECT_EASY_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Protection</b> by <b>25</b>.",
+   "ja-JP": "旅ステータスのうち<b>保護</b>が<b>25</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>보호</b>를 <b>25</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>保护</b><b>25</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>保護</b><b>25</b>點。"
+  },
+  "id": 10014,
+  "name": {
+   "en-US": "Protection Up Ⅱ",
+   "ja-JP": "保護上昇Ⅱ",
+   "ko-KR": "보호 상승 Ⅱ",
+   "zh-CN": "保护提升Ⅱ",
+   "zh-TW": "保護提升Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_PROTECT",
+  "stat_value": 25,
+  "str_id": "POTEN_STAT_PROTECT_EASY_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Protection</b> by <b>30</b>.",
+   "ja-JP": "旅ステータスのうち<b>保護</b>が<b>30</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>보호</b>를 <b>30</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>保护</b><b>30</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>保護</b><b>30</b>點。"
+  },
+  "id": 10015,
+  "name": {
+   "en-US": "Protection Up Ⅲ",
+   "ja-JP": "保護上昇Ⅲ",
+   "ko-KR": "보호 상승 Ⅲ",
+   "zh-CN": "保护提升Ⅲ",
+   "zh-TW": "保護提升Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_PROTECT",
+  "stat_value": 30,
+  "str_id": "POTEN_STAT_PROTECT_EASY_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Strength</b> by <b>25</b>.",
+   "ja-JP": "旅ステータスのうち<b>力</b>が<b>25</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>힘</b>을 <b>25</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>力量</b><b>25</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>力量</b><b>25</b>點。"
+  },
+  "id": 10016,
+  "name": {
+   "en-US": "Strength Boost I",
+   "ja-JP": "力増幅Ⅰ",
+   "ko-KR": "힘 증폭Ⅰ",
+   "zh-CN": "力量增幅Ⅰ",
+   "zh-TW": "力量增幅Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_POWER",
+  "stat_value": 25,
+  "str_id": "POTEN_STAT_POWER_NORMAL_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Strength</b> by <b>30</b>.",
+   "ja-JP": "旅ステータスのうち<b>力</b>が<b>30</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>힘</b>을 <b>30</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>力量</b><b>30</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>力量</b><b>30</b>點。"
+  },
+  "id": 10017,
+  "name": {
+   "en-US": "Strength Boost Ⅱ",
+   "ja-JP": "力増幅Ⅱ",
+   "ko-KR": "힘 증폭 Ⅱ",
+   "zh-CN": "力量增幅Ⅱ",
+   "zh-TW": "力量增幅Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_POWER",
+  "stat_value": 30,
+  "str_id": "POTEN_STAT_POWER_NORMAL_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Strength</b> by <b>35</b>.",
+   "ja-JP": "旅ステータスのうち<b>力</b>が<b>35</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>힘</b>을 <b>35</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>力量</b><b>35</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>力量</b><b>35</b>點。"
+  },
+  "id": 10018,
+  "name": {
+   "en-US": "Strength Boost Ⅲ",
+   "ja-JP": "力増幅Ⅲ",
+   "ko-KR": "힘 증폭 Ⅲ",
+   "zh-CN": "力量增幅Ⅲ",
+   "zh-TW": "力量增幅Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_POWER",
+  "stat_value": 35,
+  "str_id": "POTEN_STAT_POWER_NORMAL_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Vitality</b> by <b>25</b>.",
+   "ja-JP": "旅ステータスのうち<b>体力</b>が<b>25</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>체력</b>을 <b>25</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>体力</b><b>25</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>體力</b><b>25</b>點。"
+  },
+  "id": 10019,
+  "name": {
+   "en-US": "Vitality Boost I",
+   "ja-JP": "体力増幅Ⅰ",
+   "ko-KR": "체력 증폭Ⅰ",
+   "zh-CN": "体力增幅Ⅰ",
+   "zh-TW": "體力增幅Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_HEALTH",
+  "stat_value": 25,
+  "str_id": "POTEN_STAT_HEALTH_NORMAL_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Vitality</b> by <b>30</b>.",
+   "ja-JP": "旅ステータスのうち<b>体力</b>が<b>30</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>체력</b>을 <b>30</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>体力</b><b>30</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>體力</b><b>30</b>點。"
+  },
+  "id": 10020,
+  "name": {
+   "en-US": "Vitality Boost Ⅱ",
+   "ja-JP": "体力増幅Ⅱ",
+   "ko-KR": "체력 증폭 Ⅱ",
+   "zh-CN": "体力增幅Ⅱ",
+   "zh-TW": "體力增幅Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_HEALTH",
+  "stat_value": 30,
+  "str_id": "POTEN_STAT_HEALTH_NORMAL_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Vitality</b> by <b>35</b>.",
+   "ja-JP": "旅ステータスのうち<b>体力</b>が<b>35</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>체력</b>을 <b>35</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>体力</b><b>35</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>體力</b><b>35</b>點。"
+  },
+  "id": 10021,
+  "name": {
+   "en-US": "Vitality Boost Ⅲ",
+   "ja-JP": "体力増幅Ⅲ",
+   "ko-KR": "체력 증폭 Ⅲ",
+   "zh-CN": "体力增幅Ⅲ",
+   "zh-TW": "體力增幅Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_HEALTH",
+  "stat_value": 35,
+  "str_id": "POTEN_STAT_HEALTH_NORMAL_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Endurance</b> by <b>25</b>.",
+   "ja-JP": "旅ステータスのうち<b>忍耐</b>が<b>25</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>인내</b>를 <b>25</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>韧性</b><b>25</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>韌性</b><b>25</b>點。"
+  },
+  "id": 10022,
+  "name": {
+   "en-US": "Endurance Boost I",
+   "ja-JP": "忍耐増幅Ⅰ",
+   "ko-KR": "인내 증폭Ⅰ",
+   "zh-CN": "韧性增幅Ⅰ",
+   "zh-TW": "韌性增幅Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_ENDURANCE",
+  "stat_value": 25,
+  "str_id": "POTEN_STAT_ENDURANCE_NORMAL_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Endurance</b> by <b>30</b>.",
+   "ja-JP": "旅ステータスのうち<b>忍耐</b>が<b>30</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>인내</b>를 <b>30</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>韧性</b><b>30</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>韌性</b><b>30</b>點。"
+  },
+  "id": 10023,
+  "name": {
+   "en-US": "Endurance Boost Ⅱ",
+   "ja-JP": "忍耐増幅Ⅱ",
+   "ko-KR": "인내 증폭 Ⅱ",
+   "zh-CN": "韧性增幅Ⅱ",
+   "zh-TW": "韌性增幅Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_ENDURANCE",
+  "stat_value": 30,
+  "str_id": "POTEN_STAT_ENDURANCE_NORMAL_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Endurance</b> by <b>35</b>.",
+   "ja-JP": "旅ステータスのうち<b>忍耐</b>が<b>35</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>인내</b>를 <b>35</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>韧性</b><b>35</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>韌性</b><b>35</b>點。"
+  },
+  "id": 10024,
+  "name": {
+   "en-US": "Endurance Boost Ⅲ",
+   "ja-JP": "忍耐増幅Ⅲ",
+   "ko-KR": "인내 증폭 Ⅲ",
+   "zh-CN": "韧性增幅Ⅲ",
+   "zh-TW": "韌性增幅Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_ENDURANCE",
+  "stat_value": 35,
+  "str_id": "POTEN_STAT_ENDURANCE_NORMAL_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Focus</b> by <b>40</b>.",
+   "ja-JP": "旅ステータスのうち<b>集中</b>が<b>40</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>집중</b>을 <b>40</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>专注</b><b>40</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>專注</b><b>40</b>點。"
+  },
+  "id": 10025,
+  "name": {
+   "en-US": "Focus Boost I",
+   "ja-JP": "集中増幅Ⅰ",
+   "ko-KR": "집중 증폭Ⅰ",
+   "zh-CN": "专注增幅Ⅰ",
+   "zh-TW": "專注增幅Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_FOCUS",
+  "stat_value": 40,
+  "str_id": "POTEN_STAT_FOCUS_NORMAL_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Focus</b> by <b>45</b>.",
+   "ja-JP": "旅ステータスのうち<b>集中</b>が<b>45</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>집중</b>을 <b>45</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>专注</b><b>45</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>專注</b><b>45</b>點。"
+  },
+  "id": 10026,
+  "name": {
+   "en-US": "Focus Boost Ⅱ",
+   "ja-JP": "集中増幅Ⅱ",
+   "ko-KR": "집중 증폭 Ⅱ",
+   "zh-CN": "专注增幅Ⅱ",
+   "zh-TW": "專注增幅Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_FOCUS",
+  "stat_value": 45,
+  "str_id": "POTEN_STAT_FOCUS_NORMAL_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Focus</b> by <b>50</b>.",
+   "ja-JP": "旅ステータスのうち<b>集中</b>が<b>50</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>집중</b>을 <b>50</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>专注</b><b>50</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>專注</b><b>50</b>點。"
+  },
+  "id": 10027,
+  "name": {
+   "en-US": "Focus Boost Ⅲ",
+   "ja-JP": "集中増幅Ⅲ",
+   "ko-KR": "집중 증폭 Ⅲ",
+   "zh-CN": "专注增幅Ⅲ",
+   "zh-TW": "專注增幅Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_FOCUS",
+  "stat_value": 50,
+  "str_id": "POTEN_STAT_FOCUS_NORMAL_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Protection</b> by <b>40</b>.",
+   "ja-JP": "旅ステータスのうち<b>保護</b>が<b>40</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>보호</b>를 <b>40</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>保护</b><b>40</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>保護</b><b>40</b>點。"
+  },
+  "id": 10028,
+  "name": {
+   "en-US": "Protection Boost I",
+   "ja-JP": "保護増幅Ⅰ",
+   "ko-KR": "보호 증폭Ⅰ",
+   "zh-CN": "保护增幅Ⅰ",
+   "zh-TW": "保護增幅Ⅰ"
+  },
+  "ratio": 3000,
+  "stat_type": "JST_PROTECT",
+  "stat_value": 40,
+  "str_id": "POTEN_STAT_PROTECT_NORMAL_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Protection</b> by <b>45</b>.",
+   "ja-JP": "旅ステータスのうち<b>保護</b>が<b>45</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>보호</b>를 <b>45</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>保护</b><b>45</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>保護</b><b>45</b>點。"
+  },
+  "id": 10029,
+  "name": {
+   "en-US": "Protection Boost Ⅱ",
+   "ja-JP": "保護増幅Ⅱ",
+   "ko-KR": "보호 증폭 Ⅱ",
+   "zh-CN": "保护增幅Ⅱ",
+   "zh-TW": "保護增幅Ⅱ"
+  },
+  "ratio": 1800,
+  "stat_type": "JST_PROTECT",
+  "stat_value": 45,
+  "str_id": "POTEN_STAT_PROTECT_NORMAL_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Protection</b> by <b>50</b>.",
+   "ja-JP": "旅ステータスのうち<b>保護</b>が<b>50</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>보호</b>를 <b>50</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>保护</b><b>50</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>保護</b><b>50</b>點。"
+  },
+  "id": 10030,
+  "name": {
+   "en-US": "Protection Boost Ⅲ",
+   "ja-JP": "保護増幅Ⅲ",
+   "ko-KR": "보호 증폭 Ⅲ",
+   "zh-CN": "保护增幅Ⅲ",
+   "zh-TW": "保護增幅Ⅲ"
+  },
+  "ratio": 1200,
+  "stat_type": "JST_PROTECT",
+  "stat_value": 50,
+  "str_id": "POTEN_STAT_PROTECT_NORMAL_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Strength</b> by <b>40</b>.",
+   "ja-JP": "旅ステータスのうち<b>力</b>が<b>40</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>힘</b>을 <b>40</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>力量</b><b>40</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>力量</b><b>40</b>點。"
+  },
+  "id": 10031,
+  "name": {
+   "en-US": "Strength Transcendence I",
+   "ja-JP": "力超越Ⅰ",
+   "ko-KR": "힘 초월Ⅰ",
+   "zh-CN": "力量超越Ⅰ",
+   "zh-TW": "力量超越Ⅰ"
+  },
+  "ratio": 1500,
+  "stat_type": "JST_POWER",
+  "stat_value": 40,
+  "str_id": "POTEN_STAT_POWER_HARD_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Strength</b> by <b>45</b>.",
+   "ja-JP": "旅ステータスのうち<b>力</b>が<b>45</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>힘</b>을 <b>45</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>力量</b><b>45</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>力量</b><b>45</b>點。"
+  },
+  "id": 10032,
+  "name": {
+   "en-US": "Strength Transcendence Ⅱ",
+   "ja-JP": "力超越Ⅱ",
+   "ko-KR": "힘 초월 Ⅱ",
+   "zh-CN": "力量超越Ⅱ",
+   "zh-TW": "力量超越Ⅱ"
+  },
+  "ratio": 900,
+  "stat_type": "JST_POWER",
+  "stat_value": 45,
+  "str_id": "POTEN_STAT_POWER_HARD_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Strength</b> by <b>50</b>.",
+   "ja-JP": "旅ステータスのうち<b>力</b>が<b>50</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>힘</b>을 <b>50</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>力量</b><b>50</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>力量</b><b>50</b>點。"
+  },
+  "id": 10033,
+  "name": {
+   "en-US": "Strength Transcendence Ⅲ",
+   "ja-JP": "力超越Ⅲ",
+   "ko-KR": "힘 초월 Ⅲ",
+   "zh-CN": "力量超越Ⅲ",
+   "zh-TW": "力量超越Ⅲ"
+  },
+  "ratio": 600,
+  "stat_type": "JST_POWER",
+  "stat_value": 50,
+  "str_id": "POTEN_STAT_POWER_HARD_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Vitality</b> by <b>40</b>.",
+   "ja-JP": "旅ステータスのうち<b>体力</b>が<b>40</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>체력</b>을 <b>40</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>体力</b><b>40</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>體力</b><b>40</b>點。"
+  },
+  "id": 10034,
+  "name": {
+   "en-US": "Vitality Transcendence I",
+   "ja-JP": "体力超越Ⅰ",
+   "ko-KR": "체력 초월Ⅰ",
+   "zh-CN": "体力超越Ⅰ",
+   "zh-TW": "體力超越Ⅰ"
+  },
+  "ratio": 1500,
+  "stat_type": "JST_HEALTH",
+  "stat_value": 40,
+  "str_id": "POTEN_STAT_HEALTH_HARD_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Vitality</b> by <b>45</b>.",
+   "ja-JP": "旅ステータスのうち<b>体力</b>が<b>45</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>체력</b>을 <b>45</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>体力</b><b>45</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>體力</b><b>45</b>點。"
+  },
+  "id": 10035,
+  "name": {
+   "en-US": "Vitality Transcendence Ⅱ",
+   "ja-JP": "体力超越Ⅱ",
+   "ko-KR": "체력 초월 Ⅱ",
+   "zh-CN": "体力超越Ⅱ",
+   "zh-TW": "體力超越Ⅱ"
+  },
+  "ratio": 900,
+  "stat_type": "JST_HEALTH",
+  "stat_value": 45,
+  "str_id": "POTEN_STAT_HEALTH_HARD_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Vitality</b> by <b>50</b>.",
+   "ja-JP": "旅ステータスのうち<b>体力</b>が<b>50</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>체력</b>을 <b>50</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>体力</b><b>50</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>體力</b><b>50</b>點。"
+  },
+  "id": 10036,
+  "name": {
+   "en-US": "Vitality Transcendence Ⅲ",
+   "ja-JP": "体力超越Ⅲ",
+   "ko-KR": "체력 초월 Ⅲ",
+   "zh-CN": "体力超越Ⅲ",
+   "zh-TW": "體力超越Ⅲ"
+  },
+  "ratio": 600,
+  "stat_type": "JST_HEALTH",
+  "stat_value": 50,
+  "str_id": "POTEN_STAT_HEALTH_HARD_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Endurance</b> by <b>40</b>.",
+   "ja-JP": "旅ステータスのうち<b>忍耐</b>が<b>40</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>인내</b>를 <b>40</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>韧性</b><b>40</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>韌性</b><b>40</b>點。"
+  },
+  "id": 10037,
+  "name": {
+   "en-US": "Endurance Transcendence I",
+   "ja-JP": "忍耐超越Ⅰ",
+   "ko-KR": "인내 초월Ⅰ",
+   "zh-CN": "韧性超越Ⅰ",
+   "zh-TW": "韌性超越Ⅰ"
+  },
+  "ratio": 1500,
+  "stat_type": "JST_ENDURANCE",
+  "stat_value": 40,
+  "str_id": "POTEN_STAT_ENDURANCE_HARD_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Endurance</b> by <b>45</b>.",
+   "ja-JP": "旅ステータスのうち<b>忍耐</b>が<b>45</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>인내</b>를 <b>45</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>韧性</b><b>45</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>韌性</b><b>45</b>點。"
+  },
+  "id": 10038,
+  "name": {
+   "en-US": "Endurance Transcendence Ⅱ",
+   "ja-JP": "忍耐超越Ⅱ",
+   "ko-KR": "인내 초월 Ⅱ",
+   "zh-CN": "韧性超越Ⅱ",
+   "zh-TW": "韌性超越Ⅱ"
+  },
+  "ratio": 900,
+  "stat_type": "JST_ENDURANCE",
+  "stat_value": 45,
+  "str_id": "POTEN_STAT_ENDURANCE_HARD_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Endurance</b> by <b>50</b>.",
+   "ja-JP": "旅ステータスのうち<b>忍耐</b>が<b>50</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>인내</b>를 <b>50</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>韧性</b><b>50</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>韌性</b><b>50</b>點。"
+  },
+  "id": 10039,
+  "name": {
+   "en-US": "Endurance Transcendence Ⅲ",
+   "ja-JP": "忍耐超越Ⅲ",
+   "ko-KR": "인내 초월 Ⅲ",
+   "zh-CN": "韧性超越Ⅲ",
+   "zh-TW": "韌性超越Ⅲ"
+  },
+  "ratio": 600,
+  "stat_type": "JST_ENDURANCE",
+  "stat_value": 50,
+  "str_id": "POTEN_STAT_ENDURANCE_HARD_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Focus</b> by <b>60</b>.",
+   "ja-JP": "旅ステータスのうち<b>集中</b>が<b>60</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>집중</b>을 <b>60</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>专注</b><b>60</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>專注</b><b>60</b>點。"
+  },
+  "id": 10040,
+  "name": {
+   "en-US": "Focus Transcendence I",
+   "ja-JP": "集中超越Ⅰ",
+   "ko-KR": "집중 초월Ⅰ",
+   "zh-CN": "专注超越Ⅰ",
+   "zh-TW": "專注超越Ⅰ"
+  },
+  "ratio": 1500,
+  "stat_type": "JST_FOCUS",
+  "stat_value": 60,
+  "str_id": "POTEN_STAT_FOCUS_HARD_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Focus</b> by <b>65</b>.",
+   "ja-JP": "旅ステータスのうち<b>集中</b>が<b>65</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>집중</b>을 <b>65</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>专注</b><b>65</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>專注</b><b>65</b>點。"
+  },
+  "id": 10041,
+  "name": {
+   "en-US": "Focus Transcendence Ⅱ",
+   "ja-JP": "集中超越Ⅱ",
+   "ko-KR": "집중 초월 Ⅱ",
+   "zh-CN": "专注超越Ⅱ",
+   "zh-TW": "專注超越Ⅱ"
+  },
+  "ratio": 900,
+  "stat_type": "JST_FOCUS",
+  "stat_value": 65,
+  "str_id": "POTEN_STAT_FOCUS_HARD_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Focus</b> by <b>70</b>.",
+   "ja-JP": "旅ステータスのうち<b>集中</b>が<b>70</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>집중</b>을 <b>70</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>专注</b><b>70</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>專注</b><b>70</b>點。"
+  },
+  "id": 10042,
+  "name": {
+   "en-US": "Focus Transcendence Ⅲ",
+   "ja-JP": "集中超越Ⅲ",
+   "ko-KR": "집중 초월 Ⅲ",
+   "zh-CN": "专注超越Ⅲ",
+   "zh-TW": "專注超越Ⅲ"
+  },
+  "ratio": 600,
+  "stat_type": "JST_FOCUS",
+  "stat_value": 70,
+  "str_id": "POTEN_STAT_FOCUS_HARD_3"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Protection</b> by <b>60</b>.",
+   "ja-JP": "旅ステータスのうち<b>保護</b>が<b>60</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>보호</b>를 <b>60</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>保护</b><b>60</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>保護</b><b>60</b>點。"
+  },
+  "id": 10043,
+  "name": {
+   "en-US": "Protection Transcendence I",
+   "ja-JP": "保護超越Ⅰ",
+   "ko-KR": "보호 초월Ⅰ",
+   "zh-CN": "保护超越Ⅰ",
+   "zh-TW": "保護超越Ⅰ"
+  },
+  "ratio": 1500,
+  "stat_type": "JST_PROTECT",
+  "stat_value": 60,
+  "str_id": "POTEN_STAT_PROTECT_HARD_1"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Protection</b> by <b>65</b>.",
+   "ja-JP": "旅ステータスのうち<b>保護</b>が<b>65</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>보호</b>를 <b>65</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>保护</b><b>65</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>保護</b><b>65</b>點。"
+  },
+  "id": 10044,
+  "name": {
+   "en-US": "Protection Transcendence Ⅱ",
+   "ja-JP": "保護超越Ⅱ",
+   "ko-KR": "보호 초월 Ⅱ",
+   "zh-CN": "保护超越Ⅱ",
+   "zh-TW": "保護超越Ⅱ"
+  },
+  "ratio": 900,
+  "stat_type": "JST_PROTECT",
+  "stat_value": 65,
+  "str_id": "POTEN_STAT_PROTECT_HARD_2"
+ },
+ {
+  "desc": {
+   "en-US": "A blessing that increases the Journey stat <b>Protection</b> by <b>70</b>.",
+   "ja-JP": "旅ステータスのうち<b>保護</b>が<b>70</b>上昇する祝福です。",
+   "ko-KR": "여정 스탯 중 <b>보호</b>를 <b>70</b> 올려주는 축복입니다.",
+   "zh-CN": "此祝福可提升旅程属性中的<b>保护</b><b>70</b>点。",
+   "zh-TW": "此祝福可提升旅程屬性中的<b>保護</b><b>70</b>點。"
+  },
+  "id": 10045,
+  "name": {
+   "en-US": "Protection Transcendence Ⅲ",
+   "ja-JP": "保護超越Ⅲ",
+   "ko-KR": "보호 초월 Ⅲ",
+   "zh-CN": "保护超越Ⅲ",
+   "zh-TW": "保護超越Ⅲ"
+  },
+  "ratio": 600,
+  "stat_type": "JST_PROTECT",
+  "stat_value": 70,
+  "str_id": "POTEN_STAT_PROTECT_HARD_3"
+ }
+]

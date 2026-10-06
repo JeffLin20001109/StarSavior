@@ -1,0 +1,4712 @@
+[
+ {
+  "charm_effect": {
+   "stat": "ATK%",
+   "target": "All Allies",
+   "value": 1500
+  },
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7001001,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "charm_effect": {
+   "stat": "Lifesteal",
+   "target": "All Allies",
+   "value": 1500
+  },
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7001002,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "charm_effect": {
+   "stat": "ATK%",
+   "target": "All Allies",
+   "value": 1500
+  },
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7101001,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "charm_effect": {
+   "stat": "Lifesteal",
+   "target": "All Allies",
+   "value": 1500
+  },
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7101002,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "charm_effect": {
+   "stat": "ATK%",
+   "target": "All Allies",
+   "value": 2000
+  },
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7201001,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "charm_effect": {
+   "stat": "DEF%",
+   "target": "All Allies",
+   "value": 2000
+  },
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7201002,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "charm_effect": {
+   "stat": "CRIT Rate",
+   "target": "All Allies",
+   "value": 1000
+  },
+  "contents_tag": "DEV_OPEN",
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7202001,
+  "name": "",
+  "pp_convert": 5,
+  "raw_name_key": "SI_DOMAIN_ITEM_NAME_VOYAGER_GUNBLADE",
+  "subtype": "Charm",
+  "unreleased": true,
+  "unreleased_reason": "dev_only"
+ },
+ {
+  "charm_effect": {
+   "stat": "CRIT Rate",
+   "target": "Party: Striker",
+   "value": 1000
+  },
+  "contents_tag": "DEV_OPEN",
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7202002,
+  "name": "",
+  "pp_convert": 5,
+  "raw_name_key": "SI_DOMAIN_ITEM_NAME_VOYAGER_GUNBLADE",
+  "subtype": "Charm",
+  "unreleased": true,
+  "unreleased_reason": "dev_only"
+ },
+ {
+  "charm_effect": {
+   "stat": "CRIT Rate",
+   "target": "Party: Ranger",
+   "value": 1000
+  },
+  "contents_tag": "DEV_OPEN",
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7202003,
+  "name": "",
+  "pp_convert": 5,
+  "raw_name_key": "SI_DOMAIN_ITEM_NAME_VOYAGER_GUNBLADE",
+  "subtype": "Charm",
+  "unreleased": true,
+  "unreleased_reason": "dev_only"
+ },
+ {
+  "charm_effect": {
+   "stat": "CRIT DMG",
+   "target": "All Allies",
+   "value": 1000
+  },
+  "contents_tag": "DEV_OPEN",
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7202004,
+  "name": "",
+  "pp_convert": 5,
+  "raw_name_key": "SI_DOMAIN_ITEM_NAME_VOYAGER_GUNBLADE",
+  "subtype": "Charm",
+  "unreleased": true,
+  "unreleased_reason": "dev_only"
+ },
+ {
+  "charm_effect": {
+   "stat": "CRIT DMG",
+   "target": "Party: Striker",
+   "value": 1000
+  },
+  "contents_tag": "DEV_OPEN",
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7202005,
+  "name": "",
+  "pp_convert": 5,
+  "raw_name_key": "SI_DOMAIN_ITEM_NAME_VOYAGER_GUNBLADE",
+  "subtype": "Charm",
+  "unreleased": true,
+  "unreleased_reason": "dev_only"
+ },
+ {
+  "charm_effect": {
+   "stat": "CRIT DMG",
+   "target": "Party: Ranger",
+   "value": 1000
+  },
+  "contents_tag": "DEV_OPEN",
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7202006,
+  "name": "",
+  "pp_convert": 5,
+  "raw_name_key": "SI_DOMAIN_ITEM_NAME_VOYAGER_GUNBLADE",
+  "subtype": "Charm",
+  "unreleased": true,
+  "unreleased_reason": "dev_only"
+ },
+ {
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7203001,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Gains 1 additional Nova Force after using a Skill."
+  ],
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7203002,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "charm_effect": {
+   "stat": "SPD%",
+   "target": "All Allies",
+   "value": 1000
+  },
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7204001,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "charm_effect": {
+   "stat": "SPD%",
+   "target": "Party: Defender",
+   "value": 1000
+  },
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7204002,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "charm_effect": {
+   "stat": "SPD%",
+   "target": "Party: Supporter",
+   "value": 1000
+  },
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7204003,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "description": "",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 7205001,
+  "name": "",
+  "pp_convert": 5,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts the target with Poison for 2 turns with a 100% chance after attacking with a Basic Skill. Poison DMG is proportional to self Max HP. (Poison DMG: 5% Max HP)"
+  ],
+  "description": "A clock that only tells the time people would rather not hear.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CUCKOO_CLOCK.webp",
+  "id": 5062001,
+  "name": "Annoying Cuckoo Clock",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT Rate by 50% when using Difference in Class. Grants an extra turn on Critical Hit."
+  ],
+  "description": "It is unclear what function or role it serves. One thing is certain: most of the time is now spent sitting upon it.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_THRONE_ASHES.webp",
+  "id": 5013003,
+  "name": "Ashen Throne",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Barrier for 2 turns after using Distorted Attention. Barrier is proportional to self ATK. (Barrier: 30% ATK)"
+  ],
+  "description": "A character keychain from the Boss Seal series. Old and worn from frequent handling.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_KITTY_KEYCHAIN.webp",
+  "id": 5011053,
+  "name": "Assistant Meow Keychain",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Action Gauge by 15% after using Ascending Fire Dragon if the enemy has Entangled Dream. (Action Gauge: 15%)"
+  ],
+  "description": "A custom-made, high-end fountain pen. However, its owner prefers brushes, so it is essentially unused.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CLEAR_OUTLOOK_BREATH.webp",
+  "id": 5011049,
+  "name": "Azure Breath",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect Hit by 15% at the start of the first battle."
+  ],
+  "description": "The championship trophy of Flora's beach volleyball tournament. A trophy awarded to the glorious champion.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BEACH_VOLLEYBALL_WINNING_TROPHY.webp",
+  "id": 105030,
+  "name": "Beach Volleyball Champion Trophy",
+  "pp_convert": 12,
+  "rewarded_in_events": [
+   1143
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self CRIT Rate Up for 1 turn at the start of the turn. Increases CRIT DMG and self Action Gauge by 10% each on attack, up to 5 stacks. Reduces the cooldown of all skills if Perfect Strike is a Critical Hit. (Action Gauge: 10%, Action Gauge: 20%, Action Gauge: 30%, Action Gauge: 40%, Action Gauge: 50%)"
+  ],
+  "description": "A guidebook with handwritten notes on common mistakes made by beginner maids and how to handle them.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MAID_GUIDEBOOK.webp",
+  "id": 5011509,
+  "name": "Beginner Maid's Handbook",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces self DMG Taken by 15% when attacked by a Critical Hit."
+  ],
+  "description": "A green frog doll that overcame the sorrow of losing its mother.\nIt trained hard to protect those dear to it.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_BEST_FRIEND.webp",
+  "id": 30304,
+  "name": "Best Friend",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DMG by 50% on attack with an Ultimate Skill if the enemy has Barrier."
+  ],
+  "description": "An enormous drill. It looks like it could pierce through anything.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_BIG_GIANT_DRILL_DRIVER.webp",
+  "id": 30103,
+  "name": "Big Giant Drill Driver",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self 2 stacks of Chill at the start of the first battle. 100% chance to inflict SPD Down on the enemy for 2 turns after using 21st Form: Blade Gale. Ignores Effect RES."
+  ],
+  "description": "An operation plan devised to break through to the Void Core in the shortest time possible. Written by the former commander of the Liberators.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BLITZ_PLAN.webp",
+  "id": 5011033,
+  "name": "Blitz Operation Plan",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self CRIT Rate by 100% on attack if the enemy has full HP."
+  ],
+  "description": "A hairpin in the shape of the butterfly that always lingers by Seira's side. It almost feels alive.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DREAMING_BUTTERFLY.webp",
+  "id": 5011014,
+  "name": "Blue Butterfly",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants ATK Up for 3 turns after using I'll Be Good From Now On. Inflicts the enemy with 1 instance of Burn for 3 turns with a 100% chance after using Divine Flame or I'll Be Good From Now On. Restores HP after being attacked by an enemy affected by Burn. Recovery is proportional to ATK. Burn DMG is proportional to ATK. (Burn DMG: 20% ATK) (Burn DMG: 20% ATK, Heal: 50% ATK)"
+  ],
+  "description": "A relic of the Monolith Order said to be perfect as a hand warmer in winter.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BREATHE_CHARCOAL.webp",
+  "id": 5011023,
+  "name": "Breathing Ember",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Restores self HP at the start of battle. Recovery is proportional to self Max HP. (Heal: 20% Max HP)"
+  ],
+  "description": "A whistle used to signal the start of a match. When blown with force, it releases sparkling bubbles that invigorate the body.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_BUBBLE_BUBBLE_WHISTLE.webp",
+  "id": 30104,
+  "name": "Bubbly Bubble Whistle",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Triggers Let's Go, Dave! on the enemy with the highest Max HP after being attacked. Reduces the cooldown of all skills by 1 turn and increases Action Gauge by 30% if self has Berserk Mode after using Let's Go, Dave!. (Action Gauge: 30%)"
+  ],
+  "description": "Sunglasses that protect your vision while riding. Harley supposedly began wearing them to hide her gentle eyes.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_HOT_GAZE.webp",
+  "id": 5011041,
+  "name": "Burning Gaze",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Triggers Dragon Buster on the enemy if self has Fafnir's Descent (Undispellable) after using Twin Blade. Occurs once every 2 turns."
+  ],
+  "description": "A module that regulates incomplete power. It reacts with the Buster Core to amplify the user's strength.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_HILDE_MODULE.webp",
+  "id": 5013001,
+  "name": "Buster Module",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Evasion by 20%. Reduces the cooldown of Silent Wind Lucent Moon by 1 turn on evasion after being attacked."
+  ],
+  "description": "A manual recording the basic martial arts and mindset of the Celestial Sect.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MOON_SECRET_SCRIPTURE.webp",
+  "id": 5011029,
+  "name": "Celestial Manuscript",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG to the enemy with the highest Max HP that is proportional to self ATK after attacking. Grants Barrier for 3 turns if HP is 50% or below after being attacked. Barrier is proportional to ATK. Barrier occurs once every 3 turns. (Chain DMG: 25% ATK) (Barrier: 85% ATK)"
+  ],
+  "description": "A must-have item for beginners who want to succeed through astrology.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_COSMIC_VIEW.webp",
+  "id": 5011003,
+  "name": "Cosmic Vision",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG proportional to self Max HP to all enemies with a 100% chance if self has 2 or less debuffs after using a Skill. Grants self 1 stack of Chill after being attacked, and increases self Action Gauge by 15%. Inflicts all enemies with SPD Down for 3 turns if self Chill is at max stacks at the start of the turn. The effect that triggers at the start of the turn ignores Effect RES and occurs once per battle. (Chain DMG: 5% Max HP) (Action Gauge: 15%)"
+  ],
+  "description": "A bugle blown by long-distance couriers to announce their arrival. Old, but well maintained.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DELIVERY_TRUMPET.webp",
+  "id": 5011507,
+  "name": "Courier's Bugle",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG proportional to self ATK after attacking with a Basic Skill if the enemy's HP is 20% or below. Does not trigger from skills other than single-target attacks. Occurs once per turn. (Chain DMG: 25% ATK)"
+  ],
+  "description": "A muffin that is perfect for a light snack after a meal.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_DESSERT_MUFFIN.webp",
+  "id": 30204,
+  "name": "Dessert Muffin",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG to all enemies proportional to self Max HP after using Steel Hail if self has Guard. (Chain DMG: 5% Max HP)"
+  ],
+  "description": "A scaled-down model of the Platina Express locomotive. Finely crafted and very close to the real thing.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAIN_MINIATURE.webp",
+  "id": 5011018,
+  "name": "Die-Cast Locomotive Model",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Action Gauge by 5% after being attacked. Deals Chain DMG to all enemies proportional to self ATK when attacked 3 times. (Action Gauge: 5%) (Chain DMG: 15% ATK)"
+  ],
+  "description": "The pen of an author who set the record for the longest-running newspaper serial novel.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SERIES_OF_PEN.webp",
+  "id": 5063003,
+  "name": "Dip Pen of Continuity",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self an extra turn after using Lily's Precious Moment."
+  ],
+  "description": "Make a wonderful outfit for your precious doll! For purchase inquiries, visit your nearest Apocalypse shop.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STUFFED_DOLL_MAKING_KIT.webp",
+  "id": 5011052,
+  "name": "Doll Outfit DIY Kit",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Action Gauge by 50% after using The Biggest and Coolest One!. (Action Gauge: 50%)"
+  ],
+  "description": "A fun controller that you can hold and shake around with both hands. It's said to be a gift from Daddy.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ENERGY_CONTROLLER.webp",
+  "id": 5011031,
+  "name": "Energy Controller",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts the enemy with Burn for 2 turns with a 100% chance after using I'll Cut You Up! or I'll Take You On!. Restores self HP if the enemy is under the effects of Burn after using Let's Heat Things Up!. Recovery and damage dealt by Burn is proportional to self ATK. (Burn DMG: 20% ATK) (Burn DMG: 20% ATK, Heal: 30% ATK)"
+  ],
+  "description": "A figurine modeled after a famous fairy tale character. Pull the tail and it shoots fire.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CERBERON_FIGURE.webp",
+  "id": 5011510,
+  "name": "Evil Dragon Kelberon Figure",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Precision Aim at the start of the turn. Triggers Step Back a Bit on the enemy after using This Is How You Shoot a Gun or Shooting by Instinct. Occurs once per self turn.\n\nPrecision Aim: Increases CRIT Rate by 100%. Recovers HP equal to 50% of damage dealt. Removed after attack."
+  ],
+  "description": "The final bullet left behind by a man for whom a girl was everything, and who was everything to her.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_LAST_BULLET.webp",
+  "id": 5011511,
+  "name": "Final Shot",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self SPD by 3% after using a Skill. Stacks up to 5 times."
+  ],
+  "description": "Special roller skates that increase speed when worn. They are also equipped with flashy lights.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_SPECIAL_ULTRA_ROLLER_SKATES.webp",
+  "id": 30202,
+  "name": "Finisher Ultra Roller Skates",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts the enemy with Burn for 1 turn with a 25% chance after attacking with a Basic Skill. (Burn DMG: 20% ATK)"
+  ],
+  "description": "An intimidating fist of dark crimson flames. The more enemies it devours, the faster it becomes.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_DARK_FLAME_PUNCH.webp",
+  "id": 30201,
+  "name": "Flame Gauntlet",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Changes the trigger condition for activating Seething Vengeance to: if self Ignition is at max stacks after an ally's attack (including self). Grants self 1 stack of Ignition at the start of the turn."
+  ],
+  "description": "An exquisite fan made to order by the finest fanmaker in the East. A masterpiece of both function and artistry.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_INCOGNITA_LANDGRAVE_CHARM.webp",
+  "id": 5011017,
+  "name": "Gaze Upon All",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT Rate by 50% and restores HP equal to 100% of damage dealt. Increases Action Gauge by 70% upon defeating an enemy with Continuous Cuts. Reduces the cooldown of Continuous Cuts by 2 turns and triggers Phantom Step upon failing to defeat an enemy with Continuous Cuts. (Action Gauge: 70%)"
+  ],
+  "description": "An instrument used to encourage wanted criminals to turn themselves in. Extremely loud.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRISH_VUVUZELA.webp",
+  "id": 5011015,
+  "name": "Gentle Vuvuzela",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants 1 stack of High Roller (Undispellable) at the start of the turn. Inflicts all enemies with DEF Down for 2 turns with a 100% chance after using Bullseye. Ignores Effect RES."
+  ],
+  "description": "A rabbit-shaped doll, one of Deep Field's merch. It looks quite gentle and fluffy.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BUNNY_JENTLEMAN.webp",
+  "id": 5011057,
+  "name": "Gentleman Bunny",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self CRIT Rate by 20% on attack if self has 4 or more buffs."
+  ],
+  "description": "A bunny headband Scarlet made by hand. Claire rejected it for being too flashy.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BUNNY_HEADBAND.webp",
+  "id": 5011043,
+  "name": "Handmade Bunny Headband",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self 3 stacks of Sparkler (Undispellable) at the start of the first battle. Uses an additional instance of Heat Control on enemies with Aqua Bomb upon using Hydration if an enemy has Aqua Bomb. Grants self 1 stack of Sparkler (Undispellable). Additionally triggered Heat Control prioritizes attacking the enemy with Aqua Bomb."
+  ],
+  "description": "A fully automatic water sprayer modified by Smile. It is absolutely not a toy water gun. Features full-auto, semi-auto, and burst-fire modes.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SUMMER_SMILE_CHARM.webp",
+  "id": 5011046,
+  "name": "Happy End: Summer Edition",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Extends all self buffs by 1 turn after using Honest Thrust if the enemy's HP is 50% or below."
+  ],
+  "description": "A wooden doll that nurtured childhood dreams as a playtime companion.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CHILDREN_HERO.webp",
+  "id": 5011010,
+  "name": "Hero of the Children",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Triggers Obituary on the enemy with the lowest current HP ratio after using Condolence or Encoffin. Reduces the cooldown of Condolence by 1 turn and restores HP if the enemy has a debuff when using Obituary. Recovery is proportional to ATK. (Heal: 30% ATK)"
+  ],
+  "description": "A stone that looks like a horse's head. That alone is enough to fetch an astonishingly high price at auctions.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_HORSE_FIGURE.webp",
+  "id": 5011008,
+  "name": "Horse-Shaped Stone Sculpture",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DEF Penetration by 10% on Critical Hit. Stacks up to 3 times."
+  ],
+  "description": "A hunting rifle belonging to a certain monster hunter who was said to be capable of taking down any and all beasts within three shots.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_OLD_RIFLE.webp",
+  "id": 5021003,
+  "name": "Hunter's Old Rifle",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DMG by 30% on attack with an Ultimate Skill if self has a buff."
+  ],
+  "description": "A magnet that is hyper in both size and magnetic force.\nIt gets messy if iron filings stick to it, so make sure to keep clean!",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_HYPER_MAGNET.webp",
+  "id": 30404,
+  "name": "Hyper Magnet",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG to all enemies proportional to self Max HP after being attacked if self has Barrier. (Chain DMG: 5% Max HP)"
+  ],
+  "description": "A flyer with blatantly scam-like wording that makes it all the more intriguing.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PRAY_INVESTMENT_FLYER.webp",
+  "id": 5011013,
+  "name": "Investment Pitch Flyer",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT Rate by 50% on attack. Increases Max Toughness by 3 when using Screw Breaker. Uses Nail Drive on the enemy after breaking Toughness. Prioritizes attacking the enemy whose Toughness is not broken."
+  ],
+  "description": "A trophy awarded by Kemet Industries to the Employee of the Year. Just looking at it inspires company loyalty.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_EMPLOYEE_TROPHY.webp",
+  "id": 5011506,
+  "name": "K.I. Outstanding Employee Trophy",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DMG by 30% on attack with a Basic Skill if the enemy has Barrier."
+  ],
+  "description": "A toy gun that fires a giant flying fist. Make sure there are no breakable objects nearby before using.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_NUCLEAR_PUNCH.webp",
+  "id": 30105,
+  "name": "Kaboom Nuclear Punch",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "description": "The Savior assigned as the Leader receives additional effects.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BREATHE_CHARCOAL.webp",
+  "id": 9000001,
+  "name": "Leader",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DEF by 5% when attacked by a Basic Skill. Stacks up to 5 times."
+  ],
+  "description": "Golden armor that shines brilliantly and looks extremely expensive.\nBeware of the glare while wearing it.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_LEGEND_ARMOR.webp",
+  "id": 30401,
+  "name": "Legendary Armor",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Umbral Echo (Undispellable) for 3 turns at the start of the first battle. Restores 15% of damage as HP if self has Umbral Echo (Undispellable) on attack."
+  ],
+  "description": "An artifact once serving as the mark of Candle Square's Master Maid, Carnelia. Known to wield the power of [Attunement], though little is known about it now.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MAID_LANTERN_CHARM.webp",
+  "id": 5011005,
+  "name": "Light of Dawn",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self SPD increases by 2% at the start of the turn. Stacks up to 5 times."
+  ],
+  "description": "A piggy bank once filled with hopes of Lisette. A nimble partner that moves forward together with its owner toward their dreams.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SHOP_GIRL_COIN_BANK.webp",
+  "id": 105023,
+  "name": "Lisette's Piggy Bank",
+  "pp_convert": 12,
+  "rewarded_in_events": [
+   150
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants 1 stack of Ignition at the start of the turn. Inflicts the enemy with 3 instances of Bleed for 1 turn, each with a 100% chance, after using Bunny Step. (Bleed DMG: 25% ATK, Bleed DMG: 25% ATK, Bleed DMG: 25% ATK)"
+  ],
+  "description": "Lucky dice that Charlotte bought off the street. Whether they actually work is unknown.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_LUCKY_WOOD_DICES.webp",
+  "id": 5011032,
+  "name": "Lucky Wooden Dice Set",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Action Gauge by 50% at the start of the first battle. Increases self Action Gauge by 50% after using Behold My Skill! or Beyond Expectations!. Reduces the enemy's Action Gauge by 50% with a 100% chance. Restores 50% of damage dealt if the enemy has a debuff upon using Eyes on Me!. (Action Gauge: 50%) (Action Gauge: 50%, Action Gauge: 50%, Action Gauge: 50%, Action Gauge: 50%)"
+  ],
+  "description": "Contains the activity log of an apprentice Observer and a theme song recorded by a self-proclaimed super genius elite.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MAGNETO_PHONE.webp",
+  "id": 5011508,
+  "name": "Magnetophone",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG to the enemy proportional to self Max HP after attacking if self HP is 50% or above. (Chain DMG: 5% Max HP)"
+  ],
+  "description": "A finely crafted floral metal brooch. Created by a renowned designer.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MAISON_BROOCH.webp",
+  "id": 5011054,
+  "name": "Maison Delize Floral Brooch",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Removes 1 debuff from self after using an Ultimate Skill."
+  ],
+  "description": "A legendary elixir said to instantly heal any wound.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_GRAND_MIRACLE_ELIXIR.webp",
+  "id": 30205,
+  "name": "Miracle Elixir",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Action Gauge by 100% upon defeating an enemy with Bunny Jackpot. (Action Gauge: 100%)"
+  ],
+  "description": "Cards misprinted with the image of a pig. Stolen when no one was looking.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DEFECTIVE_TRUMP.webp",
+  "id": 5011044,
+  "name": "Misprinted Trump Cards",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants 1 instance of Skill DMG Nullification and ATK Up for 3 turns after using Relentless Effort. Reduces the cooldown of Relentless Effort by 1 turn if HP is 50% or below after being attacked. Restores HP after using Relentless Effort if HP is 50% or below. Recovery is proportional to ATK. (Heal: 60% ATK)"
+  ],
+  "description": "A small pendant containing a portrait from the day Epindel was chosen as the future heir of House Orlan.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PRIDE_MONUMENT.webp",
+  "id": 5011030,
+  "name": "Monument of Pride",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Action Gauge by 20% and reduces the target's Action Gauge by 20% with a 100% chance after attacking. Increases self Action Gauge by 50% if self HP is 50% or below after being attacked. The effect that triggers after being attacked occurs once per battle. (Action Gauge: 20%) (Action Gauge: 20%, Action Gauge: 50%)"
+  ],
+  "description": "A hairpin shaped like the pitch-black flower known as the Mortblum. Legend says Mortblums often bloom around graves.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MORTEBLOOM_FLOWER.webp",
+  "id": 5011025,
+  "name": "Mortblum",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Barrier for 2 turns at the start of the first battle. Grants self Barrier for 1 turn and deals Chain DMG to the attacker proportional to self Max HP with a 100% chance if the attacker has a debuff after being attacked by a single-target attack. Barrier is proportional to self Max HP. Occurs once per turn after being attacked. (Barrier: 15% Max HP) (Barrier: 5% Max HP, Chain DMG: 8% Max HP)"
+  ],
+  "description": "An old, tattered notebook-style diary. Traces of use and stains remain throughout.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PRECIOUS_DIARY.webp",
+  "id": 5011501,
+  "name": "My Precious Diary",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Triggers Fast Track on the enemy on Critical Hit. Occurs once per self turn."
+  ],
+  "description": "A badge that proves one's affiliation with the Orbital Search Team. It bears several scratches.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ORBITAL_RECON.webp",
+  "id": 5011026,
+  "name": "Orbital Search Team Badge",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG to all enemies proportional to self Max HP if self has Rule of Monastir after being attacked. Extends the duration of buffs on self by 1 turn after being attacked by an enemy affected by Taunt. (Chain DMG: 8% Max HP)"
+  ],
+  "description": "A lunch box that causes ominous chemical reactions.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_OVERFLOWING_LOVE.webp",
+  "id": 5011011,
+  "name": "Overflowing Love",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants 5 stacks of Ignition at the start of the first battle. Grants self 1 stack of Ignition at the start of the turn. Deals Chain DMG for each stack of Ignition on self proportional to ATK upon using Bouquet Toss, up to 5 stacks. (Chain DMG: 50% ATK, Chain DMG: 50% ATK, Chain DMG: 50% ATK, Chain DMG: 50% ATK, Chain DMG: 50% ATK)"
+  ],
+  "description": "A custom bouquet woven from peonies and pale roses. In flower language, peonies represent shy affection.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PEONY_BOUQUET.webp",
+  "id": 5011056,
+  "name": "Peony Bouquet",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self SPD by 3% after using a Skill. Stacks up to 5 times."
+  ],
+  "description": "A toy that spins endlessly until someone stops it.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ROTATING_DEVICE.webp",
+  "id": 5023003,
+  "name": "Perpetual Rotation Device",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Toughness DMG by 2 when using Improvised Blueprints."
+  ],
+  "description": "A toolbox modified by Petra to suit her needs. Freely transformable.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PETRA_TOOLS.webp",
+  "id": 5011042,
+  "name": "Petra Tools Ver.00",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Removes 2 buffs from the enemy with a 100% chance after attacking with an Ultimate Skill. Ignores Effect RES."
+  ],
+  "description": "A ray gun that makes sounds when pressed.\nNo matter what, do not point it at people.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_LASER_GUN.webp",
+  "id": 30505,
+  "name": "Pew-Pew Ray Gun",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self 1 instance of Electric Shock (Undispellable) on attack. When Light of Truth! is triggered additionally, reduces The Culprit Is You!'s cooldown by 1 turn. The cooldown reduction effect can only occur once per turn."
+  ],
+  "description": "A stun gun Gwen carries with her. Once sparks flash from its tip, no one can resist telling the truth.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DETECTIVE_SHERIFF_CHARM.webp",
+  "id": 5011040,
+  "name": "Portable Truth Inducer",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces self DMG Taken by 15% when attacked by a Basic Skill."
+  ],
+  "description": "A large yellow duck-shaped tube. When attacked, it makes a \"quack quack\" sound and absorbs the impact.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_RUBBER_DUCK.webp",
+  "id": 30102,
+  "name": "Quack Quack Rubber Duck Tube",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Action Gauge by 30% after being attacked by a Critical Hit. (Action Gauge: 30%)"
+  ],
+  "description": "Crimson dancing shoes that move faster with every drop of blood they consume.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_RED_SHOES.webp",
+  "id": 5022003,
+  "name": "Red Shoes",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Removes 1 debuff from self at the start of the turn if self has 3 or more debuffs."
+  ],
+  "description": "A phone that must be held with both hands.\nBy dialing the emergency number, you can receive a bit of help.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_RESCUE_WALKIE_TALKIE.webp",
+  "id": 30403,
+  "name": "Rescue Walkie-Talkie",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self ATK by 3% at the start of battle. Stacks up to 5 times."
+  ],
+  "description": "A hammer labeled 100t. It looks extremely old.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_RETRO_100TON_HAMMER.webp",
+  "id": 30101,
+  "name": "Retro 100t Hammer",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self CRIT Rate by 10% after using an Ultimate Skill. Stacks up to 3 times."
+  ],
+  "description": "A skateboard equipped with thrusters.\nBe sure to wear safety gear when riding it.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_ROCKET_BOARD.webp",
+  "id": 30301,
+  "name": "Rocket Skateboard",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces the Action Gauge of the enemy with the highest Max HP by 50% after using Power of Nature. (Action Gauge: 50%)"
+  ],
+  "description": "A pouch filled with various seeds. Engraved with traditional druid patterns.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_LOLOKA_BAG.webp",
+  "id": 5011021,
+  "name": "Roroca Bundle",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Triggers Cat Tapdance after using All Units, Open Fire! or Firing Coordinates Confirmed. Restores HP after using Cat Tapdance, then deals Chain DMG to all enemies proportional to self ATK. Additionally triggers Cat Tapdance upon defeating an enemy. Recovery is proportional to damage. (Chain DMG: 50% ATK)"
+  ],
+  "description": "A self-defense measuring tool that remains reliable even in extreme environments.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_RUGGED_CALIPERS.webp",
+  "id": 5011002,
+  "name": "Rugged Calipers",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Restores self HP when using a Special Skill. Recovery is proportional to self Max HP. Occurs once every 3 turns. (Heal: 10% Max HP)"
+  ],
+  "description": "Rubber gloves for protecting your hands while you work.\nDurable and sturdy, they can be trusted at any job site.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_SAFETY_GLOVES.webp",
+  "id": 30302,
+  "name": "Safety Rubber Gloves",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces self DMG Taken by 3% after attacking and increases self DMG by 3% when attacked. Each effect stacks up to 10 times."
+  ],
+  "description": "Scales that demand an object to achieve balance.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BALANCE_SCALE.webp",
+  "id": 5063001,
+  "name": "Scales of Balance",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Removes 1 buff from the enemy with a 100% chance after attacking with a Special Skill. Ignores Effect RES."
+  ],
+  "description": "An eraser used to undo mistakes.\nIf you borrow someone else's eraser, be mindful of the direction you erase in.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_MAGIC_ERASER.webp",
+  "id": 30503,
+  "name": "Scrub-Scrub Eraser",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflict the enemy with 2 stacks of Poison for 2 turns with a 100% and 50% chance, respectively, after using I Trust You!. Poison DMG is proportional to self Max HP. (Poison DMG: 5% Max HP) (Poison DMG: 5% Max HP)"
+  ],
+  "description": "A handmade doll pillow made by Serpang. Indistinguishable from Toto.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DREAM_NIGHTMARE_EX.webp",
+  "id": 5011019,
+  "name": "Serpang Dream Nightmare EX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Waterproof Sunscreen for 2 turns at the start of the first battle. Uses Summer Temptation on the attacker after being attacked. Occurs once every 3 turns."
+  ],
+  "description": "Sunglasses that protect your eyes from the blazing sun. A favorite among gamblers to hide where they're looking.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SUMMER_ORACLE_CHARM.webp",
+  "id": 5011045,
+  "name": "Shady Sunglasses",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self 2 stacks of Chill at the start of the turn. Increases self Toughness DMG by 1 upon using Evil Begets Evil. After an ally breaks the enemy's Toughness, triggers The Magic Bullet on the enemy with the lowest current HP percentage. Effects that trigger after the enemy's Toughness Break can only occur once every 3 turns."
+  ],
+  "description": "A candy case Professor M always carries. One corner is slightly dented.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DETECTIVE_PROFESSOR_CHARM.webp",
+  "id": 5011039,
+  "name": "Silver Candy Tin",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Barrier for 1 turn after using a Basic Skill. Barrier is proportional to self ATK. (Barrier: 15% ATK)"
+  ],
+  "description": "An old doll that saved a young friend at every moment of crisis.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_FRIEND.webp",
+  "id": 5061001,
+  "name": "Soft Plush Doll Friend",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants an extra turn after using Turn-Down Service."
+  ],
+  "description": "A high-end handheld sprayer made with the latest technology. The spray is even and widely dispersed.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_GLITTER_SPLAYER.webp",
+  "id": 5011009,
+  "name": "Sparkling Handheld Sprayer No. 9",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect RES by 15% at the start of the first battle."
+  ],
+  "description": "A special hot springs membership pass from Kalaid. It can only be obtained with a recommendation by an honorary member.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_KALRAID_SPA_MEMEBERSHIP_VIP_CARD.webp",
+  "id": 105032,
+  "name": "Special Hot Springs Membership",
+  "pp_convert": 12,
+  "rewarded_in_events": [
+   1253
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT Rate by 50% on attack if self has Bright Moon (Undispellable). Restores HP if self has Clear Wind (Undispellable) after being attacked. Recovery is proportional to ATK. (Heal: 30% ATK)"
+  ],
+  "description": "A tonic made from medicinal herbs of the Eastern Continent. Though packaged, it emits a foul odor.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SPECIAL_TONIC.webp",
+  "id": 5011016,
+  "name": "Special Tonic",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces the enemy's Action Gauge by 30% with a 50% chance after attacking. Deals Chain DMG proportional to self Max HP with a 100% chance. Inflicts all enemies with ATK Down if self Toughness is broken after being attacked. Ignores Effect RES. (Action Gauge: 30%) (Chain DMG: 10% Max HP)"
+  ],
+  "description": "A specially commissioned hairpin crafted for the most sacred promise of all. Crafted through donations from every member of the Monastir Knights.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ELEGANT_TIARA.webp",
+  "id": 5011055,
+  "name": "Spring Bride Hairpin",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces self DMG Taken by 20% when attacked by an attack that targets all."
+  ],
+  "description": "A rubber ball with great elasticity.\nIts unpredictable bouncing is part of its charm.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_BOUNCY_BALL.webp",
+  "id": 30502,
+  "name": "Squishy Bouncy Ball",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Action Gauge by 50% and increases CRIT Rate by 50% when using the next Skill if Critical Hit did not trigger after attacking. Grants an extra turn on Critical Hit. (Action Gauge: 50%)"
+  ],
+  "description": "A fairy tale book that neatly organizes the story of the Star Savior for easy reading.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STARGAZER_TRIP.webp",
+  "id": 5011001,
+  "name": "Star Guardian Journey",
+  "pp_convert": 12,
+  "rewarded_in_events": [
+   1
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "If self has no debuffs on attack, increases self CRIT Rate and CRIT DMG by 50%. Restores HP after being attacked by a debuffed enemy. Recovery is proportional to self ATK. (Heal: 20% ATK)"
+  ],
+  "description": "A pair of earrings worn by Amora. A symbol of the head of House Stranis, they are said to bestow tremendous power upon whoever possesses them.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STRANISEARL_ROSEBLADE.webp",
+  "id": 5011058,
+  "name": "Starlight Earrings",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect Hit and Effect RES by 5% when using an Ultimate Skill. Stacks up to 5 times."
+  ],
+  "description": "A starlight meritorious service badge of Monastir. Awarded to knights who have achieved the greatest feats in battle.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MEDAL_MONASTIR_STAR_LIGHT.webp",
+  "id": 105029,
+  "name": "Starlight Merit Medal",
+  "pp_convert": 12,
+  "rewarded_in_events": [
+   833,
+   843,
+   853
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals 100% increased damage and resets the cooldown of Winterborne Quartet on using a Skill if the enemy has Freeze. Grants an extra turn if the enemy has Freeze after using Heaven Forbids Evil, Justice Strikes."
+  ],
+  "description": "A prop used by the first generation of the Stellar Rangers.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STELLA_MASK.webp",
+  "id": 5011027,
+  "name": "Stellar Rangers Mask",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect Hit by 5% after attacking. Stacks up to 3 times."
+  ],
+  "description": "A collaboration between the Street Bakers and the Boss Seal series. An ultra-rare item of which only one was ever produced.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MASCOT_FIRST_EDITION.webp",
+  "id": 105026,
+  "name": "Street Bakers Merch Ⅲ",
+  "pp_convert": 12,
+  "rewarded_in_events": [
+   821,
+   822
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self an extra turn after using Let Us Pray Together."
+  ],
+  "description": "A companion that stays by your side when reading theology texts late at night. It may carry a dignified nickname.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STUDY_HELPER.webp",
+  "id": 5011024,
+  "name": "Study Assistant",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Max Toughness by 1 at the start of the first battle."
+  ],
+  "description": "A cape that flutters even in the absence of wind.\nWearing it somehow makes you unwilling to show weakness.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_STYLISH_CAPE.webp",
+  "id": 30303,
+  "name": "Stylish Cape",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Immunity for 1 turn after using an Ultimate Skill."
+  ],
+  "description": "A hat made by spinning soft, fluffy wool.\nIt'll keep you warm even in the dead of winter.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_FLUFFY_SHEEP_HAT.webp",
+  "id": 30405,
+  "name": "Super Duper Fluffy Sheep Hat",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Removes all debuffs from the ally with the lowest current HP percentage after using a non-attack Skill."
+  ],
+  "description": "A shield made of solid ice. With some luck, it might deflect enemy attacks.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_SLAM_ICE_SHIELD.webp",
+  "id": 30203,
+  "name": "Super Sturdy Ice Shield",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces the enemy's Action Gauge by 50% after using a Skill. Extends all of the enemy's debuffs by 1 turn with a 100% chance and deals Chain DMG to all enemies proportional to self ATK after using Touch of the Void or Void Within the Tome. (Action Gauge: 50%) (Chain DMG: 100% ATK, Chain DMG: 100% ATK)"
+  ],
+  "description": "A suspicious vial with unknown contents, affixed with a label depicting a skull.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SUSPICIOUS_VIAL.webp",
+  "id": 5011034,
+  "name": "Suspicious Vial",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants 3 instances of Skill DMG Nullification at the start of the first battle. Deals 10% increased damage for each debuff on the enemy when using Pulse Revolver. Stacks up to 5 times."
+  ],
+  "description": "A belt long worn by its owner. It strengthens resolve while recalling the time that has passed.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MINA_BELT.webp",
+  "id": 5013002,
+  "name": "Tactical Holster",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DMG by 20% on attack if self has a buff."
+  ],
+  "description": "A safety belt manufactured in Termir. Boasts durability strong enough to hold one ton of steel rebar.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAFETY_BELT.webp",
+  "id": 5011051,
+  "name": "Termir Safety Belt",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts the enemy with Please Stop Resisting! if self has a buff after being attacked. This effect occurs once per turn. Prioritizes attacking the most recent attacker. Deals Chain DMG proportional to self Max HP to the enemy with a 100% chance after attacking. (Chain DMG: 2% Max HP)"
+  ],
+  "description": "The first standard-issue handcuffs Annah received after joining the Town Guard. Engraved with the three principles of arrest so she can read wrongdoers their rights.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TOWNGUARD_HANDCUFFS.webp",
+  "id": 5011502,
+  "name": "Town Guard Standard Handcuffs",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals 1 more Toughness DMG with a 50% chance on attack with a Basic Skill."
+  ],
+  "description": "A turtle-shaped backpack.\nWearing it helps cultivate patience.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_TURTLE_BACKPACK.webp",
+  "id": 30402,
+  "name": "Turtle Backpack",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Action Gauge by 15% after using an Ultimate Skill. (Action Gauge: 15%)"
+  ],
+  "description": "A fidget spinner that spins round and round.\nBe careful, as it spins quite fast.",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_ULTRA_SPINNER.webp",
+  "id": 30501,
+  "name": "Whirly Ultra Spinner",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Max Toughness by 2 at the start of the first battle."
+  ],
+  "description": "It says, \"Caution: Do not drink more than two in a row.\"",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_TINGLING_RED_CAN.webp",
+  "id": 30305,
+  "name": "Zippy Zappy Red Can",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Barrier for 2 turns after using an Ultimate Skill. Barrier is proportional to self ATK. (Barrier: 50% ATK)"
+  ],
+  "description": "A stylish safety helmet made for children who feel the need for speed.\nEven so, speeding is dangerous!",
+  "grade": "Legendary",
+  "icon": "/images/jitems/CUBE_ITEM_RACER_HELMET.webp",
+  "id": 30504,
+  "name": "Zoom-Zoom Safety Helmet",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "description": "An energy drink favored by Aganon's explorers. It is no exaggeration to call it the power source of Chicxulub Hall.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_202002.webp",
+  "id": 2100038,
+  "is_food": true,
+  "name": "Energy Drink",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Potential Points",
+    "value": 20
+   },
+   {
+    "stat": "Endurance",
+    "value": 5
+   }
+  ]
+ },
+ {
+  "description": "A welcome drink provided at Candle Square in Flora. Sadly, if you are not a VIP, you have to pay for it.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_COCA.webp",
+  "id": 2100039,
+  "is_food": true,
+  "name": "Flora Sparkling Water",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Potential Points",
+    "value": 20
+   },
+   {
+    "stat": "Focus",
+    "value": 10
+   }
+  ]
+ },
+ {
+  "description": "A book that records special training methods that surpass Endurance training. It is said to be selling briskly at bookstores across the continent.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_ENDURANCE.webp",
+  "id": 2100059,
+  "is_food": true,
+  "name": "Forbidden Tome of Endurance Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Endurance EXP",
+    "value": 2500
+   }
+  ]
+ },
+ {
+  "description": "A book that records special training methods that surpass Focus training. It is said to be selling briskly at bookstores across the continent.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_FOCUS.webp",
+  "id": 2100060,
+  "is_food": true,
+  "name": "Forbidden Tome of Focus Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Focus EXP",
+    "value": 2500
+   }
+  ]
+ },
+ {
+  "description": "A book that records special training methods that surpass Protection training. It is said to be selling briskly at bookstores across the continent.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_PROTECT.webp",
+  "id": 2100061,
+  "is_food": true,
+  "name": "Forbidden Tome of Protection Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Protection EXP",
+    "value": 2500
+   }
+  ]
+ },
+ {
+  "description": "A book that records special training methods that surpass Strength training. It is said to be selling briskly at bookstores across the continent.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_POWER.webp",
+  "id": 2100057,
+  "is_food": true,
+  "name": "Forbidden Tome of Strength Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Strength EXP",
+    "value": 2500
+   }
+  ]
+ },
+ {
+  "description": "A book that records special training methods that surpass Vitality training. It is said to be selling briskly at bookstores across the continent.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_HEALTH.webp",
+  "id": 2100058,
+  "is_food": true,
+  "name": "Forbidden Tome of Vitality Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality EXP",
+    "value": 2500
+   }
+  ]
+ },
+ {
+  "description": "A welcome drink provided at Candle Square in Kalaid. Sadly, if you are not a VIP, you have to pay for it.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_GREEN_TEA.webp",
+  "id": 2100040,
+  "is_food": true,
+  "name": "Kalaid Green Tea",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Potential Points",
+    "value": 20
+   },
+   {
+    "stat": "Protection",
+    "value": 10
+   }
+  ]
+ },
+ {
+  "description": "A popular drink at Cafe Strega. It may greatly increase Protection efficiency while training.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STREGA_JUICE_7.webp",
+  "id": 2100050,
+  "is_food": true,
+  "name": "Miracle Citrus",
+  "quick_use": true,
+  "shop": {
+   "cost": 80,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "buff_name": "Tangy Aftertaste",
+    "stat": "Add Buff",
+    "value": 1002
+   }
+  ]
+ },
+ {
+  "description": "A popular drink at Cafe Strega. It may greatly increase Endurance efficiency while training.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STREGA_JUICE_2.webp",
+  "id": 2100051,
+  "is_food": true,
+  "name": "Pumpkin Night",
+  "quick_use": true,
+  "shop": {
+   "cost": 80,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "buff_name": "Rich Aftertaste",
+    "stat": "Add Buff",
+    "value": 1003
+   }
+  ]
+ },
+ {
+  "description": "A beef pasta meal served with a sweet drink. Available only at dining events, making it hard to enjoy outside of special occasions.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BEEF_PASTA_3.webp",
+  "id": 2100003,
+  "is_food": true,
+  "name": "Royal Beef Pasta Meal",
+  "quick_use": true,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Strength",
+    "value": 36
+   }
+  ]
+ },
+ {
+  "description": "A cream pasta meal served with a sweet drink. Available only at dining events, making it hard to enjoy outside of special occasions.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CREAM_PASTA_3.webp",
+  "id": 2100006,
+  "is_food": true,
+  "name": "Royal Cream Pasta Meal",
+  "quick_use": true,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality",
+    "value": 36
+   }
+  ]
+ },
+ {
+  "description": "A fried meat meal served with a refreshing drink. Available only at dining events, making it hard to enjoy outside of special occasions.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MEAT_FRIED_3.webp",
+  "id": 2100012,
+  "is_food": true,
+  "name": "Royal Fried Meat Meal",
+  "quick_use": true,
+  "shop": {
+   "cost": 80,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Endurance",
+    "value": 36
+   }
+  ]
+ },
+ {
+  "description": "A fried vegetable meal served with a refreshing drink. Available only at dining events, making it hard to enjoy outside of special occasions.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VEGETABLE_FRIED_3.webp",
+  "id": 2100009,
+  "is_food": true,
+  "name": "Royal Fried Vegetable Meal",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Focus",
+    "value": 16
+   },
+   {
+    "stat": "Protection",
+    "value": 16
+   }
+  ]
+ },
+ {
+  "description": "A fruit salad meal served with a health drink. Available only at dining events, making it hard to enjoy outside of special occasions.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_FRUIT_SALAD_3.webp",
+  "id": 2100015,
+  "is_food": true,
+  "name": "Royal Fruit Salad Meal",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Focus",
+    "value": 36
+   }
+  ]
+ },
+ {
+  "description": "A vegetable salad meal served with a health drink. Available only at dining events, making it hard to enjoy outside of special occasions.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VEGETABLE_SALAD_3.webp",
+  "id": 2100018,
+  "is_food": true,
+  "name": "Royal Vegetable Salad Meal",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Protection",
+    "value": 36
+   }
+  ]
+ },
+ {
+  "description": "A special apple juice made from Kalaid's apples. A popular drink that balances both taste and health.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_APPLE_JUICE.webp",
+  "id": 2100030,
+  "is_food": true,
+  "name": "Special Apple Juice",
+  "quick_use": true,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality",
+    "value": 25
+   }
+  ]
+ },
+ {
+  "description": "A special orange juice made from Flora's oranges. A popular drink that balances both taste and health.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ORANGE_JUICE.webp",
+  "id": 2100027,
+  "is_food": true,
+  "name": "Special Orange Juice",
+  "quick_use": true,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Strength",
+    "value": 25
+   }
+  ]
+ },
+ {
+  "description": "A special parfait that tourists visiting Flora should try at least once. Enjoyed alongside a dip in the ocean, its sweetness is doubled.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PARFAIT.webp",
+  "id": 2100032,
+  "is_food": true,
+  "name": "Special Parfait",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Stamina",
+    "value": 15
+   },
+   {
+    "stat": "Strength",
+    "value": 15
+   }
+  ]
+ },
+ {
+  "description": "A special takoyaki that tourists visiting Kalaid should try at least once. Paired with a warm hot spring bath, it is a perfect combination.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TAKOYAKI.webp",
+  "id": 2100034,
+  "is_food": true,
+  "name": "Special Takoyaki",
+  "quick_use": true,
+  "shop": {
+   "cost": 60,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Stamina",
+    "value": 15
+   },
+   {
+    "stat": "Vitality",
+    "value": 15
+   }
+  ]
+ },
+ {
+  "description": "A popular drink at Cafe Strega. It may greatly increase Focus efficiency while training.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STREGA_JUICE_3.webp",
+  "id": 2100049,
+  "is_food": true,
+  "name": "Vampire Smoothie",
+  "quick_use": true,
+  "shop": {
+   "cost": 80,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "buff_name": "Sweet Aftertaste",
+    "stat": "Add Buff",
+    "value": 1001
+   }
+  ]
+ },
+ {
+  "description": "A soup rumored to have been enjoyed by a dreadful witch. In reality, it just tastes like ordinary soup.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_KARMEN_SPECIAL_SOUP.webp",
+  "id": 2100036,
+  "is_food": true,
+  "name": "Witch's Soup",
+  "quick_use": true,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Consumable"
+ },
+ {
+  "description": "An OOPArt obtained by chance. Its glow changes depending on the warmth, humidity, and angle of the surrounding environment. It is said that mysterious effects may emerge depending on how it is processed. Could there be someone who can process it?",
+  "event_usable": true,
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BREATHE_CHARCOAL.webp",
+  "id": 2100097,
+  "name": "Estellite Ore",
+  "subtype": "Special"
+ },
+ {
+  "battle_effects": [
+   "Increases Max HP by 8% at the start of the first battle."
+  ],
+  "description": "The armor of an ancient Savior whose name has been lost. Too old for practical use, but simply possessing them seems to grant some of the relics' power. This effect may be amplified by resonating with certain relics.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_ARMOR.webp",
+  "id": 5370002,
+  "name": "Ancient Savior's Armor BX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases SPD by 8 at the start of the first battle."
+  ],
+  "description": "The boots of an ancient Savior whose name has been lost. Too old for practical use, but simply possessing them seems to grant some of the relics' power. This effect may be amplified by resonating with certain relics.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_SHOES.webp",
+  "id": 5370004,
+  "name": "Ancient Savior's Boots DX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Max Toughness by 3 at the start of the first battle."
+  ],
+  "description": "The bracers of an ancient Savior whose name has been lost. Too old to be used in practice, but simply possessing them seems to inherit a portion of the power contained within the relic.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_GUARD.webp",
+  "id": 5370009,
+  "name": "Ancient Savior's Bracers XX3",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 16% at the start of the first battle."
+  ],
+  "description": "The cloak of an ancient Savior whose name has been lost. Too old for practical use, but simply possessing them seems to grant some of the relics' power. This effect may be amplified by resonating with certain relics.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_CLOAK.webp",
+  "id": 5370008,
+  "name": "Ancient Savior's Cloak HX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Counterattack Chance by 20% at the start of the first battle."
+  ],
+  "description": "The gauntlets of an ancient Savior whose name has been lost. Too old to be used in practice, but simply possessing them seems to inherit a portion of the power contained within the relic.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_GAUNTLET.webp",
+  "id": 5370010,
+  "name": "Ancient Savior's Gauntlets XX1",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect Hit by 16% at the start of the first battle."
+  ],
+  "description": "The glasses of an ancient Savior whose name has been lost. Too old for practical use, but simply possessing them seems to grant some of the relics' power. This effect may be amplified by resonating with certain relics.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_GLASSES.webp",
+  "id": 5370007,
+  "name": "Ancient Savior's Glasses GX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases ATK by 8% at the start of the first battle."
+  ],
+  "description": "The gloves of an ancient Savior whose name has been lost. Too old for practical use, but simply possessing them seems to grant some of the relics' power. This effect may be amplified by resonating with certain relics.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_GLOVE.webp",
+  "id": 5370001,
+  "name": "Ancient Savior's Gloves AX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT Rate by 10% at the start of the first battle."
+  ],
+  "description": "The hat of an ancient Savior whose name has been lost. Too old for practical use, but simply possessing them seems to grant some of the relics' power. This effect may be amplified by resonating with certain relics.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_HAT.webp",
+  "id": 5370005,
+  "name": "Ancient Savior's Hat EX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect Hit and Effect RES by 4% at the start of the first battle.",
+   "Increases self Effect Hit and Effect RES by 4% at the start of the first battle."
+  ],
+  "description": "A mask belonging to an ancient Savior whose name has been lost to time. Too old for practical use, it nonetheless seems capable of passing on some of the power within simply by being carried.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_MASK.webp",
+  "id": 5370012,
+  "name": "Ancient Savior's Mask IX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT DMG by 10% at the start of the first battle."
+  ],
+  "description": "The necklace of an ancient Savior whose name has been lost. Too old for practical use, but simply possessing them seems to grant some of the relics' power. This effect may be amplified by resonating with certain relics.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_NECKLACE.webp",
+  "id": 5370006,
+  "name": "Ancient Savior's Necklace FX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases DEF by 12% at the start of the first battle."
+  ],
+  "description": "The pants of an ancient Savior whose name has been lost. Too old for practical use, but simply possessing them seems to grant some of the relics' power. This effect may be amplified by resonating with certain relics.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_PANTS.webp",
+  "id": 5370003,
+  "name": "Ancient Savior's Pants CX",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Lifesteal by 15% at the start of the first battle."
+  ],
+  "description": "The totem of an ancient Savior whose name has been lost. Too old to be used in practice, but simply possessing it seems to inherit a portion of the power contained within the relic.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_TOTEM.webp",
+  "id": 5370011,
+  "name": "Ancient Savior's Totem XX2",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self SPD increases by 5% at the start of the first battle."
+  ],
+  "description": "An antique key found in downtown NOA. Small, but heavier than expected.",
+  "event_usable": true,
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_OLD_FAHIONED_KEY.webp",
+  "id": 105022,
+  "name": "Antique Key",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   11041,
+   11042
+  ],
+  "subtype": "Charm",
+  "used_in_events": [
+   150
+  ]
+ },
+ {
+  "battle_effects": [
+   "Increases self ATK and Effect Hit by 10% at the start of the first battle."
+  ],
+  "description": "The second place certificate of Flora's beach volleyball tournament. There's no extra prize for being a runner-up, but that's no reason to be discouraged. Second place is still an achievement.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BEACH_VOLLEYBALL_SECOND_CERTIFICATE.webp",
+  "id": 105031,
+  "name": "Beach Volleyball Runner-Up Prize",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   1144
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DMG by 30% on attack with an Ultimate Skill if self has a buff."
+  ],
+  "description": "The symbol of a family once feared and respected by all.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_BEAST_FANG.webp",
+  "id": 5400008,
+  "name": "Black Beast Fang",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces self DMG Taken by 15% when attacked by a Basic Skill."
+  ],
+  "description": "A poisonous mushroom that's inedible, but still has its uses.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_BLACK_MUSHROOM.webp",
+  "id": 5400002,
+  "name": "Blackbell Mushroom",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Gains 2 additional Nova Force after using an Ultimate Skill. Occurs once per battle."
+  ],
+  "description": "A coupon usable at Cafe Strega. A perfect choice for moments when you need a sweet break.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STREGA_COUPON.webp",
+  "id": 105016,
+  "name": "Cafe Strega Coupon",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   10510,
+   10520,
+   10530
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self SPD by 3% after using a Skill. Stacks up to 5 times."
+  ],
+  "description": "An intricately crafted mechanical bird. Its key can only be wound in a special way.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_CLOCKWORK_BIRD.webp",
+  "id": 5400017,
+  "name": "Clockwork Bird",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Basic Skill deals 15% increased damage and has 15% increased Lifesteal."
+  ],
+  "description": "A water bottle that fills itself with purified water when kept closed. Found beside the body of an explorer who vanished while wandering uncharted lands.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MAGIC_BOTTLE.webp",
+  "id": 5064003,
+  "name": "Cozy Oasis",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Extends debuffs by 1 turn with a 50% chance at the start of the turn. Takes 20% reduced damage and deals 20% increased damage if self has a debuff."
+  ],
+  "description": "Originally used for prayer rituals, this censer now emits an ominous odor that lingers in the air.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CURSED_CENSER.webp",
+  "id": 5064012,
+  "name": "Cursed Censer",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals 10% increased damage on attack after Turn 15."
+  ],
+  "description": "A strange club that grows thorns each time it is swung.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_THORN_CLUB.webp",
+  "id": 5021002,
+  "name": "Cursed Thorn Club",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts all enemies with Bleed for 1 turn with a 100% chance on Critical Hit. Bleed DMG is proportional to self ATK. (Bleed DMG: 25% ATK)"
+  ],
+  "description": "A chilling item said to be imbued with the delusions of a certain dancer.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DANCING_SAW.webp",
+  "id": 5061005,
+  "name": "Dancing Sawblade",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces self Special Skill cooldown by 1 turn after using a Basic Skill. Occurs once every 3 turns."
+  ],
+  "description": "Boots that traveled across the continent with the most unfortunate debtor in the world.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CREDITOR_STRATEGY.webp",
+  "id": 5063005,
+  "name": "Debtor's Strategy",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self ATK Up for 2 turns at the start of the first battle."
+  ],
+  "description": "A sharply honed glass sword. Durability is not guaranteed.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_GLASS_SWORD.webp",
+  "id": 5021001,
+  "name": "Decorative Glass Sword",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG to all enemies proportional to self Max HP after using a non-attack Skill. (Chain DMG: 5% Max HP)"
+  ],
+  "description": "A ritual instrument said to have shaken the clouds and summoned rain and thunder in the distant past.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOUBLE_HORN.webp",
+  "id": 5062003,
+  "name": "Double Horn",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DEF by 3% after using a Skill. Stacks up to 5 times."
+  ],
+  "description": "A harp said to wrap vines around the performer to protect them while it is played.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DRUID_HARP.webp",
+  "id": 5022001,
+  "name": "Druid's Harp",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Resets the self Ultimate Skill cooldown upon defeating an enemy. Occurs once every 3 turns."
+  ],
+  "description": "An antique pistol said to have been used by an assassin. It carries a legend of overturning history with a single bullet.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRIPLE_BULLET.webp",
+  "id": 5064008,
+  "name": "Early-Rising Bird",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG proportional to self Max HP to the target with the lowest current HP percentage after attacking with a Basic Skill. (Chain DMG: 5% Max HP)"
+  ],
+  "description": "The staff of a wandering pilgrim who healed the sick.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ECHO_BLESS.webp",
+  "id": 5062002,
+  "name": "Echoing Blessing",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Barrier for 2 turns after using an Ultimate Skill. Barrier is proportional to self ATK. (Barrier: 50% ATK)"
+  ],
+  "description": "A monocle made with magical engineering. It stays in place despite having no frame.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_MONOCULAR.webp",
+  "id": 5400010,
+  "name": "Elegant Monocle",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Triggers Basic Skill on the enemy with the highest Action Gauge 2 times if HP is 25% or below after being attacked. Occurs once per battle."
+  ],
+  "description": "A toy that only starts moving frantically as a last resort in the most desperate of situations.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ESCAPE_TOY.webp",
+  "id": 5064016,
+  "name": "Emergency Escape Toy",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts all enemies with Poison for 2 turns with a 100% chance after using a non-attack Skill. Deals Chain DMG to the enemy proportional to self Max HP after using a Basic Skill if the enemy has Poison. Poison DMG is proportional to self Max HP. (Poison DMG: 5% Max HP) (Chain DMG: 5% Max HP)"
+  ],
+  "description": "A birdcage of a bird that once warned of toxic gas. You can still hear a faint chirping.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_EMPTY_CAGE.webp",
+  "id": 5062005,
+  "name": "Empty Birdcage",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Random Buff for 2 turns at the start of battle. Barrier is proportional to self Max HP. (Random Buffs: Barrier / Effect Hit Up / Effect RES Up) (Barrier: 5% Max HP)"
+  ],
+  "description": "A bottle made by alchemists to store special solutions. Negligent storage could lead to accidents.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_EMPTY_BOTTLE.webp",
+  "id": 105042,
+  "name": "Empty Vial",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   16171
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Effect Hit Up for 2 turns at the start of the first battle."
+  ],
+  "description": "An invention created by a genius scientist. Helps with short-term focus enhancement.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_WIDE_EYED.webp",
+  "id": 5023001,
+  "name": "Eyes Wide Open",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Removes 1 debuff and increases Action Gauge by 20% if Toughness is broken when attacked. (Action Gauge: 20%)"
+  ],
+  "description": "A small bottle preserving a flickering ember from a bonfire.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_EMBER_BOTTLE.webp",
+  "id": 5064013,
+  "name": "Flickering Glass Bottle",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants Barrier for 3 turns at the start of battle. Barrier is proportional to ATK. Inflicts all enemies with SPD Down for 2 turns with a 100% chance when attacked if self has Barrier. Occurs once every 2 turns. (Barrier: 100% ATK)"
+  ],
+  "description": "Despite being beset by the freezing cold, a certain noble refused to let go of this blue pendant until the end.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_FROZEN_PENDANT.webp",
+  "id": 5064009,
+  "name": "Frozen Pendant",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Triggers Basic Skill on the attacker with a 25% chance after being attacked. Inflicts all enemies with ATK Down for 2 turns with a 100% chance after using a non-attack Skill."
+  ],
+  "description": "A cloak said to have kept its wearer alive through countless pursuits.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_FUGITIVE_CLOAK.webp",
+  "id": 5064010,
+  "name": "Fugitive's Cloak",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self CRIT Rate increases by 5% at the start of the turn. Stacks up to 5 times."
+  ],
+  "description": "A gold meritorious service badge of Monastir. Awarded to knights who have achieved outstanding feats in battle.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MEDAL_MONASTIR_GOLD.webp",
+  "id": 105028,
+  "name": "Gold Merit Medal",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   832,
+   842,
+   852
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DEF Penetration by 5% on Critical Hit. Stacks up to 3 times."
+  ],
+  "description": "Detective H's case notes read like a thrilling mystery novel.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_H_SCHEDULER.webp",
+  "id": 5400016,
+  "name": "H's Case Notes",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self DMG Taken decreases by 1% at the start of the turn. Stacks up to 5 times."
+  ],
+  "description": "A consumable that generates heat by inducing oxidation of iron powder. Highly recommended for those traveling to cold regions.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PORTABLE_HEATPACK.webp",
+  "id": 105038,
+  "name": "Hand Warmer",
+  "pp_convert": 8,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Charm",
+  "used_in_events": [
+   16141
+  ]
+ },
+ {
+  "battle_effects": [
+   "Grants self CRIT Rate Up for 1 turn after being attacked by a Critical Hit."
+  ],
+  "description": "The relic of a sage said to have never lost a debate. It draws out empathy even from opponents with hearts of ice.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_EXPLORE_CROWBAR.webp",
+  "id": 5064002,
+  "name": "Hand of the Sage",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self ATK by 2% after each Special Skill attack. Stacks up to 15 times."
+  ],
+  "description": "A fully automatic water sprayer modified by Smile. It is absolutely not a toy water gun. This time, it even comes in an adorable coral color.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SUMMER_SMILE_CHARM_EVENT_CUBE.webp",
+  "id": 5065002,
+  "name": "Happy End: Coral Edition",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self ATK by 6% at the start of battle. Stacks up to 5 times."
+  ],
+  "description": "A battery worth taking on any outing. Useful for cooking, lighting, and even getting the truth out of someone.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_HIGH_CAPACITY_BATTERY.webp",
+  "id": 5400001,
+  "name": "High-Capacity Battery",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "At the start of battle, reduces all of self's skill cooldowns by 1 turn."
+  ],
+  "description": "Some claim it contains a Potion of Courage officially approved by NOA.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_HIP_FLASK.webp",
+  "id": 5400018,
+  "name": "Hip Flask",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Max HP and Effect RES by 10% at the start of the first battle."
+  ],
+  "description": "A commemorative towel from Kalaid's hot springs. A luxurious 80-count towel that feels like silk.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_KALRAID_SPA_LUXURY_TOWEL.webp",
+  "id": 105033,
+  "name": "Hot Springs Souvenir Towel",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   1254
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Triggers a Basic Skill against a random enemy after using a Skill. Occurs once every 3 turns."
+  ],
+  "description": "The mask of a clown who never learned how to smile in life. Simply looking at it causes uncontrollable laughter.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PIERROT_MASK.webp",
+  "id": 5064005,
+  "name": "Hungry Clown Mask",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts the enemy with the highest Max HP with Poison for 3 turns with a 100% chance after using a non-attack Ultimate Skill. Deals Chain DMG to all enemies afflicted with Poison that is proportional to self Max HP after using a Basic Skill. Poison DMG is proportional to self Max HP. (Poison DMG: 5% Max HP) (Chain DMG: 5% Max HP)"
+  ],
+  "description": "The hilt of a sword owned by a knight who was frail and sickly, yet protected their lord to the very end.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_KNIGHT_GLORY.webp",
+  "id": 5062007,
+  "name": "Knight's Glory",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Barrier for 3 turns after being attacked if self Toughness is broken. Barrier is proportional to self ATK. (Barrier: 15% ATK)"
+  ],
+  "description": "The shield of a knight who was frail and sickly, yet protected their lord to the very end.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_KNIGHT_HONOR.webp",
+  "id": 5061004,
+  "name": "Knight's Honor",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Uses a Special Skill on an enemy after attacking with a Special Skill. Occurs once per turn. Prioritizes attacking the most recently attacked enemy."
+  ],
+  "description": "Sunglasses are a must for protecting your eyes. Especially for gamblers, where letting someone read your eyes can lead to defeat.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SUMMER_ORACLE_CHARM_EVENT_CUBE.webp",
+  "id": 5065001,
+  "name": "Lemon Drop Sunglasses",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals 1 more Toughness DMG on attack with a Basic Skill if self has 3 or more buffs."
+  ],
+  "description": "An authentication device used by the Courier Guild. It employs a unique anti-tampering technology.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_LETTER_PRESS.webp",
+  "id": 5062008,
+  "name": "Letter Press",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self CRIT Rate increases by 3% at the start of the turn. Stacks up to 10 times."
+  ],
+  "description": "A voucher devised by Lisette to promote her branch. Holding it might allow participation in special events.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_LOTTERY_TICKET.webp",
+  "id": 105036,
+  "name": "Lisette's Lottery Ticket",
+  "pp_convert": 8,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Charm",
+  "used_in_events": [
+   11071
+  ]
+ },
+ {
+  "battle_effects": [
+   "Increases self Max HP by 30% at the start of the first battle."
+  ],
+  "description": "No one knows whether it's truly a mermaid's tear.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_MERMAID_TEAR.webp",
+  "id": 5400015,
+  "name": "Mermaid Tear",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Corroded Horn, Hard Fang, and Bloodstained Tusk after being attacked when self HP is 75%, 50%, and 25% or lower, respectively. Each HP threshold effect occurs once per battle. Increases self DMG by 5%, 10%, and 15% with Corroded Horn, Hard Fang, and Bloodstained Tusk, respectively, and each effect is removed after attacking."
+  ],
+  "description": "A necklace imbued with the legend of the Great Mountain King.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CREDITOR_STRATEGY.webp",
+  "id": 5064001,
+  "name": "Mountain King's Necklace",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Current HP does not drop below 20% upon receiving damage. Occurs once per battle."
+  ],
+  "description": "Helmets worn by priests who fought alongside the people against tyranny.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_GOING_DOWN_SWINGING.webp",
+  "id": 5063002,
+  "name": "No Retreat",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "When an ally other than self is defeated, fills self Action Gauge by 100% and resets self Ultimate Skill cooldown. (Action Gauge: 100%)"
+  ],
+  "description": "Never stay alone in a room where this portrait hangs.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_NOBLEWOMAN_PORTRAIT.webp",
+  "id": 5400012,
+  "name": "Noblewoman's Portrait",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "After attacking with an Ultimate Skill, 100% chance to inflict Burn on the enemy for 2 turns. Ignores ACC, Effect RES, and Immunity. Does not trigger from skills other than single-target attacks. (Burn DMG: 20% ATK)"
+  ],
+  "description": "A pipe without its owner. Someone who misses them lights it at the same time every day.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_OLD_PIPE.webp",
+  "id": 5400013,
+  "name": "Old Pipe",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "description": "A wooden music box made long ago.\nThe box is worn, but produces a clear, gentle sound.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_WOOD_ORGEL.webp",
+  "id": 101003,
+  "name": "Old Wooden Music Box",
+  "pp_convert": 8,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Restores self HP after using a Basic Skill. Recovery is proportional to self ATK. Occurs once every 3 turns. (Heal: 30% ATK)"
+  ],
+  "description": "A cute vampiric plant said to only grow in the jungle.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ORNAMENTAL_DRAIN_PLANT.webp",
+  "id": 5061002,
+  "name": "Ornamental Vampiric Plant",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self DMG increases by 1% at the start of the turn. Stacks up to 5 times."
+  ],
+  "description": "An expensive prototype fan said to have been recently created by an alchemist. It consumes stored mana to generate a refreshing breeze.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PORTABLE_FAN.webp",
+  "id": 105037,
+  "name": "Portable Fan",
+  "pp_convert": 8,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Charm",
+  "used_in_events": [
+   16131
+  ]
+ },
+ {
+  "battle_effects": [
+   "Increases self Max Toughness by 3 at the start of the first battle."
+  ],
+  "description": "Not the purest, but the cheapest mineral material symbolizing purity in classical magic.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_ROCK_SALT.webp",
+  "id": 5400007,
+  "name": "Purified Rock Salt",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces self DMG Taken by 20% when attacked by an attack that targets all."
+  ],
+  "description": "A crudely made doll. To someone, it's a precious treasure.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_CLOTH_DOLL.webp",
+  "id": 5400009,
+  "name": "Rag Doll",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Restores self HP at the start of battle. Recovery is proportional to self Max HP. (Heal: 30% Max HP)"
+  ],
+  "description": "A favorite among investigators busy with stakeouts. Cheap and delicious.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_RED_BEAN_BREAD.webp",
+  "id": 5400003,
+  "name": "Red Bean Bun",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts all enemies with Taunt for 1 turn with a 100% chance and grants self Barrier for 1 turn after being attacked if self HP is 50% or above. Barrier is proportional to self ATK. (Barrier: 15% ATK)"
+  ],
+  "description": "A prop used in the final performance of Canopus's duel.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DUEL_GLOVE.webp",
+  "id": 5063004,
+  "name": "Resolute Dueling Gloves",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Continuous Recovery for 2 turns after being attacked if self HP is 30% or below. Recovery is proportional to self ATK. Occurs once every 5 turns."
+  ],
+  "description": "Military-grade first aid medicine used in emergencies. Be careful not to misuse.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_FIRST_AID_KIT.webp",
+  "id": 5061003,
+  "name": "Revival First Aid Kit",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self SPD increases by 1% at the start of the turn. Stacks up to 10 times."
+  ],
+  "description": "A questionnaire prepared by one of NOA's newly established departments. It was obtained through unofficial channels.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SURVEY_PAPER.webp",
+  "id": 105039,
+  "name": "Satisfaction Survey",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   16151
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self SPD increases by 5% at the start of the first battle."
+  ],
+  "description": "A poster distributed during the first week of screenings for The 13th Voidborn 13. It spoils the shocking ending of a supporting character who appeared throughout the series.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_FIRST_POSTER.webp",
+  "id": 105043,
+  "name": "Screening Bonus Poster",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   14011
+  ],
+  "subtype": "Charm",
+  "used_in_events": [
+   18081
+  ]
+ },
+ {
+  "battle_effects": [
+   "Grants self Barrier for 1 turn at the end of each turn before Turn 15. Barrier is proportional to self Max HP. (Barrier: 2% Max HP)"
+  ],
+  "description": "An automaton that starts a labor movement if operated for more than four hours. Produced in Faren.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_AUTOMATIC_DOLL.webp",
+  "id": 5022002,
+  "name": "Security Automaton",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self Effect RES Up for a certain number of turns at the start of the first battle."
+  ],
+  "description": "A statue depicting a Raider covering its eyes with both hands.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SHY_PERSON.webp",
+  "id": 5023002,
+  "name": "Shy One",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Grants self 1 instance of Skill Damage Nullification at the start of battle."
+  ],
+  "description": "A silk pouch from the eastern continent. Open it in a moment of crisis.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_SILK_POUCH.webp",
+  "id": 5400011,
+  "name": "Silken Pouch",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "From turn 15 onward, deals 20% increased damage when attacking and takes 10% less damage when attacked."
+  ],
+  "description": "It moves on its own without any power source, albeit very slowly.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_SLOW_POCKET_WATCH.webp",
+  "id": 5400020,
+  "name": "Slowpoke Pocket Watch",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals Chain DMG 3 times to random enemies proportional to self Max HP after using a Basic Skill. Occurs once every 3 turns. (Chain DMG: 5% Max HP) (Chain DMG: 5% Max HP, Chain DMG: 5% Max HP)"
+  ],
+  "description": "The coat of a sniper who performed legendary feats in war. It retains the memory of the moment when three enemies were felled by a single gunshot.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_UTILITY_JACKET.webp",
+  "id": 5064006,
+  "name": "Sniper's Coat",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   18081
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces the cooldown of all Skills by 1 turn and removes all debuffs from self at the start of the turn if self has 2 or more debuffs."
+  ],
+  "description": "A staff that clouds the mind when held.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CREDITOR_STRATEGY.webp",
+  "id": 5064007,
+  "name": "Staff of Temptation",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Max HP by 10% and reduces self ATK by 10% at the start of the first battle."
+  ],
+  "description": "A flower obtained from a statue in a remote location. Despite its simple craftsmanship, a mysterious fragrance lingers around it when held.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STATUE_FLOWER.webp",
+  "id": 105041,
+  "name": "Statue's Flower",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   16161
+  ],
+  "subtype": "Charm",
+  "used_in_events": [
+   18062
+  ]
+ },
+ {
+  "battle_effects": [
+   "Increases self ATK by 10% and reduces self Max HP by 10% at the start of the first battle."
+  ],
+  "description": "A sword obtained from a statue in a remote location. Despite its crude construction, it seems capable of cutting through anything when held.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STATUE_SWORD.webp",
+  "id": 105040,
+  "name": "Statue's Sword",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   16161
+  ],
+  "subtype": "Charm",
+  "used_in_events": [
+   18061
+  ]
+ },
+ {
+  "battle_effects": [
+   "Grants self Overcharge (Undispellable) after using a non-attack Skill. Removes Overcharge (Undispellable) from self and deals Chain DMG to the enemy proportional to self Max HP after using a Basic Skill if self has Overcharge (Undispellable). (Chain DMG: 5% Max HP)"
+  ],
+  "description": "A rare plant made of metal. It supposedly grows by consuming sound.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STEEL_FLOWER.webp",
+  "id": 5062006,
+  "name": "Steel Flower",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect RES by 5% after being attacked. Stacks up to 3 times."
+  ],
+  "description": "A collaboration between Street Bakers and the Boss Seal series. A rare item that can be obtained with a certain probability.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MASCOT_LMITED.webp",
+  "id": 105025,
+  "name": "Street Bakers Merch Ⅱ",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self ATK increases by 1% at the start of the first battle."
+  ],
+  "description": "A certificate issued to participants of the secret training from hell. As long as you have this certificate, there is no need to despair over Strength training.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_PARTICIPATION_POWER.webp",
+  "id": 105045,
+  "name": "Strength Training Certificate",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   18041
+  ],
+  "subtype": "Charm",
+  "used_in_events": [
+   18042
+  ]
+ },
+ {
+  "battle_effects": [
+   "Self ATK increases by 3% at the start of the first battle."
+  ],
+  "description": "A completion badge awarded to those who passed Strength Training. Sometimes a small word of encouragement can return as great strength.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_PLAQUE_POWER.webp",
+  "id": 105047,
+  "name": "Strength Training Completion Badge",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   18042
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Deals 10% increased damage with a Special Skill for each buff on self, up to 5 buffs."
+  ],
+  "description": "Drinking it fills you with an unknown power, but beware of the side effects.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_ALCHEMIST_WATER.webp",
+  "id": 5400019,
+  "name": "Suspicious Alchemy Potion",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self Effect Hit and Effect RES increase by 3% at the start of the turn. Stacks up to 5 times."
+  ],
+  "description": "An old chest found buried in the ground. Sealed with an extremely intricate locking mechanism, it sparks curiosity about what might be inside.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STRANGE_BOX.webp",
+  "id": 105044,
+  "name": "Suspicious Box",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   18021
+  ],
+  "subtype": "Charm",
+  "used_in_events": [
+   18022
+  ]
+ },
+ {
+  "battle_effects": [
+   "After attacking with a Basic Skill, if the enemy's HP is 30% or lower, deals Chain DMG proportional to self ATK. This effect only triggers from single-target attacks and can only trigger once per turn. (Chain DMG: 25% ATK)"
+  ],
+  "description": "A coin used for special transactions in the underworld.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_MOON_AND_DOG.webp",
+  "id": 5400004,
+  "name": "The Moon and the Stray Dog",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Restores HP and inflicts the attacker with 1 instance of Poison for 2 turns with a 100% chance when attacked if the attacker has Poison. Recovery is proportional to Max HP. Poison DMG is proportional to Max HP. (Heal: 5% Max HP) (Poison DMG: 5% Max HP)"
+  ],
+  "description": "A scale fished out of a swamp. It's unclear what sort of creature it came from.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TOXIC_SCALE.webp",
+  "id": 5064011,
+  "name": "Toxic Scale",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self CRIT Rate by 10% after using an Ultimate Skill. Stacks up to 5 times."
+  ],
+  "description": "Most are fake, but genuine ones are prized as top-grade materials in magic and countless other fields.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_UNICORN_HORN.webp",
+  "id": 5400005,
+  "name": "Unicorn Horn",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Gains 4 additional Nova Force and grants self an extra turn upon defeating an enemy."
+  ],
+  "description": "The blade of a warrior who fulfilled vengeance for their family. Its final destination was its owner's heart.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CHANCE_KATANA.webp",
+  "id": 5064004,
+  "name": "Unmissable Opportunity",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts the enemy with the highest ATK with Poison for 2 turns with a 100% chance after using a Special Skill. Increases self Action Gauge by 30% after using a Basic Skill if the enemy has Poison. Poison DMG is proportional to self Max HP. (Poison DMG: 5% Max HP) (Action Gauge: 30%)"
+  ],
+  "description": "A relic modeled after a highly poisonous frog to ward off disease.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_POISONOUS_GUARD.webp",
+  "id": 5062004,
+  "name": "Venomous Watcher",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Max HP by 1% at the start of the first battle."
+  ],
+  "description": "A certificate issued to participants of the secret training from hell. As long as you have this certificate, there is no need to despair over Vitality training.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_PARTICIPATION_HEALTH.webp",
+  "id": 105046,
+  "name": "Vitality Training Certificate",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   18041
+  ],
+  "subtype": "Charm",
+  "used_in_events": [
+   18043
+  ]
+ },
+ {
+  "battle_effects": [
+   "Increases self Max HP by 3% at the start of the first battle."
+  ],
+  "description": "A completion badge awarded to those who passed Vitality Training. Sometimes a small word of encouragement can return as great strength.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_PLAQUE_HEALTH.webp",
+  "id": 105048,
+  "name": "Vitality Training Completion Badge",
+  "pp_convert": 8,
+  "rewarded_in_events": [
+   18043
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Reduces self DMG Taken by 15% when attacked by a Critical Hit."
+  ],
+  "description": "Both durable and fluffy. Perfect as either a pillow or armor.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_WENDIGO_MANE.webp",
+  "id": 5400006,
+  "name": "Wendigo's Mane",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Gains 1 additional Nova Force after using an Ultimate Skill."
+  ],
+  "description": "A feather said to bring good luck to whoever carries it.",
+  "grade": "Unique",
+  "icon": "/images/jitems/CUBE_ITEM_WHITE_FEATHER.webp",
+  "id": 5400014,
+  "name": "White Bird Feather",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Restores HP proportional to 1% of Max HP upon receiving lethal damage. Does not get defeated. Grants self Immortality for 1 turn and resets all skill cooldowns. Occurs once per battle. Increases CRIT Rate by 30% if self has Immortality on attack."
+  ],
+  "description": "Once a contract has been affixed with a red seal, it is nigh-impossible to break.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_WOLF_CONTRACT.webp",
+  "id": 5064015,
+  "name": "Wolf's Contract",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Inflicts the enemy with 1 instance of Bleed for 1 turn with a 100% chance if enemy HP is 75% or below, 50% or below, or 25% or below, up to 3 instances for each HP condition met, after attacking. Occurs once per turn. Bleed DMG is proportional to ATK. (Bleed DMG: 25% ATK) (Bleed DMG: 25% ATK, Bleed DMG: 25% ATK)"
+  ],
+  "description": "A scythe rumored to have the uncanny ability to find any wound it's ever inflicted.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SCAR_SCYTHE.webp",
+  "id": 5064014,
+  "name": "Wound-Harvesting Scythe",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "description": "A fried dish rumored to be made from something pulled up from the abyss. In reality, it's mainly just fried shrimp.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MIX_FRIED.webp",
+  "id": 2100035,
+  "is_food": true,
+  "name": "Abyss Fried Food",
+  "quick_use": true,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Consumable"
+ },
+ {
+  "description": "A warm meat stew that melts away the fatigue of weary explorers. The more exhausting the day, the deeper its warmth sinks in.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MEAT_STEW.webp",
+  "id": 2100021,
+  "is_food": true,
+  "name": "Explorer's Meat Stew",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Strength",
+    "value": 8
+   },
+   {
+    "stat": "Endurance",
+    "value": 4
+   }
+  ]
+ },
+ {
+  "description": "A warm vegetable stew that melts away the fatigue of weary explorers. The more exhausting the day, the deeper its warmth sinks in.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VEGETABLE_SOUP.webp",
+  "id": 2100022,
+  "is_food": true,
+  "name": "Explorer's Vegetable Stew",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality",
+    "value": 8
+   },
+   {
+    "stat": "Endurance",
+    "value": 4
+   }
+  ]
+ },
+ {
+  "description": "Fresh oranges, a specialty of Flora. Thanks to the warm climate, they are high in sweetness and rich in flavor.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ORANGE.webp",
+  "id": 2100025,
+  "is_food": true,
+  "name": "Flora Orange",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Strength",
+    "value": 9
+   }
+  ]
+ },
+ {
+  "description": "Flora's watermelon, prized for its sweet taste. A bite enjoyed at the beach is refreshingly perfect.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_WATERMELON.webp",
+  "id": 2100026,
+  "is_food": true,
+  "name": "Flora Watermelon",
+  "quick_use": true,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Strength",
+    "value": 18
+   }
+  ]
+ },
+ {
+  "description": "A fluffy cake from Street Bakers. Prepared in limited daily quantities, resulting in long lines from early morning.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SOFT_CAKE.webp",
+  "id": 2100044,
+  "is_food": true,
+  "name": "Fluffy Cake",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Potential Points",
+    "value": 30
+   }
+  ]
+ },
+ {
+  "description": "Fresh milk proudly offered by Milk & More. Mornings with fresh milk feel even more special.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_FRESH_MILK.webp",
+  "id": 2100046,
+  "is_food": true,
+  "name": "Fresh Milk",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Condition",
+    "value": 2
+   }
+  ]
+ },
+ {
+  "description": "A special apple that grows only in Kalaid. Known for its refreshing and crisp flavor.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_APPLE.webp",
+  "id": 2100028,
+  "is_food": true,
+  "name": "Kalaid Apple",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality",
+    "value": 9
+   }
+  ]
+ },
+ {
+  "description": "Wild strawberries grown in the winds of Kalaid's mountain slopes. Hard to obtain, but anyone who has a taste of them will instantly recognize their value.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_STRAWBERRY.webp",
+  "id": 2100029,
+  "is_food": true,
+  "name": "Kalaid Strawberry",
+  "quick_use": true,
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality",
+    "value": 18
+   }
+  ]
+ },
+ {
+  "description": "Warm morning coffee to start your day. A good morning starts with this single cup.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_COFFEE.webp",
+  "id": 2100037,
+  "is_food": true,
+  "name": "Morning Coffee",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Potential Points",
+    "value": 20
+   }
+  ]
+ },
+ {
+  "description": "A small, refined tablet supplement. It can be chewed without water, making it easy to take anytime, anywhere.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TONIC_PILL.webp",
+  "id": 2100047,
+  "is_food": true,
+  "name": "Nutritional Supplement",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Remove Debuffs",
+    "value": 0
+   }
+  ]
+ },
+ {
+  "description": "A special beef pasta available only at high-end restaurants. Made with carefully selected ingredients and a unique recipe.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BEEF_PASTA_2.webp",
+  "id": 2100002,
+  "is_food": true,
+  "name": "Premium Beef Pasta",
+  "quick_use": true,
+  "shop": {
+   "cost": 40,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Strength",
+    "value": 12
+   }
+  ]
+ },
+ {
+  "description": "A special cream pasta available only at high-end restaurants. Made with carefully selected ingredients and a unique recipe.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CREAM_PASTA_2.webp",
+  "id": 2100005,
+  "is_food": true,
+  "name": "Premium Cream Pasta",
+  "quick_use": true,
+  "shop": {
+   "cost": 40,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality",
+    "value": 12
+   }
+  ]
+ },
+ {
+  "description": "Special fried meat served at Candle Square for dinner. Golden batter and fresh ingredients elevate their quality.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MEAT_FRIED_2.webp",
+  "id": 2100011,
+  "is_food": true,
+  "name": "Premium Fried Meat",
+  "quick_use": true,
+  "shop": {
+   "cost": 40,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Endurance",
+    "value": 12
+   }
+  ]
+ },
+ {
+  "description": "Special fried vegetables served at Candle Square for dinner. Golden batter and fresh ingredients elevate their quality.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VEGETABLE_FRIED_2.webp",
+  "id": 2100008,
+  "is_food": true,
+  "name": "Premium Fried Vegetables",
+  "quick_use": true,
+  "shop": {
+   "cost": 40,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Focus",
+    "value": 8
+   },
+   {
+    "stat": "Protection",
+    "value": 8
+   }
+  ]
+ },
+ {
+  "description": "A special fruit salad included as a part of hotel service. Famous for its carefully selected fresh ingredients and signature dressing.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_FRUIT_SALAD_2.webp",
+  "id": 2100014,
+  "is_food": true,
+  "name": "Premium Fruit Salad",
+  "quick_use": true,
+  "shop": {
+   "cost": 40,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Focus",
+    "value": 18
+   }
+  ]
+ },
+ {
+  "description": "A special vegetable salad included as a part of hotel service. Famous for its carefully selected fresh ingredients and signature dressing.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VEGETABLE_SALAD_2.webp",
+  "id": 2100017,
+  "is_food": true,
+  "name": "Premium Vegetable Salad",
+  "quick_use": true,
+  "shop": {
+   "cost": 40,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Protection",
+    "value": 18
+   }
+  ]
+ },
+ {
+  "description": "The latest manual compiling every secret needed to master Endurance training. It is said to have been published after rigorous review by the Senior Maids of Candle Square.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_ENDURANCE.webp",
+  "id": 2100054,
+  "is_food": true,
+  "name": "Secret Manual of Endurance Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Endurance EXP",
+    "value": 1000
+   }
+  ]
+ },
+ {
+  "description": "The latest manual compiling every secret needed to master Focus training. It is said to have been published after rigorous review by the Senior Maids of Candle Square.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_FOCUS.webp",
+  "id": 2100055,
+  "is_food": true,
+  "name": "Secret Manual of Focus Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Focus EXP",
+    "value": 1000
+   }
+  ]
+ },
+ {
+  "description": "The latest manual compiling every secret needed to master Protection training. It is said to have been published after rigorous review by the Senior Maids of Candle Square.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_PROTECT.webp",
+  "id": 2100056,
+  "is_food": true,
+  "name": "Secret Manual of Protection Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Protection EXP",
+    "value": 1000
+   }
+  ]
+ },
+ {
+  "description": "The latest manual compiling every secret needed to master Strength training. It is said to have been published after rigorous review by the Senior Maids of Candle Square.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_POWER.webp",
+  "id": 2100052,
+  "is_food": true,
+  "name": "Secret Manual of Strength Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Strength EXP",
+    "value": 1000
+   }
+  ]
+ },
+ {
+  "description": "The latest manual compiling every secret needed to master Vitality training. It is said to have been published after rigorous review by the Senior Maids of Candle Square.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_EXP_BOOK_HEALTH.webp",
+  "id": 2100053,
+  "is_food": true,
+  "name": "Secret Manual of Vitality Training",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality EXP",
+    "value": 1000
+   }
+  ]
+ },
+ {
+  "description": "A candy that is gaining popularity among children. Made exclusively with honey produced in Monastir.",
+  "grade": "Unique",
+  "icon": "/images/items/ICON_ITEM_NORMAL_HONEY_CANDY.webp",
+  "id": 2100024,
+  "is_food": true,
+  "name": "Special Honey Candy",
+  "quick_use": true,
+  "shop": {
+   "cost": 40,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Protection",
+    "value": 20
+   },
+   {
+    "stat": "Vitality",
+    "value": 5
+   }
+  ]
+ },
+ {
+  "description": "A snack made by combining carefully selected sweet Morian berries and fresh cream. One bite will have you sinking into the charm of its crispy texture.",
+  "grade": "Unique",
+  "icon": "/images/items/ICON_ITEM_NORMAL_MORIAN_COOKIE.webp",
+  "id": 2100023,
+  "is_food": true,
+  "name": "Special Morian Cookie Choux",
+  "quick_use": true,
+  "shop": {
+   "cost": 40,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Focus",
+    "value": 20
+   },
+   {
+    "stat": "Strength",
+    "value": 5
+   }
+  ]
+ },
+ {
+  "description": "Ice cream commonly found at beach stalls in Flora. Under the scorching sun, a single cool bite feels truly special.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ICECREAM_CONE.webp",
+  "id": 2100031,
+  "is_food": true,
+  "name": "Street Stall Ice Cream",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Stamina",
+    "value": 5
+   },
+   {
+    "stat": "Strength",
+    "value": 5
+   }
+  ]
+ },
+ {
+  "description": "A taiyaki commonly found at hot spring stalls in Kalaid. In the biting cold, a single warm bite feels truly special.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_FISH_BREAD.webp",
+  "id": 2100033,
+  "is_food": true,
+  "name": "Street Taiyaki",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Stamina",
+    "value": 5
+   },
+   {
+    "stat": "Vitality",
+    "value": 5
+   }
+  ]
+ },
+ {
+  "description": "A sweet donut sold at Cafe Strega. Enjoyed with coffee, it makes the start of the day even more pleasant.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SWEET_DONUT.webp",
+  "id": 2100042,
+  "is_food": true,
+  "name": "Sweet Donut",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Stamina",
+    "value": 30
+   }
+  ]
+ },
+ {
+  "description": "An Invisible Talisman obtained when the Hunt Trophy: Case 1 option appears.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_TOTEM.webp",
+  "id": 5371001,
+  "name": "Hunt Trophy: Case 1",
+  "rewarded_in_events": [
+   18201,
+   18503,
+   18505
+  ],
+  "subtype": "ST_INVISIBLE"
+ },
+ {
+  "description": "An Invisible Talisman obtained when the Hunt Trophy: Case 2 option appears.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_TOTEM.webp",
+  "id": 5371002,
+  "name": "Hunt Trophy: Case 2",
+  "rewarded_in_events": [
+   18202,
+   18501,
+   18506
+  ],
+  "subtype": "ST_INVISIBLE"
+ },
+ {
+  "description": "An Invisible Talisman obtained when the Hunt Trophy: Case 3 option appears.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_TOTEM.webp",
+  "id": 5371003,
+  "name": "Hunt Trophy: Case 3",
+  "rewarded_in_events": [
+   18203,
+   18502,
+   18504
+  ],
+  "subtype": "ST_INVISIBLE"
+ },
+ {
+  "description": "A refreshing drink effective for lifting spirits and restoring motivation. Even on days when you stumble, it gives you the strength to stand again.",
+  "event_usable": true,
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TONIC_DRINK.webp",
+  "id": 2100048,
+  "name": "Vitality Potion",
+  "shop": {
+   "cost": 50,
+   "max_buy": 1
+  },
+  "subtype": "Special",
+  "used_in_events": [
+   510000,
+   810000
+  ]
+ },
+ {
+  "battle_effects": [
+   "Increases Effect Hit by 1% at the start of the first battle."
+  ],
+  "description": "A token of victory obtained from a Hunt Quest. Looking at it makes you feel the urge to show it off to others.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_TOKEN.webp",
+  "id": 5170002,
+  "name": "Bandit Baron Hunt Token",
+  "pp_convert": 4,
+  "rewarded_in_events": [
+   861,
+   862,
+   863
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 1% at the start of the first battle."
+  ],
+  "description": "A manual describing how to respond to various situations during combat. A vast range of cases and decision criteria are organized within it.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_GUIDE_TACTICS.webp",
+  "id": 5270003,
+  "name": "Basic Training Manual - Applied Tactics",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 1% at the start of the first battle."
+  ],
+  "description": "A manual for learning the flow of offense. It outlines combat methods for instantly exploiting an enemy's opening.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_GUIDE_ATTACK.webp",
+  "id": 5270001,
+  "name": "Basic Training Manual - Offense",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 1% at the start of the first battle."
+  ],
+  "description": "A manual summarizing how to protect oneself in crisis situations. It contains the fundamentals needed for stamina management, evasion, and prolonged battles.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TRAINING_GUIDE_SURVIVE.webp",
+  "id": 5270002,
+  "name": "Basic Training Manual - Survival",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self DEF by 10% at the start of the first battle."
+  ],
+  "description": "A commemorative coin issued by NOA. It bears a design honoring Saviors who patiently waited for a chance to turn the tide.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_PATIENCE_TOKEN.webp",
+  "id": 5000003,
+  "name": "Coin of Patience",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Max HP by 10% at the start of the first battle."
+  ],
+  "description": "A commemorative coin issued by NOA. It bears a design honoring Saviors who calmly overcame crises.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CALM_TOKEN.webp",
+  "id": 5000002,
+  "name": "Coin of Serenity",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self CRIT DMG by 20% at the start of the first battle."
+  ],
+  "description": "A commemorative coin issued by NOA. It bears a design honoring Saviors who boldly broke through the encirclement of Voidborns.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TECHNIQUE_TOKEN.webp",
+  "id": 5000005,
+  "name": "Coin of Sundering",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self SPD increases by 5% at the start of the first battle."
+  ],
+  "description": "A commemorative coin issued by NOA. It bears a design honoring Saviors who swiftly brought down the leader of the Voidborns.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_POWER_TOKEN.webp",
+  "id": 5000006,
+  "name": "Coin of Swiftness",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self CRIT Rate by 10% at the start of the first battle."
+  ],
+  "description": "A commemorative coin issued by NOA. It bears a design honoring Saviors who cleverly lured Voidborns into traps.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_QUICK_TOKEN.webp",
+  "id": 5000004,
+  "name": "Coin of Technique",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self ATK by 10% at the start of the first battle."
+  ],
+  "description": "A commemorative coin issued by NOA. It bears a design honoring Saviors who fought desperately against Voidborns.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_TOKEN.webp",
+  "id": 5000001,
+  "name": "Coin of Valor",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect Hit by 1% at the start of the first battle."
+  ],
+  "description": "A token of victory obtained from a Hunt Quest. Looking at it makes you feel the urge to show it off to others.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_TOKEN.webp",
+  "id": 5170003,
+  "name": "Doll Hunt Token",
+  "pp_convert": 4,
+  "rewarded_in_events": [
+   871,
+   872,
+   873
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Max Toughness by 3 at the start of the first battle."
+  ],
+  "description": "Bracers that fell from a rampaging doll. The tenacity lingering within instinctively yearns for a target to resonate with.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_GUARD.webp",
+  "id": 5072009,
+  "name": "Doll's Forgotten Bracers",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Counterattack Chance by 20% at the start of the first battle."
+  ],
+  "description": "Gauntlets that fell from a rampaging doll. The moment they sense hostility, they instinctively vent killing intent.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_GAUNTLET.webp",
+  "id": 5072010,
+  "name": "Doll's Forgotten Gauntlet",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Lifesteal by 15% at the start of the first battle."
+  ],
+  "description": "A totem that fell from a rampaging doll. It converts the remnants of battle into power.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_TOTEM.webp",
+  "id": 5072011,
+  "name": "Doll's Forgotten Totem",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases ATK by 4% at the start of the first battle."
+  ],
+  "description": "New gloves commissioned by Apocalypse. The aggression engraved into the gear instinctively yearns for a target to resonate with..\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_GLOVE.webp",
+  "id": 5071001,
+  "name": "Exhibit No. 1: Apocalypse Gloves",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases ATK by 4% at the start of the first battle."
+  ],
+  "description": "Gloves that fell from a rampaging doll. The aggression lingering within instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_GLOVE.webp",
+  "id": 5072001,
+  "name": "Exhibit No. 1: Doll Gloves",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases ATK by 4% at the start of the first battle."
+  ],
+  "description": "Gloves covered in sticky slime. The aggression soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_GLOVE.webp",
+  "id": 5070001,
+  "name": "Exhibit No. 1: Slime Gloves",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Max HP by 4% at the start of the first battle."
+  ],
+  "description": "New armor commissioned by Apocalypse. The vitality engraved into the gear instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_ARMOR.webp",
+  "id": 5071002,
+  "name": "Exhibit No. 2: Apocalypse Armor",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Max HP by 4% at the start of the first battle."
+  ],
+  "description": "Armor that fell from a rampaging doll. The vitality lingering within instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_ARMOR.webp",
+  "id": 5072002,
+  "name": "Exhibit No. 2: Doll Armor",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Max HP by 4% at the start of the first battle."
+  ],
+  "description": "Armor covered in sticky slime. The vitality soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_ARMOR.webp",
+  "id": 5070002,
+  "name": "Exhibit No. 2: Slime Armor",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases DEF by 6% at the start of the first battle."
+  ],
+  "description": "New armor commissioned by Apocalypse. The vitality engraved into the gear instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_PANTS.webp",
+  "id": 5071003,
+  "name": "Exhibit No. 3: Apocalypse Pants",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases DEF by 6% at the start of the first battle."
+  ],
+  "description": "Pants that fell from a rampaging doll. The persistence lingering within instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_PANTS.webp",
+  "id": 5072003,
+  "name": "Exhibit No. 3: Doll Pants",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases DEF by 6% at the start of the first battle."
+  ],
+  "description": "Pants covered in sticky slime. The persistence soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_PANTS.webp",
+  "id": 5070003,
+  "name": "Exhibit No. 3: Slime Pants",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases SPD by 4 at the start of the first battle."
+  ],
+  "description": "New boots commissioned by Apocalypse. The agility engraved into the gear instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_SHOES.webp",
+  "id": 5071004,
+  "name": "Exhibit No. 4: Apocalypse Boots",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases SPD by 4 at the start of the first battle."
+  ],
+  "description": "Boots that fell from a rampaging doll. The agility lingering within instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_SHOES.webp",
+  "id": 5072004,
+  "name": "Exhibit No. 4: Doll Boots",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases SPD by 4 at the start of the first battle."
+  ],
+  "description": "Boots covered in sticky slime. The agility soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_SHOES.webp",
+  "id": 5070004,
+  "name": "Exhibit No. 4: Slime Boots",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT Rate by 5% at the start of the first battle."
+  ],
+  "description": "A new hat commissioned by Apocalypse. The sharpness engraved into the gear instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_HAT.webp",
+  "id": 5071005,
+  "name": "Exhibit No. 5: Apocalypse Hat",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT Rate by 5% at the start of the first battle."
+  ],
+  "description": "A hat that fell from a rampaging doll. The sharpness lingering within instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_HAT.webp",
+  "id": 5072005,
+  "name": "Exhibit No. 5: Doll Hat",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT Rate by 5% at the start of the first battle."
+  ],
+  "description": "A hat covered in sticky slime. The sharpness soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_HAT.webp",
+  "id": 5070005,
+  "name": "Exhibit No. 5: Slime Hat",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT DMG by 5% at the start of the first battle."
+  ],
+  "description": "A new necklace commissioned by Apocalypse. The wisdom engraved into the gear instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_NECKLACE.webp",
+  "id": 5071006,
+  "name": "Exhibit No. 6: Apocalypse Necklace",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT DMG by 5% at the start of the first battle."
+  ],
+  "description": "A necklace that fell from a rampaging doll. The experience lingering within instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_NECKLACE.webp",
+  "id": 5072006,
+  "name": "Exhibit No. 6: Doll Necklace",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT DMG by 5% at the start of the first battle."
+  ],
+  "description": "A necklace covered in sticky slime. The wisdom soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_NECKLACE.webp",
+  "id": 5070006,
+  "name": "Exhibit No. 6: Slime Necklace",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect Hit by 8% at the start of the first battle."
+  ],
+  "description": "New glasses commissioned by Apocalypse. The unpredictability engraved into the gear instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_GLASSES.webp",
+  "id": 5071007,
+  "name": "Exhibit No. 7: Apocalypse Glasses",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect Hit by 8% at the start of the first battle."
+  ],
+  "description": "Glasses that fell from a rampaging doll. The unpredictability lingering within instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_GLASSES.webp",
+  "id": 5072007,
+  "name": "Exhibit No. 7: Doll Glasses",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect Hit by 8% at the start of the first battle."
+  ],
+  "description": "Glasses covered in sticky slime. The unpredictability soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_GLASSES.webp",
+  "id": 5070007,
+  "name": "Exhibit No. 7: Slime Glasses",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 8% at the start of the first battle."
+  ],
+  "description": "A new cloak commissioned by Apocalypse. The stability engraved into the gear instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_CLOAK.webp",
+  "id": 5071008,
+  "name": "Exhibit No. 8: Apocalypse Cloak",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 8% at the start of the first battle."
+  ],
+  "description": "A cloak that fell from a rampaging doll. The stability lingering within instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_CLOAK.webp",
+  "id": 5072008,
+  "name": "Exhibit No. 8: Doll Cloak",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 8% at the start of the first battle."
+  ],
+  "description": "A cloak covered in sticky slime. The stability soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_CLOAK.webp",
+  "id": 5070008,
+  "name": "Exhibit No. 8: Slime Cloak",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect Hit by 20% when using an Ultimate Skill. Occurs once per battle."
+  ],
+  "description": "A replica made based on the design of a legendary sword. It could almost be mistaken for the real thing at a distance.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_LEGEND_SWORD_REPLICA.webp",
+  "id": 105034,
+  "name": "Legendary Sword (Replica)",
+  "pp_convert": 4,
+  "rewarded_in_events": [
+   14012,
+   24012,
+   34012
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect Hit by 10% at the start of the first battle."
+  ],
+  "description": "A medal awarded by NOA to Saviors who have achieved great feats. It bears a design honoring Saviors who patiently waited for a chance to turn the tide.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DETECTION_MEDAL.webp",
+  "id": 5000009,
+  "name": "Medal of Insight",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Max HP by 5% at the start of the first battle."
+  ],
+  "description": "A medal awarded by NOA to Saviors who have achieved great feats. It bears a design honoring Saviors who calmly overcame crises.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CALM_MEDAL.webp",
+  "id": 5000008,
+  "name": "Medal of Serenity",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self CRIT DMG by 10% at the start of the first battle."
+  ],
+  "description": "A medal awarded by NOA to Saviors who have achieved great feats. It bears a design honoring Saviors who boldly broke through the encirclement of Voidborns.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_POWER_MEDAL.webp",
+  "id": 5000012,
+  "name": "Medal of Sundering",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self CRIT Rate by 5% at the start of the first battle."
+  ],
+  "description": "A medal awarded by NOA to Saviors who have achieved great feats. It bears a design honoring Saviors who cleverly lured Voidborns into traps.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_TECHNIQUE_MEDAL.webp",
+  "id": 5000011,
+  "name": "Medal of Technique",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self ATK by 5% at the start of the first battle."
+  ],
+  "description": "A medal awarded by NOA to Saviors who have achieved great feats. It bears a design honoring Saviors who fought desperately against Voidborns.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VALOR_MEDAL.webp",
+  "id": 5000007,
+  "name": "Medal of Valor",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect RES by 10% at the start of the first battle."
+  ],
+  "description": "A medal awarded by NOA to Saviors who have achieved great feats. It bears a design honoring Saviors who swiftly brought down the leader of the Voidborns.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_WISDOM_MEDAL.webp",
+  "id": 5000010,
+  "name": "Medal of Wisdom",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect Hit and Effect RES by 10% when using an Ultimate Skill. Occurs once per battle."
+  ],
+  "description": "An essence that gives a warm and cozy feeling. A free gift received when purchasing Moonlight Cream.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MOON_LIGHT_ESSENCE.webp",
+  "id": 105021,
+  "name": "Moonlight Essence Sample",
+  "pp_convert": 4,
+  "rewarded_in_events": [
+   11033
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect Hit by 10% when using an Ultimate Skill. Occurs once per battle."
+  ],
+  "description": "A lip balm that gives a warm and cozy feeling. A free gift received when purchasing Moonlight Cream.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MOON_LIGHT_LIP_BALM.webp",
+  "id": 105020,
+  "name": "Moonlight Lip Balm Sample",
+  "pp_convert": 4,
+  "rewarded_in_events": [
+   11032
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases self Effect RES by 10% when using an Ultimate Skill. Occurs once per battle."
+  ],
+  "description": "A perfume that gives a warm and cozy feeling. A free gift received when purchasing Moonlight Cream.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MOON_LIGHT_PERFUME.webp",
+  "id": 105019,
+  "name": "Moonlight Perfume Sample",
+  "pp_convert": 4,
+  "rewarded_in_events": [
+   11031
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self Effect RES increases by 5% at the start of the turn. Stacks up to 3 times."
+  ],
+  "description": "A dial-shaped relic found among the remains of collapsed ruins. Its purpose is unknown.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_UNIDENTIFIED_ARTIFACT.webp",
+  "id": 105035,
+  "name": "Mysterious Relic",
+  "pp_convert": 4,
+  "rewarded_in_events": [
+   14013,
+   24013,
+   34013
+  ],
+  "subtype": "Charm",
+  "used_in_events": [
+   18091,
+   18101
+  ]
+ },
+ {
+  "battle_effects": [
+   "Increases Max Toughness by 3 at the start of the first battle."
+  ],
+  "description": "New bracers commissioned by Apocalypse. The tenacity engraved into the gear instinctively yearns for a target to resonate with.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_GUARD.webp",
+  "id": 5071009,
+  "name": "New Apocalypse Bracers",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Decreases SPD by 30 at the start of the first battle."
+  ],
+  "description": "An hourglass cracked all over. A cryptic message is inscribed on the base.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_OLD_HOURGLASS.webp",
+  "id": 5170006,
+  "name": "Old Hourglass",
+  "pp_convert": 50,
+  "rewarded_in_events": [
+   16181
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 1% at the start of the first battle."
+  ],
+  "description": "A certificate from an Observer promising the exchange of spoils.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_PROMISSORY_NOTE.webp",
+  "id": 5170004,
+  "name": "Pickup Reservation Form A",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 1% at the start of the first battle."
+  ],
+  "description": "A certificate from an Observer promising the exchange of spoils.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_PROMISSORY_NOTE.webp",
+  "id": 5170005,
+  "name": "Pickup Reservation Form B",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self SPD increases by 10% at the start of the turn. Stacks up to 3 times."
+  ],
+  "description": "A silver meritorious service badge of Monastir. Awarded to knights who have rendered distinguished service in battle.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MEDAL_MONASTIR_SILVER.webp",
+  "id": 105027,
+  "name": "Silver Merit Medal",
+  "pp_convert": 4,
+  "rewarded_in_events": [
+   831,
+   841,
+   851
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect Hit by 1% at the start of the first battle."
+  ],
+  "description": "A token of victory obtained from a Hunt Quest. Looking at it makes you feel the urge to show it off to others.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_TOKEN.webp",
+  "id": 5170001,
+  "name": "Slime Hunt Token",
+  "pp_convert": 4,
+  "rewarded_in_events": [
+   825,
+   826,
+   827
+  ],
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Max Toughness by 3 at the start of the first battle."
+  ],
+  "description": "Bracers covered in sticky slime. The tenacity soaked into the slime instinctively yearns for a target to resonate with.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_GUARD.webp",
+  "id": 5070009,
+  "name": "Slime-Splattered Bracers",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Self CRIT Rate increases by 5% at the start of the turn. Stacks up to 3 times."
+  ],
+  "description": "A collaboration between Street Bakers and the Boss Seal series. You can receive it by making a purchase over a certain amount.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MASCOT_NORMAL.webp",
+  "id": 105024,
+  "name": "Street Bakers Merch Ⅰ",
+  "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "description": "An assorted fried platter commonly sold at street stalls. It contains unidentified vegetables, but tastes decent enough.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MIX_FRIED.webp",
+  "id": 101001,
+  "is_food": true,
+  "name": "Assorted Fried Platter",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality",
+    "value": 15
+   }
+  ]
+ },
+ {
+  "description": "Beef pasta commonly enjoyed in NOA. There is no special recipe, but it tastes decent enough.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BEEF_PASTA_1.webp",
+  "id": 2100001,
+  "is_food": true,
+  "name": "Beef Pasta",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Strength",
+    "value": 4
+   }
+  ]
+ },
+ {
+  "description": "A beef steak that can be enjoyed anywhere. It may not be special, but it is a flavor you can always trust.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_BEEF_STEAK.webp",
+  "id": 2100019,
+  "is_food": true,
+  "name": "Beef Steak",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Endurance",
+    "value": 5
+   },
+   {
+    "stat": "Focus",
+    "value": 5
+   }
+  ]
+ },
+ {
+  "description": "A chicken steak that can be enjoyed anywhere. It may not be special, but it is a flavor you can always trust.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CHICKEN_STEAK.webp",
+  "id": 2100020,
+  "is_food": true,
+  "name": "Chicken Steak",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Endurance",
+    "value": 5
+   },
+   {
+    "stat": "Protection",
+    "value": 5
+   }
+  ]
+ },
+ {
+  "description": "Cream pasta commonly enjoyed in NOA. There is no special recipe, but it tastes decent enough.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_CREAM_PASTA_1.webp",
+  "id": 2100004,
+  "is_food": true,
+  "name": "Cream Pasta",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Vitality",
+    "value": 4
+   }
+  ]
+ },
+ {
+  "description": "Fried meat commonly found at street stalls. They contain unidentified meat, but taste decent enough.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MEAT_FRIED_1.webp",
+  "id": 2100010,
+  "is_food": true,
+  "name": "Fried Meat",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Endurance",
+    "value": 4
+   }
+  ]
+ },
+ {
+  "description": "Fried vegetables commonly found at street stalls. They contain unidentified vegetables, but taste decent enough.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VEGETABLE_FRIED_1.webp",
+  "id": 2100007,
+  "is_food": true,
+  "name": "Fried Vegetables",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Focus",
+    "value": 4
+   },
+   {
+    "stat": "Protection",
+    "value": 4
+   }
+  ]
+ },
+ {
+  "description": "A fruit salad served for breakfast. You may not know exactly what's in it, but it makes you feel healthier.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_FRUIT_SALAD_1.webp",
+  "id": 2100013,
+  "is_food": true,
+  "name": "Fruit Salad",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Focus",
+    "value": 6
+   }
+  ]
+ },
+ {
+  "description": "A cake commonly found everywhere. Since it was mass-produced, its quality isn't outstanding, but it tastes decent enough.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SWEET_CAKE.webp",
+  "id": 2100043,
+  "is_food": true,
+  "name": "Plain Cake",
+  "quick_use": true,
+  "shop": {
+   "cost": 15,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Potential Points",
+    "value": 10
+   }
+  ]
+ },
+ {
+  "description": "A plain donut commonly found everywhere. Since it was mass-produced, its quality isn't outstanding, but it tastes decent enough.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DONUT.webp",
+  "id": 2100041,
+  "is_food": true,
+  "name": "Plain Donut",
+  "quick_use": true,
+  "shop": {
+   "cost": 15,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Stamina",
+    "value": 10
+   }
+  ]
+ },
+ {
+  "description": "Milk commonly found everywhere. Since it was mass-produced, its quality isn't outstanding, but it tastes decent enough.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_MILK.webp",
+  "id": 2100045,
+  "is_food": true,
+  "name": "Plain Milk",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Condition",
+    "value": 1
+   }
+  ]
+ },
+ {
+  "description": "A sweet whipped cream cake. Since it was mass-produced, its quality isn't outstanding, but it tastes decent enough.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SWEET_CAKE.webp",
+  "id": 101002,
+  "is_food": true,
+  "name": "Sweet Cake",
+  "quick_use": true,
+  "shop": {
+   "cost": 30,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Potential Points",
+    "value": 30
+   }
+  ]
+ },
+ {
+  "description": "A vegetable salad served for breakfast. You may not know exactly what's in it, but it makes you feel healthier.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VEGETABLE_SALAD_1.webp",
+  "id": 2100016,
+  "is_food": true,
+  "name": "Vegetable Salad",
+  "quick_use": true,
+  "shop": {
+   "cost": 20,
+   "max_buy": 1
+  },
+  "subtype": "Consumable",
+  "use_effects": [
+   {
+    "stat": "Protection",
+    "value": 6
+   }
+  ]
+ },
+ {
+  "description": "An invisible item obtainable from the Direction of Training event. Connects to the Ancient Savior's Relic event.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_TOKEN.webp",
+  "id": 5270004,
+  "name": "Direction of Training_01",
+  "rewarded_in_events": [
+   20101
+  ],
+  "subtype": "ST_INVISIBLE"
+ },
+ {
+  "description": "An invisible item obtainable from the Direction of Training event. Connects to the Ancient Savior's Relic event.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_TOKEN.webp",
+  "id": 5270005,
+  "name": "Direction of Training_02",
+  "rewarded_in_events": [
+   20101
+  ],
+  "subtype": "ST_INVISIBLE"
+ },
+ {
+  "description": "An invisible item obtainable from the Direction of Training event. Connects to the Ancient Savior's Relic event.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_TOKEN.webp",
+  "id": 5270006,
+  "name": "Direction of Training_03",
+  "rewarded_in_events": [
+   20101
+  ],
+  "subtype": "ST_INVISIBLE"
+ },
+ {
+  "description": "An invisible item obtainable from the Direction of Training event. Connects to the Ancient Savior's Relic event.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DOLL_TOKEN.webp",
+  "id": 5270007,
+  "name": "Direction of Training_04",
+  "rewarded_in_events": [
+   20101
+  ],
+  "subtype": "ST_INVISIBLE"
+ }
+]

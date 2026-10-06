@@ -1,0 +1,1317 @@
+[
+ {
+  "desc": {
+   "en-US": "You cannot contain your anger. Training failure rate increases.",
+   "ja-JP": "怒りを抑えられません。トレーニングの失敗率が上がります。",
+   "ko-KR": "화를 주체할 수 없습니다. 훈련 실패율이 증가합니다.",
+   "zh-CN": "怒火难以抑制。训练失败率增加。",
+   "zh-TW": "怒火難以抑制。訓練失敗率增加。"
+  },
+  "group": 1,
+  "id": 11,
+  "isBuff": false,
+  "name": {
+   "en-US": "Rage",
+   "ja-JP": "怒り",
+   "ko-KR": "분노",
+   "zh-CN": "愤怒",
+   "zh-TW": "憤怒"
+  },
+  "turn": 2,
+  "type": "JBT_TS_DOWN",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "You leave it to your future self. Training failure rate increases.",
+   "ja-JP": "明日の自分に任せます。トレーニングの失敗率が上がります。",
+   "ko-KR": "내일의 나에게 맡깁니다. 훈련 실패율이 증가합니다.",
+   "zh-CN": "交给明天的自己吧。训练失败率增加。",
+   "zh-TW": "交給明天的自己吧。訓練失敗率增加。"
+  },
+  "group": 1,
+  "id": 12,
+  "isBuff": false,
+  "name": {
+   "en-US": "Laziness",
+   "ja-JP": "怠惰",
+   "ko-KR": "게으름",
+   "zh-CN": "懒惰",
+   "zh-TW": "懶惰"
+  },
+  "turn": 2,
+  "type": "JBT_TS_DOWN",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "Dreams? Hopes? What are those? Training failure rate increases.",
+   "ja-JP": "もはや夢も希望もありません。トレーニングの失敗率が上がります。",
+   "ko-KR": "이제 꿈도 희망도 없습니다. 훈련 실패율이 증가합니다.",
+   "zh-CN": "如今连梦想和希望都没有了。训练失败率增加。",
+   "zh-TW": "如今連夢想和希望都沒有了。訓練失敗率增加。"
+  },
+  "group": 1,
+  "id": 13,
+  "isBuff": false,
+  "name": {
+   "en-US": "Despair",
+   "ja-JP": "絶望",
+   "ko-KR": "절망감",
+   "zh-CN": "绝望感",
+   "zh-TW": "絕望感"
+  },
+  "turn": 2,
+  "type": "JBT_TS_DOWN",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "Your long-held values are being shaken. Training failure rate increases.",
+   "ja-JP": "今まで信じてきた価値観が揺らいでます。トレーニングの失敗率が上がります。",
+   "ko-KR": "지금까지 믿어오던 가치관이 흔들리고 있습니다. 훈련 실패율이 증가합니다.",
+   "zh-CN": "至今为止相信的价值观正在动摇。训练失败率增加。",
+   "zh-TW": "至今為止相信的價值觀正在動搖。訓練失敗率增加。"
+  },
+  "group": 1,
+  "id": 14,
+  "isBuff": false,
+  "name": {
+   "en-US": "Confusion",
+   "ja-JP": "混乱",
+   "ko-KR": "혼란",
+   "zh-CN": "混乱",
+   "zh-TW": "混亂"
+  },
+  "turn": 2,
+  "type": "JBT_TS_DOWN",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "No matter how you try to resist, you feel your heart growing cold. Training failure rate increases.",
+   "ja-JP": "止めようとしても、心の中が冷えてくるのが感じられます。トレーニングの失敗率が上がります。",
+   "ko-KR": "막아 보려고 해도, 마음 속이 차갑게 식는 것을 느낍니다. 훈련 실패율이 증가합니다.",
+   "zh-CN": "即使想阻止，仍能感觉到内心逐渐冰冷。训练失败率增加。",
+   "zh-TW": "即使想阻止，仍能感覺到內心逐漸冰冷。訓練失敗率增加。"
+  },
+  "group": 1,
+  "id": 15,
+  "isBuff": false,
+  "name": {
+   "en-US": "Loneliness",
+   "ja-JP": "孤独",
+   "ko-KR": "고독감",
+   "zh-CN": "孤独感",
+   "zh-TW": "孤獨感"
+  },
+  "turn": 2,
+  "type": "JBT_TS_DOWN",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "You're enjoying the moment without thinking about what comes next. Training failure rate increases.",
+   "ja-JP": "後のことを考えず今を楽しみます。トレーニングの失敗率が上がります。",
+   "ko-KR": "뒤를 생각하지 않고 현재를 즐기고 있습니다. 훈련 실패율이 증가합니다.",
+   "zh-CN": "不顾后果，只享受当下。训练失败率增加。",
+   "zh-TW": "不顧後果，只享受當下。訓練失敗率增加。"
+  },
+  "group": 1,
+  "id": 16,
+  "isBuff": false,
+  "name": {
+   "en-US": "Living It Up",
+   "ja-JP": "浪費癖",
+   "ko-KR": "흥청망청",
+   "zh-CN": "挥霍无度",
+   "zh-TW": "揮霍無度"
+  },
+  "turn": 2,
+  "type": "JBT_TS_DOWN",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "You feel unstoppable. Training failure rate decreases.",
+   "ja-JP": "誰も止められません。トレーニングの失敗率が下がります。",
+   "ko-KR": "아무도 막을 수 없습니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "没有人能阻止你。训练失败率减少。",
+   "zh-TW": "沒有人能阻止你。訓練失敗率減少。"
+  },
+  "group": 2,
+  "id": 21,
+  "isBuff": true,
+  "name": {
+   "en-US": "Confidence",
+   "ja-JP": "自信",
+   "ko-KR": "자신감",
+   "zh-CN": "自信心",
+   "zh-TW": "自信心"
+  },
+  "turn": 2,
+  "type": "JBT_TS_UP",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "Everything feels beautiful. Training failure rate decreases.",
+   "ja-JP": "すべてのものが美しいです。トレーニングの失敗率が下がります。",
+   "ko-KR": "모든 것이 아름답습니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "一切看起来都很美好。训练失败率减少。",
+   "zh-TW": "一切看起來都很美好。訓練失敗率減少。"
+  },
+  "group": 2,
+  "id": 22,
+  "isBuff": true,
+  "name": {
+   "en-US": "Happiness",
+   "ja-JP": "幸せ",
+   "ko-KR": "행복",
+   "zh-CN": "幸福",
+   "zh-TW": "幸福"
+  },
+  "turn": 2,
+  "type": "JBT_TS_UP",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "Memories of the past conjure smiles. Training failure rate decreases.",
+   "ja-JP": "思い出すと笑顔になります。トレーニングの失敗率が下がります。",
+   "ko-KR": "떠올리면 웃음이납니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "一想起来就会露出笑容。训练失败率减少。",
+   "zh-TW": "一想起來就會露出笑容。訓練失敗率減少。"
+  },
+  "group": 2,
+  "id": 23,
+  "isBuff": true,
+  "name": {
+   "en-US": "Shyness",
+   "ja-JP": "恥ずかしい",
+   "ko-KR": "쑥스러움",
+   "zh-CN": "羞涩",
+   "zh-TW": "羞澀"
+  },
+  "turn": 2,
+  "type": "JBT_TS_UP",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "Warm feelings of gratitude fill you with strength. Training failure rate decreases.",
+   "ja-JP": "あたたかい心に力が湧いてきます。トレーニングの失敗率が下がります。",
+   "ko-KR": "따뜻한 마음에 힘이 솟아납니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "温暖的心意让力量涌现。训练失败率减少。",
+   "zh-TW": "溫暖的心意讓力量湧現。訓練失敗率減少。"
+  },
+  "group": 2,
+  "id": 24,
+  "isBuff": true,
+  "name": {
+   "en-US": "Gratitude",
+   "ja-JP": "感謝",
+   "ko-KR": "고마움",
+   "zh-CN": "谢意",
+   "zh-TW": "謝意"
+  },
+  "turn": 2,
+  "type": "JBT_TS_UP",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "You feel that everything will go well. Training failure rate decreases.",
+   "ja-JP": "すべてがうまくいく気がする。トレーニングの失敗率が下がります。",
+   "ko-KR": "모든 일이 잘 풀릴 것 같습니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "感觉一切都会顺利。训练失败率减少。",
+   "zh-TW": "感覺一切都會順利。訓練失敗率減少。"
+  },
+  "group": 2,
+  "id": 25,
+  "isBuff": true,
+  "name": {
+   "en-US": "Joy",
+   "ja-JP": "楽しい",
+   "ko-KR": "즐거움",
+   "zh-CN": "愉悦",
+   "zh-TW": "愉悅"
+  },
+  "turn": 2,
+  "type": "JBT_TS_UP",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "Unexpected realizations strike you. Training failure rate decreases.",
+   "ja-JP": "思いがけないことが頭に浮かびます。トレーニングの失敗率が下がります。",
+   "ko-KR": "생각하지 못한 것들이 떠오릅니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "脑中浮现了意想不到的灵感。训练失败率减少。",
+   "zh-TW": "腦中浮現了意想不到的靈感。訓練失敗率減少。"
+  },
+  "group": 2,
+  "id": 26,
+  "isBuff": true,
+  "name": {
+   "en-US": "Realization",
+   "ja-JP": "悟り",
+   "ko-KR": "깨달음",
+   "zh-CN": "领悟",
+   "zh-TW": "領悟"
+  },
+  "turn": 2,
+  "type": "JBT_TS_UP",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "Memories of the past fill you with great satisfaction. Training failure rate decreases.",
+   "ja-JP": "思い出すと嬉しくなります。トレーニングの失敗率が下がります。",
+   "ko-KR": "떠올리면 흐뭇해집니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "一想起来就会觉得满足。训练失败率减少。",
+   "zh-TW": "一想起來就會覺得滿足。訓練失敗率減少。"
+  },
+  "group": 2,
+  "id": 27,
+  "isBuff": true,
+  "name": {
+   "en-US": "Pride",
+   "ja-JP": "達成感",
+   "ko-KR": "뿌듯함",
+   "zh-CN": "得意",
+   "zh-TW": "得意"
+  },
+  "turn": 2,
+  "type": "JBT_TS_UP",
+  "value": 200
+ },
+ {
+  "desc": {
+   "en-US": "You are the daily Savior of Apocalypse Shop. Shop prices are reduced.",
+   "ja-JP": "アポカリプス商会のデイリー救援者。取引すると商品の価格が安くなります。",
+   "ko-KR": "아포칼립스 상단의 일일 구원자. 거래 시 상품 구매 가격이 감소합니다.",
+   "zh-CN": "启示录商团的每日救援者，交易时商品购买价格会降低。",
+   "zh-TW": "啟示錄商團的每日救援者，交易時商品購買價格會降低。"
+  },
+  "group": 10,
+  "id": 101,
+  "isBuff": true,
+  "name": {
+   "en-US": "Daily Part-Timer",
+   "ja-JP": "デイリーアルバイター",
+   "ko-KR": "일일 아르바이트생",
+   "zh-CN": "一日打工生",
+   "zh-TW": "一日打工生"
+  },
+  "turn": 1,
+  "type": "JBT_TRADE_DISCOUNT",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "The staff come out to greet you just for visiting the shop. Shop prices are reduced.",
+   "ja-JP": "店を訪れるだけで店員が出迎えに来るほどです。取引時、商品の価格が安くなります。",
+   "ko-KR": "가게에 방문하는 것 만으로 점원이 마중 나올 정도입니다. 거래 시 상품 구매 가격이 감소합니다.",
+   "zh-CN": "光是造访店铺，店员就会出来迎接。交易时商品购买价格会降低。",
+   "zh-TW": "光是造訪店鋪，店員就會出來迎接。交易時商品購買價格會降低。"
+  },
+  "group": 10,
+  "id": 102,
+  "isBuff": true,
+  "name": {
+   "en-US": "VIP Customer",
+   "ja-JP": "お得意様",
+   "ko-KR": "우수 고객",
+   "zh-CN": "优质顾客",
+   "zh-TW": "優質顧客"
+  },
+  "turn": 1,
+  "type": "JBT_TRADE_DISCOUNT",
+  "value": 3000
+ },
+ {
+  "desc": {
+   "en-US": "A perfect night of rest makes you ready to ace any training. Failure rate of all training decreases.",
+   "ja-JP": "十分な休息をとり、すべてのトレーニングがうまくいきます。すべてのトレーニングの失敗率が下がります。",
+   "ko-KR": "완벽한 휴식으로 모든 훈련이 능숙해집니다. 모든 훈련의 실패율이 감소합니다.",
+   "zh-CN": "完美的休息让所有训练更加熟练。训练失败率减少。",
+   "zh-TW": "完美的休息讓所有訓練更加熟練。訓練失敗率減少。"
+  },
+  "group": 11,
+  "id": 110,
+  "isBuff": true,
+  "name": {
+   "en-US": "Training Proficiency: Awakening",
+   "ja-JP": "トレーニングのプロ：覚醒",
+   "ko-KR": "훈련 능숙 : 각성",
+   "zh-CN": "训练娴熟：觉醒",
+   "zh-TW": "訓練嫻熟：覺醒"
+  },
+  "turn": 3,
+  "type": "JBT_TS_UP",
+  "value": 500
+ },
+ {
+  "desc": {
+   "en-US": "Sufficient rest improves training effectiveness. Strength gained during training increases.",
+   "ja-JP": "十分な休息をとり、トレーニングがうまくいきます。トレーニングで獲得する力が上がります。",
+   "ko-KR": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 힘이 증가합니다.",
+   "zh-CN": "充分的休息能让训练更加得心应手。训练中获得的力量增加。",
+   "zh-TW": "充分的休息能讓訓練更加得心應手。訓練中獲得的力量增加。"
+  },
+  "group": 11,
+  "id": 111,
+  "isBuff": true,
+  "name": {
+   "en-US": "Training Proficiency: Strength",
+   "ja-JP": "トレーニングのプロ：力",
+   "ko-KR": "훈련 능숙 : 힘",
+   "zh-CN": "训练娴熟：力量",
+   "zh-TW": "訓練嫻熟：力量"
+  },
+  "turn": 3,
+  "type": "JBT_POWER_TRAINING_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Sufficient rest improves training effectiveness. Vitality gained during training increases.",
+   "ja-JP": "十分な休息をとり、トレーニングがうまくいきます。トレーニングで獲得する体力が上がります。",
+   "ko-KR": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 체력이 증가합니다.",
+   "zh-CN": "充分的休息能让训练更加得心应手。训练中获得的体力增加。",
+   "zh-TW": "充分的休息能讓訓練更加得心應手。訓練中獲得的體力增加。"
+  },
+  "group": 11,
+  "id": 112,
+  "isBuff": true,
+  "name": {
+   "en-US": "Training Proficiency: Vitality",
+   "ja-JP": "トレーニングのプロ：体力",
+   "ko-KR": "훈련 능숙 : 체력",
+   "zh-CN": "训练娴熟：体力",
+   "zh-TW": "訓練嫻熟：體力"
+  },
+  "turn": 3,
+  "type": "JBT_HEALTH_TRAINING_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Sufficient rest improves training effectiveness. Endurance gained during training increases.",
+   "ja-JP": "十分な休息をとり、トレーニングがうまくいきます。トレーニングで獲得する忍耐が上がります。",
+   "ko-KR": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 인내가 증가합니다.",
+   "zh-CN": "充分的休息能让训练更加得心应手。训练中获得的韧性增加。",
+   "zh-TW": "充分的休息能讓訓練更加得心應手。訓練中獲得的韌性增加。"
+  },
+  "group": 11,
+  "id": 113,
+  "isBuff": true,
+  "name": {
+   "en-US": "Training Proficiency: Endurance",
+   "ja-JP": "トレーニングのプロ：忍耐",
+   "ko-KR": "훈련 능숙 : 인내",
+   "zh-CN": "训练娴熟：韧性",
+   "zh-TW": "訓練嫻熟：韌性"
+  },
+  "turn": 3,
+  "type": "JBT_ENDURANCE_TRAINING_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Sufficient rest improves training effectiveness. Focus gained during training increases.",
+   "ja-JP": "十分な休息をとり、トレーニングがうまくいきます。トレーニングで獲得する集中が上がります。",
+   "ko-KR": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 집중이 증가합니다.",
+   "zh-CN": "充分的休息能让训练更加得心应手。训练中获得的集中增加。",
+   "zh-TW": "充分的休息能讓訓練更加得心應手。訓練中獲得的集中增加。"
+  },
+  "group": 11,
+  "id": 114,
+  "isBuff": true,
+  "name": {
+   "en-US": "Training Proficiency: Focus",
+   "ja-JP": "トレーニングのプロ：集中",
+   "ko-KR": "훈련 능숙 : 집중",
+   "zh-CN": "训练娴熟：专注",
+   "zh-TW": "訓練嫻熟：專注"
+  },
+  "turn": 3,
+  "type": "JBT_FOCUS_TRAINING_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Sufficient rest improves training effectiveness. Protection gained during training increases.",
+   "ja-JP": "十分な休息をとり、トレーニングがうまくいきます。トレーニングで獲得する保護が上がります。",
+   "ko-KR": "충분한 휴식으로 훈련이 능숙해집니다. 훈련 중 획득하는 보호가 증가합니다.",
+   "zh-CN": "充分的休息能让训练更加得心应手。训练中获得的保护增加。",
+   "zh-TW": "充分的休息能讓訓練更加得心應手。訓練中獲得的保護增加。"
+  },
+  "group": 11,
+  "id": 115,
+  "isBuff": true,
+  "name": {
+   "en-US": "Training Proficiency: Protection",
+   "ja-JP": "トレーニングのプロ：保護",
+   "ko-KR": "훈련 능숙 : 보호",
+   "zh-CN": "训练娴熟：保护",
+   "zh-TW": "訓練嫻熟：保護"
+  },
+  "turn": 3,
+  "type": "JBT_PROTECT_TRAINING_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "You feel like a legendary Savior today. Potential Points gained during training increase.",
+   "ja-JP": "なんだか今日は伝説の救援者になった気分です。トレーニングで獲得する潜在力ポイントが上がります。",
+   "ko-KR": "오늘만큼은 전설의 구원자가 된 기분입니다. 훈련 중 획득하는 잠재력 포인트가 증가합니다.",
+   "zh-CN": "今天感觉就像成为了传说中的救援者。训练中获得的潜质点数增加。",
+   "zh-TW": "今天感覺就像成為了傳說中的救援者。訓練中獲得的潛力點數增加。"
+  },
+  "group": 12,
+  "id": 120,
+  "isBuff": true,
+  "name": {
+   "en-US": "Legendary Savior",
+   "ja-JP": "伝説の救援者",
+   "ko-KR": "전설의 구원자",
+   "zh-CN": "传说的救援者",
+   "zh-TW": "傳說的救援者"
+  },
+  "turn": 3,
+  "type": "JBT_TRAINING_PP_RATE_BONUS",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "Everyone has a past they would rather forget. Strength gained during training decreases.",
+   "ja-JP": "誰にでも忘れたい過去があるものです。トレーニングで獲得する力が下がります。",
+   "ko-KR": "누구나 기억하고 싶지않은 과거는 있는 법입니다. 훈련 중 획득하는 힘이 감소합니다.",
+   "zh-CN": "每个人都有不想被记住的过去。训练中获得的力量减少。",
+   "zh-TW": "每個人都有不想被記住的過去。訓練中獲得的力量減少。"
+  },
+  "group": 12,
+  "id": 121,
+  "isBuff": false,
+  "name": {
+   "en-US": "Shameful Memories: Flora",
+   "ja-JP": "黒歴史：フローラ",
+   "ko-KR": "흑역사 : 플로라",
+   "zh-CN": "黑历史：弗洛拉",
+   "zh-TW": "黑歷史：弗洛拉"
+  },
+  "turn": 4,
+  "type": "JBT_POWER_TRAINING_DOWN",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Everyone has a past they would rather forget. Vitality gained during training decreases.",
+   "ja-JP": "誰にでも忘れたい過去があるものです。トレーニングで獲得する体力が下がります。",
+   "ko-KR": "누구나 기억하고 싶지않은 과거는 있는 법입니다. 훈련 중 획득하는 체력이 감소합니다.",
+   "zh-CN": "每个人都有不想被记住的过去。训练中获得的体力减少。",
+   "zh-TW": "每個人都有不想被記住的過去。訓練中獲得的體力減少。"
+  },
+  "group": 12,
+  "id": 122,
+  "isBuff": false,
+  "name": {
+   "en-US": "Shameful Memories: Kalaid",
+   "ja-JP": "黒歴史：カライド",
+   "ko-KR": "흑역사 : 칼라이드",
+   "zh-CN": "黑历史：卡莱德",
+   "zh-TW": "黑歷史：卡萊德"
+  },
+  "turn": 4,
+  "type": "JBT_HEALTH_TRAINING_DOWN",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "You shake off your burdens to make a fresh start. Training failure rate decreases.",
+   "ja-JP": "負担感を振り払い新たに始めます。トレーニング失敗率が下がります。",
+   "ko-KR": "부담감을 떨쳐내고 새롭게 시작합니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "放下压力，重新开始。训练失败率减少。",
+   "zh-TW": "放下壓力，重新開始。訓練失敗率減少。"
+  },
+  "group": 13,
+  "id": 130,
+  "isBuff": true,
+  "name": {
+   "en-US": "Freshness",
+   "ja-JP": "爽快感",
+   "ko-KR": "상쾌함",
+   "zh-CN": "爽快",
+   "zh-TW": "爽快"
+  },
+  "turn": 3,
+  "type": "JBT_TS_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "You feel too weak to even stand. Training failure rate greatly increases.",
+   "ja-JP": "気力がなく、立っているのも困難です。トレーニング失敗率が大幅に上がります。",
+   "ko-KR": "기운이 없어서 서 있기도 어렵습니다. 훈련 실패율이 크게 증가합니다.",
+   "zh-CN": "因体力不济，连站着都很吃力。训练失败率大幅增加。",
+   "zh-TW": "因體力不濟，連站著都很吃力。訓練失敗率大幅增加。"
+  },
+  "group": 14,
+  "id": 140,
+  "isBuff": false,
+  "name": {
+   "en-US": "Mana Exhaustion",
+   "ja-JP": "魔力消耗",
+   "ko-KR": "마력 탈진",
+   "zh-CN": "魔力耗尽",
+   "zh-TW": "魔力耗盡"
+  },
+  "turn": 5,
+  "type": "JBT_TS_DOWN",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "You fear no challenge. Training failure rate decreases.",
+   "ja-JP": "どんな難関も恐れません。トレーニング失敗率が下がります。",
+   "ko-KR": "어떤 난관도 두렵지 않습니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "任何难关都不足为惧。训练失败率减少。",
+   "zh-TW": "任何難關都不足為懼。訓練失敗率減少。"
+  },
+  "group": 14,
+  "id": 141,
+  "isBuff": true,
+  "name": {
+   "en-US": "Sword of Gordius",
+   "ja-JP": "ゴルディウスの剣",
+   "ko-KR": "고르디우스의 검",
+   "zh-CN": "戈耳狄俄斯之剑",
+   "zh-TW": "戈耳狄俄斯之劍"
+  },
+  "turn": 5,
+  "type": "JBT_TS_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Looking back, life feels futile. Training failure rate increases.",
+   "ja-JP": "振り返れば虚しい人生でした。トレーニング失敗率が上がります。",
+   "ko-KR": "돌이켜 보면 허망한 삶이었습니다. 훈련 실패율이 증가합니다.",
+   "zh-CN": "回头一看，真是虚度的一生。训练失败率增加。",
+   "zh-TW": "回頭一看，真是虛度的一生。訓練失敗率增加。"
+  },
+  "group": 14,
+  "id": 142,
+  "isBuff": false,
+  "name": {
+   "en-US": "Acute Slump",
+   "ja-JP": "急性スランプ",
+   "ko-KR": "급성 슬럼프",
+   "zh-CN": "突发性低潮",
+   "zh-TW": "突發性低潮"
+  },
+  "turn": 5,
+  "type": "JBT_TS_DOWN",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Pressure has a positive effect. Potential Points gained during training increase.",
+   "ja-JP": "プレッシャーが好影響を与えます。トレーニング中に獲得する潜在力ポイントが上がります。",
+   "ko-KR": "압박감이 긍정적인 영향을 줍니다. 훈련 중 획득하는 잠재력 포인트가 증가합니다.",
+   "zh-CN": "压力也能带来正向影响。训练中获得的潜质点数增加。",
+   "zh-TW": "壓力也能帶來正向影響。訓練中獲得的潛力點數增加。"
+  },
+  "group": 15,
+  "id": 150,
+  "isBuff": true,
+  "name": {
+   "en-US": "Deadline Effect",
+   "ja-JP": "デッドライン効果",
+   "ko-KR": "데드라인 효과",
+   "zh-CN": "期限效应",
+   "zh-TW": "期限效應"
+  },
+  "turn": 5,
+  "type": "JBT_TRAINING_PP_RATE_BONUS",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Overtraining has taken its toll. Training failure rate increases.",
+   "ja-JP": "無理な鍛え方が毒となりました。トレーニング失敗率が上がります。",
+   "ko-KR": "무리한 훈련이 독이 되었습니다.  훈련 실패율이 증가합니다.",
+   "zh-CN": "过度训练反而成了毒药。训练失败率增加。",
+   "zh-TW": "過度訓練反而成了毒藥。訓練失敗率增加。"
+  },
+  "group": 15,
+  "id": 151,
+  "isBuff": false,
+  "name": {
+   "en-US": "Overexertion",
+   "ja-JP": "過欲",
+   "ko-KR": "과욕",
+   "zh-CN": "贪欲",
+   "zh-TW": "貪欲"
+  },
+  "turn": 5,
+  "type": "JBT_TS_DOWN",
+  "value": 500
+ },
+ {
+  "desc": {
+   "en-US": "You feel accustomed to the strain on your body. Strength gained during training increases.",
+   "ja-JP": "体に掛かる負荷も日常のようです。トレーニング中に獲得する力が上がります。",
+   "ko-KR": "몸에 걸리는 부하도 일상 같습니다. 훈련 중 획득하는 힘이 증가합니다.",
+   "zh-CN": "身体承受的负荷仿佛已成日常。训练中获得的力量增加。",
+   "zh-TW": "身體承受的負荷彷彿已成日常。訓練中獲得的力量增加。"
+  },
+  "group": 16,
+  "id": 160,
+  "isBuff": true,
+  "name": {
+   "en-US": "Surpassing Limits",
+   "ja-JP": "制約を克服し",
+   "ko-KR": "제약을 이겨내고",
+   "zh-CN": "克服限制",
+   "zh-TW": "克服限制"
+  },
+  "turn": 3,
+  "type": "JBT_POWER_TRAINING_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "You keep challenging yourself until powerful foes are defeated. Vitality gained during training increases.",
+   "ja-JP": "強敵を倒すまで挑戦は続きます。トレーニング中に獲得する体力が上がります。",
+   "ko-KR": "강적을 꺾을 때까지 도전은 계속됩니다. 훈련 중 획득하는 체력이 증가합니다.",
+   "zh-CN": "在打倒强敌之前，挑战会持续下去。训练中获得的体力增加。",
+   "zh-TW": "在打倒強敵之前，挑戰會持續下去。訓練中獲得的體力增加。"
+  },
+  "group": 16,
+  "id": 161,
+  "isBuff": true,
+  "name": {
+   "en-US": "Reckless Challenge",
+   "ja-JP": "無謀な挑戦",
+   "ko-KR": "무모한 도전",
+   "zh-CN": "鲁莽的挑战",
+   "zh-TW": "魯莽的挑戰"
+  },
+  "turn": 3,
+  "type": "JBT_HEALTH_TRAINING_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "You provide strength to be passed down to future generations. Vitality gained during training decreases.",
+   "ja-JP": "後世に受け継がれる力を提供しています。トレーニング中に獲得する体力が下がります。",
+   "ko-KR": "후대에 계승될 힘을 제공하고 있습니다. 훈련 중 획득하는 체력이 감소합니다.",
+   "zh-CN": "正在为后代提供可继承的力量。训练中获得的体力减少。",
+   "zh-TW": "正在為後代提供可繼承的力量。訓練中獲得的體力減少。"
+  },
+  "group": 17,
+  "id": 170,
+  "isBuff": false,
+  "name": {
+   "en-US": "Strength Nourishment",
+   "ja-JP": "力の栄養分",
+   "ko-KR": "힘의 자양분",
+   "zh-CN": "力量的养分",
+   "zh-TW": "力量的養分"
+  },
+  "turn": 3,
+  "type": "JBT_HEALTH_TRAINING_DOWN",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "You provide vitality to be passed down to future generations. Strength gained during training decreases.",
+   "ja-JP": "後世に受け継がれる体力を提供しています。トレーニング中に獲得する力が下がります。",
+   "ko-KR": "후대에 계승될 체력을 제공하고 있습니다. 훈련 중 획득하는 힘이 감소합니다.",
+   "zh-CN": "正在为后代提供可继承的体力。训练中获得的力量减少。",
+   "zh-TW": "正在為後代提供可繼承的體力。訓練中獲得的力量減少。"
+  },
+  "group": 17,
+  "id": 171,
+  "isBuff": false,
+  "name": {
+   "en-US": "Vitality Nourishment",
+   "ja-JP": "体力の糧",
+   "ko-KR": "체력의 자양분",
+   "zh-CN": "体力的养分",
+   "zh-TW": "體力的養分"
+  },
+  "turn": 3,
+  "type": "JBT_POWER_TRAINING_DOWN",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Sweet, cotton candy-like memories come to mind. Training failure rate decreases.",
+   "ja-JP": "綿菓子のように甘かった記憶を思い出します。トレーニングの失敗率が下がります。",
+   "ko-KR": "솜사탕처럼 달콤했던 기억이 생각납니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "想起像棉花糖般甜蜜的回忆。训练失败率减少。",
+   "zh-TW": "想起像棉花糖般甜蜜的回憶。訓練失敗率減少。"
+  },
+  "group": 18,
+  "id": 180,
+  "isBuff": true,
+  "name": {
+   "en-US": "Memories with Lisette",
+   "ja-JP": "リセットとの思い出",
+   "ko-KR": "리세트와의 추억",
+   "zh-CN": "与莉赛特的回忆",
+   "zh-TW": "與莉賽特的回憶"
+  },
+  "turn": 5,
+  "type": "JBT_TS_UP",
+  "value": 3000
+ },
+ {
+  "desc": {
+   "en-US": "If it's all the rage, you have to see what all the fuss is about. Training failure rate decreases.",
+   "ja-JP": "流行っているものなら、とりあえず買ってみないと。\nトレーニングの失敗率が下がります。",
+   "ko-KR": "유행하는 것이라면 적어도 구매는 해봐야합니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "只要是正在流行的东西，至少都得买来试试看。训练失败率减少。",
+   "zh-TW": "只要是正在流行的東西，至少都得買來試試看。訓練失敗率減少。"
+  },
+  "group": 19,
+  "id": 190,
+  "isBuff": true,
+  "name": {
+   "en-US": "Trend Chaser",
+   "ja-JP": "トレンドフォロワー",
+   "ko-KR": "트렌드 팔로워",
+   "zh-CN": "潮流追随者",
+   "zh-TW": "潮流追隨者"
+  },
+  "turn": 8,
+  "type": "JBT_TS_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "Your excessive passion has burned you out. You cannot gain Vitality during training.",
+   "ja-JP": "やる気に満ち溢れるあまり燃え尽きてしまいました。トレーニングで体力を獲得できません。",
+   "ko-KR": "열정이 과했던 나머지 불타버렸습니다. 훈련 중 체력을 획득 할 수 없습니다.",
+   "zh-CN": "热情过头，结果燃烧殆尽。训练中无法获得体力。",
+   "zh-TW": "熱情過頭，結果燃燒殆盡。訓練中無法獲得體力。"
+  },
+  "group": 20,
+  "id": 201,
+  "isBuff": false,
+  "name": {
+   "en-US": "Burnout",
+   "ja-JP": "バーンアウト",
+   "ko-KR": "번 아웃",
+   "zh-CN": "过劳",
+   "zh-TW": "過勞"
+  },
+  "turn": 5,
+  "type": "JBT_HEALTH_TRAINING_HOLD"
+ },
+ {
+  "desc": {
+   "en-US": "You feel that staying still is best. Strength Training EXP gained decreases.",
+   "ja-JP": "動かない方が最も有利です。力トレーニングの経験値獲得量が下がります。",
+   "ko-KR": "움직이지 않는게 제일 좋습니다. 힘 훈련 경험치 획득량이 감소합니다.",
+   "zh-CN": "最好不要动。力量训练经验值获得量减少。",
+   "zh-TW": "最好不要動。力量訓練經驗值獲得量減少。"
+  },
+  "group": 21,
+  "id": 211,
+  "isBuff": false,
+  "name": {
+   "en-US": "Muscle Injury",
+   "ja-JP": "筋肉負傷",
+   "ko-KR": "근육 부상",
+   "zh-CN": "肌肉拉伤",
+   "zh-TW": "肌肉拉傷"
+  },
+  "turn": 3,
+  "type": "JBT_POWER_TRAINING_EXP_DOWN",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "You feel sluggish from overeating. Strength gained during training decreases.",
+   "ja-JP": "食べ過ぎて体が鈍くなりました。トレーニングで獲得する力が下がります。",
+   "ko-KR": "너무 먹어서 몸이 둔해졌습니다. 훈련 중 획득하는 힘이 감소합니다.",
+   "zh-CN": "吃太多导致身体变得迟钝。训练中获得的力量减少。",
+   "zh-TW": "吃太多導致身體變得遲鈍。訓練中獲得的力量減少。"
+  },
+  "group": 22,
+  "id": 221,
+  "isBuff": false,
+  "name": {
+   "en-US": "Overeating",
+   "ja-JP": "過食",
+   "ko-KR": "과식",
+   "zh-CN": "暴食",
+   "zh-TW": "暴食"
+  },
+  "turn": 3,
+  "type": "JBT_POWER_TRAINING_DOWN",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "What matters most is a spirit that never gives up. Endurance gained during training increases.",
+   "ja-JP": "大事なのは諦めない気持ちです。トレーニングで獲得する忍耐が上がります。",
+   "ko-KR": "중요한 것은 포기하지 않는 정신입니다. 훈련 중 획득하는 인내가 증가합니다.",
+   "zh-CN": "最重要的是永不放弃的精神。训练中获得的韧性增加。",
+   "zh-TW": "最重要的是永不放棄的精神。訓練中獲得的韌性增加。"
+  },
+  "group": 30,
+  "id": 301,
+  "isBuff": true,
+  "name": {
+   "en-US": "Indomitable Spirit",
+   "ja-JP": "不屈の精神",
+   "ko-KR": "불굴의 정신",
+   "zh-CN": "不屈的意志",
+   "zh-TW": "不屈的意志"
+  },
+  "turn": 3,
+  "type": "JBT_ENDURANCE_TRAINING_UP",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "Your observational skills are excellent. Focus gained during training increases.",
+   "ja-JP": "観察能力だけは優れています。トレーニングで獲得する集中が上がります。",
+   "ko-KR": "관찰력 하나만큼은 확실히 좋습니다. 훈련 중 획득하는 집중이 증가합니다.",
+   "zh-CN": "观察力确实相当出色。训练中获得的专注增加。",
+   "zh-TW": "觀察力確實相當出色。訓練中獲得的專注增加。"
+  },
+  "group": 30,
+  "id": 302,
+  "isBuff": true,
+  "name": {
+   "en-US": "Keen Eye",
+   "ja-JP": "目利き",
+   "ko-KR": "눈썰미",
+   "zh-CN": "眼光",
+   "zh-TW": "眼光"
+  },
+  "turn": 3,
+  "type": "JBT_FOCUS_TRAINING_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "A balanced diet is important. Vitality Training EXP gained increases.",
+   "ja-JP": "バランスの取れた食事は重要です。体力トレーニングで獲得する経験値が上がります。",
+   "ko-KR": "균형 잡힌 식사는 중요합니다. 체력 훈련 경험치 획득량이 증가합니다.",
+   "zh-CN": "均衡的饮食相当重要。体力训练经验值获得量增加。",
+   "zh-TW": "均衡的飲食相當重要。體力訓練經驗值獲得量增加。"
+  },
+  "group": 31,
+  "id": 311,
+  "isBuff": true,
+  "name": {
+   "en-US": "Nutritious Meal",
+   "ja-JP": "栄養食",
+   "ko-KR": "영양식",
+   "zh-CN": "健康餐",
+   "zh-TW": "健康餐"
+  },
+  "turn": 5,
+  "type": "JBT_HEALTH_TRAINING_EXP_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "After spending everything you had, you feel completely unmotivated. Strength gained from training decreases.",
+   "ja-JP": "全財産をすべて使い果たしてしまい、どうしてもやる気が出ません。トレーニングで獲得する力が下がります。",
+   "ko-KR": "전재산을 모두 소진했더니, 도저히 의욕이 나질 않습니다. 훈련 중 획득하는 힘이 감소합니다.",
+   "zh-CN": "耗尽所有财产后，完全提不起劲。训练中获得的力量减少。",
+   "zh-TW": "耗盡所有財產後，完全提不起勁。訓練中獲得的力量減少。"
+  },
+  "group": 32,
+  "id": 321,
+  "isBuff": false,
+  "name": {
+   "en-US": "All-In",
+   "ja-JP": "散財",
+   "ko-KR": "탕진",
+   "zh-CN": "倾家荡产",
+   "zh-TW": "傾家蕩產"
+  },
+  "turn": 3,
+  "type": "JBT_POWER_TRAINING_DOWN",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "Coordinates the field with skillful command. Training failure rate decreases.",
+   "ja-JP": "優れた指揮で現場を調律します。トレーニングの失敗率が下がります。",
+   "ko-KR": "능숙한 지휘로 현장을 조율합니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "以熟练的指挥调度现场。训练失败率减少。",
+   "zh-TW": "以熟練的指揮調度現場。訓練失敗率減少。"
+  },
+  "group": 33,
+  "id": 331,
+  "isBuff": true,
+  "name": {
+   "en-US": "Operation Policy",
+   "ja-JP": "作戦方針",
+   "ko-KR": "작전 방침",
+   "zh-CN": "作战方针",
+   "zh-TW": "作戰方針"
+  },
+  "turn": 3,
+  "type": "JBT_TS_UP",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "No matter how absurd things turn out, you consistently meet your deadlines until the very end. Training failure rate decreases.",
+   "ja-JP": "どんな迷惑客を相手にしても責任感を失わず、閉店時間を守りました。最後まで。トレーニング失敗率が下がります。",
+   "ko-KR": "별의별 진상에도 불구하고 책임감을 잃지 않고, 끝까지 마감 시간을 준수했습니다. 훈련 실패율이 감소합니다.",
+   "zh-CN": "即便面对种种无理取闹的奥客，依然秉持着责任感并坚持工作到最后一刻。训练失败率减少。",
+   "zh-TW": "即便面對種種無理取鬧的奧客，依然秉持著責任感並堅持工作到最後一刻。訓練失敗率減少。"
+  },
+  "group": 34,
+  "id": 341,
+  "isBuff": true,
+  "name": {
+   "en-US": "Responsibility",
+   "ja-JP": "責任感",
+   "ko-KR": "책임감",
+   "zh-CN": "责任感",
+   "zh-TW": "責任感"
+  },
+  "turn": 3,
+  "type": "JBT_TS_UP",
+  "value": 3000
+ },
+ {
+  "desc": {
+   "en-US": "Subconscious desires have been fully indulged. Potential Points gained during training increase.",
+   "ja-JP": "無意識の中の欲望を思いっきり解消しました。トレーニングで獲得する潜在力ポイントが上がります。",
+   "ko-KR": "무의식 속 욕망을 마음껏 해소했습니다. 훈련 중 획득하는 잠재력 포인트가 증가합니다.",
+   "zh-CN": "尽情释放了潜意识中的欲望。训练中获得的潜力点数增加。",
+   "zh-TW": "盡情釋放了潛意識中的欲望。訓練中獲得的潛力點數增加。"
+  },
+  "group": 35,
+  "id": 351,
+  "isBuff": true,
+  "name": {
+   "en-US": "Sugar Rush",
+   "ja-JP": "シュガーハイ",
+   "ko-KR": "슈거 하이",
+   "zh-CN": "糖分亢奋",
+   "zh-TW": "糖分亢奮"
+  },
+  "turn": 3,
+  "type": "JBT_TRAINING_PP_RATE_BONUS",
+  "value": 3000
+ },
+ {
+  "desc": {
+   "en-US": "Your grit to endure any hardship grows stronger. Strength training EXP gained increases.",
+   "ja-JP": "どんな厳しい状況も乗り越えられる根性が湧いてきます。力トレーニングの経験値獲得量が上がります。",
+   "ko-KR": "어떤 터프한 상황도 이겨내는 근성이 차오릅니다. 힘 훈련 경험치 획득량이 증가합니다.",
+   "zh-CN": "克服任何严峻状况的毅力涌现。力量训练经验值获得量增加。",
+   "zh-TW": "克服任何嚴峻狀況的毅力湧現。力量訓練經驗值獲得量增加。"
+  },
+  "group": 36,
+  "id": 361,
+  "isBuff": true,
+  "name": {
+   "en-US": "King of Survival",
+   "ja-JP": "生存王",
+   "ko-KR": "생존왕",
+   "zh-CN": "生存大师",
+   "zh-TW": "生存大師"
+  },
+  "turn": 3,
+  "type": "JBT_POWER_TRAINING_EXP_UP",
+  "value": 3000
+ },
+ {
+  "desc": {
+   "en-US": "I've heard the unbelievable claim that this world is a game. It's confusing, and I can't focus… Focus gained during training decreases.",
+   "ja-JP": "この世界がゲームの世界だという信じられない話を聞きました。混乱で集中できません…トレーニングで獲得する集中が下がります。",
+   "ko-KR": "이 세계가 게임이라는 믿을 수 없는 이야기를 들었습니다. 혼란스러워 집중이 잘 되지 않습니다… 훈련 중 획득하는 집중이 감소합니다.",
+   "zh-CN": "听说了这个世界其实是游戏这种难以置信的说法。让人困惑，难以集中精神…训练中获得的专注降低。",
+   "zh-TW": "聽說了這個世界其實是遊戲這種難以置信的說法。讓人困惑，難以集中精神…訓練中獲得的專注降低。"
+  },
+  "group": 40001,
+  "id": 400011,
+  "isBuff": false,
+  "name": {
+   "en-US": "Metacognition",
+   "ja-JP": "メタ認知",
+   "ko-KR": "메타 인지",
+   "zh-CN": "后设认知",
+   "zh-TW": "後設認知"
+  },
+  "turn": 1,
+  "type": "JBT_FOCUS_TRAINING_DOWN",
+  "value": 1000
+ },
+ {
+  "desc": {
+   "en-US": "You recall a sweet flavor. Focus gained during training increases.",
+   "ja-JP": "時々思い出す甘い味。トレーニングで獲得する集中が上がります。",
+   "ko-KR": "가끔씩 생각나는 달콤한 맛입니다. 훈련 중 획득하는 집중이 증가합니다.",
+   "zh-CN": "偶尔会想起来的甜蜜滋味。训练中获得的专注增加。",
+   "zh-TW": "偶爾會想起來的甜蜜滋味。訓練中獲得的專注增加。"
+  },
+  "group": 1001,
+  "id": 1001,
+  "isBuff": true,
+  "name": {
+   "en-US": "Sweet Aftertaste",
+   "ja-JP": "甘い余韻",
+   "ko-KR": "달콤한 여운",
+   "zh-CN": "甜蜜余味",
+   "zh-TW": "甜蜜餘味"
+  },
+  "type": "JBT_FOCUS_TRAINING_UP",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "You recall a tangy flavor. Protection gained during training increases.",
+   "ja-JP": "時々思い出す甘酸っぱい味。トレーニングで獲得する保護が上がります。",
+   "ko-KR": "가끔씩 생각나는 새콤한 맛입니다. 훈련 중 획득하는 보호가 증가합니다.",
+   "zh-CN": "偶尔会想起来的酸溜溜滋味。训练中获得的保护增加。",
+   "zh-TW": "偶爾會想起來的酸溜溜滋味。訓練中獲得的保護增加。"
+  },
+  "group": 1002,
+  "id": 1002,
+  "isBuff": true,
+  "name": {
+   "en-US": "Tangy Aftertaste",
+   "ja-JP": "甘酸っぱい余韻",
+   "ko-KR": "새콤한 여운",
+   "zh-CN": "酸甜余味",
+   "zh-TW": "酸甜餘味"
+  },
+  "type": "JBT_PROTECT_TRAINING_UP",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "You recall a rich flavor. Endurance gained during training increases.",
+   "ja-JP": "時々思い出す風味豊かな味。トレーニングで獲得する忍耐が上がります。",
+   "ko-KR": "가끔씩 생각나는 풍부한 맛입니다. 훈련 중 획득하는 인내가 증가합니다.",
+   "zh-CN": "偶尔会想起来的丰富滋味。训练中获得的韧性增加。",
+   "zh-TW": "偶爾會想起來的豐富滋味。訓練中獲得的韌性增加。"
+  },
+  "group": 1003,
+  "id": 1003,
+  "isBuff": true,
+  "name": {
+   "en-US": "Rich Aftertaste",
+   "ja-JP": "豊かな余韻",
+   "ko-KR": "풍부한 여운",
+   "zh-CN": "丰富余味",
+   "zh-TW": "豐富餘味"
+  },
+  "type": "JBT_ENDURANCE_TRAINING_UP",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "Those who say they are fine are rarely truly fine. Training failure rate greatly increases.",
+   "ja-JP": "大丈夫だと言い張る人は大丈夫ではありません。トレーニングの失敗率が大幅に上がります。",
+   "ko-KR": "괜찮다고 하는 사람치고 정말 괜찮은 사람은 없습니다. 훈련 실패율이 크게 증가합니다.",
+   "zh-CN": "嘴上说没事的人，往往其实一点都不好。训练失败率大幅增加。",
+   "zh-TW": "嘴上說沒事的人，往往其實一點都不好。訓練失敗率大幅增加。"
+  },
+  "group": 1004,
+  "id": 1004,
+  "isBuff": false,
+  "name": {
+   "en-US": "I'm F-F-Fine!",
+   "ja-JP": "異常なし！",
+   "ko-KR": "이상업ㅂ음!",
+   "zh-CN": "无异常！",
+   "zh-TW": "無異常！"
+  },
+  "turn": 5,
+  "type": "JBT_TS_DOWN",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "Training failure rate slightly decreases.",
+   "ja-JP": "トレーニングの失敗率が少し下がります。",
+   "ko-KR": "훈련 실패율이 조금 줄어듭니다.",
+   "zh-CN": "减少一点训练失败率。",
+   "zh-TW": "減少一點訓練失敗率。"
+  },
+  "group": 10101,
+  "id": 10101,
+  "isBuff": true,
+  "name": {
+   "en-US": "Brilliant Journey Member",
+   "ja-JP": "聡明な旅の団員",
+   "ko-KR": "총명한 여정 단원",
+   "zh-CN": "聪明的旅程团员",
+   "zh-TW": "聰明的旅程團員"
+  },
+  "turn": 5,
+  "type": "JBT_TS_UP",
+  "value": 300
+ },
+ {
+  "desc": {
+   "en-US": "You deeply understand the hearts of others. Bond Points gained during training increase.",
+   "ja-JP": "他人の感情を深く理解できる旅の団員。トレーニングで獲得する絆ポイントが上がります。",
+   "ko-KR": "다른 사람의 마음을 깊이 이해할 줄 아는 여정 단원. 훈련 중 획득하는 인연 포인트가 증가합니다.",
+   "zh-CN": "能够深刻理解他人心意的旅程团员。训练中获得的羁绊点数增加。",
+   "zh-TW": "能夠深刻理解他人心意的旅程團員。訓練中獲得的羈絆點數增加。"
+  },
+  "group": 10301,
+  "id": 10301,
+  "isBuff": true,
+  "name": {
+   "en-US": "Empathy",
+   "ja-JP": "共感能力",
+   "ko-KR": "공감 능력",
+   "zh-CN": "共鸣能力",
+   "zh-TW": "共鳴能力"
+  },
+  "type": "JBT_AP_BONUS",
+  "value": 2
+ },
+ {
+  "desc": {
+   "en-US": "Strength gained from training increases.",
+   "ja-JP": "トレーニングで獲得する力が上がります。",
+   "ko-KR": "훈련으로 획득하는 힘이 증가합니다.",
+   "zh-CN": "透过训练获得的力量增加。",
+   "zh-TW": "透過訓練獲得的力量增加。"
+  },
+  "group": 41,
+  "id": 14101,
+  "isBuff": true,
+  "name": {
+   "en-US": "Liveliness",
+   "ja-JP": "活発",
+   "ko-KR": "활발함",
+   "zh-CN": "活泼",
+   "zh-TW": "活潑"
+  },
+  "turn": 5,
+  "type": "JBT_POWER_TRAINING_UP",
+  "value": 500
+ },
+ {
+  "desc": {
+   "en-US": "Vitality gained from training slightly increases.",
+   "ja-JP": "トレーニングで獲得する体力が少し上がります。",
+   "ko-KR": "훈련으로 획득하는 체력이 조금 증가합니다.",
+   "zh-CN": "透过训练获得的体力略为增加。",
+   "zh-TW": "透過訓練獲得的體力略為增加。"
+  },
+  "group": 42,
+  "id": 14201,
+  "isBuff": true,
+  "name": {
+   "en-US": "Endurance Boost",
+   "ja-JP": "持久力アップ",
+   "ko-KR": "지구력 증진",
+   "zh-CN": "增进持久力",
+   "zh-TW": "增進持久力"
+  },
+  "turn": 5,
+  "type": "JBT_HEALTH_TRAINING_UP",
+  "value": 500
+ },
+ {
+  "desc": {
+   "en-US": "Endurance gained from training slightly increases.",
+   "ja-JP": "トレーニングで獲得する忍耐が少し上がります。",
+   "ko-KR": "훈련으로 획득하는 인내가 조금 증가합니다.",
+   "zh-CN": "透过训练获得的韧性略为增加。",
+   "zh-TW": "透過訓練獲得的韌性略為增加。"
+  },
+  "group": 43,
+  "id": 14301,
+  "isBuff": true,
+  "name": {
+   "en-US": "Tolerance",
+   "ja-JP": "包容力",
+   "ko-KR": "포용력",
+   "zh-CN": "包容力",
+   "zh-TW": "包容力"
+  },
+  "turn": 5,
+  "type": "JBT_ENDURANCE_TRAINING_UP",
+  "value": 500
+ },
+ {
+  "desc": {
+   "en-US": "You feel drained from insufficient rest.\nStrength gained from training slightly decreases.",
+   "ja-JP": "十分な休息がとれず、力が出ません。\nトレーニングで獲得する力が少し下がります。",
+   "ko-KR": "충분한 휴식을 취하지 못해 힘이 나질 않습니다.\n훈련으로 획득하는 힘이 조금 감소합니다.",
+   "zh-CN": "休息不足导致睡眠质量不佳。\n训练中获得的力量略为减少。",
+   "zh-TW": "休息不足導致睡眠品質不佳。\n訓練中獲得的力量略為減少。"
+  },
+  "group": 150,
+  "id": 215001,
+  "isBuff": false,
+  "name": {
+   "en-US": "Exhaustion",
+   "ja-JP": "脱力",
+   "ko-KR": "탈력",
+   "zh-CN": "脱力",
+   "zh-TW": "脫力"
+  },
+  "turn": 5,
+  "type": "JBT_POWER_TRAINING_DOWN",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "You feel fatigued from insufficient rest.\nVitality gained from training slightly decreases.",
+   "ja-JP": "十分な休息がとれず、疲れています。\nトレーニングで獲得する体力が少し下がります。",
+   "ko-KR": "충분한 휴식을 취하지 못해 피로감이 느껴집니다.\n훈련으로 획득하는 체력이 조금 감소합니다.",
+   "zh-CN": "休息不足导致睡眠质量不佳。\n训练中获得的体力略为减少。",
+   "zh-TW": "休息不足導致睡眠品質不佳。\n訓練中獲得的體力略為減少。"
+  },
+  "group": 160,
+  "id": 216002,
+  "isBuff": false,
+  "name": {
+   "en-US": "Fatigue",
+   "ja-JP": "疲労感",
+   "ko-KR": "피로감",
+   "zh-CN": "疲劳感",
+   "zh-TW": "疲勞感"
+  },
+  "turn": 5,
+  "type": "JBT_HEALTH_TRAINING_DOWN",
+  "value": 2000
+ },
+ {
+  "desc": {
+   "en-US": "You feel drowsy from insufficient rest.\nEndurance gained from training slightly decreases.",
+   "ja-JP": "十分な休息がとれず、眠気が覚めません。\nトレーニングで獲得する忍耐が少し下がります。",
+   "ko-KR": "충분한 휴식을 취하지 못해 잠이 깨질 않습니다.\n훈련으로 획득하는 인내가 조금 감소합니다.",
+   "zh-CN": "休息不足导致睡眠质量不佳。\n训练中获得的韧性略为减少。",
+   "zh-TW": "休息不足導致睡眠品質不佳。\n訓練中獲得的韌性略為減少。"
+  },
+  "group": 170,
+  "id": 217003,
+  "isBuff": false,
+  "name": {
+   "en-US": "Drowsiness",
+   "ja-JP": "夢うつつ",
+   "ko-KR": "비몽사몽",
+   "zh-CN": "半梦半醒",
+   "zh-TW": "半夢半醒"
+  },
+  "turn": 5,
+  "type": "JBT_ENDURANCE_TRAINING_DOWN",
+  "value": 2000
+ }
+]

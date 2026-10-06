@@ -71,7 +71,7 @@ jobs:
           target: google_apis
           disable-animations: true
           working-directory: android
-          script: ./gradlew :app:connectedDebugAndroidTest --stacktrace
+          script: ./gradlew :app:connectedDebugAndroidTest || { for f in $(find app/build/outputs/androidTest-results -name '*.xml'); do echo "== $f"; grep -A12 -E '<failure|<error' "$f" | head -60; done; exit 1; }
 
   publish:
     needs: [build, emulator-test]

@@ -4,3 +4,10 @@ __pycache__/
 build/
 dist/
 *.spec
+# Android
+android/.gradle/
+android/build/
+android/**/build/
+android/local.properties
+android/.idea/
+*.iml

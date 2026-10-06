@@ -1,0 +1,112 @@
+{
+ "norm": [
+  {
+   "text": "訓練的方向性",
+   "expected": "训练的方向性"
+  },
+  {
+   "text": "請講關於初戀的故事。",
+   "expected": "请讲关于初恋的故事"
+  },
+  {
+   "text": "R.I.P.",
+   "expected": "rip"
+  },
+  {
+   "text": " 3月上旬 ",
+   "expected": "3月上旬"
+  },
+  {
+   "text": "阿爾克那事件",
+   "expected": "阿尔克那事件"
+  },
+  {
+   "text": "Mission Possible？",
+   "expected": "missionpossible"
+  }
+ ],
+ "similarity": [
+  {
+   "a": "訓練的方向性",
+   "b": "训练的方向性",
+   "expected": 1.0
+  },
+  {
+   "a": "請講關於初戀的故事",
+   "b": "請講關於初戀的故事。",
+   "expected": 1.0
+  },
+  {
+   "a": "訓練的方向性",
+   "b": "古代救援者的遺物",
+   "expected": 0.142857
+  },
+  {
+   "a": "阿爾克那事件",
+   "b": "阿尔克那事件",
+   "expected": 1.0
+  },
+  {
+   "a": "莉賽特的日常",
+   "b": "莉賽特的誘惑",
+   "expected": 0.666667
+  },
+  {
+   "a": "請講關於初戀",
+   "b": "請講關於初戀的故事",
+   "expected": 0.8
+  },
+  {
+   "a": "",
+   "b": "訓練",
+   "expected": 0.0
+  },
+  {
+   "a": "ABC def",
+   "b": "abc-DEF",
+   "expected": 1.0
+  }
+ ],
+ "phase": [
+  {
+   "text": "3月上旬",
+   "expected": [
+    3,
+    "early"
+   ]
+  },
+  {
+   "text": "3월 초순",
+   "expected": [
+    3,
+    "early"
+   ]
+  },
+  {
+   "text": "12월 하순",
+   "expected": [
+    12,
+    "late"
+   ]
+  },
+  {
+   "text": "11月中旬",
+   "expected": [
+    11,
+    "mid"
+   ]
+  },
+  {
+   "text": "13月上旬",
+   "expected": null
+  },
+  {
+   "text": "距離目標",
+   "expected": null
+  },
+  {
+   "text": "평가전",
+   "expected": null
+  }
+ ]
+}

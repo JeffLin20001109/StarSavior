@@ -1,0 +1,11630 @@
+{
+ "render": [
+  {
+   "journey_key": "리세트의 일과",
+   "expected": [
+    {
+     "segments": [
+      [
+       "莉賽特的日常",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［4月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 2 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 去幫忙吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：耐力 -20",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　成功時：",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#101」 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "古幣 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　失敗時：",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#101」 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "古幣 +50",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#101」 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "古幣 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 先等一下吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・無效果",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "리세트의 유혹",
+   "expected": [
+    {
+     "segments": [
+      [
+       "莉賽特的誘惑",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［6月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 3 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 幫她買下來。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：古幣 -30",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +15~+20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105019 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +15~+20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105020 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 3〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#190」 +8",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105021 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 為了旅程省下來。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・無效果",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "리세트의 휴가",
+   "expected": [
+    {
+     "segments": [
+      [
+       "莉賽特的假期",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［10月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 2 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 陪她一起找賣的地方。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：耐力 -20",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#180」 +5",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105022 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#180」 +5",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105022 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 告訴她在哪裡買得到。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "대마녀의 부름",
+   "expected": [
+    {
+     "segments": [
+      [
+       "大魔女的呼喚",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［2月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 67 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40001",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40002",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 3〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40003",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 4〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40004",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 5〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40005",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 6〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40006",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 7〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40007",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 8〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40008",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 9〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40101",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 10〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40102",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 11〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40103",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 12〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40104",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 13〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40105",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 14〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40106",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 15〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40107",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 16〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40108",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 17〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40201",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 18〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40202",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 19〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40203",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 20〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40204",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 21〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40205",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 22〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40206",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 23〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40207",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 24〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40208",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 25〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40301",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 26〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40302",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 27〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40303",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 28〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40304",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 29〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40305",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 30〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40306",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 31〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40307",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 32〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40308",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 33〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40401",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 34〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40402",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 35〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40403",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 36〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40404",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 37〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40405",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 38〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40406",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 39〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40407",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 40〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40408",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 41〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40501",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 42〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40502",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 43〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40503",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 44〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40504",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 45〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40505",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 46〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40506",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 47〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40507",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 48〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40508",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 49〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40601",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 50〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40602",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 51〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40603",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 52〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40604",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 53〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40605",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 54〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40606",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 55〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40607",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 56〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40608",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 57〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40701",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 58〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40702",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 59〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40703",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 60〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40704",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 61〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40705",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 62〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40706",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 63〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40707",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 64〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#40708",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 65〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#41001",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 66〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#41002",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 67〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#41003",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "레이더스 인카운터 승리",
+   "expected": [
+    {
+     "segments": [
+      [
+       "遭遇掠奪者事件勝利",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［4月下旬 | 掠奪者討伐委託 Ⅰ | 掠奪者討伐委託 Ⅱ | 掠奪者討伐委託 Ⅲ］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20003",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105016 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20003 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105016 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "journey_key": "슬라포칼립스 승리",
+   "expected": [
+    {
+     "segments": [
+      [
+       "史萊姆災變勝利",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［4月下旬 | 6月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單｜史萊姆討伐委託 Ⅰ、史萊姆討伐委託 Ⅱ、史萊姆討伐委託 Ⅲ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20008",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105024 +1",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "#105025 +1",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "#105026 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通｜史萊姆討伐委託 Ⅰ、史萊姆討伐委託 Ⅱ、史萊姆討伐委託 Ⅲ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20008 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105024 +1",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "#105025 +1",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "#105026 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難｜史萊姆討伐委託 Ⅰ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20008",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#5170001 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難｜史萊姆討伐委託 Ⅱ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      4,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20008 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#5170001 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難｜史萊姆討伐委託 Ⅲ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      5,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20008 +2",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#5170001 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    }
+   ]
+  },
+  {
+   "journey_key": "런 어 웨이 솔저스 승리",
+   "expected": [
+    {
+     "segments": [
+      [
+       "逃兵們勝利",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［10月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單｜逃兵討伐委託 Ⅰ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20005",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105027 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單｜逃兵討伐委託 Ⅱ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20005",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105028 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單｜逃兵討伐委託 Ⅲ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20005",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105029 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通｜逃兵討伐委託 Ⅰ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      4,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20005 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105027 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通｜逃兵討伐委託 Ⅱ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      5,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20005 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105028 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通｜逃兵討伐委託 Ⅲ〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      6,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20005 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105029 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    }
+   ]
+  },
+  {
+   "journey_key": "스틸 컴 인 승리",
+   "expected": [
+    {
+     "segments": [
+      [
+       "貨源不絕勝利",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［6月下旬 | 困難］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔男爵討伐委託 Ⅰ〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20005",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#102」 +2",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#5170002 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔男爵討伐委託 Ⅱ〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20005 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#102」 +2",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#5170002 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔男爵討伐委託 Ⅲ〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20005 +2",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#102」 +2",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#5170002 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "노 포션, 노 패션! 승리",
+   "expected": [
+    {
+     "segments": [
+      [
+       "藥不可失，時尚必備！勝利",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［10月下旬 | 困難］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔玩偶討伐委託 Ⅰ〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20006",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +25",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#5170003 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔玩偶討伐委託Ⅱ〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20006 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +25",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#5170003 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔玩偶討伐委託Ⅲ〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#20006 +2",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +25",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#5170003 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "공업소의 홍보 전략",
+   "expected": [
+    {
+     "segments": [
+      [
+       "工坊的宣傳策略",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［5月中旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 付錢購買。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：古幣 -50",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "耐力 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "#105034 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 找出弱點下手。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 30",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105034 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 50",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105034 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 70",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#105034 +1",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "③ 用力量拔出來。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：耐力 -20",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#120」 +3",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "#105034 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "④ 直接走過。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "耐力 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "미궁 탐사",
+   "expected": [
+    {
+     "segments": [
+      [
+       "迷宮探勘",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［7月上旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 用錢解決吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：古幣 -50",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "耐力 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "耐力 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "#105035 +1",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 要不要自己來開起重機？",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 50",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 70",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 90",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +15",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +15",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "③ 得找條替代路線了。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・無效果",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "비치발리볼 대회 준결승전",
+   "expected": [
+    {
+     "segments": [
+      [
+       "沙灘排球大賽準決賽",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［11月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 先填飽肚子再說？",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：古幣 -80",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "耐力 +30",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "耐力 +40",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 深呼吸放鬆一下吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 125",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 150",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 200",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "③ 像平常一樣全力以赴吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "축제의 불청객",
+   "expected": [
+    {
+     "segments": [
+      [
+       "慶典的不速之客",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［11月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 提供金錢援助。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：古幣 -80",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "耐力 +30",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "耐力 +40",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 親自試試看。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 125",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 150",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 200",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "③ 放棄。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "습격",
+   "expected": [
+    {
+     "segments": [
+      [
+       "襲擊",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［7月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 利用地形把它甩開吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：耐力 -20",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "#20004 +2",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 冷靜下來，鞏固防禦吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：韌性 ≥ 125",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：韌性 ≥ 150",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：韌性 ≥ 175",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "③ 往上層逃吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・無效果",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "비치발리볼 대회 예선전",
+   "expected": [
+    {
+     "segments": [
+      [
+       "沙灘排球大賽預賽",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［11月上旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 攻擊對手隊伍的弱點吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：力量 ≥ 200",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：力量 ≥ 300",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：力量 ≥ 500",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "② 發揮我們隊伍的優勢。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      4,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 100",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      5,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 125",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      6,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 150",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "③ 用氣勢壓過去。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：耐力 -20",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "專注 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "專注 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "④ …總會有辦法的！",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "耐力 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "온천 축제 준비",
+   "expected": [
+    {
+     "segments": [
+      [
+       "溫泉慶典準備",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［11月上旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 可以騎熊的那家！",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：體力 ≥ 200",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：體力 ≥ 300",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：體力 ≥ 500",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "② 準備了美味傳統料理的那家！",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      4,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 100",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "力量 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      5,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 125",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "力量 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      6,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 150",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "力量 +30",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "③ 住原本的住處吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：耐力 -20",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "保護 +20",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "④ 兩邊都不要。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "耐力 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "갑작스러운 조우 - 슬라임",
+   "expected": [
+    {
+     "segments": [
+      [
+       "突發遭遇－史萊姆",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［8月中旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 把史萊姆趕走吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單 1〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 60",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單 2〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 60",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通 3〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 80",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通 4〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      4,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 80",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      4
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難 5〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      5,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：專注 ≥ 100",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      5
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難 6〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      6,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：保護 ≥ 100",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      6
+     ]
+    },
+    {
+     "segments": [
+      [
+       "② 幫忙疏散吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：耐力 -10",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "古幣 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "③ 別蹚這渾水。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・無效果",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "갑작스러운 조우 - 약탈자",
+   "expected": [
+    {
+     "segments": [
+      [
+       "突發遭遇－掠奪者",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［12月中旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 給他們點顏色瞧瞧！",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：力量 ≥ 300",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：力量 ≥ 400",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：力量 ≥ 600",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "② 好好勸勸他們吧。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：潛力點數 -10",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "耐力 -10",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "③ 我只是一具普通的屍體。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・無效果",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "갑작스러운 조우 - 강도 기사",
+   "expected": [
+    {
+     "segments": [
+      [
+       "突發遭遇－強盜騎士",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［12月中旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 把他們解決掉！",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：體力 ≥ 300",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：體力 ≥ 400",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　條件／消耗：體力 ≥ 600",
+       "warn"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "② 今後也請多多關照。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　條件／消耗：古幣 -20",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "③ 戰略性撤退！",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　・無效果",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "단원과의 식사",
+   "expected": [
+    {
+     "segments": [
+      [
+       "與團員用餐",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［8月下旬 | 12月下旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 2 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　成功時：",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　失敗時：",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "오늘의 날씨 - 돌풍",
+   "expected": [
+    {
+     "segments": [
+      [
+       "今日天氣－狂風",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［5月下旬 | 7月中旬 | 9月下旬 | 11月中旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 3 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 3〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +5",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "오늘의 날씨 - 호우",
+   "expected": [
+    {
+     "segments": [
+      [
+       "今日天氣－豪雨",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［5月下旬 | 7月中旬 | 9月下旬 | 11月中旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 3 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 -10",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 -15",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 3〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 -10",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "오늘의 날씨 - 쾌청",
+   "expected": [
+    {
+     "segments": [
+      [
+       "今日天氣－晴朗",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［5月下旬 | 7月中旬 | 9月下旬 | 11月中旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 3 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "① 度過悠閒的時光。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　成功時：",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　失敗時：",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　成功時：",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　失敗時：",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 3〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　成功時：",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　失敗時：",
+       "warn"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +15",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "② 照原定計畫度過時間。",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 3〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "사고는 일어난다",
+   "expected": [
+    {
+     "segments": [
+      [
+       "意外總會發生",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［5月下旬 | 11月中旬］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 3 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 -10",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 -10",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "專注 -10",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 3〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 -10",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "保護 -10",
+       "minus"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "토벌 평가전 승리",
+   "expected": [
+    {
+     "segments": [
+      [
+       "討伐評鑑戰勝利",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［평가전 | 討伐評鑑戰］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "專注 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔普通／困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "體力 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "韌性 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "專注 +5",
+       "effect"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "保護 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10002",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10003",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10005",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10006",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10008",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10009",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10011",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10012",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10014",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10015",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    }
+   ]
+  },
+  {
+   "journey_key": "경쟁 평가전 승리",
+   "expected": [
+    {
+     "segments": [
+      [
+       "競爭評鑑戰勝利",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "［평가전 | 競爭評鑑戰］",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔簡單〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      1,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10002",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10005",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10008",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10011",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10014",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      1
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▶ 〔普通〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      2,
+      true
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10016",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10017",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10019",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10020",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10022",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10023",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10025",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10026",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10028",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10029",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      2
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　▼ 〔困難〕",
+       "note"
+      ]
+     ],
+     "fold": [
+      "head",
+      3,
+      false
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "潛力點數 +5",
+       "effect"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10016",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10017",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10018",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10019",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10020",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10021",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10022",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10023",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10024",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10025",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10026",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10027",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10028",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10029",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "#10030",
+       "special"
+      ]
+     ],
+     "fold": [
+      "body",
+      3
+     ]
+    }
+   ]
+  },
+  {
+   "journey_key": "기분이 좋다.",
+   "expected": [
+    {
+     "segments": [
+      [
+       "心情很好。",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 6 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +1",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +30",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 3〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#110」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#111」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#112」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#113」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#114」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#115」 +3",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +60",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 4〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +50",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 5〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +50",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 6〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +50",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +10",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  },
+  {
+   "journey_key": "좋은일이 일어날 것 같다.",
+   "expected": [
+    {
+     "segments": [
+      [
+       "好像會有好事發生。",
+       "h1"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "網站列出 5 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。",
+       "dim"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "（無選項，自動發生）",
+       "choice"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 1〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "狀態 +2",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +50",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 2〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "旅程效果「#110」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#111」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#112」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#113」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#114」 +3",
+       "special"
+      ],
+      [
+       " 或 ",
+       "effect"
+      ],
+      [
+       "旅程效果「#115」 +3",
+       "special"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "解除負面旅程效果 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +80",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 3〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "解除負面旅程效果 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +70",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "韌性 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 4〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "解除負面旅程效果 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +70",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "力量 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　〔可能結果 5〕",
+       "note"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "解除負面旅程效果 -1",
+       "minus"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "耐力 +70",
+       "effect"
+      ]
+     ],
+     "fold": null
+    },
+    {
+     "segments": [
+      [
+       "　　・",
+       "effect"
+      ],
+      [
+       "體力 +20",
+       "effect"
+      ]
+     ],
+     "fold": null
+    }
+   ]
+  }
+ ],
+ "match": [
+  {
+   "title": "莉賽特的日常",
+   "phase": null,
+   "difficulty": "",
+   "expected_ids": [
+    11021,
+    11022
+   ],
+   "expected_score": 1.0
+  },
+  {
+   "title": "迷宮探勘",
+   "phase": [
+    7,
+    "early"
+   ],
+   "difficulty": "Hard",
+   "expected_ids": [
+    34013
+   ],
+   "expected_score": 1.0
+  },
+  {
+   "title": "今日天氣－強風",
+   "phase": [
+    7,
+    "mid"
+   ],
+   "difficulty": "",
+   "expected_ids": [
+    16011,
+    16012,
+    16013
+   ],
+   "expected_score": 0.833333
+  },
+  {
+   "title": "完全不存在的事件",
+   "phase": null,
+   "difficulty": "",
+   "expected_ids": [],
+   "expected_score": 0.235294
+  }
+ ]
+}

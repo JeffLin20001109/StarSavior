@@ -45,12 +45,13 @@ class Renderer:
     # ---- 對外介面 ----
     def render(self, sections):
         """sections: [{'heading': str|None, 'variants': [...], 'highlight': bool}]"""
-        self._fold_count = 0
         recorded = []
         self._T = lambda ko: (recorded.append(ko), ko)[1]
+        self._fold_count = 0
         self._lines(sections)
         mapping = self.translator.translate_many(recorded)
         self._T = lambda ko: mapping.get(ko, ko)
+        self._fold_count = 0
         lines = self._lines(sections)
         if getattr(self.translator, 'failed', False):
             reason = getattr(self.translator, 'last_error', None)

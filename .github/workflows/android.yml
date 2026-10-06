@@ -57,6 +57,9 @@ jobs:
           distribution: temurin
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v4
+      # 先建好 APK 並停止 Gradle，避免與模擬器同時執行耗盡記憶體
+      - name: Build app and test APKs
+        run: ./gradlew :app:assembleDebug :app:assembleDebugAndroidTest && ./gradlew --stop
       - name: Enable KVM
         working-directory: .
         run: |
@@ -69,9 +72,14 @@ jobs:
           api-level: 34
           arch: x86_64
           target: google_apis
+          ram-size: 3072M
           disable-animations: true
           working-directory: android
-          script: ./gradlew :app:connectedDebugAndroidTest || { for f in $(find app/build/outputs/androidTest-results -name '*.xml'); do echo "== $f"; grep -A12 -E '<failure|<error' "$f" | head -60; done; exit 1; }
+          script: |
+            adb install -r app/build/outputs/apk/debug/app-debug.apk
+            adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
+            adb shell am instrument -w -r com.starsavior.helper.test/androidx.test.runner.AndroidJUnitRunner > instrument.txt; cat instrument.txt
+            grep -q "^OK (" instrument.txt
 
   publish:
     needs: [build, emulator-test]

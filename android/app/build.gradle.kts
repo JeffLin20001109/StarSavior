@@ -34,6 +34,7 @@ android {
     sourceSets["main"].assets.srcDir(layout.buildDirectory.dir("sharedAssets"))
     // 模擬器測試用 shared/fixtures 的遊戲截圖（與 Windows 版相同）
     sourceSets["androidTest"].assets.srcDir(rootProject.projectDir.resolve("../shared/fixtures"))
+    sourceSets["androidTest"].assets.srcDir(rootProject.projectDir.resolve("../shared/golden"))
 }
 
 // 內建一份譯文表（離線時使用）；與 Windows 版共用 shared/translations_zh.json

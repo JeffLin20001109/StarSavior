@@ -6,7 +6,7 @@ note 附註、warn 警告、dim 說明、special 基本能力以外的獎勵（�
 import json
 
 from .data import REFERENCE_TYPES
-from .text import loc, phase_zh
+from .text import loc, phase_zh, source_text
 
 DIFFICULTY_ZH = {'Easy': '簡單', 'Normal': '普通', 'Hard': '困難'}
 CIRCLED = '①②③④⑤⑥⑦⑧⑨⑩'
@@ -32,7 +32,8 @@ def _amount(entry):
 
 
 def _ko(value):
-    return loc(value, 'ko-KR')
+    """翻譯用的原文（韓文，沒有時用英文）。"""
+    return source_text(value)
 
 
 class Renderer:

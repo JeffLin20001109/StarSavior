@@ -29,6 +29,11 @@ def loc(value, lang):
     return ''
 
 
+def source_text(value):
+    """翻譯用的原文：有韓文用韓文，沒有（只有英文的新資料）就用英文。"""
+    return loc(value, 'ko-KR') or loc(value, 'en-US')
+
+
 def norm(text):
     """比對用：繁轉簡、去除空白與標點、轉小寫。"""
     return _NOT_WORD.sub('', _t2s(text or '')).lower()

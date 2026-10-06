@@ -65,7 +65,7 @@ class GameData:
         return sum(len(group) for group in self.journey_groups)
 
     def card_name(self, card, lang='zh-TW'):
-        return loc(card.get('name'), lang) or loc(card.get('name'), 'ko-KR')
+        return loc(card.get('name'), lang) or loc(card.get('name'), 'ko-KR') or loc(card.get('name'), 'en-US')
 
 
 def _download(base_url):

@@ -27,11 +27,14 @@ class ScreenCapturer(
     private var display: VirtualDisplay? = null
     private var width = 0
     private var height = 0
+    @Volatile private var releasing = false
 
     init {
         // Android 14 起必須先註冊；使用者從系統停止擷取時通知服務結束
         projection.registerCallback(object : MediaProjection.Callback() {
-            override fun onStop() = onStopped()
+            override fun onStop() {
+                if (!releasing) onStopped()  // 自己呼叫 release() 時不通知
+            }
         }, handler)
         val (w, h, dpi) = screenSize()
         width = w
@@ -88,6 +91,7 @@ class ScreenCapturer(
     }
 
     fun release() {
+        releasing = true
         display?.release()
         reader?.close()
         projection.stop()

@@ -19,6 +19,8 @@ import android.widget.TextView
 /** 啟動畫面：取得懸浮窗與螢幕擷取權限後啟動前景服務，接著回到遊戲。 */
 class MainActivity : Activity() {
     private lateinit var status: TextView
+    private lateinit var battery: Button
+    private lateinit var diagnostics: TextView
     private var askedNotifications = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,6 +39,11 @@ class MainActivity : Activity() {
         }
         status = TextView(this).apply { textSize = 14f; setTextColor(0xFFB3261E.toInt()) }
         val start = Button(this).apply { text = "啟動"; textSize = 18f; setOnClickListener { begin() } }
+        battery = Button(this).apply {
+            text = "不要對旅程助手省電（避免被系統關閉）"; textSize = 14f
+            setOnClickListener { requestBatteryExemption() }
+        }
+        diagnostics = TextView(this).apply { textSize = 12f; setTextColor(0xFF5F6670.toInt()); setTextIsSelectable(true) }
         setContentView(LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             gravity = Gravity.CENTER_HORIZONTAL
@@ -46,7 +53,26 @@ class MainActivity : Activity() {
             addView(help, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad })
             addView(start, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad })
             addView(status, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad / 2 })
-        })
+            addView(battery, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad })
+            addView(diagnostics, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad })
+        }.let { content -> android.widget.ScrollView(this).apply { setBackgroundColor(Color.WHITE); addView(content) } })
+    }
+
+    override fun onResume() {
+        super.onResume()
+        val power = getSystemService(POWER_SERVICE) as android.os.PowerManager
+        battery.visibility = if (power.isIgnoringBatteryOptimizations(packageName)) android.view.View.GONE else android.view.View.VISIBLE
+        // 診斷資訊：上次為什麼結束（系統紀錄）、當機訊息、最近的事件
+        val parts = mutableListOf<String>()
+        Diagnostics.lastExitReason(this)?.let { parts += "上次結束原因：$it" }
+        Diagnostics.lastCrash(this)?.let { parts += "上次當機紀錄：\n$it" }
+        Diagnostics.recentEvents(this).takeIf { it.isNotEmpty() }?.let { parts += "最近的事件：\n" + it.joinToString("\n") }
+        diagnostics.text = if (parts.isEmpty()) "" else "── 診斷資訊（遇到問題時可以截圖回報）──\n" + parts.joinToString("\n\n")
+    }
+
+    @android.annotation.SuppressLint("BatteryLife")
+    private fun requestBatteryExemption() {
+        startActivity(Intent(Settings.ACTION_REQUEST_IGNORE_BATTERY_OPTIMIZATIONS, Uri.parse("package:$packageName")))
     }
 
     private fun begin() {

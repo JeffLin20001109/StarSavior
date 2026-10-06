@@ -64,6 +64,7 @@ class OverlayService : Service() {
         button.params.y = prefs.getInt("y", screen.heightPixels / 3)
         wm.addView(button.view, button.params)
         repository.start(scope) { scope.launch { rerunPending() } }
+        Diagnostics.log(this, "旅程助手啟動")
     }
 
     override fun onStartCommand(intent: Intent?, flags: Int, startId: Int): Int {
@@ -78,7 +79,8 @@ class OverlayService : Service() {
         if (capturer == null && resultCode == Activity.RESULT_OK && data != null) {
             val mpm = getSystemService(MEDIA_PROJECTION_SERVICE) as MediaProjectionManager
             val projection = mpm.getMediaProjection(resultCode, data)
-            capturer = ScreenCapturer(this, projection, handler) { handler.post { quit() } }
+            capturer = ScreenCapturer(this, projection, handler) { handler.post { onCaptureStopped() } }
+            Diagnostics.log(this, "開始螢幕擷取")
         }
         Toast.makeText(this, "旅程助手已啟動：點「旅」辨識，長按結束", Toast.LENGTH_LONG).show()
         return START_NOT_STICKY
@@ -103,9 +105,23 @@ class OverlayService : Service() {
         }
     }
 
+    /** 系統停止了螢幕擷取（例如螢幕關閉、鎖定）：保留按鈕，點一下重新授權。 */
+    private fun onCaptureStopped() {
+        Diagnostics.log(this, "螢幕擷取被系統停止（按鈕保留，點一下可重新授權）")
+        capturer?.release()
+        capturer = null
+        button.setBusy(false)
+        Toast.makeText(this, "螢幕擷取被系統停止了，點「旅」按鈕重新允許即可繼續使用", Toast.LENGTH_LONG).show()
+    }
+
+    private fun requestCapture() {
+        Diagnostics.log(this, "重新要求螢幕擷取授權")
+        startActivity(Intent(this, CaptureActivity::class.java).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK))
+    }
+
     private fun scan() {
         if (busy) return
-        val capturer = capturer ?: return show(message("無法擷取畫面", "請重新開啟旅程助手並允許螢幕擷取。"))
+        val capturer = capturer ?: return requestCapture()
         busy = true
         button.setBusy(true)
         // 截圖前先隱藏按鈕與小窗，等下一個畫面
@@ -157,11 +173,13 @@ class OverlayService : Service() {
     private fun message(title: String, vararg texts: String) = Result(title, texts.map { Line(it, "warn") })
 
     private fun quit() {
+        Diagnostics.log(this, "使用者結束旅程助手")
         Toast.makeText(this, "旅程助手已結束", Toast.LENGTH_SHORT).show()
         stopSelf()
     }
 
     override fun onDestroy() {
+        Diagnostics.log(this, "服務結束")
         scope.cancel()
         popup.hide()
         runCatching { wm.removeView(button.view) }

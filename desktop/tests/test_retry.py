@@ -27,7 +27,7 @@ class FakeEvent:
 class RetryTests(unittest.TestCase):
     def test_download_retries_until_success_then_reruns_scan(self):
         app = app_module.App.__new__(app_module.App)
-        app.config, app.dir, app.data, app.data_status = {'site_url': 'x', 'data_max_age_hours': 12}, None, None, ''
+        app.config, app.dir, app.data, app.data_status = {'data_url': 'x', 'data_max_age_hours': 12}, None, None, ''
         app._closing, app._pending_frame = False, 'frame'
         app._retry_now = FakeEvent(app)
         app.translations = mock.Mock(refresh=mock.Mock(return_value='譯文表'))

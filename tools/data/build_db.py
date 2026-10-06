@@ -23,6 +23,7 @@ STATS = {'Strength': 'JST_POWER', 'Vitality': 'JST_HEALTH', 'Endurance': 'JST_EN
          'Focus': 'JST_FOCUS', 'Protection': 'JST_PROTECT'}
 SIMPLE = {'PP': 'RT_POTEN_POINT', 'Stamina': 'RT_STAMINA', 'Condition': 'RT_CONDITION', 'Coins': 'RT_COIN'}
 POTENTIALS = ('Standard Potential', 'Special Potential', 'Unique Potential')
+MISSING_LABEL = '(Choice text missing in source data)'
 
 
 def load(path):
@@ -136,8 +137,11 @@ def convert_event(e, refs, old=None):
                 variant[key] = old[key]
     if e.get('scenario') and not variant.get('difficulties'):
         variant['difficulties'] = [{'en-US': e['scenario']}]
-    for c in e.get('choices') or []:
+    choices = e.get('choices') or []
+    for c in choices:
         label = c.get('label') or ''
+        if not label and len(choices) > 1:
+            label = MISSING_LABEL  # 有多個選項但來源缺少這個選項的文字；不要顯示成「無選項」
         same = old_choices.get(label.strip().lower())
         name = dict(same['name']) if same else ({'en-US': label} if label else {})
         choice = {'name': name, 'condition': convert_condition(c, refs),

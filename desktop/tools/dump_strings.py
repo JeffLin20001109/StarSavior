@@ -42,8 +42,8 @@ def contexts(value, found):
 
 def main(output):
     with tempfile.TemporaryDirectory() as folder:
-        game, _ = data_module.load(DEFAULTS['site_url'], folder, force=True)
-        raw = json.loads((Path(folder) / 'site_data.json').read_text(encoding='utf-8'))
+        game, _ = data_module.load(DEFAULTS['data_url'], folder, force=True)
+        raw = json.loads((Path(folder) / 'journey_data.json').read_text(encoding='utf-8'))
     recorder = Recorder()
     renderer = Renderer(game, recorder, dict(DEFAULTS))
     for group in game.journey_groups:

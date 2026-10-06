@@ -1,0 +1,53 @@
+name: Data (own database)
+
+# 每天從資料來源網站下載原始資料，快照存到 data 分支（有變動才提交）。
+on:
+  schedule:
+    - cron: '17 3 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main, 'data/**']
+    paths:
+      - tools/data/**
+      - .github/workflows/data.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: data-pipeline
+  cancel-in-progress: false
+
+jobs:
+  snapshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - run: python -m pip install requests
+      - name: Fetch sources
+        run: python tools/data/fetch_sources.py "$RUNNER_TEMP/sources"
+      - name: Commit snapshot to data branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git ls-remote --exit-code --heads origin data >/dev/null; then
+            git fetch --depth 1 origin data
+            git worktree add "$RUNNER_TEMP/data" FETCH_HEAD
+            git -C "$RUNNER_TEMP/data" checkout -B data
+          else
+            git worktree add --orphan -b data "$RUNNER_TEMP/data"
+          fi
+          rm -rf "$RUNNER_TEMP/data/sources"
+          cp -r "$RUNNER_TEMP/sources" "$RUNNER_TEMP/data/sources"
+          cd "$RUNNER_TEMP/data"
+          git add -A sources
+          # 只有下載時間改變時不提交
+          if git diff --cached --quiet -- . ':(exclude)sources/sources.json'; then
+            echo "資料沒有變動"
+          else
+            git commit -m "Snapshot data sources $(date -u +%Y-%m-%d)"
+            git push origin data
+          fi

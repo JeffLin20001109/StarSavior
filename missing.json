@@ -1,1 +1,52 @@
-[]
+[
+ {
+  "source": "Cultivating Composure",
+  "en": "Cultivating Composure",
+  "kind": "text"
+ },
+ {
+  "source": "Braved the embarrassment and worked to cultivate unwavering composure.\nPotential Points gained during training increase.",
+  "en": "Braved the embarrassment and worked to cultivate unwavering composure.\nPotential Points gained during training increase.",
+  "kind": "text"
+ },
+ {
+  "source": "Composure in a Maid Outfit",
+  "en": "Composure in a Maid Outfit",
+  "kind": "text"
+ },
+ {
+  "source": "That's enough. Let's stop here.",
+  "en": "That's enough. Let's stop here.",
+  "kind": "text"
+ },
+ {
+  "source": "Touch of the Void",
+  "en": "Touch of the Void",
+  "kind": "text"
+ },
+ {
+  "source": "Increases CRIT Rate by 20%. After attacking, increases self ATK by 2% for each target critically hit. Stacks up to 10 times.",
+  "en": "Increases CRIT Rate by 20%. After attacking, increases self ATK by 2% for each target critically hit. Stacks up to 10 times.",
+  "kind": "text"
+ },
+ {
+  "source": "A promise is a promise... Let's keep going a little longer.",
+  "en": "A promise is a promise... Let's keep going a little longer.",
+  "kind": "text"
+ },
+ {
+  "source": "You Call This an Outfit?!",
+  "en": "You Call This an Outfit?!",
+  "kind": "text"
+ },
+ {
+  "source": "Lydia",
+  "en": "Lydia",
+  "kind": "text"
+ },
+ {
+  "source": "Composure in a Maid Outfit",
+  "en": "Composure in a Maid Outfit",
+  "kind": "event_name"
+ }
+]

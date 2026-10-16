@@ -6413,6 +6413,42 @@
   "type": "arcana"
  },
  {
+  "arcana_name": "You Call This an Outfit?!",
+  "chain_index": 1,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+10"
+     },
+     {
+      "description": "Braved the embarrassment and worked to cultivate unwavering composure.\nPotential Points gained during training increase.",
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POTENPOINT_BONUS.webp",
+      "name": "Cultivating Composure",
+      "tags": [
+       "Potential Points"
+      ],
+      "type": "Buff"
+     }
+    ]
+   }
+  ],
+  "description": "I was visiting a cafe in the city with Lydia, when... Hm...! It's so nice and quiet today. Last time we came, a bunch of idiots barged in and made a huge racket— Hmm, it was pretty annoying. By the way, Captain.",
+  "event_group_id": 710600101,
+  "name": "The Scent of One's Own Kind",
+  "savior_name": "Lydia",
+  "type": "arcana"
+ },
+ {
   "arcana_name": "A Satisfying Bloom",
   "chain_index": 2,
   "chain_total": 3,
@@ -6449,6 +6485,65 @@
   "type": "arcana"
  },
  {
+  "arcana_name": "You Call This an Outfit?!",
+  "chain_index": 2,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+15"
+     },
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+10"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POTENPOINT_BONUS.webp",
+      "name": "Potential Points",
+      "pp_scaled": {
+       "easy": 10,
+       "hard": 25,
+       "normal": 15
+      },
+      "tags": [
+       "Potential Points"
+      ],
+      "type": "PP",
+      "value": "+10"
+     },
+     {
+      "description": "Increases ATK by 2%.",
+      "icon": "/images/potentials/POTEN_2_RATE_ATK.webp",
+      "name": "Skill of Attack",
+      "tags": [
+       "ATK"
+      ],
+      "type": "Standard Potential"
+     }
+    ]
+   }
+  ],
+  "description": "Thank you for riding with Platina Express. This is the express train bound for NOA Station. Our crew will do our utmost to ensure you have a comfortable journey. This is my first time leaving the West for so far and so long.",
+  "event_group_id": 710600102,
+  "name": "Qualifications for Delusion",
+  "savior_name": "Lydia",
+  "type": "arcana"
+ },
+ {
   "arcana_name": "A Satisfying Bloom",
   "chain_index": 3,
   "chain_total": 3,
@@ -6481,6 +6576,109 @@
   "description": "Thank you for riding with Platina Express. This is the express train bound for NOA Station. Our crew will do our utmost to ensure you have a comfortable journey. This is my first time leaving the West for so far and so long.",
   "event_group_id": 610340102,
   "name": "Qualifications for Delusion",
+  "savior_name": "Lydia",
+  "type": "arcana"
+ },
+ {
+  "arcana_name": "You Call This an Outfit?!",
+  "chain_index": 3,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "label": "That's enough. Let's stop here.",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+12"
+     },
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POTENPOINT_BONUS.webp",
+      "name": "Potential Points",
+      "pp_scaled": {
+       "easy": 20,
+       "hard": 50,
+       "normal": 30
+      },
+      "tags": [
+       "Potential Points"
+      ],
+      "type": "PP",
+      "value": "+20"
+     },
+     {
+      "description": "Increases CRIT Rate by 20%. After attacking, increases self ATK by 2% for each target critically hit. Stacks up to 10 times.",
+      "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+      "name": "Touch of the Void",
+      "tags": [
+       "CRIT Rate"
+      ],
+      "type": "Unique Potential"
+     }
+    ]
+   },
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "label": "A promise is a promise... Let's keep going a little longer.",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+12"
+     },
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_TRAINING_SUCCESS_UP.webp",
+      "name": "Stamina",
+      "tags": [
+       "Stamina"
+      ],
+      "type": "Stamina",
+      "value": "+15"
+     },
+     {
+      "description": "Increases CRIT Rate by 20%. After attacking, increases self ATK by 2% for each target critically hit. Stacks up to 10 times.",
+      "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+      "name": "Touch of the Void",
+      "tags": [
+       "CRIT Rate"
+      ],
+      "type": "Unique Potential"
+     }
+    ]
+   }
+  ],
+  "description": "I stopped by Candle Square to report the completion of a quest. The place was unusually noisy today. You want me to wear this? Are you out of your mind? I'm always perfectly sane, Deputy Commander. That's ridiculous! Absolutely not. I'm not doing it! Hmm, the Captain is here at just the right time.",
+  "event_group_id": 710600103,
+  "name": "Composure in a Maid Outfit",
   "savior_name": "Lydia",
   "type": "arcana"
  },

@@ -448,6 +448,18 @@
  },
  {
   "battle_effects": [
+   "At the start of the turn, grants self 3 stacks of Clocking Out (Undispellable). On attack, if self has 5 or more stacks of Clocking Out (Undispellable), uses Shoo! on the enemy with the highest Max HP after attacking and reduces all self skill cooldowns by 1 turn."
+  ],
+  "description": "A choker that fetches a hefty price at a shady auction. Rumor has it that the leash and dog-toy-shaped charm reflect the buyer's tastes.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_HALLOWEEN_ROD_CHARM.webp",
+  "id": 5011060,
+  "name": "Choker of Obedience",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
    "Deals Chain DMG to the enemy with the highest Max HP that is proportional to self ATK after attacking. Grants Barrier for 3 turns if HP is 50% or below after being attacked. Barrier is proportional to ATK. Barrier occurs once every 3 turns. (Chain DMG: 25% ATK) (Barrier: 85% ATK)"
   ],
   "description": "A must-have item for beginners who want to succeed through astrology.",
@@ -635,6 +647,18 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SUMMER_SMILE_CHARM.webp",
   "id": 5011046,
   "name": "Happy End: Summer Edition",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "At the start of the turn, grants self 1 stack of Dust Detection (Undispellable). After using Pre-Arrival Cleanup, has a 100% chance to inflict Poison on all enemies for 2 turns. Poison damage is proportional to self Max HP. (Poison DMG: 5% Max HP)"
+  ],
+  "description": "A headband Ceres wears to show her dedication to serving others. Though she won't admit it, she seems rather fond of the design itself.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_HALLOWEEN_BEAMSWORD_CHARM.webp",
+  "id": 5011059,
+  "name": "Headband of Service",
   "pp_convert": 12,
   "subtype": "Charm"
  },

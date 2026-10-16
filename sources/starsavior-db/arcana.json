@@ -13551,6 +13551,343 @@
   }
  },
  {
+  "arcana_name": "You Call This an Outfit?!",
+  "character_id": 1034,
+  "class_restriction": "Savior Support",
+  "episode": "Lydia had always been the predator.\nA brilliant schemer who stayed one step ahead of her opponents, lured them into traps, and laughed at their misfortune.\n\nBut even the sharpest mind is no match for a disaster of its own making.\nShe was fresh out of tricks. Nothing left up her sleeve, and not even a sleeve left to hide anything in.\n\n\"Please... Can't I have just one normal outfit...?\"\n\nNobody wins every time.\nShe'd never shown anyone mercy, so there was little hope of anyone showing her some now.",
+  "event_count": 3,
+  "grade": "SSR",
+  "id": 7106001,
+  "images": {
+   "card": "/images/arcana/ARCANA_HALLOWEEN_ROD_SSR_01.webp",
+   "card_small": "/images/arcana/ARCANA_HALLOWEEN_ROD_SSR_01_S.webp"
+  },
+  "journey_events": [
+   {
+    "name": "The Scent of One's Own Kind",
+    "rewards": [
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 10.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +10",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Journey Buff",
+      "description": "Braved the embarrassment and worked to cultivate unwavering composure.\nPotential Points gained during training increase.",
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POTENPOINT_BONUS.webp",
+      "id": 381,
+      "name": "Cultivating Composure",
+      "tags": [
+       "Journey Buff"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Qualifications for Delusion",
+    "rewards": [
+     {
+      "category": "Standard Potential",
+      "description": "Increases ATK by 2%.",
+      "icon": "/images/potentials/POTEN_2_RATE_ATK.webp",
+      "id": 21001,
+      "name": "Skill of Attack",
+      "tags": [
+       "ATK"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 15.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +15",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 10.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +10",
+      "tags": [
+       "Vitality"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Gains 10 Potential Points.",
+      "icon": "",
+      "id": 0,
+      "name": "Potential Points +10",
+      "tags": [
+       "Potential Points"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Composure in a Maid Outfit",
+    "rewards": [
+     {
+      "category": "Unique Potential",
+      "description": "Increases CRIT Rate by 20%. After attacking, increases self ATK by 2% for each target critically hit. Stacks up to 10 times.",
+      "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+      "id": 11060,
+      "name": "Touch of the Void",
+      "tags": [
+       "ATK",
+       "CRIT Rate"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 12.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +12",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 8.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +8",
+      "tags": [
+       "Vitality"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Gains 20 Potential Points.",
+      "icon": "",
+      "id": 0,
+      "name": "Potential Points +20",
+      "tags": [
+       "Potential Points"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Recovers 15 Stamina.",
+      "icon": "",
+      "id": 0,
+      "name": "Stamina +15",
+      "tags": [
+       "Stamina"
+      ]
+     }
+    ]
+   }
+  ],
+  "journey_stat": "Strength",
+  "potentials": [
+   {
+    "category": "Unique Potential",
+    "description": "Increases CRIT Rate by 20%. After attacking, increases self ATK by 2% for each target critically hit. Stacks up to 10 times.",
+    "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+    "id": 11060,
+    "name": "Touch of the Void",
+    "tags": [
+     "ATK",
+     "CRIT Rate"
+    ]
+   },
+   {
+    "category": "Standard Potential",
+    "description": "Increases ATK by 2%.",
+    "icon": "/images/potentials/POTEN_2_RATE_ATK.webp",
+    "id": 21001,
+    "name": "Skill of Attack",
+    "tags": [
+     "ATK"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 10.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +10",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 12.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +12",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 15.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +15",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Vitality by 10.",
+    "icon": "",
+    "id": 0,
+    "name": "Vitality +10",
+    "tags": [
+     "Vitality"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Vitality by 8.",
+    "icon": "",
+    "id": 0,
+    "name": "Vitality +8",
+    "tags": [
+     "Vitality"
+    ]
+   },
+   {
+    "category": "Journey Buff",
+    "description": "Braved the embarrassment and worked to cultivate unwavering composure.\nPotential Points gained during training increase.",
+    "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POTENPOINT_BONUS.webp",
+    "id": 381,
+    "name": "Cultivating Composure",
+    "tags": [
+     "Journey Buff"
+    ]
+   },
+   {
+    "category": "Consumable",
+    "description": "Gains 10 Potential Points.",
+    "icon": "",
+    "id": 0,
+    "name": "Potential Points +10",
+    "tags": [
+     "Potential Points"
+    ]
+   },
+   {
+    "category": "Consumable",
+    "description": "Gains 20 Potential Points.",
+    "icon": "",
+    "id": 0,
+    "name": "Potential Points +20",
+    "tags": [
+     "Potential Points"
+    ]
+   },
+   {
+    "category": "Consumable",
+    "description": "Recovers 15 Stamina.",
+    "icon": "",
+    "id": 0,
+    "name": "Stamina +15",
+    "tags": [
+     "Stamina"
+    ]
+   }
+  ],
+  "promotes": [
+   {
+    "add_per_level": 1,
+    "base_value": 8,
+    "category": "Journey Start Effects",
+    "effect": "Bond Points Gain",
+    "is_rate": false,
+    "per_level": 10,
+    "unlock_level": 5,
+    "value": "+8"
+   },
+   {
+    "add_per_level": 1,
+    "base_value": 7,
+    "category": "Journey Start Effects",
+    "effect": "Potential Points Gain",
+    "is_rate": false,
+    "per_level": 5,
+    "unlock_level": 25,
+    "value": "+7"
+   },
+   {
+    "add_per_level": 1,
+    "base_value": 4,
+    "category": "Journey Start Effects",
+    "effect": "Strength Increase",
+    "is_rate": false,
+    "per_level": 20,
+    "unlock_level": 10,
+    "value": "+4"
+   },
+   {
+    "add_per_level": 16,
+    "base_value": 1000,
+    "category": "Training Effects",
+    "effect": "Training Effectiveness",
+    "is_rate": true,
+    "per_level": 1,
+    "unlock_level": 1,
+    "value": "+10%"
+   },
+   {
+    "add_per_level": 1,
+    "base_value": 1,
+    "category": "Training Effects",
+    "effect": "Additional Potential Points",
+    "is_rate": false,
+    "per_level": 10,
+    "unlock_level": 20,
+    "value": "+1"
+   },
+   {
+    "add_per_level": 22,
+    "base_value": 1200,
+    "category": "Sensory Training Effects",
+    "effect": "Super Sensory Training Effectiveness",
+    "is_rate": true,
+    "per_level": 1,
+    "unlock_level": 1,
+    "value": "+12%"
+   },
+   {
+    "add_per_level": 80,
+    "base_value": 80,
+    "category": "Sensory Training Effects",
+    "effect": "Sensory Training Chance",
+    "is_rate": false,
+    "per_level": 5,
+    "unlock_level": 35,
+    "value": "+80"
+   }
+  ],
+  "savior_name": "Lydia",
+  "slug": "halloween-rod-ssr-01",
+  "special_stat": "CRIT Rate Support",
+  "unique_promote": {
+   "description": "When Bond Points are at 50 or higher During Sensory Training, Sensory Training Chance +140",
+   "icon": "ICON_ARCANA_UNIQUE_TRAINING.png",
+   "name": "Dressed to Please",
+   "rapport_requirement": 50,
+   "unlock_level": 35
+  }
+ },
+ {
   "arcana_name": "Young Lady of Stranis",
   "character_id": 1001,
   "class_restriction": "Universal Support",

@@ -1,18 +1,20 @@
 {
  "stats": {
-  "new_only": 73,
+  "new_only": 76,
   "kept_arcana_db": 372,
   "updated_from_starsavior_db": 9,
   "old_only": 10,
   "old_only_cards": 2,
-  "names_borrowed_by_english": 6,
+  "names_borrowed_by_english": 8,
   "refs_added_journey_buffs": 2
  },
  "counts": {
   "journey_variants": 275,
   "journey_names": 138,
-  "arcanas": 83,
-  "arcana_events": 189
+  "arcanas": 84,
+  "arcana_events": 192
  },
- "missing_zh_names": []
+ "missing_zh_names": [
+  "A Cat's Dream"
+ ]
 }

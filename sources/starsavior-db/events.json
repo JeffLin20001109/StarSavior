@@ -8881,6 +8881,56 @@
   "type": "arcana"
  },
  {
+  "arcana_name": "When Slumber Comes Calling",
+  "chain_index": 1,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_TRAINING_SUCCESS_UP.webp",
+      "name": "Stamina",
+      "tags": [
+       "Stamina"
+      ],
+      "type": "Stamina",
+      "value": "+10"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POTENPOINT_BONUS.webp",
+      "name": "Potential Points",
+      "pp_scaled": {
+       "easy": 10,
+       "hard": 25,
+       "normal": 15
+      },
+      "tags": [
+       "Potential Points"
+      ],
+      "type": "PP",
+      "value": "+10"
+     },
+     {
+      "description": "Increases CRIT Rate by 3%.",
+      "icon": "/images/potentials/POTEN_2_RATE_CRITICAL.webp",
+      "name": "Skill of Insight",
+      "tags": [
+       "CRIT Rate"
+      ],
+      "type": "Standard Potential"
+     }
+    ]
+   }
+  ],
+  "description": "A long, exhausting day was finally over... After finishing training, I must've fallen asleep the moment I hit the bed... ...When I opened my eyes again, a blue moon was hanging high outside the window. I tried to get up for a glass of water, but... ...?! ...My body wouldn't move.",
+  "event_group_id": 710140101,
+  "name": "Sleep Paralysis",
+  "savior_name": "Seira",
+  "type": "arcana"
+ },
+ {
   "arcana_name": "Butterfly of Phantasm",
   "chain_index": 2,
   "chain_total": 3,
@@ -8917,6 +8967,94 @@
   "type": "arcana"
  },
  {
+  "arcana_name": "When Slumber Comes Calling",
+  "chain_index": 2,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "failure_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+15"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_ENDURANCE_TRAINING_UP.webp",
+      "name": "Endurance",
+      "tags": [
+       "Endurance"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "description": "Slightly increases self CRIT DMG by a certain percentage.",
+      "icon": "/images/potentials/POTEN_2_RATE_CRITICAL_DAMAGE.webp",
+      "name": "Sense of Destruction",
+      "tags": [
+       "CRIT DMG"
+      ],
+      "type": "Standard Potential"
+     }
+    ],
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+15"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_ENDURANCE_TRAINING_UP.webp",
+      "name": "Endurance",
+      "tags": [
+       "Endurance"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "description": "Slightly increases self CRIT DMG by a certain percentage.",
+      "icon": "/images/potentials/POTEN_2_RATE_CRITICAL_DAMAGE.webp",
+      "name": "Sense of Destruction",
+      "tags": [
+       "CRIT DMG"
+      ],
+      "type": "Standard Potential"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POTENPOINT_BONUS.webp",
+      "name": "Potential Points",
+      "pp_scaled": {
+       "easy": 10,
+       "hard": 25,
+       "normal": 15
+      },
+      "tags": [
+       "Potential Points"
+      ],
+      "type": "PP",
+      "value": "+10"
+     }
+    ]
+   }
+  ],
+  "description": "A paradigm shift is necessary. ...Where's this coming from? I've been thinking about it for a long time now. Every attempt to smile consciously has failed. Therefore, I'll shift focus to the subconscious and the irrational. In other words...",
+  "event_group_id": 710140102,
+  "name": "A Dream Is What You Make of It",
+  "savior_name": "Seira",
+  "type": "arcana"
+ },
+ {
   "arcana_name": "Butterfly of Phantasm",
   "chain_index": 3,
   "chain_total": 3,
@@ -8949,6 +9087,69 @@
   "description": "A paradigm shift is necessary. ...Where's this coming from? I've been thinking about it for a long time now. Every attempt to smile consciously has failed. Therefore, I'll shift focus to the subconscious and the irrational. In other words...",
   "event_group_id": 610140102,
   "name": "A Dream Is What You Make of It",
+  "savior_name": "Seira",
+  "type": "arcana"
+ },
+ {
+  "arcana_name": "When Slumber Comes Calling",
+  "chain_index": 3,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+10"
+     },
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+5"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_TRAINING_SUCCESS_UP.webp",
+      "name": "Stamina",
+      "tags": [
+       "Stamina"
+      ],
+      "type": "Stamina",
+      "value": "+10"
+     },
+     {
+      "description": "Increases SPD by 2.",
+      "icon": "/images/potentials/POTEN_2_TRUN_SPEED.webp",
+      "name": "Skill of Speed",
+      "tags": [
+       "SPD"
+      ],
+      "type": "Standard Potential"
+     },
+     {
+      "description": "After using a non-attack skill, grants self Sweet Dream (Undispellable) for 3 turns, then gains 2 Nova Force.",
+      "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+      "name": "Butterfly's Lullaby",
+      "tags": [
+       "Special"
+      ],
+      "type": "Unique Potential"
+     }
+    ]
+   }
+  ],
+  "description": "While walking through the streets of NOA, a young girl stopped me and asked for help. My cat Francis ran away again. So you want me to find Francis? No. This is already the fifth time this month! We need to figure out why Francis keeps running away and do something about it! Fair point.",
+  "event_group_id": 710140103,
+  "name": "A Cat's Dream",
   "savior_name": "Seira",
   "type": "arcana"
  },
@@ -18312,7 +18513,7 @@
    {
     "cost_amount": 0,
     "cost_type": "Free",
-    "label": "A training manual that helps with offense",
+    "label": "An encouragement that helps with offense",
     "success_rewards": [
      {
       "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
@@ -18342,7 +18543,7 @@
    {
     "cost_amount": 0,
     "cost_type": "Free",
-    "label": "A training manual that helps with survival",
+    "label": "An encouragement that helps with survival",
     "success_rewards": [
      {
       "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
@@ -18372,7 +18573,7 @@
    {
     "cost_amount": 0,
     "cost_type": "Free",
-    "label": "A training manual that helps in various situations",
+    "label": "An encouragement that helps in various situations",
     "success_rewards": [
      {
       "icon": "/images/jstats/AB_UNIT_STAT_FOCUS.webp",
@@ -18402,6 +18603,7 @@
    {
     "cost_amount": 0,
     "cost_type": "Free",
+    "label": "An encouragement that helps with tactics operations",
     "success_rewards": [
      {
       "icon": "/images/jmenu/UI_JOURNEY_MENU_ICON_TRADE.webp",

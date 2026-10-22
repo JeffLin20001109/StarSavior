@@ -13551,6 +13551,401 @@
   }
  },
  {
+  "arcana_name": "When Slumber Comes Calling",
+  "character_id": 1014,
+  "class_restriction": "Savior Support",
+  "episode": "Feet once drawn to the shadows now tread in sunlight.\n\nUnfamiliar streets, an unfamiliar warmth. And there, in a shop display, a pair of eyes glimmering back at her.\n\nA little moon that, as the story goes, catches bad dreams in its web and lets only good dreams drift down its feathers.\n\n\"...What do you think? Is it me?\"\n\nShe picks it up, gives it a spin, and sets it down again, only to turn back for another look.\n\nEven hesitating can feel this sweet. Little by little, the girl's first outing melts into the afternoon glow.",
+  "event_count": 3,
+  "grade": "SSR",
+  "id": 7101401,
+  "images": {
+   "card": "/images/arcana/ARCANA_NIGHTMARE_REAPER_SSR_01.webp",
+   "card_small": "/images/arcana/ARCANA_NIGHTMARE_REAPER_SSR_01_S.webp"
+  },
+  "journey_events": [
+   {
+    "name": "Sleep Paralysis",
+    "rewards": [
+     {
+      "category": "Standard Potential",
+      "description": "Increases CRIT Rate by 3%.",
+      "icon": "/images/potentials/POTEN_2_RATE_CRITICAL.webp",
+      "id": 21005,
+      "name": "Skill of Insight",
+      "tags": [
+       "CRIT Rate"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Gains 10 Potential Points.",
+      "icon": "",
+      "id": 0,
+      "name": "Potential Points +10",
+      "tags": [
+       "Potential Points"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Recovers 10 Stamina.",
+      "icon": "",
+      "id": 0,
+      "name": "Stamina +10",
+      "tags": [
+       "Stamina"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "A Dream Is What You Make of It",
+    "rewards": [
+     {
+      "category": "Standard Potential",
+      "description": "Slightly increases self CRIT DMG by a certain percentage.",
+      "effects": [
+       {
+        "is_percent": true,
+        "max_level": 5,
+        "min_value": 2,
+        "stat": "CRIT DMG",
+        "value": 10
+       }
+      ],
+      "icon": "/images/potentials/POTEN_2_RATE_CRITICAL_DAMAGE.webp",
+      "id": 20006,
+      "name": "Sense of Destruction",
+      "tags": [
+       "CRIT DMG"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Endurance by 8.",
+      "icon": "",
+      "id": 0,
+      "name": "Endurance +8",
+      "tags": [
+       "Endurance"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 15.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +15",
+      "tags": [
+       "Vitality"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Gains 10 Potential Points.",
+      "icon": "",
+      "id": 0,
+      "name": "Potential Points +10",
+      "tags": [
+       "Potential Points"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "A Cat's Dream",
+    "rewards": [
+     {
+      "category": "Unique Potential",
+      "description": [
+       {
+        "text": "After using a non-attack skill, grants self "
+       },
+       {
+        "buff": "Sweet Dream (Undispellable)",
+        "buff_desc": "Increases Toughness DMG by 1.",
+        "icon": "/images/buffs/BUFF_CRUSH.webp"
+       },
+       {
+        "text": " for 3 turns, then gains 2 Nova Force."
+       }
+      ],
+      "effects": [
+       {
+        "duration": 3,
+        "is_percent": true,
+        "stat": "Toughness DMG",
+        "trigger": "After using a skill",
+        "value": 0.01
+       }
+      ],
+      "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+      "id": 11014,
+      "name": "Butterfly's Lullaby",
+      "tags": [
+       "Nova Force"
+      ]
+     },
+     {
+      "category": "Standard Potential",
+      "description": "Increases SPD by 2.",
+      "icon": "/images/potentials/POTEN_2_TRUN_SPEED.webp",
+      "id": 21004,
+      "name": "Skill of Speed",
+      "tags": [
+       "SPD"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 5.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +5",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 10.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +10",
+      "tags": [
+       "Vitality"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Recovers 10 Stamina.",
+      "icon": "",
+      "id": 0,
+      "name": "Stamina +10",
+      "tags": [
+       "Stamina"
+      ]
+     }
+    ]
+   }
+  ],
+  "journey_stat": "Vitality",
+  "potentials": [
+   {
+    "category": "Unique Potential",
+    "description": [
+     {
+      "text": "After using a non-attack skill, grants self "
+     },
+     {
+      "buff": "Sweet Dream (Undispellable)",
+      "buff_desc": "Increases Toughness DMG by 1.",
+      "icon": "/images/buffs/BUFF_CRUSH.webp"
+     },
+     {
+      "text": " for 3 turns, then gains 2 Nova Force."
+     }
+    ],
+    "effects": [
+     {
+      "duration": 3,
+      "is_percent": true,
+      "stat": "Toughness DMG",
+      "trigger": "After using a skill",
+      "value": 0.01
+     }
+    ],
+    "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+    "id": 11014,
+    "name": "Butterfly's Lullaby",
+    "tags": [
+     "Nova Force"
+    ]
+   },
+   {
+    "category": "Standard Potential",
+    "description": "Slightly increases self CRIT DMG by a certain percentage.",
+    "effects": [
+     {
+      "is_percent": true,
+      "max_level": 5,
+      "min_value": 2,
+      "stat": "CRIT DMG",
+      "value": 10
+     }
+    ],
+    "icon": "/images/potentials/POTEN_2_RATE_CRITICAL_DAMAGE.webp",
+    "id": 20006,
+    "name": "Sense of Destruction",
+    "tags": [
+     "CRIT DMG"
+    ]
+   },
+   {
+    "category": "Standard Potential",
+    "description": "Increases CRIT Rate by 3%.",
+    "icon": "/images/potentials/POTEN_2_RATE_CRITICAL.webp",
+    "id": 21005,
+    "name": "Skill of Insight",
+    "tags": [
+     "CRIT Rate"
+    ]
+   },
+   {
+    "category": "Standard Potential",
+    "description": "Increases SPD by 2.",
+    "icon": "/images/potentials/POTEN_2_TRUN_SPEED.webp",
+    "id": 21004,
+    "name": "Skill of Speed",
+    "tags": [
+     "SPD"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Endurance by 8.",
+    "icon": "",
+    "id": 0,
+    "name": "Endurance +8",
+    "tags": [
+     "Endurance"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 5.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +5",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Vitality by 10.",
+    "icon": "",
+    "id": 0,
+    "name": "Vitality +10",
+    "tags": [
+     "Vitality"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Vitality by 15.",
+    "icon": "",
+    "id": 0,
+    "name": "Vitality +15",
+    "tags": [
+     "Vitality"
+    ]
+   },
+   {
+    "category": "Consumable",
+    "description": "Gains 10 Potential Points.",
+    "icon": "",
+    "id": 0,
+    "name": "Potential Points +10",
+    "tags": [
+     "Potential Points"
+    ]
+   },
+   {
+    "category": "Consumable",
+    "description": "Recovers 10 Stamina.",
+    "icon": "",
+    "id": 0,
+    "name": "Stamina +10",
+    "tags": [
+     "Stamina"
+    ]
+   }
+  ],
+  "promotes": [
+   {
+    "add_per_level": 3,
+    "base_value": 3,
+    "category": "Journey Start Effects",
+    "effect": "Bond Points Gain",
+    "is_rate": false,
+    "per_level": 5,
+    "unlock_level": 35,
+    "value": "+3"
+   },
+   {
+    "add_per_level": 1,
+    "base_value": 8,
+    "category": "Journey Start Effects",
+    "effect": "Potential Points Gain",
+    "is_rate": false,
+    "per_level": 5,
+    "unlock_level": 20,
+    "value": "+8"
+   },
+   {
+    "add_per_level": 1,
+    "base_value": 6,
+    "category": "Journey Start Effects",
+    "effect": "Strength Increase",
+    "is_rate": false,
+    "per_level": 10,
+    "unlock_level": 20,
+    "value": "+6"
+   },
+   {
+    "add_per_level": 12,
+    "base_value": 800,
+    "category": "Training Effects",
+    "effect": "Training Effectiveness",
+    "is_rate": true,
+    "per_level": 1,
+    "unlock_level": 1,
+    "value": "+8%"
+   },
+   {
+    "add_per_level": 1,
+    "base_value": 1,
+    "category": "Training Effects",
+    "effect": "Additional Endurance Stat Gain",
+    "is_rate": false,
+    "per_level": 20,
+    "unlock_level": 25,
+    "value": "+1"
+   },
+   {
+    "add_per_level": 22,
+    "base_value": 1200,
+    "category": "Sensory Training Effects",
+    "effect": "Super Sensory Training Effectiveness",
+    "is_rate": true,
+    "per_level": 1,
+    "unlock_level": 1,
+    "value": "+12%"
+   },
+   {
+    "add_per_level": 5,
+    "base_value": 200,
+    "category": "Sensory Training Effects",
+    "effect": "Sensory Training Chance",
+    "is_rate": false,
+    "per_level": 2,
+    "unlock_level": 10,
+    "value": "+200"
+   }
+  ],
+  "savior_name": "Seira",
+  "slug": "nightmare-reaper-ssr-01",
+  "special_stat": "Special Effect",
+  "unique_promote": {
+   "description": "When Bond Points are at 40 or higher During Training, Additional Vitality Stat Gain +1",
+   "icon": "ICON_ARCANA_UNIQUE_TRAINING.png",
+   "name": "Blue Butterfly's Dream",
+   "rapport_requirement": 40,
+   "unlock_level": 35
+  }
+ },
+ {
   "arcana_name": "You Call This an Outfit?!",
   "character_id": 1034,
   "class_restriction": "Savior Support",

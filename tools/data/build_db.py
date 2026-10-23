@@ -34,6 +34,14 @@ def en(value):
     return value.get('en-US', '') if isinstance(value, dict) else (value or '')
 
 
+def plain_text(value):
+    """starsavior-db 的說明有時是富文字片段 [{'text': …}, {'buff': 名稱, 'buff_desc': …}]，接成一句純文字。"""
+    if isinstance(value, list):
+        return ''.join(str(part.get('text') or part.get('buff') or '') if isinstance(part, dict) else str(part)
+                       for part in value).strip()
+    return value
+
+
 def number(text):
     """'+10' → (10, 10)；'+15~+20' → (15, 20)；無法解析回傳 None。"""
     if text is None:
@@ -67,6 +75,7 @@ class References:
             ref_id = f'sdb-{table}-{len(self.tables[table]) + 1}'
             self.added[table] += 1
         entry = {'id': ref_id, 'name': {'en-US': name}}
+        description = plain_text(description)
         if description:
             entry['desc'] = {'en-US': description}
         self.tables[table][ref_id] = entry

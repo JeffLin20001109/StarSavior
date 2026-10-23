@@ -34,7 +34,7 @@ class RetryTests(unittest.TestCase):
         data = mock.Mock(cards=[], journey_count=lambda: 0)
         outcomes = [RuntimeError('certificate has expired'), RuntimeError('again'), (data, '已從網站更新資料')]
 
-        def fake_load(*args):
+        def fake_load(*args, **kwargs):
             outcome = outcomes.pop(0) if outcomes else (data, '使用本機資料')
             if isinstance(outcome, Exception):
                 raise outcome
@@ -49,6 +49,32 @@ class RetryTests(unittest.TestCase):
         self.assertIs(app.data, data)
         self.assertEqual(app._retry_now.waits[:3], [5, 10, 12 * 3600])
         self.assertEqual(worked, ['frame'])
+
+    def test_fresh_cache_at_startup_is_rechecked_online(self):
+        app = app_module.App.__new__(app_module.App)
+        app.config, app.dir, app.data, app.data_status = {'data_url': 'x', 'data_max_age_hours': 12}, None, None, ''
+        app._closing, app._pending_frame = False, None
+        app._retry_now = FakeEvent(app)
+        app.translations = mock.Mock(refresh=mock.Mock(return_value='譯文表'))
+        old, new = mock.Mock(cards=[], journey_count=lambda: 1), mock.Mock(cards=[], journey_count=lambda: 2)
+        calls = []
+
+        def fake_load(url, directory, max_age, force=False):
+            calls.append(force)
+            if force:
+                return new, '已更新旅程資料'
+            return (new if True in calls else old), '使用本機資料'  # 下載後快取就是新資料
+
+        with mock.patch.object(app_module, 'load_data', fake_load), \
+                mock.patch.object(app_module.threading, 'Thread',
+                                  lambda target, args, daemon: mock.Mock(start=lambda: None)):
+            app._load_data()
+        # 先用快取，緊接著強制向線上確認一次；之後才每 12 小時更新
+        self.assertEqual(calls[:3], [False, True, False])
+        self.assertIs(app.data, new)
+        self.assertEqual(app._retry_now.waits[0], 12 * 3600)
+        forced = [c.kwargs.get('force') for c in app.translations.refresh.call_args_list]
+        self.assertEqual(forced[:2], [False, True])
 
 
 if __name__ == '__main__':

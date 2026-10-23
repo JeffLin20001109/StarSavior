@@ -287,16 +287,21 @@ class App:
 
     # ---- 背景工作 ----
     def _load_data(self):
-        """下載網站資料；失敗會自動重試（5 秒起，最長每 60 秒一次），成功後定期更新。"""
+        """下載旅程資料；失敗會自動重試（5 秒起，最長每 60 秒一次），成功後定期更新。
+
+        啟動時先用本機快取讓按鈕馬上可用，接著立刻向線上確認一次有沒有新資料與新翻譯。
+        """
         delay, attempt = 5, 0
         max_age = float(self.config.get('data_max_age_hours', 12))
+        translations_age = float(self.config.get('translations_max_age_hours', 6))
+        force = checked_online = False
+        status = ''
         while not self._closing:
             attempt += 1
             if self.data is None and attempt > 1:
-                self.data_status = f'正在重新下載網站資料（第 {attempt} 次）…'
-            log.info(self.translations.refresh(float(self.config.get('translations_max_age_hours', 6))))
+                self.data_status = f'正在重新下載旅程資料（第 {attempt} 次）…'
             try:
-                data, status = load_data(self.config['data_url'], self.dir, max_age)
+                data, status = load_data(self.config['data_url'], self.dir, max_age, force=force)
                 first = self.data is None
                 self.data, self.data_status = data, status
                 log.info('%s：%d 個旅程事件、%d 張阿爾克那', status, data.journey_count(), len(data.cards))
@@ -305,16 +310,22 @@ class App:
                     threading.Thread(target=self._prefetch_cards, args=(data,), daemon=True).start()
                 stale = status.startswith('無法連線')
             except Exception as exc:
-                log.warning('網站資料載入失敗（第 %d 次）：%s', attempt, exc)
+                log.warning('旅程資料載入失敗（第 %d 次）：%s', attempt, exc)
                 self.data_status = f'下載失敗，{delay} 秒後自動重試（已試 {attempt} 次）：{exc}'
                 stale = True
+            log.info(self.translations.refresh(translations_age, force=force))
             if stale:
                 wait = delay
                 delay = min(delay * 2, 60)
+                force = checked_online
+            elif status == '使用本機資料' and not checked_online:
+                wait, force = 0, True  # 立刻向線上確認
             else:
-                wait, delay, attempt = max_age * 3600, 5, 0
-            self._retry_now.wait(wait)
-            self._retry_now.clear()
+                wait, delay, attempt, force = max_age * 3600, 5, 0, False
+            checked_online = True
+            if wait:
+                self._retry_now.wait(wait)
+                self._retry_now.clear()
 
     def _prefetch_cards(self, data):
         """先在背景下載所有卡圖並算好特徵，第一次遇到阿爾克那事件時就不用等下載。"""

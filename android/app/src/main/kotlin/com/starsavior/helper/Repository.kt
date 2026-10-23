@@ -36,54 +36,68 @@ class Repository(private val context: Context) {
     private val translationCache = File(context.filesDir, "translations_zh.json")
     val cardDir = File(context.cacheDir, "cards").apply { mkdirs() }
 
-    /** 背景持續確保資料可用：失敗時 5 秒起倍增、最長每 60 秒重試；成功後每 12 小時更新。 */
+    /**
+     * 背景持續確保資料可用：失敗時 5 秒起倍增、最長每 60 秒重試；成功後每 12 小時更新。
+     * 啟動時先用本機快取讓按鈕馬上可用，接著立刻向線上確認一次有沒有新資料與新翻譯。
+     */
     fun start(scope: CoroutineScope, onDataReady: () -> Unit) {
         scope.launch(Dispatchers.IO) {
             var wait = 5_000L
             var attempt = 0
+            var force = false
+            var checkedOnline = false
             while (isActive) {
                 attempt++
-                refreshTranslations()
-                val fresh = try {
+                refreshTranslations(force)
+                val source = try {
                     val first = data == null
-                    data = loadSiteData()
-                    status = "旅程資料：${data!!.journeyCount()} 個旅程事件、${data!!.cards.size} 張阿爾克那"
+                    val (loaded, from) = loadSiteData(force)
+                    data = loaded
+                    status = if (from == Source.OFFLINE) "無法連線，使用本機資料"
+                    else "旅程資料：${loaded.journeyCount()} 個旅程事件、${loaded.cards.size} 張阿爾克那"
                     if (first) onDataReady()
-                    true
+                    from
                 } catch (e: Exception) {
-                    Log.w(TAG, "網站資料下載失敗", e)
-                    status = if (data == null) "下載失敗，${wait / 1000} 秒後自動重試（已試 $attempt 次）：${e.message}"
-                    else "無法連線，使用本機資料（${e.message}）"
-                    false
+                    Log.w(TAG, "旅程資料下載失敗", e)
+                    status = "下載失敗，${wait / 1000} 秒後自動重試（已試 $attempt 次）：${e.message}"
+                    Source.OFFLINE
                 }
-                if (fresh) {
-                    wait = 5_000L
-                    attempt = 0
-                    delay(DATA_MAX_AGE_MS)
-                } else {
-                    delay(wait)
-                    wait = minOf(wait * 2, 60_000L)
+                when {
+                    source == Source.OFFLINE -> {
+                        delay(wait)
+                        wait = minOf(wait * 2, 60_000L)
+                        force = checkedOnline
+                    }
+                    source == Source.CACHE && !checkedOnline -> force = true  // 立刻向線上確認
+                    else -> {
+                        wait = 5_000L
+                        attempt = 0
+                        force = false
+                        delay(DATA_MAX_AGE_MS)
+                    }
                 }
+                checkedOnline = true
             }
         }
     }
 
-    /** 下載我們自己的資料庫（journey_data.json）；失敗時使用本機快取。 */
-    private fun loadSiteData(): GameData {
+    private enum class Source { CACHE, ONLINE, OFFLINE }
+
+    /** 下載我們自己的資料庫（journey_data.json）；未過期且未強制時直接用本機快取，下載失敗時也用快取。 */
+    private fun loadSiteData(force: Boolean): Pair<GameData, Source> {
         val cache = File(siteDir, "journey_data.json")
         val fresh = cache.exists() && System.currentTimeMillis() - cache.lastModified() < DATA_MAX_AGE_MS
-        if (!fresh) {
-            try {
-                val text = httpGet(DATA_URL)
-                val parsed = GameData(parseJson(text).jsonObject)  // 能解析才寫入快取
-                cache.writeText(text)
-                return parsed
-            } catch (e: Exception) {
-                if (!cache.exists()) throw e
-                Log.w(TAG, "下載旅程資料失敗，使用快取", e)
-            }
+        if (fresh && !force) return GameData(parseJson(cache.readText()).jsonObject) to Source.CACHE
+        try {
+            val text = httpGet(DATA_URL)
+            val parsed = GameData(parseJson(text).jsonObject)  // 能解析才寫入快取
+            cache.writeText(text)
+            return parsed to Source.ONLINE
+        } catch (e: Exception) {
+            if (!cache.exists()) throw e
+            Log.w(TAG, "下載旅程資料失敗，使用快取", e)
         }
-        return GameData(parseJson(cache.readText()).jsonObject)
+        return GameData(parseJson(cache.readText()).jsonObject) to Source.OFFLINE
     }
 
     private fun loadBundledAndCachedTable(): Map<String, String> {
@@ -99,9 +113,9 @@ class Repository(private val context: Context) {
         return table
     }
 
-    /** 下載最新譯文表（每 6 小時）；失敗時保留現有內容。 */
-    private fun refreshTranslations() {
-        if (translationCache.exists() && System.currentTimeMillis() - translationCache.lastModified() < TRANSLATION_MAX_AGE_MS) return
+    /** 下載最新譯文表（每 6 小時，或強制）；失敗時保留現有內容。 */
+    private fun refreshTranslations(force: Boolean) {
+        if (!force && translationCache.exists() && System.currentTimeMillis() - translationCache.lastModified() < TRANSLATION_MAX_AGE_MS) return
         try {
             val text = httpGet(TRANSLATIONS_URL)
             val table = TableTranslator.parseTable(text)

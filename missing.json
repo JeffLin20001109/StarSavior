@@ -1,47 +1,7 @@
 [
  {
-  "source": "An encouragement that helps with offense",
-  "en": "An encouragement that helps with offense",
+  "source": "After using a non-attack skill, grants self Sweet Dream (Undispellable) for 3 turns, then gains 2 Nova Force.",
+  "en": "After using a non-attack skill, grants self Sweet Dream (Undispellable) for 3 turns, then gains 2 Nova Force.",
   "kind": "text"
- },
- {
-  "source": "An encouragement that helps with survival",
-  "en": "An encouragement that helps with survival",
-  "kind": "text"
- },
- {
-  "source": "An encouragement that helps in various situations",
-  "en": "An encouragement that helps in various situations",
-  "kind": "text"
- },
- {
-  "source": "An encouragement that helps with tactics operations",
-  "en": "An encouragement that helps with tactics operations",
-  "kind": "text"
- },
- {
-  "source": "A Cat's Dream",
-  "en": "A Cat's Dream",
-  "kind": "text"
- },
- {
-  "source": "Butterfly's Lullaby",
-  "en": "Butterfly's Lullaby",
-  "kind": "text"
- },
- {
-  "source": "When Slumber Comes Calling",
-  "en": "When Slumber Comes Calling",
-  "kind": "text"
- },
- {
-  "source": "Seira",
-  "en": "Seira",
-  "kind": "text"
- },
- {
-  "source": "A Cat's Dream",
-  "en": "A Cat's Dream",
-  "kind": "event_name"
  }
 ]

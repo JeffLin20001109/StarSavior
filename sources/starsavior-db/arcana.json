@@ -13673,10 +13673,10 @@
       "effects": [
        {
         "duration": 3,
-        "is_percent": true,
+        "is_percent": false,
         "stat": "Toughness DMG",
         "trigger": "After using a skill",
-        "value": 0.01
+        "value": 1
        }
       ],
       "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
@@ -13749,10 +13749,10 @@
     "effects": [
      {
       "duration": 3,
-      "is_percent": true,
+      "is_percent": false,
       "stat": "Toughness DMG",
       "trigger": "After using a skill",
-      "value": 0.01
+      "value": 1
      }
     ],
     "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",

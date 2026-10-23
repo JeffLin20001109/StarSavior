@@ -120,8 +120,8 @@ def main():
     (OUT / 'pipeline_cases.json').write_text(json.dumps(pipeline_cases, ensure_ascii=False, indent=1), encoding='utf-8')
 
     # 3. 真實網站的多版本事件 + 真實譯文表（不連網翻譯）
-    multi = json.loads((ROOT / 'shared' / 'strings' / 'multi_variants.json').read_text(encoding='utf-8'))
-    table = json.loads((ROOT / 'shared' / 'translations_zh.json').read_text(encoding='utf-8'))
+    multi = json.loads((ROOT / 'shared' / 'golden' / 'multi_variants.json').read_text(encoding='utf-8'))
+    table = json.loads((ROOT / 'shared' / 'golden' / 'translations_zh.json').read_text(encoding='utf-8'))
     real = GameData({'journeys': multi, 'arcanas': [], 'journey_items': [], 'potentials': [],
                      'stat_potentials': [], 'journey_buffs': []})
     table_config = dict(DEFAULTS, translator='none')

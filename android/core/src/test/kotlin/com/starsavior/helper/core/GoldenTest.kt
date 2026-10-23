@@ -100,10 +100,10 @@ class GoldenTest {
 
     @Test
     fun realMultiVariantEventsRenderIdentically() {
-        val multi = parseJson(shared.resolve("strings/multi_variants.json").readText()).jsonObject
+        val multi = parseJson(shared.resolve("golden/multi_variants.json").readText()).jsonObject
         val data = GameData(mapOf("journeys" to multi, "arcanas" to JsonArray(emptyList()), "journey_items" to JsonArray(emptyList()),
             "potentials" to JsonArray(emptyList()), "stat_potentials" to JsonArray(emptyList()), "journey_buffs" to JsonArray(emptyList())))
-        val table = TableTranslator.parseTable(shared.resolve("translations_zh.json").readText())
+        val table = TableTranslator.parseTable(shared.resolve("golden/translations_zh.json").readText())
         val renderer = Renderer(data, TableTranslator(table))
         val cases = load("render_cases.json").jsonObject
         for (case in cases.getValue("render").jsonArray.map { it.jsonObject }) {

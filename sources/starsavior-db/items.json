@@ -1251,7 +1251,7 @@
  },
  {
   "battle_effects": [
-   "Deals 100% increased damage and resets the cooldown of Winterborne Quartet on using a Skill if the enemy has Freeze. Grants an extra turn if the enemy has Freeze after using Heaven Forbids Evil, Justice Strikes."
+   "On attack, if self does not have Swift Decree (Undispellable), grants self 1 stack of Snow Blossom (Undispellable). At the start of the turn, if self has Swift Decree (Undispellable), gains 4 Nova Force. This Nova Force gain effect can only trigger once every 3 turns."
   ],
   "description": "A prop used by the first generation of the Stellar Rangers.",
   "grade": "Legendary",

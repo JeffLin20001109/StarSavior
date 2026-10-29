@@ -1,1 +1,42 @@
-[]
+[
+ {
+  "source": "A Maid's Warmth",
+  "en": "A Maid's Warmth",
+  "kind": "text"
+ },
+ {
+  "source": "Look, it's okay. I'll be fine on my own now.",
+  "en": "Look, it's okay. I'll be fine on my own now.",
+  "kind": "text"
+ },
+ {
+  "source": "Skilled Acceleration",
+  "en": "Skilled Acceleration",
+  "kind": "text"
+ },
+ {
+  "source": "After using a non-attack Special Skill, increases self SPD by 4. Stacks up to 5 times.",
+  "en": "After using a non-attack Special Skill, increases self SPD by 4. Stacks up to 5 times.",
+  "kind": "text"
+ },
+ {
+  "source": "Yeah, thanks.",
+  "en": "Yeah, thanks.",
+  "kind": "text"
+ },
+ {
+  "source": "Maid for Hardship",
+  "en": "Maid for Hardship",
+  "kind": "text"
+ },
+ {
+  "source": "Ceres",
+  "en": "Ceres",
+  "kind": "text"
+ },
+ {
+  "source": "A Maid's Warmth",
+  "en": "A Maid's Warmth",
+  "kind": "event_name"
+ }
+]

@@ -2087,6 +2087,60 @@
   "type": "arcana"
  },
  {
+  "arcana_name": "Maid for Hardship",
+  "chain_index": 1,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+5"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_ENDURANCE_TRAINING_UP.webp",
+      "name": "Endurance",
+      "tags": [
+       "Endurance"
+      ],
+      "type": "Stat",
+      "value": "+5"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_CONDITION_UP_HOLD.webp",
+      "name": "Condition",
+      "tags": [
+       "Condition"
+      ],
+      "type": "Condition",
+      "value": "+1"
+     },
+     {
+      "description": "Increases SPD by 2.",
+      "icon": "/images/potentials/POTEN_2_TRUN_SPEED.webp",
+      "name": "Skill of Speed",
+      "tags": [
+       "SPD"
+      ],
+      "type": "Standard Potential"
+     }
+    ]
+   }
+  ],
+  "description": "Late evening at the Candle Square training grounds... ...Only managed to shave off two seconds? Still a long way to go. I'll have to try a different approach next time... Phew... Hmm? ...The smell of fruit and whipped cream. They're preparing sweets again at the crack of dawn. Honestly...",
+  "event_group_id": 710590101,
+  "name": "Do You Seek Power?",
+  "savior_name": "Ceres",
+  "type": "arcana"
+ },
+ {
   "arcana_name": "An Unseen Place",
   "chain_index": 2,
   "chain_total": 3,
@@ -2163,6 +2217,51 @@
   ],
   "description": "It was the morning of my day off. I was browsing NOA's marketplace, when... You charlatan! That voice sounds familiar... I pushed through the crowd to get a closer look. There stood a small girl with long silver hair, squaring off against the blacksmith.",
   "event_group_id": 710330202,
+  "name": "Different Standards",
+  "savior_name": "Ceres",
+  "type": "arcana"
+ },
+ {
+  "arcana_name": "Maid for Hardship",
+  "chain_index": 2,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+12"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_ENDURANCE_TRAINING_UP.webp",
+      "name": "Endurance",
+      "tags": [
+       "Endurance"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_TRAINING_SUCCESS_UP.webp",
+      "name": "Stamina",
+      "tags": [
+       "Stamina"
+      ],
+      "type": "Stamina",
+      "value": "+10"
+     }
+    ]
+   }
+  ],
+  "description": "It was the morning of my day off. I was browsing NOA's marketplace, when... You charlatan! That voice sounds familiar... I pushed through the crowd to get a closer look. There stood a small girl with long silver hair, squaring off against the blacksmith.",
+  "event_group_id": 710590102,
   "name": "Different Standards",
   "savior_name": "Ceres",
   "type": "arcana"
@@ -2245,6 +2344,104 @@
   "description": "Captain, if you're free, could you do me a favor? I'd like you to observe a new training regimen I've planned for Commander Ceres. A new training regimen? Hmm... More precisely, it's less about observing and more about asking you to back me up.",
   "event_group_id": 710330203,
   "name": "Training Success, Just by Sleeping?",
+  "savior_name": "Ceres",
+  "type": "arcana"
+ },
+ {
+  "arcana_name": "Maid for Hardship",
+  "chain_index": 3,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "label": "Look, it's okay. I'll be fine on my own now.",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+12"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_ENDURANCE_TRAINING_UP.webp",
+      "name": "Endurance",
+      "tags": [
+       "Endurance"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "description": "After using a non-attack Special Skill, increases self SPD by 4. Stacks up to 5 times.",
+      "icon": "/images/potentials/POTEN_UTILITY_BUFF.webp",
+      "name": "Skilled Acceleration",
+      "tags": [
+       "Special"
+      ],
+      "type": "Special Potential"
+     },
+     {
+      "description": "Increases Max HP by 2%.",
+      "icon": "/images/potentials/POTEN_2_RATE_HP.webp",
+      "name": "Skill of Life",
+      "tags": [
+       "HP"
+      ],
+      "type": "Standard Potential"
+     }
+    ]
+   },
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "label": "Yeah, thanks.",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_ENDURANCE_TRAINING_UP.webp",
+      "name": "Endurance",
+      "tags": [
+       "Endurance"
+      ],
+      "type": "Stat",
+      "value": "+12"
+     },
+     {
+      "description": "After using a non-attack Special Skill, increases self SPD by 4. Stacks up to 5 times.",
+      "icon": "/images/potentials/POTEN_UTILITY_BUFF.webp",
+      "name": "Skilled Acceleration",
+      "tags": [
+       "Special"
+      ],
+      "type": "Special Potential"
+     },
+     {
+      "description": "Increases DEF by 2%.",
+      "icon": "/images/potentials/POTEN_2_RATE_DEF.webp",
+      "name": "Skill of Defense",
+      "tags": [
+       "DEF"
+      ],
+      "type": "Standard Potential"
+     }
+    ]
+   }
+  ],
+  "description": "I got hurt during training and ended up resting in the Candle Square infirmary. It's nothing serious, so you should be fine to resume your normal activities tomorrow. Still, an injury is an injury, so I recommend taking it easy for the rest of the day.",
+  "event_group_id": 710590103,
+  "name": "A Maid's Warmth",
   "savior_name": "Ceres",
   "type": "arcana"
  },

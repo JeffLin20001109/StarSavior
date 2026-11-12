@@ -18,6 +18,8 @@ DEFAULTS = {
     # 官方譯文表（純 JSON，取自遊戲解包資料）；更新這個檔就能補上新事件的翻譯，不用重新打包 exe
     'translations_url': 'https://github.com/JeffLin20001109/StarSavior/releases/download/translations/translations_zh.json',
     'translations_max_age_hours': 6,
+    # 啟動時檢查程式本身有沒有新版本（只有正式版 exe 會檢查；設成 '' 就不檢查）
+    'update_url': 'https://github.com/JeffLin20001109/StarSavior/releases/download/desktop-latest/version.json',
     # 翻譯：google（免金鑰）、deepl（需填 deepl_api_key）、none（直接顯示韓文）
     'translator': 'google',
     'deepl_api_key': '',

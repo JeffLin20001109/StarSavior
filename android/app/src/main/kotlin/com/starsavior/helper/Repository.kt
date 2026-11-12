@@ -148,6 +148,9 @@ class Repository(private val context: Context) {
         /** 我們自己的資料庫：內容取自遊戲檔案，由維護者在本機產生並上傳。 */
         const val DATA_URL = "https://github.com/JeffLin20001109/StarSavior/releases/download/data/journey_data.json"
         const val TRANSLATIONS_URL = "https://github.com/JeffLin20001109/StarSavior/releases/download/translations/translations_zh.json"
+        /** 程式本身的最新版本資訊（只有正式版 APK 會檢查）。 */
+        const val VERSION_URL = "https://github.com/JeffLin20001109/StarSavior/releases/download/android-latest/version.json"
+        const val APK_URL = "https://github.com/JeffLin20001109/StarSavior/releases/download/android-latest/StarSaviorJourneyHelper.apk"
         private const val DATA_MAX_AGE_MS = 12 * 3600_000L
         private const val TRANSLATION_MAX_AGE_MS = 6 * 3600_000L
 

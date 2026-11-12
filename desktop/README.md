@@ -89,7 +89,8 @@ python -m unittest discover -s tests -t . -v      # 測試（含 A、B 截圖的
 powershell -ExecutionPolicy Bypass -File build.ps1  # 打包 dist\StarSaviorJourneyHelper.exe
 ```
 
-`desktop/` 或 `shared/` 有改動並合進 `main` 時，GitHub Actions 的「Desktop (Windows exe)」會在 Windows 上跑測試、打包 exe、用 `shared/fixtures` 的截圖自我檢查，然後發佈到 `desktop-latest`。PR 只會測試與打包，不會發佈。
+`desktop/` 或 `shared/` 有改動並合進 `main` 時，GitHub Actions 的「Desktop (Windows exe)」會在 Windows 上跑測試、打包 exe、用 `shared/fixtures` 的截圖自我檢查，然後發佈到 `desktop-latest`，同時附上 `version.json`（`{"commit", "url"}`）。PR 只會測試與打包，不會發佈。
+- 正式版 exe 內含打包時的 commit（`journey_helper/build_info.json`，由 `build.ps1` 在 main 分支產生）；啟動時和 `version.json` 比對，不同就詢問要不要開啟下載頁。設定檔 `update_url` 設成 `""` 可以關閉檢查。
 
 ## 已知限制
 

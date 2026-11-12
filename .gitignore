@@ -11,3 +11,6 @@ android/**/build/
 android/local.properties
 android/.idea/
 *.iml
+
+# 打包時產生的版本資訊
+desktop/journey_helper/build_info.json

@@ -104,6 +104,13 @@ jobs:
           else
             TAG=android-preview; TITLE="StarSavior 旅程助手 Android 版（測試版：${GITHUB_REF_NAME}）"; EXTRA="--prerelease"
           fi
+          FILES="StarSaviorJourneyHelper.apk"
+          if [ "$TAG" = "android-latest" ]; then
+            # 正式版附上 version.json，App 啟動畫面用它檢查有沒有新版本
+            printf '{"commit":"%s","url":"https://github.com/%s/releases/download/android-latest/StarSaviorJourneyHelper.apk"}' \
+              "$GITHUB_SHA" "$GITHUB_REPOSITORY" > version.json
+            FILES="$FILES version.json"
+          fi
           gh release delete "$TAG" --yes --cleanup-tag 2>/dev/null || true
-          gh release create "$TAG" StarSaviorJourneyHelper.apk --target "$GITHUB_SHA" --title "$TITLE" $EXTRA \
+          gh release create "$TAG" $FILES --target "$GITHUB_SHA" --title "$TITLE" $EXTRA \
             --notes "用手機直接下載 StarSaviorJourneyHelper.apk 安裝（需允許「安裝未知應用程式」）。commit: $GITHUB_SHA"

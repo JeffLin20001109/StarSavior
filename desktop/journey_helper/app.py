@@ -9,7 +9,7 @@ import threading
 import time
 import tkinter as tk
 
-from . import winapi
+from . import update, winapi
 from .cards import CardMatcher
 from .config import Config, app_dir
 from .data import load as load_data
@@ -281,6 +281,7 @@ class App:
         self.popup = Popup(self, self.scale)
         threading.Thread(target=self._load_data, daemon=True).start()
         threading.Thread(target=self._warm_up, daemon=True).start()
+        threading.Thread(target=self._check_update, daemon=True).start()
         self.root.after(50, self._tick)
         self.root.after(100, self._pump)
         self.root.after(600, self._welcome)
@@ -354,6 +355,26 @@ class App:
             self.ocr.warm_up()
         except Exception:
             log.exception('OCR 初始化失敗')
+
+    def _check_update(self):
+        """背景檢查新版本；有的話回到主執行緒詢問要不要開啟下載頁。"""
+        current = update.current_commit()
+        if not current:
+            return
+        found = update.check(self.config.get('update_url'), current)
+        if found:
+            log.info('有新版本：%s（目前 %s）', found['commit'][:7], current[:7])
+            self.root.after(0, lambda: self._offer_update(found))
+
+    def _offer_update(self, found):
+        from tkinter import messagebox
+        import webbrowser
+        url = found.get('url') or 'https://github.com/JeffLin20001109/StarSavior/releases/tag/desktop-latest'
+        if messagebox.askyesno('旅程助手有新版本',
+                               '有新版本的旅程助手可以下載。\n\n'
+                               '要開啟下載頁嗎？下載後關閉目前的程式，再執行新的 exe 即可。',
+                               parent=self.root):
+            webbrowser.open(url)
 
     def _welcome(self):
         lines = [[('左鍵點「旅」按鈕：辨識目前的旅程事件／阿爾克那事件', 'effect')],

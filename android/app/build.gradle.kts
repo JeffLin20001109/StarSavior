@@ -16,7 +16,12 @@ android {
         // 手機（arm64）與模擬器（x86_64）；OpenCV 的原生庫很大，只放這兩種
         ndk { abiFilters += listOf("arm64-v8a", "x86_64") }
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        // 正式版（GitHub Actions 的 main 分支）寫入 commit，啟動畫面用來檢查有沒有新版本；其他情況留空、不檢查
+        val official = System.getenv("GITHUB_REF") == "refs/heads/main" && System.getenv("GITHUB_EVENT_NAME") != "pull_request"
+        buildConfigField("String", "BUILD_COMMIT", "\"${if (official) System.getenv("GITHUB_SHA") ?: "" else ""}\"")
     }
+
+    buildFeatures { buildConfig = true }
 
     buildTypes {
         release {

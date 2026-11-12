@@ -21,6 +21,8 @@ class MainActivity : Activity() {
     private lateinit var status: TextView
     private lateinit var battery: Button
     private lateinit var diagnostics: TextView
+    private lateinit var updateBox: LinearLayout
+    private var updateChecked = false
     private var askedNotifications = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -44,12 +46,19 @@ class MainActivity : Activity() {
             setOnClickListener { requestBatteryExemption() }
         }
         diagnostics = TextView(this).apply { textSize = 12f; setTextColor(0xFF5F6670.toInt()); setTextIsSelectable(true) }
+        updateBox = LinearLayout(this).apply {
+            orientation = LinearLayout.VERTICAL
+            visibility = android.view.View.GONE
+            setBackgroundColor(0xFFFFF4D6.toInt())
+            setPadding(pad / 2, pad / 2, pad / 2, pad / 2)
+        }
         setContentView(LinearLayout(this).apply {
             orientation = LinearLayout.VERTICAL
             gravity = Gravity.CENTER_HORIZONTAL
             setPadding(pad, pad * 2, pad, pad)
             setBackgroundColor(Color.WHITE)
             addView(title)
+            addView(updateBox, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad / 2 })
             addView(help, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad })
             addView(start, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad })
             addView(status, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad / 2 })
@@ -68,6 +77,33 @@ class MainActivity : Activity() {
         Diagnostics.lastCrash(this)?.let { parts += "上次當機紀錄：\n$it" }
         Diagnostics.recentEvents(this).takeIf { it.isNotEmpty() }?.let { parts += "最近的事件：\n" + it.joinToString("\n") }
         diagnostics.text = if (parts.isEmpty()) "" else "── 診斷資訊（遇到問題時可以截圖回報）──\n" + parts.joinToString("\n\n")
+        checkForUpdate()
+    }
+
+    /** 背景下載 version.json；有新版本就在畫面上方顯示提示與下載按鈕。失敗時不顯示任何東西。 */
+    private fun checkForUpdate() {
+        val current = BuildConfig.BUILD_COMMIT
+        if (current.isEmpty() || updateChecked) return
+        updateChecked = true
+        Thread {
+            val found = runCatching {
+                com.starsavior.helper.core.UpdateCheck.newer(current, Repository.httpGet(Repository.VERSION_URL))
+            }.getOrNull() ?: return@Thread
+            runOnUiThread { showUpdate(found.url.ifEmpty { Repository.APK_URL }) }
+        }.start()
+    }
+
+    private fun showUpdate(url: String) {
+        updateBox.removeAllViews()
+        updateBox.addView(TextView(this).apply {
+            text = "有新版本的旅程助手可以下載。下載後直接安裝即可覆蓋目前的版本。"
+            textSize = 15f; setTextColor(0xFF5C4400.toInt())
+        })
+        updateBox.addView(Button(this).apply {
+            text = "下載新版"; textSize = 16f
+            setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url))) }
+        })
+        updateBox.visibility = android.view.View.VISIBLE
     }
 
     @android.annotation.SuppressLint("BatteryLife")

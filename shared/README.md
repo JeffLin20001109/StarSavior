@@ -3,7 +3,7 @@
 | 檔案 | 用途 |
 |---|---|
 | `translations_zh.json` | 譯文表，格式是 `{"原文": "中文"}`，原文是韓文（舊來源）或英文（只有 Star Savior DB 才有的新事件）。中文取自遊戲解包資料的官方繁中；遊戲裡找不到的少數句子保留本專案原本的翻譯。改動合進 `main` 後會自動發佈到 release「translations」，Windows 與 Android 版每 6 小時下載一次。 |
-| `event_names_zh.json` | 只有 Star Savior DB 才有的事件：英文事件名 → 遊戲內繁中名，`{"Hunt Trial": "討伐評鑑戰"}`。用來比對遊戲畫面上的標題；改動合進 `main` 後「Data」會重建資料庫。 |
+| `event_names_zh.json` | 只有 Star Savior DB 才有的事件：英文事件名 → 遊戲內繁中名，`{"Hunt Trial": "討伐評鑑戰"}`。只給舊的網站來源流程（`data.yml`）使用；現在的資料庫取自遊戲檔案，事件名稱已附官方繁中，不再需要這個檔。 |
 | `t2s.json` | 繁簡字對照，比對事件名稱時忽略繁簡差異。 |
 | `strings/source_ko.json` | 資料庫中所有需要翻譯的字串（附來源網站的中文、英文作參考），由「Dump Korean strings」產生。 |
 | `strings/missing_ko.json` | 譯文表還沒有的字串。補翻時從這裡開始（release「data」的 `missing.json` 每天也會更新一份）。 |

@@ -1,8 +1,7 @@
 """下載並快取旅程資料。
 
-資料是我們自己的資料庫（journey_data.json），由 GitHub Actions 每天從 starsavior-db 與
-star-savior-arcana-db 合併產生（見 tools/data/build_db.py），格式與 star-savior-arcana-db 的 JSON 相同。
-程式只讀這一個檔，來源網站改版或關站時，仍可使用最後一份正常的資料。
+資料是我們自己的資料庫（journey_data.json），內容取自遊戲檔案，由維護者在本機產生並上傳到
+release「data」；格式沿用 star-savior-arcana-db 的 JSON。程式只讀這一個檔，下載失敗時沿用最後一份正常的資料。
 """
 import json
 import logging
@@ -70,7 +69,7 @@ class GameData:
 
 
 def load(data_url, directory, max_age_hours=12, force=False):
-    """下載我們自己的資料庫（journey_data.json，每天由 GitHub Actions 合併各來源產生）。
+    """下載我們自己的資料庫（journey_data.json，內容取自遊戲檔案）。
 
     回傳 (GameData, 狀態訊息)。下載失敗時沿用本機快取。
     """

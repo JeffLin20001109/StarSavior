@@ -11,7 +11,7 @@ interface Translator {
 }
 
 /**
- * 翻譯優先順序：使用者自訂 → 人工校對譯文表 → 機器翻譯（fallback，可為 null）。
+ * 翻譯優先順序：使用者自訂 → 官方譯文表（取自遊戲解包資料）→ 機器翻譯（fallback，可為 null）。
  * fallback 失敗時保留韓文。對應 desktop/journey_helper/translate.py。
  */
 class TableTranslator(

@@ -66,13 +66,13 @@ def _deepl(text, key):
 
 
 def load_table():
-    """exe 內建的人工校對譯文（韓文 → 繁中）；線上更新見 translations.TranslationStore。"""
+    """exe 內建的官方譯文表（原文 → 遊戲官方繁中）；線上更新見 translations.TranslationStore。"""
     from .translations import BUNDLED, read
     return read(BUNDLED) or {}
 
 
 class Translator:
-    """翻譯優先順序：設定檔 ko_glossary → 人工校對譯文表（線上更新）→ 機器翻譯快取 → 線上機器翻譯。"""
+    """翻譯優先順序：設定檔 ko_glossary → 官方譯文表（線上更新）→ 機器翻譯快取 → 線上機器翻譯。"""
 
     def __init__(self, config, cache_path=None, backend=None, table=None):
         self.config = config

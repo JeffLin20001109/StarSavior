@@ -1,6 +1,6 @@
 # StarSavior 旅程助手（Windows 版）
 
-在 StarSavior 的旅程中遇到事件時，點一下遊戲畫面上的「旅」按鈕，就會在小窗中顯示這個事件每個選項的效果。事件資料來自本專案自己的資料庫（每天從 [Star Savior DB](https://starsavior-db.pages.dev/) 與 [Star Savior Arcana DB](https://star-savior-arcana-db.pages.dev/journey) 合併產生），文字用本專案人工校對的譯文表顯示成繁體中文。
+在 StarSavior 的旅程中遇到事件時，點一下遊戲畫面上的「旅」按鈕，就會在小窗中顯示這個事件每個選項的效果。事件資料來自本專案自己的資料庫（每天從 [Star Savior DB](https://starsavior-db.pages.dev/) 與 [Star Savior Arcana DB](https://star-savior-arcana-db.pages.dev/journey) 合併產生），文字用遊戲官方繁中（取自遊戲解包資料）顯示。
 
 ## 使用方式
 
@@ -21,7 +21,7 @@
 | 1. 截圖辨識 | 在畫面左上角用 OCR 讀出「旅程事件」（紅框）和事件名稱（黃框），同時讀遊戲日期（例如 3月上旬） | 讀出「阿爾克那事件」（紅框）和事件名稱 |
 | 2. 查資料庫 | 用繁體中文名稱在旅程資料中找到事件。如果有多個版本，用遊戲日期篩選 | 截取事件標籤左邊的卡圖（黃框），和資料庫的阿爾克那卡圖做影像比對，找出是哪一張卡 |
 | 3. 取原文內容 | 取出事件的原文（韓文，新事件為英文）名稱、選項與效果 | 取出這張卡中目前遇到的事件，只顯示這一個事件 |
-| 4. 翻譯 | 用人工校對的譯文表顯示繁中，不使用網站的中文 | 同左 |
+| 4. 顯示中文 | 用譯文表（遊戲官方繁中）顯示，不使用網站的中文 | 同左 |
 
 程式不直接連第三方網站，只下載本專案 GitHub Releases 上的檔案：
 
@@ -31,12 +31,12 @@
 
 ## 翻譯
 
-- **人工校對譯文表**：資料庫中所有句子（事件名稱、選項、道具、潛力、旅程效果的說明）都已人工校對翻譯成繁中，存成一個純 JSON 檔 `shared/translations_zh.json`（Windows 版與 Android 版共用），原文是韓文或英文。
+- **官方譯文表**：資料庫中所有句子（事件名稱、選項、道具、潛力、旅程效果的說明）的中文都直接取自遊戲解包資料的官方繁中，不經過翻譯，存成一個純 JSON 檔 `shared/translations_zh.json`（Windows 版與 Android 版共用），原文是韓文或英文。遊戲裡找不到的少數句子（遊戲已改掉原文）保留本專案原本的翻譯。
   - 這個檔會自動發佈到固定網址：`https://github.com/JeffLin20001109/StarSavior/releases/download/translations/translations_zh.json`。
   - 程式啟動時會下載最新版（每 6 小時檢查一次），並存一份在本機；離線時用本機那份，再不行就用 exe 內建的版本。
   - **新增事件時不用重新打包 exe**：在 GitHub 網頁上直接編輯這個 JSON 並提交到 `main`，「Publish translations」workflow 會自動檢查並上傳。
-  - 角色名、卡名、技能名等專有名詞沿用遊戲的官方譯名；句子與說明依韓文重新翻譯，並統一用語（韌性、專注、潛力點數、羈絆點數、必殺技等）。
-- **補上新事件的翻譯**：release「data」的 `missing.json` 每天列出譯文表還沒有的句子（也可以手動執行「Dump Korean strings」產生 `shared/strings/missing_ko.json`）；補翻後加進 `shared/translations_zh.json` 即可。
+  - 遊戲改版後由維護者在本機重新解包、覆蓋譯文表（解包工具與遊戲檔案不放進 repo）。
+- **補上新事件的中文**：release「data」的 `missing.json` 每天列出譯文表還沒有的句子（也可以手動執行「Dump Korean strings」產生 `shared/strings/missing_ko.json`）；重新解包覆蓋即可補上，遊戲沒有的句子再手動翻譯加進 `shared/translations_zh.json`。
 - **還沒補翻的句子**：先用 Google 翻譯暫時顯示（不需要金鑰），結果會快取。
   - 如果有 DeepL 金鑰，可以在設定檔填入 `"translator": "deepl"` 和 `"deepl_api_key"`。
 - 能力值與資源名稱（力量、體力、韌性、專注、保護、耐力等）由程式內建的用語表處理，可以在設定檔的 `terms` 修改。

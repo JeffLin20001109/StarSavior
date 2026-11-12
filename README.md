@@ -1,6 +1,6 @@
 # StarSavior 旅程助手
 
-在 StarSavior 的旅程中遇到事件時，辨識遊戲畫面上的事件，並以繁體中文顯示每個選項的效果。事件資料由本專案自己的資料庫提供（每天從 [Star Savior DB](https://starsavior-db.pages.dev/) 與 [Star Savior Arcana DB](https://star-savior-arcana-db.pages.dev/journey) 合併產生），翻譯由本專案人工校對。
+在 StarSavior 的旅程中遇到事件時，辨識遊戲畫面上的事件，並以繁體中文顯示每個選項的效果。事件資料由本專案自己的資料庫提供（每天從 [Star Savior DB](https://starsavior-db.pages.dev/) 與 [Star Savior Arcana DB](https://star-savior-arcana-db.pages.dev/journey) 合併產生）。中文一律採用遊戲官方繁中（取自遊戲解包資料）；遊戲裡找不到的少數句子才保留本專案自己的翻譯。
 
 | 版本 | 資料夾 | 下載 |
 |---|---|---|
@@ -20,7 +20,7 @@ StarSavior/
    ├─ desktop.yml               desktop/ 或 shared/ 改動時：測試、打包 exe、發佈 desktop-latest
    ├─ android.yml               android/ 或 shared/ 改動時：測試、打包 APK、發佈 android-latest
    ├─ publish-translations.yml  shared/translations_zh.json 改動時：檢查並發佈譯文表
-   └─ dump-strings.yml          手動執行：匯出所有需要翻譯的字串，列出還沒翻譯的句子
+   └─ dump-strings.yml          手動執行：匯出所有需要中文的字串，列出譯文表還沒有的句子
 ```
 
 ## 程式下載的資料（都放在本專案的 GitHub Releases）
@@ -33,17 +33,20 @@ StarSavior/
 
 程式不會直接連第三方網站；來源網站掛掉或改版時，程式繼續使用最後一份成功的資料。重新開啟程式即可立刻檢查更新。
 
-## 手動維護翻譯
-
-直接在 GitHub 網頁上點檔案 → 鉛筆圖示編輯 → 「Commit changes」提交到 `main` 即可，不需要重新打包。
+## 譯文表
 
 | 檔案 | 格式 | 用途 |
 |---|---|---|
 | [`shared/translations_zh.json`](shared/translations_zh.json) | `{"韓文或英文原文": "繁中"}` | 小窗顯示的文字。原文必須和資料完全相同 |
 | [`shared/event_names_zh.json`](shared/event_names_zh.json) | `{"英文事件名": "遊戲內繁中名"}` | 只有 Star Savior DB 才有的新事件，用來比對遊戲畫面上的標題 |
 
-- 引號、逗號要用半形；最後一行後面不加逗號。格式錯誤時發佈會失敗，程式繼續用上一版，不會壞掉。
-- 還沒翻譯的句子：release「data」的 `missing.json`（每天更新），或手動執行「Dump Korean strings」產生的 `shared/strings/missing_ko.json`。沒翻到的句子程式會先用 Google 翻譯暫時顯示。
+- **中文來源是遊戲官方繁中**：維護者在本機解包遊戲檔案，用原文找到遊戲裡的同一句字串，直接填入它的官方繁中，不經過翻譯。帶數值的句子（例如潛力說明）用遊戲的模板填入數值。
+  - 解包工具與遊戲原始檔案只放在維護者本機，**不提交到這個公開 repo**。
+  - 遊戲改版後重新解包、重新覆蓋一次，兩個檔案都會更新成最新的官方譯文。
+- **遊戲裡找不到的句子**（遊戲已改掉原文、但資料庫還是舊版文字）保留本專案原本的翻譯。
+- 手動修改：在 GitHub 網頁上點檔案 → 鉛筆圖示編輯 → 「Commit changes」提交到 `main`，不需要重新打包。注意下次用解包資料覆蓋時，有官方譯文的句子會被改回官方版本。
+  - 引號、逗號要用半形；最後一行後面不加逗號。格式錯誤時發佈會失敗，程式繼續用上一版，不會壞掉。
+- 還沒有中文的句子：release「data」的 `missing.json`（每天更新），或手動執行「Dump Korean strings」產生的 `shared/strings/missing_ko.json`。程式會先用 Google 翻譯暫時顯示。
 
 ## 開發流程
 

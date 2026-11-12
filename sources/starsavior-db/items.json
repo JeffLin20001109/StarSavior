@@ -460,6 +460,18 @@
  },
  {
   "battle_effects": [
+   "Increases Max Toughness by 1. At the start of battle, grants self Shatter for 1 turn. When self uses Phantom Sever, if self has Shatter, increases self Toughness DMG by 1."
+  ],
+  "description": "A hair accessory worn by the Witch of Favoritism. Within it, one can sense the twisted will of someone who denies and transcends time.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DARK_UNKNOWN_CHARM.webp",
+  "id": 5011061,
+  "name": "Circlet of Defiance",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
    "Deals Chain DMG to the enemy with the highest Max HP that is proportional to self ATK after attacking. Grants Barrier for 3 turns if HP is 50% or below after being attacked. Barrier is proportional to ATK. Barrier occurs once every 3 turns. (Chain DMG: 25% ATK) (Barrier: 85% ATK)"
   ],
   "description": "A must-have item for beginners who want to succeed through astrology.",
@@ -887,6 +899,18 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_PRECIOUS_DIARY.webp",
   "id": 5011501,
   "name": "My Precious Diary",
+  "pp_convert": 12,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "When self uses Liquefy or Imperfect Deathcry, if the enemy is in Toughness Break, triggers Imperfect Deathcry against that enemy. This effect does not trigger from self's additional skill activations. It prioritizes the enemy self attacked most recently among targets in Toughness Break and can only occur once per turn."
+  ],
+  "description": "A black umbrella carried by Gille. Like the wings of a bird that cannot fly, it is always in her hand, even on days without rain.",
+  "grade": "Legendary",
+  "icon": "/images/jitems2/JOURNEY_ITEM_APOSTLE_GILLE_CHARM.webp",
+  "id": 5011020,
+  "name": "Noir",
   "pp_convert": 12,
   "subtype": "Charm"
  },
@@ -1900,7 +1924,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_ARMOR.webp",
   "id": 5370002,
   "name": "Ancient Savior's Armor BX",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -1912,7 +1935,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_SHOES.webp",
   "id": 5370004,
   "name": "Ancient Savior's Boots DX",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -1924,7 +1946,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_GUARD.webp",
   "id": 5370009,
   "name": "Ancient Savior's Bracers XX3",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -1936,7 +1957,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_CLOAK.webp",
   "id": 5370008,
   "name": "Ancient Savior's Cloak HX",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -1948,7 +1968,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_GAUNTLET.webp",
   "id": 5370010,
   "name": "Ancient Savior's Gauntlets XX1",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -1960,7 +1979,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_GLASSES.webp",
   "id": 5370007,
   "name": "Ancient Savior's Glasses GX",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -1972,7 +1990,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_GLOVE.webp",
   "id": 5370001,
   "name": "Ancient Savior's Gloves AX",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -1984,7 +2001,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_HAT.webp",
   "id": 5370005,
   "name": "Ancient Savior's Hat EX",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -1997,7 +2013,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_MASK.webp",
   "id": 5370012,
   "name": "Ancient Savior's Mask IX",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -2009,7 +2024,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_NECKLACE.webp",
   "id": 5370006,
   "name": "Ancient Savior's Necklace FX",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -2021,7 +2035,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_PANTS.webp",
   "id": 5370003,
   "name": "Ancient Savior's Pants CX",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -2033,7 +2046,6 @@
   "icon": "/images/jitems2/JOURNEY_ITEM_SAVIOR_TOTEM.webp",
   "id": 5370011,
   "name": "Ancient Savior's Totem XX2",
-  "pp_convert": 12,
   "subtype": "Charm"
  },
  {
@@ -2162,6 +2174,18 @@
  },
  {
   "battle_effects": [
+   "After using a skill, increases self DMG dealt by 2%. Stacks up to 15 times."
+  ],
+  "description": "A strange club that grows thorns each time it is swung.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_THORN_CLUB.webp",
+  "id": 5400022,
+  "name": "Cursed Thorn Club",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
    "Inflicts all enemies with Bleed for 1 turn with a 100% chance on Critical Hit. Bleed DMG is proportional to self ATK. (Bleed DMG: 25% ATK)"
   ],
   "description": "A chilling item said to be imbued with the delusions of a certain dancer.",
@@ -2198,6 +2222,18 @@
  },
  {
   "battle_effects": [
+   "At the start of battle, grants self Greater ATK Up for 2 turns."
+  ],
+  "description": "A sharply honed glass sword. Durability is not guaranteed.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_GLASS_SWORD.webp",
+  "id": 5400021,
+  "name": "Decorative Glass Sword",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
    "Deals Chain DMG to all enemies proportional to self Max HP after using a non-attack Skill. (Chain DMG: 5% Max HP)"
   ],
   "description": "A ritual instrument said to have shaken the clouds and summoned rain and thunder in the distant past.",
@@ -2216,6 +2252,18 @@
   "grade": "Unique",
   "icon": "/images/jitems2/JOURNEY_ITEM_DRUID_HARP.webp",
   "id": 5022001,
+  "name": "Druid's Harp",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "After using a skill, increases self DEF by 3%. Stacks up to 10 times."
+  ],
+  "description": "A harp said to wrap vines around the performer to protect them while it is played.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_DRUID_HARP.webp",
+  "id": 5400024,
   "name": "Druid's Harp",
   "pp_convert": 8,
   "subtype": "Charm"
@@ -2303,6 +2351,19 @@
   "grade": "Unique",
   "icon": "/images/jitems2/JOURNEY_ITEM_WIDE_EYED.webp",
   "id": 5023001,
+  "name": "Eyes Wide Open",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "At the start of battle, grants self Token and Greater Effect Hit Up for 2 turns.",
+   "At the start of battle, grants self Token and Greater Effect Hit Up for 2 turns."
+  ],
+  "description": "An invention created by a genius scientist. Helps with short-term focus enhancement.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_WIDE_EYED.webp",
+  "id": 5400027,
   "name": "Eyes Wide Open",
   "pp_convert": 8,
   "subtype": "Charm"
@@ -2468,6 +2529,18 @@
  },
  {
   "battle_effects": [
+   "On Critical Hit, increases self DEF Penetration by 1%. Stacks up to 15 times."
+  ],
+  "description": "A hunting rifle belonging to a certain monster hunter who was said to be capable of taking down any and all beasts within three shots.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_OLD_RIFLE.webp",
+  "id": 5400023,
+  "name": "Hunter's Old Rifle",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
    "Inflicts the enemy with the highest Max HP with Poison for 3 turns with a 100% chance after using a non-attack Ultimate Skill. Deals Chain DMG to all enemies afflicted with Poison that is proportional to self Max HP after using a Basic Skill. Poison DMG is proportional to self Max HP. (Poison DMG: 5% Max HP) (Chain DMG: 5% Max HP)"
   ],
   "description": "The hilt of a sword owned by a knight who was frail and sickly, yet protected their lord to the very end.",
@@ -2620,6 +2693,18 @@
  },
  {
   "battle_effects": [
+   "After using a non-attack skill, increases self SPD by 2%. Stacks up to 10 times."
+  ],
+  "description": "A toy that spins endlessly until someone stops it.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_ROTATING_DEVICE.webp",
+  "id": 5400029,
+  "name": "Perpetual Rotation Device",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
    "Self DMG increases by 1% at the start of the turn. Stacks up to 5 times."
   ],
   "description": "An expensive prototype fan said to have been recently created by an alchemist. It consumes stored mana to generate a refreshing breeze.",
@@ -2670,6 +2755,18 @@
   "icon": "/images/jitems/CUBE_ITEM_RED_BEAN_BREAD.webp",
   "id": 5400003,
   "name": "Red Bean Bun",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "After taking a Critical Hit, fills self Action Gauge by 30%. Occurs only once per 3 turns. (Action Gauge: 30%)"
+  ],
+  "description": "Crimson dancing shoes that move faster with every drop of blood they consume.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_RED_SHOES.webp",
+  "id": 5400026,
+  "name": "Red Shoes",
   "pp_convert": 8,
   "subtype": "Charm"
  },
@@ -2744,12 +2841,37 @@
  },
  {
   "battle_effects": [
+   "At the end of each turn, grants self Barrier for 1 turn. Barrier is proportional to self Max HP. Occurs only once per 3 turns. (Barrier: 5% Max HP)"
+  ],
+  "description": "An automaton that starts a labor movement if operated for more than four hours. Produced in Faren.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_AUTOMATIC_DOLL.webp",
+  "id": 5400025,
+  "name": "Security Automaton",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
    "Grants self Effect RES Up for a certain number of turns at the start of the first battle."
   ],
   "description": "A statue depicting a Raider covering its eyes with both hands.",
   "grade": "Unique",
   "icon": "/images/jitems2/JOURNEY_ITEM_SHY_PERSON.webp",
   "id": 5023002,
+  "name": "Shy One",
+  "pp_convert": 8,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "At the start of battle, grants self Token and Greater Effect RES Up for 2 turns.",
+   "At the start of battle, grants self Token and Greater Effect RES Up for 2 turns."
+  ],
+  "description": "A statue depicting a Raider covering its eyes with both hands.",
+  "grade": "Unique",
+  "icon": "/images/jitems2/JOURNEY_ITEM_SHY_PERSON.webp",
+  "id": 5400028,
   "name": "Shy One",
   "pp_convert": 8,
   "subtype": "Charm"
@@ -3893,6 +4015,17 @@
   "battle_effects": [
    "Increases ATK by 4% at the start of the first battle."
   ],
+  "description": "A totem that fell from a rampaging doll. It converts the remnants of battle into power.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_GLOVE.webp",
+  "id": 5073001,
+  "name": "Exhibit No. 1: Polaris Gloves",
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases ATK by 4% at the start of the first battle."
+  ],
   "description": "Gloves covered in sticky slime. The aggression soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
   "grade": "Rare",
   "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_GLOVE.webp",
@@ -3923,6 +4056,17 @@
   "id": 5072002,
   "name": "Exhibit No. 2: Doll Armor",
   "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Max HP by 4% at the start of the first battle."
+  ],
+  "description": "A totem that fell from a rampaging doll. It converts the remnants of battle into power.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_ARMOR.webp",
+  "id": 5073002,
+  "name": "Exhibit No. 2: Polaris Armor",
   "subtype": "Charm"
  },
  {
@@ -3965,6 +4109,17 @@
   "battle_effects": [
    "Increases DEF by 6% at the start of the first battle."
   ],
+  "description": "A totem that fell from a rampaging doll. It converts the remnants of battle into power.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_PANTS.webp",
+  "id": 5073003,
+  "name": "Exhibit No. 3: Polaris Pants",
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases DEF by 6% at the start of the first battle."
+  ],
   "description": "Pants covered in sticky slime. The persistence soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
   "grade": "Rare",
   "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_PANTS.webp",
@@ -3995,6 +4150,17 @@
   "id": 5072004,
   "name": "Exhibit No. 4: Doll Boots",
   "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases SPD by 4 at the start of the first battle."
+  ],
+  "description": "A totem that fell from a rampaging doll. It converts the remnants of battle into power.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_SHOES.webp",
+  "id": 5073004,
+  "name": "Exhibit No. 4: Polaris Boots",
   "subtype": "Charm"
  },
  {
@@ -4037,6 +4203,17 @@
   "battle_effects": [
    "Increases CRIT Rate by 5% at the start of the first battle."
   ],
+  "description": "A totem that fell from a rampaging doll. It converts the remnants of battle into power.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_HAT.webp",
+  "id": 5073005,
+  "name": "Exhibit No. 5: Polaris Hat",
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT Rate by 5% at the start of the first battle."
+  ],
   "description": "A hat covered in sticky slime. The sharpness soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
   "grade": "Rare",
   "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_HAT.webp",
@@ -4067,6 +4244,17 @@
   "id": 5072006,
   "name": "Exhibit No. 6: Doll Necklace",
   "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases CRIT DMG by 5% at the start of the first battle."
+  ],
+  "description": "A totem that fell from a rampaging doll. It converts the remnants of battle into power.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_NECKLACE.webp",
+  "id": 5073006,
+  "name": "Exhibit No. 6: Polaris Necklace",
   "subtype": "Charm"
  },
  {
@@ -4109,6 +4297,17 @@
   "battle_effects": [
    "Increases Effect Hit by 8% at the start of the first battle."
   ],
+  "description": "A totem that fell from a rampaging doll. It converts the remnants of battle into power.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_GLASSES.webp",
+  "id": 5073007,
+  "name": "Exhibit No. 7: Polaris Glasses",
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect Hit by 8% at the start of the first battle."
+  ],
   "description": "Glasses covered in sticky slime. The unpredictability soaked into the slime instinctively yearns for a target to resonate with.\n\nAllows you to obtain a Starlight Trajectory Special Potential that shares the charm's name and effects.",
   "grade": "Rare",
   "icon": "/images/jitems2/JOURNEY_ITEM_SLIME_GLASSES.webp",
@@ -4139,6 +4338,17 @@
   "id": 5072008,
   "name": "Exhibit No. 8: Doll Cloak",
   "pp_convert": 4,
+  "subtype": "Charm"
+ },
+ {
+  "battle_effects": [
+   "Increases Effect RES by 8% at the start of the first battle."
+  ],
+  "description": "A totem that fell from a rampaging doll. It converts the remnants of battle into power.",
+  "grade": "Rare",
+  "icon": "/images/jitems2/JOURNEY_ITEM_VETERAN_BARON_CLOAK.webp",
+  "id": 5073008,
+  "name": "Exhibit No. 8: Polaris Cloak",
   "subtype": "Charm"
  },
  {

@@ -432,6 +432,80 @@
   "type": "arcana"
  },
  {
+  "arcana_name": "Faded Dream",
+  "chain_index": 1,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "label": "Doesn't that make him look strong?",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+12"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_CONDITION_UP_HOLD.webp",
+      "name": "Condition",
+      "tags": [
+       "Condition"
+      ],
+      "type": "Condition",
+      "value": "+1"
+     },
+     {
+      "description": "Thinking back on everyday moments with someone you cherish brought you a little happiness. Strength training EXP gained increases.",
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POWER_TRAINING_UP.webp",
+      "name": "Fleeting Happiness",
+      "type": "Buff"
+     }
+    ]
+   },
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "label": "It did look a little exaggerated.",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+10"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_TRAINING_SUCCESS_UP.webp",
+      "name": "Stamina",
+      "tags": [
+       "Stamina"
+      ],
+      "type": "Stamina",
+      "value": "+10"
+     },
+     {
+      "description": "Thinking back on everyday moments with someone you cherish brought you a little happiness. Strength training EXP gained increases.",
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POWER_TRAINING_UP.webp",
+      "name": "Fleeting Happiness",
+      "type": "Buff"
+     }
+    ]
+   }
+  ],
+  "description": "While exploring downtown NOA over the weekend, I spotted someone familiar. She stood motionless in the middle of the street, staring at a poster on the wall. What are you looking at? ...Nothing. Just something that caught my eye. Nothing more than that.",
+  "event_group_id": 710610101,
+  "name": "Watching the Play 2",
+  "savior_name": "Asherah",
+  "type": "arcana"
+ },
+ {
   "arcana_name": "The Beginning of the Journey",
   "chain_index": 2,
   "chain_total": 3,
@@ -536,6 +610,86 @@
   "type": "arcana"
  },
  {
+  "arcana_name": "Faded Dream",
+  "chain_index": 2,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "label": "Then we should try something else here next time.",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+10"
+     },
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "description": "Increases ATK by 2%.",
+      "icon": "/images/potentials/POTEN_2_RATE_ATK.webp",
+      "name": "Skill of Attack",
+      "tags": [
+       "ATK"
+      ],
+      "type": "Standard Potential"
+     }
+    ]
+   },
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "label": "Wanna get dessert after?",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+10"
+     },
+     {
+      "description": "Increases CRIT Rate by 3%.",
+      "icon": "/images/potentials/POTEN_2_RATE_CRITICAL.webp",
+      "name": "Skill of Insight",
+      "tags": [
+       "CRIT Rate"
+      ],
+      "type": "Standard Potential"
+     }
+    ]
+   }
+  ],
+  "description": "I went to downtown NOA on my day off. I'd had my eye on a restaurant for days, but... Minimum order: 2 portions Just as I turned away in disappointment, I spotted someone familiar. Hey. Have you had lunch yet? ...You pop up out of nowhere to ask me that? I explained the situation.",
+  "event_group_id": 710610102,
+  "name": "Next",
+  "savior_name": "Asherah",
+  "type": "arcana"
+ },
+ {
   "arcana_name": "The Beginning of the Journey",
   "chain_index": 3,
   "chain_total": 3,
@@ -627,6 +781,60 @@
   "description": "Hmmm... Mmmm... Asherah stared down at a plate piled high with delicious-looking cream puffs. Is it okay to just pick these up with my hands...? It should be fine, right? Well yeah, cream puffs are meant to be eaten with your hands, aren't they...? ...But everyone's eating those tarts with forks.",
   "event_group_id": 710540103,
   "name": "Industry Celebrity",
+  "savior_name": "Asherah",
+  "type": "arcana"
+ },
+ {
+  "arcana_name": "Faded Dream",
+  "chain_index": 3,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+15"
+     },
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "description": "Increases ATK by 3%.",
+      "icon": "/images/potentials/POTEN_3_RATE_ATK.webp",
+      "name": "Talent of Attack",
+      "tags": [
+       "ATK"
+      ],
+      "type": "Standard Potential"
+     },
+     {
+      "description": "After attacking a target in Toughness Break, increases self ATK by 5%. Stacks up to 5 times.",
+      "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+      "name": "Endless Terminus",
+      "tags": [
+       "Special"
+      ],
+      "type": "Special Potential"
+     }
+    ]
+   }
+  ],
+  "description": "This is a tale of an event that occurred just after I learned the truth about the world. The streets of NOA bustled with people. Amid the passing faces, I spotted two I knew well. ... Smile? Luna? There was no mistaking them. We'd laughed, argued, and cried together countless times on our Journey.",
+  "event_group_id": 710610103,
+  "name": "Favoritism",
   "savior_name": "Asherah",
   "type": "arcana"
  },
@@ -4874,6 +5082,169 @@
   "event_group_id": 710570103,
   "name": "All In on This Card!",
   "savior_name": "Frey",
+  "type": "arcana"
+ },
+ {
+  "arcana_name": "Never Ending Dance",
+  "chain_index": 1,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+10"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_CONDITION_UP_HOLD.webp",
+      "name": "Condition",
+      "tags": [
+       "Condition"
+      ],
+      "type": "Condition",
+      "value": "+1"
+     },
+     {
+      "description": "Without realizing it, you had a wonderful time dancing. Strength gained during training increases.",
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POWER_TRAINING_UP.webp",
+      "name": "Lively Footsteps",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Buff"
+     }
+    ]
+   }
+  ],
+  "description": "I was walking through downtown NOA with Gille and Tyria. The streets were packed. Was there some kind of event today? Hmm. At this rate, it'll take forever to get through. We might get there faster if we burned them all... Not a bad idea. Absolutely not! Let's go around this way.",
+  "event_group_id": 710200101,
+  "name": "In Search of the Legendary Bird 2",
+  "savior_name": "Gille",
+  "type": "arcana"
+ },
+ {
+  "arcana_name": "Never Ending Dance",
+  "chain_index": 2,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+15"
+     },
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+10"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_TRAINING_SUCCESS_UP.webp",
+      "name": "Stamina",
+      "tags": [
+       "Stamina"
+      ],
+      "type": "Stamina",
+      "value": "+10"
+     },
+     {
+      "description": "Slightly increases self ATK by a certain percentage.",
+      "icon": "/images/potentials/POTEN_1_RATE_ATK.webp",
+      "name": "Sense of Attack",
+      "tags": [
+       "ATK"
+      ],
+      "type": "Standard Potential"
+     }
+    ]
+   }
+  ],
+  "description": "One day, with a ball coming up soon. I was practicing my dance steps alone in an empty training ground. Right foot forward. Left foot slightly diagonally. Then turn just like that... ...I nearly tripped over my own feet. It all worked perfectly in my head.",
+  "event_group_id": 710200102,
+  "name": "Step by Step",
+  "savior_name": "Gille",
+  "type": "arcana"
+ },
+ {
+  "arcana_name": "Never Ending Dance",
+  "chain_index": 3,
+  "chain_total": 3,
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_POWER.webp",
+      "name": "Strength",
+      "tags": [
+       "Strength"
+      ],
+      "type": "Stat",
+      "value": "+8"
+     },
+     {
+      "icon": "/images/jstats/AB_UNIT_STAT_HEALTH.webp",
+      "name": "Vitality",
+      "tags": [
+       "Vitality"
+      ],
+      "type": "Stat",
+      "value": "+12"
+     },
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_ENDURANCE_TRAINING_UP.webp",
+      "name": "Endurance",
+      "tags": [
+       "Endurance"
+      ],
+      "type": "Stat",
+      "value": "+12"
+     },
+     {
+      "description": "Increases CRIT Rate by 3%.",
+      "icon": "/images/potentials/POTEN_2_RATE_CRITICAL.webp",
+      "name": "Skill of Insight",
+      "tags": [
+       "CRIT Rate"
+      ],
+      "type": "Standard Potential"
+     },
+     {
+      "description": "Increases ATK by 6% and self CRIT DMG by 6%.",
+      "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+      "name": "Overwhelming Assault",
+      "tags": [
+       "ATK",
+       "CRIT DMG"
+      ],
+      "type": "Special Potential"
+     }
+    ]
+   }
+  ],
+  "description": "Today, I had a quest from Candle Square to take care of. I headed to a village near NOA where the client was waiting. *Sigh* What's wrong? Do you really have to ask? Helping prepare for a festival? It's ridiculous enough to submit a quest for such a trivial task...",
+  "event_group_id": 710200103,
+  "name": "What Remains When It's Gone",
+  "savior_name": "Gille",
   "type": "arcana"
  },
  {
@@ -17465,7 +17836,7 @@
     "cost_type": "Free",
     "success_rewards": [
      {
-      "description": "Increases CRIT Rate by 10% and self SPD by 4%. Triggers a random ally's Basic Skill on a random target with a 25% chance on Critical Hit with a Basic Skill. Occurs once per self turn.",
+      "description": "Increases CRIT Rate by 10% and self SPD by 4. Triggers a random ally's Basic Skill on a random target with a 25% chance on Critical Hit with a Basic Skill. Occurs once per self turn.",
       "icon": "/images/potentials/POTEN_UTILITY_BUFF.webp",
       "name": "Starlight Trajectory-EX4",
       "tags": [
@@ -18849,6 +19220,34 @@
   ],
   "description": "Captain! Welcome! I have great news for you today! Great news? Fufu... Try not to be surprised, Captain. To show support for you and [CHARACTER_NAME]'s [Journey]...",
   "event_group_id": 20102,
+  "name": "Relic of an Ancient Savior",
+  "type": "generic"
+ },
+ {
+  "choices": [
+   {
+    "cost_amount": 0,
+    "cost_type": "Free",
+    "success_rewards": [
+     {
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POTENPOINT_BONUS.webp",
+      "name": "Potential Points",
+      "pp_scaled": {
+       "easy": 16,
+       "hard": 40,
+       "normal": 24
+      },
+      "tags": [
+       "Potential Points"
+      ],
+      "type": "PP",
+      "value": "+16"
+     }
+    ]
+   }
+  ],
+  "description": "Captain! Welcome! I have great news for you today! Great news? Fufu... Try not to be surprised, Captain. To show support for you and [CHARACTER_NAME]'s [Journey]...",
+  "event_group_id": 20107,
   "name": "Relic of an Ancient Savior",
   "type": "generic"
  },

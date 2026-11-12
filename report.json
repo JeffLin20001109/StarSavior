@@ -1,18 +1,25 @@
 {
  "stats": {
-  "new_only": 79,
+  "new_only": 86,
   "kept_arcana_db": 372,
   "updated_from_starsavior_db": 9,
   "old_only": 10,
   "old_only_cards": 2,
-  "names_borrowed_by_english": 10,
-  "refs_added_journey_buffs": 2
+  "names_borrowed_by_english": 11,
+  "refs_added_journey_buffs": 4
  },
  "counts": {
-  "journey_variants": 275,
+  "journey_variants": 276,
   "journey_names": 138,
-  "arcanas": 85,
-  "arcana_events": 195
+  "arcanas": 87,
+  "arcana_events": 201
  },
- "missing_zh_names": []
+ "missing_zh_names": [
+  "Favoritism",
+  "In Search of the Legendary Bird 2",
+  "Next",
+  "Step by Step",
+  "Watching the Play 2",
+  "What Remains When It's Gone"
+ ]
 }

@@ -1,5 +1,5 @@
 {
- "fetched_at": "2026-10-31T15:43:07+00:00",
+ "fetched_at": "2026-11-12T18:18:00+00:00",
  "counts": {
   "arcana-db/journeys": 82,
   "arcana-db/arcanas": 80,
@@ -7,8 +7,8 @@
   "arcana-db/potentials": 182,
   "arcana-db/stat_potentials": 45,
   "arcana-db/journey_buffs": 60,
-  "starsavior-db/events": 460,
-  "starsavior-db/items": 331,
-  "starsavior-db/arcana": 83
+  "starsavior-db/events": 467,
+  "starsavior-db/items": 350,
+  "starsavior-db/arcana": 85
  }
 }

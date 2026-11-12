@@ -6319,6 +6319,411 @@
   }
  },
  {
+  "arcana_name": "Faded Dream",
+  "character_id": 1001,
+  "class_restriction": "Universal Support",
+  "episode": "There she is, on the fairy tale's first page.\nA love once felt, a heart that once fluttered, an ideal once held.\nAnd so the fantasy on the page became someone's dream.\n\nThere I am, on the fairy tale's last page.\nThat they lived happily ever after was a lie in the pages.\nLove, the thrill, the ideals of those days... every one an illusion.\nThe fantasy that carries the scent of childhood now says goodbye.\n\nThat was my end.\nMy farewell, with nothing left of me but a shell.\nAs I took my leave...\nI didn't regret having longed for it once.",
+  "event_count": 3,
+  "grade": "SSR",
+  "id": 7106101,
+  "images": {
+   "card": "/images/arcana/ARCANA_DARK_UNKNOWN_SSR_01.webp",
+   "card_small": "/images/arcana/ARCANA_DARK_UNKNOWN_SSR_01_S.webp"
+  },
+  "journey_events": [
+   {
+    "name": "Watching the Play 2",
+    "rewards": [
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 10.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +10",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 12.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +12",
+      "tags": [
+       "Vitality"
+      ]
+     },
+     {
+      "category": "Journey Buff",
+      "description": "Thinking back on everyday moments with someone you cherish brought you a little happiness. Strength training EXP gained increases.",
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POWER_TRAINING_UP.webp",
+      "id": 400,
+      "name": "Fleeting Happiness",
+      "tags": [
+       "Journey Buff"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Recovers 1 Condition.",
+      "icon": "",
+      "id": 0,
+      "name": "Condition +1",
+      "tags": [
+       "Condition"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Recovers 10 Stamina.",
+      "icon": "",
+      "id": 0,
+      "name": "Stamina +10",
+      "tags": [
+       "Stamina"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Next",
+    "rewards": [
+     {
+      "category": "Standard Potential",
+      "description": "Increases ATK by 2%.",
+      "icon": "/images/potentials/POTEN_2_RATE_ATK.webp",
+      "id": 21001,
+      "name": "Skill of Attack",
+      "tags": [
+       "ATK"
+      ]
+     },
+     {
+      "category": "Standard Potential",
+      "description": "Increases CRIT Rate by 3%.",
+      "icon": "/images/potentials/POTEN_2_RATE_CRITICAL.webp",
+      "id": 21005,
+      "name": "Skill of Insight",
+      "tags": [
+       "CRIT Rate"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 10.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +10",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 8.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +8",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 10.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +10",
+      "tags": [
+       "Vitality"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 8.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +8",
+      "tags": [
+       "Vitality"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Favoritism",
+    "rewards": [
+     {
+      "category": "Special Potential",
+      "description": "After attacking a target in Toughness Break, increases self ATK by 5%. Stacks up to 5 times.",
+      "effects": [
+       {
+        "is_percent": true,
+        "max_stacks": 5,
+        "per_stack": 5,
+        "stat": "ATK",
+        "trigger": "After using a skill",
+        "value": 25
+       }
+      ],
+      "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+      "id": 25004,
+      "name": "Endless Terminus",
+      "tags": [
+       "ATK"
+      ]
+     },
+     {
+      "category": "Standard Potential",
+      "description": "Increases ATK by 3%.",
+      "icon": "/images/potentials/POTEN_3_RATE_ATK.webp",
+      "id": 22001,
+      "name": "Talent of Attack",
+      "tags": [
+       "ATK"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 15.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +15",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 8.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +8",
+      "tags": [
+       "Vitality"
+      ]
+     }
+    ]
+   }
+  ],
+  "journey_stat": "Strength",
+  "potentials": [
+   {
+    "category": "Special Potential",
+    "description": "After attacking a target in Toughness Break, increases self ATK by 5%. Stacks up to 5 times.",
+    "effects": [
+     {
+      "is_percent": true,
+      "max_stacks": 5,
+      "per_stack": 5,
+      "stat": "ATK",
+      "trigger": "After using a skill",
+      "value": 25
+     }
+    ],
+    "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+    "id": 25004,
+    "name": "Endless Terminus",
+    "tags": [
+     "ATK"
+    ]
+   },
+   {
+    "category": "Standard Potential",
+    "description": "Increases ATK by 2%.",
+    "icon": "/images/potentials/POTEN_2_RATE_ATK.webp",
+    "id": 21001,
+    "name": "Skill of Attack",
+    "tags": [
+     "ATK"
+    ]
+   },
+   {
+    "category": "Standard Potential",
+    "description": "Increases CRIT Rate by 3%.",
+    "icon": "/images/potentials/POTEN_2_RATE_CRITICAL.webp",
+    "id": 21005,
+    "name": "Skill of Insight",
+    "tags": [
+     "CRIT Rate"
+    ]
+   },
+   {
+    "category": "Standard Potential",
+    "description": "Increases ATK by 3%.",
+    "icon": "/images/potentials/POTEN_3_RATE_ATK.webp",
+    "id": 22001,
+    "name": "Talent of Attack",
+    "tags": [
+     "ATK"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 10.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +10",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 15.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +15",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 8.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +8",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Vitality by 10.",
+    "icon": "",
+    "id": 0,
+    "name": "Vitality +10",
+    "tags": [
+     "Vitality"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Vitality by 12.",
+    "icon": "",
+    "id": 0,
+    "name": "Vitality +12",
+    "tags": [
+     "Vitality"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Vitality by 8.",
+    "icon": "",
+    "id": 0,
+    "name": "Vitality +8",
+    "tags": [
+     "Vitality"
+    ]
+   },
+   {
+    "category": "Journey Buff",
+    "description": "Thinking back on everyday moments with someone you cherish brought you a little happiness. Strength training EXP gained increases.",
+    "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POWER_TRAINING_UP.webp",
+    "id": 400,
+    "name": "Fleeting Happiness",
+    "tags": [
+     "Journey Buff"
+    ]
+   },
+   {
+    "category": "Consumable",
+    "description": "Recovers 1 Condition.",
+    "icon": "",
+    "id": 0,
+    "name": "Condition +1",
+    "tags": [
+     "Condition"
+    ]
+   },
+   {
+    "category": "Consumable",
+    "description": "Recovers 10 Stamina.",
+    "icon": "",
+    "id": 0,
+    "name": "Stamina +10",
+    "tags": [
+     "Stamina"
+    ]
+   }
+  ],
+  "promotes": [
+   {
+    "add_per_level": 1,
+    "base_value": 5,
+    "category": "Journey Start Effects",
+    "effect": "Strength Increase",
+    "is_rate": false,
+    "per_level": 10,
+    "unlock_level": 25,
+    "value": "+5"
+   },
+   {
+    "add_per_level": 1,
+    "base_value": 9,
+    "category": "Journey Start Effects",
+    "effect": "Bond Points Gain",
+    "is_rate": false,
+    "per_level": 5,
+    "unlock_level": 20,
+    "value": "+9"
+   },
+   {
+    "add_per_level": 14,
+    "base_value": 900,
+    "category": "Training Effects",
+    "effect": "Training Effectiveness",
+    "is_rate": true,
+    "per_level": 1,
+    "unlock_level": 1,
+    "value": "+9%"
+   },
+   {
+    "add_per_level": 1,
+    "base_value": 1,
+    "category": "Training Effects",
+    "effect": "Additional Strength Stat Gain",
+    "is_rate": false,
+    "per_level": 20,
+    "unlock_level": 10,
+    "value": "+1"
+   },
+   {
+    "add_per_level": 24,
+    "base_value": 1400,
+    "category": "Sensory Training Effects",
+    "effect": "Super Sensory Training Effectiveness",
+    "is_rate": true,
+    "per_level": 1,
+    "unlock_level": 1,
+    "value": "+14%"
+   },
+   {
+    "add_per_level": 95,
+    "base_value": 95,
+    "category": "Sensory Training Effects",
+    "effect": "Sensory Training Chance",
+    "is_rate": false,
+    "per_level": 5,
+    "unlock_level": 35,
+    "value": "+95"
+   }
+  ],
+  "savior_name": "Asherah",
+  "slug": "dark-unknown-ssr-01",
+  "special_stat": null,
+  "unique_promote": {
+   "description": "When Bond Points are at 40 or higher During Training, Training Effectiveness +8%",
+   "icon": "ICON_ARCANA_UNIQUE_TRAINING.png",
+   "name": "Cherished Days",
+   "rapport_requirement": 40,
+   "unlock_level": 35
+  }
+ },
+ {
   "arcana_name": "Follow the Light!",
   "character_id": 1003,
   "class_restriction": "Savior Support",
@@ -8661,6 +9066,371 @@
    "name": "Experienced Courier",
    "rapport_requirement": 60,
    "unlock_level": 40
+  }
+ },
+ {
+  "arcana_name": "Never Ending Dance",
+  "character_id": 1020,
+  "class_restriction": "Universal Support",
+  "episode": "The curtain rises, and she begins to dance.\nOne step, one turn, one execution.\n\nThe same play again, with the same cast.\nAnd yet her dance goes on.\n\nFor when she stops dancing...\nAll that remains are wings in chains and a cage closed shut.\n\nSo, little embers, the night ahead is long, so very long.\nPlease don't go out so easily.",
+  "event_count": 3,
+  "grade": "SSR",
+  "id": 7102001,
+  "images": {
+   "card": "/images/arcana/ARCANA_APOSTLE_GILLE_SSR_01.webp",
+   "card_small": "/images/arcana/ARCANA_APOSTLE_GILLE_SSR_01_S.webp"
+  },
+  "journey_events": [
+   {
+    "name": "In Search of the Legendary Bird 2",
+    "rewards": [
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 10.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +10",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Journey Buff",
+      "description": "Without realizing it, you had a wonderful time dancing. Strength gained during training increases.",
+      "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POWER_TRAINING_UP.webp",
+      "id": 391,
+      "name": "Lively Footsteps",
+      "tags": [
+       "Journey Buff"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Recovers 1 Condition.",
+      "icon": "",
+      "id": 0,
+      "name": "Condition +1",
+      "tags": [
+       "Condition"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "Step by Step",
+    "rewards": [
+     {
+      "category": "Standard Potential",
+      "description": "Slightly increases self ATK by a certain percentage.",
+      "effects": [
+       {
+        "is_percent": true,
+        "max_level": 5,
+        "min_value": 1,
+        "stat": "ATK",
+        "value": 5
+       }
+      ],
+      "icon": "/images/potentials/POTEN_1_RATE_ATK.webp",
+      "id": 20001,
+      "name": "Sense of Attack",
+      "tags": [
+       "ATK"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 15.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +15",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 10.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +10",
+      "tags": [
+       "Vitality"
+      ]
+     },
+     {
+      "category": "Consumable",
+      "description": "Recovers 10 Stamina.",
+      "icon": "",
+      "id": 0,
+      "name": "Stamina +10",
+      "tags": [
+       "Stamina"
+      ]
+     }
+    ]
+   },
+   {
+    "name": "What Remains When It's Gone",
+    "rewards": [
+     {
+      "category": "Special Potential",
+      "description": "Increases ATK by 6% and self CRIT DMG by 6%.",
+      "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+      "id": 23038,
+      "name": "Overwhelming Assault",
+      "tags": [
+       "ATK",
+       "CRIT DMG"
+      ]
+     },
+     {
+      "category": "Standard Potential",
+      "description": "Increases CRIT Rate by 3%.",
+      "icon": "/images/potentials/POTEN_2_RATE_CRITICAL.webp",
+      "id": 21005,
+      "name": "Skill of Insight",
+      "tags": [
+       "CRIT Rate"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Endurance by 12.",
+      "icon": "",
+      "id": 0,
+      "name": "Endurance +12",
+      "tags": [
+       "Endurance"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Strength by 8.",
+      "icon": "",
+      "id": 0,
+      "name": "Strength +8",
+      "tags": [
+       "Strength"
+      ]
+     },
+     {
+      "category": "Stat Gain",
+      "description": "Increases Vitality by 12.",
+      "icon": "",
+      "id": 0,
+      "name": "Vitality +12",
+      "tags": [
+       "Vitality"
+      ]
+     }
+    ]
+   }
+  ],
+  "journey_stat": "Strength",
+  "potentials": [
+   {
+    "category": "Special Potential",
+    "description": "Increases ATK by 6% and self CRIT DMG by 6%.",
+    "icon": "/images/potentials/POTEN_ATTACK_BUFF.webp",
+    "id": 23038,
+    "name": "Overwhelming Assault",
+    "tags": [
+     "ATK",
+     "CRIT DMG"
+    ]
+   },
+   {
+    "category": "Standard Potential",
+    "description": "Slightly increases self ATK by a certain percentage.",
+    "effects": [
+     {
+      "is_percent": true,
+      "max_level": 5,
+      "min_value": 1,
+      "stat": "ATK",
+      "value": 5
+     }
+    ],
+    "icon": "/images/potentials/POTEN_1_RATE_ATK.webp",
+    "id": 20001,
+    "name": "Sense of Attack",
+    "tags": [
+     "ATK"
+    ]
+   },
+   {
+    "category": "Standard Potential",
+    "description": "Increases CRIT Rate by 3%.",
+    "icon": "/images/potentials/POTEN_2_RATE_CRITICAL.webp",
+    "id": 21005,
+    "name": "Skill of Insight",
+    "tags": [
+     "CRIT Rate"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Endurance by 12.",
+    "icon": "",
+    "id": 0,
+    "name": "Endurance +12",
+    "tags": [
+     "Endurance"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 10.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +10",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 15.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +15",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Strength by 8.",
+    "icon": "",
+    "id": 0,
+    "name": "Strength +8",
+    "tags": [
+     "Strength"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Vitality by 10.",
+    "icon": "",
+    "id": 0,
+    "name": "Vitality +10",
+    "tags": [
+     "Vitality"
+    ]
+   },
+   {
+    "category": "Stat Gain",
+    "description": "Increases Vitality by 12.",
+    "icon": "",
+    "id": 0,
+    "name": "Vitality +12",
+    "tags": [
+     "Vitality"
+    ]
+   },
+   {
+    "category": "Journey Buff",
+    "description": "Without realizing it, you had a wonderful time dancing. Strength gained during training increases.",
+    "icon": "/images/jbuffs/ICON_JOURNEY_BUFF_POWER_TRAINING_UP.webp",
+    "id": 391,
+    "name": "Lively Footsteps",
+    "tags": [
+     "Journey Buff"
+    ]
+   },
+   {
+    "category": "Consumable",
+    "description": "Recovers 1 Condition.",
+    "icon": "",
+    "id": 0,
+    "name": "Condition +1",
+    "tags": [
+     "Condition"
+    ]
+   },
+   {
+    "category": "Consumable",
+    "description": "Recovers 10 Stamina.",
+    "icon": "",
+    "id": 0,
+    "name": "Stamina +10",
+    "tags": [
+     "Stamina"
+    ]
+   }
+  ],
+  "promotes": [
+   {
+    "add_per_level": 1,
+    "base_value": 9,
+    "category": "Journey Start Effects",
+    "effect": "Bond Points Gain",
+    "is_rate": false,
+    "per_level": 5,
+    "unlock_level": 20,
+    "value": "+9"
+   },
+   {
+    "add_per_level": 16,
+    "base_value": 1000,
+    "category": "Training Effects",
+    "effect": "Training Effectiveness",
+    "is_rate": true,
+    "per_level": 1,
+    "unlock_level": 1,
+    "value": "+10%"
+   },
+   {
+    "add_per_level": 18,
+    "base_value": 400,
+    "category": "Training Effects",
+    "effect": "Condition Effect Increase",
+    "is_rate": true,
+    "per_level": 1,
+    "unlock_level": 15,
+    "value": "+4%"
+   },
+   {
+    "add_per_level": 1,
+    "base_value": 1,
+    "category": "Training Effects",
+    "effect": "Additional Strength Stat Gain",
+    "is_rate": false,
+    "per_level": 5,
+    "unlock_level": 35,
+    "value": "+1"
+   },
+   {
+    "add_per_level": 24,
+    "base_value": 1400,
+    "category": "Sensory Training Effects",
+    "effect": "Super Sensory Training Effectiveness",
+    "is_rate": true,
+    "per_level": 1,
+    "unlock_level": 1,
+    "value": "+14%"
+   },
+   {
+    "add_per_level": 5,
+    "base_value": 250,
+    "category": "Sensory Training Effects",
+    "effect": "Sensory Training Chance",
+    "is_rate": false,
+    "per_level": 1,
+    "unlock_level": 20,
+    "value": "+250"
+   }
+  ],
+  "savior_name": "Gille",
+  "slug": "apostle-gille-ssr-01",
+  "special_stat": null,
+  "unique_promote": {
+   "description": "When Bond Points are at 40 or higher During Training, Additional Potential Points +2",
+   "icon": "ICON_ARCANA_UNIQUE_TRAINING.png",
+   "name": "Graceful Steps",
+   "rapport_requirement": 40,
+   "unlock_level": 35
   }
  },
  {

@@ -95,7 +95,7 @@ class MatchRenderTests(unittest.TestCase):
         base = {'name': name('리세트의 일과', '莉賽特的日常'), 'times': ['4월 하순']}
         text = self._render([dict(base, id=1, choices=[help1, wait]), dict(base, id=2, choices=[help2, wait])])
         self.assertEqual(text.count('譯:리세트의 일과'), 1)
-        self.assertIn('網站列出 2 種可能結果', text)
+        self.assertIn('資料庫有 2 種可能結果', text)
         self.assertIn('〔可能結果 1〕', text)
         self.assertIn('〔可能結果 2〕', text)
         self.assertEqual(text.count('條件／消耗：耐力 -20'), 1)  # 共同條件只顯示一次

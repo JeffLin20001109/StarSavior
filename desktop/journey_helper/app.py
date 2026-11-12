@@ -262,7 +262,7 @@ class App:
         self.scale = max(1.0, self.root.winfo_fpixels('1i') / 96)
         self.ocr = Ocr()
         self.data = None
-        self.data_status = '正在下載網站資料…'
+        self.data_status = '正在下載資料庫…'
         self.translations = TranslationStore(self.config.get('translations_url'), self.dir)
         self.translator = Translator(self.config, self.dir / 'translations.json', table=self.translations.table)
         self.cards = CardMatcher(self.config['site_url'], self.dir / 'cards')
@@ -346,7 +346,7 @@ class App:
     def _rerun_pending(self):
         frame, self._pending_frame = self._pending_frame, None
         if frame is not None:
-            log.info('網站資料就緒，自動重新辨識上一次的畫面')
+            log.info('資料庫就緒，自動重新辨識上一次的畫面')
             threading.Thread(target=self._work, args=(frame,), daemon=True).start()
 
     def _warm_up(self):

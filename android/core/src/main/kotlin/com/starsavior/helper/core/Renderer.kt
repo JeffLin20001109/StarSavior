@@ -127,7 +127,7 @@ class Renderer(
         val diffs = group.map { difficulties(it) }
         val byDifficulty = diffs.toSet().size > 1
         val isHard = diffs.map { DIFFICULTY_ZH.getValue("Hard") in it }
-        if (uncertain) out.add(Line("網站列出 ${group.size} 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。", "dim"))
+        if (uncertain) out.add(Line("資料庫有 ${group.size} 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。", "dim"))
         val choices = first.objects("choices")
         if (choices.isEmpty()) out.add(Line("（沒有效果資料）", "dim"))
         val details = group.size <= 8

@@ -155,7 +155,7 @@ class Renderer:
         by_difficulty = len(set(difficulties)) > 1
         is_hard = [DIFFICULTY_ZH['Hard'] in d for d in difficulties]
         if uncertain:
-            lines.append([(f'網站列出 {len(group)} 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。', 'dim')])
+            lines.append([(f'資料庫有 {len(group)} 種可能結果，遊戲中會出現其中一種（資料沒有說明條件）。', 'dim')])
         choices = [c for c in first.get('choices') or [] if isinstance(c, dict)]
         if not choices:
             lines.append([('（沒有效果資料）', 'dim')])

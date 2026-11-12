@@ -27,7 +27,7 @@ class Pipeline(
                 "畫面左上角沒有「旅程事件」或「阿爾克那事件」。",
                 "辨識到的文字：" + boxes.take(8).joinToString("、") { it.text }.ifEmpty { "（沒有文字）" })
         val data = dataProvider()
-            ?: return message("資料尚未就緒", "warn", "已辨識到事件「${event.title}」，但網站資料還沒取得，程式正在自動重試。")
+            ?: return message("資料尚未就緒", "warn", "已辨識到事件「${event.title}」，但資料庫還沒取得，程式正在自動重試。")
         return if (event.kind == EventKind.JOURNEY) journey(event, data) else arcana(event, data, width, height, cards)
     }
 
@@ -90,12 +90,12 @@ class Pipeline(
     }
 
     private fun notFound(kind: String, title: String, alternatives: List<Pair<Double, String>>): Result {
-        val lines = mutableListOf(Line("$kind「$title」在網站資料中找不到。", "warn"))
+        val lines = mutableListOf(Line("$kind「$title」在資料庫中找不到。", "warn"))
         if (alternatives.isNotEmpty()) {
             lines.add(Line("最接近的事件：", "note"))
             alternatives.forEach { (score, name) -> lines.add(Line("・$name（${percent(score)}）", "dim")) }
         }
-        lines.add(Line("可能是網站資料尚未更新，或辨識到的文字有誤。", "dim"))
+        lines.add(Line("可能是資料庫尚未更新，或辨識到的文字有誤。", "dim"))
         return Result("找不到事件", lines)
     }
 

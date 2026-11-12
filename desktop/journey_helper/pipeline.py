@@ -38,7 +38,7 @@ class Pipeline:
                         '辨識到的文字：' + seen)
         data = self.data_provider()
         if data is None:
-            return _msg('資料尚未就緒', f'已辨識到事件「{event.title}」，但網站資料還沒取得，程式正在自動重試。', style='warn')
+            return _msg('資料尚未就緒', f'已辨識到事件「{event.title}」，但資料庫還沒取得，程式正在自動重試。', style='warn')
         if event.kind == JOURNEY:
             return self._journey(event, data)
         return self._arcana(event, data, frame)
@@ -107,9 +107,9 @@ class Pipeline:
 
     @staticmethod
     def _not_found(kind, title, alternatives):
-        lines = [[(f'{kind}「{title}」在網站資料中找不到。', 'warn')]]
+        lines = [[(f'{kind}「{title}」在資料庫中找不到。', 'warn')]]
         if alternatives:
             lines.append([('最接近的事件：', 'note')])
             lines += [[(f'・{name}（{score:.0%}）', 'dim')] for score, name in alternatives]
-        lines.append([('可能是網站資料尚未更新，或辨識到的文字有誤。', 'dim')])
+        lines.append([('可能是資料庫尚未更新，或辨識到的文字有誤。', 'dim')])
         return Result('找不到事件', lines)

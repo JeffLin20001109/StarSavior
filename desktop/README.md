@@ -1,6 +1,6 @@
 # StarSavior 旅程助手（Windows 版）
 
-在 StarSavior 的旅程中遇到事件時，點一下遊戲畫面上的「旅」按鈕，就會在小窗中顯示這個事件每個選項的效果。事件資料來自本專案自己的資料庫（每天從 [Star Savior DB](https://starsavior-db.pages.dev/) 與 [Star Savior Arcana DB](https://star-savior-arcana-db.pages.dev/journey) 合併產生），文字用遊戲官方繁中（取自遊戲解包資料）顯示。
+在 StarSavior 的旅程中遇到事件時，點一下遊戲畫面上的「旅」按鈕，就會在小窗中顯示這個事件每個選項的效果。事件資料來自本專案自己的資料庫（內容取自遊戲檔案，遊戲改版後由維護者更新），文字用遊戲官方繁中（取自遊戲解包資料）顯示。
 
 ## 使用方式
 

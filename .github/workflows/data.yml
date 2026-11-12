@@ -1,20 +1,16 @@
-name: Data (own database)
+name: Data (website sources, manual)
 
-# 每天從資料來源網站下載原始資料並合併成我們自己的資料庫：
-# 1. 原始快照存到 data-snapshots 分支（有變動才提交）
-# 2. 合併成 journey_data.json，卡圖存一份到 release「card-images」，
-#    檢查通過後發佈到 release「data」（exe 與 APK 從這裡下載）
-# 3. 譯文表還缺的句子列在 data-snapshots 分支的 missing.json
+# 舊流程：從資料來源網站下載原始資料並合併成資料庫。
+# 資料庫現在改由維護者在本機從遊戲檔產生並上傳（見 README「資料庫」），
+# 所以這個流程不再自動執行；手動執行時只會產生報告，
+# 勾選 publish 才會用網站版本覆蓋 release「data」。
 on:
-  schedule:
-    - cron: '17 10 * * *'  # 每天台灣時間 18:17（UTC 10:17）
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - tools/data/**
-      - shared/event_names_zh.json
-      - .github/workflows/data.yml
+    inputs:
+      publish:
+        description: '用網站版本覆蓋 release「data」（會蓋掉遊戲產生的資料庫）'
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -37,7 +33,7 @@ jobs:
       - name: Build database
         run: python tools/data/build_db.py "$RUNNER_TEMP/sources" "$RUNNER_TEMP/journey_data.json" "$RUNNER_TEMP/report.json"
       - name: Mirror card images to our release
-        if: github.event_name != 'push' || github.ref == 'refs/heads/main'
+        if: inputs.publish
         env:
           GH_TOKEN: ${{ github.token }}
         run: python tools/data/mirror_images.py "$RUNNER_TEMP/journey_data.json" "$GITHUB_REPOSITORY"
@@ -50,7 +46,7 @@ jobs:
       - name: List untranslated strings
         run: python tools/data/missing_strings.py "$RUNNER_TEMP/journey_data.json" "$RUNNER_TEMP/missing.json"
       - name: Publish release "data"
-        if: github.event_name != 'push' || github.ref == 'refs/heads/main'
+        if: inputs.publish
         env:
           GH_TOKEN: ${{ github.token }}
         run: |

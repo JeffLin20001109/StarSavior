@@ -1,6 +1,6 @@
 # StarSavior 旅程助手
 
-在 StarSavior 的旅程中遇到事件時，辨識遊戲畫面上的事件，並以繁體中文顯示每個選項的效果。事件資料由本專案自己的資料庫提供（每天從 [Star Savior DB](https://starsavior-db.pages.dev/) 與 [Star Savior Arcana DB](https://star-savior-arcana-db.pages.dev/journey) 合併產生）。中文一律採用遊戲官方繁中（取自遊戲解包資料）；遊戲裡找不到的少數句子才保留本專案自己的翻譯。
+在 StarSavior 的旅程中遇到事件時，辨識遊戲畫面上的事件，並以繁體中文顯示每個選項的效果。事件資料由本專案自己的資料庫提供，內容直接取自遊戲檔案（維護者在本機解包產生後上傳）。中文一律採用遊戲官方繁中；遊戲裡找不到的少數句子才保留本專案自己的翻譯。
 
 | 版本 | 資料夾 | 下載 |
 |---|---|---|
@@ -14,9 +14,9 @@ StarSavior/
 ├─ shared/      兩個版本共用：譯文表、事件名稱對照、測試截圖、golden 預期結果
 ├─ desktop/     Windows 版（Python，打包成 exe）
 ├─ android/     Android 版（Kotlin）
-├─ tools/data/  自己的資料庫：下載來源、合併、檢查、備份卡圖
+├─ tools/data/  資料庫的檢查工具（validate_db、missing_strings），以及舊的網站來源流程
 └─ .github/workflows/
-   ├─ data.yml                  每天台灣時間 18:17：更新資料庫，發佈到 release「data」
+   ├─ data.yml                  舊的網站來源流程，只能手動執行；勾選 publish 才會覆蓋 release「data」
    ├─ desktop.yml               desktop/ 或 shared/ 改動時：測試、打包 exe、發佈 desktop-latest
    ├─ android.yml               android/ 或 shared/ 改動時：測試、打包 APK、發佈 android-latest
    ├─ publish-translations.yml  shared/translations_zh.json 改動時：檢查並發佈譯文表
@@ -27,11 +27,21 @@ StarSavior/
 
 | Release | 檔案 | 更新方式 | 程式多久檢查一次 |
 |---|---|---|---|
-| `data` | `journey_data.json`（旅程事件、阿爾克那、道具、潛力、旅程效果） | 「Data」每天自動更新 | 12 小時 |
+| `data` | `journey_data.json`（旅程事件、阿爾克那、道具、潛力、旅程效果） | 遊戲改版後由維護者在本機產生並上傳（見下方「資料庫」） | 12 小時 |
 | `translations` | `translations_zh.json`（譯文表） | 改 `shared/translations_zh.json` 合進 `main` 後自動發佈 | 6 小時 |
-| `card-images` | 阿爾克那卡圖（`{id}.webp`） | 「Data」發現新卡時自動備份 | 第一次用到時下載 |
+| `card-images` | 阿爾克那卡圖（`{id}.webp`） | 舊網站來源流程備份的卡圖；新卡要另外補上 | 第一次用到時下載 |
 
-程式不會直接連第三方網站；來源網站掛掉或改版時，程式繼續使用最後一份成功的資料。重新開啟程式即可立刻檢查更新。
+程式不會直接連第三方網站；下載失敗時繼續使用最後一份成功的資料。重新開啟程式即可立刻檢查更新。
+
+## 資料庫
+
+`journey_data.json` 的內容全部取自遊戲檔案：事件名稱、選項、條件、獎勵、道具、潛力、旅程效果、阿爾克那，以及各語言的官方文字。
+
+- **產生方式**：維護者在本機解包已安裝的遊戲，產生資料庫、用 `tools/data/validate_db.py` 檢查後，用 `gh release upload` 上傳到 release「data」。同時把新句子的官方繁中補進 `shared/translations_zh.json`。
+- 解包工具與遊戲原始檔案只放在維護者本機，**不提交到這個公開 repo**。
+- **遊戲改版後要重新產生一次**，不會每天自動更新。
+- 遊戲客戶端沒有事件的出現時間、難度、戰鬥名稱。這些標籤沿用上一版資料庫，依事件編號帶過來；全新的事件不會有這些標籤。
+- 同一事件依旅程主角會有不同劇本，目前只收預設版本。
 
 ## 譯文表
 

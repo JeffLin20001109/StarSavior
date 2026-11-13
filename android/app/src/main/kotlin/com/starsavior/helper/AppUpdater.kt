@@ -7,6 +7,7 @@ import android.content.pm.PackageInstaller
 import android.net.Uri
 import android.os.Build
 import android.provider.Settings
+import com.starsavior.helper.core.DownloadResume
 import java.io.File
 import java.io.IOException
 import java.net.HttpURLConnection
@@ -30,29 +31,62 @@ object AppUpdater {
         return false
     }
 
-    /** 下載 APK 到 App 的快取資料夾（跟隨 GitHub 的重新導向）；onProgress 回報 0～100，總大小未知時為 -1。 */
-    fun download(activity: Activity, url: String, onProgress: (Int) -> Unit): File {
+    private const val MAX_ATTEMPTS = 6
+
+    /**
+     * 下載 APK 到 App 的快取資料夾（跟隨 GitHub 的重新導向）。
+     * 連線中斷或逾時會自動重試，並從已下載的位置續傳（HTTP Range）。
+     * onProgress 回報 0～100（總大小未知時為 -1）；onRetry 回報第幾次重試與原因。
+     */
+    fun download(
+        activity: Activity, url: String,
+        onProgress: (Int) -> Unit, onRetry: (Int, String) -> Unit = { _, _ -> },
+    ): File {
         val file = File(activity.cacheDir, "update.apk")
         val tmp = File(activity.cacheDir, "update.apk.part")
+        tmp.delete()  // 每次按下都重新開始，避免接上舊版本下載到一半的檔案
+        var attempt = 0
+        while (true) {
+            try {
+                downloadOnce(url, tmp, onProgress)
+                file.delete()
+                if (!tmp.renameTo(file)) { tmp.copyTo(file, overwrite = true); tmp.delete() }
+                return file
+            } catch (e: IOException) {
+                attempt++
+                if (attempt >= MAX_ATTEMPTS) throw IOException("已重試 ${attempt - 1} 次仍失敗：${e.message}", e)
+                onRetry(attempt, e.message ?: e.javaClass.simpleName)
+                Thread.sleep(DownloadResume.backoffMs(attempt))
+            }
+        }
+    }
+
+    /** 下載一次：tmp 已有內容時從該位置續傳；伺服器不支援續傳就從頭下載。 */
+    private fun downloadOnce(url: String, tmp: File, onProgress: (Int) -> Unit) {
         var target = URL(url)
         repeat(5) {
+            val requested = if (tmp.exists()) tmp.length() else 0L
             val conn = target.openConnection() as HttpURLConnection
             conn.connectTimeout = 20_000
-            conn.readTimeout = 30_000
+            conn.readTimeout = 60_000
             conn.instanceFollowRedirects = false
             conn.setRequestProperty("User-Agent", "Mozilla/5.0 (StarSaviorJourneyHelper Android)")
+            if (requested > 0) conn.setRequestProperty("Range", "bytes=$requested-")
             try {
                 val code = conn.responseCode
                 if (code in 300..399) {
                     target = URL(target, conn.getHeaderField("Location"))
                     return@repeat
                 }
-                if (code !in 200..299) throw IOException("HTTP $code：$target")
-                val total = conn.contentLengthLong
-                var done = 0L
+                if (code == 416) { tmp.delete(); throw IOException("續傳位置無效，重新下載") }
+                if (code !in 200..299) throw IOException("HTTP $code")
+                val range = conn.getHeaderField("Content-Range")
+                val start = DownloadResume.resumeFrom(requested, code, range)
+                val total = DownloadResume.totalSize(code, range, conn.contentLengthLong + start)
+                var done = start
                 var last = -2
                 conn.inputStream.use { input ->
-                    tmp.outputStream().use { output ->
+                    java.io.FileOutputStream(tmp, start > 0).use { output ->
                         val buffer = ByteArray(64 * 1024)
                         while (true) {
                             val n = input.read(buffer)
@@ -65,8 +99,7 @@ object AppUpdater {
                     }
                 }
                 if (total > 0 && done != total) throw IOException("下載不完整（$done / $total）")
-                if (!tmp.renameTo(file)) { tmp.copyTo(file, overwrite = true); tmp.delete() }
-                return file
+                return
             } finally {
                 conn.disconnect()
             }
@@ -106,8 +139,16 @@ object AppUpdater {
             }
             PackageInstaller.STATUS_SUCCESS -> "更新完成。"
             PackageInstaller.STATUS_FAILURE_ABORTED -> "已取消安裝。可以再按一次「下載並安裝」。"
-            else -> "安裝失敗：" + (intent.getStringExtra(PackageInstaller.EXTRA_STATUS_MESSAGE) ?: "未知原因") +
-                "\n可以改用瀏覽器下載 APK 手動安裝。"
+            else -> {
+                val detail = intent.getStringExtra(PackageInstaller.EXTRA_STATUS_MESSAGE) ?: "未知原因"
+                if (detail.contains("signatures do not match", ignoreCase = true) ||
+                    detail.contains("UPDATE_INCOMPATIBLE", ignoreCase = true)) {
+                    "新版的簽章和目前安裝的不同，無法直接覆蓋（舊版 APK 的簽章金鑰不固定）。\n" +
+                        "請先解除安裝旅程助手，再按「改用瀏覽器下載」安裝新版；之後的更新就能直接覆蓋。"
+                } else {
+                    "安裝失敗：$detail\n可以改用瀏覽器下載 APK 手動安裝。"
+                }
+            }
         }
     }
 }

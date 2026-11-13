@@ -23,10 +23,26 @@ android {
 
     buildFeatures { buildConfig = true }
 
+    // 固定的簽章金鑰：正式版每次都要用同一把，手機才能直接覆蓋安裝（App 內更新）。
+    // CI 從 GitHub Secrets 解出金鑰檔並設定這些環境變數；沒有設定時（本機、PR）用預設的除錯金鑰。
+    val keystore = System.getenv("ANDROID_KEYSTORE_FILE")?.let { file(it) }?.takeIf { it.exists() }
+    val fixedSigning = keystore?.let { store ->
+        signingConfigs.create("fixed") {
+            storeFile = store
+            storeType = "pkcs12"
+            storePassword = System.getenv("ANDROID_KEYSTORE_PASSWORD")
+            keyAlias = System.getenv("ANDROID_KEY_ALIAS")
+            keyPassword = System.getenv("ANDROID_KEY_PASSWORD") ?: System.getenv("ANDROID_KEYSTORE_PASSWORD")
+        }
+    }
+
     buildTypes {
+        debug {
+            if (fixedSigning != null) signingConfig = fixedSigning
+        }
         release {
             isMinifyEnabled = false
-            signingConfig = signingConfigs.getByName("debug")
+            signingConfig = fixedSigning ?: signingConfigs.getByName("debug")
         }
     }
 

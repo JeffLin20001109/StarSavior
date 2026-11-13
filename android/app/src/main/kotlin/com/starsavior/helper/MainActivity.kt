@@ -81,7 +81,10 @@ class MainActivity : Activity() {
         Diagnostics.lastExitReason(this)?.let { parts += "上次結束原因：$it" }
         Diagnostics.lastCrash(this)?.let { parts += "上次當機紀錄：\n$it" }
         Diagnostics.recentEvents(this).takeIf { it.isNotEmpty() }?.let { parts += "最近的事件：\n" + it.joinToString("\n") }
-        diagnostics.text = if (parts.isEmpty()) "" else "── 診斷資訊（遇到問題時可以截圖回報）──\n" + parts.joinToString("\n\n")
+        // 目前版本：正式版顯示打包時的 commit（更新後可以確認是否已換成新版）
+        val version = BuildConfig.BUILD_COMMIT.take(7).ifEmpty { "測試版" }
+        diagnostics.text = "版本 $version" +
+            if (parts.isEmpty()) "" else "\n\n── 診斷資訊（遇到問題時可以截圖回報）──\n" + parts.joinToString("\n\n")
         checkForUpdate()
         // 剛從「安裝未知應用程式」設定頁回來：允許了就繼續更新
         pendingInstallUrl?.let { url ->

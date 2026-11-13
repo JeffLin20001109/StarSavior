@@ -53,14 +53,21 @@ def single_instance(name='Local\\StarSaviorJourneyHelper'):
     return ctypes.get_last_error() != ERROR_ALREADY_EXISTS
 
 
+HELPER_NAME = 'starsaviorjourneyhelper'
+
+
 def find_game_pids(names, keyword):
+    """遊戲程序的 PID。助手自己（名稱也含 starsavior）一定要排除，否則會把自己的小窗當成遊戲視窗。"""
     import psutil
     wanted = {n.lower() for n in names}
     keyword = (keyword or '').lower()
+    own = {os.getpid(), os.getppid()}
     pids = []
     for proc in psutil.process_iter(['pid', 'name']):
         name = (proc.info.get('name') or '').lower()
         compact = name.replace(' ', '').replace('_', '').replace('-', '')
+        if proc.info['pid'] in own or compact.startswith(HELPER_NAME):
+            continue
         if name in wanted or (keyword and keyword in compact):
             pids.append(proc.info['pid'])
     return pids
@@ -105,6 +112,11 @@ def find_game_window(names, keyword):
 
 def is_window(hwnd):
     return bool(hwnd) and IS_WINDOWS and bool(user32.IsWindow(hwnd))
+
+
+def is_visible(hwnd):
+    """視窗是否可見（最小化的視窗仍算可見；被隱藏的啟動畫面等則否）。"""
+    return not IS_WINDOWS or bool(user32.IsWindowVisible(hwnd))
 
 
 def is_minimized(hwnd):

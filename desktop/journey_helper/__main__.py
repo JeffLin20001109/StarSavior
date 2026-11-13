@@ -107,7 +107,7 @@ def main(argv=None):
         argv = argv[2:]
     from . import winapi
     winapi.set_dpi_aware()
-    setup_logging()
+    # 先確認只有一個在執行，再建立記錄檔：否則第二次開啟時會清掉正在執行的那個的記錄
     # 啟動器若因新程式碼出錯而改用內建版本，鎖已經在同一個程序裡取得過，不要再檢查一次
     if not getattr(sys, 'starsavior_single_instance', False):
         if not winapi.single_instance():
@@ -115,6 +115,7 @@ def main(argv=None):
             tkinter.messagebox.showinfo('旅程助手', '旅程助手已經在執行中。\n右鍵點遊戲畫面上的「旅」按鈕可以結束。')
             return 0
         sys.starsavior_single_instance = True
+    setup_logging()
     launcher = getattr(sys, 'starsavior_launcher', None) or {}
     logging.getLogger(__name__).info('啟動：exe %s，程式碼 %s%s', (launcher.get('exe_commit') or '')[:7],
                                      (launcher.get('code_commit') or '內建')[:7],

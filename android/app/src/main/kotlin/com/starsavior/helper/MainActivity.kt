@@ -146,9 +146,13 @@ class MainActivity : Activity() {
         updateStatus?.text = "正在下載新版…"
         Thread {
             try {
-                val apk = AppUpdater.download(this, url) { percent ->
-                    runOnUiThread { updateStatus?.text = if (percent >= 0) "正在下載新版… $percent%" else "正在下載新版…" }
-                }
+                val apk = AppUpdater.download(this, url,
+                    onProgress = { percent ->
+                        runOnUiThread { updateStatus?.text = if (percent >= 0) "正在下載新版… $percent%" else "正在下載新版…" }
+                    },
+                    onRetry = { attempt, reason ->
+                        runOnUiThread { updateStatus?.text = "連線中斷（$reason），正在重試（第 $attempt 次），會從中斷的地方繼續…" }
+                    })
                 runOnUiThread { updateStatus?.text = "下載完成，正在準備安裝…" }
                 AppUpdater.install(this, apk)
             } catch (e: Exception) {

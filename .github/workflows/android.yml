@@ -31,11 +31,28 @@ jobs:
           distribution: temurin
           java-version: '17'
       - uses: gradle/actions/setup-gradle@v4
-      # 固定簽章：沿用同一把 debug 金鑰，手機上才能直接覆蓋安裝新版
-      - uses: actions/cache@v4
-        with:
-          path: ~/.android/debug.keystore
-          key: android-debug-keystore-v1
+      # 固定簽章：用存在 GitHub Secrets 的同一把金鑰，手機上才能直接覆蓋安裝新版（App 內更新）
+      - name: Signing key
+        working-directory: .
+        env:
+          KEYSTORE_B64: ${{ secrets.ANDROID_KEYSTORE_B64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+        run: |
+          if [ -n "$KEYSTORE_B64" ]; then
+            echo "$KEYSTORE_B64" | base64 -d > "$RUNNER_TEMP/signing.p12"
+            {
+              echo "ANDROID_KEYSTORE_FILE=$RUNNER_TEMP/signing.p12"
+              echo "ANDROID_KEYSTORE_PASSWORD=$KEYSTORE_PASSWORD"
+              echo "ANDROID_KEY_ALIAS=$KEY_ALIAS"
+            } >> "$GITHUB_ENV"
+            echo "使用固定的簽章金鑰"
+          elif [ "$GITHUB_REF" = "refs/heads/main" ] && [ "$GITHUB_EVENT_NAME" != "pull_request" ]; then
+            # 正式版絕不能用隨機金鑰發佈，否則使用者無法覆蓋更新
+            echo "::error::缺少 ANDROID_KEYSTORE_B64，正式版不能用隨機的除錯金鑰簽章"; exit 1
+          else
+            echo "沒有固定金鑰，使用除錯金鑰（只用於測試，不發佈）"
+          fi
       - name: Core tests (golden files shared with the Windows version)
         run: ./gradlew :core:test --stacktrace
       - name: Build APK

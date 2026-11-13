@@ -412,8 +412,11 @@ class App:
         self.root.after(250, self._tick)
 
     def _track_game(self):
-        if self.hwnd and not winapi.is_window(self.hwnd):
+        # 視窗關閉、或被隱藏（例如遊戲的啟動畫面換成主視窗）時重新尋找
+        if self.hwnd and not (winapi.is_window(self.hwnd) and winapi.is_visible(self.hwnd)):
+            log.info('遊戲視窗 %s 已關閉或隱藏，重新尋找', self.hwnd)
             self.hwnd = self.game_pid = None
+            self._search_countdown = 0
         if not self.hwnd:
             self._search_countdown -= 1
             if self._search_countdown <= 0:

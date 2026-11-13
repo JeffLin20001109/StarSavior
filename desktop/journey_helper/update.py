@@ -135,6 +135,20 @@ def restart():
     """重新啟動 exe 套用新版本（新程序會等目前的程序結束）。"""
     if not getattr(sys, 'frozen', False):
         return False
-    flags = getattr(subprocess, 'DETACHED_PROCESS', 0) | getattr(subprocess, 'CREATE_NEW_PROCESS_GROUP', 0)
-    subprocess.Popen([sys.executable, '--after', str(os.getpid())], creationflags=flags, close_fds=True)
+    args, kwargs = restart_command()
+    subprocess.Popen(args, **kwargs)
     return True
+
+
+def restart_command():
+    """重新啟動用的 (args, kwargs)。
+
+    單檔 exe 啟動的子程序會繼承 PyInstaller 的環境變數，新的 exe 會以為自己是目前程序的一部分、
+    沿用同一個暫存資料夾（_MEIxxxx），舊程序結束時就刪不掉而跳出「Failed to remove temporary
+    directory」警告。設定 PYINSTALLER_RESET_ENVIRONMENT=1 讓新程序當成全新啟動。
+    """
+    flags = getattr(subprocess, 'DETACHED_PROCESS', 0) | getattr(subprocess, 'CREATE_NEW_PROCESS_GROUP', 0)
+    env = dict(os.environ, PYINSTALLER_RESET_ENVIRONMENT='1')
+    args = [sys.executable, '--after', str(os.getpid())]
+    return args, {'creationflags': flags, 'close_fds': True, 'env': env,
+                  'cwd': str(Path(sys.executable).resolve().parent)}

@@ -113,6 +113,25 @@ class HotUpdateTests(unittest.TestCase):
                 update.install({'commit': 'new', 'code': code}, self.launcher)
 
 
+class RestartTests(unittest.TestCase):
+    def test_restart_resets_pyinstaller_environment(self):
+        # 沒有重設的話，新 exe 會沿用舊程序的暫存資料夾，舊程序結束時跳出刪除失敗的警告
+        with mock.patch.object(update.sys, 'frozen', True, create=True), \
+                mock.patch.object(update.subprocess, 'Popen') as popen:
+            self.assertTrue(update.restart())
+        args, kwargs = popen.call_args
+        self.assertEqual(args, ([sys.executable, '--after', str(update.os.getpid())],))
+        self.assertEqual(kwargs['env']['PYINSTALLER_RESET_ENVIRONMENT'], '1')
+        # 真的用這組參數建立 Popen 不會出錯（之前把關鍵字參數傳成位置參數）
+        import inspect
+        inspect.signature(update.subprocess.Popen.__init__).bind(None, *args, **kwargs)
+
+    def test_restart_does_nothing_from_source(self):
+        with mock.patch.object(update.subprocess, 'Popen') as popen:
+            self.assertFalse(update.restart())
+        popen.assert_not_called()
+
+
 class LauncherTests(unittest.TestCase):
     """啟動器挑選程式碼包的規則。"""
 

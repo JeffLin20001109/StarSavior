@@ -112,7 +112,8 @@ class MainActivity : Activity() {
         updateChecked = true
         Thread {
             val found = runCatching {
-                com.starsavior.helper.core.UpdateCheck.newer(current, Repository.httpGet(Repository.VERSION_URL))
+                com.starsavior.helper.core.UpdateCheck.newer(
+                    current, Repository.httpGet(Repository.VERSION_URL), Build.SUPPORTED_ABIS.toList())
             }.getOrNull() ?: return@Thread
             runOnUiThread { showUpdate(found.url.ifEmpty { Repository.APK_URL }) }
         }.start()

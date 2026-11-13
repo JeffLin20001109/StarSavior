@@ -13,8 +13,6 @@ android {
         targetSdk = 35
         versionCode = 1
         versionName = "0.1.0"
-        // 手機（arm64）與模擬器（x86_64）；OpenCV 的原生庫很大，只放這兩種
-        ndk { abiFilters += listOf("arm64-v8a", "x86_64") }
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         // 正式版（GitHub Actions 的 main 分支）寫入 commit，啟動畫面用來檢查有沒有新版本；其他情況留空、不檢查
         val official = System.getenv("GITHUB_REF") == "refs/heads/main" && System.getenv("GITHUB_EVENT_NAME") != "pull_request"
@@ -22,6 +20,17 @@ android {
     }
 
     buildFeatures { buildConfig = true }
+
+    // 依 ABI 分開打包：手機用 arm64（正式版的 StarSaviorJourneyHelper.apk），模擬器測試用 x86_64。
+    // OpenCV 的原生庫很大，每種 ABI 一份；分開後手機版的 APK 小很多。
+    splits {
+        abi {
+            isEnable = true
+            reset()
+            include("arm64-v8a", "x86_64")
+            isUniversalApk = false
+        }
+    }
 
     // 固定的簽章金鑰：正式版每次都要用同一把，手機才能直接覆蓋安裝（App 內更新）。
     // CI 從 GitHub Secrets 解出金鑰檔並設定這些環境變數；沒有設定時（本機、PR）用預設的除錯金鑰。

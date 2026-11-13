@@ -58,11 +58,17 @@ jobs:
       - name: Build APK
         run: ./gradlew :app:assembleDebug --stacktrace
       - name: Rename APK
-        run: cp app/build/outputs/apk/debug/app-debug.apk StarSaviorJourneyHelper.apk
+        # 手機用 arm64（主要下載檔）；x86_64 給不支援 ARM 轉譯的電腦模擬器
+        run: |
+          cp app/build/outputs/apk/debug/app-arm64-v8a-debug.apk StarSaviorJourneyHelper.apk
+          cp app/build/outputs/apk/debug/app-x86_64-debug.apk StarSaviorJourneyHelper-x86_64.apk
+          ls -la StarSaviorJourneyHelper*.apk
       - uses: actions/upload-artifact@v4
         with:
           name: StarSaviorJourneyHelper-apk
-          path: android/StarSaviorJourneyHelper.apk
+          path: |
+            android/StarSaviorJourneyHelper.apk
+            android/StarSaviorJourneyHelper-x86_64.apk
 
   emulator-test:
     # 在模擬器上用真實截圖測試 ML Kit 文字辨識與 OpenCV 卡圖比對
@@ -93,7 +99,7 @@ jobs:
           disable-animations: true
           working-directory: android
           script: |
-            adb install -r app/build/outputs/apk/debug/app-debug.apk
+            adb install -r app/build/outputs/apk/debug/app-x86_64-debug.apk
             adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
             adb logcat -c
             adb shell am instrument -w -r com.starsavior.helper.test/androidx.test.runner.AndroidJUnitRunner > instrument.txt; cat instrument.txt
@@ -121,13 +127,16 @@ jobs:
           else
             TAG=android-preview; TITLE="StarSavior 旅程助手 Android 版（測試版：${GITHUB_REF_NAME}）"; EXTRA="--prerelease"
           fi
-          FILES="StarSaviorJourneyHelper.apk"
+          FILES="StarSaviorJourneyHelper.apk StarSaviorJourneyHelper-x86_64.apk"
           if [ "$TAG" = "android-latest" ]; then
-            # 正式版附上 version.json，App 啟動畫面用它檢查有沒有新版本
-            printf '{"commit":"%s","url":"https://github.com/%s/releases/download/android-latest/StarSaviorJourneyHelper.apk"}' \
-              "$GITHUB_SHA" "$GITHUB_REPOSITORY" > version.json
+            # 正式版附上 version.json，App 啟動畫面用它檢查有沒有新版本。
+            # url 是 arm64 版（舊版 App 只認這個欄位）；urls 依 ABI 列出，新版 App 會挑符合裝置的
+            BASE="https://github.com/$GITHUB_REPOSITORY/releases/download/android-latest"
+            printf '{"commit":"%s","url":"%s/StarSaviorJourneyHelper.apk","urls":{"arm64-v8a":"%s/StarSaviorJourneyHelper.apk","x86_64":"%s/StarSaviorJourneyHelper-x86_64.apk"}}' \
+              "$GITHUB_SHA" "$BASE" "$BASE" "$BASE" > version.json
+            cat version.json
             FILES="$FILES version.json"
           fi
           gh release delete "$TAG" --yes --cleanup-tag 2>/dev/null || true
           gh release create "$TAG" $FILES --target "$GITHUB_SHA" --title "$TITLE" $EXTRA \
-            --notes "用手機直接下載 StarSaviorJourneyHelper.apk 安裝（需允許「安裝未知應用程式」）。commit: $GITHUB_SHA"
+            --notes "用手機直接下載 StarSaviorJourneyHelper.apk 安裝（需允許「安裝未知應用程式」）。StarSaviorJourneyHelper-x86_64.apk 只給不支援 ARM 的電腦模擬器使用。commit: $GITHUB_SHA"

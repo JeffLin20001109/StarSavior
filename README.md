@@ -33,7 +33,10 @@ StarSavior/
 
 程式不會直接連第三方網站；下載失敗時繼續使用最後一份成功的資料。重新開啟程式即可立刻檢查更新。
 
-**程式本身的新版本**：資料會自動更新，但程式改動（例如畫面文字、辨識邏輯）要換新的 exe／APK。正式版打包時會記下當時的 commit，release `desktop-latest`／`android-latest` 也附一份 `version.json`；程式啟動時比對兩者，不同就提示有新版本（Windows 跳出對話框，Android 在啟動畫面上方顯示「下載新版」）。從原始碼執行、PR 或測試版不會檢查。
+**程式本身的新版本**：資料會自動更新，程式改動（例如畫面文字、辨識邏輯）則透過 release `desktop-latest`／`android-latest` 的 `version.json` 更新。正式版打包時會記下當時的 commit，啟動時和 `version.json` 比對：
+- **Windows（熱更新）**：只下載約 130 KB 的程式碼包 `StarSaviorCode.zip`，驗證 SHA-256 後解壓到 `%LOCALAPPDATA%\StarSaviorJourneyHelper\code\`，詢問要不要立刻重開套用（不重開的話下次開啟時套用）。如果改動牽涉到套件或啟動器（`requirements.txt`、`launcher.py`、`build.ps1`），舊 exe 無法套用，才會提示下載完整的 exe。新程式碼啟動失敗時會自動改用 exe 內建的版本。
+- **Android**：啟動畫面顯示「下載並安裝」，App 內下載新版 APK 後交給系統安裝（Android 規定每次都要使用者確認；第一次需要允許「安裝未知應用程式」）。
+- 從原始碼執行、PR 或測試版不會檢查。
 
 ## 資料庫
 

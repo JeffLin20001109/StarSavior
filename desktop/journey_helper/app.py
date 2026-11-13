@@ -5,6 +5,7 @@
 import logging
 import os
 import queue
+import sys
 import threading
 import time
 import tkinter as tk
@@ -357,14 +358,31 @@ class App:
             log.exception('OCR 初始化失敗')
 
     def _check_update(self):
-        """背景檢查新版本；有的話回到主執行緒詢問要不要開啟下載頁。"""
+        """背景檢查新版本：能只更新程式碼就直接下載（約 200 KB），否則詢問要不要下載完整的 exe。"""
         current = update.current_commit()
         if not current:
             return
         found = update.check(self.config.get('update_url'), current)
-        if found:
-            log.info('有新版本：%s（目前 %s）', found['commit'][:7], current[:7])
-            self.root.after(0, lambda: self._offer_update(found))
+        if not found:
+            return
+        log.info('有新版本：%s（目前 %s）', found['commit'][:7], current[:7])
+        if update.can_hot_update(found):
+            try:
+                update.install(found)
+                self.root.after(0, self._offer_restart)
+                return
+            except Exception:
+                log.exception('下載程式碼更新失敗，改為提示下載完整的 exe')
+        self.root.after(0, lambda: self._offer_update(found))
+
+    def _offer_restart(self):
+        from tkinter import messagebox
+        if messagebox.askyesno('旅程助手已更新',
+                               '新版本已經下載好了。\n\n'
+                               '要現在重新啟動套用嗎？\n選「否」的話，下次開啟旅程助手時會自動套用。',
+                               parent=self.root):
+            if update.restart():
+                self.quit()
 
     def _offer_update(self, found):
         from tkinter import messagebox
@@ -523,4 +541,6 @@ class App:
         self.root.destroy()
 
     def run(self):
+        # 告訴啟動器：程式已經正常啟動，之後的錯誤不要退回內建版本
+        sys.starsavior_started = True
         self.root.mainloop()

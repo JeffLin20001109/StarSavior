@@ -90,7 +90,11 @@ powershell -ExecutionPolicy Bypass -File build.ps1  # 打包 dist\StarSaviorJour
 ```
 
 `desktop/` 或 `shared/` 有改動並合進 `main` 時，GitHub Actions 的「Desktop (Windows exe)」會在 Windows 上跑測試、打包 exe、用 `shared/fixtures` 的截圖自我檢查，然後發佈到 `desktop-latest`，同時附上 `version.json`（`{"commit", "url"}`）。PR 只會測試與打包，不會發佈。
-- 正式版 exe 內含打包時的 commit（`journey_helper/build_info.json`，由 `build.ps1` 在 main 分支產生）；啟動時和 `version.json` 比對，不同就詢問要不要開啟下載頁。設定檔 `update_url` 設成 `""` 可以關閉檢查。
+- **自動更新（熱更新）**：exe 是「啟動器」，內含 Python、所有套件與一份程式碼（`launcher.py`）。發佈時另外產生程式碼包 `StarSaviorCode.zip`（`tools/package_code.py`：`journey_helper/*.py` 加上譯文表等資料檔，約 130 KB）。
+  - **啟動器 ID**：`requirements.txt`、`launcher.py`、`build.ps1` 的雜湊。程式碼包的 ID 和 exe 相同才能熱更新；這三個檔有改動時，舊 exe 會改為提示下載完整的 exe。
+  - 程式啟動後讀 `version.json`，有新版就背景下載程式碼包、驗證 SHA-256，解壓到 `%LOCALAPPDATA%\StarSaviorJourneyHelper\code\<commit>\`，並詢問要不要立刻重開。
+  - 啟動器只載入「啟動器 ID 相同、而且比 exe 新」的程式碼包；新程式碼在啟動完成前出錯時，記錄在 `code\state.json` 的 `bad`，改用 exe 內建的程式碼，之後改為提示下載完整的 exe。
+  - 設定檔 `update_url` 設成 `""` 可以關閉檢查。
 
 ## 已知限制
 

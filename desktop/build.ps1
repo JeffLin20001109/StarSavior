@@ -8,6 +8,11 @@ if ($env:GITHUB_SHA -and $env:GITHUB_REF -eq 'refs/heads/main' -and $env:GITHUB_
 }
 $extra = @()
 if (Test-Path $info) { $extra = @('--add-data', "$info;journey_helper") }
+# 啟動器資訊（啟動器 ID、commit、建置時間）：啟動器用來判斷下載的程式碼包能不能載入
+$commit = if ($env:GITHUB_SHA) { $env:GITHUB_SHA } else { 'local' }
+python tools/package_code.py launcher-info $commit launcher_info.json
+if ($LASTEXITCODE -ne 0) { throw 'launcher-info failed' }
+$extra += @('--add-data', 'launcher_info.json;.')
 python -m pip install -r requirements.txt pyinstaller==6.16.0
 python -m PyInstaller --noconfirm --clean --onefile --windowed `
     --name StarSaviorJourneyHelper `

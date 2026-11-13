@@ -41,7 +41,7 @@
   - `./gradlew :app:connectedDebugAndroidTest`：在模擬器／手機上用 `shared/fixtures` 截圖測試文字辨識與卡圖比對
 - Windows 版的邏輯有改動時，在 `desktop/` 執行 `python tools/make_golden.py` 更新 `shared/golden`，Android 版的測試就會檢查是否一致。
 - GitHub Actions「Android (APK)」：`android/` 或 `shared/` 有改動時執行測試、打包，並在模擬器上跑辨識測試；合進 `main` 後發佈到 `android-latest`，同時附上 `version.json`。
-- 正式版 APK 內含打包時的 commit（`BuildConfig.BUILD_COMMIT`）；每次打開啟動畫面時和 `version.json` 比對，不同就在上方顯示「下載新版」按鈕。測試版與本機打包不檢查。
+- **App 內更新**：正式版 APK 內含打包時的 commit（`BuildConfig.BUILD_COMMIT`）；打開啟動畫面時和 `version.json` 比對，有新版就顯示「下載並安裝」：App 內下載 APK，交給系統的 `PackageInstaller` 安裝（`AppUpdater.kt`）。Android 規定側載的 App 不能靜默更新，第一次要允許「安裝未知應用程式」，每次安裝都會跳出系統確認。測試版與本機打包不檢查。
 
 ## 已知限制
 

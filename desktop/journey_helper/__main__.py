@@ -89,17 +89,37 @@ def network_check():
     return result
 
 
+def wait_for_exit(pid, timeout=20):
+    """套用更新後重新啟動：等舊的程序結束，才不會被當成「已經在執行中」。"""
+    try:
+        import psutil
+        psutil.Process(int(pid)).wait(timeout=timeout)
+    except Exception:
+        pass
+
+
 def main(argv=None):
-    argv = sys.argv[1:] if argv is None else argv
+    argv = list(sys.argv[1:] if argv is None else argv)
     if argv and argv[0] == '--self-test':
         return self_test(argv[1], argv[2:])
+    if len(argv) >= 2 and argv[0] == '--after':
+        wait_for_exit(argv[1])
+        argv = argv[2:]
     from . import winapi
     winapi.set_dpi_aware()
     setup_logging()
-    if not winapi.single_instance():
-        import tkinter.messagebox
-        tkinter.messagebox.showinfo('旅程助手', '旅程助手已經在執行中。\n右鍵點遊戲畫面上的「旅」按鈕可以結束。')
-        return 0
+    # 啟動器若因新程式碼出錯而改用內建版本，鎖已經在同一個程序裡取得過，不要再檢查一次
+    if not getattr(sys, 'starsavior_single_instance', False):
+        if not winapi.single_instance():
+            import tkinter.messagebox
+            tkinter.messagebox.showinfo('旅程助手', '旅程助手已經在執行中。\n右鍵點遊戲畫面上的「旅」按鈕可以結束。')
+            return 0
+        sys.starsavior_single_instance = True
+    launcher = getattr(sys, 'starsavior_launcher', None) or {}
+    logging.getLogger(__name__).info('啟動：exe %s，程式碼 %s%s', (launcher.get('exe_commit') or '')[:7],
+                                     (launcher.get('code_commit') or '內建')[:7],
+                                     f"（新程式碼失敗，改用內建：{launcher['fallback_error']}）"
+                                     if launcher.get('fallback_error') else '')
     from .app import App
     App().run()
     return 0

@@ -23,6 +23,10 @@ class MainActivity : Activity() {
     private lateinit var diagnostics: TextView
     private lateinit var updateBox: LinearLayout
     private var updateChecked = false
+    private var updateStatus: TextView? = null
+    private var updateButton: Button? = null
+    private var pendingInstallUrl: String? = null
+    private var installing = false
     private var askedNotifications = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -65,6 +69,7 @@ class MainActivity : Activity() {
             addView(battery, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad })
             addView(diagnostics, LinearLayout.LayoutParams(-1, -2).apply { topMargin = pad })
         }.let { content -> android.widget.ScrollView(this).apply { setBackgroundColor(Color.WHITE); addView(content) } })
+        handleInstallStatus(intent)
     }
 
     override fun onResume() {
@@ -78,6 +83,23 @@ class MainActivity : Activity() {
         Diagnostics.recentEvents(this).takeIf { it.isNotEmpty() }?.let { parts += "最近的事件：\n" + it.joinToString("\n") }
         diagnostics.text = if (parts.isEmpty()) "" else "── 診斷資訊（遇到問題時可以截圖回報）──\n" + parts.joinToString("\n\n")
         checkForUpdate()
+        // 剛從「安裝未知應用程式」設定頁回來：允許了就繼續更新
+        pendingInstallUrl?.let { url ->
+            if (packageManager.canRequestPackageInstalls()) { pendingInstallUrl = null; downloadAndInstall(url) }
+        }
+    }
+
+    override fun onNewIntent(intent: Intent) {
+        super.onNewIntent(intent)
+        handleInstallStatus(intent)
+    }
+
+    private fun handleInstallStatus(intent: Intent?) {
+        if (intent?.action != AppUpdater.ACTION_INSTALL_STATUS) return
+        val message = AppUpdater.handleStatus(this, intent) ?: return
+        installing = false
+        updateStatus?.text = message
+        updateButton?.isEnabled = true
     }
 
     /** 背景下載 version.json；有新版本就在畫面上方顯示提示與下載按鈕。失敗時不顯示任何東西。 */
@@ -95,15 +117,48 @@ class MainActivity : Activity() {
 
     private fun showUpdate(url: String) {
         updateBox.removeAllViews()
-        updateBox.addView(TextView(this).apply {
-            text = "有新版本的旅程助手可以下載。下載後直接安裝即可覆蓋目前的版本。"
+        updateStatus = TextView(this).apply {
+            text = "有新版本的旅程助手。按下方按鈕會在 App 內下載，接著由系統詢問是否安裝（會覆蓋目前的版本，設定不會消失）。"
             textSize = 15f; setTextColor(0xFF5C4400.toInt())
-        })
+        }
+        updateButton = Button(this).apply {
+            text = "下載並安裝"; textSize = 16f
+            setOnClickListener { downloadAndInstall(url) }
+        }
+        updateBox.addView(updateStatus)
+        updateBox.addView(updateButton)
         updateBox.addView(Button(this).apply {
-            text = "下載新版"; textSize = 16f
+            text = "改用瀏覽器下載"; textSize = 13f
             setOnClickListener { startActivity(Intent(Intent.ACTION_VIEW, Uri.parse(url))) }
         })
         updateBox.visibility = android.view.View.VISIBLE
+    }
+
+    private fun downloadAndInstall(url: String) {
+        if (installing) return
+        if (!AppUpdater.ensureInstallAllowed(this)) {
+            pendingInstallUrl = url
+            updateStatus?.text = "請在設定頁開啟「允許安裝未知應用程式」，然後返回這裡，會自動繼續更新。"
+            return
+        }
+        installing = true
+        updateButton?.isEnabled = false
+        updateStatus?.text = "正在下載新版…"
+        Thread {
+            try {
+                val apk = AppUpdater.download(this, url) { percent ->
+                    runOnUiThread { updateStatus?.text = if (percent >= 0) "正在下載新版… $percent%" else "正在下載新版…" }
+                }
+                runOnUiThread { updateStatus?.text = "下載完成，正在準備安裝…" }
+                AppUpdater.install(this, apk)
+            } catch (e: Exception) {
+                runOnUiThread {
+                    installing = false
+                    updateButton?.isEnabled = true
+                    updateStatus?.text = "更新失敗：${e.message}\n可以再試一次，或改用瀏覽器下載。"
+                }
+            }
+        }.start()
     }
 
     @android.annotation.SuppressLint("BatteryLife")

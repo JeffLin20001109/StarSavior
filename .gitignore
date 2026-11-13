@@ -14,3 +14,4 @@ android/.idea/
 
 # 打包時產生的版本資訊
 desktop/journey_helper/build_info.json
+desktop/launcher_info.json

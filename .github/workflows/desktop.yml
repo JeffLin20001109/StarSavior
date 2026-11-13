@@ -60,8 +60,17 @@ jobs:
           gh release delete latest --yes --cleanup-tag 2>$null
           gh release delete desktop-latest --yes --cleanup-tag 2>$null
           $global:LASTEXITCODE = 0
-          $url = "https://github.com/$env:GITHUB_REPOSITORY/releases/download/desktop-latest/StarSaviorJourneyHelper.exe"
-          [IO.File]::WriteAllText("$PWD/version.json", (@{ commit = $env:GITHUB_SHA; url = $url } | ConvertTo-Json -Compress))
-          gh release create desktop-latest dist/StarSaviorJourneyHelper.exe version.json --target $env:GITHUB_SHA `
+          # 程式碼包（熱更新用）與 version.json：舊 exe 的啟動器 ID 相同時只下載程式碼包
+          $base = "https://github.com/$env:GITHUB_REPOSITORY/releases/download/desktop-latest"
+          $code = python tools/package_code.py build $env:GITHUB_SHA StarSaviorCode.zip | ConvertFrom-Json
+          if ($LASTEXITCODE -ne 0) { throw 'package_code failed' }
+          $version = @{
+            commit = $env:GITHUB_SHA
+            url = "$base/StarSaviorJourneyHelper.exe"
+            code = @{ url = "$base/StarSaviorCode.zip"; sha256 = $code.sha256; launcher = $code.launcher; built = $code.built }
+          }
+          [IO.File]::WriteAllText("$PWD/version.json", ($version | ConvertTo-Json -Compress))
+          Get-Content version.json
+          gh release create desktop-latest dist/StarSaviorJourneyHelper.exe StarSaviorCode.zip version.json --target $env:GITHUB_SHA `
             --title "StarSavior 旅程助手 Windows 版（最新版）" `
             --notes "下載 StarSaviorJourneyHelper.exe 後直接雙擊執行。commit: $env:GITHUB_SHA"

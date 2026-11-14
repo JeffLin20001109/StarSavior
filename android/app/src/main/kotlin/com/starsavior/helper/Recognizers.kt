@@ -66,7 +66,7 @@ class TextReader {
             debugImage?.invoke(name, variant)
             val lines = read(variant)
             val text = lines.firstOrNull { !EventDetector.titleLooksMisread(it.text) && it.text.isNotBlank() }
-                ?.text?.trim { it.isWhitespace() } ?: ""
+                ?.let { EventDetector.trimRetriedTitle(it.text) } ?: ""
             Log.i(TAG, "標題「${event?.title}」沒讀到或被誤讀，重新辨識（$name）：${lines.map { it.text }} → 「$text」")
             if (text.isNotEmpty()) {
                 return if (titleBox != null) EventDetector.replaceTitle(boxes, titleBox, text)
@@ -76,19 +76,20 @@ class TextReader {
         return boxes
     }
 
-    /** 重新辨識用的幾種影像：白底黑字的二值化放大圖、灰階反白放大圖、原圖放大。 */
+    /**
+     * 重新辨識用的幾種影像，都是白底黑字並在四周留寬白邊。模擬器實驗（今日天氣－晴朗）：
+     * 原尺寸二值化讀得最準；放大後只留窄白邊會整行讀不到，放大時白邊要加大才讀得到。
+     */
     private fun lineVariants(line: Bitmap): List<Pair<String, Bitmap>> {
-        val scale = maxOf(2.0, 96.0 / line.height)
-        val enlarged = Bitmap.createScaledBitmap(line, (line.width * scale).toInt(), (line.height * scale).toInt(), true)
-        if (!openCv) return listOf("放大" to enlarged)
-        fun convert(binary: Boolean): Bitmap {
+        if (!openCv) return listOf("原圖" to line)
+        fun convert(scale: Double, binary: Boolean, padRatio: Double): Bitmap {
             val mat = Mat()
-            Utils.bitmapToMat(enlarged, mat)
+            Utils.bitmapToMat(line, mat)
             Imgproc.cvtColor(mat, mat, Imgproc.COLOR_RGBA2GRAY)
+            if (scale != 1.0) Imgproc.resize(mat, mat, Size(0.0, 0.0), scale, scale, Imgproc.INTER_CUBIC)
             if (binary) Imgproc.threshold(mat, mat, 0.0, 255.0, Imgproc.THRESH_BINARY_INV or Imgproc.THRESH_OTSU)
             else Core.bitwise_not(mat, mat)
-            // 四周加白邊，ML Kit 對貼邊的文字比較容易漏讀
-            val pad = (mat.rows() / 3).coerceAtLeast(8)
+            val pad = (mat.rows() * padRatio).toInt().coerceAtLeast(32)
             Core.copyMakeBorder(mat, mat, pad, pad, pad, pad, Core.BORDER_CONSTANT, org.opencv.core.Scalar(255.0))
             Imgproc.cvtColor(mat, mat, Imgproc.COLOR_GRAY2RGBA)
             val out = Bitmap.createBitmap(mat.cols(), mat.rows(), Bitmap.Config.ARGB_8888)
@@ -96,7 +97,11 @@ class TextReader {
             mat.release()
             return out
         }
-        return listOf("二值化" to convert(true), "灰階反白" to convert(false), "放大" to enlarged)
+        return listOf(
+            "二值化" to convert(1.0, binary = true, padRatio = 1.0),
+            "二值化放大" to convert(2.0, binary = true, padRatio = 2.0),
+            "灰階反白" to convert(1.0, binary = false, padRatio = 1.0),
+        )
     }
 
     private val openCv by lazy { OpenCVLoader.initLocal() }

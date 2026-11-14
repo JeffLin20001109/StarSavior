@@ -59,9 +59,14 @@ object Text {
         else -> false
     }
 
-    /** 比對用：繁轉簡、去除空白與標點、轉小寫。 */
+    /** OCR 常把字讀成長得幾乎一樣的另一個字。 */
+    private val CONFUSABLE = mapOf('曰' to '日')
+
+    /** 比對用：統一字形（康熙部首、相容字）、繁轉簡、去除空白與標點、轉小寫。 */
     fun norm(text: String?): String {
-        val converted = t2s(text ?: "")
+        val unified = java.text.Normalizer.normalize(text ?: "", java.text.Normalizer.Form.NFKC)
+            .map { CONFUSABLE[it] ?: it }.joinToString("")
+        val converted = t2s(unified)
         val out = StringBuilder()
         var i = 0
         while (i < converted.length) {
@@ -75,6 +80,16 @@ object Text {
     fun similarity(a: String, b: String): Double {
         val x = norm(a)
         val y = norm(b)
+        if (x.isEmpty() || y.isEmpty()) return 0.0
+        // 標題裡的破折號「－」會被 OCR 讀成國字「一」，而正規化會去掉「－」：只有一邊有「一」時也比對拿掉後的結果
+        if (('一' in x) != ('一' in y)) {
+            val score = rawSimilarity(x.replace("一", ""), y.replace("一", ""))
+            return maxOf(score, rawSimilarity(x, y))
+        }
+        return rawSimilarity(x, y)
+    }
+
+    private fun rawSimilarity(x: String, y: String): Double {
         if (x.isEmpty() || y.isEmpty()) return 0.0
         var ratio = SequenceMatcher.ratio(x, y)
         val shorter = minOf(x.codePointCount(0, x.length), y.codePointCount(0, y.length))

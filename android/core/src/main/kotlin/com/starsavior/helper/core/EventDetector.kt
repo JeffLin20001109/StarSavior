@@ -64,6 +64,16 @@ object EventDetector {
     fun titleLooksMisread(title: String): Boolean =
         title.isNotBlank() && title.codePoints().noneMatch { Character.UnicodeScript.of(it) == Character.UnicodeScript.HAN }
 
+    /** 重新辨識出的標題：去掉頭尾不是中文的雜訊（實例：「今日天氣一晴朗n」）。 */
+    fun trimRetriedTitle(text: String): String {
+        val cps = text.codePoints().toArray()
+        fun han(cp: Int) = Character.UnicodeScript.of(cp) == Character.UnicodeScript.HAN
+        val first = cps.indexOfFirst(::han)
+        if (first < 0) return text.trim { it.isWhitespace() }
+        val last = cps.indexOfLast(::han)
+        return String(cps, first, last - first + 1)
+    }
+
     /** 標題那一行的範圍（scan 區域的座標），上下左右各留一點邊。 */
     fun titleCrop(titleBox: Box, width: Int, height: Int): Rect {
         val pad = titleBox.height * 0.35

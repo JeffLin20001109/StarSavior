@@ -18,6 +18,7 @@ import android.os.Looper
 import android.util.Log
 import android.view.WindowManager
 import android.widget.Toast
+import com.starsavior.helper.core.EventDetector
 import com.starsavior.helper.core.Line
 import com.starsavior.helper.core.Pipeline
 import com.starsavior.helper.core.Renderer
@@ -146,6 +147,11 @@ class OverlayService : Service() {
         val boxes = reader.readEventArea(frame)
         val pipeline = Pipeline({ repository.data }, { Renderer(it, repository.translator) })
         val result = pipeline.run(boxes, frame.width, frame.height, cards.identifier(frame))
+        // 記下辨識到的標題與字碼（長得一樣的字可能是不同字碼），方便回報問題時查看
+        EventDetector.findEvent(boxes)?.title?.let { title ->
+            val codes = title.codePoints().toArray().joinToString(" ") { "%04X".format(it) }
+            Diagnostics.log(this, "辨識標題「$title」[$codes] → ${result.title}")
+        }
         if (result.title == "資料尚未就緒") {
             // 資料下載完成後自動用這張截圖重新辨識
             pendingFrame = frame

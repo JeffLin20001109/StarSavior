@@ -54,6 +54,22 @@ class TitleRetryTest {
     }
 
     @Test
+    fun retriedTitleNoiseIsTrimmed() {
+        assertEquals("今日天氣一晴朗", EventDetector.trimRetriedTitle("今日天氣一晴朗n"))
+        assertEquals("訓練的方向性", EventDetector.trimRetriedTitle("'訓練的方向性"))
+    }
+
+    @Test
+    fun dashReadAsChineseOneStillMatches() {
+        // 實機：「今日天氣－打雷」讀成「今日天氣一打雷」只有 77% 相似度
+        assertEquals(1.0, Text.similarity("今日天氣一打雷", "今日天氣－打雷"))
+        assertEquals(1.0, Text.similarity("今曰天氣一打雷", "今日天氣－打雷"))  // 日 → 曰
+        assertEquals(1.0, Text.similarity("今⽇天氣⼀打雷", "今日天氣－打雷"))  // 康熙部首
+        assertEquals(1.0, Text.similarity("一起出發", "一起出發"))
+        assertTrue(Text.similarity("今日天氣一打雷", "今日天氣－晴朗") < Matching.MIN_SCORE + 0.1)
+    }
+
+    @Test
     fun misreadTenDayPartIsParsed() {
         assertEquals(Text.Phase(9, "late"), Text.parsePhase("4@9月下句》"))
         assertEquals(Text.Phase(3, "early"), Text.parsePhase("3月上句"))

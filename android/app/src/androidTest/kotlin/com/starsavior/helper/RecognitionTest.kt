@@ -68,7 +68,13 @@ class RecognitionTest {
         val frame = bitmap("journey_event_weather.jpg")
         val first = EventDetector.findEvent(ocr(frame))
         Log.i(TAG, "第一次辨識的標題：${first?.title}")
+        // 存下重新辨識用的影像，CI 會打包成 artifact 方便檢查
+        val dir = java.io.File(InstrumentationRegistry.getInstrumentation().targetContext.cacheDir, "ocr-debug").apply { mkdirs() }
+        reader.debugImage = { name, image ->
+            java.io.File(dir, "$name.png").outputStream().use { image.compress(Bitmap.CompressFormat.PNG, 100, it) }
+        }
         val boxes = reader.readEventArea(frame)
+        reader.debugImage = null
         val event = EventDetector.findEvent(boxes)
         assertNotNull("OCR: ${boxes.map { it.text }}", event)
         assertEquals(EventKind.JOURNEY, event!!.kind)

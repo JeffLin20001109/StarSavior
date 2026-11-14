@@ -60,7 +60,10 @@ class TextReader {
             else EventDetector.titleArea(label, scan.width, scan.height)
         if (crop.width < 8 || crop.height < 8) return boxes
         val line = Bitmap.createBitmap(scan, crop.left, crop.top, crop.width, crop.height)
+        Log.i(TAG, "標籤 $label，重新辨識範圍 $crop（scan ${scan.width}x${scan.height}）")
+        debugImage?.invoke("line", line)
         for ((name, variant) in lineVariants(line)) {
+            debugImage?.invoke(name, variant)
             val lines = read(variant)
             val text = lines.firstOrNull { !EventDetector.titleLooksMisread(it.text) && it.text.isNotBlank() }
                 ?.text?.trim { it.isWhitespace() } ?: ""
@@ -97,6 +100,9 @@ class TextReader {
     }
 
     private val openCv by lazy { OpenCVLoader.initLocal() }
+
+    /** 測試用：取得重新辨識時送進 ML Kit 的影像。 */
+    var debugImage: ((String, Bitmap) -> Unit)? = null
 
     fun close() = recognizer.close()
 

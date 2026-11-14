@@ -83,6 +83,78 @@ class RecognitionTest {
             Text.similarity(event.title, "今日天氣一晴朗") >= Matching.MIN_SCORE)
     }
 
+    /** 暫時的實驗：同一行標題用不同影像處理送進 ML Kit，記錄各自讀到什麼（不做斷言）。 */
+    @Test
+    fun titleExperiments() {
+        org.opencv.android.OpenCVLoader.initLocal()
+        val frame = bitmap("journey_event_weather.jpg")
+        val region = EventDetector.scanRegion(frame.width, frame.height)
+        val scan = Bitmap.createBitmap(frame, 0, 0, region.width, region.height)
+        val label = EventDetector.findLabel(reader.read(scan)) ?: run { Log.i(TAG, "實驗：找不到標籤"); return }
+        val area = EventDetector.titleArea(label, scan.width, scan.height)
+        val line = Bitmap.createBitmap(scan, area.left, area.top, area.width, area.height)
+        val labelCrop = EventDetector.titleCrop(label, scan.width, scan.height)
+        val labelImage = Bitmap.createBitmap(scan, labelCrop.left, labelCrop.top, labelCrop.width, labelCrop.height)
+
+        fun gray(b: Bitmap, scale: Double): org.opencv.core.Mat {
+            val m = org.opencv.core.Mat()
+            org.opencv.android.Utils.bitmapToMat(b, m)
+            org.opencv.imgproc.Imgproc.cvtColor(m, m, org.opencv.imgproc.Imgproc.COLOR_RGBA2GRAY)
+            org.opencv.imgproc.Imgproc.resize(m, m, org.opencv.core.Size(0.0, 0.0), scale, scale, org.opencv.imgproc.Imgproc.INTER_CUBIC)
+            return m
+        }
+        fun binary(m: org.opencv.core.Mat): org.opencv.core.Mat = org.opencv.core.Mat().also {
+            org.opencv.imgproc.Imgproc.threshold(m, it, 0.0, 255.0, org.opencv.imgproc.Imgproc.THRESH_BINARY_INV or org.opencv.imgproc.Imgproc.THRESH_OTSU)
+        }
+        fun pad(m: org.opencv.core.Mat, p: Int = 30): org.opencv.core.Mat = org.opencv.core.Mat().also {
+            org.opencv.core.Core.copyMakeBorder(m, it, p, p, p, p, org.opencv.core.Core.BORDER_CONSTANT, org.opencv.core.Scalar(255.0))
+        }
+        fun toBitmap(m: org.opencv.core.Mat): Bitmap {
+            val rgba = org.opencv.core.Mat()
+            org.opencv.imgproc.Imgproc.cvtColor(m, rgba, org.opencv.imgproc.Imgproc.COLOR_GRAY2RGBA)
+            return Bitmap.createBitmap(rgba.cols(), rgba.rows(), Bitmap.Config.ARGB_8888).also { org.opencv.android.Utils.matToBitmap(rgba, it) }
+        }
+        fun cols(m: org.opencv.core.Mat, from: Int, to: Int) = m.colRange(from.coerceIn(0, m.cols()), to.coerceIn(0, m.cols())).clone()
+        fun hcat(vararg ms: org.opencv.core.Mat): org.opencv.core.Mat {
+            val h = ms.maxOf { it.rows() }
+            val fixed = ms.map { m -> if (m.rows() == h) m else org.opencv.core.Mat().also {
+                org.opencv.core.Core.copyMakeBorder(m, it, 0, h - m.rows(), 0, 0, org.opencv.core.Core.BORDER_CONSTANT, org.opencv.core.Scalar(255.0)) } }
+            return org.opencv.core.Mat().also { org.opencv.core.Core.hconcat(fixed, it) }
+        }
+        fun vcat(vararg ms: org.opencv.core.Mat) = org.opencv.core.Mat().also { org.opencv.core.Core.vconcat(ms.toList(), it) }
+
+        val b1 = binary(gray(line, 1.0))
+        val b2 = binary(gray(line, 2.0))
+        val w2 = b2.cols()
+        val textW = (b2.cols() * 0.55).toInt()  // 大約到「朗」為止，不含條紋
+        val lab2 = binary(gray(labelImage, 2.0 * line.height / labelImage.height * 0.8))
+        val dilated = org.opencv.core.Mat().also { org.opencv.imgproc.Imgproc.erode(b2, it, org.opencv.imgproc.Imgproc.getStructuringElement(org.opencv.imgproc.Imgproc.MORPH_RECT, org.opencv.core.Size(3.0, 3.0))) }
+        val blurred = org.opencv.core.Mat().also { org.opencv.imgproc.Imgproc.GaussianBlur(b2, it, org.opencv.core.Size(5.0, 5.0), 0.0) }
+        val trials = linkedMapOf(
+            "原尺寸二值化" to pad(b1),
+            "去條紋" to pad(cols(b2, 0, textW)),
+            "左半" to pad(cols(b2, 0, textW / 2)),
+            "右半" to pad(cols(b2, textW / 2, textW)),
+            "前段四字" to pad(cols(b2, 0, (textW * 0.6).toInt())),
+            "接在標籤後" to pad(hcat(lab2, org.opencv.core.Mat(b2.rows(), 40, b2.type(), org.opencv.core.Scalar(255.0)), cols(b2, 0, textW))),
+            "標籤在上一行" to pad(vcat(pad(cols(lab2, 0, lab2.cols()), 0).let { l ->
+                org.opencv.core.Mat().also { org.opencv.core.Core.copyMakeBorder(l, it, 0, 0, 0, maxOf(0, textW - l.cols()), org.opencv.core.Core.BORDER_CONSTANT, org.opencv.core.Scalar(255.0)) }
+                    .let { if (it.cols() > textW) cols(it, 0, textW) else it } }, cols(b2, 0, textW))),
+            "重複三行" to pad(vcat(cols(b2, 0, textW), cols(b2, 0, textW), cols(b2, 0, textW))),
+            "加粗" to pad(cols(dilated, 0, textW)),
+            "模糊" to pad(cols(blurred, 0, textW)),
+            "整條加大邊" to pad(b2, 200),
+        )
+        val dir = java.io.File(InstrumentationRegistry.getInstrumentation().targetContext.cacheDir, "ocr-debug").apply { mkdirs() }
+        for ((name, mat) in trials) {
+            val image = toBitmap(mat)
+            java.io.File(dir, "exp_$name.png").outputStream().use { image.compress(Bitmap.CompressFormat.PNG, 100, it) }
+            val result = runCatching { reader.read(image).map { it.text } }.getOrElse { listOf("錯誤 $it") }
+            Log.i(TAG, "實驗（$name，${image.width}x${image.height}）：$result")
+        }
+        Log.i(TAG, "實驗：二值化寬 $w2")
+    }
+
     @Test
     fun arcanaEventCardIsIdentifiedByImage() {
         val frame = bitmap("arcana_event.jpg")

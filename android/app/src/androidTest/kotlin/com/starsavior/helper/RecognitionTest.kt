@@ -62,6 +62,21 @@ class RecognitionTest {
     }
 
     @Test
+    fun misreadTitleIsReadAgain() {
+        // 實機：ML Kit 把「今日天氣－晴朗」整行讀成「SHRA-BARO」（標題後面是藍白條紋背景）
+        val frame = bitmap("journey_event_weather.jpg")
+        val first = EventDetector.findEvent(ocr(frame))
+        Log.i(TAG, "第一次辨識的標題：${first?.title}")
+        val boxes = reader.readEventArea(frame)
+        val event = EventDetector.findEvent(boxes)
+        assertNotNull("OCR: ${boxes.map { it.text }}", event)
+        assertEquals(EventKind.JOURNEY, event!!.kind)
+        assertEquals(9, event.phase?.month)
+        assertTrue("標題「${event.title}」與「今日天氣一晴朗」相似度不足",
+            Text.similarity(event.title, "今日天氣一晴朗") >= Matching.MIN_SCORE)
+    }
+
+    @Test
     fun arcanaEventCardIsIdentifiedByImage() {
         val frame = bitmap("arcana_event.jpg")
         val boxes = ocr(frame)

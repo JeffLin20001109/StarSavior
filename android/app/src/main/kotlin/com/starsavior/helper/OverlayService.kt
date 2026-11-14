@@ -18,7 +18,6 @@ import android.os.Looper
 import android.util.Log
 import android.view.WindowManager
 import android.widget.Toast
-import com.starsavior.helper.core.EventDetector
 import com.starsavior.helper.core.Line
 import com.starsavior.helper.core.Pipeline
 import com.starsavior.helper.core.Renderer
@@ -144,8 +143,7 @@ class OverlayService : Service() {
     }
 
     private fun recognize(frame: Bitmap): Result = try {
-        val region = EventDetector.scanRegion(frame.width, frame.height)
-        val boxes = reader.read(Bitmap.createBitmap(frame, 0, 0, region.width, region.height))
+        val boxes = reader.readEventArea(frame)
         val pipeline = Pipeline({ repository.data }, { Renderer(it, repository.translator) })
         val result = pipeline.run(boxes, frame.width, frame.height, cards.identifier(frame))
         if (result.title == "資料尚未就緒") {

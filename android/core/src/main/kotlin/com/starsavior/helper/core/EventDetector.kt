@@ -57,6 +57,26 @@ object EventDetector {
         return null
     }
 
+    /**
+     * 標題完全沒有中日韓文字：多半是 ML Kit 把中文標題誤讀成英文字母
+     * （實例：「今日天氣－晴朗」讀成「SHRA-BARO」），要單獨裁出那一行再辨識一次。
+     */
+    fun titleLooksMisread(title: String): Boolean =
+        title.isNotBlank() && title.codePoints().noneMatch { Character.UnicodeScript.of(it) == Character.UnicodeScript.HAN }
+
+    /** 標題那一行的範圍（scan 區域的座標），上下左右各留一點邊。 */
+    fun titleCrop(titleBox: Box, width: Int, height: Int): Rect {
+        val pad = titleBox.height * 0.35
+        return Rect(
+            maxOf(0, (titleBox.x0 - pad).toInt()), maxOf(0, (titleBox.y0 - pad).toInt()),
+            minOf(width, (titleBox.x1 + pad).toInt()), minOf(height, (titleBox.y1 + pad).toInt()),
+        )
+    }
+
+    /** 用重新辨識的文字取代原本的標題那一行。 */
+    fun replaceTitle(boxes: List<Box>, titleBox: Box, text: String): List<Box> =
+        boxes.map { if (it === titleBox) it.copy(text = text) else it }
+
     /** 阿爾克那事件左側的卡片圖範圍（整張畫面的座標）。 */
     fun cardCrop(width: Int, height: Int, label: Box): Rect {
         val mid = (label.y0 + label.y1) / 2

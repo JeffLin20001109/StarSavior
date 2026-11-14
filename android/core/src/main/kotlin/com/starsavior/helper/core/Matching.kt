@@ -18,7 +18,38 @@ object Matching {
         val variants: List<JsonObject>,
         val alternatives: List<Pair<Double, String>> = emptyList(),
         val phaseMatched: Boolean = false,
+        /** 名稱相似度不足，依字數與日期推測（短標題備援）。 */
+        val guessed: Boolean = false,
     )
+
+    const val GUESS_MIN_SCORE = 0.5
+
+    private fun phaseIndex(p: Text.Phase) = p.month * 3 + when (p.part) { "early" -> 0; "mid" -> 1; else -> 2 }
+
+    private fun groupPhases(group: List<JsonObject>): Set<Int> = group.flatMap { v ->
+        v["times"].arr()?.mapNotNull { t ->
+            Text.parsePhase(t.str() ?: Text.loc(t, "ko-KR").ifEmpty { Text.loc(t, "zh-TW") })?.let(::phaseIndex)
+        } ?: emptyList()
+    }.toSet()
+
+    /**
+     * 短標題備援：OCR 把短標題讀錯一兩個字時（「迷宮探勘」→「迷官採勘」）相似度會低於門檻。
+     * 只在候選事件字數相同、至少一半相同、出現時間與遊戲日期相差不超過一旬，
+     * 而且分數唯一最高時採用。用資料庫模擬（隨機換掉一半的字）沒有選錯過。與電腦版 matching.py 相同。
+     */
+    private fun guess(ranked: List<Pair<Double, List<JsonObject>>>, title: String, phase: Text.Phase?): Pair<Double, List<JsonObject>>? {
+        if (phase == null) return null
+        val norm = Text.norm(title)
+        val length = norm.codePointCount(0, norm.length)
+        val current = phaseIndex(phase)
+        val eligible = ranked.filter { (score, group) ->
+            score >= GUESS_MIN_SCORE - 1e-9 &&
+                group.any { v -> names(v).any { n -> Text.norm(n).let { it.codePointCount(0, it.length) } == length } } &&
+                groupPhases(group).any { kotlin.math.abs(current - it) <= 1 }
+        }
+        if (eligible.isEmpty() || (eligible.size > 1 && eligible[1].first >= eligible[0].first - 1e-6)) return null
+        return eligible[0]
+    }
 
     fun matchJourney(data: GameData, title: String, phase: Text.Phase?, difficulty: String = ""): JourneyMatch {
         val ranked = data.journeyGroups
@@ -27,6 +58,11 @@ object Matching {
         fun firstName(group: List<JsonObject>) = names(group[0]).firstOrNull() ?: "?"
         if (ranked.isEmpty() || ranked[0].first < MIN_SCORE) {
             val alternatives = ranked.take(3).filter { it.first > 0.3 }.map { it.first to firstName(it.second) }
+            val guessed = guess(ranked, title, phase)
+            if (guessed != null) {
+                val (filtered, matched) = filterPhase(filterDifficulty(guessed.second, difficulty), phase)
+                return JourneyMatch(guessed.first, filtered, alternatives, matched, guessed = true)
+            }
             return JourneyMatch(ranked.firstOrNull()?.first ?: 0.0, emptyList(), alternatives)
         }
         val score = ranked[0].first

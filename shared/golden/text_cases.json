@@ -23,6 +23,18 @@
   {
    "text": "Mission Possible？",
    "expected": "missionpossible"
+  },
+  {
+   "text": "襲撃",
+   "expected": "袭击"
+  },
+  {
+   "text": "今⽇天氣",
+   "expected": "今日天气"
+  },
+  {
+   "text": "緑茶",
+   "expected": "缘茶"
   }
  ],
  "similarity": [
@@ -64,6 +76,31 @@
   {
    "a": "ABC def",
    "b": "abc-DEF",
+   "expected": 1.0
+  },
+  {
+   "a": "今日天氣一打雷",
+   "b": "今日天氣－打雷",
+   "expected": 1.0
+  },
+  {
+   "a": "迷官採勘",
+   "b": "迷宮探勘",
+   "expected": 1.0
+  },
+  {
+   "a": "襲撃",
+   "b": "襲擊",
+   "expected": 1.0
+  },
+  {
+   "a": "一起出發",
+   "b": "一起出發",
+   "expected": 1.0
+  },
+  {
+   "a": "今⽇天氣⼀打雷",
+   "b": "今日天氣－打雷",
    "expected": 1.0
   }
  ],
@@ -107,6 +144,13 @@
   {
    "text": "평가전",
    "expected": null
+  },
+  {
+   "text": "4@9月下句》",
+   "expected": [
+    9,
+    "late"
+   ]
   }
  ]
 }

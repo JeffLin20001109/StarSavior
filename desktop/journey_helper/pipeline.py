@@ -49,7 +49,9 @@ class Pipeline:
             return self._not_found('旅程事件', event.title, match.alternatives)
         lines = self.renderer_factory(data).render([{'variants': match.variants}])
         header = [[(f'旅程事件：{event.title}', 'note')]]
-        if match.score < 0.85:
+        if match.guessed:
+            header.append([(f'（名稱相似度只有 {match.score:.0%}，依字數與日期推測是這個事件，請確認）', 'warn')])
+        elif match.score < 0.85:
             header.append([(f'（名稱相似度 {match.score:.0%}，請確認是否為同一事件）', 'warn')])
         return Result('旅程事件', header + lines, True)
 

@@ -11625,6 +11625,51 @@
    "difficulty": "",
    "expected_ids": [],
    "expected_score": 0.235294
+  },
+  {
+   "title": "襲撃",
+   "phase": [
+    8,
+    "early"
+   ],
+   "difficulty": "",
+   "expected_ids": [
+    15011,
+    25011,
+    35011
+   ],
+   "expected_score": 1.0
+  },
+  {
+   "title": "龔擊",
+   "phase": [
+    8,
+    "early"
+   ],
+   "difficulty": "",
+   "expected_ids": [
+    15011,
+    25011,
+    35011
+   ],
+   "expected_score": 0.5
+  },
+  {
+   "title": "龔擊",
+   "phase": null,
+   "difficulty": "",
+   "expected_ids": [],
+   "expected_score": 0.5
+  },
+  {
+   "title": "龔擊",
+   "phase": [
+    3,
+    "early"
+   ],
+   "difficulty": "",
+   "expected_ids": [],
+   "expected_score": 0.5
   }
  ],
  "english_only": {

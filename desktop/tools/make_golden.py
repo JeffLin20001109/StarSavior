@@ -62,9 +62,11 @@ class FixedCard:
 def text_cases():
     pairs = [('訓練的方向性', '训练的方向性'), ('請講關於初戀的故事', '請講關於初戀的故事。'),
              ('訓練的方向性', '古代救援者的遺物'), ('阿爾克那事件', '阿尔克那事件'), ('莉賽特的日常', '莉賽特的誘惑'),
-             ('請講關於初戀', '請講關於初戀的故事'), ('', '訓練'), ('ABC def', 'abc-DEF')]
-    texts = ['訓練的方向性', '請講關於初戀的故事。', 'R.I.P.', ' 3月上旬 ', '阿爾克那事件', 'Mission Possible？']
-    phases = ['3月上旬', '3월 초순', '12월 하순', '11月中旬', '13月上旬', '距離目標', '평가전']
+             ('請講關於初戀', '請講關於初戀的故事'), ('', '訓練'), ('ABC def', 'abc-DEF'),
+             ('今日天氣一打雷', '今日天氣－打雷'), ('迷官採勘', '迷宮探勘'), ('襲撃', '襲擊'), ('一起出發', '一起出發'),
+             ('今⽇天氣⼀打雷', '今日天氣－打雷')]
+    texts = ['訓練的方向性', '請講關於初戀的故事。', 'R.I.P.', ' 3月上旬 ', '阿爾克那事件', 'Mission Possible？', '襲撃', '今⽇天氣', '緑茶']
+    phases = ['3月上旬', '3월 초순', '12월 하순', '11月中旬', '13月上旬', '距離目標', '평가전', '4@9月下句》']
     return {
         'norm': [{'text': t, 'expected': norm(t)} for t in texts],
         'similarity': [{'a': a, 'b': b, 'expected': round(similarity(a, b), 6)} for a, b in pairs],
@@ -148,7 +150,10 @@ def main():
     # 比對：依名稱與日期篩選
     match_cases = []
     for title, phase, difficulty in (('莉賽特的日常', None, ''), ('迷宮探勘', (7, 'early'), 'Hard'),
-                                     ('今日天氣－強風', (7, 'mid'), ''), ('完全不存在的事件', None, '')):
+                                     ('今日天氣－強風', (7, 'mid'), ''), ('完全不存在的事件', None, ''),
+                                     # 短標題備援：讀錯字、日期差一旬
+                                     ('襲撃', (8, 'early'), ''), ('龔擊', (8, 'early'), ''), ('龔擊', None, ''),
+                                     ('龔擊', (3, 'early'), '')):
         m = matching.match_journey(real, title, phase, difficulty)
         match_cases.append({'title': title, 'phase': list(phase) if phase else None, 'difficulty': difficulty,
                             'expected_ids': [v.get('id') for v in m.variants], 'expected_score': round(m.score, 6)})

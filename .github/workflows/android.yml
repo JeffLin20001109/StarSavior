@@ -103,8 +103,16 @@ jobs:
             adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
             adb logcat -c
             adb shell am instrument -w -r com.starsavior.helper.test/androidx.test.runner.AndroidJUnitRunner > instrument.txt; cat instrument.txt
-            adb logcat -d -s RecognitionTest:I CardMatcher:W
+            adb logcat -d -s RecognitionTest:I TextReader:I CardMatcher:W
+            adb exec-out run-as com.starsavior.helper tar c cache/ocr-debug > ocr-debug.tar || true
             grep -q "^OK (" instrument.txt
+      - name: Upload OCR debug images
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: ocr-debug
+          path: android/ocr-debug.tar
+          if-no-files-found: ignore
 
   publish:
     # main → android-latest（正式版）；其他分支 → android-preview（測試版，手機可直接點連結下載）

@@ -59,9 +59,15 @@ object Text {
         else -> false
     }
 
-    /** 比對用：繁轉簡、去除空白與標點、轉小寫。 */
+    /** OCR 常把字讀成長得幾乎一樣的另一個字（兩邊都換成同一個字再比對；與電腦版 text.py 相同）。 */
+    private val CONFUSABLE = "官宮 採探 曰日 已己 巳己 末未 夭天 入人 侯候 荼茶 烏鳥 于千 兔免 間問 綠緣 徵微"
+        .split(' ').associate { it[0] to it[1] }
+
+    /** 比對用：統一字形（康熙部首、相容字）、繁轉簡、去除空白與標點、轉小寫。 */
     fun norm(text: String?): String {
-        val converted = t2s(text ?: "")
+        val unified = java.text.Normalizer.normalize(text ?: "", java.text.Normalizer.Form.NFKC)
+            .map { CONFUSABLE[it] ?: it }.joinToString("")
+        val converted = t2s(unified)
         val out = StringBuilder()
         var i = 0
         while (i < converted.length) {
@@ -76,6 +82,16 @@ object Text {
         val x = norm(a)
         val y = norm(b)
         if (x.isEmpty() || y.isEmpty()) return 0.0
+        // 標題裡的破折號「－」會被 OCR 讀成國字「一」，而正規化會去掉「－」：只有一邊有「一」時也比對拿掉後的結果
+        if (('一' in x) != ('一' in y)) {
+            val score = rawSimilarity(x.replace("一", ""), y.replace("一", ""))
+            return maxOf(score, rawSimilarity(x, y))
+        }
+        return rawSimilarity(x, y)
+    }
+
+    private fun rawSimilarity(x: String, y: String): Double {
+        if (x.isEmpty() || y.isEmpty()) return 0.0
         var ratio = SequenceMatcher.ratio(x, y)
         val shorter = minOf(x.codePointCount(0, x.length), y.codePointCount(0, y.length))
         val longer = maxOf(x.codePointCount(0, x.length), y.codePointCount(0, y.length))
@@ -87,10 +103,12 @@ object Text {
 
     data class Phase(val month: Int, val part: String)
 
-    private val PHASE = Regex("(\\d{1,2})\\s*[월月]\\s*(초순|상순|중순|하순|上旬|初旬|中旬|下旬)")
+    // ML Kit 偶爾把「旬」讀成「句」（實例：「9月下句」）
+    private val PHASE = Regex("(\\d{1,2})\\s*[월月]\\s*(초순|상순|중순|하순|上旬|初旬|中旬|下旬|上句|初句|中句|下句)")
     private val PART = mapOf(
         "초순" to "early", "상순" to "early", "중순" to "mid", "하순" to "late",
         "上旬" to "early", "初旬" to "early", "中旬" to "mid", "下旬" to "late",
+        "上句" to "early", "初句" to "early", "中句" to "mid", "下句" to "late",
     )
     private val PART_ZH = mapOf("early" to "上旬", "mid" to "中旬", "late" to "下旬")
 

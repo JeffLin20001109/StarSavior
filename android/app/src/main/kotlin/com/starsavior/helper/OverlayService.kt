@@ -144,10 +144,14 @@ class OverlayService : Service() {
     }
 
     private fun recognize(frame: Bitmap): Result = try {
-        val region = EventDetector.scanRegion(frame.width, frame.height)
-        val boxes = reader.read(Bitmap.createBitmap(frame, 0, 0, region.width, region.height))
+        val boxes = reader.readEventArea(frame)
         val pipeline = Pipeline({ repository.data }, { Renderer(it, repository.translator) })
         val result = pipeline.run(boxes, frame.width, frame.height, cards.identifier(frame))
+        // 記下辨識到的標題與字碼（長得一樣的字可能是不同字碼），方便回報問題時查看
+        EventDetector.findEvent(boxes)?.title?.let { title ->
+            val codes = title.codePoints().toArray().joinToString(" ") { "%04X".format(it) }
+            Diagnostics.log(this, "辨識標題「$title」[$codes] → ${result.title}")
+        }
         if (result.title == "資料尚未就緒") {
             // 資料下載完成後自動用這張截圖重新辨識
             pendingFrame = frame

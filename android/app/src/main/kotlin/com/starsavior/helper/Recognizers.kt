@@ -10,6 +10,7 @@ import com.google.mlkit.vision.text.chinese.ChineseTextRecognizerOptions
 import com.starsavior.helper.core.Box
 import com.starsavior.helper.core.CardIdentifier
 import com.starsavior.helper.core.CardMatch
+import com.starsavior.helper.core.EventDetector
 import com.starsavior.helper.core.Rect
 import kotlinx.serialization.json.JsonObject
 import kotlinx.serialization.json.JsonPrimitive
@@ -42,7 +43,77 @@ class TextReader {
         }.sortedWith(compareBy({ it.y0 }, { it.x0 }))
     }
 
+    /**
+     * 辨識畫面左上角的事件區域。ML Kit 偶爾把整行中文標題誤讀成英文字母
+     * （「今日天氣－晴朗」→「SHRA-BARO」），或整行漏讀；這時把標題那一行
+     * 單獨裁下來、轉成白底黑字並放大後再辨識一次，讀到中文就用新的結果。
+     */
+    fun readEventArea(frame: Bitmap): List<Box> {
+        val region = EventDetector.scanRegion(frame.width, frame.height)
+        val scan = Bitmap.createBitmap(frame, 0, 0, region.width, region.height)
+        val boxes = read(scan)
+        val event = EventDetector.findEvent(boxes)
+        if (event != null && !EventDetector.titleLooksMisread(event.title)) return boxes
+        val label = event?.label ?: EventDetector.findLabel(boxes) ?: return boxes
+        val titleBox = event?.titleBox
+        val crop = if (titleBox != null) EventDetector.titleCrop(titleBox, scan.width, scan.height)
+            else EventDetector.titleArea(label, scan.width, scan.height)
+        if (crop.width < 8 || crop.height < 8) return boxes
+        val line = Bitmap.createBitmap(scan, crop.left, crop.top, crop.width, crop.height)
+        Log.i(TAG, "標籤 $label，重新辨識範圍 $crop（scan ${scan.width}x${scan.height}）")
+        debugImage?.invoke("line", line)
+        for ((name, variant) in lineVariants(line)) {
+            debugImage?.invoke(name, variant)
+            val lines = read(variant)
+            val text = lines.firstOrNull { !EventDetector.titleLooksMisread(it.text) && it.text.isNotBlank() }
+                ?.let { EventDetector.trimRetriedTitle(it.text) } ?: ""
+            Log.i(TAG, "標題「${event?.title}」沒讀到或被誤讀，重新辨識（$name）：${lines.map { it.text }} → 「$text」")
+            if (text.isNotEmpty()) {
+                return if (titleBox != null) EventDetector.replaceTitle(boxes, titleBox, text)
+                    else EventDetector.addTitle(boxes, label, text)
+            }
+        }
+        return boxes
+    }
+
+    /**
+     * 重新辨識用的幾種影像，都是白底黑字並在四周留寬白邊。模擬器實驗（今日天氣－晴朗）：
+     * 原尺寸二值化讀得最準；放大後只留窄白邊會整行讀不到，放大時白邊要加大才讀得到。
+     */
+    private fun lineVariants(line: Bitmap): List<Pair<String, Bitmap>> {
+        if (!openCv) return listOf("原圖" to line)
+        fun convert(scale: Double, binary: Boolean, padRatio: Double): Bitmap {
+            val mat = Mat()
+            Utils.bitmapToMat(line, mat)
+            Imgproc.cvtColor(mat, mat, Imgproc.COLOR_RGBA2GRAY)
+            if (scale != 1.0) Imgproc.resize(mat, mat, Size(0.0, 0.0), scale, scale, Imgproc.INTER_CUBIC)
+            if (binary) Imgproc.threshold(mat, mat, 0.0, 255.0, Imgproc.THRESH_BINARY_INV or Imgproc.THRESH_OTSU)
+            else Core.bitwise_not(mat, mat)
+            val pad = (mat.rows() * padRatio).toInt().coerceAtLeast(32)
+            Core.copyMakeBorder(mat, mat, pad, pad, pad, pad, Core.BORDER_CONSTANT, org.opencv.core.Scalar(255.0))
+            Imgproc.cvtColor(mat, mat, Imgproc.COLOR_GRAY2RGBA)
+            val out = Bitmap.createBitmap(mat.cols(), mat.rows(), Bitmap.Config.ARGB_8888)
+            Utils.matToBitmap(mat, out)
+            mat.release()
+            return out
+        }
+        return listOf(
+            "二值化" to convert(1.0, binary = true, padRatio = 1.0),
+            "二值化放大" to convert(2.0, binary = true, padRatio = 2.0),
+            "灰階反白" to convert(1.0, binary = false, padRatio = 1.0),
+        )
+    }
+
+    private val openCv by lazy { OpenCVLoader.initLocal() }
+
+    /** 測試用：取得重新辨識時送進 ML Kit 的影像。 */
+    var debugImage: ((String, Bitmap) -> Unit)? = null
+
     fun close() = recognizer.close()
+
+    companion object {
+        private const val TAG = "TextReader"
+    }
 }
 
 /**

@@ -3,6 +3,7 @@ import difflib
 import html
 import json
 import re
+import unicodedata
 from pathlib import Path
 
 
@@ -46,13 +47,28 @@ def source_text(value):
     return loc(value, 'ko-KR') or loc(value, 'en-US')
 
 
+# OCR 常把字讀成長得幾乎一樣的另一個字（兩邊都換成同一個字再比對；已確認不會讓資料庫裡不同的事件名稱撞名）
+_CONFUSABLE = str.maketrans(dict(pair for pair in (
+    '官宮 採探 曰日 已己 巳己 末未 夭天 入人 侯候 荼茶 烏鳥 于千 兔免 間問 綠緣 徵微'.split())))
+
+
 def norm(text):
-    """比對用：繁轉簡、去除空白與標點、轉小寫。"""
-    return _NOT_WORD.sub('', _t2s(text or '')).lower()
+    """比對用：統一字形（康熙部首、相容字）、繁轉簡、去除空白與標點、轉小寫。"""
+    unified = unicodedata.normalize('NFKC', text or '').translate(_CONFUSABLE)
+    return _NOT_WORD.sub('', _t2s(unified)).lower()
 
 
 def similarity(a, b):
     a, b = norm(a), norm(b)
+    if not a or not b:
+        return 0.0
+    # 標題裡的破折號「－」會被 OCR 讀成國字「一」，而正規化會去掉「－」：只有一邊有「一」時也比對拿掉後的結果
+    if ('一' in a) != ('一' in b):
+        return max(_raw_similarity(a.replace('一', ''), b.replace('一', '')), _raw_similarity(a, b))
+    return _raw_similarity(a, b)
+
+
+def _raw_similarity(a, b):
     if not a or not b:
         return 0.0
     ratio = difflib.SequenceMatcher(None, a, b).ratio()
@@ -62,7 +78,9 @@ def similarity(a, b):
 
 
 _KO_PHASE = {'초순': 'early', '상순': 'early', '중순': 'mid', '하순': 'late'}
-_ZH_PHASE = {'上旬': 'early', '初旬': 'early', '中旬': 'mid', '下旬': 'late'}
+_ZH_PHASE = {'上旬': 'early', '初旬': 'early', '中旬': 'mid', '下旬': 'late',
+              # OCR 偶爾把「旬」讀成「句」
+              '上句': 'early', '初句': 'early', '中句': 'mid', '下句': 'late'}
 _PHASE_ZH = {'early': '上旬', 'mid': '中旬', 'late': '下旬'}
 
 
@@ -70,7 +88,7 @@ def parse_phase(text):
     """'3월 초순' 或 '3月上旬' → (3, 'early')；無法解析回傳 None。"""
     if not isinstance(text, str):
         return None
-    match = re.search(r'(\d{1,2})\s*[월月]\s*(초순|상순|중순|하순|上旬|初旬|中旬|下旬)', text)
+    match = re.search(r'(\d{1,2})\s*[월月]\s*(초순|상순|중순|하순|上旬|初旬|中旬|下旬|上句|初句|中句|下句)', text)
     if not match or not 1 <= int(match[1]) <= 12:
         return None
     return int(match[1]), _KO_PHASE.get(match[2]) or _ZH_PHASE[match[2]]

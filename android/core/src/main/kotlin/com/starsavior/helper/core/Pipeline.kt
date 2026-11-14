@@ -36,7 +36,8 @@ class Pipeline(
         if (match.variants.isEmpty()) return notFound("旅程事件", event.title, match.alternatives)
         val lines = rendererFactory(data).render(listOf(Section(match.variants)))
         val header = mutableListOf(Line("旅程事件：${event.title}", "note"))
-        if (match.score < 0.85) header.add(Line("（名稱相似度 ${percent(match.score)}，請確認是否為同一事件）", "warn"))
+        if (match.guessed) header.add(Line("（名稱相似度只有 ${percent(match.score)}，依字數與日期推測是這個事件，請確認）", "warn"))
+        else if (match.score < 0.85) header.add(Line("（名稱相似度 ${percent(match.score)}，請確認是否為同一事件）", "warn"))
         return Result("旅程事件", header + lines, true)
     }
 

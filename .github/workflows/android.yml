@@ -103,7 +103,7 @@ jobs:
             adb install -r app/build/outputs/apk/androidTest/debug/app-debug-androidTest.apk
             adb logcat -c
             adb shell am instrument -w -r com.starsavior.helper.test/androidx.test.runner.AndroidJUnitRunner > instrument.txt; cat instrument.txt
-            adb logcat -d -s RecognitionTest:I CardMatcher:W
+            adb logcat -d -s RecognitionTest:I TextReader:I CardMatcher:W
             grep -q "^OK (" instrument.txt
 
   publish:

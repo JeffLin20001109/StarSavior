@@ -73,9 +73,28 @@ object EventDetector {
         )
     }
 
+    /** 第一個事件標籤（不管有沒有讀到標題）。 */
+    fun findLabel(boxes: List<Box>): Box? = boxes.firstOrNull { labelKind(it.text) != null }
+
+    /** 標籤下方可能是標題的範圍（ML Kit 整行漏讀標題時用），scan 區域的座標。 */
+    fun titleArea(label: Box, width: Int, height: Int): Rect {
+        val h = maxOf(label.height, 1.0)
+        return Rect(
+            maxOf(0, (label.x0 - 0.5 * h).toInt()), maxOf(0, label.y1.toInt()),
+            minOf(width, (label.x0 + 16 * h).toInt()), minOf(height, (label.y1 + 2.0 * h).toInt()),
+        )
+    }
+
     /** 用重新辨識的文字取代原本的標題那一行。 */
     fun replaceTitle(boxes: List<Box>, titleBox: Box, text: String): List<Box> =
         boxes.map { if (it === titleBox) it.copy(text = text) else it }
+
+    /** 在標籤正下方補上重新辨識出的標題，讓 findEvent 找得到。 */
+    fun addTitle(boxes: List<Box>, label: Box, text: String): List<Box> {
+        val h = maxOf(label.height, 1.0)
+        val title = Box(text, label.x0, label.y1 + 0.2 * h, label.x0 + 8 * h, label.y1 + 1.4 * h)
+        return (boxes + title).sortedWith(compareBy({ it.y0 }, { it.x0 }))
+    }
 
     /** 阿爾克那事件左側的卡片圖範圍（整張畫面的座標）。 */
     fun cardCrop(width: Int, height: Int, label: Box): Rect {

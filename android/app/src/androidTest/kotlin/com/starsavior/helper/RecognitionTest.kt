@@ -63,7 +63,8 @@ class RecognitionTest {
 
     @Test
     fun misreadTitleIsReadAgain() {
-        // 實機：ML Kit 把「今日天氣－晴朗」整行讀成「SHRA-BARO」（標題後面是藍白條紋背景）
+        // 實機：ML Kit 把「今日天氣－晴朗」整行讀成「SHRA-BARO」（標題後面是藍白條紋背景）；
+        // 模擬器：同一張圖整行漏讀標題。兩種情況都要靠單獨重讀標題那一行找到事件。
         val frame = bitmap("journey_event_weather.jpg")
         val first = EventDetector.findEvent(ocr(frame))
         Log.i(TAG, "第一次辨識的標題：${first?.title}")

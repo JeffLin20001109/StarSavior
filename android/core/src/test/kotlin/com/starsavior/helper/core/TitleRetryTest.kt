@@ -36,4 +36,26 @@ class TitleRetryTest {
         assertEquals(listOf("旅程事件", "今日天氣一晴朗"), boxes.map { it.text })
         assertEquals("今日天氣一晴朗", EventDetector.findEvent(boxes)?.title)
     }
+
+    @Test
+    fun missingTitleIsAddedBelowLabel() {
+        // 模擬器：ML Kit 整行漏讀標題，只剩日期與標籤
+        val date = Box("4@9月下句》", 330.0, 120.0, 520.0, 160.0)
+        val label = Box("旅程事件", 402.0, 273.0, 517.0, 300.0)
+        val boxes = listOf(date, label)
+        assertEquals(null, EventDetector.findEvent(boxes))
+        assertEquals(label, EventDetector.findLabel(boxes))
+        val area = EventDetector.titleArea(label, 1304, 540)
+        assertTrue(area.top >= 300 && area.bottom >= 348 && area.left <= 402 && area.right >= 655, "$area")
+        val event = EventDetector.findEvent(EventDetector.addTitle(boxes, label, "今日天氣一晴朗"))
+        assertEquals("今日天氣一晴朗", event?.title)
+        assertEquals(EventKind.JOURNEY, event?.kind)
+        assertEquals(Text.Phase(9, "late"), event?.phase)
+    }
+
+    @Test
+    fun misreadTenDayPartIsParsed() {
+        assertEquals(Text.Phase(9, "late"), Text.parsePhase("4@9月下句》"))
+        assertEquals(Text.Phase(3, "early"), Text.parsePhase("3月上句"))
+    }
 }

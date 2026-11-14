@@ -87,10 +87,12 @@ object Text {
 
     data class Phase(val month: Int, val part: String)
 
-    private val PHASE = Regex("(\\d{1,2})\\s*[월月]\\s*(초순|상순|중순|하순|上旬|初旬|中旬|下旬)")
+    // ML Kit 偶爾把「旬」讀成「句」（實例：「9月下句」）
+    private val PHASE = Regex("(\\d{1,2})\\s*[월月]\\s*(초순|상순|중순|하순|上旬|初旬|中旬|下旬|上句|初句|中句|下句)")
     private val PART = mapOf(
         "초순" to "early", "상순" to "early", "중순" to "mid", "하순" to "late",
         "上旬" to "early", "初旬" to "early", "中旬" to "mid", "下旬" to "late",
+        "上句" to "early", "初句" to "early", "中句" to "mid", "下句" to "late",
     )
     private val PART_ZH = mapOf("early" to "上旬", "mid" to "中旬", "late" to "下旬")
 

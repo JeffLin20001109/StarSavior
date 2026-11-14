@@ -45,24 +45,29 @@ class TextReader {
 
     /**
      * 辨識畫面左上角的事件區域。ML Kit 偶爾把整行中文標題誤讀成英文字母
-     * （「今日天氣－晴朗」→「SHRA-BARO」），這時把標題那一行單獨裁下來、
-     * 轉成白底黑字並放大後再辨識一次，讀到中文就用新的結果。
+     * （「今日天氣－晴朗」→「SHRA-BARO」），或整行漏讀；這時把標題那一行
+     * 單獨裁下來、轉成白底黑字並放大後再辨識一次，讀到中文就用新的結果。
      */
     fun readEventArea(frame: Bitmap): List<Box> {
         val region = EventDetector.scanRegion(frame.width, frame.height)
         val scan = Bitmap.createBitmap(frame, 0, 0, region.width, region.height)
         val boxes = read(scan)
-        val event = EventDetector.findEvent(boxes) ?: return boxes
-        val titleBox = event.titleBox ?: return boxes
-        if (!EventDetector.titleLooksMisread(event.title)) return boxes
-        val crop = EventDetector.titleCrop(titleBox, scan.width, scan.height)
+        val event = EventDetector.findEvent(boxes)
+        if (event != null && !EventDetector.titleLooksMisread(event.title)) return boxes
+        val label = event?.label ?: EventDetector.findLabel(boxes) ?: return boxes
+        val titleBox = event?.titleBox
+        val crop = if (titleBox != null) EventDetector.titleCrop(titleBox, scan.width, scan.height)
+            else EventDetector.titleArea(label, scan.width, scan.height)
         if (crop.width < 8 || crop.height < 8) return boxes
         val line = Bitmap.createBitmap(scan, crop.left, crop.top, crop.width, crop.height)
         for ((name, variant) in lineVariants(line)) {
-            val text = read(variant).joinToString("") { it.text }.trim { it.isWhitespace() }
-            Log.i(TAG, "標題「${event.title}」看起來被誤讀，重新辨識（$name）：「$text」")
-            if (text.isNotEmpty() && !EventDetector.titleLooksMisread(text)) {
-                return EventDetector.replaceTitle(boxes, titleBox, text)
+            val lines = read(variant)
+            val text = lines.firstOrNull { !EventDetector.titleLooksMisread(it.text) && it.text.isNotBlank() }
+                ?.text?.trim { it.isWhitespace() } ?: ""
+            Log.i(TAG, "標題「${event?.title}」沒讀到或被誤讀，重新辨識（$name）：${lines.map { it.text }} → 「$text」")
+            if (text.isNotEmpty()) {
+                return if (titleBox != null) EventDetector.replaceTitle(boxes, titleBox, text)
+                    else EventDetector.addTitle(boxes, label, text)
             }
         }
         return boxes

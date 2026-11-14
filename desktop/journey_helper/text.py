@@ -47,8 +47,9 @@ def source_text(value):
     return loc(value, 'ko-KR') or loc(value, 'en-US')
 
 
-# OCR 常把字讀成長得幾乎一樣的另一個字
-_CONFUSABLE = str.maketrans({'曰': '日'})
+# OCR 常把字讀成長得幾乎一樣的另一個字（兩邊都換成同一個字再比對；已確認不會讓資料庫裡不同的事件名稱撞名）
+_CONFUSABLE = str.maketrans(dict(pair for pair in (
+    '官宮 採探 曰日 已己 巳己 末未 夭天 入人 侯候 荼茶 烏鳥 于千 兔免 間問 綠緣 徵微'.split())))
 
 
 def norm(text):

@@ -66,6 +66,8 @@ class TitleRetryTest {
         assertEquals(1.0, Text.similarity("今曰天氣一打雷", "今日天氣－打雷"))  // 日 → 曰
         assertEquals(1.0, Text.similarity("今⽇天氣⼀打雷", "今日天氣－打雷"))  // 康熙部首
         assertEquals(1.0, Text.similarity("一起出發", "一起出發"))
+        // 實機：「迷宮探勘」讀成「迷官採勘」只有 50%
+        assertEquals(1.0, Text.similarity("迷官採勘", "迷宮探勘"))
         assertTrue(Text.similarity("今日天氣一打雷", "今日天氣－晴朗") < Matching.MIN_SCORE + 0.1)
     }
 

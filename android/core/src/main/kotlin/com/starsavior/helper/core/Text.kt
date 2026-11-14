@@ -59,8 +59,9 @@ object Text {
         else -> false
     }
 
-    /** OCR 常把字讀成長得幾乎一樣的另一個字。 */
-    private val CONFUSABLE = mapOf('曰' to '日')
+    /** OCR 常把字讀成長得幾乎一樣的另一個字（兩邊都換成同一個字再比對；與電腦版 text.py 相同）。 */
+    private val CONFUSABLE = "官宮 採探 曰日 已己 巳己 末未 夭天 入人 侯候 荼茶 烏鳥 于千 兔免 間問 綠緣 徵微"
+        .split(' ').associate { it[0] to it[1] }
 
     /** 比對用：統一字形（康熙部首、相容字）、繁轉簡、去除空白與標點、轉小寫。 */
     fun norm(text: String?): String {
